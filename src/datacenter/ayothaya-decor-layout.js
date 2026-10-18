@@ -57,11 +57,11 @@ export const CITY_STRINGS=[
  {id:'L027',ends:[30,31],zone:'east harbor'}
 ];
 for(const [i,p]of CITY_LANTERNS.entries()){
- p.id=CITY_STRINGS.some(s=>s.ends.includes(i))?'post':i<2?'L013':'L047';
+ p.id=CITY_STRINGS.some(s=>s.ends.includes(i))?'post':i<2?'L013':(i>=12&&i<=19||i>=26&&i<=35)?'L107':'L047';
  p.radius=p.id==='L013'?.65:.36;
 }
 export const CITY_LIGHT_SOURCES=[
- ...CITY_LANTERNS.filter(p=>p.id!=='post').map(p=>({...p,lightY:p.y+(p.id==='L013'?.65:1.18)})),
+ ...CITY_LANTERNS.filter(p=>p.id!=='post').map(p=>({...p,lightY:p.y+(p.id==='L013'?.65:p.id==='L107'?2.45:1.18)})),
  ...CITY_STRINGS.flatMap(s=>{const [a,b]=s.ends.map(i=>CITY_LANTERNS[i]);return Array.from({length:5},(_,i)=>{const t=(i+.5)/5;return {id:s.id,x:a.x+(b.x-a.x)*t,z:a.z+(b.z-a.z)*t,y:a.y+(b.y-a.y)*t,lightY:Math.max(a.y,b.y)+3.3};});})
 ];
 export const INDOOR_CHANDELIERS={

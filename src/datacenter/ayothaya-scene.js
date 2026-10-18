@@ -87,7 +87,7 @@ export async function createScene(host,opts){
  }catch(error){world?.dispose();interior?.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();throw error;}
  const current=()=>isIndoor()?interior:world;
  const api=new Proxy({
-  sit(value){if(current().isWalking())setSit(value);},touch(f,s){if((f||s)&&sitting)setSit(false);current().touch(f,s);},
+  sprint(value){current().sprint(value);},jump(){if(gate.busy||!current().isWalking())return false;if(sitting)setSit(false);return current().jump();},sit(value){if(current().isWalking())setSit(value);},touch(f,s){if((f||s)&&sitting)setSit(false);current().touch(f,s);},
   async appearance(base){await Promise.all([world.appearance(base),interior.appearance(base)]);},perspective:(value)=>setPerspective(value),timeOfDay:setTime,visualStats:()=>({timeOfDay,perspective,sitting,world:world.visualStats(),interior:interior.visualStats()}),currentArea:()=>area,mapView:()=>ayothayaMap(area),
   async visitCampus(id,walking=false){if(gate.busy)return false;const next=({campus:'city',garden:'city',temple:'lobby'})[id]||id;if(!AREA_NAMES[next])return false;await travel(next,walking);return true;},
   visitTemple:()=>gate.busy?false:travel('lobby',true),visitZone:(id,walking=true)=>gate.busy?false:travel(id==='datacenter'?'datacenter':'museum',walking,id),

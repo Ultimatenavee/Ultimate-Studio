@@ -8,7 +8,7 @@
     "db:generate": "drizzle-kit generate",
     "test": "node scripts/test.mjs",
     "local": "node scripts/local-server.mjs",
-    "test:ayothaya:browser": "node scripts/verify-ayothaya-browser.cjs && node scripts/verify-ayothaya-rooms.cjs && node scripts/verify-ayothaya-visuals.cjs && node scripts/verify-ayothaya-avatar.cjs && node scripts/verify-ayothaya-wardrobe.cjs && node scripts/verify-ayothaya-live-preview.cjs && node scripts/verify-wardrobe-controls.cjs && node scripts/verify-hybrid-lab.cjs"
+    "test:ayothaya:browser": "node scripts/verify-ayothaya-browser.cjs && node scripts/verify-ayothaya-rooms.cjs && node scripts/verify-ayothaya-visuals.cjs && node scripts/verify-ayothaya-avatar.cjs && node scripts/verify-ayothaya-wardrobe.cjs && node scripts/verify-ayothaya-live-preview.cjs && node scripts/verify-wardrobe-controls.cjs && node scripts/verify-hybrid-lab.cjs && node scripts/verify-mobile-movement.cjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

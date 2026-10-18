@@ -68,12 +68,16 @@ function cityLightField(city){
 }
 
 export async function createTempleLanterns(city,lobby){
- const field=cityLightField(city),f=await fixtures(city.parent,['L047','L026','L027','L013','L241']);
+ const field=cityLightField(city),f=await fixtures(city.parent,['L047','L107','L026','L027','L013','L241']);
  for(const p of CITY_LANTERNS){
   if(p.id==='post')continue;
   if(p.id==='L013'){
    f.box(city,1.1,.08,1.1,p.x,p.y+.04,p.z);f.model(p.id,city,p.x,p.y+.08,p.z,.52);
    f.glow(city,p.x,p.y+.66,p.z,.55,'#ffaf5b',16);
+  }else if(p.id==='L107'){
+   f.model(p.id,city,p.x,p.y+.02,p.z,2.8);
+   // Centres of the two lantern housings in the normalized L107 geometry.
+   for(const [x,y] of [[-.187,2.56],[.303,1.88]])f.glow(city,p.x+x,p.y+y+.02,p.z,.24,'#ffd498',10);
   }else{
    f.box(city,.72,.12,.72,p.x,p.y+.06,p.z);f.model(p.id,city,p.x,p.y+.12,p.z,1.6);
    f.glow(city,p.x,p.y+1.18,p.z,.3);

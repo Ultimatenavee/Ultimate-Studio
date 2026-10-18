@@ -19,7 +19,7 @@ export async function createRagnarokAvatar(scene,{blockers=()=>[]}={}){
  }
  function setMode(value){mode=value==='third'?'third':'first';initialized=false;avatar.visible=shadow.visible=false;}
  function update(camera,{walking,time=0,eyeHeight=1.5,ground=0,motion=true,crouching=false,sitting=false}={}){
-  const dt=Math.max(0,Math.min((time-lastTime)/1000,.08));lastTime=time;
+  const dt=lastTime&&time>=lastTime?Math.min((time-lastTime)/1000,.08):0;if(time>lastTime)lastTime=time;
   const dx=camera.position.x-previous.x,dz=camera.position.z-previous.z;
   moving=!sitting&&initialized&&Math.hypot(dx,dz)>.0001&&Math.hypot(dx,dz)<1;
   if(!initialized||Math.hypot(dx,dz)>=1)heading=camera.rotation.y;else if(moving)heading=Math.atan2(-dx,-dz);
@@ -31,9 +31,9 @@ export async function createRagnarokAvatar(scene,{blockers=()=>[]}={}){
   shadow.position.set(camera.position.x,ground+.025,camera.position.z);shadow.scale.setScalar(eyeHeight/1.5);
   // RO directions: south/front=0, west=2, north/back=4, east=6.
   const direction=((Math.round(4-(heading-camera.rotation.y)/(Math.PI/4))%8)+8)%8;
-  const next=(sitting&&meta.actions.length>=24?16:moving?8:0)+direction;if(next!==action){action=next;elapsed=0;}else elapsed+=dt*1000;
+  const next=(sitting&&meta.actions.length>=24?16:moving?8:0)+direction;if(Math.floor(next/8)!==Math.floor(action/8))elapsed=0;else elapsed+=dt*1000;action=next;
   // RO idle frames 1/2 are optional head-look poses, not a looping idle animation.
-  const clip=meta.actions[action];frame=clip.start+(motion&&moving?Math.floor(elapsed/clip.frameMs)%clip.count:0);
+  const clip=meta.actions[action];frame=clip.start+(moving?Math.floor(elapsed/Math.max(16,clip.frameMs||100))%clip.count:0);
   map.offset.set((frame%meta.columns)/meta.columns,1-(Math.floor(frame/meta.columns)+1)/meta.rows);
   target.copy(camera.position);target.y=base+height*(sitting?.36:.65);
   const pitch=T.MathUtils.clamp(.28-camera.rotation.x,-.12,.85),length=(eyeHeight<1.2?2.8:3.4)*zoomScale;
