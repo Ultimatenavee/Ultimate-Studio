@@ -1,0 +1,20 @@
+{
+ "checkedAt":"2026-10-16",
+ "userReference":"image(20261016-074744).png",
+ "observed":"The gold flanking figure had both resting hands pointing toward the viewer's right. One global resting-hand frame had been reused for both wrists.",
+ "handCorrections":[
+  "Separate mirrored left and right resting frames; both palms face up and actual finger geometry points inward across the lap.",
+  "Flanking figures use the gentler relaxed finger shape instead of the main image's strongly cupped middle finger.",
+  "The main raised right palm remains forward; the main open left palm faces upward with fingers directed toward the visitor and slightly inward.",
+  "Existing continuous hand surfaces and positive/outward triangle winding retained."
+ ],
+ "walking":[
+  "Removed Gojo model source, its render/animation path and the Isometric camera controller.",
+  "Removed Isometric toggle and character-specific guidance. Walk buttons start First Person.",
+  "Temple visit enters a perspective First Person view with a clear 70-degree field of view.",
+  "Legacy snapshot character/isoZoom flags are ignored; camera position, jumping and rack-layout restoration remain supported.",
+  "Existing overview, drone, walk navigation, joystick, crouch, run, jump, Library, rack placement and virtual temple interaction retained."
+ ],
+ "validation":"Native mesh connectivity/winding, actual fingertip ray hits and wrist frames; real Three math plus DOM/renderer doubles for First Person, legacy snapshots, landing, temple interaction and UI. CPU mesh images inspected; browser/GPU appearance and FPS not measured.",
+ "assets":"No uploaded photographs or customer documents included in published assets."
+}

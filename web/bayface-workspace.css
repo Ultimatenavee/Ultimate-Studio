@@ -1,0 +1,43 @@
+/* One Library viewport for accessories and equipment, with fixed controls. */
+.catalog{overflow:hidden}
+.library-scroll{flex:1 1 0;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:0 2px 12px}
+.library-scroll #catalogList{flex:none;overflow:visible;min-height:0;padding:0;display:block}
+.library-scroll #bayfaceAccessoryLibrary,.library-scroll #bayfaceAccessoryList{overflow:visible;max-height:none}
+.responsive-panel .library-scroll{flex:none;overflow:visible;padding:0;scrollbar-gutter:auto}
+.bayface-export-menu{position:relative;flex:0 0 auto}
+.bayface-export-menu>summary{cursor:pointer;white-space:nowrap;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--glass-control);color:var(--ink)}
+.bayface-export-menu>div{right:0;left:auto;min-width:170px;z-index:70}
+.bayface-export-menu>div button{display:block;width:100%;text-align:left}
+body.compact-workspace .bayface-export-menu{display:none}
+@media(min-width:901px){
+ body.bayface-mode:not(.compact-workspace) .topbar{min-height:76px;padding:6px 14px;gap:2px 12px;border-radius:22px;margin-top:6px}
+ body.bayface-mode:not(.compact-workspace) .brand-logo{width:36px;height:36px}
+ body.bayface-mode:not(.compact-workspace) .brand{font-size:14px}
+ body.bayface-mode:not(.compact-workspace) .top-actions>button,body.bayface-mode:not(.compact-workspace) .top-actions summary{padding:6px 10px;min-height:32px;font-size:12px}
+ body.bayface-mode:not(.compact-workspace) .project-header{align-items:center;gap:8px}
+ body.bayface-mode:not(.compact-workspace) #projectName{font-size:14px;line-height:1.35;padding:2px 8px;min-height:24px}
+ body.bayface-mode:not(.compact-workspace) .workspace-navigation{margin:6px 12px 0;padding:4px;border-radius:18px}
+ body.bayface-mode:not(.compact-workspace) .workspace-navigation .design-tabs button{min-height:42px;padding:6px 12px;gap:0 8px;border-radius:12px}
+ body.bayface-mode:not(.compact-workspace) .workspace-navigation strong{font-size:14px}
+ body.bayface-mode:not(.compact-workspace) .workspace-navigation small{font-size:10px}
+ body.bayface-mode:not(.compact-workspace) #workspaceHelp{min-height:32px;font-size:12px;padding:5px 10px}
+ body.bayface-mode:not(.compact-workspace) #workspace{grid-template-columns:min(var(--library-width,270px),320px) 8px minmax(0,1fr);padding-top:8px}
+ body.bayface-mode:not(.compact-workspace) #workspace.library-hidden{grid-template-columns:0 0 minmax(0,1fr)}
+ body.bayface-mode:not(.compact-workspace) .canvas-toolbar{padding:6px 12px;min-height:38px;gap:6px}
+ body.bayface-mode:not(.compact-workspace) .catalog{padding:12px 12px 0}
+ body.bayface-mode:not(.compact-workspace) .catalog .section-title{margin-bottom:8px}
+ body.bayface-mode:not(.compact-workspace) .catalog #search{padding:8px 12px}
+ body.bayface-mode .catalog>label.field:has(#libraryIconStyle){display:none}
+ body.bayface-mode:not(.compact-workspace) .catalog-caption{padding:8px 2px}
+ body.bayface-mode:not(.compact-workspace) .bayface-toolbar{gap:6px;padding:8px;margin:6px;border-radius:16px}
+ body.bayface-mode:not(.compact-workspace) .bayface-toolbar>.field{flex:0 1 180px;min-width:150px;font-size:11px;gap:3px}
+ body.bayface-mode:not(.compact-workspace) .bayface-toolbar input:not([type=checkbox]){padding:6px 9px;height:32px;min-height:32px;font-size:12px}
+ body.bayface-mode:not(.compact-workspace) .bayface-toolbar button{padding:6px 9px;min-height:32px;font-size:12px}
+ body.bayface-mode:not(.compact-workspace) .bayface-toolbar .check-label{font-size:12px;white-space:nowrap}
+ body.bayface-mode:not(.compact-workspace) .bayface-navigation,body.bayface-mode:not(.compact-workspace) .bayface-zoom{gap:3px;flex-shrink:0}
+ body.bayface-mode:not(.compact-workspace) .bayface-layout{margin:0 6px 6px;border-radius:16px}
+ body.bayface-mode:not(.compact-workspace) #bayfaceInspector{padding:12px}
+ body.bayface-mode:not(.compact-workspace) #bayfaceCanvas{padding:18px 14px}
+}
+/* Browser-local/mobile Library uses its panel's single scroll container. */
+@media(max-width:900px){.library-scroll #catalogList{display:block}.library-scroll .catalog-section{display:block}.library-scroll .catalog-section>summary{display:flex}.library-scroll .catalog-card{width:100%;height:auto;min-height:100px}.library-scroll .catalog-meta{display:block}}

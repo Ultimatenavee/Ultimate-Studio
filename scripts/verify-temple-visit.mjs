@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import * as T from 'three';
+import {buildJapaneseTemple} from '../src/datacenter/japanese-temple.js';
+import {TEMPLE_VISIT,nearPrayer,twoDigitBlessing,templeGroundHeight} from '../src/datacenter/temple-visit.js';
+import {campusBounds,campusObstacles} from '../src/datacenter/campus-navigation.js';
+import {canStand,walkStep} from '../src/datacenter/navigation.js';
+import {planWalkPath} from '../src/datacenter/museum-navigation.js';
+const temple=buildJapaneseTemple();assert(!temple.root.getObjectByName('buddha-hall-interior'),'interior geometry is lazy');temple.interiorView(true,false);temple.root.updateMatrixWorld(true);for(const name of ['vairocana-daibutsu','flanking-bodhisattva-west','flanking-bodhisattva-east'])assert(temple.root.getObjectByName(name));assert(temple.root.getObjectByName('lower-eaves-curved-tile-surface').visible,'first-person temple keeps the complete roof');temple.interiorView(false,false);assert(temple.root.getObjectByName('lower-eaves-curved-tile-surface').visible);temple.quality('low');temple.interiorView(false,false);assert(!temple.root.getObjectByName('lower-eaves-rounded-tile-ribs').visible,'cutaway restoration preserves quality profile');temple.dispose();
+const boxes=campusObstacles(),bounds=campusBounds();assert(canStand(-18,-32.8,boxes,bounds),'visible north gate is open');assert(!canStand(-35,-32.8,boxes,bounds),'other fence sections stay solid');assert(canStand(TEMPLE_VISIT.x,TEMPLE_VISIT.z,boxes,bounds));const start={x:-23,z:-27},path=planWalkPath(start,TEMPLE_VISIT,boxes,bounds);assert(path.length,'temple is reachable by walking through the garden');let p=start;for(const q of path){const next=walkStep(p,q.x-p.x,q.z-p.z,boxes,bounds);assert(Math.hypot(next.x-q.x,next.z-q.z)<1e-6);p=next;}
+assert.equal(templeGroundHeight(-18,-39.6),.75);assert(nearPrayer(-18,-39.6));assert(!nearPrayer(0,0));for(let n=0;n<100;n++)assert.equal(twoDigitBlessing(()=>(n+.2)/100),String(n).padStart(2,'0'));assert.equal(twoDigitBlessing(()=>0),'00');assert.equal(twoDigitBlessing(()=>.999999),'99');
+console.log('PASS Temple visit: lazy three-figure altar, first-person roof/quality restoration, connected gate/stairs route, safe prayer point and every two-digit outcome.');

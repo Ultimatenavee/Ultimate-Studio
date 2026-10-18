@@ -1,0 +1,711 @@
+
+
+      
+   
+
+S5732-H24S6Q (02353AJS/02353AJS-001/02353AJS-003/02353AJS-004/02353AJS-005)
+
+S5732-H24S6Q (02353AJS/02353AJS-001/02353AJS-003/02353AJS-004/02353AJS-005)
+
+Version MappingTable 4-1577 lists the mapping between the S5732-H24S6Q chassis and software versions.
+
+Table 4-1577  Version mappingSeries
+
+Model
+
+Software Version
+
+
+
+S5732-H
+
+S5732-H24S6Q
+
+02353AJS: V200R019C00 and later versions
+02353AJS-001: V200R020C10 and later versions
+02353AJS-003: V200R021C10SPC500 and later versions (If V200R021C00SPC100 is used, install V200R021SPH011 or a later patch.)
+02353AJS-004: V200R021C10SPC600 and later versions (If V200R021C00SPC100 is used, install V200R021SPH013 or a later patch.)
+02353AJS-005: V200R021C10SPC600 and later versions (If V200R021C00SPC100 is used, install V200R021SPH013 or a later patch.)
+ NOTE: V200R021C01 is not supported.
+Some models cannot be downgraded due to component upgrade. Therefore, you are advised to run the display system-software information command (supported in V200R021C00 and later versions) to check the software versions supported by the device before performing a downgrade.
+
+
+
+
+
+
+
+Appearance and StructureFigure 4-584  S5732-H24S6Q appearance
+1
+
+Twenty 1000BASE-X ports
+Applicable modules:GE optical moduleGE-CWDM optical moduleGE-DWDM optical moduleGE copper module (works at 10 Mbit/s, 100 Mbit/s, or 1000 Mbit/s)
+
+
+2
+
+Four 10GE SFP+ ports
+Applicable modules and cables:GE optical moduleGE-CWDM optical moduleGE-DWDM optical moduleGE copper module (100M/1000M auto-sensing)10GE SFP+ optical module (OSXD22N00 not supported)10GE SFP+ Copper Modules (supported in V200R023C10 and later versions)PEN remote optical modules (V200R024C00 and later versions)10GE-CWDM optical module10GE-DWDM optical module1 m, 3 m, 5 m, and 10 m SFP+ high-speed copper cables3 m and 10 m SFP+ AOC cables
+
+
+
+3
+
+Six 40GE/100GE QSFP+ optical ports
+Applicable modules and cables:QSFP+ optical module1 m, 3 m, and 5 m QSFP+ to QSFP+ high-speed copper cables10 m QSFP+ to QSFP+ AOC cableQSFP28 optical module (supported in V200R020C00 and later versions, with a license loaded)1 m QSFP28 to QSFP28 high-speed copper cable (supported in V200R020C00 and later versions, with a license loaded)10 m QSFP28 to QSFP28 AOC cable (supported in V200R020C00 and later versions, with a license loaded)2 m QSFP28 dedicated stack cable (supported in V200R020C10 and later versions)
+
+ NOTE: A QSFP+ optical port cannot be split into four 10GE ports, regardless of whether the port uses a QSFP28 or QSFP+ optical module.
+By default, a QSFP+ optical port is a 40GE port. In V200R020C00 and later versions, a license can be loaded to increase the port rate to 100 Gbit/s. After the license is activated, run the assign port-type 100GE command and restart the switch to configure the port as a 100GE port.
+
+
+4
+
+Ground screw
+ NOTE: It is used with a ground cable.
+
+
+5
+
+SSD card slot
+ NOTE: This slot is reserved for future use.
+
+
+6
+
+One console port
+
+
+7
+
+One ETH management port
+
+8
+
+One USB port
+
+
+9
+
+One PNP button
+ NOTICE: To restore the factory settings and reset the switch, hold down the button for at least 6 seconds.
+To reset the switch, press the button.
+Resetting the switch will cause service interruption. Exercise caution when you press the PNP button.
+
+
+10
+
+Fan module slot 1
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+
+11
+
+Fan module slot 2
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+12
+
+Fan module slot 3
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+
+13
+
+Fan module slot 4
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+14
+
+Power module slot 1
+ NOTE: Applicable power module:
+PAC600S12-CB (600 W AC&240 V DC Power Module)PAC600S12-EB (600 W AC&240 V DC Power Module)PAC600S12-DB (600 W AC&240 V DC Power Module) (applicable in V200R020C10 and later versions)PDC1000S12-DB (1000 W DC Power Module)
+
+
+
+15
+
+Power module slot 2
+ NOTE: Applicable power module:
+PAC600S12-CB (600 W AC&240 V DC Power Module)PAC600S12-EB (600 W AC&240 V DC Power Module)PAC600S12-DB (600 W AC&240 V DC Power Module) (applicable in V200R020C10 and later versions)PDC1000S12-DB (1000 W DC Power Module)
+
+
+-
+
+-
+
+
+
+
+Port Description1000BASE-X Ethernet Optical Port
+When a 1000BASE-X port uses a GE optical module, it can only transmit and receive data at 1000 Mbit/s and does not support the 100 Mbit/s transmission speed. When a 1000BASE-X port uses a GE copper module, it can transmit and receive data at 10 Mbit/s, 100 Mbit/s, or 1000 Mbit/s. Table 4-1578 describes the attributes of a 1000BASE-X Ethernet optical port.
+Table 4-1578  Attributes of a 1000BASE-X Ethernet optical portAttribute
+
+Description
+
+
+
+Connector type
+
+LC/PC
+
+
+Optical port attributes
+
+Depend on the module used
+
+
+Standards compliance
+
+IEEE802.3z
+
+
+
+
+
+
+10GE SFP+ optical port
+A 10GE SFP+ Ethernet optical port supports auto-sensing to 1000 Mbit/s. It sends and receives service data at 1000 Mbit/s or 10 Gbit/s. Table 4-1579 describes the attributes of a 10GE SFP+ Ethernet optical port.
+Table 4-1579  Attributes of a 10GE SFP+ portAttribute
+
+Description
+
+
+
+Connector type
+
+LC/PC
+
+
+Optical port attributes
+
+Depend on the optical module used
+
+
+Standards compliance
+
+IEEE802.3ae
+
+
+Working mode
+
+GE/10GE auto-sensing
+
+
+
+
+
+
+40GE QSFP+ optical port
+A 40GE QSFP+ optical port sends and receives service traffic at 40 Gbit/s. Table 4-1580 describes the attributes of a QSFP+ optical port.
+Table 4-1580  Attributes of a QSFP+ optical portAttribute
+
+Description
+
+
+
+Connector type
+
+MPO/LC
+
+
+Optical port attributes
+
+Depend on the optical module used
+
+
+Standards compliance
+
+IEEE802.3ba
+
+
+
+
+
+
+Console port
+The console port is connected
+to a console for on-site configuration. The port must use a console cable. The console port is
+used when a switch is powered on for the first time. For details about
+the attributes of a console port, see Table 4-1581.
+Table 4-1581  Attributes of a console port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+RJ45
+
+
+
+
+
+Standards compliance
+
+
+RS-232
+
+
+
+
+
+Working mode
+
+
+Duplex Universal Asynchronous Receiver/Transmitter (UART)
+
+
+
+
+
+Baud rate
+
+
+9600 bit/s, 19200 bit/s, 38400 bit/s, 57600 bit/s, or 115200
+bit/s
+Default value: 9600 bit/s
+
+
+
+
+
+
+
+
+
+ETH management port
+You can connect a switch to a configuration terminal or network management workstation through the ETH management port to configure the switch locally or remotely. The port must use an Ethernet cable. You can choose to download the software package through the ETH management port in the BootLoad menu. File transfer through the ETH management port is faster than transfer through the console port. Table 4-1582 describes the attributes of an ETH management port.
+Table 4-1582  Attributes of an ETH management portAttribute
+
+Description
+
+
+
+Connector type
+
+RJ45
+
+
+Standards compliance
+
+IEEE802.3
+
+
+Working Mode
+
+10/100 Mbit/s auto-sensing
+
+
+Maximum transmission distance
+
+100 m
+
+
+
+
+
+In V200R012C00 and later versions, you can log in to the switch that contains the ETH management port for the first time through the ETH port. For details, see "First Login to a Switch" in the Configuration Guide - Basic Configuration. If you have logged in to the switch for the first time by pressing and holding the MODE button for 6 seconds or longer and saved the configuration, the default configuration on the ETH port will be cleared. In this case, you cannot log in to the switch for the first time through the ETH port. You are advised to log in to the switch for the first time through the ETH port.
+USB port
+The USB port can have a USB flash drive connected to upgrade the switch, or transfer configuration files or other files. The USB port can only connect to a USB flash drive that complies with USB 2.0. USB flash drives from different vendors differ in model compatibility and drivers. If a USB flash drive cannot be used, try to replace it with another one from a mainstream vendor. Switches support a maximum of 128 GB USB flash drives.
+
+
+
+Indicator DescriptionFigure 4-585  Indicators on the S5732-H24S6Q
+
+Table 4-1583  Description of indicators on the switchNo.
+
+Indicator
+
+Name
+
+Color
+
+Status
+
+Description
+
+
+
+1
+
+SYS
+
+System status indicator
+
+-
+
+Off
+
+The system is not running.
+
+
+Green
+
+Fast blinking
+
+The system is starting.
+
+
+Green
+
+Steady on
+
+During the system startup preparation phase, the SYS indicator is steady green, which lasts for a maximum of 30 seconds.
+
+
+Green
+
+Slow blinking
+
+The system is running normally.
+
+
+Red
+
+Steady on
+
+The system does not work normally after registration, or a fan alarm or a temperature alarm has been generated.
+
+
+2
+
+MST
+
+Stack indicator
+
+-
+
+Off
+
+The switch is not the master switch in a stack.
+
+
+Green
+
+Blinking
+
+The switch is the master switch in a stack or a standalone switch.
+
+
+3
+
+ID
+
+ID indicator
+
+-
+
+Off
+
+The ID indicator is not used (default state).
+
+
+Blue
+
+Steady on
+
+The indicator identifies the switch to maintain. The ID indicator can be turned on or off remotely to help field engineers find the switch to maintain.
+
+
+4
+
+-
+
+Service port indicator (GE/10GE optical port)
+ NOTE: Each optical port has two single-color indicators. The one on the left is the ACT indicator (yellow), and the one on the right is the LINK indicator (green).
+Arrowheads show the positions of ports. A down arrowhead indicates a port at the bottom, and an up arrowhead indicates a port at the top.
+
+
+-
+
+Off
+
+The port is not connected or has been shut down.
+
+
+Green
+
+Steady on
+
+A link has been established on the port.
+
+
+-
+
+Off
+
+The port is not sending or receiving data.
+
+
+Yellow
+
+Blinking
+
+The port is sending or receiving data.
+
+
+5
+
+-
+
+Service port indicator (40GE/100GE optical port)
+ NOTE: Each optical port has one single-color indicator. Arrowheads show the positions of ports.
+
+
+-
+
+Off
+
+The port is not connected or has been shut down.
+
+
+Green
+
+Steady on
+
+A link has been established on the port.
+
+
+Blinking
+
+The port is sending or receiving data.
+
+
+6
+
+L/A
+
+ETH port indicator
+
+-
+
+Off
+
+The ETH port is not connected.
+
+
+Green
+
+Steady on
+
+The ETH port is connected.
+
+
+Green
+
+Blinking
+
+The Eth port is sending or receiving data.
+
+
+7
+
+USB
+
+USB-based deployment indicator
+
+-
+
+Off
+
+No USB flash drive is connected to the switch.The USB port is damaged.The indicator is damaged.The USB flash drive does not have any configuration file and cannot be used for deployment.The switch has been upgraded using the USB flash drive and is restarting.
+
+
+Green
+
+Steady on
+
+A USB-based deployment has been completed.
+
+
+Green
+
+Blinking
+
+The system is reading data from a USB flash drive.
+
+
+Yellow
+
+Steady on
+
+The switch has copied all the required files and completed the file check. The USB flash drive can be removed from the switch.
+
+
+Red
+
+Blinking
+
+An error has occurred when the system is executing the configuration file or reading data from the USB flash drive.
+
+
+
+
+
+
+Power Supply ConfigurationThe switch can use a single power module or double power modules for 1+1 power redundancy. Pluggable AC and DC power modules can be used together in the same switch.
+
+Heat DissipationThe S5732-H24S6Q uses pluggable fan modules for forced air cooling. Air flows in from the front side and exhausts from the rear panel.
+
+ This figure only shows the airflow direction and does not depict the actual device.
+
+
+Technical SpecificationsTable 4-1584 lists technical specifications of the S5732-H24S6Q.
+
+Table 4-1584  Technical specificationsItem
+
+Description
+
+
+
+Memory (RAM)
+
+4 GB
+
+
+Flash
+
+2 GB in total. To view the available flash memory size, run the display version command.
+
+
+Mean time between failures (MTBF)
+
+62.27 years
+
+
+Availability
+
+> 0.99999
+
+
+Service port surge protection
+
+N/A
+
+
+Power supply surge protection
+
+Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±2 kV in differential mode, ±4 kV in common mode
+
+
+Dimensions (H x W x D)
+
+Basic dimensions (excluding the parts protruding from the body): 43.6 mm x 442.0 mm x 420.0 mm (1.72 in. x 17.4 in. x 16.5 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 43.6 mm x 442.0 mm x 446.0 mm (1.72 in. x 17.4 in. x 17.6 in.)
+
+
+Weight (with packaging)
+
+8.9 kg (19.62 lb)
+
+
+Stack ports
+
+Any QSFP+ ports
+
+
+RTC
+
+Supported
+
+
+RPS
+
+Not supported
+
+
+PoE
+
+Not supported
+
+
+Rated voltage range
+
+AC input: 100 V AC to 240 V AC, 50/60 HzHigh-Voltage DC input: 240 V DCDC input: -48 V DC to -60 V DC
+
+
+
+Maximum voltage range
+
+AC input: 90 V AC to 290 V AC, 45 Hz to 65 HzHigh-Voltage DC input: 190 V DC to 290 V DCDC input: -38.4 V DC to -72 V DC
+
+
+
+Maximum power consumption (100% throughput, full speed of fans)
+
+229 W
+
+
+Typical power consumption (30% of traffic load, tested according to ATIS standard)
+
+126 W
+
+
+Operating temperature
+
+-5°C to +45°C (23°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).
+The switch cannot be started when the ambient temperature is lower than 0°C (32°F).
+The operating temperature of the switch is -5°C to 40°C (23°F to 104°F) when it uses QSFP-100G-ER4 optical module.
+
+
+
+
+Storage temperature
+
+-40°C to +70°C (-40°F to +158°F)
+
+
+Noise under normal temperature (27°C, sound power)
+
+< 65 dB(A)
+
+
+Relative humidity
+
+5% to 95%, noncondensing
+
+
+Operating altitude
+
+0-5000 m (0-16404 ft.)
+
+
+Certification
+
+EMC certificationSafety certificationManufacturing certification
+
+
+Part number
+
+02353AJS
+02353AJS-001
+02353AJS-003
+02353AJS-004
+02353AJS-005
+
+
+
+
+
+
+
+
+
+
+Version MappingAppearance and StructurePort DescriptionIndicator DescriptionPower Supply ConfigurationHeat DissipationTechnical Specifications
+
+

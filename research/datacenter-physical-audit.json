@@ -1,0 +1,682 @@
+{
+  "cisco-c1121-8pltep": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 41.91,
+      "width": 274.32,
+      "depth": 199.39
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html"
+    ],
+    "missingFaces": [
+      "front"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "cisco-1941": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 88.9,
+      "width": 343,
+      "depth": 292
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "cisco-2911-k9": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 88.9,
+      "width": 438.2,
+      "depth": 304.8
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+    ],
+    "missingFaces": [
+      "front"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ",
+    "rackMount": true
+  },
+  "cisco-3925e": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 133.4,
+      "width": 438.2,
+      "depth": 476.2
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ",
+    "rackMount": true
+  },
+  "cisco-3945e": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 133.4,
+      "width": 438.2,
+      "depth": 476.2
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+    ],
+    "missingFaces": [
+      "front"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ",
+    "rackMount": true
+  },
+  "cisco-asr-1001": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.43,
+      "width": 439.42,
+      "depth": 461.5
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "สัดส่วนจาก Library เดิม; ภาพผิวหน้าเป็นภาพประกอบ รายละเอียดด้านข้างและจุดต่อยังไม่สอบเทียบ"
+  },
+  "cisco-asr-1001-x": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.43,
+      "width": 439.42,
+      "depth": 571.5
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/asr1hig-book_chapter_0111.html"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "กรอบขนาดรวมมือจับและ Cable-management brackets ตาม Hardware Guide; ไม่ใช่ความลึกตัวถังเปล่า ภาพประกอบยังไม่สอบเทียบจุดต่อ",
+    "rackMount": true
+  },
+  "huawei-ar5710-s8t2x": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 320,
+      "depth": 210
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-ar5710-s8t2x-lte4ea": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 320,
+      "depth": 210
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "cisco-isr-4331": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44.45,
+      "width": 438.15,
+      "depth": 438.15
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html"
+    ],
+    "missingFaces": [
+      "front"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ",
+    "rackMount": true
+  },
+  "cisco-isr-4431": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.9,
+      "width": 438.15,
+      "depth": 507.2
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html"
+    ],
+    "missingFaces": [
+      "front"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ",
+    "rackMount": true
+  },
+  "alcatel-os6450-10": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44,
+      "width": 215,
+      "depth": 280
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "huawei-s5735-l8t4x-a1": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 250,
+      "depth": 180
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s5735-l8t4x-qa-v2": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 250,
+      "depth": 180
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j022"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s5731-s48t4x": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 442,
+      "depth": 420
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "telco-t-marc-340": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44,
+      "width": 221,
+      "depth": 235
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดตาม Datasheet T-Marc 300 series; ภาพหลังอ้างอิงรุ่น AC ชุดจ่ายไฟของรุ่น DC อาจต่างกัน"
+  },
+  "telco-t-marc-280": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44,
+      "width": 221,
+      "depth": 140.5
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "telco-t-marc-380": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44,
+      "width": 221,
+      "depth": 235
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดตาม Datasheet T-Marc 300 series; ภาพหลังอ้างอิงรุ่น AC ชุดจ่ายไฟของรุ่น DC อาจต่างกัน"
+  },
+  "fortinet-fortigate-100f": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44,
+      "width": 432,
+      "depth": 254
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "สัดส่วนจาก Library เดิม; ภาพผิวหน้าเป็นภาพประกอบ รายละเอียดด้านข้างและจุดต่อยังไม่สอบเทียบ"
+  },
+  "huawei-ne8000-f1a": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 442,
+      "depth": 420
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://e.huawei.com/en/products/routers/ne8000"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "huawei-ne8000-m8": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 132.6,
+      "width": 442,
+      "depth": 220
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://e.huawei.com/en/products/routers/ne8000"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ยืนยันขนาด Chassis และภาพหน้า–หลังรุ่น DC จาก Huawei; ด้านหลังเป็นแผ่นปิด ชุดการ์ดเป็นภาพอ้างอิงและคง Interface preset เดิม"
+  },
+  "huawei-ne8000-m14": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 222,
+      "width": 442,
+      "depth": 220
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://e.huawei.com/en/products/routers/ne8000"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "huawei-ne8000-x4": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 438,
+      "width": 442,
+      "depth": 874
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://e.huawei.com/en/products/routers/ne8000"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "huawei-s5720-12tp-li-ac": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 250,
+      "depth": 180
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j016"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s5720-36c-ei-28s-ac": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44.4,
+      "width": 442,
+      "depth": 424.7
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s5720-52x-si-ac": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44.4,
+      "width": 442,
+      "depth": 424.7
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j02f"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s5732-h24s6q": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 442,
+      "depth": 420
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j08i"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s6720-30c-ei-24s-ac": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44.4,
+      "width": 442,
+      "depth": 424.7
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j00q"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s6730-h24x6c": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 442,
+      "depth": 420
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j014"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "เอกสาร Hardware ผู้ผลิตปฏิเสธการเข้าถึงในการตรวจรอบนี้ ใช้ขนาดและภาพประกอบเดิม; ไม่ยืนยันด้านข้างและตำแหน่งพอร์ตสามมิติ"
+  },
+  "huawei-s5335-s32st4x": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.6,
+      "width": 442,
+      "depth": 420
+    },
+    "dimensionStatus": "existing-library",
+    "sources": [
+      "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "สัดส่วนจาก Library เดิม; ภาพผิวหน้าเป็นภาพประกอบ รายละเอียดด้านข้างและจุดต่อยังไม่สอบเทียบ"
+  },
+  "hitachi-apresia13200-48x-psr3": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.8,
+      "width": 436,
+      "depth": 400
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.apresia.jp/products/ent/apresia13200-48x-psr3.html"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "hitachi-apresia13200-52gt-psr2": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.8,
+      "width": 436,
+      "depth": 400
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.apresia.jp/products/ent/apresia13200-52gt-psr2.html"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "hitachi-apresia15000-32xl-psr2": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43.8,
+      "width": 436,
+      "depth": 380.4
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.apresia.jp/products/ent/apresia15000-32xl-psr2.html"
+    ],
+    "missingFaces": [],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "huawei-ne40e-x8a": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 930,
+      "width": 442,
+      "depth": 650
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://e.huawei.com/at/products/routers/ne40e"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "ขนาดภายนอกตรวจจากเอกสารผู้ผลิต; ผิวหน้าเป็นภาพประกอบ ไม่ใช่ CAD สอบเทียบ"
+  },
+  "odf-commscope-760241650": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44.45,
+      "width": 482.6,
+      "depth": 320
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/item760241650/"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "กรอบขนาดตามเอกสารผู้ผลิต (รวมความกว้างติดตั้ง Rack); ชุดติดตั้งในภาพเป็นภาพประกอบ ยังไม่สอบเทียบจุดต่อ"
+  },
+  "odf-commscope-fms1u-sc24": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 43,
+      "width": 484,
+      "depth": 280
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/fms1u-panels/"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "กรอบขนาดตามเอกสารผู้ผลิต (รวมความกว้างติดตั้ง Rack); ชุดติดตั้งในภาพเป็นภาพประกอบ ยังไม่สอบเทียบจุดต่อ"
+  },
+  "ac-apc-ap9565": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": null,
+    "dimensionStatus": "unverified",
+    "sources": [
+      "https://www.se.com/th/th/product/AP9565/"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "สัดส่วนจาก Library เดิม; ภาพผิวหน้าเป็นภาพประกอบ รายละเอียดด้านข้างและจุดต่อยังไม่สอบเทียบ"
+  },
+  "ac-apc-smt1500rmi2u": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": null,
+    "dimensionStatus": "unverified",
+    "sources": [
+      "https://www.se.com/th/en/product/SMT1500RMI2U/"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "สัดส่วนจาก Library เดิม; ภาพผิวหน้าเป็นภาพประกอบ รายละเอียดด้านข้างและจุดต่อยังไม่สอบเทียบ"
+  },
+  "dc-vertiv-netsure211-1u": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 44.45,
+      "width": 482.6,
+      "depth": 304.8
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "กรอบขนาดตามเอกสารผู้ผลิต (รวมความกว้างติดตั้ง Rack); ชุดติดตั้งในภาพเป็นภาพประกอบ ยังไม่สอบเทียบจุดต่อ"
+  },
+  "dc-vertiv-netsure211-2u": {
+    "status": "partial",
+    "checkedAt": "2026-10-15",
+    "dimensionsMm": {
+      "height": 88.9,
+      "width": 482.6,
+      "depth": 304.8
+    },
+    "dimensionStatus": "vendor-verified",
+    "sources": [
+      "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf"
+    ],
+    "missingFaces": [
+      "rear"
+    ],
+    "geometryStatus": "illustrative-not-calibrated",
+    "note": "กรอบขนาดตามเอกสารผู้ผลิต (รวมความกว้างติดตั้ง Rack); ชุดติดตั้งในภาพเป็นภาพประกอบ ยังไม่สอบเทียบจุดต่อ"
+  }
+}

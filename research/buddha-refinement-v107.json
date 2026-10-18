@@ -1,0 +1,40 @@
+{
+  "revision": 107,
+  "checkedAt": "2026-10-17",
+  "brief": "User-provided serene, graceful, realistic sacred sculpture prompt; Japanese temple direction selected for existing setting.",
+  "geometryChanges": [
+    "Oval tapered jaw/cheek silhouette",
+    "Integrated, softened eyelids and recessed apertures",
+    "Refined bridge, alae, columella and closed smile",
+    "Sculpted ear concha instead of raised wire outlines",
+    "Continuous sloping shoulder and sleeve transitions",
+    "Variable asymmetric robe tension folds and covered knees",
+    "Finer scalp curls with elevated crown"
+  ],
+  "materials": "Original procedural bronze microfinish embedded in GLBs; vertex patina and PBR metals. No reference pixels, commercial assets or scan data included.",
+  "preserved": [
+    "Raised right palm outward, left palm upward",
+    "Lotus and aureole scene placement",
+    "Lazy loading, LOD and quality controls",
+    "Rack navigation, interface mapping and network data"
+  ],
+  "references": [
+    {
+      "url": "https://www.todaiji.or.jp/en/information/daibutsuden/",
+      "use": "Identity/context; official photography not reproduced"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "use": "Visual reference only; no photo textures"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Todaiji_great_buddha.jpg",
+      "author": "Ph0kin",
+      "license": "Public domain",
+      "use": "Visual reference only"
+    }
+  ],
+  "limits": "An artistic sculpture, not an exact replica/scan; backside and ornament interpreted; only central statue updated, flanking sculptures unchanged; Blender renders are not browser/GPU verification."
+}

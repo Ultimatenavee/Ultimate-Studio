@@ -1,0 +1,477 @@
+{
+  "checkedAt": "2026-10-10",
+  "scope": "Otherbrands8models",
+  "policy": "No application edits; unresolved vendor evidence recorded explicitly.",
+  "models": [
+    {
+      "id": "hitachi-apresia13200-48x-psr3",
+      "model": "APRESIA13200-48X-PSR3",
+      "cli": {
+        "status": "vendor-verified",
+        "networkNames": [
+          "1/1",
+          "1/2",
+          "1/3",
+          "1/4",
+          "1/5",
+          "1/6",
+          "1/7",
+          "1/8",
+          "1/9",
+          "1/10",
+          "1/11",
+          "1/12",
+          "1/13",
+          "1/14",
+          "1/15",
+          "1/16",
+          "1/17",
+          "1/18",
+          "1/19",
+          "1/20",
+          "1/21",
+          "1/22",
+          "1/23",
+          "1/24",
+          "1/25",
+          "1/26",
+          "1/27",
+          "1/28",
+          "1/29",
+          "1/30",
+          "1/31",
+          "1/32",
+          "1/33",
+          "1/34",
+          "1/35",
+          "1/36",
+          "1/37",
+          "1/38",
+          "1/39",
+          "1/40",
+          "1/41",
+          "1/42",
+          "1/43",
+          "1/44",
+          "1/45",
+          "1/46",
+          "1/47",
+          "1/48",
+          "1/49",
+          "1/50",
+          "1/51",
+          "1/52"
+        ],
+        "configurationSyntax": "interface port 1/3",
+        "managementName": "manage",
+        "correction": "Catalog uses bare port numbers; prepend standalone box ID 1/. Do not add speed words to CLI interface names.",
+        "sources": [
+          {
+            "url": "https://www.apresia.jp/products/ent/support/docs/CommandReference_AEOS8.45_TD61-8154A.pdf",
+            "section": "3.5 Virtual BoxCore; 12.7 show running-config PDF pages120–121;31.13 40g-port enable PDF pages350–351"
+          }
+        ]
+      },
+      "physical": {
+        "front": "Network, MANAGE, console and SD sockets on front; no network sockets on rear.",
+        "rear": "Two horizontal modular PSU slots spanning rear; viewed from rear PSU2 left, PSU1 right. Installed PSU supplies also contain fan.",
+        "status": "vendor-verified",
+        "resources": [
+          {
+            "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia13000_Series_TD61-4588N.pdf",
+            "pdfPageIndex": 97,
+            "figure": "2-14",
+            "note": "13000 manual explicitly includes PSR3 and PSR2 models as same rear form; shown drawing is shared vendor chassis reference.15000 figure explicitly includes exact32XL-PSR2."
+          }
+        ]
+      }
+    },
+    {
+      "id": "hitachi-apresia13200-52gt-psr2",
+      "model": "APRESIA13200-52GT-PSR2",
+      "cli": {
+        "status": "vendor-verified",
+        "networkNames": [
+          "1/1",
+          "1/2",
+          "1/3",
+          "1/4",
+          "1/5",
+          "1/6",
+          "1/7",
+          "1/8",
+          "1/9",
+          "1/10",
+          "1/11",
+          "1/12",
+          "1/13",
+          "1/14",
+          "1/15",
+          "1/16",
+          "1/17",
+          "1/18",
+          "1/19",
+          "1/20",
+          "1/21",
+          "1/22",
+          "1/23",
+          "1/24",
+          "1/25",
+          "1/26",
+          "1/27",
+          "1/28",
+          "1/29",
+          "1/30",
+          "1/31",
+          "1/32",
+          "1/33",
+          "1/34",
+          "1/35",
+          "1/36",
+          "1/37",
+          "1/38",
+          "1/39",
+          "1/40",
+          "1/41",
+          "1/42",
+          "1/43",
+          "1/44",
+          "1/45",
+          "1/46",
+          "1/47",
+          "1/48",
+          "1/49",
+          "1/50",
+          "1/51",
+          "1/52"
+        ],
+        "configurationSyntax": "interface port 1/3",
+        "managementName": "manage",
+        "correction": "Catalog uses bare port numbers; prepend standalone box ID 1/. Do not add speed words to CLI interface names.",
+        "sources": [
+          {
+            "url": "https://www.apresia.jp/products/ent/support/docs/CommandReference_AEOS8.45_TD61-8154A.pdf",
+            "section": "3.5 Virtual BoxCore; 12.7 show running-config PDF pages120–121;31.13 40g-port enable PDF pages350–351"
+          }
+        ]
+      },
+      "physical": {
+        "front": "Network, MANAGE, console and SD sockets on front; no network sockets on rear.",
+        "rear": "Two horizontal modular PSU slots spanning rear; viewed from rear PSU2 left, PSU1 right. Installed PSU supplies also contain fan.",
+        "status": "vendor-verified",
+        "resources": [
+          {
+            "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia13000_Series_TD61-4588N.pdf",
+            "pdfPageIndex": 97,
+            "figure": "2-14",
+            "note": "13000 manual explicitly includes PSR3 and PSR2 models as same rear form; shown drawing is shared vendor chassis reference.15000 figure explicitly includes exact32XL-PSR2."
+          }
+        ]
+      }
+    },
+    {
+      "id": "hitachi-apresia15000-32xl-psr2",
+      "model": "APRESIA15000-32XL-PSR2",
+      "cli": {
+        "status": "vendor-verified",
+        "networkNames": [
+          "1/1",
+          "1/2",
+          "1/3",
+          "1/4",
+          "1/5",
+          "1/6",
+          "1/7",
+          "1/8",
+          "1/9",
+          "1/10",
+          "1/11",
+          "1/12",
+          "1/13",
+          "1/14",
+          "1/15",
+          "1/16",
+          "1/17",
+          "1/18",
+          "1/19",
+          "1/20",
+          "1/21",
+          "1/22",
+          "1/23",
+          "1/24",
+          "1/25",
+          "1/26",
+          "1/27",
+          "1/28",
+          "1/29",
+          "1/30",
+          "1/31",
+          "1/32"
+        ],
+        "configurationSyntax": "interface port 1/3",
+        "managementName": "manage",
+        "correction": "Catalog uses bare port numbers; prepend standalone box ID 1/. Do not add speed words to CLI interface names.",
+        "sources": [
+          {
+            "url": "https://www.apresia.jp/products/ent/support/docs/CommandReference_AEOS8.45_TD61-8154A.pdf",
+            "section": "3.5 Virtual BoxCore; 12.7 show running-config PDF pages120–121;31.13 40g-port enable PDF pages350–351"
+          }
+        ],
+        "sharedQsfpNames": [
+          "1/25",
+          "1/29"
+        ],
+        "note": "QSFP physical port25 shares25–28 and29 shares29–32. 40g-port command uses selectors1-2, not interface names1/1-1/2."
+      },
+      "physical": {
+        "front": "Network, MANAGE, console and SD sockets on front; no network sockets on rear.",
+        "rear": "Two horizontal modular PSU slots spanning rear; viewed from rear PSU2 left, PSU1 right. Installed PSU supplies also contain fan.",
+        "status": "vendor-verified",
+        "resources": [
+          {
+            "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia15000_Series_TD61-4662N.pdf",
+            "pdfPageIndex": 54,
+            "figure": "2-3",
+            "note": "13000 manual explicitly includes PSR3 and PSR2 models as same rear form; shown drawing is shared vendor chassis reference.15000 figure explicitly includes exact32XL-PSR2."
+          }
+        ]
+      }
+    },
+    {
+      "id": "fortinet-fortigate-100f",
+      "model": "FortiGate100F",
+      "cli": {
+        "status": "vendor-verified",
+        "networkNames": [
+          "dmz",
+          "mgmt",
+          "wan1",
+          "wan2",
+          "ha1",
+          "ha2",
+          "port1",
+          "port2",
+          "port3",
+          "port4",
+          "port5",
+          "port6",
+          "port7",
+          "port8",
+          "port9",
+          "port10",
+          "port11",
+          "port12",
+          "port13",
+          "port14",
+          "port15",
+          "port16",
+          "port17",
+          "port18",
+          "port19",
+          "port20",
+          "x1",
+          "x2"
+        ],
+        "configurationSyntax": "config system interface; edit port15",
+        "correction": "Existing names correct. Copper1–12, SFP13–16, RJ45/SFP combo17–20, SFP+x1/x2; combo media share same name.",
+        "sources": [
+          {
+            "url": "https://community.fortinet.com/fortigate-3/troubleshooting-tip-speed-options-missing-in-fortigate-100f-101f-after-upgrading-to-v7-2-8-or-v7-4-2-178374",
+            "section": "Fortinet Staff & Editor14Aug2024; complete RJ45/SFP/SFP+ name groups"
+          }
+        ]
+      },
+      "physical": {
+        "status": "manufacturer-shared-100F-Series-layout",
+        "resources": [
+          {
+            "url": "https://docs.fortinet.com/document/fortigate/hardware/fortigate-100f-series-qsg"
+          },
+          {
+            "url": "https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/42d64717-83f1-11e9-81a4-00505692583a/FortiGate-100F-Series-QSG.pdf"
+          },
+          {
+            "url": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+            "pdfPageIndex": 5,
+            "sourceType": "manufacturer-authoredmirror",
+            "localReference": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/fortigate-100f-family-rear-figure.png",
+            "exactModel": false,
+            "family": "FortiGate100FSeries100F/101F"
+          }
+        ],
+        "unresolved": [
+          "An exact100F-onlyrearphotograph was notverified. Sharedmanufacturer100F/101Fguideisusedwithexplicitdisclosure."
+        ],
+        "front": "Front CLI/media verified separately. Rear physicalillustration shared100F/101F from vendor-authoreddatasheet.",
+        "rear": "Two built-in non-hot-swappableACsupplies,oneIECACinletnearleftedge andonenearrightedge,singlecentralhoneycombvent,yellowcautionlabelrightofvent.",
+        "note": "ด้านหลังอ้างอิง FortiGate 100F Series (คู่มือรวม 100F/101F) ไม่ใช่ภาพถ่ายตรงรุ่น"
+      }
+    },
+    {
+      "id": "alcatel-os6450-10",
+      "model": "OS6450-10",
+      "cli": {
+        "status": "vendor-authored-mirror-only",
+        "networkNames": [
+          "1/1",
+          "1/2",
+          "1/3",
+          "1/4",
+          "1/5",
+          "1/6",
+          "1/7",
+          "1/8",
+          "1/9",
+          "1/10",
+          "1/11",
+          "1/12"
+        ],
+        "configurationSyntax": "interfaces 1/1 admin up",
+        "correction": "Existing slot/port format correct for standalone slot1.9/10 are sharedcopper/SFP;11/12 fixeduplink must be upratherthanstackmode.",
+        "sources": [
+          {
+            "url": "https://www.scribd.com/document/830607224/OS6450-AOS-6-6-2-R02-CLI-Reference-Guide",
+            "section": "Official vendor-authored OmniSwitch6450 CLI reference2011, Ethernetportcommands interfaces slot/port; mirror notvendorwebsite."
+          }
+        ],
+        "unresolved": [
+          "No publicly accessible CLI guide on ALE vendor domain found; cannot claim vendorwebsite verification of exact name list."
+        ]
+      },
+      "physical": {
+        "front": "8 copperuser+2comboRJ45/SFP+2fixedSFPuplink/stack sockets,consoleRJ45,USB.",
+        "rear": "SingleinternalACconnector andgroundingblock; fanless, no Ethernet/expansion/dualPSU.",
+        "status": "vendor-datasheet-and-vendor-authored-mirror",
+        "resources": [
+          {
+            "url": "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf",
+            "pdfPageIndex": 1,
+            "section": "Model configuration table and port information;exactOS6450-10"
+          },
+          {
+            "url": "https://manualzz.com/doc/7491199/alcatel-lucent-omniswitch-os6450-10-hardware-user-s-manual",
+            "section": "September2015 Hardwareguide page3-2 front,3-3 rear; do not confuse24portrearfigures.",
+            "note": "Rear reference is manufacturer-authored but public mirror; official rear figure URL onvendordomain notfound."
+          }
+        ],
+        "generatedAsset": "web/assets/alcatel-os6450-10-audited-rear-20261010.webp"
+      }
+    },
+    {
+      "id": "telco-t-marc-280",
+      "model": "T-Marc280",
+      "cli": {
+        "status": "unresolved-vendor-cli",
+        "existingNames": [
+          "1/1",
+          "2/1",
+          "2/2",
+          "3/1"
+        ],
+        "correction": "Do not change names based on datasheet socket counts or front silk-screen; exact configuration interface syntax not verified on public vendorwebsite.",
+        "sources": [
+          {
+            "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+            "section": "Vendor datasheet confirms interfaces/counts only; not CLI names"
+          }
+        ],
+        "unresolved": [
+          "Public vendorCLI/manual not found.340/380 existingcatalog references mirroredmanufacturer v10.1 UserGuide;280 format has no CLIvendorreference."
+        ]
+      },
+      "physical": {
+        "status": "front-only-vendor",
+        "resources": [
+          {
+            "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+            "pdfPageIndex": 0,
+            "note": "Vendor front/productillustration only.280externalPSU;300series internalAC/externalAC/DCoptions in datasheet."
+          }
+        ],
+        "unresolved": [
+          "Exact rear-panel vendor image/diagram not found. Do not use eBay rear photos as vendorverified, or synthesize guessed rear."
+        ]
+      }
+    },
+    {
+      "id": "telco-t-marc-340",
+      "model": "T-Marc340",
+      "cli": {
+        "status": "unresolved-vendor-cli",
+        "existingNames": [
+          "1/1/1",
+          "1/1/2",
+          "1/2/1",
+          "1/2/2",
+          "1/2/3",
+          "1/2/4"
+        ],
+        "correction": "Do not change names based on datasheet socket counts or front silk-screen; exact configuration interface syntax not verified on public vendorwebsite.",
+        "sources": [
+          {
+            "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+            "section": "Vendor datasheet confirms interfaces/counts only; not CLI names"
+          }
+        ],
+        "unresolved": [
+          "Public vendorCLI/manual not found.340/380 existingcatalog references mirroredmanufacturer v10.1 UserGuide;280 format has no CLIvendorreference."
+        ]
+      },
+      "physical": {
+        "status": "front-only-vendor",
+        "resources": [
+          {
+            "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+            "pdfPageIndex": 0,
+            "note": "Vendor front/productillustration only.280externalPSU;300series internalAC/externalAC/DCoptions in datasheet."
+          }
+        ],
+        "unresolved": [
+          "Exact rear-panel vendor image/diagram not found. Do not use eBay rear photos as vendorverified, or synthesize guessed rear."
+        ]
+      }
+    },
+    {
+      "id": "telco-t-marc-380",
+      "model": "T-Marc380",
+      "cli": {
+        "status": "unresolved-vendor-cli",
+        "existingNames": [
+          "1/1/1",
+          "1/1/2",
+          "1/2/1",
+          "1/2/2",
+          "1/2/3",
+          "1/2/4",
+          "1/2/5",
+          "1/2/6",
+          "1/2/7",
+          "1/2/8"
+        ],
+        "correction": "Do not change names based on datasheet socket counts or front silk-screen; exact configuration interface syntax not verified on public vendorwebsite.",
+        "sources": [
+          {
+            "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+            "section": "Vendor datasheet confirms interfaces/counts only; not CLI names"
+          }
+        ],
+        "unresolved": [
+          "Public vendorCLI/manual not found.340/380 existingcatalog references mirroredmanufacturer v10.1 UserGuide;280 format has no CLIvendorreference."
+        ]
+      },
+      "physical": {
+        "status": "front-only-vendor",
+        "resources": [
+          {
+            "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+            "pdfPageIndex": 0,
+            "note": "Vendor front/productillustration only.280externalPSU;300series internalAC/externalAC/DCoptions in datasheet."
+          }
+        ],
+        "unresolved": [
+          "Exact rear-panel vendor image/diagram not found. Do not use eBay rear photos as vendorverified, or synthesize guessed rear."
+        ]
+      }
+    }
+  ]
+}

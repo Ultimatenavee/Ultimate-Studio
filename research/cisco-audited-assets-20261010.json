@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-10",
+  "skill": "imagegen",
+  "mode": "built-in tool",
+  "status": "partial-generated-one-verified-rear",
+  "generatedAssets": [],
+  "inspectedReferences": [
+    {
+      "path": "web/assets/cisco-1941-color.jpg",
+      "actualFace": "front",
+      "suitableForRequestedRear": false
+    },
+    {
+      "path": "web/assets/cisco-3925e-color.jpg",
+      "actualFace": "front",
+      "suitableForRequestedRear": false
+    },
+    {
+      "path": "web/assets/cisco-isr-4331-color.jpg",
+      "actualFace": "rear",
+      "suitableForRequestedFront": false
+    }
+  ],
+  "requestedAssets": [
+    {
+      "model": "Cisco 1941",
+      "face": "rear",
+      "vendorFigure": "1900 HIG Figure 1-5",
+      "blocker": "No genuine rear raster available. Vendor image links return Internal Error; cached rear.jpg.failed.html is denial HTML."
+    },
+    {
+      "model": "Cisco 3925E",
+      "face": "rear",
+      "vendorFigure": "2900/3900 HIG Figure 1-13 SPE200",
+      "blocker": "No genuine rear raster. Cisco French/Japanese full PDFs exceed web fetch size limit (11.9/14.9 MB); shell fetch returns 195-byte Site Unavailable."
+    },
+    {
+      "model": "ISR4331",
+      "face": "front",
+      "vendorFigure": "4000 HIG Figure 1-22",
+      "blocker": "Only rear reference photograph cached; no genuine front figure raster obtainable."
+    }
+  ],
+  "safetyDecision": "Do not generate invented port positions, missing face geometry, or relabel existing front photo as rear. Preserve truthful unavailable state. Research audit corrected ISR4331 network rear + management/console front.",
+  "c1121Followup": "Inspected rear2 (real rear) and rear3 (box label), connection (mixed model family), router-switch (wireless variant front). No exact non-wireless C1121-8PLTEP front raster reference; not generated."
+}

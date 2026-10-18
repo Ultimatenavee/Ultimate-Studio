@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "cloud",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/cloud.svg",
+    "local": "web/vendor/lucide/cloud.svg"
+  },
+  {
+    "icon": "database",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg",
+    "local": "web/vendor/lucide/database.svg"
+  },
+  {
+    "icon": "square",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/square.svg",
+    "local": "web/vendor/lucide/square.svg"
+  },
+  {
+    "icon": "rectangle-horizontal",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/rectangle-horizontal.svg",
+    "local": "web/vendor/lucide/rectangle-horizontal.svg"
+  },
+  {
+    "icon": "circle",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/circle.svg",
+    "local": "web/vendor/lucide/circle.svg"
+  },
+  {
+    "icon": "diamond",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/diamond.svg",
+    "local": "web/vendor/lucide/diamond.svg"
+  },
+  {
+    "icon": "hexagon",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/hexagon.svg",
+    "local": "web/vendor/lucide/hexagon.svg"
+  },
+  {
+    "icon": "arrow-right",
+    "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-right.svg",
+    "local": "web/vendor/lucide/arrow-right.svg"
+  }
+]

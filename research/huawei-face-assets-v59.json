@@ -1,0 +1,227 @@
+{
+  "huawei-ne8000-m8": {
+    "images": {
+      "front": {
+        "src": "assets/faces-v59/huawei/ne8000-m8-front.webp",
+        "width": 2400,
+        "height": 662,
+        "frame": [
+          0,
+          0,
+          2400,
+          662
+        ],
+        "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=en_NetEngine_8000_M8_DC_pic.zip&picture_name=front_NetEngine_8000_M8_DC.png",
+        "status": "vendor-public-reference",
+        "interfaceSide": "front",
+        "note": "Official Huawei public image-library preview; exact displayed power configuration. Image card population is not a CLI interface inventory."
+      },
+      "rear": {
+        "src": "assets/faces-v59/huawei/ne8000-m8-rear.webp",
+        "width": 2400,
+        "height": 660,
+        "frame": [
+          0,
+          0,
+          2400,
+          660
+        ],
+        "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=en_NetEngine_8000_M8_DC_pic.zip&picture_name=rear_NetEngine_8000_M8.png",
+        "status": "vendor-public-reference",
+        "interfaceSide": "none",
+        "note": "Official Huawei public image-library preview; exact displayed power configuration. Image card population is not a CLI interface inventory. Visually verified plain rear panel: no rear network ports or PSU sockets; fans, power inputs and interfaces are on front."
+      }
+    },
+    "interfaceSide": "front",
+    "referenceConfiguration": "NetEngine 8000 M8 DC / CR8BM8BKPDC1",
+    "sourcePage": "https://info.support.huawei.com/info-finder/imagelib/getPreviewImages?partNumber=02353ANP&domain=0&lang=en",
+    "checkedAt": "2026-10-15",
+    "geometryStatus": "photo-reference-not-calibrated",
+    "note": "Exact vendor preview images; AC and DC chassis configurations must not be treated as visually interchangeable. Existing interface data and card configuration remain unchanged."
+  },
+  "huawei-ne8000-m14": {
+    "images": {
+      "front": {
+        "src": "assets/faces-v59/huawei/ne8000-m14-front.webp",
+        "width": 2400,
+        "height": 1107,
+        "frame": [
+          0,
+          0,
+          2400,
+          1107
+        ],
+        "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=en_NetEngine_8000_M14_DC_pic.zip&picture_name=front_NetEngine_8000_M14_DC.png",
+        "status": "vendor-public-reference",
+        "interfaceSide": "front",
+        "note": "Official Huawei public image-library preview; exact displayed power configuration. Image card population is not a CLI interface inventory."
+      },
+      "rear": {
+        "src": "assets/faces-v59/huawei/ne8000-m14-rear.webp",
+        "width": 2400,
+        "height": 1105,
+        "frame": [
+          0,
+          0,
+          2400,
+          1105
+        ],
+        "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=en_NetEngine_8000_M14_DC_pic.zip&picture_name=rear_NetEngine_8000_M14_DC.png",
+        "status": "vendor-public-reference",
+        "interfaceSide": "none",
+        "note": "Official Huawei public image-library preview; exact displayed power configuration. Image card population is not a CLI interface inventory. Visually verified plain rear panel: no rear network ports or PSU sockets; fans, power inputs and interfaces are on front."
+      }
+    },
+    "interfaceSide": "front",
+    "referenceConfiguration": "NetEngine 8000 M14 DC / CR8B0BKPDCC1",
+    "sourcePage": "https://info.support.huawei.com/info-finder/imagelib/getPreviewImages?partNumber=02353ABJ&domain=0&lang=en",
+    "checkedAt": "2026-10-15",
+    "geometryStatus": "photo-reference-not-calibrated",
+    "note": "Exact vendor preview images; AC and DC chassis configurations must not be treated as visually interchangeable. Existing interface data and card configuration remain unchanged."
+  },
+  "huawei-ne8000-x4": {
+    "images": {
+      "front": {
+        "src": "assets/faces-v59/huawei/ne8000-x4-front.webp",
+        "width": 2400,
+        "height": 2176,
+        "frame": [
+          0,
+          0,
+          2400,
+          2176
+        ],
+        "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=NetEngine-8000-X4-AC_pic.zip&picture_name=front_NetEngine-8000-X4.png",
+        "status": "vendor-public-reference",
+        "interfaceSide": "front",
+        "note": "Official Huawei public image-library preview; exact displayed power configuration. Image card population is not a CLI interface inventory."
+      },
+      "rear": {
+        "src": "assets/faces-v59/huawei/ne8000-x4-rear.webp",
+        "width": 2400,
+        "height": 2176,
+        "frame": [
+          0,
+          0,
+          2400,
+          2176
+        ],
+        "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=NetEngine-8000-X4-AC_pic.zip&picture_name=rear_NetEngine-8000-X4.png",
+        "status": "vendor-public-reference",
+        "interfaceSide": "none",
+        "note": "Official Huawei public image-library preview; exact displayed power configuration. Image card population is not a CLI interface inventory. Visually verified twelve AC inlets across top and three tall rear fan trays."
+      }
+    },
+    "interfaceSide": "front",
+    "referenceConfiguration": "NetEngine 8000 X4 AC/HVDC / CR8PBKP04AC0",
+    "sourcePage": "https://info.support.huawei.com/info-finder/imagelib/getPreviewImages?partNumber=02353CVY&domain=0&lang=en",
+    "checkedAt": "2026-10-15",
+    "geometryStatus": "photo-reference-not-calibrated",
+    "note": "Exact vendor preview images; AC and DC chassis configurations must not be treated as visually interchangeable. Existing interface data and card configuration remain unchanged."
+  },
+  "huawei-ne40e-x8a": {
+    "images": {
+      "front": {
+        "src": "assets/faces-v59/huawei/ne40e-x8a-front.svg",
+        "width": 884,
+        "height": 1860,
+        "frame": [
+          0,
+          0,
+          884,
+          1860
+        ],
+        "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=NE40E-X8A_pic.zip&picture_name=front_left_NE40E-X8A.png",
+        "status": "vendor-referenced-illustration",
+        "interfaceSide": "front",
+        "note": "Orthographic SVG interpretation of visually inspected official Huawei open-card front photograph. Slot ordering 1,2,3,4,9,11,12,10,5,6,7,8; exposed card areas, blanks and power fascia. Simplified illustration, not exact port geometry or full-population inventory."
+      },
+      "rear": {
+        "src": "assets/faces-v59/huawei/ne40e-x8a-rear.svg",
+        "width": 884,
+        "height": 1860,
+        "frame": [
+          0,
+          0,
+          884,
+          1860
+        ],
+        "source": "https://www.manualslib.com/manual/1963081/Huawei-Ne40e.html?page=103",
+        "status": "vendor-referenced-illustration",
+        "interfaceSide": "none",
+        "note": "Clean SVG interpretation of Huawei NE40E Hardware Description, Issue 01 (2018-05-03), Figure 1-22, visually inspected on manual page 103. Two horizontal fan modules at top, blank access panels and lower DC power-entry modules. Simplified connectors; not calibrated geometry."
+      }
+    },
+    "interfaceImage": {
+      "src": "assets/faces-v59/huawei/ne40e-x8a-front.svg",
+      "width": 884,
+      "height": 1860,
+      "frame": [
+        0,
+        0,
+        884,
+        1860
+      ],
+      "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=NE40E-X8A_pic.zip&picture_name=front_left_NE40E-X8A.png",
+      "status": "vendor-referenced-illustration",
+      "interfaceSide": "front",
+      "note": "Orthographic SVG interpretation of visually inspected official Huawei open-card front photograph. Slot ordering 1,2,3,4,9,11,12,10,5,6,7,8; exposed card areas, blanks and power fascia. Simplified illustration, not exact port geometry or full-population inventory. This straight-on card view is suitable for face texture; perspective source retained under referenceImage."
+    },
+    "referenceConfiguration": "NE40E-X8A DC / CR5B0BKP0871 / part 02350AFW; mixed installed cards and blank slots shown by Huawei, not fully populated",
+    "interfaceSide": "front",
+    "checkedAt": "2026-10-15",
+    "geometryStatus": "reference-based-illustration-not-calibrated",
+    "sourcePage": "https://info.support.huawei.com/info-finder/imagelib/getPreviewImages?partNumber=02350AFW&domain=0&lang=en",
+    "sources": [
+      "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=NE40E-X8A_pic.zip&picture_name=front_left_NE40E-X8A.png",
+      "https://www.manualslib.com/manual/1963081/Huawei-Ne40e.html?page=103",
+      "https://static-data2.manualslib.com/storage/pdf40/197/19631/1963081/images/ne40e_103_bg.jpg"
+    ],
+    "note": "Rear source is the Huawei manual hosted by an external manual mirror. SVG is visually referenced, not manufacturer CAD. Interface names and capacities are not derived from illustration.",
+    "referenceImage": {
+      "src": "assets/faces-v59/huawei/ne40e-x8a-interface-reference.webp",
+      "width": 1214,
+      "height": 1940,
+      "frame": [
+        0,
+        0,
+        1214,
+        1940
+      ],
+      "source": "https://info.support.huawei.com/info-finder/imagelib/getImgByNames4web?package_name=NE40E-X8A_pic.zip&picture_name=front_left_NE40E-X8A.png",
+      "status": "vendor-public-reference",
+      "interfaceSide": "front",
+      "note": "Actual official Huawei angled chassis photograph with interface cards exposed. Retained separately for source inspection, not flat face texture."
+    }
+  },
+  "huawei-s5335-s32st4x": {
+    "images": {
+      "rear": {
+        "src": "assets/faces-v59/huawei/s5335-s32st4x-rear.svg",
+        "width": 1768,
+        "height": 176,
+        "frame": [
+          0,
+          0,
+          1768,
+          176
+        ],
+        "source": "https://dy.lnwfile.com/_/dy/_raw/0q/b0/mv.jpg",
+        "status": "photo-referenced-illustration",
+        "interfaceSide": "none",
+        "note": "Clean SVG from visually inspected exact-model rear photograph: left ground stud, central fixed ventilation, two AC power modules at right. Model independently checked using underside S5335-S32ST4X label photograph from same listing. Simplified illustration, not manufacturer CAD."
+      }
+    },
+    "interfaceSide": "front",
+    "referenceConfiguration": "CloudEngine S5335-S32ST4X with two AC power supplies as pictured by reseller",
+    "checkedAt": "2026-10-15",
+    "geometryStatus": "reference-based-illustration-not-calibrated",
+    "sourcePage": "https://www.thailandallit.com/product/5561/switch-huawei-cloud-engine-s5335-s32st4x-%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88",
+    "sources": [
+      "https://dy.lnwfile.com/_/dy/_raw/0q/b0/mv.jpg",
+      "https://dy.lnwfile.com/_/dy/_raw/27/ar/q0.jpg",
+      "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf"
+    ],
+    "note": "Vendor brochure verified model/front but did not provide usable exact rear evidence. Rear uses real external reseller photograph crosschecked against model label; existing front asset retained."
+  }
+}

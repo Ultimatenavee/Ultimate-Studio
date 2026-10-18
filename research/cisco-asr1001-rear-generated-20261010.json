@@ -1,0 +1,28 @@
+{
+  "modelId": "cisco-asr-1001",
+  "face": "rear",
+  "assetPath": "assets/cisco-asr-1001-audited-rear-20261010.webp",
+  "sourceReference": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/asr1001-rear.jpg",
+  "sourcePageUrl": "https://www.piospartslap.de/Cisco-ASR1001-68-3376-Cisco-ASR-1000-Series-Router-4x-SFP-Rack-Ears",
+  "directImageUrl": "https://www.piospartslap.de/media/image/product/17488/lg/cisco-asr1001-68-3376-cisco-asr-1000-series-router-4x-sfp-rack-ears~3.jpg",
+  "manufacturerCorroboration": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html",
+  "referenceType": "Exact reseller photograph, hardware-side layout corroborated by official Cisco guide; not vendor photograph",
+  "originalGeneratedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-50f560f9-4664-4af0-8e1c-8a48404cde6a.png",
+  "prompt": "Use case: product-mockup. Render exact original Cisco ASR1001 rear panel shown in reference (not ASR1001-X or HX). Preserve the source single very wide shallow silver rear chassis: broad square-cell ventilation grille on left approximately two-thirds panel, two adjacent AC PSU modules on right with original black IEC inlets, silver metal extraction handles hanging below, labeled positions 0 and 1 and black standby switch at far right. Preserve original modules and geometry, no extra sockets, no front Ethernet ports. Camera strictly straight-on orthographic rear elevation, level, zero visible top or sides; remove perspective while preserving identity. Clean new brushed silver metal, black grille interiors, neutral realistic product lighting, full isolated chassis with modest margins. Genuine transparent alpha background, no floor, shadow, white card, cables or overlays. This is illustrative appearance, not calibrated port geometry; small labels illustrative only.",
+  "tool": "built-in image_gen.imagegen",
+  "width": 2172,
+  "height": 724,
+  "transparentBackground": true,
+  "inspection": "Straight-on rear square grille, two AC PSU and far-right switch preserved; small illustrative labels; faint outer alpha artifacts possible.",
+  "limitations": [
+    "Appearance illustration only, not calibrated hardware geometry.",
+    "Exact-model rear reference from matched seller gallery, not vendor-hosted image."
+  ],
+  "frame": [
+    40,
+    259,
+    2092,
+    248
+  ],
+  "note": "\u0e20\u0e32\u0e1e\u0e08\u0e33\u0e25\u0e2d\u0e07\u0e08\u0e32\u0e01\u0e20\u0e32\u0e1e\u0e15\u0e23\u0e07\u0e23\u0e38\u0e48\u0e19 \u0e15\u0e23\u0e27\u0e08\u0e40\u0e17\u0e35\u0e22\u0e1a\u0e2d\u0e07\u0e04\u0e4c\u0e1b\u0e23\u0e30\u0e01\u0e2d\u0e1a\u0e01\u0e31\u0e1a\u0e04\u0e39\u0e48\u0e21\u0e37\u0e2d Cisco; \u0e20\u0e32\u0e1e\u0e15\u0e49\u0e19\u0e41\u0e1a\u0e1a\u0e44\u0e21\u0e48\u0e44\u0e14\u0e49\u0e2d\u0e22\u0e39\u0e48\u0e1a\u0e19\u0e40\u0e27\u0e47\u0e1a Vendor"
+}

@@ -1,0 +1,686 @@
+{
+  "version": 58,
+  "checkedAt": "2026-10-15",
+  "scope": "Huawei face inventory and research, prioritizing five missing rear faces",
+  "summary": {
+    "huaweiModels": 17,
+    "withExistingBothFaces": 12,
+    "missingRearModels": [
+      "huawei-ne8000-m8",
+      "huawei-ne8000-m14",
+      "huawei-ne8000-x4",
+      "huawei-s5335-s32st4x",
+      "huawei-ne40e-x8a"
+    ],
+    "newVerifiedRearAssets": 0
+  },
+  "policy": "Use vendor source first, external image/manual evidence second. Do not claim referenced figures are visually verified unless actually inspected. Never mirror/relabel front as rear. No new redistribution rights assumed.",
+  "models": {
+    "huawei-ar5710-s8t2x": {
+      "name": "Huawei AR5710-S8T2X",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-ar5710-s8t2x-illustration-v03.png",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            29,
+            137,
+            2113,
+            435
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-ar5710-s8t2x-audited-rear-20261010.webp",
+          "width": 2172,
+          "height": 724,
+          "frame": [
+            2,
+            211,
+            2168,
+            291
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองด้านหลังตามแผนผังผู้ผลิต ไม่ใช่ Hotspot สอบเทียบ"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-ar5710-s8t2x-lte4ea": {
+      "name": "Huawei AR5710-S8T2X-LTE4EA",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-ar5710-s8t2x-lte4ea-illustration-v03.png",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            4,
+            221,
+            2162,
+            362
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-ar5710-s8t2x-lte4ea-audited-rear-20261010.webp",
+          "width": 2172,
+          "height": 724,
+          "frame": [
+            5,
+            211,
+            2162,
+            295
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองด้านหลังตามแผนผังผู้ผลิต ไม่ใช่ Hotspot สอบเทียบ"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s5735-l8t4x-a1": {
+      "name": "Huawei S5735-L8T4X-A1",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5735-l8t4x-a1-illustration-v03.png",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            13,
+            153,
+            2144,
+            461
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s5735-l8t4x-a1-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            47,
+            187,
+            2077,
+            329
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s5735-l8t4x-qa-v2": {
+      "name": "Huawei S5735-L8T4X-QA-V2",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5735-l8t4x-qa-v2-illustration-v03.png",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            29,
+            227,
+            2112,
+            309
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s5735-l8t4x-qa-v2-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            17,
+            192,
+            2136,
+            345
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j022"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s5731-s48t4x": {
+      "name": "Huawei S5731-S48T4X",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5731-s48t4x-illustration-v03.png",
+          "width": 2172,
+          "height": 724,
+          "frame": [
+            0,
+            249,
+            2172,
+            245
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s5731-s48t4x-audited-rear-20261010.webp",
+          "width": 2172,
+          "height": 724,
+          "frame": [
+            16,
+            258,
+            2143,
+            220
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพด้านหลังอ้างอิง S5731-S48T4X SKU 02353AJB; SKU 98011847 มีแผงด้านหลังต่างกัน"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-ne8000-f1a": {
+      "name": "Huawei NetEngine 8000 F1A",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-ne8000-f1a-illustration-v03.png",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            2,
+            269,
+            2166,
+            254
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-ne8000-f1a-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองด้านหลัง NetEngine 8000 F1A-8H20Q รุ่น AC ตามเอกสารผู้ผลิต",
+          "frame": [
+            14,
+            283,
+            2143,
+            229
+          ]
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://e.huawei.com/en/products/routers/ne8000"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-ne8000-m8": {
+      "name": "Huawei NetEngine 8000 M8",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-ne8000-m8-illustration-v03.png",
+          "width": 2072,
+          "height": 759,
+          "frame": [
+            10,
+            90,
+            2052,
+            620
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        }
+      },
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "vendor-first-research-completed-rear-unresolved",
+      "existingPhysicalSources": [
+        "https://e.huawei.com/en/products/routers/ne8000"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution.",
+      "sources": [
+        {
+          "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/routers/netengine-8000-m8-pid-250517142/web3d",
+          "type": "vendor-3d-directory",
+          "evidence": "Exact M8 3D entry retrieved; renderer/assets not exposed in retrieved page; appearance section reports no data.",
+          "faceVerified": false
+        },
+        {
+          "url": "https://www.manualslib.com/manual/2387098/Huawei-Netengine-8000-M8.html",
+          "type": "vendor-manual-mirror",
+          "evidence": "Huawei installation manual identified; chassis and front-service fan/power installation drawings listed, but isolated rear not verified.",
+          "faceVerified": false
+        }
+      ],
+      "gap": "Need exact rear image and exact AC/DC chassis variant. Do not infer rear connectors from module data."
+    },
+    "huawei-ne8000-m14": {
+      "name": "Huawei NetEngine 8000 M14",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-ne8000-m14-illustration-v03.png",
+          "width": 1774,
+          "height": 887,
+          "frame": [
+            31,
+            66,
+            1714,
+            801
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        }
+      },
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "vendor-first-research-completed-rear-unresolved",
+      "existingPhysicalSources": [
+        "https://e.huawei.com/en/products/routers/ne8000"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution.",
+      "sources": [
+        {
+          "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Routers/NetEngine-8000-M14-supported-model-pid-250517151/web3d",
+          "type": "vendor-3d-directory",
+          "evidence": "Exact M14 directory retrieved; 3D geometry not retrieved.",
+          "faceVerified": false
+        },
+        {
+          "url": "https://manuals.plus/m/4df3ed4439f4435175daea71774c1fbe6a184a394b96c95022ab3cc589aef967",
+          "type": "vendor-manual-mirror",
+          "evidence": "2021 Huawei M14 installation guide; identifies AC/DC chassis. Text says air enters left and exhausts right. Rear image not visually verified.",
+          "faceVerified": false
+        }
+      ],
+      "gap": "Need exact rear view; generic front-to-back airflow would be incorrect for this documented M14 configuration."
+    },
+    "huawei-ne8000-x4": {
+      "name": "Huawei NetEngine 8000 X4",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-ne8000-x4-illustration-v03.png",
+          "width": 1392,
+          "height": 1130,
+          "frame": [
+            25,
+            58,
+            1341,
+            1048
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        }
+      },
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "vendor-first-research-completed-rear-unresolved",
+      "existingPhysicalSources": [
+        "https://e.huawei.com/en/products/routers/ne8000"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution.",
+      "sources": [
+        {
+          "url": "https://info.support.huawei.com/enterprise/fr/routers/netengine-8000-m14-pid-250517151",
+          "type": "vendor-support-index",
+          "evidence": "Search index lists NetEngine 8000 X4 Router (3D); direct page access 403.",
+          "faceVerified": false
+        },
+        {
+          "url": "https://www.scribd.com/document/921911437/Hardware-Installation-Guide",
+          "type": "vendor-manual-mirror",
+          "evidence": "Huawei X hardware guide Issue 04 2025-04-30 search excerpt lists Figure 3-1 X4 front and Figure 3-2 X4 rear; AC/HVDC illustration explicitly differs from DC PM/PEM. Image itself not retrieved.",
+          "faceVerified": false
+        }
+      ],
+      "gap": "Do not use X8 appearance for X4. Need Figure 3-2 exact X4 rear image and PSU variant."
+    },
+    "huawei-s5720-12tp-li-ac": {
+      "name": "Huawei S5720-12TP-LI-AC",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5720-12tp-li-ac-illustration-v07.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            29,
+            190,
+            2112,
+            395
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s5720-12tp-li-ac-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            37,
+            171,
+            2097,
+            382
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j016"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s5720-36c-ei-28s-ac": {
+      "name": "Huawei S5720-36C-EI-28S-AC",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5720-36c-ei-28s-ac-illustration-v07.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            23,
+            174,
+            2124,
+            350
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s5720-36c-ei-28s-ac-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            7,
+            263,
+            2157,
+            215
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s5720-52x-si-ac": {
+      "name": "Huawei S5720-52X-SI-AC",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5720-52x-si-ac-illustration-v07.webp",
+          "width": 2169,
+          "height": 725,
+          "frame": [
+            20,
+            197,
+            2128,
+            314
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s5720-52x-si-ac-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            6,
+            254,
+            2157,
+            218
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j02f"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s5732-h24s6q": {
+      "name": "Huawei S5732-H24S6Q",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5732-h24s6q-illustration-v07.webp",
+          "width": 2169,
+          "height": 725,
+          "frame": [
+            25,
+            188,
+            2117,
+            322
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s5732-h24s6q-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            3,
+            263,
+            2164,
+            232
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j08i"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s6720-30c-ei-24s-ac": {
+      "name": "Huawei S6720-30C-EI-24S-AC",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s6720-30c-ei-24s-ac-illustration-v07.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            21,
+            174,
+            2128,
+            326
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s6720-30c-ei-24s-ac-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            22,
+            260,
+            2126,
+            218
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j00q"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s6730-h24x6c": {
+      "name": "Huawei S6730-H24 / S6730-H24X6C",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s6730-h24x6c-illustration-v07.webp",
+          "width": 2167,
+          "height": 726,
+          "frame": [
+            20,
+            201,
+            2123,
+            295
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        },
+        "rear": {
+          "src": "assets/huawei-s6730-h24x6c-audited-rear-20261010.webp",
+          "width": 2170,
+          "height": 725,
+          "frame": [
+            8,
+            262,
+            2154,
+            220
+          ],
+          "status": "vendor-referenced-illustration",
+          "note": "ภาพจำลองตามแผนผังผู้ผลิต"
+        }
+      },
+      "missingFaces": [],
+      "status": "existing-illustrations-not-newly-image-verified",
+      "existingPhysicalSources": [
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j014"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution."
+    },
+    "huawei-s5335-s32st4x": {
+      "name": "Huawei S5335-S32ST4X",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-s5335-s32st4x-illustration-v07.webp",
+          "width": 2168,
+          "height": 725,
+          "frame": [
+            14,
+            181,
+            2141,
+            383
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        }
+      },
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "vendor-first-research-completed-rear-unresolved",
+      "existingPhysicalSources": [
+        "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution.",
+      "sources": [
+        {
+          "url": "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf",
+          "type": "vendor-datasheet",
+          "evidence": "Page 2 (zero-based page 1) screenshot visually inspected. Exact S5335-S32ST4X label with front appearance. No rear view found. PDF metadata incorrectly names S5735 but visible content says S5335.",
+          "faceVerified": "front"
+        },
+        {
+          "url": "https://www.gocomsys.com/products/huawei/s5335-s32st4x",
+          "type": "external-product-search-result",
+          "evidence": "Exact model listing found but no verified rear photo obtained.",
+          "faceVerified": false
+        }
+      ],
+      "gap": "Search results commonly substitute S5735-S32ST4X; do not silently use that model rear. Existing front remains illustration; exact rear is unresolved."
+    },
+    "huawei-ne40e-x8a": {
+      "name": "Huawei NE40E-X8A",
+      "existingFaces": {
+        "front": {
+          "src": "assets/huawei-ne40e-x8a-illustration-v07.webp",
+          "width": 992,
+          "height": 1585,
+          "frame": [
+            88,
+            24,
+            816,
+            1545
+          ],
+          "status": "illustration",
+          "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+        }
+      },
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "vendor-first-research-completed-rear-unresolved",
+      "existingPhysicalSources": [
+        "https://e.huawei.com/at/products/routers/ne40e"
+      ],
+      "newImages": [],
+      "note": "Existing images retained without recertifying them as calibrated vendor photographs. No front/rear substitution.",
+      "sources": [
+        {
+          "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/routers/ne40e-x8a-pid-19939685/product-image-gallery",
+          "type": "vendor-image-gallery",
+          "evidence": "Exact model gallery found; retrieval failed.",
+          "faceVerified": false
+        },
+        {
+          "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/f2ad8c26cc134fa88cadcb25a19f2c01/M2T1A590N952295118785925206/NE40E%20Series%20Universal%20Service%20Routers%20Datasheet.pdf",
+          "type": "vendor-datasheet",
+          "evidence": "Indexed Figure 1-2 shows series back views and specifically labels NE40E-X8A. Retrieval redirects to inaccessible e-file.huawei.com; local download returned gateway payload, not PDF.",
+          "faceVerified": false
+        }
+      ],
+      "gap": "Exact rear reference located, image retrieval unresolved; no asset created."
+    }
+  }
+}

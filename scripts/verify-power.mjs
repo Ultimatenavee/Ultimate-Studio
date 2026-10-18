@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {rackLoad,deviceLoad} from '../src/datacenter/power.js';
+import {validateRacks,fromBayface,toBayface} from '../src/datacenter/rack-placement.js';
+const models=[{id:'switch',power:{status:'verified',maxW:190,typicalW:136},powerSlots:2},{id:'odf',power:{status:'passive'}},{id:'router',power:{status:'verified',typicalW:35}},{id:'ups',power:{status:'unknown'},specs:{outputVA:1500}}];
+const item=(id,model)=>({id,model,name:id,u:1,size:1});
+const rack={id:'r',name:'Rack',x:0,z:0,rotation:0,units:42,powerBudgetW:500,items:[item('one','switch'),{...item('two','switch'),u:2},{...item('patch','odf'),u:3}]};
+let r=rackLoad(rack,models);assert.equal(r.totalW,380,'whole devices counted once regardless of redundant PSU count');assert.equal(r.ratio,.76);assert.equal(r.headroomW,120);assert.equal(r.status,'within');
+r=rackLoad(rack,models,item('preview','switch'));assert.equal(r.totalW,570);assert.equal(r.deltaW,190);assert.equal(r.status,'over');assert.equal(rack.items.length,3,'preview is immutable');
+r=rackLoad(rack,models,{...rack.items[0],u:20});assert.equal(r.deltaW,0,'same-rack U move does not add another device');
+r=rackLoad({...rack,items:[...rack.items,item('unmapped','ups')]},models);assert.equal(r.totalW,380);assert.equal(r.unknown,1);assert.equal(r.headroomW,null);assert.equal(r.status,'incomplete');
+assert(!deviceLoad(item('router','router'),models,'max').known,'typical must not become maximum');assert(deviceLoad(item('router','router'),models,'typical').known);assert.equal(rackLoad({...rack,powerBasis:'typical'},models).totalW,272);
+assert.equal(rackLoad({...rack,powerBudgetW:null},models).status,'unbudgeted');assert.equal(rackLoad({...rack,items:[]},models).totalW,0);assert.equal(rackLoad({...rack,powerBudgetW:100,items:[item('one','switch'),item('u','ups')]},models).status,'over','known load can already prove over-budget even if others are unknown');
+const known=new Set(models.map(m=>m.id));validateRacks([rack],known);assert.throws(()=>validateRacks([{...rack,powerBudgetW:0}],known));assert.throws(()=>validateRacks([{...rack,powerBasis:'guess'}],known));
+const ctx={window:{NOAH_BAYFACE_ACCESSORIES:[]}};vm.runInNewContext(fs.readFileSync('web/bayface-model.js','utf8'),ctx);
+const project={title:'Power',racks:[{id:'r',name:'Rack',units:42,powerBasis:'typical',powerBudgetW:3200}],items:[]};
+const validated=ctx.window.NOAH_BAYFACE_MODEL.validate(project,known),back=toBayface(fromBayface(validated,models),'Power',models);assert.equal(back.racks[0].powerBudgetW,3200);assert.equal(back.racks[0].powerBasis,'typical');
+const catalog=JSON.parse(fs.readFileSync('src/datacenter/devices.json'));
+assert.equal(catalog.length,40);for(const m of catalog){assert(m.power,m.id);for(const key of ['typicalW','maxW'])if(m.power[key]!==undefined){assert(Number.isFinite(m.power[key])&&m.power[key]>=0,m.id);assert(m.power.sourceUrl?.startsWith('https://'),m.id+' source');assert(['verified','passive'].includes(m.power.status));}if(m.power.status==='unknown')assert(!deviceLoad(item('test',m.id),catalog).known,m.id+' unknown must remain unknown');}
+console.log('PASS Datasheet rack power: quantity, redundant PSU de-duplication, preview, same-rack move, unknown coverage, no typical-to-max fallback, budget/overload, immutable data, project roundtrip and all40 power records.');
+const override={...item('m','router'),powerOverrideW:123.5,powerOverrideNote:'PDU measured'};
+assert.equal(deviceLoad(override,models,'max').watts,123.5);assert.equal(deviceLoad(override,models,'typical').watts,123.5);assert.equal(deviceLoad({...override,powerOverrideW:0},models).watts,0);assert(!deviceLoad({...override,powerOverrideW:null},models).known);
+const manualProject={title:'Manual',racks:project.racks,items:[{id:'m',rackId:'r',kind:'device',modelId:'router',height:2,u:3,label:'Router',serialNumber:'SN-test',powerOverrideW:123.5,powerOverrideNote:'PDU measured',notes:'',color:'#202831'}]};
+const mvalid=ctx.window.NOAH_BAYFACE_MODEL.validate(manualProject,known),converted=fromBayface(mvalid,models);assert.equal(rackLoad(converted[0],models).totalW,123.5);assert.equal(rackLoad(converted[0],models).manualCount,1);assert.equal(toBayface(converted,'Manual',models).items[0].powerOverrideNote,'PDU measured');converted[0].items[0].powerOverrideW=null;assert.equal(toBayface(converted,'Manual',models).items[0].powerOverrideW,null);assert.throws(()=>validateRacks([{...rack,items:[{...override,powerOverrideW:-1}]}],known));console.log('PASS Manual power: override, zero, clear, basis, validation and Studio/Simulator roundtrip.');
+// Regression: a published Typical load must contribute in Auto without becoming Maximum.
+const f1a=catalog.find(m=>m.id==='huawei-ne8000-f1a'),ale=catalog.find(m=>m.id==='alcatel-os6450-10'),fg=catalog.find(m=>m.id==='fortinet-fortigate-100f');
+const mixedRack={id:'auto',name:'Power fixture',units:42,x:0,z:0,rotation:0,powerBudgetW:800,items:[{...item('pe',f1a.id),name:'Core PE',u:3},{...item('test',ale.id),u:10},{...item('ref',fg.id),u:11}]};
+let auto=rackLoad(mixedRack,catalog);assert.equal(auto.basis,'auto');assert.equal(auto.totalW,340.2);assert.equal(auto.typicalCount,1);assert.equal(auto.testCount,1);assert.equal(auto.unknown,1);assert.equal(auto.rows[2].issue.kind,'reference');assert.equal(auto.rows[0].basisUsed,'typical');
+const strict=rackLoad({...mixedRack,powerBasis:'max'},catalog);assert.equal(strict.totalW,0);assert.equal(strict.rows[0].issue.kind,'basis');assert(strict.rows[0].issue.reason.includes('325 W'));assert.equal(strict.rows[1].issue.kind,'basis');
+const afterMove=rackLoad(mixedRack,catalog,{...mixedRack.items[0],u:15});assert.equal(afterMove.deltaW,0);assert.equal(afterMove.totalW,340.2);assert.equal(mixedRack.items[0].u,3);
+const zeros=rackLoad({...mixedRack,items:[{...mixedRack.items[0],powerOverrideW:0}]},catalog);assert.equal(zeros.totalW,0);assert.equal(zeros.rows[0].issue.kind,'manual-zero');assert.equal(rackLoad({...mixedRack,items:[{...mixedRack.items[0],powerOverrideW:null}]},catalog).totalW,325);
+const autoProject=ctx.window.NOAH_BAYFACE_MODEL.validate({...manualProject,racks:[{...manualProject.racks[0],powerBasis:'auto'}]},known);assert.equal(toBayface(fromBayface(autoProject,models),'Auto',models).racks[0].powerBasis,'auto');
+const {powerMarkup}=await import('../src/datacenter/power-display.js');const badge=powerMarkup(auto);assert(badge.includes('ไม่ใช่ยอด Maximum'));assert(badge.includes('Typical 1 / Load test 1'));assert(badge.includes('U11'));assert(badge.includes('ไม่ใช่ 0 W'));assert(!badge.includes('undefined'));const escaped=powerMarkup(rackLoad({...mixedRack,items:[{...item('missing','unknown'),name:'<img onerror=alert(1)>',u:12}]},catalog));assert(!escaped.includes('<img'));assert(escaped.includes('&lt;img'));
+console.log('PASS Auto power: actual F1A Typical325W and OS6450 measured15.2W sum; strict Maximum retained; explicit reference required; missing-device suggestions, escaped names, manual-zero override, move preview and Auto round-trip.');

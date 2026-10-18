@@ -1,0 +1,304 @@
+{
+  "reviewedAt": "2026-10-15",
+  "scope": "Existing datacenter device catalog modular PE power evidence",
+  "policy": [
+    "Do not scale chassis reference watts by installed-slot fraction.",
+    "Do not use PSU output capacity as consumption.",
+    "Published typical is not maximum.",
+    "Reference presets require exact supply/IPU/card BOM match.",
+    "Custom base plus card totals require a documented base including IPU/SFU/fans and supply loss, plus compatible cards; otherwise remain unknown or clearly user-defined."
+  ],
+  "catalogObservation": "Current src/datacenter/devices.json contains Huawei modular PE but no Nokia entry; no Nokia power data imported for nonexistent model.",
+  "devices": {
+    "huawei-ne8000-f1a": {
+      "fixed": true,
+      "serviceSlots": 0,
+      "typicalW": 325,
+      "sourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+      "sourceTitle": "Huawei NetEngine 8000 Series Routers",
+      "evidence": "F1A listed among fixed-configuration routers without flexible cards; typical 325 W.",
+      "baseW": null,
+      "maxW": null,
+      "arbitrarySlotCalculationSupported": false
+    },
+    "huawei-ne8000-m8": {
+      "fixed": false,
+      "slotVariants": [
+        {
+          "supply": "DC",
+          "serviceSlots": 8
+        },
+        {
+          "supply": "AC",
+          "serviceSlots": 6
+        }
+      ],
+      "slotSourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+      "baseW": null,
+      "maxW": null,
+      "arbitrarySlotCalculationSupported": false,
+      "missing": "Matched chassis/IPU/fan/base consumption and complete compatible card consumption set.",
+      "presets": [
+        {
+          "id": "m8-dc-2t4-reference",
+          "label": "DC / IPU-2T4-A or IPU-2T4-E-B / vendor reference BOM",
+          "typicalW": 739.1,
+          "supply": "DC",
+          "cards": [
+            {
+              "model": "CR8DE1KB00M1",
+              "count": 2
+            },
+            {
+              "model": "CR8DE4NB00M1",
+              "count": 1
+            },
+            {
+              "model": "CR8DE8YF0025",
+              "count": 1
+            },
+            {
+              "model": "CR5D00LAXF91",
+              "count": 2
+            },
+            {
+              "model": "CR5D00EAGF95",
+              "count": 1
+            }
+          ],
+          "sourceUrl": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/e9dd06e260b64df683f6221fc8442cbf/M3T1A590N1251851159872295065/NetEngine%208000%20M8%20Universal%20Service%20Router%20Datasheet.pdf",
+          "sourceTitle": "Huawei NetEngine 8000 M8 Universal Service Router Datasheet",
+          "evidence": "Typical power with the listed IPU-2T4 configuration is 739.1 W.",
+          "retrieval": "Official indexed PDF table; direct PDF retrieval failed after e-file redirect."
+        },
+        {
+          "id": "m8-dc-1t2au-reference",
+          "label": "DC / IPU-1T2-AU or IPU-1T2-E-BU / vendor reference BOM",
+          "typicalW": 629.2,
+          "supply": "DC",
+          "cards": [
+            {
+              "model": "CR8DE2NB00M0",
+              "count": 2
+            },
+            {
+              "model": "CR5D00E4XM25",
+              "count": 1
+            },
+            {
+              "model": "CR5D00LAXF91",
+              "count": 2
+            },
+            {
+              "model": "CR5D00EAGF95",
+              "count": 2
+            }
+          ],
+          "sourceUrl": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/e9dd06e260b64df683f6221fc8442cbf/M3T1A590N1251851159872295065/NetEngine%208000%20M8%20Universal%20Service%20Router%20Datasheet.pdf",
+          "sourceTitle": "Huawei NetEngine 8000 M8 Universal Service Router Datasheet",
+          "evidence": "Typical power with the listed IPU-1T2-AU configuration is 629.2 W."
+        }
+      ],
+      "note": "Vendor reference BOMs only. Physical slot footprint/eligibility for every listed PIC has not been verified here; do not infer occupancy from number of cards. Do not label as a universal full-eight-slot configuration or apply DC values to AC."
+    },
+    "huawei-ne8000-m14": {
+      "fixed": false,
+      "slotVariants": [
+        {
+          "supply": "DC",
+          "serviceSlots": 14
+        }
+      ],
+      "slotSourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+      "baseW": null,
+      "maxW": null,
+      "arbitrarySlotCalculationSupported": false,
+      "airflow": "left-to-right",
+      "airflowSourceUrl": "https://info.support.huawei.com/info-finder/vue/en/enterprise/openSearch?area=link&group_name=%E7%A1%AC%E4%BB%B6%E5%9B%BE%E8%B0%B1_%E8%B7%AF%E7%94%B1%E5%99%A8_V800R013C00_EN&keyword=CR8B0BKPDCM1&subseries=NetEngine+8000+M14&version=V800R021C00SPC100",
+      "presets": [
+        {
+          "id": "m14-dc-3t6-reference",
+          "label": "CR8B0BKPDCM1 / DC / 2 IPU-3T6-A or IPU-3T6-E-B",
+          "typicalW": 865.79,
+          "supply": "DC",
+          "chassis": "CR8B0BKPDCM1",
+          "infrastructure": "1 fan assembly + 2 DC power + 2 IPU",
+          "cards": [
+            {
+              "model": "CR8DE1KB00M1",
+              "count": 2
+            },
+            {
+              "model": "CR8DE4NB00M1",
+              "count": 2
+            },
+            {
+              "model": "CR5D00LAXF91",
+              "count": 2
+            },
+            {
+              "model": "CR5D00EAGF95",
+              "count": 2
+            }
+          ],
+          "sourceUrl": "https://info.support.huawei.com/info-finder/vue/en/enterprise/openSearch?area=link&group_name=%E7%A1%AC%E4%BB%B6%E5%9B%BE%E8%B0%B1_%E8%B7%AF%E7%94%B1%E5%99%A8_V800R013C00_EN&keyword=CR8B0BKPDCM1&subseries=NetEngine+8000+M14&version=V800R021C00SPC100",
+          "sourceTitle": "Huawei Hardware Center CR8B0BKPDCM1",
+          "evidence": "Manufacturer configuration-specific typical total 865.79 W."
+        },
+        {
+          "id": "m14-dc-2tau-reference",
+          "label": "CR8B0BKPDCM1 / DC / 2 IPU-2T-AU or IPU-2T-E-BU",
+          "typicalW": 735.86,
+          "supply": "DC",
+          "chassis": "CR8B0BKPDCM1",
+          "infrastructure": "1 fan assembly + 2 DC power + 2 IPU",
+          "cards": [
+            {
+              "model": "CR5DE2NE4X14",
+              "count": 2
+            },
+            {
+              "model": "CR5D00E8XM25",
+              "count": 1
+            },
+            {
+              "model": "CR5D00LAXF91",
+              "count": 3
+            },
+            {
+              "model": "CR5D00EAGF95",
+              "count": 1
+            }
+          ],
+          "sourceUrl": "https://info.support.huawei.com/info-finder/vue/en/enterprise/openSearch?area=link&group_name=%E7%A1%AC%E4%BB%B6%E5%9B%BE%E8%B0%B1_%E8%B7%AF%E7%94%B1%E5%99%A8_V800R013C00_EN&keyword=CR8B0BKPDCM1&subseries=NetEngine+8000+M14&version=V800R021C00SPC100",
+          "sourceTitle": "Huawei Hardware Center CR8B0BKPDCM1",
+          "evidence": "Manufacturer configuration-specific typical total 735.86 W."
+        }
+      ],
+      "note": "Vendor reference BOMs only. Physical slot footprint/eligibility for every listed PIC has not been verified here; do not infer occupancy from number of cards. Do not label as a universal full-14-slot maximum. Rated output 2400 W is excluded."
+    },
+    "huawei-ne8000-x4": {
+      "fixed": false,
+      "serviceSlots": 4,
+      "slotSourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+      "baseW": null,
+      "maxW": null,
+      "arbitrarySlotCalculationSupported": false,
+      "publishedTypicalReferenceW": 5913,
+      "sourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+      "note": "Product overview gives 5913 W typical without enough BOM detail for automatic arbitrary slot calculation. Hardware guide indexed a different LPUI-4T reference at 5340 W; revision/BOM must be explicit.",
+      "hardwareSourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100382343/87d25189/chassis"
+    },
+    "huawei-ne40e-x8a": {
+      "fixed": false,
+      "serviceSlots": 8,
+      "slotSourceUrl": "https://www.router-switch.com/sk/cr5b0bkp0871-p-17471.html",
+      "slotEvidenceClass": "reseller",
+      "baseW": null,
+      "maxW": null,
+      "arbitrarySlotCalculationSupported": false,
+      "sourceUrl": "https://info.support.huawei.com/info-finder/enterprisesearch/en?keyword=CR5B0BKP0871",
+      "resellerEvidence": {
+        "sourceUrl": "https://www.router-switch.com/sk/cr5b0bkp0871-p-17471.html",
+        "sourceTitle": "Router-switch CR5B0BKP0871",
+        "configurations": [
+          {
+            "lineCardFamily": "LPUF-240",
+            "population": "full",
+            "typicalW": 4110,
+            "maxW": 6080
+          },
+          {
+            "lineCardFamily": "LPUF-480",
+            "population": "full",
+            "typicalW": 4770,
+            "maxW": 7110
+          },
+          {
+            "lineCardFamily": "LPUI-1T",
+            "population": "full",
+            "typicalW": 6520,
+            "maxW": 9500
+          }
+        ],
+        "status": "candidate-secondary-evidence",
+        "note": "Official identity indexed but official matched configuration power table not retrieved. Regional reseller pages contain X8 versus X8A inconsistencies. Do not assign a universal device default or divide totals by eight."
+      }
+    }
+  },
+  "componentEvidence": [
+    {
+      "model": "CR8DIPU1T2CB",
+      "type": "IPU",
+      "typicalW": 144.2,
+      "sourceUrl": "https://info.support.huawei.com/info-finder/vue/en/enterprise/openSearch?keyword=CR8DIPU1T2CB",
+      "sourceTitle": "Huawei Hardware Center",
+      "evidence": "IPU-1T2-B typical 144.2 W; do not treat as chassis base.",
+      "status": "official-indexed"
+    },
+    {
+      "model": "CR8DE1KB00M1",
+      "type": "PIC",
+      "typicalW": 59,
+      "sourceUrl": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/routers/netengine-8000-pid-252772223/hardwarecenter?keyword=03034YNM&productModel=CR8DE1KB00M1",
+      "sourceTitle": "Huawei Hardware Center",
+      "evidence": "Typical power consumption 59 W.",
+      "status": "official-indexed",
+      "compatibleModels": [
+        "huawei-ne8000-m8",
+        "huawei-ne8000-m14"
+      ],
+      "compatibilitySourceUrls": [
+        "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/e9dd06e260b64df683f6221fc8442cbf/M3T1A590N1251851159872295065/NetEngine%208000%20M8%20Universal%20Service%20Router%20Datasheet.pdf",
+        "https://info.support.huawei.com/info-finder/vue/en/enterprise/openSearch?area=link&group_name=%E7%A1%AC%E4%BB%B6%E5%9B%BE%E8%B0%B1_%E8%B7%AF%E7%94%B1%E5%99%A8_V800R013C00_EN&keyword=CR8B0BKPDCM1&subseries=NetEngine+8000+M14&version=V800R021C00SPC100"
+      ],
+      "compatibilityEvidenceClass": "official-reference-BOM",
+      "footprintStatus": "unknown",
+      "footprintNote": "Neither one nor two occupied flexible slots was established. Single-layer product name alone cannot establish slot footprint. No slotUnits supplied; exclude from automatic fill-all-slot calculation until verified."
+    },
+    {
+      "model": "CR8D00L4XFC1",
+      "type": "PIC",
+      "typicalW": 14.27,
+      "sourceUrl": "https://www.telecomate.com/cr8d00l4xfc1/",
+      "corroboratingUrl": "https://www.thunder-link.com/cr8d00l4xfc1.html",
+      "sourceTitle": "Telecomate / Thunder-link",
+      "evidence": "4x10GE SFP+ PIC occupies one flexible slot; both reseller tables give 14.27 W typical; mapped to M8 and M14.",
+      "status": "secondary-crosschecked",
+      "note": "Card data alone cannot establish total consumption without chassis base.",
+      "compatibleModels": [
+        "huawei-ne8000-m8",
+        "huawei-ne8000-m14"
+      ],
+      "slotUnits": 1,
+      "compatibilitySourceUrl": "https://www.telecomate.com/cr8d00l4xfc1/",
+      "compatibilityCorroboratingUrl": "https://huatelecom.com/products/huawei-cr8d00l4xfc1-interface-card",
+      "compatibleChassis": [
+        "CR8BM8BKPDC1",
+        "CR8BM8BKPAC1",
+        "CR8B0BKPACC2",
+        "CR8B0BKPDCC1",
+        "CR8B0BKPACC1"
+      ],
+      "compatibilityEvidenceClass": "secondary-crosschecked",
+      "footprintEvidence": "One flexible card slot per reseller Basic function row."
+    }
+  ],
+  "airflowFollowup": {
+    "m8": {
+      "status": "not-primary-verified-in-followup",
+      "secondaryDirection": "left-to-right",
+      "sourceUrl": "https://www.madeinchina.com/amp/mall/show-Enterprise-Network-Router-Netengine-8000-M8-Integrated-Chassis-Components_896928.html",
+      "note": "CR8BM8BKPDC1/CR8BM8BKPAC1 table gives left-to-right. Other fan variants exist; do not silently use for every chassis."
+    },
+    "x4": {
+      "status": "not-primary-verified-in-followup",
+      "secondaryDirection": "front-to-back",
+      "sourceUrl": "https://hua-links.com/product/huawei-ne8000-x4-dc/"
+    },
+    "x8a": {
+      "status": "unknown",
+      "note": "No explicit model-matched vendor airflow direction retrieved."
+    }
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "retrievedDate": "2026-10-08",
+  "assets": [
+    {
+      "modelId": "C1121-8PLTEP",
+      "catalogModel": "Cisco C1121-8PLTEP",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/c1121-8pltep-rear-ebay.jpg",
+      "dimensions": {
+        "width": 1600,
+        "height": 1199
+      },
+      "sourcePageUrl": "https://www.ebay.com/itm/236574126807",
+      "directImageUrl": "https://i.ebayimg.com/images/g/uJ8AAeSwbKlpYfXV/s-l1600.jpg",
+      "face": "rear",
+      "exactModel": true,
+      "exactModelBasis": "Printed C1121-8PLTEP on I/O face; underside PID C1121-8PLTEP V01 in matching seller gallery.",
+      "imageType": "photograph",
+      "observedColors": "Silver/gray body, yellow port outlines. P-LTEA-EA cellular module is optional.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "StableIT Networks seller photograph; visible watermark. No open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 75,
+        "top": 415,
+        "right": 1568,
+        "bottom": 820
+      },
+      "identityEvidenceImage": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/c1121-8pltep-label-ebay.jpg"
+    },
+    {
+      "modelId": "1941",
+      "catalogModel": "Cisco 1941",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/1941-front.jpg",
+      "dimensions": {
+        "width": 640,
+        "height": 480
+      },
+      "sourcePageUrl": "https://business.currys.co.uk/catalogue/computing/servers-networking/networking/modem-routers/cisco-1941-router-desktop-rack-mountable/P139399P",
+      "directImageUrl": "https://cdn.cs.1worldsync.com/87/84/8784c72d-2aa5-40a2-ab87-d6611fedc4ee.jpg",
+      "face": "front",
+      "exactModel": true,
+      "exactModelBasis": "Exact CISCO1941/K9-RF product listing; plain non-wireless bezel consistent with official Cisco 1941 datasheet.",
+      "imageType": "manufacturer-style product image",
+      "observedColors": "Black/dark graphite bezel with teal ventilation grille.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "Distributed through 1WorldSync product-content CDN; image owner/license not explicitly identified; no open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 32,
+        "top": 166,
+        "right": 608,
+        "bottom": 314
+      }
+    },
+    {
+      "modelId": "2911/K9",
+      "catalogModel": "Cisco 2911/K9",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/2911-rear.jpg",
+      "dimensions": {
+        "width": 1000,
+        "height": 1000
+      },
+      "sourcePageUrl": "https://www.dougdeals.com/cisco-2911-cisco2911-k9-v07-integrated-services-router/",
+      "directImageUrl": "https://cdn11.bigcommerce.com/s-1ygf19te2/images/stencil/1280x1280/products/52418/239577/v28o014-3__53951.1667482647.jpg",
+      "face": "rear",
+      "exactModel": true,
+      "exactModelBasis": "Cisco 2911 label visible; exactly three copper GE sockets and four blank EHWIC slots match primary hardware guide.",
+      "imageType": "photograph",
+      "observedColors": "Silver metal I/O face, dark graphite chassis, yellow data-port outlines.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "DougDeals product photograph. No open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 14,
+        "top": 375,
+        "right": 992,
+        "bottom": 602
+      }
+    },
+    {
+      "modelId": "3925E",
+      "catalogModel": "Cisco 3925E",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/3925e-front.jpg",
+      "dimensions": {
+        "width": 500,
+        "height": 500
+      },
+      "sourcePageUrl": "https://www.router-switch.com/cisco3925e-k9-p-1554.html",
+      "directImageUrl": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/r/o/routers-cisco-3925e-router.jpg",
+      "face": "front",
+      "exactModel": true,
+      "exactModelBasis": "Exact CISCO3925E/K9 source product listing. Shared 3900-series front bezel does not independently display E model/SPE; identification rests on exact listing.",
+      "imageType": "manufacturer-style product image",
+      "observedColors": "Black/dark graphite chassis, teal ventilation grille; dual AC supply view.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "Router-Switch product image; no open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 20,
+        "top": 155,
+        "right": 480,
+        "bottom": 316
+      }
+    },
+    {
+      "modelId": "3945E",
+      "catalogModel": "Cisco 3945E",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/3945e-rear.jpg",
+      "dimensions": {
+        "width": 1600,
+        "height": 1280
+      },
+      "sourcePageUrl": "https://sklep.comel-it.com/pl/products/cisco3945e-k9-6503.html",
+      "directImageUrl": "https://sklep.comel-it.com/hpeciai/8aaf18f1b0001b5d1a533747423342fb/pol_pl_CISCO3945E-K9-SPE250-4xGE-2x1G-RJ45-2x1G-RJ45-SFP-combo-3x-EHWIC-4x-SM-3x-DSP-256MB-FLASH-1GB-DRAM-opr-IP-Base-1-4Gbps-Cisco-ISR-G2-Router-6503_3.jpg",
+      "face": "rear",
+      "exactModel": true,
+      "exactModelBasis": "C3900-SPE250/K9 label visible, Cisco 3945 chassis label, four service-module bays. Primary guide maps SPE250 to 3945E.",
+      "imageType": "manufacturer-style product image",
+      "observedColors": "Silver metal I/O face with yellow GE outlines and blue console outline.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "Comel-IT product image; no open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 40,
+        "top": 408,
+        "right": 1561,
+        "bottom": 870
+      }
+    },
+    {
+      "modelId": "ASR1001",
+      "catalogModel": "Cisco ASR 1001",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/asr1001-front-only.jpg",
+      "dimensions": {
+        "width": 2000,
+        "height": 2000
+      },
+      "sourcePageUrl": "https://www.piospartslap.de/Cisco-ASR1001-68-3376-Cisco-ASR-1000-Series-Router-4x-SFP-Rack-Ears",
+      "directImageUrl": "https://www.piospartslap.de/media/image/product/17488/lg/cisco-asr1001-68-3376-cisco-asr-1000-series-router-4x-sfp-rack-ears~2.jpg",
+      "face": "front",
+      "exactModel": true,
+      "exactModelBasis": "Cisco ASR 1001 label visible (no X/HX); four SFP data sockets and original MGMT/CON/AUX layout match primary ASR1001 guide.",
+      "imageType": "photograph",
+      "observedColors": "Silver metal chassis, yellow markings around four SFP ports.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "Piospartslap product photograph; no open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 427,
+        "top": 812,
+        "right": 1571,
+        "bottom": 1196
+      }
+    },
+    {
+      "modelId": "ASR1001-X",
+      "catalogModel": "Cisco ASR 1001-X",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/asr1001-x-front.jpg",
+      "dimensions": {
+        "width": 1100,
+        "height": 1100
+      },
+      "sourcePageUrl": "https://www.techbuyer.com/de/cisco-asr-1001-x-aggregation-services-router-asr1001-x-167668",
+      "directImageUrl": "https://www.techbuyer.com/media/catalog/product/A/S/ASR1001_X_cisco_aggregation_services_router_1_7ed5.jpg",
+      "face": "front",
+      "exactModel": true,
+      "exactModelBasis": "Cisco ASR1001-X label visible; six yellow GE + two orange TE ports, NIM and SPA blank bays match primary guide.",
+      "imageType": "photograph",
+      "observedColors": "Silver metal chassis, yellow 1GE markings, orange 10GE markings.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "Techbuyer product photograph; no open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 133,
+        "top": 449,
+        "right": 967,
+        "bottom": 650
+      }
+    },
+    {
+      "modelId": "ISR4331",
+      "catalogModel": "Cisco ISR 4331",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/isr4331-rear.jpg",
+      "dimensions": {
+        "width": 2400,
+        "height": 1800
+      },
+      "sourcePageUrl": "https://www.shi.com/product/29402706/Cisco-Integrated-Services-Router-4331",
+      "directImageUrl": "https://cdn.cs.1worldsync.com/bd/3f/bd3f0a43-f1cb-4ca9-a985-d6d97d1e2c94.jpg",
+      "face": "rear",
+      "exactModel": true,
+      "exactModelBasis": "Cisco 4331 label visible; two NIM bays and one SM bay, correct GE0/0/0 combo / GE0/0/1 copper / GE0/0/2 SFP.",
+      "imageType": "manufacturer-style product image",
+      "observedColors": "Silver metal I/O face, dark graphite chassis, yellow data-port outlines.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "Distributed through 1WorldSync product-content CDN; image owner/license not explicitly identified; no open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 120,
+        "top": 717,
+        "right": 2280,
+        "bottom": 1083
+      }
+    },
+    {
+      "modelId": "ISR4431",
+      "catalogModel": "Cisco ISR 4431",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/isr4431-rear.jpg",
+      "dimensions": {
+        "width": 1600,
+        "height": 1280
+      },
+      "sourcePageUrl": "https://sklep.comel-it.com/pl/products/isr4431-k9-6061.html",
+      "directImageUrl": "https://sklep.comel-it.com/hpeciai/d4a0b986e7a897622dfa92e83542137d/pol_pl_ISR4431-K9-4x-1GE-RJ45-SFP-Combo-3x-NIM-8G-FLASH-4G-DRAM-opr-IP-Base-500Mbps-Cisco-ISR-4000-Router-6061_1.jpg",
+      "face": "rear",
+      "exactModel": true,
+      "exactModelBasis": "Cisco 4431 label visible; four copper/four SFP data sockets, three NIM bays match primary datasheet.",
+      "imageType": "manufacturer-style product image",
+      "observedColors": "Silver metal I/O face, dark graphite chassis, yellow data-port outlines.",
+      "reuseCopyright": {
+        "openLicenseFound": false,
+        "notes": "Comel-IT product image; no open reuse license found."
+      },
+      "recommended": true,
+      "subjectBoundsApproxPx": {
+        "left": 31,
+        "top": 508,
+        "right": 1563,
+        "bottom": 772
+      }
+    }
+  ],
+  "alternateAssets": [
+    {
+      "modelId": "3945E",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/3945e-front.jpg",
+      "face": "front",
+      "sourcePageUrl": "https://www.router-switch.com/cisco3945e-k9-p-1553.html",
+      "directImageUrl": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/r/o/routers-cisco3945e.jpg",
+      "exactModel": true,
+      "notes": "Exact listing; shared 3900-series front does not show SPE250.",
+      "dimensions": {
+        "width": 600,
+        "height": 480
+      },
+      "reuseCopyright": {
+        "openLicenseFound": false
+      }
+    },
+    {
+      "modelId": "ISR4431",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/isr4431-front.jpg",
+      "face": "front",
+      "sourcePageUrl": "https://www.esnetwork.de/en/product-page/cisco-isr4431-axv-k9",
+      "directImageUrl": "https://static.wixstatic.com/media/fb24a5_e516ed48f5cd41ed8ca56dcb6808c8a9~mv2.jpg/v1/fill/w_1600,h_1200,al_c,q_85,enc_avif,quality_auto/fb24a5_e516ed48f5cd41ed8ca56dcb6808c8a9~mv2.jpg",
+      "exactModel": true,
+      "notes": "Exact listing; front Cisco 4400-series branding shared with other 4400 models.",
+      "dimensions": {
+        "width": 1600,
+        "height": 1200
+      },
+      "reuseCopyright": {
+        "openLicenseFound": false
+      }
+    },
+    {
+      "modelId": "ASR1001",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/asr1001-rear.jpg",
+      "face": "rear",
+      "sourcePageUrl": "https://www.piospartslap.de/Cisco-ASR1001-68-3376-Cisco-ASR-1000-Series-Router-4x-SFP-Rack-Ears",
+      "directImageUrl": "https://www.piospartslap.de/media/image/product/17488/lg/cisco-asr1001-68-3376-cisco-asr-1000-series-router-4x-sfp-rack-ears~3.jpg",
+      "exactModel": true,
+      "notes": "Original ASR1001 twin AC power supplies.",
+      "dimensions": {
+        "width": 2000,
+        "height": 2000
+      },
+      "reuseCopyright": {
+        "openLicenseFound": false
+      }
+    }
+  ],
+  "unresolvedExactModelImages": [],
+  "rejectedCandidates": [
+    {
+      "modelId": "C1121-8PLTEP",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/c1121-8pltep-router-switch.jpg",
+      "sourcePageUrl": "https://www.router-switch.com/c1121-8pltep.html",
+      "exactModel": false,
+      "reason": "Generic antenna-equipped ISR bezel conflicts with exact C1121-8PLTEP manual and verified seller photograph; do not use."
+    },
+    {
+      "modelId": "C1121-8PLTEP",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/c1121-8pltep-connection.jpg",
+      "sourcePageUrl": "https://www.connection.com/product/cisco-integrated-service-router-isr-1100-8p-dual-ge-sfp-router/c1121-8pltep/41181319",
+      "exactModel": false,
+      "reason": "Stack of three different ISR models; not an individual exact-model photo."
+    }
+  ],
+  "downloadNotes": [
+    "Official Cisco image/PDF endpoints returned Site Unavailable HTML in this runtime; factual color images therefore use exact-model product-content/reseller sources.",
+    "Source image bytes are preserved; no image generation, recoloring, model substitution, or edits were performed."
+  ],
+  "portManifestPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/cisco-port-manifest.json"
+}

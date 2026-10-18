@@ -1,0 +1,95 @@
+{
+  "cisco-1941": {
+    "status": "verified",
+    "basis": "Vendor specified typical consumption; no modules",
+    "configuration": "Cisco1941, no expansion modules; no externalPoE endpoint load",
+    "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/1900-series-integrated-services-routers-isr/data_sheet_c78_556319.html",
+    "sourceTitle": "Cisco 1941 Series Integrated Services Routers Data sheet",
+    "section": "Product Specifications / Power Specifications / Typical Power (No Modules)",
+    "note": "35W is the vendor typical no-module router consumption, not a maximum. The110W row explicitly says maximum power capacity and is not imported as actual consumption. OptionalPoE endpoints and modules require separate budget.",
+    "typicalW": 35
+  },
+  "cisco-2911-k9": {
+    "status": "verified",
+    "basis": "Vendor specified typical consumption; no modules",
+    "configuration": "Cisco2911/K9 base chassis, no optional modules or powered endpoints",
+    "sourceUrl": "https://www.cisco.com/c/en_in/products/collateral/routers/2900-series-integrated-services-routers-isr/data_sheet_c78_553896.html",
+    "sourceTitle": "Cisco 2900 Series Integrated Services Routers Data Sheet",
+    "section": "Power Specifications / Cisco2911 column / Typical Power (No Modules)",
+    "note": "50W is no-module typical; not a configured-system maximum. Maximum power with AC supply210W and PoE platform250W are supply/configuration-dependent envelope values; excluded from maxW pending actual installed module/PSU configuration. ExternalPoEload excluded.",
+    "typicalW": 50
+  },
+  "cisco-3925e": {
+    "status": "verified",
+    "basis": "Cisco-authored datasheet typical no-module consumption; archived primary document mirrored externally",
+    "configuration": "Cisco3925E, originalSPE200/250 respectively; no optional modules",
+    "sourceUrl": "https://www.zsis.hr/UserDocsImages/Sigurnost/pdfs/ISR_3900_Series.pdf",
+    "sourceTitle": "Cisco 3900 Series Integrated Services Routers Data Sheet (Cisco authored2017 PDF mirrored byZSIS)",
+    "section": "Page13, Power Specifications, exact Cisco3925E column",
+    "note": "Primary manufacturer-authored Cisco datasheet; originalCiscoHTML returned404 and CiscoPDF unavailable. Typical excludesmodules. ACmaximum row420W is configuration-dependent platform/supply envelope and not used as measured/configured consumption. Do not substitute3925/3945 non-E100/105W values. EndpointPoE excluded.",
+    "typicalW": 150
+  },
+  "cisco-3945e": {
+    "status": "verified",
+    "basis": "Cisco-authored datasheet typical no-module consumption; archived primary document mirrored externally",
+    "configuration": "Cisco3945E, originalSPE200/250 respectively; no optional modules",
+    "sourceUrl": "https://www.zsis.hr/UserDocsImages/Sigurnost/pdfs/ISR_3900_Series.pdf",
+    "sourceTitle": "Cisco 3900 Series Integrated Services Routers Data Sheet (Cisco authored2017 PDF mirrored byZSIS)",
+    "section": "Page13, Power Specifications, exact Cisco3945E column",
+    "note": "Primary manufacturer-authored Cisco datasheet; originalCiscoHTML returned404 and CiscoPDF unavailable. Typical excludesmodules. ACmaximum row540W is configuration-dependent platform/supply envelope and not used as measured/configured consumption. Do not substitute3925/3945 non-E100/105W values. EndpointPoE excluded.",
+    "typicalW": 158
+  },
+  "cisco-isr-4331": {
+    "status": "verified",
+    "basis": "Vendor specified typical consumption; no modules",
+    "configuration": "CiscoISR4331 base chassis, no optionalmodules, noPoE endpoints",
+    "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+    "sourceTitle": "Cisco 4000 Family Integrated Services Router Data Sheet",
+    "section": "Table5 / Power specifications / Typical power (no modules) / Cisco4331 column",
+    "note": "Typical base-system value only.250W ACmaximum/platform supply row is not used as actual configured draw. NIM/SM-X/ISC modules, powered endpoints andPoEboost can materially change consumption; power and module configuration required for maximum budget.",
+    "typicalW": 42
+  },
+  "cisco-isr-4431": {
+    "status": "verified",
+    "basis": "Vendor specified typical consumption; no modules",
+    "configuration": "CiscoISR4431 base chassis, no optionalmodules, noPoE endpoints",
+    "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+    "sourceTitle": "Cisco 4000 Family Integrated Services Router Data Sheet",
+    "section": "Table5 / Power specifications / Typical power (no modules) / Cisco4431 column",
+    "note": "Typical base-system value only.250W ACmaximum/platform supply row is not used as actual configured draw. NIM/SM-X/ISC modules, powered endpoints andPoEboost can materially change consumption; power and module configuration required for maximum budget.",
+    "typicalW": 65
+  },
+  "cisco-asr-1001": {
+    "status": "verified",
+    "basis": "Vendor specified maximum AC input power consumption",
+    "configuration": "ASR1001 AC-powered reference configuration; integratedRP/ESP/SIP; vendor chassismaximum envelope",
+    "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-spfy.html",
+    "sourceTitle": "Cisco ASR1000 Series Router Hardware Installation Guide \u2014 Router Specifications",
+    "section": "Table31 CiscoASR1001 Router Specifications / Power consumption",
+    "note": "Vendor specifies ACmaximum471W, DCmaximum500W, output400W. maxW usesACinput; NOT400W PSUoutput and NOT doubled for1+1PSUs. This is manufacturermaximumconsumption envelope, not live measured draw. DCvariant mustuse500W instead; typical notpublished in citedsection.",
+    "maxW": 471,
+    "maxDcW": 500
+  },
+  "cisco-asr-1001-x": {
+    "status": "verified",
+    "basis": "Vendor specified maximum AC input power consumption; corroborated ASR1000series datasheet Powerconsumption row",
+    "configuration": "ASR1001-X AC-powered chassis, vendor maximumconsumption envelope",
+    "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_spec.html",
+    "sourceTitle": "Cisco ASR1001-X Router Hardware Installation Guide \u2014 Router Specifications",
+    "section": "Table31 CiscoASR1001-X Router Specifications / Power consumption",
+    "note": "ExactASR1001-Xtable explicitly specifies maximumAC250W,DC242W. maxWusesACconsumption row, not the outputrating row (also250W). Do notsum redundantPSUs. Typical notprovided. The same document contains otherASRchassis tables with1600\u20134000W; those valuesmustnotbeappliedto1001-X.",
+    "maxW": 250,
+    "maxDcW": 242
+  },
+  "cisco-c1121-8pltep": {
+    "status": "unknown",
+    "basis": "AC/PDU input consumption not verified; published device consumption excludes external adapter loss",
+    "configuration": "C1121-8PLTEP, nonWiFi8-portLTE family; optionalPoE and radio configuration notspecified",
+    "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html",
+    "sourceTitle": "Cisco1000 Series Integrated Services Routers Data Sheet",
+    "section": "Table15 Mechanical specifications forC112x-8P / C112x(X)-8PLTEP column",
+    "note": "Vendor publishes24.6W maximum excludingexternalPSloss; not valid asAC/PDUinput.66W normaladapter and150W optionalPoEadapter are outputcapacities, notactualdraw. PoEpoweredendpoint consumption mustbeadded usingactualconfiguration.21.8W is C1101-4PLTEP inTable29 and MUSTNOTbeusedforC1121-8PLTEP. No typicalorACinputmaximum verified.",
+    "deviceOnlyMaxW": 24.6,
+    "deviceOnlyMeasurementBoundary": "Router DC input, excludes external ACadapterloss; optionalPoEendpointbudget notincluded"
+  }
+}

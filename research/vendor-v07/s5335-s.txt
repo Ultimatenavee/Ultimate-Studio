@@ -1,0 +1,696 @@
+                                                                                                               Brochure
+
+
+
+
+ CloudEngine S5335-S Series Switches
+ Brochure
+ Huawei CloudEngine S5335-S series are standard gigabit Ethernet switches that provide all
+ GE downlink ports and 10GE uplink ports.
+
+
+
+
+Product Overview
+CloudEngine S5335-S series switches are developed based on next-generation high-performing hardware and the Huawei
+Versatile Routing Platform (VRP). CloudEngine S5335-S switches support simplified operations and maintenance (O&M), and
+flexible Ethernet networking. It also provides enhanced Layer 3 features and mature IPv6 features. CloudEngine S5335-S
+switches can be used in various scenarios. For example, it can be used as an access or aggregation switch on a campus
+network or as an access switch in a data center.
+
+
+
+Models and Appearances
+The following models are available in the CloudEngine S5335-S series.
+
+ Models and Appearances                   Description
+                                             24 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports
+                                             1+1 power supply backup
+      CloudEngine S5335-S24T4X               Forwarding performance: 96 Mpps
+                                             Switching capacity: 128 Gbps/336 Gbps
+
+                                             24 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports
+                                             1+1 power supply backup
+                                             PoE+
+      CloudEngine S5335-S24P4X
+                                             Forwarding performance: 96 Mpps
+                                             Switching capacity: 128 Gbps/336 Gbp
+
+                                             48 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports
+                                             1+1 power supply backup
+                                             Forwarding performance: 132 Mpps
+      CloudEngine S5335-S48T4X
+                                             Switching capacity: 176 Gbps/432 Gbps
+
+                                             48 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports
+                                             1+1 power supply backup
+                                             PoE+
+      CloudEngine S5335-S48P4X
+                                             Forwarding performance: 132 Mpps
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                              1
+ Models and Appearances                       Description
+                                                 Switching capacity: 176 Gbps/432 Gbps
+
+                                                 24 x GE SFP ports, 8 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports
+                                                 1+1 power supply backup
+                                                 Forwarding performance: 108 Mpps
+      CloudEngine S5335-S32ST4X
+                                                 Switching capacity: 144 Gbps/432 Gbps
+
+                                                 48 x GE SFP ports, 4 x 10 GE SFP+ ports
+                                                 1+1 power supply backup
+                                                 Forwarding performance: 132 Mpps
+       CloudEngine S5335-S48S4X
+                                                 Switching capacity: 176 Gbps/432 Gbps
+
+
+
+
+Features and Highlights
+Powerful Service Processing Capability and Multiple Security Control Mechanisms
+   CloudEngine S5335-S supports a broad set of Layer 2/Layer 3 multicast protocols, such as PIM SM, PIM DM, PIM SSM,
+MLD, and IGMP snooping. This capability is ideal for high-definition video surveillance and video conferencing access.
+    CloudEngine S5335-S provides multiple Layer 3 features including OSPF, IS-IS, BGP, and VRRP, meeting enterprises'
+access and aggregation service needs and enabling a variety of voice, video, and data applications.
+    CloudEngine S5335-S supports MAC address authentication, 802.1X authentication, and Portal authentication, and
+implements dynamic delivery of policies (VLAN, QoS, and ACL) to users.
+    CloudEngine S5335-S provides a series of mechanisms to defend against DoS attacks and user-targeted attacks. DoS
+attacks are targeted at switches and include SYN flood, Land, Smurf, and ICMP flood attacks. User-targeted attacks include
+bogus DHCP server attacks, IP/MAC address spoofing, DHCP request flood, and changing of the DHCP CHADDR value.
+     CloudEngine S5335-S sets up and maintains a DHCP snooping binding table, and discards the packets that do not match
+the table entries. The DHCP snooping trusted port feature ensures that users connect only to the authorized DHCP server.
+    CloudEngine S5335-S supports strict ARP learning, which protects a network against ARP spoofing attacks to ensure that
+users can connect to the Internet normally.
+
+
+Easy O&M
+    CloudEngine S5335-S supports Super Virtual Fabric (SVF), which innovatively virtualizes the "core/aggregation switch +
+access switch + AP" into one logical device. This simplifies device management and achieves plug-and-play for access switches
+and APs. In addition, CloudEngine S5335-S supports service configuration templates. The templates are configured on core
+devices and automatically delivered to access devices, enabling centralized control, simplified service configuration, and flexible
+configuration adjustment. CloudEngine S5335-S functions as a client in an SVF system.
+     CloudEngine S5335-S supports Huawei Easy Operation, a solution that provides zero-touch deployment, replacement of
+faulty devices without additional configuration, USB-based deployment, batch device configuration, and batch remote upgrade.
+The capabilities facilitate device deployment, upgrade, service provisioning, and other management and maintenance
+operations, and also greatly reduce O&M costs. CloudEngine S5335-S can be managed using SNMP v1/v2c/v3, CLI, web-
+based network management system, or SSH v2.0. Additionally, it supports RMON, multiple log hosts, port traffic statistics
+collection, and network quality analysis, which facilitate network optimization and reconstruction.
+    CloudEngine S5335-S supports the Sampled Flow (sFlow) function. It uses a method defined in the sFlow standard to
+sample traffic passing through it and sends sampled traffic to the collector in real time. The collected traffic statistics are used to
+generate statistical reports, helping enterprises maintain their networks.
+
+
+Multiple Reliability Mechanisms
+     CloudEngine S5335-S is equipped with two pluggable power modules that work in 1+1 redundancy backup mode. Mixed
+installation of AC and DC power modules is supported, allowing for flexible configuration of AC or DC power modules according
+to service requirements.
+   In addition to supporting traditional Spanning Tree Protocol (STP), Rapid Spanning Tree Protocol (RSTP), and Multiple
+Spanning Tree Protocol (MSTP), CloudEngine S5335-S is also designed with Huawei-developed Smart Ethernet Protection
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                                          2
+(SEP) technology and the industry's latest Ethernet Ring Protection Switching (ERPS) technology. SEP is a ring protection
+protocol specific to the Ethernet link layer, and applies to various ring network topologies, such as open ring topology, closed
+ring topology, and cascading ring topology. This protocol is reliable, easy to maintain, and implements fast protection switching
+within 50 ms. ERPS is defined in ITU-T G.8032, and it implements millisecond-level protection switching based on traditional
+Ethernet MAC and bridging functions.
+   CloudEngine S5335-S supports Smart Link, which implements backup of uplinks. One CloudEngine S5335-S switch can
+connect to multiple aggregation switches through multiple links, significantly improving reliability of access devices.
+    CloudEngine S5335-S supports Ethernet OAM (IEEE 802.3ah/802.1ag) to fast-detect link faults.
+
+
+Intelligent O&M
+     CloudEngine S5335-S provides telemetry technology to collect device data in real time and send the data to Huawei
+campus network analyzer CampusInsight. The CampusInsight analyzes network data based on the intelligent fault identification
+algorithm, accurately displays the real-time network status, effectively demarcates and locates faults in a timely manner, and
+identifies network problems that affect user experience, accurately guaranteeing user experience.
+     CloudEngine S5335-S supports a variety of intelligent O&M features for audio and video services, including the enhanced
+Media Delivery Index (eMDI). With this eDMI function, the switch can function as a monitored node to periodically conduct
+statistics and report audio and video service indicators to the CampusInsight platform. In this way, the CampusInsight platform
+can quickly demarcate audio and video service quality faults based on the results of multiple monitored nodes.
+
+
+PoE Function
+     Perpetual PoE: When a PoE switch is abnormal Power-off or the software version is upgraded, the power supply to PDs is
+not interrupted. This capability ensures that PDs are not powered off during the switch reboot.
+     Fast PoE: PoE switches can supply power to PDs within seconds after they are powered on. This is different from
+common switches that generally take 1 to 3 minutes to start to supply power to PDs. When a PoE switch reboots due to a power
+failure, the PoE switch continues to supply power to the PDs immediately after being powered on without waiting until it finishes
+reboot. This greatly shortens the power failure time of PDs.
+
+
+Mature IPv6 Technologies
+    CloudEngine S5335-S uses the mature, stable VRP platform and supports IPv4/IPv6 dual stack, IPv6 RIPng, and IPv6
+over IPv4 tunnels (including manual, 6-to-4, and ISATAP tunnels).
+    CloudEngine S5335-S can be deployed on a pure IPv4 network, a pure IPv6 network, or a shared IPv4/IPv6 network,
+helping achieve IPv4-to-IPv6 transition.
+
+
+OPS
+    CloudEngine S5335-S supports Open Programmability System (OPS), an open programmable system based on the
+Python language. IT administrators can program the O&M functions of a CloudEngine S5335-S switch through Python scripts to
+quickly innovate functions and implement intelligent O&M.
+
+
+Intelligent Upgrade
+    CloudEngine S5335-S supports the intelligent upgrade feature. Specifically, CloudEngine S5335-S obtains the version
+upgrade path and downloads the newest version for upgrade from the Huawei Online Upgrade Platform (HOUP). The entire
+upgrade process is highly automated and achieves one-click upgrade. In addition, preloading the version is supported, which
+greatly shortens the upgrade time and service interruption time.
+    The intelligent upgrade feature greatly simplifies device upgrade operations and makes it possible for the customer to
+upgrade the version independently. This greatly reduces the customer's maintenance costs. In addition, the upgrade policies on
+the HOUP platform standardize the upgrade operations, which greatly reduces the risk of upgrade failures.
+
+
+
+Product Specifications
+ Item                     CloudEngine S5335-                 CloudEngine S5335-                 CloudEngine S5335-
+                          S24P4X                             S24T4X                             S32ST4X
+
+ Fixed port               24 x 10/100/1000Base-T ports,      24 x 10/100/1000Base-T ports,      24 x GE SFP ports, 8 x
+                                                                                                10/100/1000Base-T ports, 4 x
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                                        3
+ Item                    CloudEngine S5335-               CloudEngine S5335-               CloudEngine S5335-
+                         S24P4X                           S24T4X                           S32ST4X
+                         4 x 10 GE SFP+ ports             4 x 10 GE SFP+ ports             10 GE SFP+ ports
+
+ Dimensions (H x W x     43.6 mm x 442 mm x 420 mm        43.6 mm x 442 mm x 420 mm        43.6 mm x 442 mm x 420 mm
+ D)
+
+ Chassis height          1U                               1U                               1U
+
+ Chassis weight          7.39 kg                          7.21 kg                          7.47 kg
+ (including packaging)
+
+ Power supply type       1000 W AC PoE                       60 W AC                         60 W AC
+                                                             1000 W DC                       1000 W DC
+
+ Rated voltage range     AC input (1000 W AC PoE):           AC input (60 W AC ): 100 V      AC input (60 W AC ): 100 V
+                         100 V AC to 240 V AC, 50/60          AC to 240 V AC, 50/60 Hz         AC to 240 V AC, 50/60 Hz
+                         Hz                                  DC input (1000 W DC): -48       DC input (1000 W DC): -48
+                                                              VDC to -60 V DC                  VDC to -60 V DC
+
+ Maximum voltage            AC input (1000 W AC             AC input (60 W AC ): 90 V       AC input (60 W AC ): 90 V
+ range                       PoE): 90 V AC to 290 V           AC to 264 V AC, 47 Hz to         AC to 264 V AC, 47 Hz to 63
+                             AC, 45 Hz to 65 Hz               63 Hz                            Hz
+                            High-voltage DC input           High-voltage DC input (60       High-voltage DC input (60 W
+                             (1000 W AC PoE): 190 V           W AC): 190 V DC to 290 V         AC): 190 V DC to 290 V DC
+                             DC to 290 V DC (meeting          DC (meeting 240 V high-          (meeting 240 V high-voltage
+                             240 V high-voltage DC            voltage DC certification)        DC certification)
+                             certification)                  DC input (1000 W DC): -36       DC input (1000 W DC): -36
+                                                              V DC to -72V DC                  V DC to -72V DC
+
+ Maximum power              65 W (without PD)            46 W                             66 W
+ consumption                847 W (with PD, PD power
+                             consumption of 720 W)
+
+ Noise                      Under normal temperature        Under normal temperature        Under normal temperature
+                             (sound power): 58.9dB (A)        (sound power): 58.9dB (A)        (sound power): 59.3dB (A)
+                            Under high temperature          Under high temperature          Under high temperature
+                             (sound power): 75dB (A)          (sound power): 75dB (A)          (sound power): 75.4dB (A)
+                            Under normal temperature        Under normal temperature        Under normal temperature
+                             (sound pressure): 43.8dB         (sound pressure): 43.8dB         (sound pressure): 44.2dB
+                             (A)                              (A)                              (A)
+
+ Long-term operating        0-1800 m altitude: 0°C to       0-1800 m altitude: 0°C to       0-1800 m altitude: 0°C to
+ temperature                 +50°C                            +50°C                            +50°C
+                            1800-5000 m altitude: The       1800-5000 m altitude: The       1800-5000 m altitude: The
+                             operating temperature            operating temperature            operating temperature
+                             reduces by 1ºC every time        reduces by 1ºC every time        reduces by 1ºC every time
+                             the altitude increases by        the altitude increases by        the altitude increases by 220
+                             220 m.                           220 m.                           m.
+
+ Short-term operating       0-1800 m altitude: -5°C to      0-1800 m altitude: -5°C to      0-1800 m altitude: -5°C to
+ temperature                 +55°C                            +55°C                            +55°C
+                            1800-5000 m altitude: The       1800-5000 m altitude: The       1800-5000 m altitude: The
+                             operating temperature            operating temperature            operating temperature
+                             reduces by 1ºC every time        reduces by 1ºC every time        reduces by 1ºC every time
+                             the altitude increases by        the altitude increases by        the altitude increases by 220
+                             220 m.                           220 m.                           m.
+
+ Storage temperature     -40°C to +70°C                   -40°C to +70°C                   -40°C to +70°C
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                                   4
+ Item                     CloudEngine S5335-                CloudEngine S5335-                CloudEngine S5335-
+                          S24P4X                            S24T4X                            S32ST4X
+
+ Relative humidity        5% to 95% (non-condensing)        5% to 95% (non-condensing)        5% to 95% (non-condensing)
+
+ Surge protection         ±7 kV in common mode              ±7 kV in common mode              ±7 kV in common mode
+ specification (service
+ port)
+
+ Surge protection         ±6 kV in differential mode, ±6       AC power port: ±6 kV in          AC power port: ±6 kV in
+ specification (power     kV in common mode                     differential mode, ±6 kV in       differential mode, ±6 kV in
+ port)                                                          common mode                       common mode
+                                                               DC power port: ±2 kV in          DC power port: ±2 kV in
+                                                                differential mode, ±4 kV in       differential mode, ±4 kV in
+                                                                common mode                       common mode
+
+ Heat dissipation         Air-cooled heat dissipation and   Air-cooled heat dissipation and   Air-cooled heat dissipation and
+                          intelligent speed adjustment      intelligent speed adjustment      intelligent speed adjustment
+
+
+
+
+ Item                     CloudEngine S5335-                CloudEngine S5335-                CloudEngine S5335-
+                          S48P4X                            S48S4X                            S48T4X
+
+ Fixed port               48 x 10/100/1000Base-T ports,     48 x GE SFP ports, 4 x 10 GE      48 x 10/100/1000Base-T ports,
+                          4 x 10 GE SFP+ ports              SFP+ ports                        4 x 10 GE SFP+ ports
+
+ Dimensions (H x W x      43.6 mm x 442 mm x 420 mm         43.6 mm x 442 mm x 420 mm         43.6 mm x 442 mm x 420 mm
+ D)
+
+ Chassis height           1U                                1U                                1U
+
+ Chassis weight           7.64 kg                           8.27 kg                           7.69 kg
+ (including packaging)
+
+ Power supply type        1000 W AC PoE                        150 W AC                          60 W AC
+                                                               1000 W DC                         1000 W DC
+
+ Rated voltage range      AC input (1000 W AC PoE):            AC input (150 W AC ): 100         AC input (60 W AC ): 100 V
+                          100 V AC to 240 V AC, 50/60           V AC to 240 V AC, 50/60            AC to 240 V AC, 50/60 Hz
+                          Hz                                    Hz                                DC input (1000 W DC): -48
+                                                               DC input (1000 W DC): -48          VDC to -60 V DC
+                                                                VDC to -60 V DC
+
+ Maximum voltage             AC input (1000 W AC PoE):        AC input (150 W AC ): 90 V        AC input (60 W AC ): 90 V
+ range                        90 V AC to 290 V AC, 45           AC to 264 V AC, 47 Hz to           AC to 264 V AC, 47 Hz to
+                              Hz to 65 Hz                       63 Hz                              63 Hz
+                             High-voltage DC input            DC input (1000 W DC): -36         High-voltage DC input (60
+                              (1000 W AC PoE): 190 V            V DC to -72V DC                    W AC): 190 V DC to 290 V
+                              DC to 290 V DC (meeting                                              DC (meeting 240 V high-
+                              240 V high-voltage DC                                                voltage DC certification)
+                              certification)                                                      DC input (1000 W DC): -36
+                                                                                                   V DC to -72V DC
+
+ Maximum power               77 W (without PD)             89 W                              59 W
+ consumption                 1661 W (with PD, PD
+                              power consumption of 1600
+                              W)
+
+ Noise                       Under normal temperature         Under normal temperature          Under normal temperature
+                              (sound power): 58.9dB (A)         (sound power): 61dB (A)            (sound power): 58.9dB (A)
+                             Under high temperature           Under high temperature            Under high temperature
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                                    5
+ Item                     CloudEngine S5335-                CloudEngine S5335-                 CloudEngine S5335-
+                          S48P4X                            S48S4X                             S48T4X
+                              (sound power): 75dB (A)            (sound power): 75.7dB (A)         (sound power): 75dB (A)
+                             Under normal temperature          Under normal temperature         Under normal temperature
+                              (sound pressure): 43.8dB           (sound pressure): 46dB (A)        (sound pressure): 43.8dB
+                              (A)                                                                  (A)
+
+ Long-term operating         0-1800 m altitude: 0°C to         0-1800 m altitude: 0°C to        0-1800 m altitude: 0°C to
+ temperature                  +50°C                              +50°C                             +50°C
+                             1800-5000 m altitude: The         1800-5000 m altitude: The        1800-5000 m altitude: The
+                              operating temperature              operating temperature             operating temperature
+                              reduces by 1ºC every time          reduces by 1ºC every time         reduces by 1ºC every time
+                              the altitude increases by          the altitude increases by         the altitude increases by
+                              220 m.                             220 m.                            220 m.
+
+ Short-term operating        0-1800 m altitude: -5°C to        0-1800 m altitude: -5°C to       0-1800 m altitude: -5°C to
+ temperature                  +55°C                              +55°C                             +55°C
+                             1800-5000 m altitude: The         1800-5000 m altitude: The        1800-5000 m altitude: The
+                              operating temperature              operating temperature             operating temperature
+                              reduces by 1ºC every time          reduces by 1ºC every time         reduces by 1ºC every time
+                              the altitude increases by          the altitude increases by         the altitude increases by
+                              220 m.                             220 m.                            220 m.
+
+ Storage temperature      -40°C to +70°C                    -40°C to +70°C                     -40°C to +70°C
+
+ Relative humidity        5% to 95% (non-condensing)        5% to 95% (non-condensing)         5% to 95% (non-condensing)
+
+ Surge protection         ±7 kV in common mode              NA                                 ±7 kV in common mode
+ specification (service
+ port)
+
+ Surge protection         ±6 kV in differential mode, ±6        AC power port: ±6 kV in          AC power port: ±6 kV in
+ specification (power     kV in common mode                      differential mode, ±6 kV in       differential mode, ±6 kV in
+ port)                                                           common mode                       common mode
+                                                                DC power port: ±2 kV in          DC power port: ±2 kV in
+                                                                 differential mode, ±4 kV in       differential mode, ±4 kV in
+                                                                 common mode                       common mode
+
+ Heat dissipation         Air-cooled heat dissipation and   Air-cooled heat dissipation and    Air-cooled heat dissipation and
+                          intelligent speed adjustment      intelligent speed adjustment       intelligent speed adjustment
+
+
+
+
+Service Features
+ Item                     Description
+
+ MAC address table        IEEE 802.1d compliance
+
+                          MAC address learning and aging
+
+                          Static, dynamic, and blackhole MAC address entries
+
+                          Packet filtering based on source MAC addresses
+
+ VLAN                     Guest VLAN and voice VLAN
+
+                          GVRP
+
+                          MUX VLAN
+
+                          VLAN assignment based on MAC addresses, protocols, IP subnets, policies, and ports
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                                     6
+ Item                  Description
+
+                       1: 1 and N: 1 VLAN mapping
+
+ Reliability           RRPP ring topology and RRPP multi-instance
+
+                       Smart Link tree topology and Smart Link multi-instance, providing millisecond-level protection
+                       switchover
+
+                       SEP
+
+                       STP (IEEE 802.1d), RSTP (IEEE 802.1w), and MSTP (IEEE 802.1s)
+
+                       ERPS (G.8032)
+
+                       BPDU protection, root protection, and loop protection
+
+ IP routing            Static route, RIPv1/v2, RIPng, OSPF, OSPFv3, ECMP, IS-IS, IS-ISv6, BGP, BGP4+, VRRP, and
+                       VRRP6
+
+ IPv6 features         Neighbor Discovery (ND)
+
+                       Path MTU (PMTU)
+
+                       IPv6 ping, IPv6 tracert, and IPv6 Telnet
+
+                       6to4 tunnel, ISATAP tunnel, and manually configured tunnel
+
+ Multicast             PIM DM, PIM SM, PIM SSM
+
+                       IGMP v1/v2/v3, IGMP v1/v2/v3 snooping and IGMP fast leave
+
+                       MLD v1/v2 and MLD v1/v2 snooping
+
+                       Multicast forwarding in a VLAN and multicast replication between VLANs
+
+                       Multicast load balancing among member ports of a trunk
+
+                       Controllable multicast
+
+                       Port-based multicast traffic statistics
+
+ QoS/ACL               Rate limiting on packets sent and received by a port
+
+                       Packet redirection
+
+                       Port-based traffic policing and two-rate three-color CAR
+
+                       Eight queues on each port
+
+                       WRR, DRR, SP, WRR+SP, and DRR+SP queue scheduling algorithms
+
+                       Re-marking of the 802.1p priority and DSCP priority
+
+                       Packet filtering at Layer 2 to Layer 4, filtering out invalid frames based on the source MAC address,
+                       destination MAC address, source IP address, destination IP address, TCP/UDP port number,
+                       protocol type, and VLAN ID
+
+                       Rate limiting in each queue and traffic shaping on ports
+
+ Security              Hierarchical user management and password protection
+
+                       DoS attack defense, ARP attack defense, and ICMP attack defense
+
+                       Binding of the IP address, MAC address, port number, and VLAN ID
+
+                       Port isolation, port security, and sticky MAC
+
+                       MFF
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                                   7
+ Item                  Description
+
+                       Blackhole MAC address entries
+
+                       Limit on the number of learned MAC addresses
+
+                       IEEE 802.1x authentication and limit on the number of users on a port
+
+                       AAA authentication, RADIUS authentication, HWTACACS authentication, and NAC
+
+                       SSH v2.0
+
+                       HTTPS
+
+                       CPU defense
+
+                       Blacklist and whitelist
+
+                       IEEE 802.1x authentication, MAC address authentication, and Portal authentication
+
+                       DHCPv4/v6 client/relay/server/snooping
+
+                       Attack source tracing and punishment for IPv6 packets such as ND, DHCPv6, and MLD packets
+                       Supports separation between user authentication and policy enforcement points
+                       IPSec
+
+ SVF                   Plug-and-play SVF client
+
+                       Automatically loading the system software packages and patches of SVF clients
+
+                       Automatically delivering service configurations in a one-click manner
+
+                       Independent running of SVF clients
+
+ OAM                   Software OAM:
+
+                       EFM OAM
+
+                       CFM OAM
+
+                       Y.1731 performance test
+
+ Management and        Virtual cable test
+ maintenance
+                       SNMP v1/v2c/v3
+
+                       RMON
+
+                       Web-based NMS
+
+                       System logs and alarms of different levels
+
+                       802.3az EEE
+
+                       sFlow
+
+ Interoperability      Supports VBST (Compatible with PVST/PVST+/RPVST)
+
+                       Supports LNP (Similar to DTP)
+
+                       Supports VCMP (Similar to VTP)
+
+
+
+
+Standard Compliance
+ Standard Organization      Standard or Protocol
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                       8
+ Standard Organization      Standard or Protocol
+
+ IETF                          RFC 768 User Datagram Protocol (UDP)
+                               RFC 792 Internet Control Message Protocol (ICMP)
+                               RFC 793 Transmission Control Protocol (TCP)
+                               RFC 826 Ethernet Address Resolution Protocol (ARP)
+                               RFC 854 Telnet Protocol Specification
+                               RFC 951 Bootstrap Protocol (BOOTP)
+                               RFC 959 File Transfer Protocol (FTP)
+                               RFC 1058 Routing Information Protocol (RIP)
+                               RFC 1112 Host extensions for IP multicasting
+                               RFC 1157 A Simple Network Management Protocol (SNMP)
+                               RFC 1256 ICMP Router Discovery
+                               RFC 1305 Network Time Protocol Version 3 (NTP)
+                               RFC 1349 Internet Protocol (IP)
+                               RFC 1493 Definitions of Managed Objects for Bridges
+                               RFC 1542 Clarifications and Extensions for the Bootstrap Protocol
+                               RFC 1643 Ethernet Interface MIB
+                               RFC 1757 Remote Network Monitoring (RMON)
+                               RFC 1901 Introduction to Community-based SNMPv2
+                               RFC 1902-1907 SNMP v2
+                               RFC 1981 Path MTU Discovery for IP version 6
+                               RFC 2131 Dynamic Host Configuration Protocol (DHCP)
+                               RFC 2328 OSPF Version 2
+                               RFC 2453 RIP Version 2
+                               RFC 2460 Internet Protocol, Version 6 Specification (IPv6)
+                               RFC 2461 Neighbor Discovery for IP Version 6 (IPv6)
+                               RFC 2462 IPv6 Stateless Address Auto configuration
+                               RFC 2463 Internet Control Message Protocol for IPv6 (ICMPv6)
+                               RFC 2474 Differentiated Services Field (DS Field)
+                               RFC 2740 OSPF for IPv6 (OSPFv3)
+                               RFC 2863 The Interfaces Group MIB
+                               RFC 2597 Assured Forwarding PHB Group
+                               RFC 2598 An Expedited Forwarding PHB
+                               RFC 2571 SNMP Management Frameworks
+                               RFC 2865 Remote Authentication Dial In User Service (RADIUS)
+                               RFC 3046 DHCP Option82
+                               RFC 3376 Internet Group Management Protocol, Version 3 (IGMPv3)
+                               RFC 3513 IP Version 6 Addressing Architecture
+                               RFC 3579 RADIUS Support For EAP
+                               RFC 4271 A Border Gateway Protocol 4 (BGP-4)
+                               RFC 4760 Multiprotocol Extensions for BGP-4
+                               draft-grant-tacacs-02 TACACS+
+
+ IEEE                          IEEE 802.1D Media Access Control (MAC) Bridges
+                               IEEE 802.1p Traffic Class Expediting and Dynamic Multicast Filtering
+                               IEEE 802.1Q Virtual Bridged Local Area Networks
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                           9
+ Standard Organization       Standard or Protocol
+                                IEEE 802.1ad Provider Bridges
+                                IEEE 802.2 Logical Link Control
+                                IEEE Std 802.3 CSMA/CD
+                                IEEE Std 802.3ab 1000BASE-T specification
+                                IEEE Std 802.3ad Aggregation of Multiple Link Segments
+                                IEEE Std 802.3ae 10GE WEN/LAN Standard
+                                IEEE Std 802.3x Full Duplex and flow control
+                                IEEE Std 802.3z Gigabit Ethernet Standard
+                                IEEE802.1ax/IEEE802.3ad Link Aggregation
+                                IEEE 802.3ah Ethernet in the First Mile
+                                IEEE 802.1ag Connectivity Fault Management
+                                IEEE 802.1ab Link Layer Discovery Protocol
+                                IEEE 802.1D Spanning Tree Protocol
+                                IEEE 802.1w Rapid Spanning Tree Protocol
+                                IEEE 802.1s Multiple Spanning Tree Protocol
+                                IEEE 802.1x Port based network access control protocol
+                                IEEE 802.3af DTE Power via MIDI
+                                IEEE 802.3at DTE Power via the MDI Enhancements
+
+ ITU                            ITU SG13 Y.17ethoam
+                                ITU SG13 QoS control Ethernet-Based IP Access
+                                ITU-T Y.1731 ETH OAM performance monitor
+
+ ISO                            ISO 10589 IS-IS Routing Protocol
+
+ MEF                            MEF 2 Requirements and Framework for Ethernet Service Protection
+                                MEF 9 Abstract Test Suite for Ethernet Services at the UNI
+                                MEF 10.2 Ethernet Services Attributes Phase 2
+                                MEF 11 UNI Requirements and Framework
+                                MEF 13 UNI Type 1 Implementation Agreement
+                                MEF 15 Requirements for Management of Metro Ethernet Phase 1 Network Elements
+                                MEF 17 Service OAM Framework and Requirements
+                                MEF 20 UNI Type 2 Implementation Agreement
+                                MEF 23 Class of Service Phase 1 Implementation Agreement
+                                Xmodem XMODEM/YMODEM Protocol Reference
+
+
+
+
+Networking and Applications
+The CloudEngine S5335-S can function as the access device and aggregation device on Metro networks and improves
+network reliability by link binding, dual-homing, and ringing.
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                      10
+Ordering Information
+The following table lists ordering information of the CloudEngine S5335-S series switches.
+
+ Model                    Product Description
+
+ CloudEngine S5335-       CloudEngine S5335-S24T4X (24 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports, without power
+ S24T4X                   supply)
+
+ CloudEngine S5335-       CloudEngine S5335-S24P4X (24 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports, PoE+, without
+ S24P4X                   power supply)
+
+ CloudEngine S5335-       CloudEngine S5335-S48T4X (48 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports, without power
+ S48T4X                   supply)
+
+ CloudEngine S5335-       CloudEngine S5335-S48P4X (48 x 10/100/1000Base-T ports, 4 x 10 GE SFP+ ports, PoE+, without
+ S48P4X                   power supply)
+
+ CloudEngine S5335-       CloudEngine S5335-S32ST4X (24 x GE SFP ports, 8 of which are dual-purpose 10/100/1000 or
+ S32ST4X                  SFP, 4 x 10 GE SFP+ ports, without power supply)
+
+ CloudEngine S5335-       CloudEngine S5335-S48S4X (48 x GE SFP ports, 4 x 10 GE SFP+ port, without power supply)
+ S48S4X
+
+ PAC1000S56-CB            1000 W AC PoE power module，used in PoE models
+
+ PDC1000S12-DB            1000 W DC power module，used in Non-PoE models
+
+ PAC150S12-R              150 W AC power module, used in CloudEngine S5735-S48S4X
+
+ PAC60S12-AR              60 W AC power module
+
+
+
+
+More Information
+For more information, visit http://www.huawei.com/ or contact your local Huawei sales office.
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                            11
+Copyright © Huawei Technologies Co., Ltd. 2019. All rights reserved.
+
+No part of this document may be reproduced or transmitted in any form or by any means without prior written
+consent of Huawei Technologies Co., Ltd.
+
+Trademarks and Permissions
+
+            and other Huawei trademarks are trademarks of Huawei Technologies Co., Ltd.
+All other trademarks and trade names mentioned in this document are the property of their respective holders.
+
+Notice
+
+The purchased products, services and features are stipulated by the contract made between Huawei and the
+customer. All or part of the products, services and features described in this document may not be within the
+purchase scope or the usage scope. Unless otherwise specified in the contract, all statements, information, and
+                                                                                                                  Huawei Technologies Co., Ltd.
+recommendations in this document are provided "AS IS" without warranties, guarantees or representations of
+any kind, either express or implied.                                                                              Address:Huawei Industrial Base Bantian,
+                                                                                                                  Longgang Shenzhen 518129 People's
+The information in this document is subject to change without notice. Every effort has been made in the
+                                                                                                                  Republic of China
+preparation of this document to ensure accuracy of the contents, but all statements, information, and
+recommendations in this document do not constitute a warranty of any kind, express or implied.                    Website:e.huawei.com
+
+
+
+
+CloudEngine S5335-S Series Switches Brochure                                                                                                         12
+

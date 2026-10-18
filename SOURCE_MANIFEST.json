@@ -1,0 +1,13 @@
+{
+  "site_release": 111,
+  "commit_sha": "f86c588e99ef8b34291b3c401ab7b387a84af74f",
+  "source_tracked_files": 608,
+  "archive_scope": "tracked source snapshot plus SOURCE_EXPORT.md, CODEX_HANDOFF.md and SOURCE_MANIFEST.json",
+  "excludes": [
+    "Git history",
+    "dependencies installed by npm",
+    "build output",
+    "credentials",
+    "hosted database contents"
+  ]
+}

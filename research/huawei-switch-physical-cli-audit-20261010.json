@@ -1,0 +1,2347 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-10",
+  "scope": "All 10 visible Huawei switches in web/catalog.js. Routers/PE excluded.",
+  "method": "Official vendor hardware diagrams visually inspected; archived vendor chapters retained; V600 numbering fetched freshly via official support endpoint. No exact CLI numbering inferred for S5335 from a similar model.",
+  "models": [
+    {
+      "modelId": "huawei-s5735-l8t4x-a1",
+      "model": "S5735-L8T4X-A1",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a7d76a8a16614cefb9943336bb224d69/M2T1A590N889230686196621601/Huawei%20CloudEngine%20S5735-L%20Series%20Switches%20Datasheet.pdf",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "usb",
+          "currentName": "USB",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/huawei-switch-audit-20261010/s5735-l8t4x-a1-hardware-content.html",
+        "referenceImage": "research/huawei-switch-audit-20261010/s5735-l8t4x-a1-appearance1.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=ccd045aee28e48839b57d4ced9df01f6",
+        "imageContainsBothFaces": true,
+        "note": "Power / ground on rear, data / listed utilities on front."
+      },
+      "managementCli": null
+    },
+    {
+      "modelId": "huawei-s5735-l8t4x-qa-v2",
+      "model": "S5735-L8T4X-QA-V2",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V600",
+      "sources": [
+        "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/55e0dc88/s5735-l8t4x-qa-v2-98012073-005",
+        "https://support.huawei.cn/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j022",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j007",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/884016b/port-numbering-conventions"
+      ],
+      "cliEvidence": "Fresh official V600 numbering chapter: standalone slot 1/subcard 0, GE1/0/n and 10GE1/0/n, upper row odd.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GE1/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GE1/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GE1/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GE1/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GE1/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GE1/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GE1/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GE1/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x1",
+          "currentName": "10GE1/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "10GE1/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "10GE1/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "10GE1/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "CONSOLE",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/huawei-hardware-reference.html",
+        "referenceImage": "research/huawei-switch-audit-20261010/s5735-l8t4x-qa-v2-appearance.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=add807af0b1a4aa794ef12ec1f54739e",
+        "imageContainsBothFaces": true,
+        "note": "Power / ground on rear, data / listed utilities on front."
+      },
+      "managementCli": null
+    },
+    {
+      "modelId": "huawei-s5731-s48t4x",
+      "model": "S5731-S48T4X",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://e.huawei.com/en/products/switches/campus-switches/s5731-s",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/f79a7296/s5731-s48t4x-02353ajb-02353ajb-003",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions",
+        "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a910c627eaee4d0a91c4c0ede3ad041b/M3T1A590N1066742086921986218/Huawei%20CloudEngine%20S5731-S%20Series%20Switches%20Datasheet.pdf",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge9",
+          "currentName": "GigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge10",
+          "currentName": "GigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge11",
+          "currentName": "GigabitEthernet0/0/11",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge12",
+          "currentName": "GigabitEthernet0/0/12",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge13",
+          "currentName": "GigabitEthernet0/0/13",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge14",
+          "currentName": "GigabitEthernet0/0/14",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge15",
+          "currentName": "GigabitEthernet0/0/15",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge16",
+          "currentName": "GigabitEthernet0/0/16",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge17",
+          "currentName": "GigabitEthernet0/0/17",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge18",
+          "currentName": "GigabitEthernet0/0/18",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge19",
+          "currentName": "GigabitEthernet0/0/19",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge20",
+          "currentName": "GigabitEthernet0/0/20",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge21",
+          "currentName": "GigabitEthernet0/0/21",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge22",
+          "currentName": "GigabitEthernet0/0/22",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge23",
+          "currentName": "GigabitEthernet0/0/23",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge24",
+          "currentName": "GigabitEthernet0/0/24",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge25",
+          "currentName": "GigabitEthernet0/0/25",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge26",
+          "currentName": "GigabitEthernet0/0/26",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge27",
+          "currentName": "GigabitEthernet0/0/27",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge28",
+          "currentName": "GigabitEthernet0/0/28",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge29",
+          "currentName": "GigabitEthernet0/0/29",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge30",
+          "currentName": "GigabitEthernet0/0/30",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge31",
+          "currentName": "GigabitEthernet0/0/31",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge32",
+          "currentName": "GigabitEthernet0/0/32",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge33",
+          "currentName": "GigabitEthernet0/0/33",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge34",
+          "currentName": "GigabitEthernet0/0/34",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge35",
+          "currentName": "GigabitEthernet0/0/35",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge36",
+          "currentName": "GigabitEthernet0/0/36",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge37",
+          "currentName": "GigabitEthernet0/0/37",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge38",
+          "currentName": "GigabitEthernet0/0/38",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge39",
+          "currentName": "GigabitEthernet0/0/39",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge40",
+          "currentName": "GigabitEthernet0/0/40",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge41",
+          "currentName": "GigabitEthernet0/0/41",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge42",
+          "currentName": "GigabitEthernet0/0/42",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge43",
+          "currentName": "GigabitEthernet0/0/43",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge44",
+          "currentName": "GigabitEthernet0/0/44",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge45",
+          "currentName": "GigabitEthernet0/0/45",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge46",
+          "currentName": "GigabitEthernet0/0/46",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge47",
+          "currentName": "GigabitEthernet0/0/47",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge48",
+          "currentName": "GigabitEthernet0/0/48",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "usb",
+          "currentName": "USB",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "mgmt",
+          "currentName": "ETH Management",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/huawei-switch-audit-20261010/s5731-s48t4x-02353ajb-hardware-content.html",
+        "referenceImage": "research/huawei-switch-audit-20261010/s5731-s48t4x-02353ajb-appearance1.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=4d45481e5ab744c3af79f40eea629b54",
+        "imageContainsBothFaces": true,
+        "note": "Rear revision-dependent. 02353AJB has two removable fan modules plus two power bays. 98011847 differs with built-in fans; separate official image retained. Do not claim one rear fits every hardware revision."
+      },
+      "managementCli": {
+        "name": "MEth0/0/1",
+        "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands",
+        "status": "family-level-command-reference-confirmed",
+        "note": "Physical ETH management, separate from data-network sockets; not Console."
+      }
+    },
+    {
+      "modelId": "huawei-s5720-12tp-li-ac",
+      "model": "S5720-12TP-LI-AC",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/b4dabfc4/s5720-12tp-li-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j016",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge9c",
+          "currentName": "GigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge9f",
+          "currentName": "GigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge10c",
+          "currentName": "GigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge10f",
+          "currentName": "GigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge11",
+          "currentName": "GigabitEthernet0/0/11",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge12",
+          "currentName": "GigabitEthernet0/0/12",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/vendor-v07/s5720-12tp-li-ac.html",
+        "referenceImage": "research/vendor-v07/s5720-12tp-li-ac-appearance.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=5edcd9b5a7f2434f939d610566122a17",
+        "imageContainsBothFaces": true,
+        "note": "Power / ground on rear, data / listed utilities on front."
+      },
+      "managementCli": null
+    },
+    {
+      "modelId": "huawei-s5720-36c-ei-28s-ac",
+      "model": "S5720-36C-EI-28S-AC",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/3b47a44f/s5720-36c-ei-28s-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge9",
+          "currentName": "GigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge10",
+          "currentName": "GigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge11",
+          "currentName": "GigabitEthernet0/0/11",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge12",
+          "currentName": "GigabitEthernet0/0/12",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge13",
+          "currentName": "GigabitEthernet0/0/13",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge14",
+          "currentName": "GigabitEthernet0/0/14",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge15",
+          "currentName": "GigabitEthernet0/0/15",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge16",
+          "currentName": "GigabitEthernet0/0/16",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge17",
+          "currentName": "GigabitEthernet0/0/17",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge18",
+          "currentName": "GigabitEthernet0/0/18",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge19",
+          "currentName": "GigabitEthernet0/0/19",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge20",
+          "currentName": "GigabitEthernet0/0/20",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge21",
+          "currentName": "GigabitEthernet0/0/21",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge22",
+          "currentName": "GigabitEthernet0/0/22",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge23",
+          "currentName": "GigabitEthernet0/0/23",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge24",
+          "currentName": "GigabitEthernet0/0/24",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge25c",
+          "currentName": "GigabitEthernet0/0/25",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge25f",
+          "currentName": "GigabitEthernet0/0/25",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge26c",
+          "currentName": "GigabitEthernet0/0/26",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge26f",
+          "currentName": "GigabitEthernet0/0/26",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge27c",
+          "currentName": "GigabitEthernet0/0/27",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge27f",
+          "currentName": "GigabitEthernet0/0/27",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge28c",
+          "currentName": "GigabitEthernet0/0/28",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge28f",
+          "currentName": "GigabitEthernet0/0/28",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "management",
+          "currentName": "ETH management",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "usb",
+          "currentName": "USB",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/vendor-v07/s5720-36c-ei-28s-ac.html",
+        "referenceImage": "research/vendor-v07/s5720-36c-ei-28s-ac-appearance.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=f52f8b74cfec45ff993a87e63b866108",
+        "imageContainsBothFaces": true,
+        "note": "Power / ground on rear, data / listed utilities on front."
+      },
+      "managementCli": {
+        "name": "MEth0/0/1",
+        "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands",
+        "status": "family-level-command-reference-confirmed",
+        "note": "Physical ETH management, separate from data-network sockets; not Console."
+      }
+    },
+    {
+      "modelId": "huawei-s5720-52x-si-ac",
+      "model": "S5720-52X-SI-AC",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ea3f2e19/s5720-52x-si-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j02f",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge9",
+          "currentName": "GigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge10",
+          "currentName": "GigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge11",
+          "currentName": "GigabitEthernet0/0/11",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge12",
+          "currentName": "GigabitEthernet0/0/12",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge13",
+          "currentName": "GigabitEthernet0/0/13",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge14",
+          "currentName": "GigabitEthernet0/0/14",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge15",
+          "currentName": "GigabitEthernet0/0/15",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge16",
+          "currentName": "GigabitEthernet0/0/16",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge17",
+          "currentName": "GigabitEthernet0/0/17",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge18",
+          "currentName": "GigabitEthernet0/0/18",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge19",
+          "currentName": "GigabitEthernet0/0/19",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge20",
+          "currentName": "GigabitEthernet0/0/20",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge21",
+          "currentName": "GigabitEthernet0/0/21",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge22",
+          "currentName": "GigabitEthernet0/0/22",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge23",
+          "currentName": "GigabitEthernet0/0/23",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge24",
+          "currentName": "GigabitEthernet0/0/24",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge25",
+          "currentName": "GigabitEthernet0/0/25",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge26",
+          "currentName": "GigabitEthernet0/0/26",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge27",
+          "currentName": "GigabitEthernet0/0/27",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge28",
+          "currentName": "GigabitEthernet0/0/28",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge29",
+          "currentName": "GigabitEthernet0/0/29",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge30",
+          "currentName": "GigabitEthernet0/0/30",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge31",
+          "currentName": "GigabitEthernet0/0/31",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge32",
+          "currentName": "GigabitEthernet0/0/32",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge33",
+          "currentName": "GigabitEthernet0/0/33",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge34",
+          "currentName": "GigabitEthernet0/0/34",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge35",
+          "currentName": "GigabitEthernet0/0/35",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge36",
+          "currentName": "GigabitEthernet0/0/36",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge37",
+          "currentName": "GigabitEthernet0/0/37",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge38",
+          "currentName": "GigabitEthernet0/0/38",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge39",
+          "currentName": "GigabitEthernet0/0/39",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge40",
+          "currentName": "GigabitEthernet0/0/40",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge41",
+          "currentName": "GigabitEthernet0/0/41",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge42",
+          "currentName": "GigabitEthernet0/0/42",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge43",
+          "currentName": "GigabitEthernet0/0/43",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge44",
+          "currentName": "GigabitEthernet0/0/44",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge45",
+          "currentName": "GigabitEthernet0/0/45",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge46",
+          "currentName": "GigabitEthernet0/0/46",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge47",
+          "currentName": "GigabitEthernet0/0/47",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge48",
+          "currentName": "GigabitEthernet0/0/48",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "management",
+          "currentName": "ETH management",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "usb",
+          "currentName": "USB",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/vendor-v07/s5720-52x-si-ac.html",
+        "referenceImage": "research/vendor-v07/s5720-52x-si-ac-appearance.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=88e41fa5d935446e947f7b61fca4abbc",
+        "imageContainsBothFaces": true,
+        "note": "Power / ground on rear, data / listed utilities on front."
+      },
+      "managementCli": {
+        "name": "MEth0/0/1",
+        "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands",
+        "status": "family-level-command-reference-confirmed",
+        "note": "Physical ETH management, separate from data-network sockets; not Console."
+      }
+    },
+    {
+      "modelId": "huawei-s5732-h24s6q",
+      "model": "S5732-H24S6Q",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/9b370196/s5732-h24s6q",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j08i",
+        "https://e.huawei.com/th/products/switches/campus-switches/s5732-h",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge9",
+          "currentName": "GigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge10",
+          "currentName": "GigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge11",
+          "currentName": "GigabitEthernet0/0/11",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge12",
+          "currentName": "GigabitEthernet0/0/12",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge13",
+          "currentName": "GigabitEthernet0/0/13",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge14",
+          "currentName": "GigabitEthernet0/0/14",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge15",
+          "currentName": "GigabitEthernet0/0/15",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge16",
+          "currentName": "GigabitEthernet0/0/16",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge17",
+          "currentName": "GigabitEthernet0/0/17",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge18",
+          "currentName": "GigabitEthernet0/0/18",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge19",
+          "currentName": "GigabitEthernet0/0/19",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "ge20",
+          "currentName": "GigabitEthernet0/0/20",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q1",
+          "currentName": "40GE0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q2",
+          "currentName": "40GE0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q3",
+          "currentName": "40GE0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q4",
+          "currentName": "40GE0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q5",
+          "currentName": "40GE0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q6",
+          "currentName": "40GE0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "management",
+          "currentName": "ETH management",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "usb",
+          "currentName": "USB",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [
+        {
+          "portId": "console",
+          "field": "face",
+          "oldValue": "front",
+          "value": "rear",
+          "evidence": "Official appearance figure places these utilities on lower rear panel."
+        },
+        {
+          "portId": "management",
+          "field": "face",
+          "oldValue": "front",
+          "value": "rear",
+          "evidence": "Official appearance figure places these utilities on lower rear panel."
+        },
+        {
+          "portId": "usb",
+          "field": "face",
+          "oldValue": "front",
+          "value": "rear",
+          "evidence": "Official appearance figure places these utilities on lower rear panel."
+        }
+      ],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "rear",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/vendor-v07/s5732-h24s6q.html",
+        "referenceImage": "research/vendor-v07/s5732-h24s6q-appearance.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=f35faa45f3d742c79358feb49e852415",
+        "imageContainsBothFaces": true,
+        "note": "Console/ETH/USB on rear; service ports on front."
+      },
+      "managementCli": {
+        "name": "MEth0/0/1",
+        "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands",
+        "status": "family-level-command-reference-confirmed",
+        "note": "Physical ETH management, separate from data-network sockets; not Console."
+      }
+    },
+    {
+      "modelId": "huawei-s6720-30c-ei-24s-ac",
+      "model": "S6720-30C-EI-24S-AC",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/fb0c31cc/s6720-30c-ei-24s-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j00q",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x5",
+          "currentName": "XGigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x6",
+          "currentName": "XGigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x7",
+          "currentName": "XGigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x8",
+          "currentName": "XGigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x9",
+          "currentName": "XGigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x10",
+          "currentName": "XGigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x11",
+          "currentName": "XGigabitEthernet0/0/11",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x12",
+          "currentName": "XGigabitEthernet0/0/12",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x13",
+          "currentName": "XGigabitEthernet0/0/13",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x14",
+          "currentName": "XGigabitEthernet0/0/14",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x15",
+          "currentName": "XGigabitEthernet0/0/15",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x16",
+          "currentName": "XGigabitEthernet0/0/16",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x17",
+          "currentName": "XGigabitEthernet0/0/17",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x18",
+          "currentName": "XGigabitEthernet0/0/18",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x19",
+          "currentName": "XGigabitEthernet0/0/19",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x20",
+          "currentName": "XGigabitEthernet0/0/20",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x21",
+          "currentName": "XGigabitEthernet0/0/21",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x22",
+          "currentName": "XGigabitEthernet0/0/22",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x23",
+          "currentName": "XGigabitEthernet0/0/23",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x24",
+          "currentName": "XGigabitEthernet0/0/24",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q1",
+          "currentName": "40GE0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q2",
+          "currentName": "40GE0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "management",
+          "currentName": "ETH management",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "usb",
+          "currentName": "USB",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/vendor-v07/s6720-30c-ei-24s-ac.html",
+        "referenceImage": "research/vendor-v07/s6720-30c-ei-24s-ac-appearance.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=dd6b8a99066d4dbfa6d423dc5f67d395",
+        "imageContainsBothFaces": true,
+        "note": "Power / ground on rear, data / listed utilities on front."
+      },
+      "managementCli": {
+        "name": "MEth0/0/1",
+        "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands",
+        "status": "family-level-command-reference-confirmed",
+        "note": "Physical ETH management, separate from data-network sockets; not Console."
+      }
+    },
+    {
+      "modelId": "huawei-s6730-h24x6c",
+      "model": "S6730-H24X6C",
+      "auditStatus": "confirmed-official-hardware-and-numbering",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/bf1cfe43/s6730-h24x6c",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j014",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "cliEvidence": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd.",
+      "ports": [
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x5",
+          "currentName": "XGigabitEthernet0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x6",
+          "currentName": "XGigabitEthernet0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x7",
+          "currentName": "XGigabitEthernet0/0/7",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x8",
+          "currentName": "XGigabitEthernet0/0/8",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x9",
+          "currentName": "XGigabitEthernet0/0/9",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x10",
+          "currentName": "XGigabitEthernet0/0/10",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x11",
+          "currentName": "XGigabitEthernet0/0/11",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x12",
+          "currentName": "XGigabitEthernet0/0/12",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x13",
+          "currentName": "XGigabitEthernet0/0/13",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x14",
+          "currentName": "XGigabitEthernet0/0/14",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x15",
+          "currentName": "XGigabitEthernet0/0/15",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x16",
+          "currentName": "XGigabitEthernet0/0/16",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x17",
+          "currentName": "XGigabitEthernet0/0/17",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x18",
+          "currentName": "XGigabitEthernet0/0/18",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x19",
+          "currentName": "XGigabitEthernet0/0/19",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x20",
+          "currentName": "XGigabitEthernet0/0/20",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x21",
+          "currentName": "XGigabitEthernet0/0/21",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x22",
+          "currentName": "XGigabitEthernet0/0/22",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x23",
+          "currentName": "XGigabitEthernet0/0/23",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "x24",
+          "currentName": "XGigabitEthernet0/0/24",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q1",
+          "currentName": "40GE / 100GE0/0/1",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q2",
+          "currentName": "40GE / 100GE0/0/2",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q3",
+          "currentName": "40GE / 100GE0/0/3",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q4",
+          "currentName": "40GE / 100GE0/0/4",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q5",
+          "currentName": "40GE / 100GE0/0/5",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "q6",
+          "currentName": "40GE / 100GE0/0/6",
+          "currentFace": "front",
+          "status": "confirmed-except-listed-corrections"
+        },
+        {
+          "portId": "console",
+          "currentName": "Console",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "management",
+          "currentName": "ETH management",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        },
+        {
+          "portId": "usb",
+          "currentName": "USB",
+          "currentFace": "front",
+          "status": "physical-utility-label-not-data-cli"
+        }
+      ],
+      "corrections": [
+        {
+          "portId": "q1",
+          "field": "name",
+          "oldValue": "40GE / 100GE0/0/1",
+          "value": "40GE0/0/1",
+          "aliases": [
+            "100GE0/0/1"
+          ],
+          "evidence": "Modern V200R019C00+ unlicensed 02352FSG default is 40GE; activated 02353GFC and older V200R013C02 use 100GE. Slash-separated combined label is not valid CLI.",
+          "requiresSoftwareAndSKUChoice": true
+        },
+        {
+          "portId": "q2",
+          "field": "name",
+          "oldValue": "40GE / 100GE0/0/2",
+          "value": "40GE0/0/2",
+          "aliases": [
+            "100GE0/0/2"
+          ],
+          "evidence": "Modern V200R019C00+ unlicensed 02352FSG default is 40GE; activated 02353GFC and older V200R013C02 use 100GE. Slash-separated combined label is not valid CLI.",
+          "requiresSoftwareAndSKUChoice": true
+        },
+        {
+          "portId": "q3",
+          "field": "name",
+          "oldValue": "40GE / 100GE0/0/3",
+          "value": "40GE0/0/3",
+          "aliases": [
+            "100GE0/0/3"
+          ],
+          "evidence": "Modern V200R019C00+ unlicensed 02352FSG default is 40GE; activated 02353GFC and older V200R013C02 use 100GE. Slash-separated combined label is not valid CLI.",
+          "requiresSoftwareAndSKUChoice": true
+        },
+        {
+          "portId": "q4",
+          "field": "name",
+          "oldValue": "40GE / 100GE0/0/4",
+          "value": "40GE0/0/4",
+          "aliases": [
+            "100GE0/0/4"
+          ],
+          "evidence": "Modern V200R019C00+ unlicensed 02352FSG default is 40GE; activated 02353GFC and older V200R013C02 use 100GE. Slash-separated combined label is not valid CLI.",
+          "requiresSoftwareAndSKUChoice": true
+        },
+        {
+          "portId": "q5",
+          "field": "name",
+          "oldValue": "40GE / 100GE0/0/5",
+          "value": "40GE0/0/5",
+          "aliases": [
+            "100GE0/0/5"
+          ],
+          "evidence": "Modern V200R019C00+ unlicensed 02352FSG default is 40GE; activated 02353GFC and older V200R013C02 use 100GE. Slash-separated combined label is not valid CLI.",
+          "requiresSoftwareAndSKUChoice": true
+        },
+        {
+          "portId": "q6",
+          "field": "name",
+          "oldValue": "40GE / 100GE0/0/6",
+          "value": "40GE0/0/6",
+          "aliases": [
+            "100GE0/0/6"
+          ],
+          "evidence": "Modern V200R019C00+ unlicensed 02352FSG default is 40GE; activated 02353GFC and older V200R013C02 use 100GE. Slash-separated combined label is not valid CLI.",
+          "requiresSoftwareAndSKUChoice": true
+        },
+        {
+          "portId": "console",
+          "field": "face",
+          "oldValue": "front",
+          "value": "rear",
+          "evidence": "Official appearance figure places these utilities on lower rear panel."
+        },
+        {
+          "portId": "management",
+          "field": "face",
+          "oldValue": "front",
+          "value": "rear",
+          "evidence": "Official appearance figure places these utilities on lower rear panel."
+        },
+        {
+          "portId": "usb",
+          "field": "face",
+          "oldValue": "front",
+          "value": "rear",
+          "evidence": "Official appearance figure places these utilities on lower rear panel."
+        }
+      ],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "rear",
+        "rearStatus": "official-exact-model-diagram-available",
+        "referenceHtml": "research/vendor-v07/s6730-h24x6c.html",
+        "referenceImage": "research/vendor-v07/s6730-h24x6c-appearance.png",
+        "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=f2dcddc60a2a4b519735ff115e0e8514",
+        "imageContainsBothFaces": true,
+        "note": "Console/ETH/USB on rear; service ports on front."
+      },
+      "managementCli": {
+        "name": "MEth0/0/1",
+        "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands",
+        "status": "family-level-command-reference-confirmed",
+        "note": "Physical ETH management, separate from data-network sockets; not Console."
+      }
+    },
+    {
+      "modelId": "huawei-s5335-s32st4x",
+      "model": "S5335-S32ST4X",
+      "auditStatus": "partial-official-brochure-cli-and-rear-unverified",
+      "softwareFamily": "V200",
+      "sources": [
+        "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf"
+      ],
+      "cliEvidence": "Exact S5335-S32ST4X brochure verifies port counts and dual-purpose sockets, but does not state CLI numbering. Do not convert GE SFP/Combo labels into CLI names based on another model.",
+      "ports": [
+        {
+          "portId": "ge1",
+          "currentName": "GE SFP 1",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge2",
+          "currentName": "GE SFP 2",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge3",
+          "currentName": "GE SFP 3",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge4",
+          "currentName": "GE SFP 4",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge5",
+          "currentName": "GE SFP 5",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge6",
+          "currentName": "GE SFP 6",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge7",
+          "currentName": "GE SFP 7",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge8",
+          "currentName": "GE SFP 8",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge9",
+          "currentName": "GE SFP 9",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge10",
+          "currentName": "GE SFP 10",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge11",
+          "currentName": "GE SFP 11",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge12",
+          "currentName": "GE SFP 12",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge13",
+          "currentName": "GE SFP 13",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge14",
+          "currentName": "GE SFP 14",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge15",
+          "currentName": "GE SFP 15",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge16",
+          "currentName": "GE SFP 16",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge17",
+          "currentName": "Combo 1",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge18",
+          "currentName": "Combo 2",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge19",
+          "currentName": "Combo 3",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge20",
+          "currentName": "Combo 4",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge21",
+          "currentName": "Combo 5",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge22",
+          "currentName": "Combo 6",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge23",
+          "currentName": "Combo 7",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge24",
+          "currentName": "Combo 8",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge17c",
+          "currentName": "Combo 1",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge18c",
+          "currentName": "Combo 2",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge19c",
+          "currentName": "Combo 3",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge20c",
+          "currentName": "Combo 4",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge21c",
+          "currentName": "Combo 5",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge22c",
+          "currentName": "Combo 6",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge23c",
+          "currentName": "Combo 7",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "ge24c",
+          "currentName": "Combo 8",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "x1",
+          "currentName": "XGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "x2",
+          "currentName": "XGigabitEthernet0/0/2",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "x3",
+          "currentName": "XGigabitEthernet0/0/3",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        },
+        {
+          "portId": "x4",
+          "currentName": "XGigabitEthernet0/0/4",
+          "currentFace": "front",
+          "status": "unverified-exact-cli"
+        }
+      ],
+      "corrections": [],
+      "physical": {
+        "frontNetworkPorts": true,
+        "utilityFace": "front",
+        "rearStatus": "not-found-do-not-generate",
+        "referenceHtml": null,
+        "referenceImage": null,
+        "officialImageUrl": null,
+        "imageContainsBothFaces": false,
+        "note": "Only front brochure photo retained; rear exact hardware and CLI mapping still unverified."
+      },
+      "managementCli": null
+    }
+  ]
+}

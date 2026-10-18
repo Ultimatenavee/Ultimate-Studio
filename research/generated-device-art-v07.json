@@ -1,0 +1,483 @@
+[
+  {
+    "model": "s5720-12tp-li-ac",
+    "prompt": "Use case: product-mockup. Produce ONE isolated realistic color hardware illustration of Huawei S5720-12TP-LI-AC, on actual transparent background. Image 1 is authoritative hardware geometry reference; it contains front panel above rear panel: reproduce ONLY the top FRONT panel. Remove all external numbered annotation arrows, brackets and rear view. Preserve precise front-panel aspect ratio, number, type and arrangement of all ports, blank areas, vents, indicators, controls, model text and Huawei identity. Image 2 is STYLE reference: match its realistic silver metal, black chassis, detailed dark sockets, subtle restrained lighting and red trim only where appropriate. Straight-on centered elevation, complete device unclipped, mostly front face with at most very slight top lip. Entire device spans about 94% canvas width with modest transparent padding; no background, no scene, no cables, no extra labels. Do not import Image 2's port layout. The target model must remain faithful to Image 1.",
+    "sourcepath": "/workspace/sites/noah-topology/research/vendor-v07/s5720-12tp-li-ac-appearance.png",
+    "generatedpath": "/workspace/scratch/7360d1d45af5/generated_images/exec-dcbbc1f3-1c0b-4bc1-86af-93cd3e0d707e.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-huawei/huawei-s5720-12tp-li-ac-illustration-v07.png",
+    "dimensions": [
+      2170,
+      725
+    ],
+    "alpha_bounds": [
+      17,
+      23,
+      2150,
+      701
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "source_dimensions": [
+      465,
+      272
+    ],
+    "generation_mode": "builtin-imagegen",
+    "caveat": "Tiny labels and socket details are illustrative.",
+    "alpha_bounds_128": [
+      29,
+      190,
+      2141,
+      585
+    ],
+    "alpha_bounds_250": [
+      30,
+      191,
+      2140,
+      584
+    ],
+    "sha256": "37fa2cebc8b3d886e841d79a7122efff4e6d880dd3a5b7e4c7da45f0bd5c7a7c",
+    "selectedAsset": "assets/huawei-s5720-12tp-li-ac-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-s5720-12tp-li-ac-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      29,
+      190,
+      2112,
+      395
+    ]
+  },
+  {
+    "model": "s5720-36c-ei-28s-ac",
+    "prompt": "Use case: product-mockup. Produce ONE isolated realistic color hardware illustration of Huawei S5720-36C-EI-28S-AC, on actual transparent background. Image 1 is authoritative hardware geometry reference; it contains front panel above rear panel: reproduce ONLY the top FRONT panel. Remove all external numbered annotation arrows, brackets and rear view. Preserve precise front-panel aspect ratio, number, type and arrangement of all ports, blank areas, vents, indicators, controls, model text and Huawei identity. Image 2 is STYLE reference: match its realistic silver metal, black chassis, detailed dark sockets, subtle restrained lighting and red trim only where appropriate. Straight-on centered elevation, complete device unclipped, mostly front face with at most very slight top lip. Entire device spans about 94% canvas width with modest transparent padding; no background, no scene, no cables, no extra labels. Do not import Image 2's port layout. The target model must remain faithful to Image 1.",
+    "sourcepath": "/workspace/sites/noah-topology/research/vendor-v07/s5720-36c-ei-28s-ac-appearance.png",
+    "generatedpath": "/workspace/scratch/7360d1d45af5/generated_images/exec-57bcfe35-f8cd-4e5b-ae2a-b652a26ba2e4.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-huawei/huawei-s5720-36c-ei-28s-ac-illustration-v07.png",
+    "dimensions": [
+      2170,
+      725
+    ],
+    "alpha_bounds": [
+      16,
+      17,
+      2156,
+      725
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "source_dimensions": [
+      821,
+      272
+    ],
+    "generation_mode": "builtin-imagegen",
+    "caveat": "Tiny labels and socket details are illustrative.",
+    "alpha_bounds_128": [
+      23,
+      174,
+      2147,
+      524
+    ],
+    "alpha_bounds_250": [
+      24,
+      175,
+      2146,
+      523
+    ],
+    "sha256": "7dccf78db66dfc4725eaf1673789da2bc54e624a1c5faeacf1e3e6fd36b25e1e",
+    "selectedAsset": "assets/huawei-s5720-36c-ei-28s-ac-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-s5720-36c-ei-28s-ac-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      23,
+      174,
+      2124,
+      350
+    ]
+  },
+  {
+    "model": "s5720-52x-si-ac",
+    "prompt": "Use case: product-mockup. Produce ONE isolated realistic color hardware illustration of Huawei S5720-52X-SI-AC, on actual transparent background. Image 1 is authoritative hardware geometry reference; it contains front panel above rear panel: reproduce ONLY the top FRONT panel. Remove all external numbered annotation arrows, brackets and rear view. Preserve precise front-panel aspect ratio, number, type and arrangement of all ports, blank areas, vents, indicators, controls, model text and Huawei identity. Image 2 is STYLE reference: match its realistic silver metal, black chassis, detailed dark sockets, subtle restrained lighting and red trim only where appropriate. Straight-on centered elevation, complete device unclipped, mostly front face with at most very slight top lip. Entire device spans about 94% canvas width with modest transparent padding; no background, no scene, no cables, no extra labels. Do not import Image 2's port layout. The target model must remain faithful to Image 1.",
+    "sourcepath": "/workspace/sites/noah-topology/research/vendor-v07/s5720-52x-si-ac-appearance.png",
+    "generatedpath": "/workspace/scratch/7360d1d45af5/generated_images/exec-6dc4922d-fea8-41e6-973a-5925f9f645ea.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-huawei/huawei-s5720-52x-si-ac-illustration-v07.png",
+    "dimensions": [
+      2169,
+      725
+    ],
+    "alpha_bounds": [
+      0,
+      9,
+      2153,
+      701
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "source_dimensions": [
+      821,
+      272
+    ],
+    "generation_mode": "builtin-imagegen",
+    "caveat": "Tiny labels and socket details are illustrative.",
+    "alpha_bounds_128": [
+      20,
+      197,
+      2148,
+      511
+    ],
+    "alpha_bounds_250": [
+      21,
+      198,
+      2147,
+      510
+    ],
+    "sha256": "c959ba3a930767bb6433325744eb1e2031901187b09a945b0219bf88b912ddb2",
+    "selectedAsset": "assets/huawei-s5720-52x-si-ac-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-s5720-52x-si-ac-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      20,
+      197,
+      2128,
+      314
+    ]
+  },
+  {
+    "model": "s5732-h24s6q",
+    "prompt": "Use case: product-mockup. Huawei S5732-H24S6Q isolated realistic silver/black front panel color illustration. IMAGE 1 authoritative official reference: reproduce ONLY top front panel, NEVER rear, annotation arrows, external numbers or brackets. Image 2 style only. CRITICAL exact geometry: EXACTLY 24 small SFP slots: 12 columns x 2 rows, all contained in the LEFT 40% of panel. The MIDDLE 42% is EMPTY blank silver panel. Far RIGHT: EXACTLY 6 large QSFP slots, 3 columns x 2 rows. No extra sockets in center. Preserve the official wide thin face aspect and all blank space. Slight black top lip and red trim match style reference, soft realistic metal textures and sockets. Straight-on elevation. Transparent canvas. Whole device unclipped. Count sockets carefully; match official source faithfully. Tiny labels optional; geometrical correctness has highest priority.",
+    "sourcepath": "/workspace/sites/noah-topology/research/vendor-v07/s5732-h24s6q-appearance.png",
+    "generatedpath": "/workspace/scratch/7360d1d45af5/generated_images/exec-b14550ee-cbcd-4fda-a79d-c2ff1d8969df.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-huawei/huawei-s5732-h24s6q-illustration-v07.png",
+    "dimensions": [
+      2169,
+      725
+    ],
+    "alpha_bounds": [
+      18,
+      70,
+      2155,
+      709
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "source_dimensions": [
+      820,
+      275
+    ],
+    "generation_mode": "builtin-imagegen",
+    "caveat": "Corrected exact principal port count and blank area; tiny labels omitted and socket details illustrative.",
+    "alpha_bounds_128": [
+      25,
+      188,
+      2142,
+      510
+    ],
+    "alpha_bounds_250": [
+      26,
+      189,
+      2141,
+      509
+    ],
+    "discarded_generation": "/workspace/scratch/7360d1d45af5/generated_images/exec-d12f8468-9bb0-4b27-bc98-5c056734cac2.png",
+    "sha256": "50eb466deb9f896d05495f52274d3358919738162f41d1542ea63335c65b5f8c",
+    "selectedAsset": "assets/huawei-s5732-h24s6q-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-s5732-h24s6q-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      25,
+      188,
+      2117,
+      322
+    ]
+  },
+  {
+    "model": "s6720-30c-ei-24s-ac",
+    "prompt": "Use case: product-mockup. Huawei S6720-30C-EI-24S-AC isolated realistic silver/black front panel color illustration. IMAGE 1 authoritative official reference: reproduce ONLY top front panel, NEVER rear, annotation arrows, external numbers or brackets. Image 2 style only. CRITICAL exact geometry: EXACTLY 24 small SFP slots: 12 columns x 2 rows, all in LEFT 44% of panel, divided two equal banks of 6 columns x2 rows. Large MIDDLE blank silver area. Far RIGHT: two stacked larger QSFP sockets, two stacked RJ45 control sockets, and USB. No third SFP bank. Preserve the official wide thin face aspect and all blank space. Slight black top lip and red trim match style reference, soft realistic metal textures and sockets. Straight-on elevation. Transparent canvas. Whole device unclipped. Count sockets carefully; match official source faithfully. Tiny labels optional; geometrical correctness has highest priority.",
+    "sourcepath": "/workspace/sites/noah-topology/research/vendor-v07/s6720-30c-ei-24s-ac-appearance.png",
+    "generatedpath": "/workspace/scratch/7360d1d45af5/generated_images/exec-40b96829-bd7a-41cd-b917-ac19cd9be27f.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-huawei/huawei-s6720-30c-ei-24s-ac-illustration-v07.png",
+    "dimensions": [
+      2170,
+      725
+    ],
+    "alpha_bounds": [
+      18,
+      17,
+      2154,
+      667
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "source_dimensions": [
+      820,
+      272
+    ],
+    "generation_mode": "builtin-imagegen",
+    "caveat": "Corrected exact principal port count and blank area; tiny labels omitted and socket details illustrative.",
+    "alpha_bounds_128": [
+      21,
+      174,
+      2149,
+      500
+    ],
+    "alpha_bounds_250": [
+      22,
+      175,
+      2148,
+      499
+    ],
+    "discarded_generation": "/workspace/scratch/7360d1d45af5/generated_images/exec-7fe486a7-6568-4e14-921d-91b65576961a.png",
+    "sha256": "76f64a05368d3cb5b3002998f2dd5841383fd8e9e342e8c01dd2e836953803a0",
+    "selectedAsset": "assets/huawei-s6720-30c-ei-24s-ac-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-s6720-30c-ei-24s-ac-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      21,
+      174,
+      2128,
+      326
+    ]
+  },
+  {
+    "model": "APRESIA13200-48X-PSR3",
+    "assetpath": "/workspace/scratch/7360d1d45af5/assets-v07-apresia/apresia13200-48x-psr3-illustration-v07.png",
+    "dimensions": [
+      2170,
+      725
+    ],
+    "alpha_bounds": [
+      19,
+      55,
+      2152,
+      709
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "vendorrefpath": "/workspace/scratch/7360d1d45af5/assets-v07-apresia/vendor-13200-48x-psr3.jpg",
+    "prompt": "Use case: product-mockup. Create a single realistic color catalog device illustration of APRESIA13200-48X-PSR3, on a genuinely transparent background. Image 1 is exact product geometry and blue color reference; image 2 is style reference only, never copy its brand or ports. Match style reference brushed metal, crisp realistic socket details, wide horizontal composition and frontal face with shallow top surface. Match the APRESIA reference face precisely. 48 RJ45 sockets in two rows of 24, three banks of 16. Four optical sockets stacked 2 by 2 at far right. Management/control area far left; preserve all exact grouping and relative positions. Keep entire rack chassis and mounting ears visible, centered, horizontal, no cables. Strong APRESIA blue chassis with dark recessed ports, metal highlights. Device ONLY. Remove white background, floating IPv6/40G badges, captions, arrows, diagram numbers and dimension text. Keep tiny actual frontpanel product markings only. No platform, shadow outside silhouette, extra objects, watermark. Wide landscape canvas with modest transparent margin.",
+    "generation_mode": "builtin imagegen",
+    "selectedAsset": "assets/hitachi-apresia13200-48x-psr3-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/apresia13200-48x-psr3-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      25,
+      193,
+      2120,
+      313
+    ]
+  },
+  {
+    "model": "APRESIA13200-52GT-PSR2",
+    "assetpath": "/workspace/scratch/7360d1d45af5/assets-v07-apresia/apresia13200-52gt-psr2-illustration-v07.png",
+    "dimensions": [
+      2170,
+      725
+    ],
+    "alpha_bounds": [
+      0,
+      37,
+      2170,
+      705
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "vendorrefpath": "/workspace/scratch/7360d1d45af5/assets-v07-apresia/vendor-13200-52gt-psr2.jpg",
+    "prompt": "Use case: product-mockup. Create a single realistic color catalog device illustration of APRESIA13200-52GT-PSR2, on a genuinely transparent background. Image 1 is exact product geometry and blue color reference; image 2 is style reference only, never copy its brand or ports. Match style reference brushed metal, crisp realistic socket details, wide horizontal composition and frontal face with shallow top surface. Match the APRESIA reference face precisely. 48 RJ45 sockets in two rows of 24, three banks of 16. Four optical sockets stacked 2 by 2 at far right. Management/control area far left; preserve all exact grouping and relative positions. Keep entire rack chassis and mounting ears visible, centered, horizontal, no cables. Strong APRESIA blue chassis with dark recessed ports, metal highlights. Device ONLY. Remove white background, floating IPv6/40G badges, captions, arrows, diagram numbers and dimension text. Keep tiny actual frontpanel product markings only. No platform, shadow outside silhouette, extra objects, watermark. Wide landscape canvas with modest transparent margin.",
+    "generation_mode": "builtin imagegen",
+    "selectedAsset": "assets/hitachi-apresia13200-52gt-psr2-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/apresia13200-52gt-psr2-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      5,
+      230,
+      2160,
+      305
+    ]
+  },
+  {
+    "model": "APRESIA15000-32XL-PSR2",
+    "assetpath": "/workspace/scratch/7360d1d45af5/assets-v07-apresia/apresia15000-32xl-psr2-illustration-v07b.png",
+    "dimensions": [
+      2172,
+      724
+    ],
+    "alpha_bounds": [
+      14,
+      49,
+      2157,
+      700
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "vendorrefpath": "/workspace/scratch/7360d1d45af5/assets-v07-apresia/vendor-15000-32xl-psr2.jpg",
+    "prompt": "Use case: product-mockup. Create a single realistic color catalog device illustration of APRESIA15000-32XL-PSR2, on a genuinely transparent background. Image 1 is exact product geometry and blue color reference; image 2 is style reference only, never copy its brand or ports. Match style reference brushed metal, crisp realistic socket details, wide horizontal composition and frontal face with shallow top surface. Match the APRESIA reference face precisely. 32 SFP/SFP+ openings in paired rows, 2 QSFP+ openings on right and management/control area; preserve vent grids and all relative positions. Keep entire rack chassis and mounting ears visible, centered, horizontal, no cables. Strong APRESIA blue chassis with dark recessed ports, metal highlights. Device ONLY. Remove white background, floating IPv6/40G badges, captions, arrows, diagram numbers and dimension text. Keep tiny actual frontpanel product markings only. No platform, shadow outside silhouette, extra objects, watermark. Wide landscape canvas with modest transparent margin. Critical exact arrangement LEFT TO RIGHT: vertical vent holes at far left; THREE banks each 2 rows by 4 SFP sockets (24 total); large honeycomb vent block; small bank 2 rows by 2 SFP sockets (4); another honeycomb vent block; second small bank 2 rows by 2 SFP sockets (4); far-right control area with 2 QSFP+ horizontal sockets plus management port. Do NOT consolidate all 32 small sockets into continuous groups. Product reference is authoritative for this layout.",
+    "generation_mode": "builtin imagegen",
+    "selectedAsset": "assets/hitachi-apresia15000-32xl-psr2-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/apresia15000-32xl-psr2-illustration-v07b.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      17,
+      231,
+      2136,
+      305
+    ]
+  },
+  {
+    "model": "S6730-H24X6C",
+    "ref": "/workspace/sites/noah-topology/research/vendor-v07/s6730-h24x6c-appearance.png",
+    "prompt": "Edit target image 1: correct ONLY the front left port bank of this Huawei S6730-H24X6C illustration. Image 2 is exact vendor geometry. Keep chassis, blank center, six QSFP right ports (2 rows of 3), colors, front elevation, transparency and style unchanged. Left bank MUST have EXACTLY 24 SFP+ optical cages: 12 per row, two rows. Use slim rectangular black optical cavities with metallic rims, NOT RJ45 copper sockets. Current left bank has only 22. Replace the whole left bank with 2 identical rows of 12 evenly spaced optical cages, counting twelve columns. No rear panel, arrows, annotations or added objects. Transparent device only.",
+    "source": "/workspace/scratch/7360d1d45af5/generated_images/exec-c480b915-ecf5-41d7-b149-4f531c71a5ce.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-extra/huawei-s6730-h24x6c-illustration-v07-retry1.png",
+    "dimensions": [
+      2167,
+      726
+    ],
+    "mode": "RGBA",
+    "alpha_bounds": [
+      0,
+      17,
+      2149,
+      694
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "method": "built-in imagegen; original bytes copied without editing",
+    "previous": {
+      "model": "S6730-H24X6C",
+      "ref": "/workspace/sites/noah-topology/research/vendor-v07/s6730-h24x6c-appearance.png",
+      "prompt": "Use case: product-mockup. Create one realistic color hardware illustration of the Huawei CloudEngine S6730-H24X6C network switch. Input image 1 is the exact hardware reference, use ONLY its upper front panel. Input image 2 is the desired realistic silver-metal illustration style. Strict straight-on front elevation, device only, transparent background. Preserve the exact very wide low 1U chassis proportions and port arrangement: 24 small optical ports in two rows of 12 tightly grouped at far left, six larger optical ports in two rows of three at far right, large blank silver middle panel, dark narrow casing edges. No rear panel, fan assemblies, cables, callout numbers, arrows, annotation lines, separate labels, floor or shadow. Fine accurate ports and brushed metal, muted vendor colors. The printed Huawei branding and model identifier may appear small on the chassis only. Center the whole device with small margins; no cropping.",
+      "source": "/workspace/scratch/7360d1d45af5/generated_images/exec-6778b7c6-798e-413f-8b4f-4b58b8e50595.png",
+      "path": "/workspace/scratch/7360d1d45af5/assets-v07-extra/huawei-s6730-h24x6c-illustration-v07.png",
+      "dimensions": [
+        2167,
+        726
+      ],
+      "mode": "RGBA",
+      "alpha_bounds": [
+        0,
+        69,
+        2152,
+        659
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "method": "built-in imagegen; original bytes copied without editing"
+    },
+    "qa_caveat": "Retry improves continuous optical bank but appears to contain 26 optical ports (13 per row), not required 24.",
+    "selectedAsset": "assets/huawei-s6730-h24x6c-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-s6730-h24x6c-illustration-v07-retry1.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      20,
+      201,
+      2123,
+      295
+    ]
+  },
+  {
+    "model": "S5335-S32ST4X",
+    "ref": "/workspace/sites/noah-topology/research/vendor-v07/s5335-p2-1.jpeg",
+    "prompt": "Edit target image 1: correct ONLY front port arrangement of Huawei S5335-S32ST4X switch illustration using exact vendor reference image 2. Current output incorrectly shows 30 RJ45 copper sockets. Replace front main bank with EXACTLY 24 slim SFP optical cages, 2 rows of 12, with rectangular black optical cavities and fine metal rims, NOT stepped RJ45 mouths. Then add a separate bank of EXACTLY 8 RJ45 copper combo sockets, 2 rows of 4, toward right of main optical bank. These 8 RJ45 are the only copper data sockets. To their right retain EXACTLY 4 SFP+ uplink optical ports and the console/USB at far right. Total visual data socket groups: 24 SFP, 8 RJ45 combo, 4 SFP+. Widen and redistribute main bank to fit without changing exterior chassis silhouette. Preserve silver face, black chassis, thin red accent, straight front elevation, realistic illustration style and true transparent background. No cables, rear panel, extra labels, shadows, annotations.",
+    "source": "/workspace/scratch/7360d1d45af5/generated_images/exec-ab6cc4ab-0672-4492-bad0-b3220ed6b5a2.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-extra/huawei-s5335-s32st4x-illustration-v07-retry1.png",
+    "dimensions": [
+      2168,
+      725
+    ],
+    "mode": "RGBA",
+    "alpha_bounds": [
+      0,
+      5,
+      2168,
+      725
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "method": "built-in imagegen; original bytes copied without editing",
+    "previous": {
+      "model": "S5335-S32ST4X",
+      "ref": "/workspace/sites/noah-topology/research/vendor-v07/s5335-p2-1.jpeg",
+      "prompt": "Use case: product-mockup. Create one realistic color hardware illustration of Huawei S5335-S32ST4X. Input image 1 is the exact device reference; faithfully preserve its chassis and front-port arrangement. Input image 2 is the illustration style reference. Straight-on front elevation with only a slight visible top lip, entire device isolated on a genuinely transparent background. Wide low silver 1U switch, three tightly packed paired-row groups of small black optical cages occupying left and central face, the right-side row of larger uplink optical ports and small management connections exactly as reference. Dark graphite upper chassis, thin red accent as style reference, brushed silver face, black port interiors. Do not replace with an RJ45-heavy generic switch. Device only: no cables, no external labels, arrows, rear panel, ground shadow, backdrop, cropping. Small chassis Huawei branding and model text S5335-S32ST4X permitted.",
+      "source": "/workspace/scratch/7360d1d45af5/generated_images/exec-637e1865-bc7e-4fae-baf9-b91c5c83b2cf.png",
+      "path": "/workspace/scratch/7360d1d45af5/assets-v07-extra/huawei-s5335-s32st4x-illustration-v07.png",
+      "dimensions": [
+        2169,
+        725
+      ],
+      "mode": "RGBA",
+      "alpha_bounds": [
+        0,
+        54,
+        2168,
+        659
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "method": "built-in imagegen; original bytes copied without editing"
+    },
+    "qa_caveat": "Retry separates optical/copper/uplinks correctly but optical bank appears to contain 22 ports (11 per row), not required 24.",
+    "selectedAsset": "assets/huawei-s5335-s32st4x-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-s5335-s32st4x-illustration-v07-retry1.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      14,
+      181,
+      2141,
+      383
+    ]
+  },
+  {
+    "model": "NE40E-X8A",
+    "ref": "/workspace/sites/noah-topology/research/vendor-v07/ne40e-x8a-1.png",
+    "prompt": "Use case: product-mockup. Create a realistic color front elevation illustration of Huawei NetEngine NE40E-X8A modular router chassis. Input image 1 is the exact hardware identity reference; input image 2 supplies realistic polished hardware illustration treatment only. Transform viewpoint to straight-on front elevation without showing the deep left side. Preserve tall modular chassis proportions, silver/gray frame, two large black perforated vent grille sections at top with Huawei mark, tall vertical line-card modules and empty bays in the middle matching reference ordering, dark narrow optical ports and gray handles, small green/yellow handle accents, lower cable guide fingers and dark horizontal power/vent modules at base. This is a tall modular carrier chassis, not a flat rack switch. Full object centered with small margins on a genuinely transparent background. No cables, annotations, external label, platform, ground shadow, extra objects or backdrop. Fine realistic metal detail, original muted vendor colors. Small printed Huawei / NetEngine branding permitted; do not add specifications.",
+    "source": "/workspace/scratch/7360d1d45af5/generated_images/exec-68dc9499-5689-4a85-94c7-6a9a1f6161ce.png",
+    "path": "/workspace/scratch/7360d1d45af5/assets-v07-extra/huawei-ne40e-x8a-illustration-v07.png",
+    "dimensions": [
+      992,
+      1585
+    ],
+    "mode": "RGBA",
+    "alpha_bounds": [
+      0,
+      0,
+      978,
+      1585
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "method": "built-in imagegen; original bytes copied without editing",
+    "selectedAsset": "assets/huawei-ne40e-x8a-illustration-v07.webp",
+    "originalAsset": "research/generated-originals-v07/huawei-ne40e-x8a-illustration-v07.png",
+    "deliveryEncoding": "lossless WebP, identical RGBA verified",
+    "frame": [
+      88,
+      24,
+      816,
+      1545
+    ]
+  }
+]

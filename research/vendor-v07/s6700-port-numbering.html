@@ -1,0 +1,37 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+<link rel="stylesheet" type="text/css" href="https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/css?uuid=45adc861ab1e4833bf8b714d8095648a.css"  >
+<title>Port Numbering Conventions</title></head>
+<body class="idp-ltr-html-body">
+<h1 class="idp-ltr-html-topictitle1">Port Numbering Conventions</h1>
+<div class="idp-ltr-html-topicbody"><p></p>
+<p>Physical ports are numbered in the following way:</p>
+<div class="idp-ltr-html-p">A single switch uses slot ID/subcard ID/port sequence number to identify physical ports. <ul class="idp-ltr-html-ul"><li class="idp-ltr-html-li">Slot ID: indicates the slot where the switch is located. The value is 0.</li><li class="idp-ltr-html-li">Subcard ID: indicates the ID of a subcard. The default value is 0 for models without subcards. If the subcard slot ID is 1, the value is 1.</li><li class="idp-ltr-html-li">Port sequence number: indicates the sequence number of a port on the switch.</li></ul>
+</div>
+<div class="idp-ltr-html-p">A stacked switch uses stack ID/subcard ID/port sequence number to identify physical ports. <ul class="idp-ltr-html-ul"><li class="idp-ltr-html-li">Stack ID: indicates the ID of a stacked switch. The value ranges from 0 to 8.</li><li class="idp-ltr-html-li">Subcard ID: indicates the ID of a subcard. The default value is 0 for models without subcards. If the subcard slot ID is 1, the value is 1.</li><li class="idp-ltr-html-li">Port sequence number: indicates the sequence number of a port on the switch.</li></ul>
+</div>
+
+<div class="idp-ltr-html-tablenoborder"><span class="idp-ltr-html-tablecap"><span class="idp-ltr-html-tablenumber">Table 4-3</span>  Port numbering conventions</span><table cellpadding="4" cellspacing="0" summary="" class="idp-ltr-html-tb-normal" id="EN-US_CONCEPT_0177092742__tabled0e1123" frame="border" border="1" rules="all"><thead align="left"><tr><th class="idp-ltr-html-cellrowborder" valign="top" width="60.95%" id="mcps1.7.8.4.4.2.3.1.1"><p>Port Numbering Diagram</p>
+</th>
+<th class="idp-ltr-html-cellrowborder" valign="top" width="39.050000000000004%" id="mcps1.7.8.4.4.2.3.1.2"><p>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="idp-ltr-html-cellrowborder" valign="top" width="60.95%" headers="mcps1.7.8.4.4.2.3.1.1 "><p><img  data-original="18e2d56c139f401e8bfc22d824762a02.png"  ></p>
+</td>
+<td class="idp-ltr-html-cellrowborder" valign="top" width="39.050000000000004%" headers="mcps1.7.8.4.4.2.3.1.2 "><p>There are two rows of service ports on the device. These ports are numbered from bottom to top and left to right, starting from 1.</p>
+<p>For example, the port on the top left is numbered 0/0/2.</p>
+<p>Ports of different speeds are numbered separately. For example, the first 100M port is numbered Ethernet 0/0/1, the first GE port is numbered GigabitEthernet 0/0/1, the first 10GE port is numbered XGigabitEthernet 0/0/1, and the first 40GE port is numbered 40GE 0/0/1. Ports with the same rate are numbered in ascending order.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div></div></body>
+</html>

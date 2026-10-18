@@ -1,0 +1,2914 @@
+{
+  "createdAt": "2026-10-08",
+  "scope": "Exact model assets and hardware interface verification only; no Site checkout modifications.",
+  "hotspotConvention": {
+    "boxPx": "[x,y,width,height] relative to original asset pixels",
+    "quality": "Manually measured against legible manufacturer/photo sockets; click target can be expanded modestly without crossing neighboring sockets."
+  },
+  "models": [
+    {
+      "modelId": "telco-t-marc-280",
+      "name": "Telco Systems T-Marc 280",
+      "primaryAssetId": "telco280-front",
+      "assets": [
+        {
+          "id": "telco280-front",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/telco-280-reflect.png",
+          "width": 858,
+          "height": 420,
+          "sourcePageUrl": "https://www.telco.com/product-ce/t-series/tm-280/",
+          "sourceImageUrl": "https://www.telco.com/wp-content/uploads/2025/12/TM-280-Reflect.png",
+          "face": "front-angle",
+          "exactModel": true,
+          "kind": "color-product-photo",
+          "hasTransparency": true,
+          "evidence": "Front label reads T-Marc 280; engraved socket identifiers 1/1, 2/1, 2/2 and 3/1 are readable.",
+          "rights": {
+            "owner": "Telco Systems / BATM Networks",
+            "notice": "Manufacturer page says 2026 all rights reserved; 2016 datasheet says all rights reserved.",
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+          "title": "T-Marc 280 manufacturer datasheet"
+        },
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2025/12/BATM-Networks-TM-280-Datasheet.pdf",
+          "title": "TM-280 manufacturer datasheet 2025"
+        }
+      ],
+      "logicalNetworkInterfaceCount": 4,
+      "physicalNetworkSocketCount": 5,
+      "interfaces": [
+        {
+          "id": "1/1",
+          "logicalName": null,
+          "physicalLabel": "1/1",
+          "role": "network-uplink",
+          "logicalNameVerified": false,
+          "sockets": [
+            {
+              "id": "1/1",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2/1",
+          "logicalName": null,
+          "physicalLabel": "2/1",
+          "role": "access",
+          "logicalNameVerified": false,
+          "sockets": [
+            {
+              "id": "2/1",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2/2",
+          "logicalName": null,
+          "physicalLabel": "2/2",
+          "role": "access",
+          "logicalNameVerified": false,
+          "sockets": [
+            {
+              "id": "2/2",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3/1",
+          "logicalName": null,
+          "physicalLabel": "3/1",
+          "role": "network-uplink",
+          "logicalNameVerified": false,
+          "comboGroup": "3/1",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "3/1:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "3/1:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        }
+      ],
+      "nonNetworkInterfaces": [
+        {
+          "id": "console",
+          "connector": "RJ45",
+          "type": "serial-console"
+        }
+      ],
+      "hotspots": [
+        {
+          "socketId": "1/1",
+          "assetId": "telco280-front",
+          "role": "network",
+          "boxPx": [
+            383,
+            230,
+            43,
+            33
+          ],
+          "boxNormalized": [
+            0.446387,
+            0.547619,
+            0.050117,
+            0.078571
+          ]
+        },
+        {
+          "socketId": "2/1",
+          "assetId": "telco280-front",
+          "role": "network",
+          "boxPx": [
+            444,
+            214,
+            40,
+            35
+          ],
+          "boxNormalized": [
+            0.517483,
+            0.509524,
+            0.04662,
+            0.083333
+          ]
+        },
+        {
+          "socketId": "2/2",
+          "assetId": "telco280-front",
+          "role": "network",
+          "boxPx": [
+            483,
+            210,
+            37,
+            35
+          ],
+          "boxNormalized": [
+            0.562937,
+            0.5,
+            0.043124,
+            0.083333
+          ]
+        },
+        {
+          "socketId": "3/1:fiber",
+          "assetId": "telco280-front",
+          "role": "network",
+          "boxPx": [
+            539,
+            216,
+            38,
+            33
+          ],
+          "boxNormalized": [
+            0.628205,
+            0.514286,
+            0.044289,
+            0.078571
+          ]
+        },
+        {
+          "socketId": "3/1:copper",
+          "assetId": "telco280-front",
+          "role": "network",
+          "boxPx": [
+            584,
+            208,
+            37,
+            36
+          ],
+          "boxNormalized": [
+            0.680653,
+            0.495238,
+            0.043124,
+            0.085714
+          ]
+        },
+        {
+          "socketId": "console",
+          "assetId": "telco280-front",
+          "role": "console",
+          "boxPx": [
+            245,
+            232,
+            46,
+            44
+          ],
+          "boxNormalized": [
+            0.285548,
+            0.552381,
+            0.053613,
+            0.104762
+          ]
+        },
+        {
+          "socketId": "power",
+          "assetId": "telco280-front",
+          "role": "power",
+          "boxPx": [
+            646,
+            206,
+            20,
+            31
+          ],
+          "boxNormalized": [
+            0.752914,
+            0.490476,
+            0.02331,
+            0.07381
+          ]
+        }
+      ],
+      "power": {
+        "powerSupplyCount": 1,
+        "powerInputCount": 1,
+        "mode": "external-adapter",
+        "deviceInput": "5 V DC, 3 A maximum",
+        "connector": "barrel DC input on front",
+        "adapterChoices": [
+          "AC to DC",
+          "DC to DC"
+        ],
+        "notRedundant": true
+      },
+      "limitations": [
+        "Full CLI names were not independently verified. Use the physical names 1/1,2/1,2/2,3/1, or disclose a catalog-derived full-name convention. Do not invent a second SFP 1/2 or count every port as combo.",
+        "This model is one external PSU, not dual built-in AC or DC."
+      ]
+    },
+    {
+      "modelId": "telco-t-marc-340",
+      "name": "Telco Systems T-Marc 340",
+      "primaryAssetId": "telco340-front",
+      "assets": [
+        {
+          "id": "telco340-front",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/telco-340-reflect.png",
+          "width": 858,
+          "height": 420,
+          "sourcePageUrl": "https://www.telco.com/product-ce/t-series/tm-340/",
+          "sourceImageUrl": "https://www.telco.com/wp-content/uploads/2025/12/340-device-reflect.png",
+          "face": "front",
+          "exactModel": true,
+          "kind": "color-product-photo",
+          "hasTransparency": true,
+          "evidence": "Front label reads T-Marc 340. Two Network and four Access combo positions are visible.",
+          "rights": {
+            "owner": "Telco Systems / BATM Networks",
+            "notice": "Manufacturer page says 2026 all rights reserved; 2016 datasheet says all rights reserved.",
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+          "title": "T-Marc 300 series manufacturer datasheet 2016"
+        },
+        {
+          "url": "https://www.scribd.com/doc/243913942/T-Marc-300-Series-v10-1-Rx-User-Guide",
+          "title": "Telco Systems T-Marc300 v10.1 User Guide, manufacturer authored, mirrored; Appendix B verifies CLI names and one internal PSU"
+        },
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2025/12/Telco-Systems-TM-340.pdf",
+          "title": "TM-340 manufacturer datasheet 2025"
+        }
+      ],
+      "logicalNetworkInterfaceCount": 6,
+      "physicalNetworkSocketCount": 12,
+      "interfaces": [
+        {
+          "id": "1/1/1",
+          "logicalName": "1/1/1",
+          "physicalLabel": "1/1",
+          "role": "network-uplink",
+          "logicalNameVerified": true,
+          "comboGroup": "1/1/1",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/1/1:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/1/1:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/1/2",
+          "logicalName": "1/1/2",
+          "physicalLabel": "1/2",
+          "role": "network-uplink",
+          "logicalNameVerified": true,
+          "comboGroup": "1/1/2",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/1/2:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/1/2:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/1",
+          "logicalName": "1/2/1",
+          "physicalLabel": "2/1",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/1",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/1:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/1:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/2",
+          "logicalName": "1/2/2",
+          "physicalLabel": "2/2",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/2",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/2:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/2:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/3",
+          "logicalName": "1/2/3",
+          "physicalLabel": "2/3",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/3",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/3:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/3:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/4",
+          "logicalName": "1/2/4",
+          "physicalLabel": "2/4",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/4",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/4:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/4:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        }
+      ],
+      "nonNetworkInterfaces": [
+        {
+          "id": "console",
+          "connector": "RJ45",
+          "type": "serial-console"
+        }
+      ],
+      "hotspots": [
+        {
+          "socketId": "1/1/1:fiber",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            239,
+            199,
+            38,
+            29
+          ],
+          "boxNormalized": [
+            0.278555,
+            0.47381,
+            0.044289,
+            0.069048
+          ]
+        },
+        {
+          "socketId": "1/1/1:copper",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            239,
+            238,
+            38,
+            34
+          ],
+          "boxNormalized": [
+            0.278555,
+            0.566667,
+            0.044289,
+            0.080952
+          ]
+        },
+        {
+          "socketId": "1/1/2:fiber",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            280,
+            199,
+            38,
+            29
+          ],
+          "boxNormalized": [
+            0.32634,
+            0.47381,
+            0.044289,
+            0.069048
+          ]
+        },
+        {
+          "socketId": "1/1/2:copper",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            280,
+            238,
+            38,
+            34
+          ],
+          "boxNormalized": [
+            0.32634,
+            0.566667,
+            0.044289,
+            0.080952
+          ]
+        },
+        {
+          "socketId": "1/2/1:fiber",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            355,
+            199,
+            38,
+            29
+          ],
+          "boxNormalized": [
+            0.413753,
+            0.47381,
+            0.044289,
+            0.069048
+          ]
+        },
+        {
+          "socketId": "1/2/1:copper",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            355,
+            238,
+            38,
+            34
+          ],
+          "boxNormalized": [
+            0.413753,
+            0.566667,
+            0.044289,
+            0.080952
+          ]
+        },
+        {
+          "socketId": "1/2/2:fiber",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            396,
+            199,
+            38,
+            29
+          ],
+          "boxNormalized": [
+            0.461538,
+            0.47381,
+            0.044289,
+            0.069048
+          ]
+        },
+        {
+          "socketId": "1/2/2:copper",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            396,
+            238,
+            38,
+            34
+          ],
+          "boxNormalized": [
+            0.461538,
+            0.566667,
+            0.044289,
+            0.080952
+          ]
+        },
+        {
+          "socketId": "1/2/3:fiber",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            436,
+            199,
+            38,
+            29
+          ],
+          "boxNormalized": [
+            0.508159,
+            0.47381,
+            0.044289,
+            0.069048
+          ]
+        },
+        {
+          "socketId": "1/2/3:copper",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            436,
+            238,
+            38,
+            34
+          ],
+          "boxNormalized": [
+            0.508159,
+            0.566667,
+            0.044289,
+            0.080952
+          ]
+        },
+        {
+          "socketId": "1/2/4:fiber",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            475,
+            199,
+            38,
+            29
+          ],
+          "boxNormalized": [
+            0.553613,
+            0.47381,
+            0.044289,
+            0.069048
+          ]
+        },
+        {
+          "socketId": "1/2/4:copper",
+          "assetId": "telco340-front",
+          "role": "network",
+          "boxPx": [
+            475,
+            238,
+            38,
+            34
+          ],
+          "boxNormalized": [
+            0.553613,
+            0.566667,
+            0.044289,
+            0.080952
+          ]
+        },
+        {
+          "socketId": "console",
+          "assetId": "telco340-front",
+          "role": "console",
+          "boxPx": [
+            142,
+            237,
+            41,
+            39
+          ],
+          "boxNormalized": [
+            0.165501,
+            0.564286,
+            0.047786,
+            0.092857
+          ]
+        }
+      ],
+      "power": {
+        "genericModelPowerMode": "SKU dependent",
+        "genericPowerSupplyCount": null,
+        "requiresPowerProfileSelection": true,
+        "profiles": [
+          {
+            "sku": "TMC-340-x / TMC-340-x-E",
+            "mode": "internal-AC",
+            "installedPowerSupplyCount": 1,
+            "input": "100-240 V AC 50-60 Hz",
+            "optionalExternalRedundantPowerSupply": true,
+            "optionalExternalPSUPart": "TMC-3X0-EXTPS-x",
+            "externalAdapterOutput": "12 V DC nominal"
+          },
+          {
+            "sku": "TMC-340-2DC",
+            "mode": "dual-feed-48VDC",
+            "inputFeeds": 2,
+            "installedPowerSupplyCount": 1
+          },
+          {
+            "sku": "TMC-340-EW",
+            "mode": "dual-feed-wide-range-24VDC/48VDC",
+            "inputFeeds": 2,
+            "installedPowerSupplyCount": 1
+          }
+        ],
+        "notes": [
+          "Dual DC feed means two power source feeds, not two removable AC PSU bays.",
+          "TMC-340-F has 2 copper+4 fiber ports and is a distinct variant; do not apply it to generic six-combo T-Marc340."
+        ]
+      },
+      "limitations": [
+        "Front photo does not identify the installed AC/DC power SKU; choose and label a power profile rather than assuming dual AC."
+      ]
+    },
+    {
+      "modelId": "telco-t-marc-380",
+      "name": "Telco Systems T-Marc 380",
+      "primaryAssetId": "telco380-front",
+      "manufacturerAssetId": "telco380-front-manufacturer",
+      "assets": [
+        {
+          "id": "telco380-front",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/telco-380-front-photo.jpg",
+          "width": 669,
+          "height": 143,
+          "sourcePageUrl": "https://www.ebay.com/itm/355859481374",
+          "sourceImageUrl": "https://i.ebayimg.com/images/g/zxIAAOSwwpFmjun9/s-l1600.webp",
+          "face": "front",
+          "exactModel": true,
+          "kind": "color-product-photo",
+          "hasTransparency": false,
+          "evidence": "Actual front label T-Marc380 and all ten combo positions are readable.",
+          "rights": {
+            "owner": "Seller Cyber Valley Deals (listing photographs)",
+            "notice": null,
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found on listing."
+          },
+          "derivation": "Mechanical rectangular crop; no generative editing.",
+          "sourceCropPx": [
+            812,
+            589,
+            1481,
+            732
+          ],
+          "originalLocalPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/telco-380-front-ebay.webp"
+        },
+        {
+          "id": "telco380-front-manufacturer",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/telco-380-front-manufacturer.png",
+          "width": 199,
+          "height": 66,
+          "sourcePageUrl": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+          "sourceImageUrl": null,
+          "face": "front",
+          "exactModel": true,
+          "kind": "color-product-photo",
+          "hasTransparency": true,
+          "embeddedImage": {
+            "documentUrl": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+            "page": 1,
+            "xref": 81
+          },
+          "evidence": "Manufacturer image has two Network plus eight Access combo pairs, identifying T-Marc380 among the family images.",
+          "rights": {
+            "owner": "Telco Systems / BATM Networks",
+            "notice": "Manufacturer page says 2026 all rights reserved; 2016 datasheet says all rights reserved.",
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found."
+          }
+        },
+        {
+          "id": "telco380-rear",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/telco-380-rear-ebay.webp",
+          "width": 1600,
+          "height": 1200,
+          "sourcePageUrl": "https://www.ebay.com/itm/355859481374",
+          "sourceImageUrl": "https://i.ebayimg.com/images/g/KDwAAOSwZnRmjun~/s-l1600.webp",
+          "face": "rear",
+          "exactModel": true,
+          "kind": "color-product-photo",
+          "hasTransparency": false,
+          "evidence": "Same listed TMC-380-AC-XX unit; one AC inlet and external 12VDC barrel socket are visible.",
+          "rights": {
+            "owner": "Seller Cyber Valley Deals (listing photographs)",
+            "notice": null,
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found on listing."
+          },
+          "powerVariantShown": "AC exemplar with optional external redundant power connector"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+          "title": "T-Marc300 manufacturer datasheet"
+        },
+        {
+          "url": "https://www.scribd.com/doc/243913942/T-Marc-300-Series-v10-1-Rx-User-Guide",
+          "title": "Telco Systems T-Marc300 v10.1 User Guide, manufacturer authored, mirrored; Appendix B verifies 1/1/1-2 and 1/2/1-8"
+        }
+      ],
+      "logicalNetworkInterfaceCount": 10,
+      "physicalNetworkSocketCount": 20,
+      "interfaces": [
+        {
+          "id": "1/1/1",
+          "logicalName": "1/1/1",
+          "physicalLabel": "1/1",
+          "role": "network-uplink",
+          "logicalNameVerified": true,
+          "comboGroup": "1/1/1",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/1/1:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/1/1:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/1/2",
+          "logicalName": "1/1/2",
+          "physicalLabel": "1/2",
+          "role": "network-uplink",
+          "logicalNameVerified": true,
+          "comboGroup": "1/1/2",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/1/2:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/1/2:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/1",
+          "logicalName": "1/2/1",
+          "physicalLabel": "2/1",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/1",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/1:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/1:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/2",
+          "logicalName": "1/2/2",
+          "physicalLabel": "2/2",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/2",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/2:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/2:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/3",
+          "logicalName": "1/2/3",
+          "physicalLabel": "2/3",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/3",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/3:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/3:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/4",
+          "logicalName": "1/2/4",
+          "physicalLabel": "2/4",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/4",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/4:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/4:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/5",
+          "logicalName": "1/2/5",
+          "physicalLabel": "2/5",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/5",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/5:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/5:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/6",
+          "logicalName": "1/2/6",
+          "physicalLabel": "2/6",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/6",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/6:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/6:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/7",
+          "logicalName": "1/2/7",
+          "physicalLabel": "2/7",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/7",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/7:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/7:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1/2/8",
+          "logicalName": "1/2/8",
+          "physicalLabel": "2/8",
+          "role": "access",
+          "logicalNameVerified": true,
+          "comboGroup": "1/2/8",
+          "mediaExclusivity": "only one socket in this combo group may be active",
+          "sockets": [
+            {
+              "id": "1/2/8:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "1/2/8:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                100,
+                1000
+              ]
+            }
+          ]
+        }
+      ],
+      "nonNetworkInterfaces": [
+        {
+          "id": "console",
+          "connector": "RJ45",
+          "type": "serial-console"
+        }
+      ],
+      "hotspots": [
+        {
+          "socketId": "1/1/1:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            129,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.192825,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/1/1:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            129,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.192825,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/1/2:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            172,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.2571,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/1/2:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            172,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.2571,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/1:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            252,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.376682,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/1:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            252,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.376682,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/2:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            295,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.440957,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/2:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            295,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.440957,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/3:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            339,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.506726,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/3:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            339,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.506726,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/4:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            382,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.571001,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/4:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            382,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.571001,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/5:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            439,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.656203,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/5:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            439,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.656203,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/6:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            482,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.720478,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/6:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            482,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.720478,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/7:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            526,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.786248,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/7:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            526,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.786248,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "1/2/8:fiber",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            569,
+            29,
+            39,
+            33
+          ],
+          "boxNormalized": [
+            0.850523,
+            0.202797,
+            0.058296,
+            0.230769
+          ]
+        },
+        {
+          "socketId": "1/2/8:copper",
+          "assetId": "telco380-front",
+          "role": "network",
+          "boxPx": [
+            569,
+            71,
+            39,
+            39
+          ],
+          "boxNormalized": [
+            0.850523,
+            0.496503,
+            0.058296,
+            0.272727
+          ]
+        },
+        {
+          "socketId": "console",
+          "assetId": "telco380-front",
+          "role": "console",
+          "boxPx": [
+            23,
+            64,
+            45,
+            47
+          ],
+          "boxNormalized": [
+            0.03438,
+            0.447552,
+            0.067265,
+            0.328671
+          ]
+        },
+        {
+          "socketId": "ac-power",
+          "assetId": "telco380-rear",
+          "role": "power",
+          "boxPx": [
+            242,
+            654,
+            102,
+            74
+          ],
+          "boxNormalized": [
+            0.15125,
+            0.545,
+            0.06375,
+            0.061667
+          ]
+        },
+        {
+          "socketId": "external-dc-power",
+          "assetId": "telco380-rear",
+          "role": "power",
+          "boxPx": [
+            868,
+            646,
+            37,
+            39
+          ],
+          "boxNormalized": [
+            0.5425,
+            0.538333,
+            0.023125,
+            0.0325
+          ]
+        }
+      ],
+      "power": {
+        "genericModelPowerMode": "SKU dependent",
+        "genericPowerSupplyCount": null,
+        "requiresPowerProfileSelection": true,
+        "profiles": [
+          {
+            "sku": "TMC-380-x",
+            "mode": "internal-AC",
+            "installedPowerSupplyCount": 1,
+            "input": "100-240 V AC 50-60 Hz",
+            "optionalExternalRedundantPowerSupply": true,
+            "optionalExternalPSUPart": "TMC-3X0-EXTPS-x",
+            "externalAdapterOutput": "12 V DC nominal"
+          },
+          {
+            "sku": "TMC-380-DC",
+            "mode": "internal-48VDC",
+            "installedPowerSupplyCount": 1,
+            "inputFeeds": 1
+          },
+          {
+            "sku": "TMC-380-2DC",
+            "mode": "dual-feed-48VDC",
+            "installedPowerSupplyCount": 1,
+            "inputFeeds": 2
+          }
+        ],
+        "notes": [
+          "Rear photograph proves a single internal AC PSU example plus external redundant 12VDC input; external PSU is not shown installed.",
+          "The manufacturer user guide states one internal AC or DC PSU. Two power feeds or optional external power do not prove dual removable built-in PSU."
+        ]
+      },
+      "limitations": [
+        "The primary manufacturer cutout is only199x66. The readable669x143 crop comes from a third-party listing and preserves actual model labels.",
+        "The front photograph contains an example transceiver in the first SFP slot; do not assume it is installed in newly added app devices."
+      ]
+    },
+    {
+      "modelId": "fortinet-fortigate-100f",
+      "name": "Fortinet FortiGate100F",
+      "brand": "Fortinet",
+      "category": "firewall",
+      "primaryAssetId": "fg100f-front",
+      "assets": [
+        {
+          "id": "fg100f-front",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/fortigate-100f-front-manufacturer.png",
+          "width": 2100,
+          "height": 414,
+          "sourcePageUrl": "https://www.fortinet.com/content/dam/fortinet/assets/brochures/fg-100f-intro.pdf",
+          "sourceImageUrl": null,
+          "face": "front-angle",
+          "exactModel": true,
+          "kind": "color-product-photo",
+          "hasTransparency": false,
+          "embeddedImage": {
+            "documentUrl": "https://www.fortinet.com/content/dam/fortinet/assets/brochures/fg-100f-intro.pdf",
+            "page": 1,
+            "xref": 153
+          },
+          "evidence": "Photograph label reads FortiGate100F; no101F sibling substitution.",
+          "rights": {
+            "owner": "Fortinet, Inc.",
+            "notice": "2019 brochure: Copyright 2019 Fortinet, Inc. All rights reserved.",
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found."
+          }
+        },
+        {
+          "id": "fg100f-front-hires",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/fortigate-100f-front-photo.png",
+          "width": 5219,
+          "height": 1539,
+          "sourcePageUrl": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+          "sourceImageUrl": null,
+          "face": "front-angle",
+          "exactModel": true,
+          "kind": "color-product-photo",
+          "hasTransparency": true,
+          "embeddedImage": {
+            "documentUrl": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+            "page": 1,
+            "xref": 1276
+          },
+          "evidence": "Photo label reads FortiGate100F. Manufacturer authored image in datasheet mirror; official English datasheet URL returned404 on download.",
+          "rights": {
+            "owner": "Fortinet, Inc.",
+            "notice": "2019 brochure: Copyright 2019 Fortinet, Inc. All rights reserved.",
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found."
+          }
+        },
+        {
+          "id": "fg100f-family-rear",
+          "localPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/fortigate-100f-family-rear-figure.png",
+          "width": 1608,
+          "height": 180,
+          "sourcePageUrl": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+          "sourceImageUrl": null,
+          "face": "rear",
+          "exactModel": false,
+          "kind": "manufacturer-family-illustration",
+          "hasTransparency": false,
+          "embeddedImage": {
+            "documentUrl": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+            "page": 6,
+            "pdfCropPoints": [
+              38,
+              263,
+              440,
+              308
+            ],
+            "scale": 4
+          },
+          "evidence": "Hardware figure is explicitly for100F Series (100F/101F); front figure says101F. Supplementary rear illustration only, never an exact100F photograph.",
+          "rights": {
+            "owner": "Fortinet, Inc.",
+            "notice": "2019 brochure: Copyright 2019 Fortinet, Inc. All rights reserved.",
+            "reuseLicense": null,
+            "reuseStatus": "No explicit reuse permission or open license found."
+          }
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fortinet.com/content/dam/fortinet/assets/brochures/fg-100f-intro.pdf",
+          "title": "Fortinet100F Series official product brochure"
+        },
+        {
+          "url": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+          "title": "Fortinet100F Series manufacturer datasheet mirrored, pages6-7"
+        },
+        {
+          "url": "https://community.fortinet.com/fortigate-3/troubleshooting-tip-speed-options-missing-in-fortigate-100f-101f-after-upgrading-to-v7-2-8-or-v7-4-2-178374",
+          "title": "Fortinet staff: supported interface speed settings, all physical and CLI names"
+        },
+        {
+          "url": "https://community.fortinet.com/fortigate-3/technical-tip-sfp-transceiver-support-on-fortigate-100f-and-200f-sfp-slots-95363",
+          "title": "Fortinet staff:1G fiber SFP support in100F SFP+slots"
+        }
+      ],
+      "logicalNetworkInterfaceCount": 28,
+      "physicalNetworkSocketCount": 32,
+      "interfaces": [
+        {
+          "id": "dmz",
+          "logicalName": "dmz",
+          "physicalLabel": "DMZ",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "dmz",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mgmt",
+          "logicalName": "mgmt",
+          "physicalLabel": "MGMT",
+          "logicalNameVerified": true,
+          "role": "mgmt",
+          "sockets": [
+            {
+              "id": "mgmt",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wan1",
+          "logicalName": "wan1",
+          "physicalLabel": "WAN1",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "wan1",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wan2",
+          "logicalName": "wan2",
+          "physicalLabel": "WAN2",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "wan2",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ha1",
+          "logicalName": "ha1",
+          "physicalLabel": "HA1",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "ha1",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ha2",
+          "logicalName": "ha2",
+          "physicalLabel": "HA2",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "ha2",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port1",
+          "logicalName": "port1",
+          "physicalLabel": "1",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port1",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port2",
+          "logicalName": "port2",
+          "physicalLabel": "2",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port2",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port3",
+          "logicalName": "port3",
+          "physicalLabel": "3",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port3",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port4",
+          "logicalName": "port4",
+          "physicalLabel": "4",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port4",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port5",
+          "logicalName": "port5",
+          "physicalLabel": "5",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port5",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port6",
+          "logicalName": "port6",
+          "physicalLabel": "6",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port6",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port7",
+          "logicalName": "port7",
+          "physicalLabel": "7",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port7",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port8",
+          "logicalName": "port8",
+          "physicalLabel": "8",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port8",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port9",
+          "logicalName": "port9",
+          "physicalLabel": "9",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port9",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port10",
+          "logicalName": "port10",
+          "physicalLabel": "10",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port10",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port11",
+          "logicalName": "port11",
+          "physicalLabel": "11",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port11",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port12",
+          "logicalName": "port12",
+          "physicalLabel": "12",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port12",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port13",
+          "logicalName": "port13",
+          "physicalLabel": "13",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port13",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port14",
+          "logicalName": "port14",
+          "physicalLabel": "14",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port14",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port15",
+          "logicalName": "port15",
+          "physicalLabel": "15",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port15",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port16",
+          "logicalName": "port16",
+          "physicalLabel": "16",
+          "logicalNameVerified": true,
+          "role": "network",
+          "sockets": [
+            {
+              "id": "port16",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port17",
+          "logicalName": "port17",
+          "physicalLabel": "17",
+          "logicalNameVerified": true,
+          "role": "network",
+          "comboGroup": "port17",
+          "mediaExclusivity": "RJ45 and SFP are shared: at most one active media socket for this logical port",
+          "sockets": [
+            {
+              "id": "port17:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "port17:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port18",
+          "logicalName": "port18",
+          "physicalLabel": "18",
+          "logicalNameVerified": true,
+          "role": "network",
+          "comboGroup": "port18",
+          "mediaExclusivity": "RJ45 and SFP are shared: at most one active media socket for this logical port",
+          "sockets": [
+            {
+              "id": "port18:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "port18:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port19",
+          "logicalName": "port19",
+          "physicalLabel": "19",
+          "logicalNameVerified": true,
+          "role": "network",
+          "comboGroup": "port19",
+          "mediaExclusivity": "RJ45 and SFP are shared: at most one active media socket for this logical port",
+          "sockets": [
+            {
+              "id": "port19:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "port19:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "port20",
+          "logicalName": "port20",
+          "physicalLabel": "20",
+          "logicalNameVerified": true,
+          "role": "network",
+          "comboGroup": "port20",
+          "mediaExclusivity": "RJ45 and SFP are shared: at most one active media socket for this logical port",
+          "sockets": [
+            {
+              "id": "port20:copper",
+              "connector": "RJ45",
+              "media": "UTP",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ]
+            },
+            {
+              "id": "port20:fiber",
+              "connector": "SFP",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000
+              ]
+            }
+          ]
+        },
+        {
+          "id": "x1",
+          "logicalName": "x1",
+          "physicalLabel": "X1",
+          "logicalNameVerified": true,
+          "role": "network",
+          "defaultRole": "FortiLink; can be reconfigured to regular network port",
+          "sockets": [
+            {
+              "id": "x1",
+              "connector": "SFP+",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000,
+                10000
+              ],
+              "notes": "1G fiber SFP supported with speed1000full; Fortinet FN-TRAN-GC copper SFP not supported in these SFP+slots."
+            }
+          ]
+        },
+        {
+          "id": "x2",
+          "logicalName": "x2",
+          "physicalLabel": "X2",
+          "logicalNameVerified": true,
+          "role": "network",
+          "defaultRole": "FortiLink; can be reconfigured to regular network port",
+          "sockets": [
+            {
+              "id": "x2",
+              "connector": "SFP+",
+              "media": "Fiber",
+              "speedsMbps": [
+                1000,
+                10000
+              ],
+              "notes": "1G fiber SFP supported with speed1000full; Fortinet FN-TRAN-GC copper SFP not supported in these SFP+slots."
+            }
+          ]
+        }
+      ],
+      "nonNetworkInterfaces": [
+        {
+          "id": "console",
+          "connector": "RJ45",
+          "type": "serial-console"
+        },
+        {
+          "id": "usb",
+          "connector": "USB-A",
+          "type": "USB3.0 host/server"
+        }
+      ],
+      "hotspots": [
+        {
+          "socketId": "dmz",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            720,
+            239,
+            56,
+            42
+          ],
+          "boxNormalized": [
+            0.342857,
+            0.577295,
+            0.026667,
+            0.101449
+          ]
+        },
+        {
+          "socketId": "mgmt",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            720,
+            293,
+            56,
+            40
+          ],
+          "boxNormalized": [
+            0.342857,
+            0.707729,
+            0.026667,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "wan1",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            814,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.387619,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "wan2",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            814,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.387619,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "ha1",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            872,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.415238,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "ha2",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            872,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.415238,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "port1",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            931,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.443333,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "port2",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            931,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.443333,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "port3",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            990,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.471429,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "port4",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            990,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.471429,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "port5",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1082,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.515238,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "port6",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1082,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.515238,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "port7",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1140,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.542857,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "port8",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1140,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.542857,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "port9",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1199,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.570952,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "port10",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1199,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.570952,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "port11",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1258,
+            237,
+            53,
+            40
+          ],
+          "boxNormalized": [
+            0.599048,
+            0.572464,
+            0.025238,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "port12",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1258,
+            291,
+            53,
+            41
+          ],
+          "boxNormalized": [
+            0.599048,
+            0.702899,
+            0.025238,
+            0.099034
+          ]
+        },
+        {
+          "socketId": "x1",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1337,
+            229,
+            64,
+            57
+          ],
+          "boxNormalized": [
+            0.636667,
+            0.55314,
+            0.030476,
+            0.137681
+          ]
+        },
+        {
+          "socketId": "x2",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1337,
+            293,
+            64,
+            39
+          ],
+          "boxNormalized": [
+            0.636667,
+            0.707729,
+            0.030476,
+            0.094203
+          ]
+        },
+        {
+          "socketId": "port13",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1420,
+            230,
+            59,
+            55
+          ],
+          "boxNormalized": [
+            0.67619,
+            0.555556,
+            0.028095,
+            0.13285
+          ]
+        },
+        {
+          "socketId": "port14",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1420,
+            294,
+            59,
+            38
+          ],
+          "boxNormalized": [
+            0.67619,
+            0.710145,
+            0.028095,
+            0.091787
+          ]
+        },
+        {
+          "socketId": "port15",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1481,
+            230,
+            59,
+            55
+          ],
+          "boxNormalized": [
+            0.705238,
+            0.555556,
+            0.028095,
+            0.13285
+          ]
+        },
+        {
+          "socketId": "port16",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1481,
+            294,
+            59,
+            38
+          ],
+          "boxNormalized": [
+            0.705238,
+            0.710145,
+            0.028095,
+            0.091787
+          ]
+        },
+        {
+          "socketId": "port17:fiber",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1542,
+            230,
+            59,
+            55
+          ],
+          "boxNormalized": [
+            0.734286,
+            0.555556,
+            0.028095,
+            0.13285
+          ]
+        },
+        {
+          "socketId": "port18:fiber",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1542,
+            294,
+            59,
+            38
+          ],
+          "boxNormalized": [
+            0.734286,
+            0.710145,
+            0.028095,
+            0.091787
+          ]
+        },
+        {
+          "socketId": "port19:fiber",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1603,
+            230,
+            59,
+            55
+          ],
+          "boxNormalized": [
+            0.763333,
+            0.555556,
+            0.028095,
+            0.13285
+          ]
+        },
+        {
+          "socketId": "port20:fiber",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1603,
+            294,
+            59,
+            38
+          ],
+          "boxNormalized": [
+            0.763333,
+            0.710145,
+            0.028095,
+            0.091787
+          ]
+        },
+        {
+          "socketId": "port17:copper",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1685,
+            235,
+            54,
+            42
+          ],
+          "boxNormalized": [
+            0.802381,
+            0.567633,
+            0.025714,
+            0.101449
+          ]
+        },
+        {
+          "socketId": "port18:copper",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1685,
+            292,
+            54,
+            40
+          ],
+          "boxNormalized": [
+            0.802381,
+            0.705314,
+            0.025714,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "port19:copper",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1779,
+            235,
+            54,
+            42
+          ],
+          "boxNormalized": [
+            0.847143,
+            0.567633,
+            0.025714,
+            0.101449
+          ]
+        },
+        {
+          "socketId": "port20:copper",
+          "assetId": "fg100f-front",
+          "role": "network",
+          "boxPx": [
+            1779,
+            292,
+            54,
+            40
+          ],
+          "boxNormalized": [
+            0.847143,
+            0.705314,
+            0.025714,
+            0.096618
+          ]
+        },
+        {
+          "socketId": "console",
+          "assetId": "fg100f-front",
+          "role": "console",
+          "boxPx": [
+            621,
+            280,
+            65,
+            54
+          ],
+          "boxNormalized": [
+            0.295714,
+            0.676329,
+            0.030952,
+            0.130435
+          ]
+        },
+        {
+          "socketId": "usb",
+          "assetId": "fg100f-front",
+          "role": "usb",
+          "boxPx": [
+            574,
+            279,
+            24,
+            54
+          ],
+          "boxNormalized": [
+            0.273333,
+            0.673913,
+            0.011429,
+            0.130435
+          ]
+        },
+        {
+          "socketId": "psu1",
+          "assetId": "fg100f-family-rear",
+          "role": "power",
+          "boxPx": [
+            154,
+            63,
+            114,
+            90
+          ],
+          "boxNormalized": [
+            0.095771,
+            0.35,
+            0.070896,
+            0.5
+          ]
+        },
+        {
+          "socketId": "psu2",
+          "assetId": "fg100f-family-rear",
+          "role": "power",
+          "boxPx": [
+            1334,
+            63,
+            114,
+            90
+          ],
+          "boxNormalized": [
+            0.829602,
+            0.35,
+            0.070896,
+            0.5
+          ]
+        }
+      ],
+      "power": {
+        "powerSupplyCount": 2,
+        "powerInputCount": 2,
+        "mode": "built-in-AC",
+        "input": "100-240V AC,50/60Hz",
+        "connector": "2 IEC C14 rear inlets",
+        "redundancy": "1+1",
+        "hotSwappable": false,
+        "removablePowerBays": false
+      },
+      "notes": [
+        "100F has no onboard480GBSSD; that is101F. Do not copy the family hardware480GB icon to100F specifications.",
+        "Port17-20 physicalSFP/RJ45 sockets must share occupancy in the app.",
+        "Allow SFP/SFP+Fiber connectivity and RJ45 UTP connectivity using the verified speeds."
+      ]
+    }
+  ]
+}

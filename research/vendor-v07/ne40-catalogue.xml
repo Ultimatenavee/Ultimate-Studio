@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zip name="NE40E V800R024C10SPC500 Hardware Description.zip" nodeId="EDOC1100465713" partNo="8001" chapterNo="k001"> 
+  <file name="Hardware Description.htm" txtName="Hardware Description" partNo="j001" chapterNo="" originalNo="" originalName="Hardware Description.htm" topicId="443ed739"> 
+    <file name="Product Signal Flow Overview.htm" txtName="Product Signal Flow Overview" partNo="j002" chapterNo="" originalNo="" originalName="Product Signal Flow Overview.htm" topicId="c5c00b3b"> 
+      <file name="General Service Process Overview.htm" txtName="General Service Process Overview" partNo="j003" chapterNo="" originalNo="" originalName="General Service Process Overview.htm" topicId="dc0475cb"/>  
+      <file name="Signal Flow on the Control Plane.htm" txtName="Signal Flow on the Control Plane" partNo="j004" chapterNo="" originalNo="" originalName="Signal Flow on the Control Plane.htm" topicId="fd7217d4"/>  
+      <file name="Signal Flow on the Data Plane.htm" txtName="Signal Flow on the Data Plane" partNo="j005" chapterNo="" originalNo="" originalName="Signal Flow on the Data Plane.htm" topicId="ca431683"/>  
+      <file name="Signal Flow on the Monitoring Plane.htm" txtName="Signal Flow on the Monitoring Plane" partNo="j006" chapterNo="" originalNo="" originalName="Signal Flow on the Monitoring Plane.htm" topicId="b67f0b80"/> 
+    </file>  
+    <file name="Cabinets.htm" txtName="Cabinets" partNo="j007" chapterNo="" originalNo="" originalName="Cabinets.htm" topicId="bbf55490"> 
+      <file name="A610 Cabinet.htm" txtName="A610 Cabinet" partNo="j008" chapterNo="" originalNo="" originalName="A610 Cabinet.htm" topicId="cc8cf19a"/>  
+      <file name="A68 Cabinet.htm" txtName="A68 Cabinet" partNo="j009" chapterNo="" originalNo="" originalName="A68 Cabinet.htm" topicId="1a34c3da"/>  
+      <file name="N610E Cabinet.htm" txtName="N610E Cabinet" partNo="j00a" chapterNo="" originalNo="" originalName="N610E Cabinet.htm" topicId="9e8abd04"/>  
+      <file name="N68E Cabinets.htm" txtName="N68E Cabinets" partNo="j00b" chapterNo="" originalNo="" originalName="N68E Cabinets.htm" topicId="d80abba9"/>  
+      <file name="Cabinet Accessories.htm" txtName="Cabinet Accessories" partNo="j00c" chapterNo="" originalNo="" originalName="Cabinet Accessories.htm" topicId="7583137c"/> 
+    </file>  
+    <file name="Chassis.htm" txtName="Chassis" partNo="j00d" chapterNo="" originalNo="" originalName="Chassis.htm" topicId="a182232"> 
+      <file name="NE40E-X3A.htm" txtName="NE40E-X3A" partNo="j00e" chapterNo="" originalNo="" originalName="NE40E-X3A.htm" topicId="d78ff68"/>  
+      <file name="NE40E-X8A.htm" txtName="NE40E-X8A" partNo="j00f" chapterNo="" originalNo="" originalName="NE40E-X8A.htm" topicId="ee8c26a3"/>  
+      <file name="NE40E-X16A.htm" txtName="NE40E-X16A" partNo="j00g" chapterNo="" originalNo="" originalName="NE40E-X16A.htm" topicId="f3473441"/> 
+    </file>  
+    <file name="Power.htm" txtName="Power" partNo="j00h" chapterNo="" originalNo="" originalName="Power.htm" topicId="ecc6d0ef"> 
+      <file name="NE40E-X3A Power Supply System.htm" txtName="NE40E-X3A Power Supply System" partNo="j00i" chapterNo="" originalNo="" originalName="NE40E-X3A Power Supply System.htm" topicId="98ea7112"/>  
+      <file name="NE40E-X8A Power Supply System.htm" txtName="NE40E-X8A Power Supply System" partNo="j00j" chapterNo="" originalNo="" originalName="NE40E-X8A Power Supply System.htm" topicId="1abfefcf"/>  
+      <file name="NE40E-X16A Power Supply System.htm" txtName="NE40E-X16A Power Supply System" partNo="j00k" chapterNo="" originalNo="" originalName="NE40E-X16A Power Supply System.htm" topicId="f7668c2e"/> 
+    </file>  
+    <file name="Fan.htm" txtName="Fan" partNo="j00l" chapterNo="" originalNo="" originalName="Fan.htm" topicId="a980d163"> 
+      <file name="Heat Dissipation System of the NE40E-X3A.htm" txtName="Heat Dissipation System of the NE40E-X3A" partNo="j00m" chapterNo="" originalNo="" originalName="Heat Dissipation System of the NE40E-X3A.htm" topicId="3b08bd1c"/>  
+      <file name="Heat Dissipation System of the NE40E-X8A.htm" txtName="Heat Dissipation System of the NE40E-X8A" partNo="j00n" chapterNo="" originalNo="" originalName="Heat Dissipation System of the NE40E-X8A.htm" topicId="b95d23c1"/>  
+      <file name="Heat Dissipation System of the NE40E-X16A.htm" txtName="Heat Dissipation System of the NE40E-X16A" partNo="j00o" chapterNo="" originalNo="" originalName="Heat Dissipation System of the NE40E-X16A.htm" topicId="107d43e5"/> 
+    </file>  
+    <file name="Boards.htm" txtName="Boards" partNo="j00p" chapterNo="" originalNo="" originalName="Boards.htm" topicId="d2bd3423"> 
+      <file name="Overview.htm" txtName="Overview" partNo="j00q" chapterNo="" originalNo="" originalName="Overview.htm" topicId="ffb877c2"/>  
+      <file name="MPU.htm" txtName="MPU" partNo="j00r" chapterNo="" originalNo="" originalName="MPU.htm" topicId="b01e7d24"/>  
+      <file name="SRU.htm" txtName="SRU" partNo="j00s" chapterNo="" originalNo="" originalName="SRU.htm" topicId="949091dc"/>  
+      <file name="SFU.htm" txtName="SFU" partNo="j00t" chapterNo="" originalNo="" originalName="SFU.htm" topicId="ba3e4689"/>  
+      <file name="VSUI-400.htm" txtName="VSUI-400" partNo="j00u" chapterNo="" originalNo="" originalName="VSUI-400.htm" topicId="95f53876"/>  
+      <file name="VSUF-160.htm" txtName="VSUF-160" partNo="j00v" chapterNo="" originalNo="" originalName="VSUF-160.htm" topicId="4734caca"/>  
+      <file name="SP160.htm" txtName="SP160" partNo="j00w" chapterNo="" originalNo="" originalName="SP160.htm" topicId="9903e3e0"/>  
+      <file name="VSUF-80.htm" txtName="VSUF-80" partNo="j00x" chapterNo="" originalNo="" originalName="VSUF-80.htm" topicId="b1cedb84"/>  
+      <file name="SP80.htm" txtName="SP80" partNo="j00y" chapterNo="" originalNo="" originalName="SP80.htm" topicId="3d793469"/>  
+      <file name="LPUI-21.htm" txtName="LPUI-21" partNo="j00z" chapterNo="" originalNo="" originalName="LPUI-21.htm" topicId="217fa2e0"/>  
+      <file name="LPUF-50.htm" txtName="LPUF-50" partNo="j010" chapterNo="" originalNo="" originalName="LPUF-50.htm" topicId="415a14e7"/>  
+      <file name="LPUF-51.htm" txtName="LPUF-51" partNo="j011" chapterNo="" originalNo="" originalName="LPUF-51.htm" topicId="365d2471"/>  
+      <file name="LPUI-51.htm" txtName="LPUI-51" partNo="j012" chapterNo="" originalNo="" originalName="LPUI-51.htm" topicId="6e3e3427"/>  
+      <file name="LPUS-51.htm" txtName="LPUS-51" partNo="j013" chapterNo="" originalNo="" originalName="LPUS-51.htm" topicId="519a83dc"/>  
+      <file name="LPUI-52.htm" txtName="LPUI-52" partNo="j014" chapterNo="" originalNo="" originalName="LPUI-52.htm" topicId="f737659d"/>  
+      <file name="LPUF-53.htm" txtName="LPUF-53" partNo="j015" chapterNo="" originalNo="" originalName="LPUF-53.htm" topicId="d853455d"/>  
+      <file name="LPUS-101.htm" txtName="LPUS-101" partNo="j016" chapterNo="" originalNo="" originalName="LPUS-101.htm" topicId="12fa7256"/>  
+      <file name="LPUF-120.htm" txtName="LPUF-120" partNo="j017" chapterNo="" originalNo="" originalName="LPUF-120.htm" topicId="ffcb38b0"/>  
+      <file name="LPUI-120.htm" txtName="LPUI-120" partNo="j018" chapterNo="" originalNo="" originalName="LPUI-120.htm" topicId="7d9baf61"/>  
+      <file name="LPUF-200.htm" txtName="LPUF-200" partNo="j019" chapterNo="" originalNo="" originalName="LPUF-200.htm" topicId="cfbbe46b"/>  
+      <file name="LPUI-200.htm" txtName="LPUI-200" partNo="j01a" chapterNo="" originalNo="" originalName="LPUI-200.htm" topicId="4deb73ba"/>  
+      <file name="LPUF-240.htm" txtName="LPUF-240" partNo="j01b" chapterNo="" originalNo="" originalName="LPUF-240.htm" topicId="abd7216f"/>  
+      <file name="LPUI-240.htm" txtName="LPUI-240" partNo="j01c" chapterNo="" originalNo="" originalName="LPUI-240.htm" topicId="2987b6be"/>  
+      <file name="LPUF-241.htm" txtName="LPUF-241" partNo="j01d" chapterNo="" originalNo="" originalName="LPUF-241.htm" topicId="dcd011f9"/>  
+      <file name="LPUI-241.htm" txtName="LPUI-241" partNo="j01e" chapterNo="" originalNo="" originalName="LPUI-241.htm" topicId="5e808628"/>  
+      <file name="LPUI-242.htm" txtName="LPUI-242" partNo="j01f" chapterNo="" originalNo="" originalName="LPUI-242.htm" topicId="c789d792"/>  
+      <file name="LPUF-243.htm" txtName="LPUF-243" partNo="j01g" chapterNo="" originalNo="" originalName="LPUF-243.htm" topicId="32de70d5"/>  
+      <file name="LPUI-243.htm" txtName="LPUI-243" partNo="j01h" chapterNo="" originalNo="" originalName="LPUI-243.htm" topicId="b08ee704"/>  
+      <file name="LPUF-245.htm" txtName="LPUF-245" partNo="j01i" chapterNo="" originalNo="" originalName="LPUF-245.htm" topicId="dbbdd5e0"/>  
+      <file name="LPUI-245.htm" txtName="LPUI-245" partNo="j01j" chapterNo="" originalNo="" originalName="LPUI-245.htm" topicId="59ed4231"/>  
+      <file name="LPUF-246.htm" txtName="LPUF-246" partNo="j01k" chapterNo="" originalNo="" originalName="LPUF-246.htm" topicId="42b4845a"/>  
+      <file name="LPUI-402.htm" txtName="LPUI-402" partNo="j01l" chapterNo="" originalNo="" originalName="LPUI-402.htm" topicId="a7686e24"/>  
+      <file name="LPUF-480.htm" txtName="LPUF-480" partNo="j01m" chapterNo="" originalNo="" originalName="LPUF-480.htm" topicId="3ef12d1"/>  
+      <file name="LPUI-480.htm" txtName="LPUI-480" partNo="j01n" chapterNo="" originalNo="" originalName="LPUI-480.htm" topicId="81bf8500"/>  
+      <file name="LPUF-481.htm" txtName="LPUF-481" partNo="j01o" chapterNo="" originalNo="" originalName="LPUF-481.htm" topicId="74e82247"/>  
+      <file name="LPUF-483.htm" txtName="LPUF-483" partNo="j01p" chapterNo="" originalNo="" originalName="LPUF-483.htm" topicId="9ae6436b"/>  
+      <file name="LPUI-483.htm" txtName="LPUI-483" partNo="j01q" chapterNo="" originalNo="" originalName="LPUI-483.htm" topicId="18b6d4ba"/>  
+      <file name="LPUF-485.htm" txtName="LPUF-485" partNo="j01r" chapterNo="" originalNo="" originalName="LPUF-485.htm" topicId="7385e65e"/>  
+      <file name="LPUF-486.htm" txtName="LPUF-486" partNo="j01s" chapterNo="" originalNo="" originalName="LPUF-486.htm" topicId="ea8cb7e4"/>  
+      <file name="LPUF-1T.htm" txtName="LPUF-1T" partNo="j01t" chapterNo="" originalNo="" originalName="LPUF-1T.htm" topicId="5487546a"/>  
+      <file name="LPUI-1T.htm" txtName="LPUI-1T" partNo="j01u" chapterNo="" originalNo="" originalName="LPUI-1T.htm" topicId="ce4443c"/>  
+      <file name="LPUI-2T.htm" txtName="LPUI-2T" partNo="j01v" chapterNo="" originalNo="" originalName="LPUI-2T.htm" topicId="27c917ff"/>  
+      <file name="P10.htm" txtName="P10" partNo="j01w" chapterNo="" originalNo="" originalName="P10.htm" topicId="4b34865c"/>  
+      <file name="P50.htm" txtName="P50" partNo="j01x" chapterNo="" originalNo="" originalName="P50.htm" topicId="2f584358"/>  
+      <file name="P51.htm" txtName="P51" partNo="j01y" chapterNo="" originalNo="" originalName="P51.htm" topicId="585f73ce"/>  
+      <file name="P52.htm" txtName="P52" partNo="j01z" chapterNo="" originalNo="" originalName="P52.htm" topicId="c1562274"/>  
+      <file name="P53.htm" txtName="P53" partNo="j020" chapterNo="" originalNo="" originalName="P53.htm" topicId="b65112e2"/>  
+      <file name="P101.htm" txtName="P101" partNo="j021" chapterNo="" originalNo="" originalName="P101.htm" topicId="e14ac6ee"/>  
+      <file name="P120.htm" txtName="P120" partNo="j022" chapterNo="" originalNo="" originalName="P120.htm" topicId="a47b94fa"/>  
+      <file name="P240.htm" txtName="P240" partNo="j023" chapterNo="" originalNo="" originalName="P240.htm" topicId="f0678d25"/>  
+      <file name="P241.htm" txtName="P241" partNo="j024" chapterNo="" originalNo="" originalName="P241.htm" topicId="8760bdb3"/>  
+      <file name="P243.htm" txtName="P243" partNo="j025" chapterNo="" originalNo="" originalName="P243.htm" topicId="696edc9f"/>  
+      <file name="P245.htm" txtName="P245" partNo="j026" chapterNo="" originalNo="" originalName="P245.htm" topicId="800d79aa"/>  
+      <file name="P246.htm" txtName="P246" partNo="j027" chapterNo="" originalNo="" originalName="P246.htm" topicId="19042810"/>  
+      <file name="P480.htm" txtName="P480" partNo="j028" chapterNo="" originalNo="" originalName="P480.htm" topicId="585fbe9b"/>  
+      <file name="P481.htm" txtName="P481" partNo="j029" chapterNo="" originalNo="" originalName="P481.htm" topicId="2f588e0d"/>  
+      <file name="P483.htm" txtName="P483" partNo="j02a" chapterNo="" originalNo="" originalName="P483.htm" topicId="c156ef21"/>  
+      <file name="P485.htm" txtName="P485" partNo="j02b" chapterNo="" originalNo="" originalName="P485.htm" topicId="28354a14"/>  
+      <file name="P486.htm" txtName="P486" partNo="j02c" chapterNo="" originalNo="" originalName="P486.htm" topicId="b13c1bae"/>  
+      <file name="P1T.htm" txtName="P1T" partNo="j02d" chapterNo="" originalNo="" originalName="P1T.htm" topicId="3a8503d5"/> 
+    </file>  
+    <file name="Optical Module.htm" txtName="Optical Module" partNo="j02e" chapterNo="" originalNo="" originalName="Optical Module.htm" topicId="11d2b611"> 
+      <file name="Understanding Pluggable Optical Modules.htm" txtName="Understanding Pluggable Optical Modules" partNo="j02f" chapterNo="" originalNo="" originalName="Understanding Pluggable Optical Modules.htm" topicId="9bddf2ff"/>  
+      <file name="OA Overview.htm" txtName="OA Overview" partNo="j02g" chapterNo="" originalNo="" originalName="OA Overview.htm" topicId="8ca814fd"/>  
+      <file name="155Mbps eSFP Optical Module.htm" txtName="155Mbps eSFP Optical Module" partNo="j02h" chapterNo="" originalNo="" originalName="155Mbps eSFP Optical Module.htm" topicId="84725f37"/>  
+      <file name="155Mbps eSFP BIDI Optical Module.htm" txtName="155Mbps eSFP BIDI Optical Module" partNo="j02i" chapterNo="" originalNo="" originalName="155Mbps eSFP BIDI Optical Module.htm" topicId="42084735"/>  
+      <file name="622Mbps eSFP Optical Module.htm" txtName="622Mbps eSFP Optical Module" partNo="j02j" chapterNo="" originalNo="" originalName="622Mbps eSFP Optical Module.htm" topicId="40349e3f"/>  
+      <file name="1Gbps Electrical Module.htm" txtName="1Gbps Electrical Module" partNo="j02k" chapterNo="" originalNo="" originalName="1Gbps Electrical Module.htm" topicId="a3d5c2c5"/>  
+      <file name="1 25Gbps eSFP Optical Module.htm" txtName="1.25Gbps eSFP Optical Module" partNo="j02l" chapterNo="" originalNo="" originalName="1 25Gbps eSFP Optical Module.htm" topicId="81490865"/>  
+      <file name="1 25Gbps eSFP BIDI Optical Module.htm" txtName="1.25Gbps eSFP BIDI Optical Module" partNo="j02m" chapterNo="" originalNo="" originalName="1 25Gbps eSFP BIDI Optical Module.htm" topicId="34812b1"/>  
+      <file name="1 25Gbps eSFP CWDM Optical Module.htm" txtName="1.25Gbps eSFP CWDM Optical Module" partNo="j02n" chapterNo="" originalNo="" originalName="1 25Gbps eSFP CWDM Optical Module.htm" topicId="371590ff"/>  
+      <file name="125M 2 67Gbps eSFP DWDM Optical Module.htm" txtName="125M~2.67Gbps eSFP DWDM Optical Module" partNo="j02o" chapterNo="" originalNo="" originalName="125M 2 67Gbps eSFP DWDM Optical Module.htm" topicId="d227b20d"/>  
+      <file name="2 5Gbps eSFP Optical Module.htm" txtName="2.5Gbps eSFP Optical Module" partNo="j02p" chapterNo="" originalNo="" originalName="2 5Gbps eSFP Optical Module.htm" topicId="37bc3304"/>  
+      <file name="10Gbps SFP+ Optical Module.htm" txtName="10Gbps SFP+ Optical Module" partNo="j02q" chapterNo="" originalNo="" originalName="10Gbps SFP+ Optical Module.htm" topicId="a44129d8"/>  
+      <file name="1 25 9 953 10 3125Gbps SFP+ Optical Module.htm" txtName="1.25/9.953/10.3125Gbps SFP+ Optical Module" partNo="j02r" chapterNo="" originalNo="" originalName="1 25 9 953 10 3125Gbps SFP+ Optical Module.htm" topicId="5b163353"/>  
+      <file name="10Gbps SFP+ CWDM Optical Module.htm" txtName="10Gbps SFP+ CWDM Optical Module" partNo="j02s" chapterNo="" originalNo="" originalName="10Gbps SFP+ CWDM Optical Module.htm" topicId="212c155e"/>  
+      <file name="10Gbps SFP+ BIDI Optical Module.htm" txtName="10Gbps SFP+ BIDI Optical Module" partNo="j02t" chapterNo="" originalNo="" originalName="10Gbps SFP+ BIDI Optical Module.htm" topicId="15719710"/>  
+      <file name="10Gbps SFP+ OTN Optical Module.htm" txtName="10Gbps SFP+ OTN Optical Module" partNo="j02u" chapterNo="" originalNo="" originalName="10Gbps SFP+ OTN Optical Module.htm" topicId="36ae2e10"/>  
+      <file name="10Gbps SFP+ SDH Optical Module.htm" txtName="10Gbps SFP+ SDH Optical Module" partNo="j02v" chapterNo="" originalNo="" originalName="10Gbps SFP+ SDH Optical Module.htm" topicId="4034fb9b"/>  
+      <file name="10Gbps XFP Optical Module.htm" txtName="10Gbps XFP Optical Module" partNo="j02w" chapterNo="" originalNo="" originalName="10Gbps XFP Optical Module.htm" topicId="90a43401"/>  
+      <file name="10Gbps XFP CWDM Optical Module.htm" txtName="10Gbps XFP CWDM Optical Module" partNo="j02x" chapterNo="" originalNo="" originalName="10Gbps XFP CWDM Optical Module.htm" topicId="13b96688"/>  
+      <file name="10Gbps SFP+ DWDM Optical Module.htm" txtName="10Gbps SFP+ DWDM Optical Module" partNo="j02y" chapterNo="" originalNo="" originalName="10Gbps SFP+ DWDM Optical Module.htm" topicId="6b129e15"/>  
+      <file name="25Gbps SFP28 Optical Module.htm" txtName="25Gbps SFP28 Optical Module" partNo="j02z" chapterNo="" originalNo="" originalName="25Gbps SFP28 Optical Module.htm" topicId="3698b7df"/>  
+      <file name="25Gbps SFP28 BIDI Optical Module.htm" txtName="25Gbps SFP28 BIDI Optical Module" partNo="j030" chapterNo="" originalNo="" originalName="25Gbps SFP28 BIDI Optical Module.htm" topicId="3be13bb0"/>  
+      <file name="40Gbps CFP Optical Module.htm" txtName="40Gbps CFP Optical Module" partNo="j031" chapterNo="" originalNo="" originalName="40Gbps CFP Optical Module.htm" topicId="1de6c182"/>  
+      <file name="40Gbps QSFP+ Optical Module.htm" txtName="40Gbps QSFP+ Optical Module" partNo="j032" chapterNo="" originalNo="" originalName="40Gbps QSFP+ Optical Module.htm" topicId="c60485af"/>  
+      <file name="50Gbps QSFP28 Optical Module.htm" txtName="50Gbps QSFP28 Optical Module" partNo="j033" chapterNo="" originalNo="" originalName="50Gbps QSFP28 Optical Module.htm" topicId="8733f67b"/>  
+      <file name="50Gbps QSFP28 BIDI Optical Module.htm" txtName="50Gbps QSFP28 BIDI Optical Module" partNo="j034" chapterNo="" originalNo="" originalName="50Gbps QSFP28 BIDI Optical Module.htm" topicId="b51d10c6"/>  
+      <file name="100Gbps CFP Optical Module.htm" txtName="100Gbps CFP Optical Module" partNo="j035" chapterNo="" originalNo="" originalName="100Gbps CFP Optical Module.htm" topicId="62e2769a"/>  
+      <file name="100Gbps CFP2 ETH OTN Optical Module.htm" txtName="100Gbps CFP2 ETH&amp;OTN Optical Module" partNo="j036" chapterNo="" originalNo="" originalName="100Gbps CFP2 ETH OTN Optical Module.htm" topicId="59190a6a"/>  
+      <file name="100Gbps CFP2 DWDM Optical Module.htm" txtName="100Gbps CFP2 DWDM Optical Module" partNo="j037" chapterNo="" originalNo="" originalName="100Gbps CFP2 DWDM Optical Module.htm" topicId="4d60de71"/>  
+      <file name="100Gbps CFP2 Optical Module.htm" txtName="100Gbps CFP2 Optical Module" partNo="j038" chapterNo="" originalNo="" originalName="100Gbps CFP2 Optical Module.htm" topicId="52c58e3a"/>  
+      <file name="100Gbps QSFP28 Optical Module.htm" txtName="100Gbps QSFP28 Optical Module" partNo="j039" chapterNo="" originalNo="" originalName="100Gbps QSFP28 Optical Module.htm" topicId="385a05b7"/>  
+      <file name="200Gbps QSFP-DD Optical Module.htm" txtName="200Gbps QSFP-DD Optical Module" partNo="j03a" chapterNo="" originalNo="" originalName="200Gbps QSFP-DD Optical Module.htm" topicId="cffa820c"/>  
+      <file name="400Gbps QSFP-DD Optical Module.htm" txtName="400Gbps QSFP-DD Optical Module" partNo="j03b" chapterNo="" originalNo="" originalName="400Gbps QSFP-DD Optical Module.htm" topicId="46b8c83c"/>  
+      <file name="Optical Amplifier Module.htm" txtName="Optical Amplifier Module" partNo="j03c" chapterNo="" originalNo="" originalName="Optical Amplifier Module.htm" topicId="5ccc9761"/> 
+    </file>  
+    <file name="DPD125-12-24 DC Power Distribution Box.htm" txtName="DPD125-12-24 DC Power Distribution Box" partNo="j03d" chapterNo="" originalNo="" originalName="DPD125-12-24 DC Power Distribution Box.htm" topicId="344bc4d3"> 
+      <file name="DPD125-12-24 Product Description.htm" txtName="DPD125-12-24 Product Description" partNo="j03e" chapterNo="" originalNo="" originalName="DPD125-12-24 Product Description.htm" topicId="51de0e80"/>  
+      <file name="X8A X8C Power Distribution Instance.htm" txtName="X8A/X8C Power Distribution Instance" partNo="j03f" chapterNo="" originalNo="" originalName="X8A X8C Power Distribution Instance.htm" topicId="2824fdd0"/>  
+      <file name="X16A X16C Power Distribution Instance.htm" txtName="X16A/X16C Power Distribution Instance" partNo="j03g" chapterNo="" originalNo="" originalName="X16A X16C Power Distribution Instance.htm" topicId="9467b876"/> 
+    </file>  
+    <file name="APD63-4-12 DACS Distribution Box.htm" txtName="APD63-4-12 DACS Distribution Box" partNo="j03h" chapterNo="" originalNo="" originalName="APD63-4-12 DACS Distribution Box.htm" topicId="db89afed"> 
+      <file name="DACS Product Description.htm" txtName="DACS Product Description" partNo="j03i" chapterNo="" originalNo="" originalName="DACS Product Description.htm" topicId="501c64b7"/>  
+      <file name="AC AC Switching Module.htm" txtName="AC/AC Switching Module" partNo="j03j" chapterNo="" originalNo="" originalName="AC AC Switching Module.htm" topicId="aee894f"/>  
+      <file name="DMU.htm" txtName="DMU" partNo="j03k" chapterNo="" originalNo="" originalName="DMU.htm" topicId="b17baad9"/>  
+      <file name="X8AApplication Cases.htm" txtName="X8AApplication Cases" partNo="j03l" chapterNo="" originalNo="" originalName="X8AApplication Cases.htm" topicId="a90198f7"/>  
+      <file name="X16AApplication Cases.htm" txtName="X16AApplication Cases" partNo="j03m" chapterNo="" originalNo="" originalName="X16AApplication Cases.htm" topicId="31ec2878"/> 
+    </file>  
+    <file name="PDU.htm" txtName="PDU" partNo="j03n" chapterNo="" originalNo="" originalName="PDU.htm" topicId="e87648fe"> 
+      <file name="APD32-12-24 (APD32-12-24 AC Power Distribution Unit).htm" txtName="APD32-12-24 (APD32-12-24 AC Power Distribution Unit)" partNo="j03o" chapterNo="" originalNo="" originalName="APD32-12-24 (APD32-12-24 AC Power Distribution Unit).htm" topicId="4b3f27ee"/>  
+      <file name="APD32-4-24 (APD32-4-24 AC Power Distribution Unit).htm" txtName="APD32-4-24 (APD32-4-24 AC Power Distribution Unit)" partNo="j03p" chapterNo="" originalNo="" originalName="APD32-4-24 (APD32-4-24 AC Power Distribution Unit).htm" topicId="a53146c2"/>  
+      <file name="APD63-2-24 (APD63-2-24 AC Power Distribution Unit).htm" txtName="APD63-2-24 (APD63-2-24 AC Power Distribution Unit)" partNo="j03q" chapterNo="" originalNo="" originalName="APD63-2-24 (APD63-2-24 AC Power Distribution Unit).htm" topicId="d55bb24d"/>  
+      <file name="APD63-6-24 (APD63-6-24 AC Power Distribution Unit).htm" txtName="APD63-6-24 (APD63-6-24 AC Power Distribution Unit)" partNo="j03r" chapterNo="" originalNo="" originalName="APD63-6-24 (APD63-6-24 AC Power Distribution Unit).htm" topicId="3b55d361"/>  
+      <file name="CR8MP2KHDCC0 (380VDC HVDC and 220V AC Power Distribution Unit).htm" txtName="CR8MP2KHDCC0 (380VDC HVDC and 220V AC Power Distribution Unit)" partNo="j03s" chapterNo="" originalNo="" originalName="CR8MP2KHDCC0 (380VDC HVDC and 220V AC Power Distribution Unit).htm" topicId="6db5e3c6"/> 
+    </file>  
+    <file name="Fiber Breakout.htm" txtName="Fiber Breakout" partNo="j03t" chapterNo="" originalNo="" originalName="Fiber Breakout.htm" topicId="a163d442"> 
+      <file name="Breakout Fibers.htm" txtName="Breakout Fibers" partNo="j03u" chapterNo="" originalNo="" originalName="Breakout Fibers.htm" topicId="96a740f4"/>  
+      <file name="Breakout Boxes.htm" txtName="Breakout Boxes" partNo="j03v" chapterNo="" originalNo="" originalName="Breakout Boxes.htm" topicId="3dceeac6"/> 
+    </file>  
+    <file name="Converter Box.htm" txtName="Converter Box" partNo="j03w" chapterNo="" originalNo="" originalName="Converter Box.htm" topicId="80eacf0f"> 
+      <file name="Converter Box-1.htm" txtName="Converter Box" partNo="j03x" chapterNo="" originalNo="" originalName="Converter Box-1.htm" topicId="ce7b08ad"/> 
+    </file>  
+    <file name="Cables.htm" txtName="Cables" partNo="j03y" chapterNo="" originalNo="" originalName="Cables.htm" topicId="29f97232"> 
+      <file name="DC Power Cable.htm" txtName="DC Power Cable" partNo="j03z" chapterNo="" originalNo="" originalName="DC Power Cable.htm" topicId="7b089955"/>  
+      <file name="AC Power Cables.htm" txtName="AC Power Cables" partNo="j040" chapterNo="" originalNo="" originalName="AC Power Cables.htm" topicId="7c655d4c"/>  
+      <file name="AC HVDC Power Cable.htm" txtName="AC &amp; HVDC Power Cable" partNo="j041" chapterNo="" originalNo="" originalName="AC HVDC Power Cable.htm" topicId="e56c0cf6"/>  
+      <file name="Chassis and Cabinet Ground Cable.htm" txtName="Chassis and Cabinet Ground Cable" partNo="j042" chapterNo="" originalNo="" originalName="Chassis and Cabinet Ground Cable.htm" topicId="75d31167"/>  
+      <file name="Console Interface Cable.htm" txtName="Console Interface Cable" partNo="j043" chapterNo="" originalNo="" originalName="Console Interface Cable.htm" topicId="8c1dc938"/>  
+      <file name="Auxiliary Port Cable.htm" txtName="Auxiliary Port Cable" partNo="j044" chapterNo="" originalNo="" originalName="Auxiliary Port Cable.htm" topicId="8b700d21"/>  
+      <file name="Clock Cable.htm" txtName="Clock Cable" partNo="j045" chapterNo="" originalNo="" originalName="Clock Cable.htm" topicId="e58bb4db"/>  
+      <file name="Clock Transfer Cable.htm" txtName="Clock Transfer Cable" partNo="j046" chapterNo="" originalNo="" originalName="Clock Transfer Cable.htm" topicId="8cfa7115"/>  
+      <file name="Ethernet Cable.htm" txtName="Ethernet Cable" partNo="j047" chapterNo="" originalNo="" originalName="Ethernet Cable.htm" topicId="e2e670c2"/>  
+      <file name="Optical Fiber.htm" txtName="Optical Fiber" partNo="j048" chapterNo="" originalNo="" originalName="Optical Fiber.htm" topicId="eb503ce9"/>  
+      <file name="USB-to-Ethernet Serial Cable.htm" txtName="USB-to-Ethernet Serial Cable" partNo="j049" chapterNo="" originalNo="" originalName="USB-to-Ethernet Serial Cable.htm" topicId="e91682b0"/>  
+      <file name="24xE1 Cable.htm" txtName="24xE1 Cable" partNo="j04a" chapterNo="" originalNo="" originalName="24xE1 Cable.htm" topicId="cdb9920a"/>  
+      <file name="Serial Cable (RS232 RS485).htm" txtName="Serial Cable (RS232/RS485)" partNo="j04b" chapterNo="" originalNo="" originalName="Serial Cable (RS232 RS485).htm" topicId="8c79a5fd"/> 
+    </file> 
+  </file> 
+</zip>

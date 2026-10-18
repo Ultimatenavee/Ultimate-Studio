@@ -1,0 +1,61 @@
+{
+  "assets": [
+    {
+      "modelId": "huawei-ar5710-s8t2x",
+      "path": "web/assets/huawei-ar5710-s8t2x-audited-rear-20261010.webp",
+      "face": "rear",
+      "width": 2172,
+      "height": 724,
+      "frame": [
+        2,
+        211,
+        2168,
+        291
+      ],
+      "tool": "built-in imagegen",
+      "prompt": "Exact rear-face realistic straight-on transparent cutout from official reference; retain openings/position/count, remove callouts/white background, no invented ports/fans/labels.",
+      "reference": "research/huawei-router-audit-20261010/ar5710-s8t2x-rear-reference.png",
+      "vendorUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474",
+      "note": "\u0e20\u0e32\u0e1e\u0e08\u0e33\u0e25\u0e2d\u0e07\u0e14\u0e49\u0e32\u0e19\u0e2b\u0e25\u0e31\u0e07\u0e15\u0e32\u0e21\u0e41\u0e1c\u0e19\u0e1c\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e1c\u0e25\u0e34\u0e15 \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 Hotspot \u0e2a\u0e2d\u0e1a\u0e40\u0e17\u0e35\u0e22\u0e1a",
+      "visualQa": "Inspected generated output against official reference"
+    },
+    {
+      "modelId": "huawei-ar5710-s8t2x-lte4ea",
+      "path": "web/assets/huawei-ar5710-s8t2x-lte4ea-audited-rear-20261010.webp",
+      "face": "rear",
+      "width": 2172,
+      "height": 724,
+      "frame": [
+        5,
+        211,
+        2162,
+        295
+      ],
+      "tool": "built-in imagegen",
+      "prompt": "Exact rear-face realistic straight-on transparent cutout from official reference; retain openings/position/count, remove callouts/white background, no invented ports/fans/labels.",
+      "reference": "research/huawei-router-audit-20261010/ar5710-s8t2x-lte4ea-rear-reference.png",
+      "vendorUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474",
+      "note": "\u0e20\u0e32\u0e1e\u0e08\u0e33\u0e25\u0e2d\u0e07\u0e14\u0e49\u0e32\u0e19\u0e2b\u0e25\u0e31\u0e07\u0e15\u0e32\u0e21\u0e41\u0e1c\u0e19\u0e1c\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e1c\u0e25\u0e34\u0e15 \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 Hotspot \u0e2a\u0e2d\u0e1a\u0e40\u0e17\u0e35\u0e22\u0e1a",
+      "visualQa": "Inspected generated output against official reference"
+    },
+    {
+      "modelId": "cisco-asr-1001-x",
+      "path": "web/assets/cisco-asr-1001-x-audited-rear-20261010.webp",
+      "face": "rear",
+      "width": 2172,
+      "height": 724,
+      "frame": [
+        2,
+        271,
+        2169,
+        190
+      ],
+      "tool": "built-in imagegen",
+      "prompt": "Exact rear-face realistic straight-on transparent cutout from official reference; retain openings/position/count, remove callouts/white background, no invented ports/fans/labels.",
+      "reference": "web/assets/cisco-asr1001x-rear-ac.png",
+      "vendorUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1hig/asr1_hig/asr1_overview.html",
+      "note": "\u0e20\u0e32\u0e1e\u0e08\u0e33\u0e25\u0e2d\u0e07\u0e14\u0e49\u0e32\u0e19\u0e2b\u0e25\u0e31\u0e07\u0e15\u0e32\u0e21\u0e41\u0e1c\u0e19\u0e1c\u0e31\u0e07\u0e1c\u0e39\u0e49\u0e1c\u0e25\u0e34\u0e15 \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 Hotspot \u0e2a\u0e2d\u0e1a\u0e40\u0e17\u0e35\u0e22\u0e1a",
+      "visualQa": "Inspected generated output against official reference"
+    }
+  ]
+}

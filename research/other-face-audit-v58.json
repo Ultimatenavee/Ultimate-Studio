@@ -1,0 +1,473 @@
+{
+  "checkedAt": "2026-10-15",
+  "scope": "Non-Huawei namedcatalog devices andrackaccessories",
+  "policy": "Manufacturer guides first; external candidates only when primary missing. No inferred oppositeface, mirroredfront, inventedports, or uncalibratedphysicalhotspots.",
+  "summary": {
+    "models": 23,
+    "modelsMissingAtLeastOneFace": 16,
+    "newPublicAssets": 0,
+    "completion": "partial-research-not-complete-face-library"
+  },
+  "items": {
+    "cisco-c1121-8pltep": {
+      "model": "Cisco C1121-8PLTEP",
+      "existingFaces": [
+        "rear"
+      ],
+      "missingFaces": [
+        "front"
+      ],
+      "status": "vendor-document-verified-asset-pending",
+      "primarySource": "https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html",
+          "section": "Figures13,15,16",
+          "finding": "ExactC1121-8PLTEP I/O appears inFigure15. RelatedC1121(X)-8P and8PLTEPWx bezel views share non-illuminatedlogo drawing; exactnon-WLTEP bezel equivalence still needs confirmation. Do not substituteWiFiWx I/O."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-1941": {
+      "model": "Cisco 1941",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "vendor-document-verified-asset-pending",
+      "primarySource": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html",
+          "section": "Figures1-4 and1-5",
+          "finding": "Rear of1941/1941W documented with 2GE RJ45, console/AUX/USB, EHWIC0/1, CF0/1 and AC. Non-wireless1941 has no antenna mounts. Guide images failed download."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-2911-k9": {
+      "model": "Cisco 2911/K9",
+      "existingFaces": [
+        "rear"
+      ],
+      "missingFaces": [
+        "front"
+      ],
+      "status": "vendor-document-verified-asset-pending",
+      "primarySource": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "section": "Figure1-4",
+          "finding": "Vendor documents2911 front separately from I/O rear. Use front-specific image; current asset is rear."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-3925e": {
+      "model": "Cisco 3925E",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "vendor-document-verified-asset-pending",
+      "primarySource": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "section": "Figure1-13",
+          "finding": "3925E usesSPE200. Rear differs from3925/SPE100; threeEHWIC slots, fourGE RJ45 and twoSFP, twoSM positions. Diagram shared with3945E but slot population differs. Image download blocked."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-3945e": {
+      "model": "Cisco 3945E",
+      "existingFaces": [
+        "rear"
+      ],
+      "missingFaces": [
+        "front"
+      ],
+      "status": "vendor-document-verified-asset-pending",
+      "primarySource": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "section": "Figure1-10;Figure1-13",
+          "finding": "3900 front hasAC/PSU andLEDs.3945E usesSPE250; fourSM positions. Do not use3925 rear as identical."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-asr-1001": {
+      "model": "Cisco ASR 1001",
+      "existingFaces": [
+        "front",
+        "rear"
+      ],
+      "missingFaces": [],
+      "status": "both-existing-illustrations-no-new-face-required",
+      "primarySource": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html",
+          "finding": "Both faces already exist as illustrations; no new assertion of calibrated geometry."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-asr-1001-x": {
+      "model": "Cisco ASR 1001-X",
+      "existingFaces": [
+        "front",
+        "rear"
+      ],
+      "missingFaces": [],
+      "status": "both-existing-illustrations-no-new-face-required",
+      "primarySource": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/asr1hig-book_chapter_0111.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/asr1hig-book_chapter_0111.html",
+          "finding": "Both faces already exist as illustrations; no new assertion of calibrated geometry."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-isr-4331": {
+      "model": "Cisco ISR 4331",
+      "existingFaces": [
+        "rear"
+      ],
+      "missingFaces": [
+        "front"
+      ],
+      "status": "vendor-document-verified-asset-pending",
+      "primarySource": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+          "section": "Figures1-22 and1-23",
+          "finding": "Bezel carriesUSB console,RJ45 console,AUX,USB-A,management,AC input andLEDs. I/O rear has network/module bays. AC/DC SKU variants differ."
+        }
+      ],
+      "newAssets": []
+    },
+    "cisco-isr-4431": {
+      "model": "Cisco ISR 4431",
+      "existingFaces": [
+        "rear"
+      ],
+      "missingFaces": [
+        "front"
+      ],
+      "status": "vendor-document-verified-asset-pending",
+      "primarySource": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+      "evidence": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+          "section": "Figures1-13 and1-14",
+          "finding": "Bezel hasPSU1,optionalPSU0,statusLEDs,power switch. Network andNIM connectors are on opposite face."
+        }
+      ],
+      "newAssets": []
+    },
+    "alcatel-os6450-10": {
+      "model": "Alcatel OS6450-10",
+      "existingFaces": [
+        "front",
+        "rear"
+      ],
+      "missingFaces": [],
+      "status": "existing-faces-secondary-manual-corroborated",
+      "primarySource": "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf",
+      "evidence": [
+        {
+          "url": "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf",
+          "section": "Officialdatasheet",
+          "finding": "Existing two faces retained; not substituteOS6450-P10 or24/48-port chassis. Rear illustration is based onpreproduction documentation."
+        }
+      ],
+      "newAssets": [],
+      "secondarySources": [
+        "https://manualzz.com/doc/7491199/alcatel-lucent-omniswitch-os6450-10-hardware-user-s-manual"
+      ]
+    },
+    "telco-t-marc-340": {
+      "model": "Telco T-Marc 340",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "rear-unverified",
+      "primarySource": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+      "evidence": [
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+          "section": "Official2-page datasheet",
+          "finding": "Datasheet available and downloaded temporarily for reference; rear mechanical layout remains unverified. Do not use3306/3312 rear images."
+        }
+      ],
+      "newAssets": [],
+      "secondarySources": [
+        "https://www.ebay.com/itm/176216747051",
+        "https://www.ebay.com/itm/256389825460"
+      ],
+      "secondaryImageFinding": "Marketplace photos describe exact model and rear views. Photo reuse permission and exactAC/DC subvariant not established; not downloaded into publicassets."
+    },
+    "telco-t-marc-280": {
+      "model": "Telco T-Marc 280",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "rear-unverified",
+      "primarySource": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+      "evidence": [
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+          "section": "Official2-page datasheet",
+          "finding": "Datasheet available and downloaded temporarily for reference; rear mechanical layout remains unverified. Do not use3306/3312 rear images."
+        }
+      ],
+      "newAssets": [],
+      "secondaryImageFinding": "External search did not identify a reliable exact-model rear image; unrelated models excluded."
+    },
+    "telco-t-marc-380": {
+      "model": "Telco T-Marc 380",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "rear-unverified",
+      "primarySource": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+      "evidence": [
+        {
+          "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+          "section": "Official2-page datasheet",
+          "finding": "Datasheet available and downloaded temporarily for reference; rear mechanical layout remains unverified. Do not use3306/3312 rear images."
+        }
+      ],
+      "newAssets": [],
+      "secondarySources": [
+        "https://www.ebay.com/itm/355859481374"
+      ],
+      "secondaryImageFinding": "Marketplace photos describe exact model and rear views. Photo reuse permission and exactAC/DC subvariant not established; not downloaded into publicassets."
+    },
+    "fortinet-fortigate-100f": {
+      "model": "Fortinet FortiGate100F",
+      "existingFaces": [
+        "front",
+        "rear"
+      ],
+      "missingFaces": [],
+      "status": "official-fetch-failed-existing-faces",
+      "primarySource": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+      "evidence": [
+        {
+          "url": "https://docs.fortinet.com/document/fortigate/hardware/fortigate-100f-series-quickstart-guide",
+          "section": "QuickStartguide",
+          "finding": "Official retrieval failed. Existing100F-series rear illustration retained, no claim of model-specific photo."
+        }
+      ],
+      "newAssets": [],
+      "secondarySources": [
+        "https://manuals.plus/m/b46fca76a8e3d968d57fa622f0718dadaa37bdd0890392826a386b317ad534d2"
+      ]
+    },
+    "hitachi-apresia13200-48x-psr3": {
+      "model": "Hitachi APRESIA13200-48X-PSR3",
+      "existingFaces": [
+        "front",
+        "rear"
+      ],
+      "missingFaces": [],
+      "status": "vendor-page-rechecked-existing-faces",
+      "primarySource": "https://www.apresia.jp/products/ent/apresia13200-48x-psr3.html",
+      "evidence": [
+        {
+          "url": "https://www.apresia.jp/products/ent/apresia13200-48x-psr3.html",
+          "section": "Official exact-model product page",
+          "finding": "Exact model page retrieved. Existing front/rear illustrations retained; rear shows unpopulated PSU bays, not evidence of installed PSU type."
+        }
+      ],
+      "newAssets": []
+    },
+    "hitachi-apresia13200-52gt-psr2": {
+      "model": "Hitachi APRESIA13200-52GT-PSR2",
+      "existingFaces": [
+        "front",
+        "rear"
+      ],
+      "missingFaces": [],
+      "status": "vendor-page-rechecked-existing-faces",
+      "primarySource": "https://www.apresia.jp/products/ent/apresia13200-52gt-psr2.html",
+      "evidence": [
+        {
+          "url": "https://www.apresia.jp/products/ent/apresia13200-52gt-psr2.html",
+          "section": "Official exact-model product page",
+          "finding": "Exact model page retrieved. Existing front/rear illustrations retained; rear shows unpopulated PSU bays, not evidence of installed PSU type."
+        }
+      ],
+      "newAssets": []
+    },
+    "hitachi-apresia15000-32xl-psr2": {
+      "model": "Hitachi APRESIA15000-32XL-PSR2",
+      "existingFaces": [
+        "front",
+        "rear"
+      ],
+      "missingFaces": [],
+      "status": "vendor-page-rechecked-existing-faces",
+      "primarySource": "https://www.apresia.jp/products/ent/apresia15000-32xl-psr2.html",
+      "evidence": [
+        {
+          "url": "https://www.apresia.jp/products/ent/apresia15000-32xl-psr2.html",
+          "section": "Official exact-model product page",
+          "finding": "Exact model page retrieved. Existing front/rear illustrations retained; rear shows unpopulated PSU bays, not evidence of installed PSU type."
+        }
+      ],
+      "newAssets": []
+    },
+    "odf-commscope-760241650": {
+      "model": "ODF · CommScope 760241650",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "rear-unverified",
+      "primarySource": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/item760241650/",
+      "evidence": [
+        {
+          "url": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/item760241650/",
+          "section": "Productspecification",
+          "finding": "Official page confirms rear cable exit and frontLC/UPC;24fibers via12duplexadapters. No exact rear face calibration."
+        }
+      ],
+      "newAssets": []
+    },
+    "odf-commscope-fms1u-sc24": {
+      "model": "ODF · CommScope FMS 24 SC",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "rear-unverified",
+      "primarySource": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/fms1u-panels/",
+      "evidence": [
+        {
+          "url": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/fms1u-panels/",
+          "section": "FMS1Ufamily",
+          "finding": "Family page retrieved. ExactSC24 loaded variant rear still needs SKU-specific drawing; family image insufficient."
+        }
+      ],
+      "newAssets": []
+    },
+    "ac-apc-ap9565": {
+      "model": "AC PDU · APC AP9565",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "rear-source-found-download-unavailable",
+      "primarySource": "https://www.se.com/th/th/product/AP9565/",
+      "evidence": [
+        {
+          "url": "https://www.se.com/es/es/product/AP9565/rack-pdu-basic-1u-16-a-208-230-v-12-c13/",
+          "section": "Officialimagegallery",
+          "finding": "Gallery explicitly linksAP9565_Rear. Download attempt returned a genericmissing-imageplaceholder, which was rejected."
+        }
+      ],
+      "newAssets": [],
+      "candidateImageUrl": "https://download.schneider-electric.com/files?default_image=DefaultProductImage.png&p_Doc_Ref=AP9565_Rear&p_File_Type=rendition_64_gif",
+      "secondarySources": [
+        "https://acquireit.com.au/p/apc/surge-protection-line-conditioners/apc-rack-pdu-basic-1u-16a-208-230v-12c13-horizontal-mount-ap9565-731751"
+      ]
+    },
+    "ac-apc-smt1500rmi2u": {
+      "model": "AC UPS · APC SMT1500RMI2U",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "rear-unverified",
+      "primarySource": "https://www.se.com/th/en/product/SMT1500RMI2U/",
+      "evidence": [
+        {
+          "url": "https://www.se.com/ph/en/product/SMT1500RMI2U/apc-smartups-line-interactive-1500va-rackmount-2u-230v-4x-iec-c13-outlets-smartslot-avr-lcd/",
+          "section": "Exactmodel officialpage",
+          "finding": "Exact230V/4C13/2Umodel verified. Rear asset not acquired; must not substituteSMT1500RM2U USoutput model."
+        }
+      ],
+      "newAssets": []
+    },
+    "dc-vertiv-netsure211-1u": {
+      "model": "DC Rectifier · Vertiv NetSure 211 · 1U",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "variant-ambiguous-rear-unverified",
+      "primarySource": "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf",
+      "evidence": [
+        {
+          "url": "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf",
+          "section": "NetSure211family brochure",
+          "finding": "Family has different shelf/distribution/input variants.1RU/2RU names alone do not uniquely establish rear connector layout; require exactshelf/Listnumber before rear reproduction."
+        }
+      ],
+      "newAssets": [],
+      "additionalVendorSource": "https://www.vertiv.com/en-us/products-catalog/critical-power/dc-power-systems/netsure-211-dc-power-system2/"
+    },
+    "dc-vertiv-netsure211-2u": {
+      "model": "DC Rectifier · Vertiv NetSure 211 · 2U",
+      "existingFaces": [
+        "front"
+      ],
+      "missingFaces": [
+        "rear"
+      ],
+      "status": "variant-ambiguous-rear-unverified",
+      "primarySource": "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf",
+      "evidence": [
+        {
+          "url": "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf",
+          "section": "NetSure211family brochure",
+          "finding": "Family has different shelf/distribution/input variants.1RU/2RU names alone do not uniquely establish rear connector layout; require exactshelf/Listnumber before rear reproduction."
+        }
+      ],
+      "newAssets": [],
+      "additionalVendorSource": "https://www.vertiv.com/en-us/products-catalog/critical-power/dc-power-systems/netsure-211-dc-power-system2/"
+    }
+  },
+  "downloadFailures": [
+    {
+      "url": "https://www.cisco.com/c/dam/en/us/td/i/200001-300000/270001-280000/273001-274000/273452.eps/_jcr_content/renditions/273452.jpg",
+      "result": "SiteUnavailableHTML, rejected as image"
+    },
+    {
+      "url": "https://download.schneider-electric.com/files?default_image=DefaultProductImage.png&p_Doc_Ref=AP9565_Rear&p_File_Type=rendition_1500_png",
+      "result": "201x201 genericimageplaceholder, rejected"
+    }
+  ]
+}

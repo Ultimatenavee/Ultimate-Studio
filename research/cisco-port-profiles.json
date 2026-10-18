@@ -1,0 +1,1299 @@
+{
+  "schemaVersion": 1,
+  "verifiedDate": "2026-10-08",
+  "scope": "Built-in network interfaces only. Dedicated management is separate. Uninstalled modules excluded.",
+  "rules": {
+    "comboOccupancy": "Reserve the logical name/comboGroup, not one connector independently. Only one RJ45 or SFP side is active at a time.",
+    "transceivers": "SFP/SFP+ is a socket. Fiber/copper cable connector and supported speeds depend on the selected manufacturer-compatible transceiver.",
+    "poe": "PoE is false for base configuration; optional upgrade metadata does not enable it.",
+    "console": "RJ45 CON/AUX and USB are not Ethernet network links.",
+    "management": "MGMT is out-of-band management, separate from routed data interfaces.",
+    "speeds": "Speeds are line rates, not guaranteed licensed aggregate forwarding throughput. ASR1001-X TE requires applicable software entitlement to enable."
+  },
+  "sources": {
+    "isr1000-hig": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html",
+      "sections": [
+        "Figure 15: C1121-8PLTEP I/O View"
+      ]
+    },
+    "isr1000-datasheet": {
+      "url": "https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html",
+      "sections": [
+        "Table 13: 1121 WAN combination",
+        "Tables 15 and 16: C1121(X)-8PLTEP, 2 GE WAN, 8 GE LAN",
+        "Power over Ethernet options"
+      ]
+    },
+    "isr1000-lan-config": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/isr1100/software/configuration/guide/isr1100-sw-config/configuring_ethernet_switchports.html",
+      "sections": [
+        "Configuring Ethernet Switch Ports: GigabitEthernet0/1/0 naming"
+      ]
+    },
+    "isr1900-hig": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html",
+      "sections": [
+        "Table 1-1: Built-in Interfaces",
+        "Table 1-6: Slot, Port, and Interface Numbering",
+        "Table 1-8: 1941 specifications"
+      ]
+    },
+    "isr-g2-hig": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+      "sections": [
+        "Figure 1-13: SPE250 GE0/0 and GE0/1 RJ45/SFP pairs",
+        "Table 1-4 and footnotes 37/38: Built-in Interfaces",
+        "Gigabit Ethernet Ports and SFP Ports",
+        "Table 1-5: Optional module slots",
+        "Table 1-11: GE interface numbering"
+      ]
+    },
+    "asr1001-hig": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html",
+      "sections": [
+        "Router Description: four GE SFP ports",
+        "Figure 7: MGMT, CON, AUX",
+        "Router Slot Numbering: built-in GE0/0/x, optional SPA0/1/x, factory IDC0/2/x",
+        "Power Supplies: 1+1 AC or DC"
+      ]
+    },
+    "asr1001x-hig": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html",
+      "sections": [
+        "Hardware Features: six SFP-only GE, two SFP+ TE only 10GE rate",
+        "Figure 5: SPA GE and TE Ports",
+        "Management Storage Connections",
+        "Chassis Rear View: two AC or two DC supplies"
+      ]
+    },
+    "isr4000-datasheet": {
+      "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+      "sections": [
+        "Table 5: platform specifications, GE, RJ45/SFP, NIM, SM-X, USB counts"
+      ]
+    },
+    "isr4000-hig": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+      "sections": [
+        "Cisco 4431 ISR Chassis",
+        "Cisco 4331 ISR Chassis",
+        "Built-In Interface Ports: dual mode GE/SFP, shared logical interfaces",
+        "Gigabit Ethernet Management"
+      ]
+    },
+    "isr4000-original-hig": {
+      "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr.pdf",
+      "accessibleMirrorUrl": "https://manuals.plus/m/407169d92e2fb0a7a68b35529ee7e31289cbe6fbb157971672dab495d65c4af1",
+      "author": "Cisco",
+      "documentNumber": "OL-32185-02",
+      "sections": [
+        "Page 1-3: Cisco 4431 capabilities and four combo ports",
+        "Page 1-4: Cisco 4331 capabilities and GE0/0/0 combo, GE0/0/1 RJ45, GE0/0/2 SFP",
+        "Pages 1-42 and 1-44: interface specifications"
+      ]
+    }
+  },
+  "profiles": [
+    {
+      "modelId": "C1121-8PLTEP",
+      "catalogModel": "Cisco C1121-8PLTEP",
+      "counts": {
+        "RJ45DataSockets": 10,
+        "SFPDataSockets": 1,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 10,
+        "maxSimultaneousDataLinks": 10,
+        "dedicatedRJ45ManagementSockets": 0
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0/0",
+          "role": "WAN",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0/0"
+        },
+        {
+          "name": "GigabitEthernet0/0/1",
+          "role": "WAN",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/0",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/1",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/2",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/3",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/4",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/5",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/6",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1/7",
+          "role": "LAN-switch",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [],
+      "power": {
+        "maxPowerInputs": 1,
+        "type": "4-pin 12V DC",
+        "note": "External AC adapter 100\u2013240VAC; 66W base. Optional PoE adapter requires 150W PSU.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": true
+      },
+      "optionalPoE": {
+        "enabledByDefault": false,
+        "upgrade": "ISR-1100-POE4 with 150W PSU",
+        "maxPoEPorts": 4,
+        "maxPoEPlusPorts": 2,
+        "eligibleRole": "LAN-switch"
+      },
+      "excludedModulePorts": [
+        "Pluggable LTE/5G PIM",
+        "Optional cellular USB dongle"
+      ],
+      "nonNetworkConnectors": [
+        "Micro-USB console",
+        "USB 3.0 Type A"
+      ],
+      "sources": [
+        "isr1000-hig",
+        "isr1000-datasheet",
+        "isr1000-lan-config"
+      ]
+    },
+    {
+      "modelId": "1941",
+      "catalogModel": "Cisco 1941",
+      "counts": {
+        "RJ45DataSockets": 2,
+        "SFPDataSockets": 0,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 2,
+        "maxSimultaneousDataLinks": 2,
+        "dedicatedRJ45ManagementSockets": 0
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [],
+      "power": {
+        "maxPowerInputs": 1,
+        "type": "AC inlet",
+        "note": "Base AC router; optional PoE supply powers installed EtherSwitch modules, not these two built-in data ports.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": false
+      },
+      "excludedModuleSlots": {
+        "EHWIC": 2,
+        "ISM-internal": 1
+      },
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 console",
+        "Mini-USB Type B console (alternate console)",
+        "RJ45 RS-232 AUX",
+        "USB 2.0 Type A \u00d72"
+      ],
+      "sources": [
+        "isr1900-hig"
+      ]
+    },
+    {
+      "modelId": "2911/K9",
+      "catalogModel": "Cisco 2911/K9",
+      "counts": {
+        "RJ45DataSockets": 3,
+        "SFPDataSockets": 0,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 3,
+        "maxSimultaneousDataLinks": 3,
+        "dedicatedRJ45ManagementSockets": 0
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/2",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [],
+      "power": {
+        "maxPowerInputs": 1,
+        "type": "AC or DC PSU variant",
+        "note": "Base AC chassis; PoE is through optional modules and PSU. Built-in GE ports are not PoE.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": false
+      },
+      "excludedModuleSlots": {
+        "EHWIC": 4,
+        "SM": 1,
+        "ISM-internal": 1
+      },
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 console",
+        "Mini-USB Type B console (alternate console)",
+        "RJ45 RS-232 AUX",
+        "USB Type A \u00d72"
+      ],
+      "sources": [
+        "isr-g2-hig"
+      ]
+    },
+    {
+      "modelId": "3925E",
+      "catalogModel": "Cisco 3925E",
+      "standardSPE": "SPE200",
+      "counts": {
+        "RJ45DataSockets": 4,
+        "SFPDataSockets": 2,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 4,
+        "maxSimultaneousDataLinks": 4,
+        "dedicatedRJ45ManagementSockets": 0
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0"
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/1"
+        },
+        {
+          "name": "GigabitEthernet0/2",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/3",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [],
+      "power": {
+        "maxPowerInputs": 2,
+        "type": "AC, DC, or PoE PSU variant",
+        "note": "Base AC chassis. PoE supply serves installed modules; built-in GE ports are not PoE.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": false
+      },
+      "excludedModuleSlots": {
+        "EHWIC": 3,
+        "SM": 2,
+        "ISM-internal": 1
+      },
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 console",
+        "Mini-USB Type B console (alternate console)",
+        "RJ45 RS-232 AUX",
+        "USB Type A \u00d72"
+      ],
+      "sources": [
+        "isr-g2-hig"
+      ]
+    },
+    {
+      "modelId": "3945E",
+      "catalogModel": "Cisco 3945E",
+      "standardSPE": "SPE250",
+      "counts": {
+        "RJ45DataSockets": 4,
+        "SFPDataSockets": 2,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 4,
+        "maxSimultaneousDataLinks": 4,
+        "dedicatedRJ45ManagementSockets": 0
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0"
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/1"
+        },
+        {
+          "name": "GigabitEthernet0/2",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/3",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [],
+      "power": {
+        "maxPowerInputs": 2,
+        "type": "AC, DC, or PoE PSU variant",
+        "note": "Base AC chassis. PoE supply serves installed modules; built-in GE ports are not PoE.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": false
+      },
+      "excludedModuleSlots": {
+        "EHWIC": 3,
+        "SM": 4,
+        "ISM-internal": 1
+      },
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 console",
+        "Mini-USB Type B console (alternate console)",
+        "RJ45 RS-232 AUX",
+        "USB Type A \u00d72"
+      ],
+      "sources": [
+        "isr-g2-hig"
+      ]
+    },
+    {
+      "modelId": "ASR1001",
+      "catalogModel": "Cisco ASR 1001",
+      "counts": {
+        "RJ45DataSockets": 0,
+        "SFPDataSockets": 4,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 4,
+        "maxSimultaneousDataLinks": 4,
+        "dedicatedRJ45ManagementSockets": 1
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/2",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/3",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [
+        {
+          "name": "MGMT",
+          "role": "management",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "power": {
+        "maxPowerInputs": 2,
+        "type": "two AC or two DC PSUs",
+        "note": "Supports 1+1 redundancy. Do not infer 10GE from ASR1001-X.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": false
+      },
+      "excludedModuleSlots": {
+        "half-height-SPA": 1,
+        "factory-integrated-daughter-card": 1
+      },
+      "excludedModulePorts": [
+        "SPA interfaces 0/1/x",
+        "Factory IDC interfaces 0/2/x"
+      ],
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 CON",
+        "RJ45 RS-232 AUX",
+        "USB Type A \u00d71"
+      ],
+      "sources": [
+        "asr1001-hig"
+      ]
+    },
+    {
+      "modelId": "ASR1001-X",
+      "catalogModel": "Cisco ASR 1001-X",
+      "counts": {
+        "RJ45DataSockets": 0,
+        "SFPDataSockets": 6,
+        "SFPPlusDataSockets": 2,
+        "logicalDataInterfaces": 8,
+        "maxSimultaneousDataLinks": 8,
+        "dedicatedRJ45ManagementSockets": 1
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/2",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/3",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/4",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/5",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "TenGigabitEthernet0/0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP+",
+              "speedsMbps": [
+                10000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "TenGigabitEthernet0/0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP+",
+              "speedsMbps": [
+                10000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [
+        {
+          "name": "MGMT",
+          "role": "management",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "power": {
+        "maxPowerInputs": 2,
+        "type": "two AC or two DC PSUs",
+        "note": "Two matched AC or DC supplies; hot-swappable redundancy.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": false
+      },
+      "excludedModuleSlots": {
+        "half-height-SPA": 1,
+        "NIM": 1
+      },
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 CON",
+        "Mini-USB console (alternate console)",
+        "RJ45 RS-232 AUX",
+        "USB 2.0 Type A \u00d72"
+      ],
+      "sources": [
+        "asr1001x-hig"
+      ]
+    },
+    {
+      "modelId": "ISR4331",
+      "catalogModel": "Cisco ISR 4331",
+      "counts": {
+        "RJ45DataSockets": 2,
+        "SFPDataSockets": 2,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 3,
+        "maxSimultaneousDataLinks": 3,
+        "dedicatedRJ45ManagementSockets": 1
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0/0"
+        },
+        {
+          "name": "GigabitEthernet0/0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        },
+        {
+          "name": "GigabitEthernet0/0/2",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "managementPorts": [
+        {
+          "name": "MGMT",
+          "role": "management",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "power": {
+        "maxPowerInputs": 1,
+        "type": "AC or DC PSU variant",
+        "note": "Single PSU. Built-in GE ports are not PoE; installed SM-X can have its own PoE capability.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": false
+      },
+      "excludedModuleSlots": {
+        "NIM": 2,
+        "SM-X": 1,
+        "ISC-PVDM4-internal": 1
+      },
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 console",
+        "Mini-USB Type B console (alternate console)",
+        "RJ45 RS-232 AUX",
+        "USB Type A \u00d71"
+      ],
+      "sources": [
+        "isr4000-datasheet",
+        "isr4000-hig",
+        "isr4000-original-hig"
+      ]
+    },
+    {
+      "modelId": "ISR4431",
+      "catalogModel": "Cisco ISR 4431",
+      "counts": {
+        "RJ45DataSockets": 4,
+        "SFPDataSockets": 4,
+        "SFPPlusDataSockets": 0,
+        "logicalDataInterfaces": 4,
+        "maxSimultaneousDataLinks": 4,
+        "dedicatedRJ45ManagementSockets": 1
+      },
+      "ports": [
+        {
+          "name": "GigabitEthernet0/0/0",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0/0"
+        },
+        {
+          "name": "GigabitEthernet0/0/1",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0/1"
+        },
+        {
+          "name": "GigabitEthernet0/0/2",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0/2"
+        },
+        {
+          "name": "GigabitEthernet0/0/3",
+          "role": "data",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            },
+            {
+              "type": "SFP",
+              "speedsMbps": [
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": true
+            }
+          ],
+          "maxSimultaneousLinks": 1,
+          "comboGroup": "GigabitEthernet0/0/3"
+        }
+      ],
+      "managementPorts": [
+        {
+          "name": "MGMT",
+          "role": "management",
+          "connectors": [
+            {
+              "type": "RJ45",
+              "speedsMbps": [
+                10,
+                100,
+                1000
+              ],
+              "poeDefault": false,
+              "transceiverRequired": false
+            }
+          ],
+          "maxSimultaneousLinks": 1
+        }
+      ],
+      "power": {
+        "maxPowerInputs": 2,
+        "type": "AC or DC PSU variant",
+        "note": "Base has one PSU; second optional. Internal 30W PoE daughter card and suitable PSU required for PoE on first two copper GE ports.",
+        "poeOnBuiltInPortsByDefault": false,
+        "optionalBuiltInPoE": true,
+        "optionalPoEPorts": [
+          "GigabitEthernet0/0/0",
+          "GigabitEthernet0/0/1"
+        ]
+      },
+      "excludedModuleSlots": {
+        "NIM": 3,
+        "SM-X": 0,
+        "ISC-PVDM4-internal": 1
+      },
+      "nonNetworkConnectors": [
+        "RJ45 RS-232 console",
+        "Mini-USB Type B console (alternate console)",
+        "RJ45 RS-232 AUX",
+        "USB 2.0 Type A \u00d72"
+      ],
+      "sources": [
+        "isr4000-datasheet",
+        "isr4000-hig",
+        "isr4000-original-hig"
+      ]
+    }
+  ]
+}

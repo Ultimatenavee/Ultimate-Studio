@@ -1,0 +1,254 @@
+{
+  "hitachi-apresia13200-48x-psr3": {
+    "images": {
+      "front": {
+        "src": "assets/hitachi-apresia13200-48x-psr3-illustration-v07.webp",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          25,
+          319,
+          2120,
+          187
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top; front ports unchanged",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "hitachi-apresia13200-52gt-psr2": {
+    "images": {
+      "front": {
+        "src": "assets/hitachi-apresia13200-52gt-psr2-illustration-v07.webp",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          5,
+          348,
+          2160,
+          187
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top; front ports unchanged",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "hitachi-apresia15000-32xl-psr2": {
+    "images": {
+      "front": {
+        "src": "assets/hitachi-apresia15000-32xl-psr2-illustration-v07.webp",
+        "width": 2172,
+        "height": 724,
+        "frame": [
+          17,
+          351,
+          2136,
+          185
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top; front ports unchanged",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "cisco-1941": {
+    "images": {
+      "front": {
+        "src": "assets/cisco-1941-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          77,
+          345,
+          2014,
+          295
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-ar5710-s8t2x": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-ar5710-s8t2x-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          29,
+          280,
+          2113,
+          292
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s5735-l8t4x-a1": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s5735-l8t4x-a1-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          13,
+          300,
+          2144,
+          314
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "telco-t-marc-340": {
+    "images": {
+      "front": {
+        "src": "assets/telco-t-marc-340-illustration-v03.png",
+        "width": 2098,
+        "height": 749,
+        "frame": [
+          58,
+          263,
+          1982,
+          342
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s5720-12tp-li-ac": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s5720-12tp-li-ac-illustration-v07.webp",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          29,
+          285,
+          2112,
+          300
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s5720-36c-ei-28s-ac": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s5720-36c-ei-28s-ac-illustration-v07.webp",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          23,
+          290,
+          2124,
+          234
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s5720-52x-si-ac": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s5720-52x-si-ac-illustration-v07.webp",
+        "width": 2169,
+        "height": 725,
+        "frame": [
+          20,
+          290,
+          2128,
+          221
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s5732-h24s6q": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s5732-h24s6q-illustration-v07.webp",
+        "width": 2169,
+        "height": 725,
+        "frame": [
+          25,
+          310,
+          2117,
+          200
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s6720-30c-ei-24s-ac": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s6720-30c-ei-24s-ac-illustration-v07.webp",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          21,
+          287,
+          2128,
+          213
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s6730-h24x6c": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s6730-h24x6c-illustration-v07.webp",
+        "width": 2167,
+        "height": 726,
+        "frame": [
+          20,
+          290,
+          2123,
+          206
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  },
+  "huawei-s5335-s32st4x": {
+    "images": {
+      "front": {
+        "src": "assets/huawei-s5335-s32st4x-illustration-v07.webp",
+        "width": 2168,
+        "height": 725,
+        "frame": [
+          14,
+          315,
+          2141,
+          249
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต; v61 frame excludes perspective top, keeps front face",
+        "frameAudit": "v61-front-plane-only"
+      }
+    }
+  }
+}

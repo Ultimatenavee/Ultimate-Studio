@@ -1,0 +1,869 @@
+{
+  "scope": "All 9 visible Cisco models in current catalog; no application changes",
+  "method": "Official Cisco hardware and configuration documentation; existing stable port IDs retained; utility connector labels are not CLI network interfaces",
+  "models": [
+    {
+      "id": "cisco-c1121-8pltep",
+      "model": "C1121-8PLTEP",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html",
+          "section": "Figure 13 bezel / Figure 15 exact C1121-8PLTEP I/O"
+        },
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/isr1100/software/configuration/guide/isr1100-sw-config/configuring_ethernet_switchports.html"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0/0 combo, GigabitEthernet0/0/1 WAN; GigabitEthernet0/1/0–7 switch ports",
+      "ioFace": "rear",
+      "physicalSummary": "Bezel has Cisco logo; I/O side has 4-pin DC, power switch, LAN, WAN, micro-USB console, USB 3.0, LTE pluggable.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0-0-r",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-0-s",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-1",
+          "currentName": "GigabitEthernet0/0/1",
+          "verifiedName": "GigabitEthernet0/0/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-0",
+          "currentName": "GigabitEthernet0/1/0",
+          "verifiedName": "GigabitEthernet0/1/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-1",
+          "currentName": "GigabitEthernet0/1/1",
+          "verifiedName": "GigabitEthernet0/1/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-2",
+          "currentName": "GigabitEthernet0/1/2",
+          "verifiedName": "GigabitEthernet0/1/2",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-3",
+          "currentName": "GigabitEthernet0/1/3",
+          "verifiedName": "GigabitEthernet0/1/3",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-4",
+          "currentName": "GigabitEthernet0/1/4",
+          "verifiedName": "GigabitEthernet0/1/4",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-5",
+          "currentName": "GigabitEthernet0/1/5",
+          "verifiedName": "GigabitEthernet0/1/5",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-6",
+          "currentName": "GigabitEthernet0/1/6",
+          "verifiedName": "GigabitEthernet0/1/6",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-7",
+          "currentName": "GigabitEthernet0/1/7",
+          "verifiedName": "GigabitEthernet0/1/7",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "console",
+          "connector": "Micro-USB",
+          "note": "Physical serial console, not a configurable network interface."
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html",
+        "figures": "Figure 13 bezel / Figure 15 exact C1121-8PLTEP I/O",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "rear",
+      "uncertainties": []
+    },
+    {
+      "id": "cisco-1941",
+      "model": "Cisco 1941",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html",
+          "section": "Figure 1-4 front LEDs / Figure 1-5 back ports; Table 1-6"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0 and GigabitEthernet0/1",
+      "ioFace": "rear",
+      "physicalSummary": "Front bezel has SYS/ACT/PoE LEDs. Rear has GE, console, AUX, USB, EHWIC, CF, power switch/inlet.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0",
+          "currentName": "GigabitEthernet0/0",
+          "verifiedName": "GigabitEthernet0/0",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1",
+          "currentName": "GigabitEthernet0/1",
+          "verifiedName": "GigabitEthernet0/1",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "console",
+          "connector": "RJ45"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html",
+        "figures": "Figure 1-4 front LEDs / Figure 1-5 back ports; Table 1-6",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "front",
+      "uncertainties": []
+    },
+    {
+      "id": "cisco-2911-k9",
+      "model": "CISCO2911/K9",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "section": "Figure 1-4 front / Figure 1-5 back; Table 1-11"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0–2",
+      "ioFace": "rear",
+      "physicalSummary": "Rear has fixed Ethernet, utility ports, EHWIC, SM and power module; front has LED bezel.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0",
+          "currentName": "GigabitEthernet0/0",
+          "verifiedName": "GigabitEthernet0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1",
+          "currentName": "GigabitEthernet0/1",
+          "verifiedName": "GigabitEthernet0/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-2",
+          "currentName": "GigabitEthernet0/2",
+          "verifiedName": "GigabitEthernet0/2",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "console",
+          "connector": "RJ45"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+        "figures": "Figure 1-4 front / Figure 1-5 back; Table 1-11",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "rear",
+      "uncertainties": []
+    },
+    {
+      "id": "cisco-3925e",
+      "model": "Cisco 3925E",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "section": "Figure 1-10 front / Figure 1-13 back; Table 1-11"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0–3",
+      "ioFace": "rear",
+      "physicalSummary": "Front power connectors/LEDs. Rear SPE200 has four copper GE, two SFP, consoles/AUX/USB and expansion slots.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0-r",
+          "currentName": "GigabitEthernet0/0",
+          "verifiedName": "GigabitEthernet0/0",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-s",
+          "currentName": "GigabitEthernet0/0",
+          "verifiedName": "GigabitEthernet0/0",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-1-r",
+          "currentName": "GigabitEthernet0/1",
+          "verifiedName": "GigabitEthernet0/1",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-s",
+          "currentName": "GigabitEthernet0/1",
+          "verifiedName": "GigabitEthernet0/1",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-2",
+          "currentName": "GigabitEthernet0/2",
+          "verifiedName": "GigabitEthernet0/2",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-3",
+          "currentName": "GigabitEthernet0/3",
+          "verifiedName": "GigabitEthernet0/3",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "front",
+          "verifiedFace": "rear",
+          "kind": "console",
+          "connector": "RJ45"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+        "figures": "Figure 1-10 front / Figure 1-13 back; Table 1-11",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "front",
+      "uncertainties": [
+        "SFP-to-copper combo bank pairing is not explicit in parsed vendor caption; existing Gi0/0 and Gi0/1 pairing not independently confirmed by visual figure. Keep network names but mark mapping pending."
+      ]
+    },
+    {
+      "id": "cisco-3945e",
+      "model": "Cisco 3945E",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "section": "Figure 1-10 front / Figure 1-13 back; Table 1-11"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0–3",
+      "ioFace": "rear",
+      "physicalSummary": "Front power connectors/LEDs. Rear SPE250 I/O plus four SM positions.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0-r",
+          "currentName": "GigabitEthernet0/0",
+          "verifiedName": "GigabitEthernet0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-s",
+          "currentName": "GigabitEthernet0/0",
+          "verifiedName": "GigabitEthernet0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-1-r",
+          "currentName": "GigabitEthernet0/1",
+          "verifiedName": "GigabitEthernet0/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-1-s",
+          "currentName": "GigabitEthernet0/1",
+          "verifiedName": "GigabitEthernet0/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-2",
+          "currentName": "GigabitEthernet0/2",
+          "verifiedName": "GigabitEthernet0/2",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-3",
+          "currentName": "GigabitEthernet0/3",
+          "verifiedName": "GigabitEthernet0/3",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "console",
+          "connector": "RJ45"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+        "figures": "Figure 1-10 front / Figure 1-13 back; Table 1-11",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "rear",
+      "uncertainties": [
+        "SFP-to-copper combo bank pairing is not explicit in parsed vendor caption; existing Gi0/0 and Gi0/1 pairing not independently confirmed by visual figure. Keep network names but mark mapping pending."
+      ]
+    },
+    {
+      "id": "cisco-asr-1001",
+      "model": "ASR1001",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html",
+          "section": "Figure 8 front / rear view immediately after Figure 8; Slot Numbering"
+        },
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/configuration/guide/chassis/xe-16-9/asr1000-software-config-guide-16-9/mgmt-ether-asr.html"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0/0–3; management GigabitEthernet0",
+      "ioFace": "front",
+      "physicalSummary": "Front four fixed SFP plus SPA/IDC, management, CON/AUX/USB; rear seven fans and two PSU.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0-0",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-1",
+          "currentName": "GigabitEthernet0/0/1",
+          "verifiedName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-2",
+          "currentName": "GigabitEthernet0/0/2",
+          "verifiedName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-3",
+          "currentName": "GigabitEthernet0/0/3",
+          "verifiedName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "mgmt",
+          "currentName": "MGMT",
+          "verifiedName": "GigabitEthernet0",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "management",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "console",
+          "connector": "RJ45"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html",
+        "figures": "Figure 8 front / rear view immediately after Figure 8; Slot Numbering",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "front",
+      "uncertainties": []
+    },
+    {
+      "id": "cisco-asr-1001-x",
+      "model": "ASR1001-X",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html",
+          "section": "Figure 1 front / Chassis Rear View / SPA GE and TE Ports"
+        },
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/configuration/guide/chassis/xe-16-9/asr1000-software-config-guide-16-9/mgmt-ether-asr.html"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0/0–5; TenGigabitEthernet0/0/0–1; management GigabitEthernet0",
+      "ioFace": "front",
+      "physicalSummary": "Front fixed GE/TE and management/utility/SPA/NIM. Rear four fans plus two matching AC or DC PSU.",
+      "ports": [
+        {
+          "id": "te1",
+          "currentName": "TenGigabitEthernet0/0/1",
+          "verifiedName": "TenGigabitEthernet0/0/1",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP+"
+        },
+        {
+          "id": "te0",
+          "currentName": "TenGigabitEthernet0/0/0",
+          "verifiedName": "TenGigabitEthernet0/0/0",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP+"
+        },
+        {
+          "id": "ge1",
+          "currentName": "GigabitEthernet0/0/1",
+          "verifiedName": "GigabitEthernet0/0/1",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "ge0",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "ge3",
+          "currentName": "GigabitEthernet0/0/3",
+          "verifiedName": "GigabitEthernet0/0/3",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "ge2",
+          "currentName": "GigabitEthernet0/0/2",
+          "verifiedName": "GigabitEthernet0/0/2",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "ge5",
+          "currentName": "GigabitEthernet0/0/5",
+          "verifiedName": "GigabitEthernet0/0/5",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "ge4",
+          "currentName": "GigabitEthernet0/0/4",
+          "verifiedName": "GigabitEthernet0/0/4",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "mgmt",
+          "currentName": "MGMT",
+          "verifiedName": "GigabitEthernet0",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "management",
+          "connector": "RJ45"
+        },
+        {
+          "id": "aux",
+          "currentName": "AUX",
+          "verifiedName": "AUX",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "console",
+          "connector": "RJ45"
+        },
+        {
+          "id": "con",
+          "currentName": "CON",
+          "verifiedName": "CON",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "console",
+          "connector": "RJ45"
+        },
+        {
+          "id": "usb-0",
+          "currentName": "USB 0",
+          "verifiedName": "USB 0",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "usb",
+          "connector": "USB"
+        },
+        {
+          "id": "usb-1",
+          "currentName": "USB 1",
+          "verifiedName": "USB 1",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "usb",
+          "connector": "USB"
+        },
+        {
+          "id": "con-mini-usb",
+          "currentName": "CON mini USB",
+          "verifiedName": "CON mini USB",
+          "currentFace": "front",
+          "verifiedFace": "front",
+          "kind": "console",
+          "connector": "USB"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html",
+        "figures": "Figure 1 front / Chassis Rear View / SPA GE and TE Ports",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "front",
+      "uncertainties": []
+    },
+    {
+      "id": "cisco-isr-4331",
+      "model": "ISR4331 / ISR4331/K9",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+          "section": "Figure 1-22 bezel side / Figure 1-23 back"
+        },
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/initconfig.html"
+        },
+        {
+          "url": "https://www.cisco.com/c/ja_jp/td/docs/routers/access/4400/hardware/installation/C4400_isr/Overview.html"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0/0–2; management GigabitEthernet0",
+      "ioFace": "mixed",
+      "physicalSummary": "Rear native GE ports and NIM/SM slots; front/bezel management, console/AUX/USB, LEDs and AC inlet.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0-0-r",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-0-s",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-1",
+          "currentName": "GigabitEthernet0/0/1",
+          "verifiedName": "GigabitEthernet0/0/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-2",
+          "currentName": "GigabitEthernet0/0/2",
+          "verifiedName": "GigabitEthernet0/0/2",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP",
+          "speeds": [
+            1000
+          ]
+        },
+        {
+          "id": "mgmt",
+          "currentName": "MGMT",
+          "verifiedName": "GigabitEthernet0",
+          "currentFace": "rear",
+          "verifiedFace": "front",
+          "kind": "management",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "rear",
+          "verifiedFace": "front",
+          "kind": "console",
+          "connector": "RJ45"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+        "figures": "Figure 1-22 bezel side / Figure 1-23 back",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "rear",
+      "uncertainties": []
+    },
+    {
+      "id": "cisco-isr-4431",
+      "model": "ISR4431/K9",
+      "checkedAt": "2026-10-10",
+      "sources": [
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+          "section": "Figure 1-13 bezel / Figure 1-14 I/O chassis"
+        },
+        {
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/initconfig.html"
+        }
+      ],
+      "cliSummary": "GigabitEthernet0/0/0–3; management GigabitEthernet0",
+      "ioFace": "rear",
+      "physicalSummary": "Bezel/front has PSU positions, power switch/LEDs; opposite I/O side has four combo GE, management/utility/NIM.",
+      "ports": [
+        {
+          "id": "gigabitethernet0-0-0-r",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-0-s",
+          "currentName": "GigabitEthernet0/0/0",
+          "verifiedName": "GigabitEthernet0/0/0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-1-r",
+          "currentName": "GigabitEthernet0/0/1",
+          "verifiedName": "GigabitEthernet0/0/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-1-s",
+          "currentName": "GigabitEthernet0/0/1",
+          "verifiedName": "GigabitEthernet0/0/1",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-2-r",
+          "currentName": "GigabitEthernet0/0/2",
+          "verifiedName": "GigabitEthernet0/0/2",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-2-s",
+          "currentName": "GigabitEthernet0/0/2",
+          "verifiedName": "GigabitEthernet0/0/2",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "gigabitethernet0-0-3-r",
+          "currentName": "GigabitEthernet0/0/3",
+          "verifiedName": "GigabitEthernet0/0/3",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "RJ45"
+        },
+        {
+          "id": "gigabitethernet0-0-3-s",
+          "currentName": "GigabitEthernet0/0/3",
+          "verifiedName": "GigabitEthernet0/0/3",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "network",
+          "connector": "SFP"
+        },
+        {
+          "id": "mgmt",
+          "currentName": "MGMT",
+          "verifiedName": "GigabitEthernet0",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "management",
+          "connector": "RJ45"
+        },
+        {
+          "id": "console",
+          "currentName": "Console",
+          "verifiedName": "Console",
+          "currentFace": "rear",
+          "verifiedFace": "rear",
+          "kind": "console",
+          "connector": "RJ45"
+        }
+      ],
+      "referenceFigures": {
+        "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+        "figures": "Figure 1-13 bezel / Figure 1-14 I/O chassis",
+        "downloadImageUrl": null,
+        "note": "Official HTML image retrieval through web tool returns Internal Error; direct vendor fetch returns a 195-byte denial response. Use linked official PDF/figure as imagegen reference, never a guessed rear."
+      },
+      "existingDisplayFace": "rear",
+      "uncertainties": []
+    }
+  ]
+}

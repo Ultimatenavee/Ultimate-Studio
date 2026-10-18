@@ -1,0 +1,178 @@
+{
+  "huawei-ar5710-s8t2x": {
+    "status": "verified",
+    "basis": "Manufacturer typical and maximum power consumption rows",
+    "configuration": "AR5710-S8T2X part 50010720",
+    "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720",
+    "sourceTitle": "Huawei NetEngine AR5700/AR6700 Hardware Description",
+    "section": "Technical specifications — power consumption",
+    "note": "Official Huawei search-index table evidence; direct chapter returned HTTP 403. Values are model consumption, not PSU output.",
+    "typicalW": 12,
+    "maxW": 15
+  },
+  "huawei-ar5710-s8t2x-lte4ea": {
+    "status": "verified",
+    "basis": "Manufacturer typical and maximum power consumption rows",
+    "configuration": "AR5710-S8T2X-LTE4EA part 50010723",
+    "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723",
+    "sourceTitle": "Huawei NetEngine AR5700/AR6700 Hardware Description",
+    "section": "Technical specifications — power consumption",
+    "note": "Official Huawei search-index table evidence; direct chapter returned HTTP 403. Values are model consumption, not PSU output.",
+    "typicalW": 14,
+    "maxW": 19
+  },
+  "huawei-s5735-l8t4x-a1": {
+    "status": "verified",
+    "basis": "Maximum power consumption row",
+    "configuration": "S5735-L8T4X-A1 built-in AC",
+    "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1",
+    "sourceTitle": "Huawei S5700 Hardware Description — S5735-L8T4X-A1",
+    "section": "Technical specifications — power consumption",
+    "note": "Official Huawei search-index evidence; direct chapter blocked. Typical omitted because primary-source typical row was not retrieved.",
+    "maxW": 26.3
+  },
+  "huawei-s5735-l8t4x-qa-v2": {
+    "status": "unknown",
+    "basis": "No configuration-matched consumption value verified",
+    "configuration": "Huawei S5735-L8T4X-QA-V2",
+    "sourceUrl": "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2",
+    "sourceTitle": "Hardware / Product reference · S5735-L8T4X-QA-V2",
+    "section": "Power consumption",
+    "note": "Conflicting revision-dependent values in third-party listings were rejected. Existing source gateway j022 returned a different adapter-powered device; it cannot establish QA-V2 consumption. Exact official revision-specific power table remains unverified."
+  },
+  "huawei-s5731-s48t4x": {
+    "status": "verified",
+    "basis": "30% traffic load and maximum consumption rows",
+    "configuration": "S5731-S48T4X, not S48T4X-A or S48P4X",
+    "sourceUrl": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a910c627eaee4d0a91c4c0ede3ad041b/M3T1A590N1066742086921986218/Huawei%20CloudEngine%20S5731-S%20Series%20Switches%20Datasheet.pdf",
+    "sourceTitle": "Huawei CloudEngine S5731-S Series Switches Datasheet",
+    "section": "Product specifications, page 20 (PDF index 19)",
+    "note": "Column-matched product table. 100% traffic-load consumption is separately 104 W; maximum row is 124 W.",
+    "typicalW": 101,
+    "maxW": 124
+  },
+  "huawei-ne8000-f1a": {
+    "status": "verified",
+    "basis": "Manufacturer typical power consumption",
+    "configuration": "NetEngine 8000 F1A fixed model (F1A-8H20Q reference)",
+    "sourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+    "sourceTitle": "Huawei NetEngine 8000 Series Routers",
+    "section": "Specifications, F1A column",
+    "note": "325 W is typical only, not maximum. Crosschecked exact F1A-8H20Q hardware chapter EDOC1100382055/ce5c8c83; optics/traffic affect actual consumption.",
+    "typicalW": 325
+  },
+  "huawei-ne8000-m8": {
+    "status": "unknown",
+    "basis": "Modular chassis: power depends on boards, optics, power variant and traffic",
+    "configuration": "Board configuration and AC/DC revision not specified by this model ID",
+    "sourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+    "sourceTitle": "Huawei NetEngine 8000 Series Routers",
+    "section": "Power consumption",
+    "note": "Vendor publishes reference typical values, but they are not universal chassis/full-population maximum values. No numeric default assigned without a matching bill of materials.",
+    "referenceNote": "Official M8 datasheet provides AC IPU-2T4-A/IPU-2T4-E-B example 774.3 W for 2xCR8DE1KB00M1 + 1xCR8DE4NB00M1 + 1xCR8DE8YF0025 + 2xCR5D00LAXF91; the existing face reference is DC. Do not apply AC example indiscriminately."
+  },
+  "huawei-ne8000-m14": {
+    "status": "unknown",
+    "basis": "Modular chassis: power depends on boards, optics, power variant and traffic",
+    "configuration": "Board configuration and AC/DC revision not specified by this model ID",
+    "sourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+    "sourceTitle": "Huawei NetEngine 8000 Series Routers",
+    "section": "Power consumption",
+    "note": "Vendor publishes reference typical values, but they are not universal chassis/full-population maximum values. No numeric default assigned without a matching bill of materials.",
+    "referenceNote": "Official Hardware Center CR8B0BKPDCM1 gives 865.79 W for DC IPU-3T6-A/IPU-3T6-E-B with 1 fan + 2 DC power + 2 IPU + 2 CR8DE1KB00M1 + 2 CR8DE4NB00M1 + 2 CR5D00LAXF91 + 2 CR5D00EAGF95. This is one reference configuration, not arbitrary fully populated chassis."
+  },
+  "huawei-ne8000-x4": {
+    "status": "unknown",
+    "basis": "Modular chassis: power depends on boards, optics, power variant and traffic",
+    "configuration": "Board configuration and AC/DC revision not specified by this model ID",
+    "sourceUrl": "https://e.huawei.com/en/products/routers/ne8000",
+    "sourceTitle": "Huawei NetEngine 8000 Series Routers",
+    "section": "Power consumption",
+    "note": "Vendor publishes reference typical values, but they are not universal chassis/full-population maximum values. No numeric default assigned without a matching bill of materials."
+  },
+  "huawei-s5720-12tp-li-ac": {
+    "status": "verified",
+    "basis": "Typical: 30% traffic, ATIS standard. Maximum: 100% throughput",
+    "configuration": "S5720-12TP-LI-AC",
+    "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j016",
+    "sourceTitle": "Huawei Hardware Description: S5720-12TP-LI-AC",
+    "section": "Technical specifications — power consumption",
+    "note": "Typical/max verified in official full chapter. PSU output rating excluded.",
+    "typicalW": 10.39,
+    "maxW": 12.85
+  },
+  "huawei-s5720-36c-ei-28s-ac": {
+    "status": "verified",
+    "basis": "Typical: 30% traffic, ATIS standard. Maximum: 100% throughput, fans at full speed",
+    "configuration": "S5720-36C-EI-28S-AC; no expansion card for typical value",
+    "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d",
+    "sourceTitle": "Huawei Hardware Description: S5720-36C-EI-28S-AC",
+    "section": "Technical specifications — power consumption",
+    "note": "Typical/max verified in official full chapter. Typical alternatives: 55.35 W with 2x10GE optical card; 60.25 W with 2xQSFP+ stack card; 63.5 W with 2x10GE electrical card.",
+    "typicalW": 47.86,
+    "maxW": 83.9
+  },
+  "huawei-s5720-52x-si-ac": {
+    "status": "verified",
+    "basis": "Typical: 30% traffic, ATIS standard. Maximum: 100% throughput, fans at full speed",
+    "configuration": "S5720-52X-SI-AC",
+    "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j02f",
+    "sourceTitle": "Huawei Hardware Description: S5720-52X-SI-AC",
+    "section": "Technical specifications — power consumption",
+    "note": "Typical/max verified in official full chapter. PSU output rating excluded.",
+    "typicalW": 33.8,
+    "maxW": 56.8
+  },
+  "huawei-s5732-h24s6q": {
+    "status": "verified",
+    "basis": "Typical: 30% traffic, ATIS standard. Maximum: 100% throughput, fans at full speed",
+    "configuration": "S5732-H24S6Q",
+    "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j08i",
+    "sourceTitle": "Huawei Hardware Description: S5732-H24S6Q",
+    "section": "Technical specifications — power consumption",
+    "note": "Typical/max verified in official full chapter. PSU output rating excluded.",
+    "typicalW": 126,
+    "maxW": 229
+  },
+  "huawei-s6720-30c-ei-24s-ac": {
+    "status": "verified",
+    "basis": "Typical: 30% traffic, ATIS standard. Maximum: 100% throughput, fans at full speed",
+    "configuration": "S6720-30C-EI-24S-AC; no expansion card for typical value",
+    "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j00q",
+    "sourceTitle": "Huawei Hardware Description: S6720-30C-EI-24S-AC",
+    "section": "Technical specifications — power consumption",
+    "note": "Typical/max verified in official full chapter. PSU output rating excluded.",
+    "typicalW": 147,
+    "maxW": 233.7
+  },
+  "huawei-s6730-h24x6c": {
+    "status": "verified",
+    "basis": "Typical: 30% traffic, ATIS standard. Maximum: 100% throughput, fans at full speed",
+    "configuration": "S6730-H24X6C",
+    "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j014",
+    "sourceTitle": "Huawei Hardware Description: S6730-H24X6C",
+    "section": "Technical specifications — power consumption",
+    "note": "Typical/max verified in official full chapter. PSU output rating excluded.",
+    "typicalW": 149,
+    "maxW": 254
+  },
+  "huawei-s5335-s32st4x": {
+    "status": "verified",
+    "basis": "Maximum power consumption row",
+    "configuration": "S5335-S32ST4X exact column",
+    "sourceUrl": "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf",
+    "sourceTitle": "Huawei CloudEngine S5335-S Series Switches Brochure",
+    "section": "Product specifications, page 4 (PDF index 3)",
+    "note": "Maximum 66 W is consumption; 60 W AC / 1000 W DC in adjacent row are PSU types, not consumption. Typical not published in this table.",
+    "maxW": 66
+  },
+  "huawei-ne40e-x8a": {
+    "status": "unknown",
+    "basis": "Modular chassis consumption needs exact MPU/SFU/LPU/PEM configuration",
+    "configuration": "Unspecified chassis card population",
+    "sourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100383693/ee8c26a3/ne40e-x8a",
+    "sourceTitle": "Huawei NE40E-X8A chassis appearance",
+    "section": "Power consumption",
+    "note": "No verified configuration-matched power total obtained. Do not substitute PSU rating or sum redundant PSU ratings."
+  }
+}

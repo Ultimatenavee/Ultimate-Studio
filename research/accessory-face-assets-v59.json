@@ -1,0 +1,206 @@
+{
+  "checkedAt": "2026-10-15",
+  "items": {
+    "telco-t-marc-340": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/telco-t-marc-340-rear.svg",
+          "width": 1200,
+          "height": 200,
+          "frame": [
+            0,
+            0,
+            1200,
+            200
+          ],
+          "source": "https://www.ebay.com/itm/176216747051",
+          "status": "reference-based-illustration",
+          "note": "Original vector illustration from visually inspected exact-model rear photograph. AC variant only; not calibrated port geometry. Manufacturer T-Marc300 datasheet checked first; has no rear view."
+        }
+      }
+    },
+    "telco-t-marc-380": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/telco-t-marc-380-rear.svg",
+          "width": 1200,
+          "height": 200,
+          "frame": [
+            0,
+            0,
+            1200,
+            200
+          ],
+          "source": "https://www.ebay.com/itm/355859481374",
+          "status": "reference-based-illustration",
+          "note": "Original vector illustration from visually inspected exact-model rear photograph. AC variant only; not calibrated port geometry. Manufacturer T-Marc300 datasheet checked first; has no rear view."
+        }
+      }
+    },
+    "telco-t-marc-280": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/telco-t-marc-280-rear.svg",
+          "width": 1200,
+          "height": 200,
+          "frame": [
+            0,
+            0,
+            1200,
+            200
+          ],
+          "source": "https://www.ebay.com/itm/178210487744",
+          "status": "reference-based-illustration",
+          "note": "Original vector illustration from rear photograph showing left DC barrel input and central ground stud. Plain remaining rear is intentional and matches reference; external power adapter omitted."
+        }
+      }
+    },
+    "ac-apc-ap9565": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/ac-apc-ap9565-rear.svg",
+          "width": 1200,
+          "height": 110,
+          "frame": [
+            0,
+            0,
+            1200,
+            110
+          ],
+          "source": "https://download.schneider-electric.com/files?default_image=DefaultProductImage.png&p_Doc_Ref=SPD_STOS-7RUFZD_B_H&p_File_Type=rendition_369_jpg",
+          "status": "reference-based-illustration",
+          "note": "Original vector illustration from vendor rear gallery: six rear C13 sockets, attached input cord exit and protection controls. Cord shortened at exit for orthographic face."
+        }
+      }
+    },
+    "ac-apc-smt1500rmi2u": {
+      "interfaceSide": "rear",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/ac-apc-smt1500rmi2u-rear.svg",
+          "width": 1200,
+          "height": 230,
+          "frame": [
+            0,
+            0,
+            1200,
+            230
+          ],
+          "source": "https://static6.arrow.com/aropdfconversion/7e3a9279ccf6c82c17fbe07e3f1ac05fa9a06b1d/190049386978539attachment.pdf",
+          "status": "reference-based-illustration",
+          "note": "Original vector illustration from Schneider Electric exact SMT1500RMI2U datasheet page6, viewed locally. Four C13 output outlets, C14 input, serial/USB and SmartSlot; no SmartConnect port. Vendor direct gallery failed."
+        }
+      }
+    },
+    "odf-commscope-760241650": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/odf-commscope-760241650-rear.svg",
+          "width": 1200,
+          "height": 110,
+          "frame": [
+            0,
+            0,
+            1200,
+            110
+          ],
+          "source": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/item760241650/",
+          "status": "reference-based-illustration",
+          "note": "Original vector illustration from exact vendor760241650-RER.jpg rear image retrieved and viewed. Two open left cable grommets,two closed right knockouts. No invented rear fiber adapters."
+        }
+      }
+    },
+    "odf-commscope-fms1u-sc24": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/odf-commscope-fms1u-sc24-rear.svg",
+          "width": 1200,
+          "height": 110,
+          "frame": [
+            0,
+            0,
+            1200,
+            110
+          ],
+          "source": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/fms1u-panels/",
+          "status": "reference-based-illustration",
+          "note": "Original orthographic vector illustration from vendor FMS1U-back.jpg retrieved and viewed. Two center cable openings and paired end slots; side cable holes belong on sidewall, not duplicated on rear. Family rear common to SC/LC loading; not calibrated CAD."
+        }
+      }
+    },
+    "dc-vertiv-netsure211-1u": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/dc-vertiv-netsure211-1u-rear.svg",
+          "width": 1200,
+          "height": 110,
+          "frame": [
+            0,
+            0,
+            1200,
+            110
+          ],
+          "source": "https://device.report/m/b91fba6a5f24c387fdf8e2d278b82db79589771b174e9c550f83adee6b97e3eb.pdf",
+          "status": "reference-based-illustration",
+          "note": "Reference configuration: 19-inch 211NGFB List 1. Rear layout from SAG582136600 RevBF page 83. Existing photograph showed23-inch shelf; replaced paired front with19-inch configuration. Optional cables omitted."
+        },
+        "front": {
+          "src": "assets/faces-v59/other/dc-vertiv-netsure211-1u-front.svg",
+          "width": 1200,
+          "height": 110,
+          "frame": [
+            0,
+            0,
+            1200,
+            110
+          ],
+          "source": "https://device.report/m/b91fba6a5f24c387fdf8e2d278b82db79589771b174e9c550f83adee6b97e3eb.pdf",
+          "status": "reference-based-illustration",
+          "note": "19-inch List 1 reference configuration. Two rectifier positions, controller and distribution section. Illustrative, not calibrated CAD. Replaces23-inch source image."
+        }
+      },
+      "referenceConfiguration": "211NGFB List 1,19-inch shelf"
+    },
+    "dc-vertiv-netsure211-2u": {
+      "interfaceSide": "front",
+      "images": {
+        "rear": {
+          "src": "assets/faces-v59/other/dc-vertiv-netsure211-2u-rear.svg",
+          "width": 1200,
+          "height": 220,
+          "frame": [
+            0,
+            0,
+            1200,
+            220
+          ],
+          "source": "https://device.report/m/b91fba6a5f24c387fdf8e2d278b82db79589771b174e9c550f83adee6b97e3eb.pdf",
+          "status": "reference-based-illustration",
+          "note": "Reference configuration: 19-inch 211NGFB List 5. Rear layout from SAG582136600 RevBF page 88. Existing photograph showed23-inch shelf; replaced paired front with19-inch configuration. Optional cables omitted."
+        },
+        "front": {
+          "src": "assets/faces-v59/other/dc-vertiv-netsure211-2u-front.svg",
+          "width": 1200,
+          "height": 220,
+          "frame": [
+            0,
+            0,
+            1200,
+            220
+          ],
+          "source": "https://device.report/m/b91fba6a5f24c387fdf8e2d278b82db79589771b174e9c550f83adee6b97e3eb.pdf",
+          "status": "reference-based-illustration",
+          "note": "19-inch List 5 reference configuration. Four rectifier positions, controller and distribution section. Illustrative, not calibrated CAD. Replaces23-inch source image."
+        }
+      },
+      "referenceConfiguration": "211NGFB List 5,19-inch shelf"
+    }
+  }
+}

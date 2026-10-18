@@ -1,0 +1,67 @@
+{
+  "method": "built-in image_gen",
+  "style": "Minimal blue and silver isometric role illustration; one object, transparent background, no brand/model/logo/text",
+  "icons": {
+    "firewall": {
+      "src": "assets/external/firewall.png",
+      "width": 1254,
+      "height": 1254,
+      "frame": [
+        137,
+        332,
+        1016,
+        682
+      ],
+      "alpha": true
+    },
+    "pe": {
+      "src": "assets/external/pe.png",
+      "width": 1254,
+      "height": 1254,
+      "frame": [
+        219,
+        205,
+        817,
+        916
+      ],
+      "alpha": true
+    },
+    "ap": {
+      "src": "assets/external/ap.png",
+      "width": 1254,
+      "height": 1254,
+      "frame": [
+        213,
+        237,
+        830,
+        787
+      ],
+      "alpha": true
+    },
+    "router": {
+      "src": "assets/external/router.png",
+      "width": 1254,
+      "height": 1254,
+      "frame": [
+        162,
+        272,
+        929,
+        732
+      ],
+      "alpha": true
+    },
+    "switch": {
+      "src": "assets/external/switch.png",
+      "width": 1254,
+      "height": 1254,
+      "frame": [
+        60,
+        435,
+        1142,
+        426
+      ],
+      "alpha": true
+    }
+  },
+  "prompt": "Isolated generic network role icon: premium minimal 3D isometric illustration, front above 25 degrees, cool azure blue and pale silver, restrained teal LEDs, transparent background, one centered object, no brand/model/logo/text. Subjects: provider-edge hub; eight-socket switch; rounded routing hub; security shield with brick barrier; wireless access-point disc with arcs."
+}

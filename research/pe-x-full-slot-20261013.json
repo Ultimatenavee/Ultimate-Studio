@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-13",
+  "scope": "Full service-slot Ethernet design presets; one declared card configuration, not all cards installed simultaneously",
+  "models": [
+    {
+      "modelId": "huawei-ne8000-x4",
+      "status": "verified-vendor-plus-manufacturer-manual-mirror",
+      "preset": {
+        "id": "x4-4x-lpui-2t-cm-100ge",
+        "label": "Full 4 LPU slots · CR8D00EENBC1 · 80 × 100GE",
+        "cardModel": "CR8D00EENBC1",
+        "cardPartNumber": "03050BDG",
+        "cardDescription": "20-Port 100GBase-QSFP28 Integrated Line Processing Unit CM (LPUI-2T-CM)",
+        "slots": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "cards": [
+          0
+        ],
+        "ports": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "cliPrefix": "100GE",
+        "interfaceCount": 80,
+        "interfaceTemplate": "100GE{slot}/0/{port}",
+        "speedMbps": 100000,
+        "connector": "QSFP28",
+        "mode": "100GE unsplit; all ports activated by appropriate RTU",
+        "notes": [
+          "Manufacturer hardware guide Issue 06 (2023-10-31), pages168–169: fixed LPU subcard ID0 (V800R012C00) and numbering starts0.",
+          "Same guide pages335–341 identifies exact20portcard and ports0–19.",
+          "Four slots refers to service LPU slots1–4; MPU5–6 and SFU1–8 are not service interfaces.",
+          "Breakout and FlexE virtual interfaces excluded."
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100382343/87d25189/chassis",
+          "kind": "vendor-hardware-document",
+          "evidence": "Search-indexed Table1-2 explicitly LPU1–4; direct403."
+        },
+        {
+          "url": "https://info.support.huawei.com/info-finder/enterprisesearch/en?keyword=CR8D00EENBC1",
+          "kind": "vendor-hardware-search",
+          "evidence": "ExactBOM03050BDG, fixedboard LPUI-2T-CM,20×100GE QSFP28."
+        },
+        {
+          "url": "https://info.support.huawei.com/enterprise/en/doc/EDOC1100419273/88aef22d/interface-management-configuration",
+          "kind": "vendor-cli-reference",
+          "evidence": "100GE interface view and three-levelnumber syntax; exact cardlisted in FlexEtable."
+        },
+        {
+          "url": "https://www.scribd.com/document/754883363/NetEngine-8000-X-Hardware-Guide-PDF",
+          "kind": "manufacturer-authored-manual-mirror",
+          "evidence": "Issue06 2023-10-31 pp9,168–169,335–341; ports0–19 and subcard0."
+        }
+      ]
+    },
+    {
+      "modelId": "huawei-ne40e-x8a",
+      "status": "verified-manufacturer-manual-mirror-with-official-cli-reference",
+      "preset": {
+        "id": "x8a-8x-lpui480-100ge",
+        "label": "Full 8 LPU slots · CR5D00E4NC70 · 32 × 100GE",
+        "cardModel": "CR5D00E4NC70",
+        "cardPartNumber": "03056318",
+        "cardDescription": "4-Port 100GBase-CFP2 Integrated Line Processing Unit (LPUI-480)",
+        "slots": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "cards": [
+          0,
+          1
+        ],
+        "ports": [
+          0,
+          1
+        ],
+        "cliPrefix": "100GE",
+        "interfaceCount": 32,
+        "interfaceTemplate": "100GE{slot}/{card}/{port}",
+        "speedMbps": 100000,
+        "connector": "CFP2",
+        "notes": [
+          "Exact manufacturer table1-1559 explicitly NE40E-X8A supportedfromV800R006C30.",
+          "Exact table1-1562 serviceinterfaces are0/0–0/1 and1/0–1/1. Do not flatten tocard0ports0–3.",
+          "Manufacturerchassismapping LPU1–8;SRU9–10 andSFU11–12excluded.",
+          "All8serviceLPUsfilledwith4portLPUI480. Other cards can create different interface lists."
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100383693/ee8c26a3/ne40e-x8a",
+          "kind": "vendor-hardware-document",
+          "evidence": "Currentofficialchassisdocumentation; direct403."
+        },
+        {
+          "url": "https://www.manualslib.com/manual/1963081/Huawei-Ne40e.html?page=845",
+          "kind": "manufacturer-authored-manual-mirror",
+          "evidence": "HuaweiNE40EHardwareDescription Issue01 2018-05-03 p831(table1-1558/1559):cardmodel/BOM/X8Acompatibility."
+        },
+        {
+          "url": "https://www.manualslib.com/manual/1963081/Huawei-Ne40e.html?page=846",
+          "kind": "manufacturer-authored-manual-mirror",
+          "evidence": "p832table1-1562:0/0–0/1and1/0–1/1 100GECFP2."
+        },
+        {
+          "url": "https://fccid.io/m/b2d4db2db9cd2be550c608159ba82d4afe64ac4f9ee0a72526fa12757de9c8d9.pdf",
+          "kind": "manufacturer-authored-manual-mirror",
+          "evidence": "HuaweiNE40EHardwareDescription Issue01 2016-04-30 p101:LPUs1–8,slot/subcard/portnumbering starts0."
+        },
+        {
+          "url": "https://info.support.huawei.com/enterprise/zh/doc/EDOC1100366538/3b03fcf",
+          "kind": "vendor-cli-reference",
+          "evidence": "NE40EV800R023C10SPC500interfaceviewtable:interface100GE1/0/0."
+        }
+      ]
+    }
+  ],
+  "blockers": [
+    "Officialsupport.huawei.comhardwarepages403;Huawei.cnmain-contentAPI hashedpartNo returnsOnlineviewnotsupported.",
+    "OfficialfullcardmappingInfo-Finder dynamiccontentemptyforselectedchassis, so explicit manufacturer manualcompatibilityused.",
+    "Do not present presets as maximumpossibleportdensity. They represent specifiedfullslotcardconfiguration."
+  ]
+}

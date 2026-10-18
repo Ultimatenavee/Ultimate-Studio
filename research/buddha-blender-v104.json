@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-16",
+  "subject": "Original Blender-authored Todaiji-inspired Vairocana sculpture",
+  "method": "Original native seed surfaces refined and fused in Blender 4.5.3 LTS; anatomical hands preserved; PBR vertex patina and original embedded micro-normal; separate decimated walking GLB. No downloaded statue mesh or photographic texture.",
+  "references": [
+    {
+      "url": "https://www.todaiji.or.jp/en/information/daibutsuden/",
+      "usedFor": "Identity and current statue; official photographs inspected for research only, not redistributed."
+    },
+    {
+      "url": "https://narashikanko.or.jp/feature/daibutsu",
+      "usedFor": "Cross-check proportions; differing official face-length landmarks remain unresolved as noted in v98."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Todaiji_great_buddha.jpg",
+      "author": "Ph0kin",
+      "license": "Public domain release",
+      "usedFor": "Front-oblique head, arm gesture and dark bronze appearance; reference only."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_01.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "usedFor": "Independent study of front view; no photo pixels in public assets."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "usedFor": "Face, dark bronze and robe proportions; study only, no reference pixels redistributed."
+    },
+    {
+      "url": "https://www.cvl.iis.u-tokyo.ac.jp/greatbuddha.html",
+      "usedFor": "Evaluated research scan option; no verified public reusable download found, so no scan was imported."
+    }
+  ],
+  "accuracy": "Photograph-referenced artistic model. Not a surveyed or scan-derived 1:1 reconstruction. Unseen rear, curl distribution and detailed aureole ornament remain interpreted. Existing scenic hall and attendant statues are retained.",
+  "verification": "Four Blender render views, actual GLB geometry and back-face-culling tests, hand orientation, resource lifecycle, lazy loading and native scene regression. Browser/GPU QA unavailable in this session. No measured FPS guarantee."
+}

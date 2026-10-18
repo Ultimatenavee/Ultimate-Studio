@@ -1,0 +1,985 @@
+{
+  "schemaVersion": 1,
+  "retrievedDate": "2026-10-08",
+  "scope": "Six Huawei/ALE entries; no Site checkout edits or project initialization performed.",
+  "coordinateNote": "Rectangular crops and faithful resizing only. No generated hardware, painted ports or recoloring. Original image files retained. QA-V2 hitboxes reused from prior inspected manifest.",
+  "models": [
+    {
+      "modelId": "huawei-ar5710-s8t2x",
+      "model": "AR5710-S8T2X",
+      "hardwarePartNumber": "50010720",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-color.webp",
+      "dimensions": {
+        "width": 1600,
+        "height": 458
+      },
+      "sourcePageUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720",
+      "sourceImageUrl": "https://download.huawei.cn/mdl/image/download?uuid=0a87a80e98b247cf9a71574f2ac7963f",
+      "face": "front",
+      "orientation": "front-left three-quarter",
+      "type": "manufacturer exact-model color product cutout; photo/render origin not declared",
+      "exactModel": true,
+      "sha256": "5c860d3c832c08dcf07e72772758290185ec9fc62997d1500133a8fe31d107be",
+      "originalLocalImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-appearance1.png",
+      "resize": {
+        "maxWidth": 1600
+      },
+      "modelEvidence": "Exact model printed on faceplate and exact-model hardware chapter caption.",
+      "reuse": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution.",
+      "originalImage": {
+        "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-appearance1.png",
+        "dimensions": {
+          "width": 3219,
+          "height": 922
+        },
+        "sourcePageUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720",
+        "sourceImageUrl": "https://download.huawei.cn/mdl/image/download?uuid=0a87a80e98b247cf9a71574f2ac7963f",
+        "face": "front",
+        "orientation": "front-left three-quarter",
+        "type": "manufacturer exact-model color cutout",
+        "exactModel": true,
+        "sha256": "54fd2c729c30bd686eed0dfdf7eb1df5e3357ed13bb03f7306c9a148a34e9996"
+      },
+      "hardwareDiagramPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-appearance2.png",
+      "portFacts": {
+        "logicalNetworkPortCount": 10,
+        "physicalNetworkSocketCount": 16,
+        "networkPortGroups": [
+          {
+            "count": 4,
+            "labels": [
+              "GE0",
+              "GE1",
+              "GE2",
+              "GE3"
+            ],
+            "cliIdentifiers": [
+              "GE0/0/0",
+              "GE0/0/1",
+              "GE0/0/2",
+              "GE0/0/3"
+            ],
+            "type": "GE RJ45/SFP combo",
+            "logicalInterfaceCount": 4,
+            "physicalSocketCount": 8,
+            "speedsMbps": {
+              "copper": [
+                10,
+                100,
+                1000
+              ],
+              "fiber": [
+                100,
+                1000
+              ]
+            },
+            "defaultMedium": "copper",
+            "oneMediumAtATime": true
+          },
+          {
+            "count": 4,
+            "labels": [
+              "GE4",
+              "GE5",
+              "GE6",
+              "GE7"
+            ],
+            "cliIdentifiers": [
+              "GE0/0/4",
+              "GE0/0/5",
+              "GE0/0/6",
+              "GE0/0/7"
+            ],
+            "type": "GE RJ45",
+            "logicalInterfaceCount": 4,
+            "physicalSocketCount": 4,
+            "speedsMbps": {
+              "copper": [
+                10,
+                100,
+                1000
+              ]
+            }
+          },
+          {
+            "count": 2,
+            "labels": [
+              "2.5GE0/10GE0",
+              "2.5GE1/10GE1"
+            ],
+            "cliIdentifiersElectrical": [
+              "MultiGE0/0/0",
+              "MultiGE0/0/1"
+            ],
+            "cliIdentifiersOptical": [
+              "10GE0/0/0",
+              "10GE0/0/1"
+            ],
+            "opticalNamesEvidence": "Manufacturer series numbering rule applied to faceplate 10GE0 and 10GE1; hardware chapter mode-switch command explicitly names MultiGE0/0/0 and MultiGE0/0/1.",
+            "type": "2.5GE RJ45/10GE SFP+ combo",
+            "logicalInterfaceCount": 2,
+            "physicalSocketCount": 4,
+            "speedsMbps": {
+              "copper": [
+                100,
+                1000,
+                2500
+              ],
+              "fiber": [
+                1000,
+                10000
+              ]
+            },
+            "defaultMedium": "copper",
+            "oneMediumAtATime": true
+          }
+        ],
+        "lanWanInterchangeable": true,
+        "managementAndUtility": [
+          "RJ45 serial console",
+          "USB 2.0 host"
+        ],
+        "power": "Single built-in AC; no external RPS; no add-in card slots",
+        "poe": false,
+        "sources": [
+          "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720",
+          "https://e.huawei.com/en/products/routers/ar5710-s",
+          "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/5d4194fe/interface-numbering-conventions"
+        ],
+        "sourceLocalFile": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-hardware-content.html",
+        "sourceEndpoint": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100213474&partNo=j00y",
+        "interfaceNumberingEndpoint": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100213474&partNo=j005",
+        "notes": [
+          "A combo pair is one logical interface: its copper and fiber sockets cannot be linked independently at the same time.",
+          "LAN combo fiber supports 100M/1G; WAN optical supports 1G/10G; WAN RJ45 supports 100M/1G/2.5G (not 10M).",
+          "LAN combo uses combo enable fiber; WAN mode uses port combination-mode 10GE interface MultiGE0/0/0 or MultiGE0/0/1."
+        ]
+      }
+    },
+    {
+      "modelId": "huawei-ar5710-s8t2x-lte4ea",
+      "model": "AR5710-S8T2X-LTE4EA",
+      "hardwarePartNumber": "50010723",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-lte4ea-color.webp",
+      "dimensions": {
+        "width": 1600,
+        "height": 461
+      },
+      "sourcePageUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723",
+      "sourceImageUrl": "https://download.huawei.cn/mdl/image/download?uuid=aff8421190f347a6abd58ffa3c495852",
+      "face": "front",
+      "orientation": "front-left three-quarter",
+      "type": "manufacturer exact-model color product cutout; photo/render origin not declared",
+      "exactModel": true,
+      "sha256": "c3c63442104cd0e39bd169a9437ea7f10be4960ea80511ae758adfdd04b2e858",
+      "originalLocalImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-lte4ea-appearance1.png",
+      "resize": {
+        "maxWidth": 1600
+      },
+      "modelEvidence": "Exact model printed on faceplate and exact-model hardware chapter caption.",
+      "reuse": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution.",
+      "originalImage": {
+        "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-lte4ea-appearance1.png",
+        "dimensions": {
+          "width": 3374,
+          "height": 972
+        },
+        "sourcePageUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723",
+        "sourceImageUrl": "https://download.huawei.cn/mdl/image/download?uuid=aff8421190f347a6abd58ffa3c495852",
+        "face": "front",
+        "orientation": "front-left three-quarter",
+        "type": "manufacturer exact-model color cutout",
+        "exactModel": true,
+        "sha256": "e9c5136e09391849e19dba93283805493fb3b0f8aa8421c93e5e799bf9f01439"
+      },
+      "hardwareDiagramPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-lte4ea-appearance2.png",
+      "portFacts": {
+        "logicalNetworkPortCount": 10,
+        "physicalNetworkSocketCount": 16,
+        "networkPortGroups": [
+          {
+            "count": 4,
+            "labels": [
+              "GE0",
+              "GE1",
+              "GE2",
+              "GE3"
+            ],
+            "cliIdentifiers": [
+              "GE0/0/0",
+              "GE0/0/1",
+              "GE0/0/2",
+              "GE0/0/3"
+            ],
+            "type": "GE RJ45/SFP combo",
+            "logicalInterfaceCount": 4,
+            "physicalSocketCount": 8,
+            "speedsMbps": {
+              "copper": [
+                10,
+                100,
+                1000
+              ],
+              "fiber": [
+                100,
+                1000
+              ]
+            },
+            "defaultMedium": "copper",
+            "oneMediumAtATime": true
+          },
+          {
+            "count": 4,
+            "labels": [
+              "GE4",
+              "GE5",
+              "GE6",
+              "GE7"
+            ],
+            "cliIdentifiers": [
+              "GE0/0/4",
+              "GE0/0/5",
+              "GE0/0/6",
+              "GE0/0/7"
+            ],
+            "type": "GE RJ45",
+            "logicalInterfaceCount": 4,
+            "physicalSocketCount": 4,
+            "speedsMbps": {
+              "copper": [
+                10,
+                100,
+                1000
+              ]
+            }
+          },
+          {
+            "count": 2,
+            "labels": [
+              "2.5GE0/10GE0",
+              "2.5GE1/10GE1"
+            ],
+            "cliIdentifiersElectrical": [
+              "MultiGE0/0/0",
+              "MultiGE0/0/1"
+            ],
+            "cliIdentifiersOptical": [
+              "10GE0/0/0",
+              "10GE0/0/1"
+            ],
+            "opticalNamesEvidence": "Manufacturer series numbering rule applied to faceplate 10GE0 and 10GE1; hardware chapter mode-switch command explicitly names MultiGE0/0/0 and MultiGE0/0/1.",
+            "type": "2.5GE RJ45/10GE SFP+ combo",
+            "logicalInterfaceCount": 2,
+            "physicalSocketCount": 4,
+            "speedsMbps": {
+              "copper": [
+                100,
+                1000,
+                2500
+              ],
+              "fiber": [
+                1000,
+                10000
+              ]
+            },
+            "defaultMedium": "copper",
+            "oneMediumAtATime": true
+          }
+        ],
+        "lanWanInterchangeable": true,
+        "managementAndUtility": [
+          "RJ45 serial console",
+          "USB 2.0 host"
+        ],
+        "power": "Single built-in AC; no external RPS; no add-in card slots",
+        "poe": false,
+        "sources": [
+          "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723",
+          "https://e.huawei.com/en/products/routers/ar5710-s",
+          "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/5d4194fe/interface-numbering-conventions"
+        ],
+        "sourceLocalFile": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ar5710-s8t2x-lte4ea-hardware-content.html",
+        "sourceEndpoint": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100213474&partNo=j010",
+        "interfaceNumberingEndpoint": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100213474&partNo=j005",
+        "notes": [
+          "A combo pair is one logical interface: its copper and fiber sockets cannot be linked independently at the same time.",
+          "LAN combo fiber supports 100M/1G; WAN optical supports 1G/10G; WAN RJ45 supports 100M/1G/2.5G (not 10M).",
+          "LAN combo uses combo enable fiber; WAN mode uses port combination-mode 10GE interface MultiGE0/0/0 or MultiGE0/0/1."
+        ],
+        "cellular": {
+          "module": "LTE4EA CAT4",
+          "simSlots": 2,
+          "simType": "Nano-SIM",
+          "simMode": "active/standby; SIM1 default master",
+          "antennaConnectors": 2,
+          "note": "Original catalog says Micro-SIM; exact hardware chapter specifies Nano-SIM."
+        }
+      }
+    },
+    {
+      "modelId": "huawei-s5735-l8t4x-a1",
+      "model": "S5735-L8T4X-A1",
+      "hardwarePartNumber": "98011282",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5735-l8t4x-a1-color.webp",
+      "dimensions": {
+        "width": 995,
+        "height": 292
+      },
+      "sourcePageUrl": "https://www.mf-telecom.com/products/s5735-l8t4x-a1",
+      "sourceImageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPBB/UPBB755/2508/06/products/S5735-L8T4X-A1-1.jpg",
+      "face": "front",
+      "orientation": "front, elevated slightly",
+      "type": "supplier photograph; rectangular crop and resize",
+      "exactModel": true,
+      "sha256": "ce9be45e9ec489aad2a447725a82d6375f4e18ac6d90ab80cd76c594893047ea",
+      "originalLocalImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5735-l8t4x-a1-supplier.jpg",
+      "originalCrop": [
+        103,
+        456,
+        1098,
+        748
+      ],
+      "modelEvidence": "Faceplate text S5735-L8T4X-A1 is legible; official datasheet exact-model image matches hardware.",
+      "reuse": "No affirmative image reuse license found on source product listing. This is a third-party product photograph; retain the source URL and attribution.",
+      "manufacturerAlternative": {
+        "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5735-l8t4x-a1-official-photo.png",
+        "dimensions": {
+          "width": 291,
+          "height": 85
+        },
+        "sourcePageUrl": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a7d76a8a16614cefb9943336bb224d69/M2T1A590N889230686196621601/Huawei%20CloudEngine%20S5735-L%20Series%20Switches%20Datasheet.pdf",
+        "sourceImageUrl": null,
+        "face": "front",
+        "orientation": "front, elevated slightly",
+        "type": "manufacturer exact-model embedded photo with alpha mask",
+        "exactModel": true,
+        "sha256": "64393ab4c8d3e6c49d9ad473b3ae337bbc4b630ae8a753a21d8ad0b161ffb080",
+        "pdfPage": 1,
+        "imageXref": 25,
+        "alphaMaskXref": 26,
+        "embeddedImageNote": "No standalone image URL; photograph extracted losslessly from cited PDF.",
+        "reuse": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution."
+      },
+      "hardwareDiagramPath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5735-l8t4x-a1-appearance1.png",
+      "portFacts": {
+        "logicalNetworkPortCount": 12,
+        "physicalNetworkSocketCount": 12,
+        "networkPortGroups": [
+          {
+            "count": 8,
+            "type": "RJ45",
+            "labels": "1–8",
+            "cliIdentifiers": [
+              "GigabitEthernet0/0/1",
+              "GigabitEthernet0/0/2",
+              "GigabitEthernet0/0/3",
+              "GigabitEthernet0/0/4",
+              "GigabitEthernet0/0/5",
+              "GigabitEthernet0/0/6",
+              "GigabitEthernet0/0/7",
+              "GigabitEthernet0/0/8"
+            ],
+            "speedsMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "count": 4,
+            "type": "SFP+",
+            "labels": "1–4 (10G/1G)",
+            "cliIdentifiers": [
+              "XGigabitEthernet0/0/1",
+              "XGigabitEthernet0/0/2",
+              "XGigabitEthernet0/0/3",
+              "XGigabitEthernet0/0/4"
+            ],
+            "speedsMbps": [
+              1000,
+              10000
+            ]
+          }
+        ],
+        "numbering": "V200: standalone slot 0/subcard 0. Two-row service ports numbered bottom-to-top and left-to-right; upper row even, lower row odd. Rates numbered separately.",
+        "managementAndUtility": [
+          "RJ45 serial console",
+          "USB"
+        ],
+        "ethManagementPort": false,
+        "power": "Fixed internal AC",
+        "fanDesign": "Built-in fan with intelligent speed adjustment; exact hardware chapter contradicts original catalog fanless entry.",
+        "poe": false,
+        "sources": [
+          "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1",
+          "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions",
+          "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a7d76a8a16614cefb9943336bb224d69/M2T1A590N889230686196621601/Huawei%20CloudEngine%20S5735-L%20Series%20Switches%20Datasheet.pdf"
+        ],
+        "sourceLocalFile": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5735-l8t4x-a1-hardware-content.html",
+        "sourceEndpoint": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j06c"
+      }
+    },
+    {
+      "modelId": "huawei-s5735-l8t4x-qa-v2",
+      "model": "S5735-L8T4X-QA-V2",
+      "hardwarePartNumber": "98012073",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5735-l8t4x-qa-v2-color.webp",
+      "dimensions": {
+        "width": 592,
+        "height": 129
+      },
+      "sourcePageUrl": "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2",
+      "sourceImageUrl": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/products/switches/campusswitches/s5735lqv2/overview-pc3-1.png",
+      "face": "front",
+      "orientation": "front, elevated slightly",
+      "type": "manufacturer photograph; prior rectangular crop",
+      "exactModel": true,
+      "sha256": "ca1481e6d51e2433a8fcb2874adc0263a439eebef4e2afe9a872915f97a3aba5",
+      "reuse": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution.",
+      "originalLocalImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5735-l8t4x-qa-v2-front-photo.png",
+      "originalCrop": [
+        30,
+        188,
+        622,
+        317
+      ],
+      "portHitboxes": [
+        {
+          "label": "GE 1",
+          "kind": "RJ45 GE",
+          "box": [
+            42,
+            72,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/1"
+        },
+        {
+          "label": "GE 3",
+          "kind": "RJ45 GE",
+          "box": [
+            68,
+            72,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/3"
+        },
+        {
+          "label": "GE 5",
+          "kind": "RJ45 GE",
+          "box": [
+            94,
+            72,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/5"
+        },
+        {
+          "label": "GE 7",
+          "kind": "RJ45 GE",
+          "box": [
+            120,
+            72,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/7"
+        },
+        {
+          "label": "GE 2",
+          "kind": "RJ45 GE",
+          "box": [
+            41,
+            97,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/2"
+        },
+        {
+          "label": "GE 4",
+          "kind": "RJ45 GE",
+          "box": [
+            68,
+            97,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/4"
+        },
+        {
+          "label": "GE 6",
+          "kind": "RJ45 GE",
+          "box": [
+            94,
+            97,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/6"
+        },
+        {
+          "label": "GE 8",
+          "kind": "RJ45 GE",
+          "box": [
+            120,
+            97,
+            23,
+            15
+          ],
+          "catalogIdentifier": "GE1/0/8"
+        },
+        {
+          "label": "10GE 1",
+          "kind": "SFP+ 10GE",
+          "box": [
+            325,
+            96,
+            31,
+            22
+          ],
+          "catalogIdentifier": "10GE1/0/1"
+        },
+        {
+          "label": "10GE 2",
+          "kind": "SFP+ 10GE",
+          "box": [
+            377,
+            96,
+            31,
+            22
+          ],
+          "catalogIdentifier": "10GE1/0/2"
+        },
+        {
+          "label": "10GE 3",
+          "kind": "SFP+ 10GE",
+          "box": [
+            429,
+            96,
+            31,
+            22
+          ],
+          "catalogIdentifier": "10GE1/0/3"
+        },
+        {
+          "label": "10GE 4",
+          "kind": "SFP+ 10GE",
+          "box": [
+            481,
+            96,
+            31,
+            22
+          ],
+          "catalogIdentifier": "10GE1/0/4"
+        },
+        {
+          "label": "CONSOLE",
+          "kind": "RJ45 console",
+          "box": [
+            528,
+            96,
+            28,
+            22
+          ]
+        }
+      ],
+      "portFacts": {
+        "logicalNetworkPortCount": 12,
+        "physicalNetworkSocketCount": 12,
+        "networkPortGroups": [
+          {
+            "count": 8,
+            "type": "RJ45",
+            "labels": "GE1–GE8",
+            "cliIdentifiers": [
+              "GE1/0/1",
+              "GE1/0/2",
+              "GE1/0/3",
+              "GE1/0/4",
+              "GE1/0/5",
+              "GE1/0/6",
+              "GE1/0/7",
+              "GE1/0/8"
+            ],
+            "cliNamesEvidence": "User-supplied original catalog; photo labels GE1–GE8.",
+            "speedsMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "count": 4,
+            "type": "SFP+",
+            "labels": "10GE1–10GE4",
+            "cliIdentifiers": [
+              "10GE1/0/1",
+              "10GE1/0/2",
+              "10GE1/0/3",
+              "10GE1/0/4"
+            ],
+            "cliNamesEvidence": "User-supplied original catalog; photo labels 10GE1–10GE4.",
+            "speedsMbps": [
+              1000,
+              10000
+            ]
+          }
+        ],
+        "numbering": "Observed QA-V2 photo: upper row odd GE ports, lower row even; four SFP+ ports numbered left-to-right.",
+        "managementAndUtility": [
+          "RJ45 serial console"
+        ],
+        "power": "Fixed internal AC",
+        "poe": false,
+        "sources": [
+          "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2",
+          "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073",
+          "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/55e0dc88/s5735-l8t4x-qa-v2-98012073-005",
+          "https://support.huawei.cn/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073"
+        ],
+        "sourceLocalFile": "/workspace/scratch/7360d1d45af5/research-assets/huawei-s5735-l8t4x-98012073-hardware.html",
+        "sourceEndpoint": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j022"
+      }
+    },
+    {
+      "modelId": "huawei-s5731-s48t4x",
+      "model": "S5731-S48T4X",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-color.webp",
+      "dimensions": {
+        "width": 1800,
+        "height": 379
+      },
+      "sourcePageUrl": "https://alltron.ch/de/product/1087095",
+      "sourceImageUrl": "https://cdn.competec.ch/images2/8/3/9/229258938/229258938_xxl3.jpg",
+      "face": "front",
+      "orientation": "front, elevated slightly",
+      "type": "supplier photograph; rectangular crop and resize",
+      "exactModel": true,
+      "sha256": "645d7c8094d699cab164ee85e29d345ef22a76161fa938e8dd28d5203de53329",
+      "originalLocalImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-supplier.jpg",
+      "originalCrop": [
+        0,
+        611,
+        2922,
+        1226
+      ],
+      "modelEvidence": "Faceplate text S5731-S48T4X is legible. Manufacturer datasheet includes the same front layout under exact S5731-S48T4X caption.",
+      "reuse": "No affirmative image reuse license found on source product listing. This is a third-party product photograph; retain the source URL and attribution.",
+      "manufacturerAlternative": {
+        "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-official-photo.png",
+        "dimensions": {
+          "width": 431,
+          "height": 77
+        },
+        "sourcePageUrl": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a910c627eaee4d0a91c4c0ede3ad041b/M3T1A590N1066742086921986218/Huawei%20CloudEngine%20S5731-S%20Series%20Switches%20Datasheet.pdf",
+        "sourceImageUrl": null,
+        "face": "front",
+        "orientation": "front, elevated slightly",
+        "type": "manufacturer exact-model embedded photo with alpha mask",
+        "exactModel": true,
+        "sha256": "269bda9a4b25251b348332e2c51e2a26b1db6411c3a7c085ae2712c72554422c",
+        "pdfPage": 2,
+        "imageXref": 37,
+        "alphaMaskXref": 38,
+        "embeddedImageNote": "No standalone image URL; photograph extracted from cited PDF; manufacturer reuses the same front image for S48T4X and S48T4X-A.",
+        "reuse": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution."
+      },
+      "hardwareDiagramPaths": [
+        "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-02353ajb-appearance1.png",
+        "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-02353ajb-appearance2.png",
+        "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-98011847-appearance1.png"
+      ],
+      "portFacts": {
+        "logicalNetworkPortCount": 52,
+        "physicalNetworkSocketCount": 52,
+        "networkPortGroups": [
+          {
+            "count": 48,
+            "type": "RJ45",
+            "labels": "1–48",
+            "cliIdentifiers": [
+              "GigabitEthernet0/0/1",
+              "GigabitEthernet0/0/2",
+              "GigabitEthernet0/0/3",
+              "GigabitEthernet0/0/4",
+              "GigabitEthernet0/0/5",
+              "GigabitEthernet0/0/6",
+              "GigabitEthernet0/0/7",
+              "GigabitEthernet0/0/8",
+              "GigabitEthernet0/0/9",
+              "GigabitEthernet0/0/10",
+              "GigabitEthernet0/0/11",
+              "GigabitEthernet0/0/12",
+              "GigabitEthernet0/0/13",
+              "GigabitEthernet0/0/14",
+              "GigabitEthernet0/0/15",
+              "GigabitEthernet0/0/16",
+              "GigabitEthernet0/0/17",
+              "GigabitEthernet0/0/18",
+              "GigabitEthernet0/0/19",
+              "GigabitEthernet0/0/20",
+              "GigabitEthernet0/0/21",
+              "GigabitEthernet0/0/22",
+              "GigabitEthernet0/0/23",
+              "GigabitEthernet0/0/24",
+              "GigabitEthernet0/0/25",
+              "GigabitEthernet0/0/26",
+              "GigabitEthernet0/0/27",
+              "GigabitEthernet0/0/28",
+              "GigabitEthernet0/0/29",
+              "GigabitEthernet0/0/30",
+              "GigabitEthernet0/0/31",
+              "GigabitEthernet0/0/32",
+              "GigabitEthernet0/0/33",
+              "GigabitEthernet0/0/34",
+              "GigabitEthernet0/0/35",
+              "GigabitEthernet0/0/36",
+              "GigabitEthernet0/0/37",
+              "GigabitEthernet0/0/38",
+              "GigabitEthernet0/0/39",
+              "GigabitEthernet0/0/40",
+              "GigabitEthernet0/0/41",
+              "GigabitEthernet0/0/42",
+              "GigabitEthernet0/0/43",
+              "GigabitEthernet0/0/44",
+              "GigabitEthernet0/0/45",
+              "GigabitEthernet0/0/46",
+              "GigabitEthernet0/0/47",
+              "GigabitEthernet0/0/48"
+            ],
+            "speedsMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "count": 4,
+            "type": "SFP+",
+            "labels": "1–4 (10G/1G)",
+            "cliIdentifiers": [
+              "XGigabitEthernet0/0/1",
+              "XGigabitEthernet0/0/2",
+              "XGigabitEthernet0/0/3",
+              "XGigabitEthernet0/0/4"
+            ],
+            "speedsMbps": [
+              1000,
+              10000
+            ]
+          }
+        ],
+        "numbering": "V200: standalone slot 0/subcard 0. Two-row service ports numbered bottom-to-top and left-to-right; upper row even, lower row odd. Rates numbered separately.",
+        "managementAndUtility": [
+          "RJ45 serial console",
+          "Separate RJ45 ETH management (10/100 Mbps in 02353AJB hardware table)",
+          "USB"
+        ],
+        "managementPortSeparateFromDataPorts": true,
+        "power": "SKU sold without PSU; hardware supports single module or two modules for 1+1. Rear layout and supported modules depend on hardware part number.",
+        "poe": false,
+        "sources": [
+          "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/f79a7296/s5731-s48t4x-02353ajb-02353ajb-003",
+          "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847",
+          "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions",
+          "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a910c627eaee4d0a91c4c0ede3ad041b/M3T1A590N1066742086921986218/Huawei%20CloudEngine%20S5731-S%20Series%20Switches%20Datasheet.pdf"
+        ],
+        "sourceLocalFiles": [
+          "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-02353ajb-hardware-content.html",
+          "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/s5731-s48t4x-98011847-hardware-content.html"
+        ],
+        "sourceEndpoints": [
+          "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j073",
+          "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j074"
+        ],
+        "hardwareRevisionNotes": [
+          "02353AJB/02353AJB-003 show rear two pluggable fans plus two power-module bays.",
+          "98011847 uses different rear hardware (built-in fans). Do not apply the 02353AJB rear to all revisions.",
+          "Both variants preserve the 48 GE + 4 SFP+ data interface count and 1G/10G optical speed support."
+        ]
+      }
+    },
+    {
+      "modelId": "alcatel-os6450-10",
+      "model": "OS6450-10",
+      "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ale-os6450-10-color.webp",
+      "dimensions": {
+        "width": 1341,
+        "height": 279
+      },
+      "sourcePageUrl": "https://www.ebay.com/itm/274134407878",
+      "sourceImageUrl": "https://i.ebayimg.com/images/g/LPsAAOSw64Zd7fzy/s-l1600.webp",
+      "face": "front",
+      "orientation": "front, elevated three-quarter",
+      "type": "seller photograph; rectangular front crop",
+      "exactModel": true,
+      "sha256": "bb7e10e0f3a67cf39a469ef9a148b07b0ee84cfbcefbf3133e602bc96a71140e",
+      "originalLocalImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ale-os6450-10-front-angle.webp",
+      "originalCrop": [
+        195,
+        617,
+        1536,
+        896
+      ],
+      "modelEvidence": "Exact OS6450-10 is visibly printed on right faceplate; used non-PoE unit.",
+      "reuse": "No affirmative image reuse license found on source product listing. This is a third-party product photograph; retain the source URL and attribution.",
+      "fullDevicePhoto": {
+        "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ale-os6450-10-front-angle-crop.png",
+        "dimensions": {
+          "width": 1471,
+          "height": 803
+        },
+        "sourcePageUrl": "https://www.ebay.com/itm/274134407878",
+        "sourceImageUrl": "https://i.ebayimg.com/images/g/LPsAAOSw64Zd7fzy/s-l1600.webp",
+        "face": "front",
+        "orientation": "front, elevated three-quarter",
+        "type": "seller photograph; crop retaining full chassis",
+        "exactModel": true,
+        "sha256": "f2a8312897a873705066f274fcfbf6384eb6c6b6ef7e6a8087331da4c112055f",
+        "originalCrop": [
+          83,
+          100,
+          1554,
+          903
+        ]
+      },
+      "rearDetail": {
+        "localImagePath": "/workspace/scratch/7360d1d45af5/upgrade-assets/huawei-ale/ale-os6450-10-rear.webp",
+        "dimensions": {
+          "width": 1599,
+          "height": 1200
+        },
+        "sourcePageUrl": "https://www.ebay.com/itm/274134407878",
+        "sourceImageUrl": "https://i.ebayimg.com/images/g/Fj0AAOSwHGZd7f0I/s-l1600.webp",
+        "face": "rear power inlet",
+        "orientation": "detail close-up",
+        "type": "seller photograph; rear inlet detail, not full rear view",
+        "exactModel": true,
+        "sha256": "37423d8c703c80befbcf7f663fc5d50c363b67e9166e565e7e8bf64d57f92813"
+      },
+      "hardwareDiagramPaths": [
+        "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-10-front.png",
+        "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-10-rear.png"
+      ],
+      "portFacts": {
+        "logicalNetworkPortCount": 12,
+        "physicalNetworkSocketCount": 14,
+        "networkPortGroups": [
+          {
+            "count": 8,
+            "type": "RJ45",
+            "labels": "1–8",
+            "topologyIdentifiers": [
+              "1/1",
+              "1/2",
+              "1/3",
+              "1/4",
+              "1/5",
+              "1/6",
+              "1/7",
+              "1/8"
+            ],
+            "speedsMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "count": 2,
+            "type": "RJ45/SFP combo",
+            "labels": [
+              "9",
+              "10"
+            ],
+            "topologyIdentifiers": [
+              "1/9",
+              "1/10"
+            ],
+            "physicalSocketCount": 4,
+            "speedsMbps": {
+              "copper": [
+                10,
+                100,
+                1000
+              ],
+              "fiber": [
+                100,
+                1000
+              ]
+            },
+            "oneMediumAtATime": true
+          },
+          {
+            "count": 2,
+            "type": "SFP",
+            "labels": [
+              "11",
+              "12"
+            ],
+            "topologyIdentifiers": [
+              "1/11",
+              "1/12"
+            ],
+            "speedsMbps": [
+              1000
+            ],
+            "alternativeRole": "5 Gbps stacking using vendor SFP stacking cable; not ordinary 5G Ethernet."
+          }
+        ],
+        "numbering": "Access 1–8 odd upper row/even lower row; combo logical 9/10 includes two copper plus two SFP sockets; dedicated SFP 11/12 additional logical interfaces. Topology identifiers assume first switch slot 1, consistent with user original catalog.",
+        "managementAndUtility": [
+          "RJ45 serial console",
+          "USB 2.0"
+        ],
+        "power": "Internal AC; no backup supply for non-PoE OS6450-10 in current manufacturer datasheet.",
+        "poe": false,
+        "sources": [
+          "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf"
+        ],
+        "sourceLocalFiles": [
+          "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-10-datasheet.pdf",
+          "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-hardware-rev-n.pdf"
+        ],
+        "notes": [
+          "Ordinary SFP 11/12 speed is conservatively set to 1G per official 2021 datasheet: fixed fiber supports only gigabit SFPs or stacking cable. Older manual heading says 100/1000; do not enable 100M dedicated uplink without hardware/firmware confirmation.",
+          "Seller photo includes one installed transceiver at combo SFP and normal wear; it does not add another interface.",
+          "Exact OS6450-10 family source is not the previously downloaded OS6450-10L marketing photo.",
+          "Manufacturer manual prints STK B twice at 11/12; preserve labels 11/12 without assigning stack A/B from that figure."
+        ]
+      }
+    }
+  ],
+  "verification": "Every selected main image inspected; exact faceplate/caption model checked; dimensions and local paths read from decoded files. Full AR images are transparent official product cutouts.",
+  "sources": [
+    {
+      "title": "AR5710-S hardware exact model",
+      "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720",
+      "webRef": "turn35search4"
+    },
+    {
+      "title": "AR5710-S LTE hardware exact model",
+      "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723",
+      "webRef": "turn35search8"
+    },
+    {
+      "title": "S5735-L8T4X-A1 hardware",
+      "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1",
+      "webRef": "turn35search1"
+    },
+    {
+      "title": "S5731-S48T4X hardware 02353AJB",
+      "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/f79a7296/s5731-s48t4x-02353ajb-02353ajb-003",
+      "webRef": "turn35search17"
+    },
+    {
+      "title": "S5731-S48T4X hardware 98011847",
+      "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847",
+      "webRef": "turn35search2"
+    }
+  ]
+}

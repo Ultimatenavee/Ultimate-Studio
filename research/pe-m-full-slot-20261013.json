@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-13",
+  "scope": [
+    "NetEngine 8000 M8",
+    "NetEngine 8000 M14"
+  ],
+  "status": "Vendor-site partial verification; exact numbering/slot restrictions require accessible vendor hardware guide",
+  "card": {
+    "model": "CR5D00LAXF91",
+    "partNumber": "03033BLN",
+    "ports": 10,
+    "physicalType": "10GE/GE LAN/WAN SFP+ MACsec PIC",
+    "vendorEvidence": "Huawei M8 datasheet explicitly lists card as 10*10GE; M14 Info-Finder lists installed samples"
+  },
+  "vendorSources": [
+    {
+      "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/e9dd06e260b64df683f6221fc8442cbf/M3T1A590N1251851159872295065/NetEngine%208000%20M8%20Universal%20Service%20Router%20Datasheet.pdf",
+      "supports": [
+        "M8 CR5D00LAXF91 10GE card compatibility",
+        "AC/DC variants"
+      ],
+      "ref": "turn223search1"
+    },
+    {
+      "url": "https://info.support.huawei.com/info-finder/vue/en/enterprise/openSearch?area=link&group_name=%E7%A1%AC%E4%BB%B6%E5%9B%BE%E8%B0%B1_%E8%B7%AF%E7%94%B1%E5%99%A8_V800R013C00_EN&keyword=CR8B0BKPDCM1&subseries=NetEngine+8000+M14&version=V800R021C00SPC100",
+      "supports": [
+        "M14 14 service slots",
+        "M14 140 maximum10GE ports",
+        "CR5D00LAXF91 installed example"
+      ],
+      "ref": "turn257search0"
+    },
+    {
+      "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100410995/af1a855b/interface-card",
+      "status": "403; Huawei supportgateway returns Online view is not supported."
+    },
+    {
+      "url": "https://info.support.huawei.com/enterprise/en/doc/EDOC1100419261/c88f7d2f/data-redundancy-elimination-configuration",
+      "supports": [
+        "M8/M14 GE interface CLI GigabitEthernet0/1/1 and0/1/2 examples"
+      ],
+      "ref": "turn253search0"
+    }
+  ],
+  "candidatePresetsNotVendorWebsiteFullyVerified": [
+    {
+      "model": "M8",
+      "power": "DC",
+      "slots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "controlSlots": [
+        9,
+        10
+      ],
+      "card": "CR5D00LAXF91",
+      "portNumbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cliPattern": "GigabitEthernet0/{slot}/{port}",
+      "total": 80
+    },
+    {
+      "model": "M8",
+      "power": "AC",
+      "slots": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "controlSlots": [
+        9,
+        10
+      ],
+      "powerSlots": [
+        1,
+        3
+      ],
+      "card": "CR5D00LAXF91",
+      "portNumbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cliPattern": "GigabitEthernet0/{slot}/{port}",
+      "total": 60
+    },
+    {
+      "model": "M14",
+      "power": "DC",
+      "slots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "card": "CR5D00LAXF91",
+      "portNumbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cliPattern": "GigabitEthernet0/{slot}/{port}",
+      "total": 140
+    },
+    {
+      "model": "M14",
+      "power": "AC",
+      "slots": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "powerSlots": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "card": "CR5D00LAXF91",
+      "portNumbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cliPattern": "GigabitEthernet0/{slot}/{port}",
+      "total": 100
+    }
+  ],
+  "mirrorDiscoveryOnly": [
+    {
+      "url": "https://data.nag.wiki/Huawei/Datasheet/NE8000/Boards.pdf",
+      "vendorAuthored": true,
+      "vendorWebsite": false,
+      "pages": [
+        "53 M8 numbering",
+        "54 M14 numbering",
+        "99 CR5D00LAXF91 mapping"
+      ],
+      "mustNotPresentAsVendorWebsiteVerified": true
+    }
+  ],
+  "notes": [
+    "Full card population is one explicit hardware profile, not union of all potential cards.",
+    "10GE on these M-series legacy cards uses GigabitEthernet CLI; do not generate XGigabitEthernet from speed.",
+    "Do not silently use DC slot ranges for AC chassis."
+  ]
+}

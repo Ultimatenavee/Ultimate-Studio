@@ -1,0 +1,210 @@
+{
+  "items": {
+    "cisco-1941": {
+      "slotProfiles": [
+        {
+          "id": "ehwic",
+          "label": "EHWIC / HWIC",
+          "slots": 2,
+          "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/1900-series-integrated-services-routers-isr/data_sheet_c78_556319.html",
+          "note": "Two single-width EHWIC positions; a double-width card consumes both, not an extra slot."
+        },
+        {
+          "id": "ism",
+          "label": "Internal ISM",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/1900-series-integrated-services-routers-isr/data_sheet_c78_556319.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        }
+      ],
+      "note": "Exact1941/K9 datasheet ordering table; not1941W. Excludes memory/flash and onboard interfaces."
+    },
+    "cisco-2911-k9": {
+      "slotProfiles": [
+        {
+          "id": "ehwic",
+          "label": "EHWIC / HWIC",
+          "slots": 4,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Four single-width EHWIC positions or two double-width cards; do not add those counts."
+        },
+        {
+          "id": "sm",
+          "label": "Service Module SM",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        },
+        {
+          "id": "ism",
+          "label": "Internal ISM",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        },
+        {
+          "id": "pvdm3",
+          "label": "Internal PVDM3",
+          "slots": 2,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        }
+      ],
+      "note": "Hardware guide Table1-5 exact2911 row. PVDM internal DSP group is separate from network interfaces."
+    },
+    "cisco-3925e": {
+      "slotProfiles": [
+        {
+          "id": "hwic",
+          "label": "Legacy HWIC / WIC / VIC outer positions",
+          "slots": 2,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "SPE200 Table1-7 slots0 and2: legacy WIC/VIC/HWIC. Do not assume arbitrary EHWIC compatibility here."
+        },
+        {
+          "id": "ehwic",
+          "label": "EHWIC-compatible middle position",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "SPE200 slot1 supports EHWIC and double-wide variants. Double-wide consumes shared physical space; manual count UI is single-width only."
+        },
+        {
+          "id": "sm",
+          "label": "Service Module SM",
+          "slots": 2,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Two single-width SM positions; alternative single+double-width arrangement is not an additional independently occupiable position."
+        },
+        {
+          "id": "pvdm3",
+          "label": "Internal PVDM3",
+          "slots": 3,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        }
+      ],
+      "note": "Exact3925E SPE200, not3925 SPE100. Table1-5 has noISM. Group counts use single-width population, not a complete compatibility configurator."
+    },
+    "cisco-3945e": {
+      "slotProfiles": [
+        {
+          "id": "hwic",
+          "label": "Legacy HWIC / WIC / VIC outer positions",
+          "slots": 2,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "SPE250 Table1-7 slots0 and2: legacy WIC/VIC/HWIC. Do not assume arbitrary EHWIC compatibility here."
+        },
+        {
+          "id": "ehwic",
+          "label": "EHWIC-compatible middle position",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "SPE250 slot1 supports EHWIC and double-wide variants. Single-width count only; no automatic double-width allocation."
+        },
+        {
+          "id": "sm",
+          "label": "Service Module SM",
+          "slots": 4,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Four single-width SM positions; one double-width+two single-width is an alternative, not extra positions."
+        },
+        {
+          "id": "pvdm3",
+          "label": "Internal PVDM3",
+          "slots": 3,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        }
+      ],
+      "note": "Exact3945E SPE250, not3945 SPE150. Table1-5 has noISM. Exact part number, firmware and PSU budget still require validation."
+    },
+    "cisco-isr-4331": {
+      "slotProfiles": [
+        {
+          "id": "nim",
+          "label": "Network Interface Module NIM",
+          "slots": 2,
+          "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        },
+        {
+          "id": "smx",
+          "label": "Enhanced Service Module SM-X",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+          "note": "One single-width SM-X. Carrier-based NIM conversion shares this physical slot, not extra native NIMs."
+        },
+        {
+          "id": "isc",
+          "label": "Internal ISC",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        }
+      ],
+      "note": "4000 datasheet exactISR4331 column and ordering table. Two native NIM, not three; some voice tables count carrier-expanded NIM availability."
+    },
+    "cisco-isr-4431": {
+      "slotProfiles": [
+        {
+          "id": "nim",
+          "label": "Network Interface Module NIM",
+          "slots": 3,
+          "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        },
+        {
+          "id": "isc",
+          "label": "Internal ISC",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        }
+      ],
+      "note": "ExactISR4431: three native NIM, oneISC, zeroSM-X; do not copyISR4451 SM-X capabilities."
+    },
+    "cisco-asr-1001": {
+      "slotProfiles": [
+        {
+          "id": "spa",
+          "label": "Half-height SPA",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html",
+          "note": "One half-height SPA expansion bay. Integrated RP/ESP/SIP and fixedinterfaces are already part of the chassis, not optional cards."
+        }
+      ],
+      "note": "ASR1001 originalchassis, not1001-X/HX. Factory integrated daughtercard variants must not be modeled as an extra user-replaceable SPA slot."
+    },
+    "cisco-asr-1001-x": {
+      "slotProfiles": [
+        {
+          "id": "spa",
+          "label": "Half-height SPA",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html",
+          "note": "Single-width population only; exact module compatibility and power must be verified separately."
+        },
+        {
+          "id": "nim",
+          "label": "Integrated NIM / SSD carrier",
+          "slots": 1,
+          "sourceUrl": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html",
+          "note": "One flexible integrated NIM position; supportedhardware includes NIM-SSD. Not a claim that arbitraryISR4000 NIM interface cards work; select exact vendor-qualified component."
+        }
+      ],
+      "note": "Hardware guide SPA Slot Numbering states one NIM and one half-heightSPA. Power contribution is unknown without exact installed part; do not multiply chassismaximum by slotcount."
+    },
+    "huawei-s5720-36c-ei-28s-ac": {
+      "slotProfiles": [
+        {
+          "id": "rear-extension",
+          "label": "Rear service / stack card",
+          "slots": 1,
+          "sourceUrl": "https://www.hua-network.com/uploads/Huawei-S5720-EI-Series-Switches-Datasheet.pdf",
+          "note": "Manufacturer-authored Huawei datasheet mirrored by Hua-network: page2 exact36C-EI-28S-AC; pages3–4 support ES5D21X02S01 or ES5D21VST000 in same single slot. Alternatives cannot both occupy it."
+        }
+      ],
+      "note": "One rear card slot, not PSU slots. Card-only maximum ES5D21X02S01=8W, ES5D21VST000=9W from page4. These are component maxima, not complete AC system input; do not blindly add to existing chassis max which may already include card."
+    }
+  }
+}

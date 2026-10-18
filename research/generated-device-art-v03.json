@@ -1,0 +1,1113 @@
+{
+  "version": 3,
+  "purpose": "Uniform illustrative display assets, not calibrated port maps",
+  "assets": [
+    {
+      "modelId": "cisco-c1121-8pltep",
+      "modelName": "Cisco C1121-8PLTEP",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-a/cisco-c1121-8pltep-normalized-v03.png",
+      "width": 2170,
+      "height": 725,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBoundingBox": {
+        "left": 0,
+        "top": 21,
+        "width": 2142,
+        "height": 704
+      },
+      "alphaThresholdBoundingBoxes": {
+        "16": {
+          "left": 27,
+          "top": 229,
+          "width": 2112,
+          "height": 328
+        },
+        "128": {
+          "left": 28,
+          "top": 230,
+          "width": 2110,
+          "height": 326
+        },
+        "240": {
+          "left": 29,
+          "top": 231,
+          "width": 2108,
+          "height": 324
+        }
+      },
+      "fullyTransparentFraction": 0.5628279040203401,
+      "displayBoundingBox": {
+        "left": 28,
+        "top": 230,
+        "width": 2110,
+        "height": 326
+      },
+      "prompt": "Use case: product-mockup / style-transfer / background-extraction.\nAsset type: one illustrative network-device equipment PNG for a topology website.\nPrimary request: Normalize the sole exact Cisco C1121-8PLTEP device from Image 1 into a clean new studio product rendering matching the presentation pattern of Image 2.\nInput images: Image 1 is the EXACT TARGET EQUIPMENT and establishes identity, bezel, modules, logos and ports. Image 2 is ONLY THE HUAWEI COMPOSITION/STYLE REFERENCE; do not copy any Huawei hardware, ports, brand or shape.\nPanel identity: The target reference shows the documented rear port-bearing panel. KEEP THIS EXACT PANEL and make it camera-facing in a straight-on, level, orthographic view. Preserve Cisco C1121-8PLTEP compact silver chassis, logo at upper left, 8-port 2×4 RJ45 bank, next stacked RJ45 pair, adjacent SFP socket, console/USB positions, and existing right-side cellular module/three antenna connector ends exactly as referenced. Preserve the physical arrangement and native silver metal with yellow port markings. A documented rear port panel is the camera-facing panel here. Do not synthesize the unseen opposite manufacturer's front.\nComposition: straight-on orthographic FRONT-FACING PANEL VIEW, centered horizontally and vertically; all panel edges level and parallel; the device stretches horizontally. Keep the entire device visible with generous transparent margins. At most a very thin top lip like the Huawei style reference; zero sideways face, zero three-quarter angle, no deep top plane.\nStyle/medium: sharp medium/high-detail photoreal product mockup, new clean metal and plastic surfaces, native silver/dark Cisco brand colors, soft neutral studio lighting.\nConstraints: preserve model identity, visible bezel/module layout, port arrangement, logos and overall chassis proportions from the exact target; do not invent modules or add ports. Remove signs of aging, seller staging and watermarks. Output one device only on ACTUAL TRANSPARENT ALPHA with crisp natural object edges.\nAvoid: white rectangle or card, opaque background, table, environment, cables, detached accessories, 3/4 perspective, sideways face, caption, border, watermark, decorative shadow backdrop.\nThis is an illustrative visual asset, not a calibrated port map.",
+      "references": [
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/cisco-c1121-8pltep-color.jpg",
+          "role": "exact target equipment",
+          "face": "rear"
+        },
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Huawei composition and material style reference only"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-cbf6b2a3-3a3c-4785-91bf-42f9e3c3fb24.png",
+      "pixelPreservation": "Generated PNG copied unchanged; no repaint, crop, recolor or alpha modification",
+      "failure": null,
+      "assetPath": "assets/cisco-c1121-8pltep-illustration-v03.png",
+      "sha256": "eb2fb10227c2404257bf708d19aa403267e581ace9ac54319938ef0b88c29f54",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-c1121-8pltep-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-1941",
+      "modelName": "Cisco 1941",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-a/cisco-1941-normalized-v03.png",
+      "width": 2170,
+      "height": 725,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBoundingBox": {
+        "left": 78,
+        "top": 5,
+        "width": 2013,
+        "height": 720
+      },
+      "alphaThresholdBoundingBoxes": {
+        "16": {
+          "left": 81,
+          "top": 151,
+          "width": 2007,
+          "height": 504
+        },
+        "128": {
+          "left": 81,
+          "top": 151,
+          "width": 2006,
+          "height": 503
+        },
+        "240": {
+          "left": 82,
+          "top": 152,
+          "width": 2004,
+          "height": 501
+        }
+      },
+      "fullyTransparentFraction": 0.37527157158747815,
+      "displayBoundingBox": {
+        "left": 81,
+        "top": 151,
+        "width": 2006,
+        "height": 503
+      },
+      "prompt": "Use case: product-mockup / style-transfer / background-extraction.\nAsset type: one illustrative network-device equipment PNG for a topology website.\nPrimary request: Normalize the sole exact Cisco 1941 device from Image 1 into a clean new studio product rendering matching the presentation pattern of Image 2.\nInput images: Image 1 is the EXACT TARGET EQUIPMENT and establishes identity, bezel, modules, logos and ports. Image 2 is ONLY THE HUAWEI COMPOSITION/STYLE REFERENCE; do not copy any Huawei hardware, ports, brand or shape.\nPanel identity: Preserve this exact black/dark graphite front bezel with Cisco logo at upper left, Cisco 1900 Series mark at upper right, status indicators, and teal horizontal ventilation grille. Keep the model's front arrangement exactly as referenced; no rear ports or invented modules.\nComposition: straight-on orthographic FRONT-FACING PANEL VIEW, centered horizontally and vertically; all panel edges level and parallel; the device stretches horizontally. Keep the entire device visible with generous transparent margins. At most a very thin top lip like the Huawei style reference; zero sideways face, zero three-quarter angle, no deep top plane.\nStyle/medium: sharp medium/high-detail photoreal product mockup, new clean metal and plastic surfaces, native silver/dark Cisco brand colors, soft neutral studio lighting.\nConstraints: preserve model identity, visible bezel/module layout, port arrangement, logos and overall chassis proportions from the exact target; do not invent modules or add ports. Remove signs of aging, seller staging and watermarks. Output one device only on ACTUAL TRANSPARENT ALPHA with crisp natural object edges.\nAvoid: white rectangle or card, opaque background, table, environment, cables, detached accessories, 3/4 perspective, sideways face, caption, border, watermark, decorative shadow backdrop.\nThis is an illustrative visual asset, not a calibrated port map.",
+      "references": [
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/cisco-1941-color.jpg",
+          "role": "exact target equipment",
+          "face": "front"
+        },
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Huawei composition and material style reference only"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-657d1c91-6487-4068-b0fb-b9a49a97c789.png",
+      "pixelPreservation": "Generated PNG copied unchanged; no repaint, crop, recolor or alpha modification",
+      "failure": null,
+      "assetPath": "assets/cisco-1941-illustration-v03.png",
+      "sha256": "05e2a993b2e8424a981f7c2d2bdf6c76adc9de0178de51748be148fe4e7b07b8",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-1941-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-2911-k9",
+      "modelName": "Cisco 2911/K9",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-a/cisco-2911-k9-normalized-v03.png",
+      "width": 2170,
+      "height": 725,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBoundingBox": {
+        "left": 17,
+        "top": 18,
+        "width": 2140,
+        "height": 707
+      },
+      "alphaThresholdBoundingBoxes": {
+        "16": {
+          "left": 22,
+          "top": 172,
+          "width": 2126,
+          "height": 454
+        },
+        "128": {
+          "left": 22,
+          "top": 173,
+          "width": 2125,
+          "height": 453
+        },
+        "240": {
+          "left": 23,
+          "top": 174,
+          "width": 2123,
+          "height": 451
+        }
+      },
+      "fullyTransparentFraction": 0.38320800889877643,
+      "displayBoundingBox": {
+        "left": 22,
+        "top": 173,
+        "width": 2125,
+        "height": 453
+      },
+      "prompt": "Use case: product-mockup / style-transfer / background-extraction.\nAsset type: one illustrative network-device equipment PNG for a topology website.\nPrimary request: Normalize the sole exact Cisco 2911/K9 device from Image 1 into a clean new studio product rendering matching the presentation pattern of Image 2.\nInput images: Image 1 is the EXACT TARGET EQUIPMENT and establishes identity, bezel, modules, logos and ports. Image 2 is ONLY THE HUAWEI COMPOSITION/STYLE REFERENCE; do not copy any Huawei hardware, ports, brand or shape.\nPanel identity: The target reference shows the documented rear port-bearing panel. KEEP THIS EXACT PANEL and make it camera-facing in a straight-on, level, orthographic view. Preserve Cisco 2911/K9 silver metal I/O face, four upper EHWIC blank bays, management sockets and 3 copper GE sockets at upper right, and lower service-module blank bay/power-supply cover exactly as seen, with the correct yellow/blue markings. A documented rear port panel is the camera-facing panel here. Do not synthesize the unseen opposite manufacturer's front or invent installed modules.\nComposition: straight-on orthographic FRONT-FACING PANEL VIEW, centered horizontally and vertically; all panel edges level and parallel; the device stretches horizontally. Keep the entire device visible with generous transparent margins. At most a very thin top lip like the Huawei style reference; zero sideways face, zero three-quarter angle, no deep top plane.\nStyle/medium: sharp medium/high-detail photoreal product mockup, new clean metal and plastic surfaces, native silver/dark Cisco brand colors, soft neutral studio lighting.\nConstraints: preserve model identity, visible bezel/module layout, port arrangement, logos and overall chassis proportions from the exact target; do not invent modules or add ports. Remove signs of aging, seller staging and watermarks. Output one device only on ACTUAL TRANSPARENT ALPHA with crisp natural object edges.\nAvoid: white rectangle or card, opaque background, table, environment, cables, detached accessories, 3/4 perspective, sideways face, caption, border, watermark, decorative shadow backdrop.\nThis is an illustrative visual asset, not a calibrated port map.",
+      "references": [
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/cisco-2911-k9-color.jpg",
+          "role": "exact target equipment",
+          "face": "rear"
+        },
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Huawei composition and material style reference only"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-75fad3e5-15c9-4440-96aa-8d74f2bfe5cb.png",
+      "pixelPreservation": "Generated PNG copied unchanged; no repaint, crop, recolor or alpha modification",
+      "failure": null,
+      "assetPath": "assets/cisco-2911-k9-illustration-v03.png",
+      "sha256": "b59338dc21af0068b038007e891d2510289e675f26f97cc54b723942d5a7b921",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-2911-k9-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-3925e",
+      "modelName": "Cisco 3925E",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-a/cisco-3925e-normalized-v03.png",
+      "width": 2065,
+      "height": 761,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBoundingBox": {
+        "left": 47,
+        "top": 25,
+        "width": 1972,
+        "height": 736
+      },
+      "alphaThresholdBoundingBoxes": {
+        "16": {
+          "left": 55,
+          "top": 114,
+          "width": 1955,
+          "height": 542
+        },
+        "128": {
+          "left": 56,
+          "top": 115,
+          "width": 1953,
+          "height": 540
+        },
+        "240": {
+          "left": 57,
+          "top": 116,
+          "width": 1951,
+          "height": 538
+        }
+      },
+      "fullyTransparentFraction": 0.31622785108163404,
+      "displayBoundingBox": {
+        "left": 56,
+        "top": 115,
+        "width": 1953,
+        "height": 540
+      },
+      "prompt": "Use case: product-mockup / style-transfer / background-extraction.\nAsset type: one illustrative network-device equipment PNG for a topology website.\nPrimary request: Normalize the sole exact Cisco 3925E device from Image 1 into a clean new studio product rendering matching the presentation pattern of Image 2.\nInput images: Image 1 is the EXACT TARGET EQUIPMENT and establishes identity, bezel, modules, logos and ports. Image 2 is ONLY THE HUAWEI COMPOSITION/STYLE REFERENCE; do not copy any Huawei hardware, ports, brand or shape.\nPanel identity: Preserve the front black/dark graphite bezel, Cisco logo at upper left, Cisco 3900 Series mark at upper right, small status indicators across the upper center, full teal ventilating grille, and the two lower AC power inlet/switch recessed positions exactly as seen. Correct the angle into a flat frontal view.\nComposition: straight-on orthographic FRONT-FACING PANEL VIEW, centered horizontally and vertically; all panel edges level and parallel; the device stretches horizontally. Keep the entire device visible with generous transparent margins. At most a very thin top lip like the Huawei style reference; zero sideways face, zero three-quarter angle, no deep top plane.\nStyle/medium: sharp medium/high-detail photoreal product mockup, new clean metal and plastic surfaces, native silver/dark Cisco brand colors, soft neutral studio lighting.\nConstraints: preserve model identity, visible bezel/module layout, port arrangement, logos and overall chassis proportions from the exact target; do not invent modules or add ports. Remove signs of aging, seller staging and watermarks. Output one device only on ACTUAL TRANSPARENT ALPHA with crisp natural object edges.\nAvoid: white rectangle or card, opaque background, table, environment, cables, detached accessories, 3/4 perspective, sideways face, caption, border, watermark, decorative shadow backdrop.\nThis is an illustrative visual asset, not a calibrated port map.",
+      "references": [
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/cisco-3925e-color.jpg",
+          "role": "exact target equipment",
+          "face": "front"
+        },
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Huawei composition and material style reference only"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-68673356-01c2-4020-91cc-e05921abbd80.png",
+      "pixelPreservation": "Generated PNG copied unchanged; no repaint, crop, recolor or alpha modification",
+      "failure": null,
+      "assetPath": "assets/cisco-3925e-illustration-v03.png",
+      "sha256": "05cf31a43a159dd676f8c3706c09822b8b2c38106d605302db45aca70b13c773",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-3925e-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-3945e",
+      "modelName": "Cisco 3945E",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-a/cisco-3945e-normalized-v03.png",
+      "width": 2170,
+      "height": 725,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBoundingBox": {
+        "left": 78,
+        "top": 3,
+        "width": 2014,
+        "height": 706
+      },
+      "alphaThresholdBoundingBoxes": {
+        "16": {
+          "left": 83,
+          "top": 114,
+          "width": 2005,
+          "height": 507
+        },
+        "128": {
+          "left": 84,
+          "top": 115,
+          "width": 2003,
+          "height": 505
+        },
+        "240": {
+          "left": 85,
+          "top": 116,
+          "width": 2001,
+          "height": 504
+        }
+      },
+      "fullyTransparentFraction": 0.34226156046400763,
+      "displayBoundingBox": {
+        "left": 84,
+        "top": 115,
+        "width": 2003,
+        "height": 505
+      },
+      "prompt": "Use case: product-mockup / style-transfer / background-extraction.\nAsset type: one illustrative network-device equipment PNG for a topology website.\nPrimary request: Normalize the sole exact Cisco 3945E device from Image 1 into a clean new studio product rendering matching the presentation pattern of Image 2.\nInput images: Image 1 is the EXACT TARGET EQUIPMENT and establishes identity, bezel, modules, logos and ports. Image 2 is ONLY THE HUAWEI COMPOSITION/STYLE REFERENCE; do not copy any Huawei hardware, ports, brand or shape.\nPanel identity: Preserve the exact tall black/dark graphite front bezel, Cisco logo at upper left, Cisco 3900 Series mark at upper right, upper center status indicators, full teal ventilation grille, and two lower AC inlet/switch recessed positions exactly as seen. Maintain the exact 3945E chassis proportions, taller than the 3925E. Correct the angle into a flat frontal view.\nComposition: straight-on orthographic FRONT-FACING PANEL VIEW, centered horizontally and vertically; all panel edges level and parallel; the device stretches horizontally. Keep the entire device visible with generous transparent margins. At most a very thin top lip like the Huawei style reference; zero sideways face, zero three-quarter angle, no deep top plane.\nStyle/medium: sharp medium/high-detail photoreal product mockup, new clean metal and plastic surfaces, native silver/dark Cisco brand colors, soft neutral studio lighting.\nConstraints: preserve model identity, visible bezel/module layout, port arrangement, logos and overall chassis proportions from the exact target; do not invent modules or add ports. Remove signs of aging, seller staging and watermarks. Output one device only on ACTUAL TRANSPARENT ALPHA with crisp natural object edges.\nAvoid: white rectangle or card, opaque background, table, environment, cables, detached accessories, 3/4 perspective, sideways face, caption, border, watermark, decorative shadow backdrop.\nThis is an illustrative visual asset, not a calibrated port map.",
+      "references": [
+        {
+          "path": "/workspace/scratch/7360d1d45af5/upgrade-assets/cisco/3945e-front.jpg",
+          "role": "exact target equipment",
+          "face": "front"
+        },
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Huawei composition and material style reference only"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-23ac8b37-e780-4f89-b50c-d3f3d3993fbb.png",
+      "pixelPreservation": "Generated PNG copied unchanged; no repaint, crop, recolor or alpha modification",
+      "failure": null,
+      "assetPath": "assets/cisco-3945e-illustration-v03.png",
+      "sha256": "d93433a5611828b110ba432a95db000fd07bfac9a4ba2417d7b36fa64c7acae4",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-3945e-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-asr-1001",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-b/cisco-asr-1001-v03.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        0,
+        75,
+        2141,
+        624
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "prompt": "Use case: style-transfer\nAsset type: transparent device catalog product illustration for a network topology app.\nInput images: Image 1 is the EDIT TARGET and sole equipment identity reference: Cisco ASR 1001. Image 2 is a STYLE/FRAMING REFERENCE ONLY: Huawei product cutout. Do not include Huawei equipment or transfer any Huawei ports, branding, bezel, or hardware.\nPrimary request: regenerate ONLY the Cisco ASR 1001 from Image 1 as a pristine photoreal studio product render. Show its same FRONT PANEL and equipment identity in an exact straight-on, orthographic frontal view, horizontally level and centered. Front-panel face square to the camera; its edges parallel to canvas edges. Use a wide landscape composition and keep the complete rack ears/device visible.\nScene/backdrop: genuinely transparent alpha background, isolated product cutout.\nStyle: authentic brushed silver metal chassis with dark port recesses and precise, clean studio lighting, matching Image 2's clean isolated hardware presentation. At most a VERY THIN visible top lip; suppress the broad top surface visible in Image 1. No side face or depth wedge.\nInvariants: preserve Cisco ASR 1001 identity, logo, silver front bezel, rack ears, fasteners, ventilation grids, left status/console area, central port groups, four SFP sockets and right blank module cover exactly as Image 1. Keep existing port and module arrangement; no additional ports or invented hardware. Preserve authentic silver/black material colors.\nAvoid: three-quarter perspective, tilted camera, top-down view, visible broad top surface, side faces, environment, cables, table, floor, white background, background card, frame, border, caption, watermark, extra objects. This is a uniform illustrative product asset, not a calibrated physical port map.",
+      "referencePaths": [
+        "/workspace/sites/noah-topology/dist/assets/cisco-asr-1001-color.jpg",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "failures": [],
+      "panelFace": "front",
+      "alpha128BoundingBox": [
+        38,
+        257,
+        2095,
+        207
+      ],
+      "generatedSourcePath": "/workspace/scratch/7360d1d45af5/generated_images/exec-0277c51e-713d-485f-af27-33fb71b28ff7.png",
+      "generationCalls": 1,
+      "pixelsModified": false,
+      "assetPath": "assets/cisco-asr-1001-illustration-v03.png",
+      "sha256": "e0b0f437ff22a76ce15feab9052468302bfa38ad053d12cef4e3a350452cf4e3",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-asr-1001-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-asr-1001-x",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-b/cisco-asr-1001-x-v03.png",
+      "width": 2172,
+      "height": 724,
+      "alphaBoundingBox": [
+        22,
+        47,
+        2126,
+        644
+      ],
+      "alpha128BoundingBox": [
+        30,
+        286,
+        2113,
+        197
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "prompt": "Use case: style-transfer\nAsset type: transparent device catalog product illustration for a network topology app.\nInput images: Image 1 is the EDIT TARGET and sole equipment identity reference: Cisco ASR 1001-X. Image 2 is a STYLE/FRAMING REFERENCE ONLY: Huawei product cutout. Do not include Huawei equipment or transfer any Huawei ports, branding, bezel, or hardware.\nPrimary request: regenerate ONLY the Cisco ASR 1001-X from Image 1 as a pristine photoreal studio product render. Show its same FRONT PANEL and equipment identity in an exact straight-on, orthographic frontal view, horizontally level and centered. Front-panel face square to the camera; its edges parallel to canvas edges. Use a wide landscape composition and keep the complete rack ears/device visible.\nScene/backdrop: genuinely transparent alpha background, isolated product cutout.\nStyle: authentic silver metal chassis with black port recesses and precise, clean studio lighting, matching Image 2's clean isolated hardware presentation. At most a VERY THIN visible top lip; suppress the broad top surface visible in Image 1. No side face or depth wedge.\nInvariants: preserve Cisco ASR 1001-X identity, small Cisco logo and model label, silver front bezel, rack ears, fasteners, ventilation grids, left silver module cover, central status indicators and yellow/orange outlined socket cluster, adjacent utility connectors, and long right blank module cover exactly as Image 1. Keep the existing port and module arrangement; no additional ports or invented hardware. Preserve authentic silver/black material colors and small yellow/orange port markers.\nAvoid: three-quarter perspective, tilted camera, top-down view, visible broad top surface, side faces, environment, cables, table, floor, white background, background card, frame, border, caption, watermark, extra objects. This is a uniform illustrative product asset, not a calibrated physical port map.",
+      "referencePaths": [
+        "/workspace/sites/noah-topology/dist/assets/cisco-asr-1001-x-color.jpg",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "failures": [],
+      "panelFace": "front",
+      "generatedSourcePath": "/workspace/scratch/7360d1d45af5/generated_images/exec-e6454d17-822e-44b2-8924-316495e572de.png",
+      "generationCalls": 1,
+      "pixelsModified": false,
+      "assetPath": "assets/cisco-asr-1001-x-illustration-v03.png",
+      "sha256": "8b0cf8da4bf20c5bf3f21f094d1e0ea66a6e819faf1172b8940eb62d1e9285b9",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-asr-1001-x-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-isr-4331",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-b/cisco-isr-4331-v03.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        40,
+        37,
+        2098,
+        648
+      ],
+      "alpha128BoundingBox": [
+        43,
+        240,
+        2091,
+        239
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "prompt": "Use case: style-transfer\nAsset type: transparent device catalog product illustration for a network topology app.\nInput images: Image 1 is the EDIT TARGET and sole equipment identity reference: Cisco ISR 4331 with its port-bearing rear panel shown. Image 2 is a STYLE/FRAMING REFERENCE ONLY: Huawei product cutout. Do not include Huawei equipment or transfer any Huawei ports, branding, bezel, or hardware.\nPrimary request: regenerate ONLY the Cisco ISR 4331 from Image 1 as a pristine photoreal studio product render. Show the SAME port-bearing panel visible in Image 1 DIRECTLY FRONT-ON to the camera in an exact orthographic frontal presentation, horizontally level and centered. This is a face-on camera view of that documented panel, not a request to invent the opposite manufacturer's face. Panel face square to the camera; its edges parallel to canvas edges. Use a wide landscape composition, keeping the complete device visible.\nScene/backdrop: genuinely transparent alpha background, isolated product cutout.\nStyle: authentic silver metal port panel and black chassis with precise, clean studio lighting, matching Image 2's clean isolated hardware presentation. At most a VERY THIN visible black top lip; suppress the broad top surface visible in Image 1. No side face or depth wedge.\nInvariants: preserve Cisco ISR 4331 identity, small vertical Cisco 4331 label on the far right, silver panel bezel, screws, left yellow-bordered Ethernet/SFP connector group, two smaller vented NIM blank covers in the center, and the large vented SM blank cover on the right exactly as Image 1. Keep the existing port and module arrangement; no additional ports or invented hardware. Preserve authentic silver/black material colors and yellow port markers.\nAvoid: three-quarter perspective, tilted camera, top-down view, visible broad top surface, side faces, environment, cables, table, floor, white background, background card, frame, border, caption, watermark, extra objects. This is a uniform illustrative product asset, not a calibrated physical port map.",
+      "referencePaths": [
+        "/workspace/sites/noah-topology/dist/assets/cisco-isr-4331-color.jpg",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "failures": [],
+      "panelFace": "rear",
+      "generatedSourcePath": "/workspace/scratch/7360d1d45af5/generated_images/exec-8da0f8df-3aa1-446a-ad4f-0a65a68a1948.png",
+      "generationCalls": 1,
+      "pixelsModified": false,
+      "assetPath": "assets/cisco-isr-4331-illustration-v03.png",
+      "sha256": "59ebc72cb0acc4deb704c0b0eebe82e4d345ce292ba13e906e3b337755189530",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-isr-4331-illustration-v03.png"
+    },
+    {
+      "modelId": "cisco-isr-4431",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/cisco-b/cisco-isr-4431-v03.png",
+      "width": 2172,
+      "height": 724,
+      "alphaBoundingBox": [
+        0,
+        47,
+        2130,
+        653
+      ],
+      "alpha128BoundingBox": [
+        46,
+        237,
+        2080,
+        244
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "copyHashMatches": true,
+      "prompt": "Use case: style-transfer\nAsset type: transparent device catalog product illustration for a network topology app.\nInput images: Image 1 is the EDIT TARGET and sole equipment identity reference: Cisco ISR 4431 with its port-bearing rear panel shown. Image 2 is a STYLE/FRAMING REFERENCE ONLY: Huawei product cutout. Do not include Huawei equipment or transfer any Huawei ports, branding, bezel, or hardware.\nPrimary request: regenerate ONLY the Cisco ISR 4431 from Image 1 as a pristine photoreal studio product render. Show the SAME port-bearing panel visible in Image 1 DIRECTLY FRONT-ON to the camera in an exact orthographic frontal presentation, horizontally level and centered. This is a face-on camera view of that documented panel, not a request to invent the opposite manufacturer's face. Panel face square to the camera; its edges parallel to canvas edges. Use a wide landscape composition, keeping the complete device visible.\nScene/backdrop: genuinely transparent alpha background, isolated product cutout.\nStyle: authentic silver metal port panel and black chassis with precise, clean studio lighting, matching Image 2's clean isolated hardware presentation. At most a VERY THIN visible black top lip; suppress the broad top surface visible in Image 1. No side face or depth wedge.\nInvariants: preserve Cisco ISR 4431 identity, small Cisco 4431 label at far right, silver panel bezel, screws, left management/USB/console/AUX connector block, yellow bordered copper/SFP Ethernet groups, and three silver vented NIM blank covers from center to right exactly as Image 1. Keep the existing port and module arrangement; no additional ports or invented hardware. Preserve authentic silver/black material colors and small yellow port markers.\nAvoid: three-quarter perspective, tilted camera, top-down view, visible broad top surface, side faces, environment, cables, table, floor, white background, background card, frame, border, caption, watermark, extra objects. This is a uniform illustrative product asset, not a calibrated physical port map.",
+      "referencePaths": [
+        "/workspace/sites/noah-topology/dist/assets/cisco-isr-4431-color.jpg",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "failures": [],
+      "panelFace": "rear",
+      "generatedSourcePath": "/workspace/scratch/7360d1d45af5/generated_images/exec-13e4c909-7a39-4d2b-9a9d-37b678c6172d.png",
+      "generationCalls": 1,
+      "pixelsModified": false,
+      "assetPath": "assets/cisco-isr-4431-illustration-v03.png",
+      "sha256": "3fbb63f02fe69dac853cc3b4fc2f29a79d77f940945181fe65a5be02033975af",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/cisco-isr-4431-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-ar5710-s8t2x",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/huawei-a/huawei-ar5710-s8t2x-front-v03.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        0,
+        0,
+        2152,
+        725
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "prompt": "Use case: style-transfer\nAsset type: illustrative transparent equipment asset for a network topology interface.\nPrimary request: Normalize the exact Huawei NetEngine AR5710-S8T2X router shown in image 1 into a clean new photorealistic studio product render, viewed straight-on at its FRONT PANEL.\nInput images: Image 1 is the equipment identity and hardware geometry source, /workspace/sites/noah-topology/dist/assets/huawei-ar5710-s8t2x-color.webp. Image 2 is STYLE/FRAMING ONLY, /workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp; do not copy its hardware, vents, text, or port arrangement.\nComposition: centered single device, wide horizontal front panel, camera exactly perpendicular to the front. Orthographic frontal view, no yaw, no three-quarter angle, no left or right side surface visible, all front edges level and parallel. Only a tiny narrow black top lip may show, consistent with image 2. Keep the complete device with clear transparent margin around it.\nStyle/lighting: uniformly lit clean catalog-quality new product, crisp realistic brushed silver front, native black chassis and thin red accent line, no wear or dramatic lighting.\nPreserve from image 1: exact model text \"Huawei NetEngine AR5710-S8T2X\", Huawei logo, front bezel design, vent-hole groups, status LED positions, reset button, four left SFP slots, the center eight RJ45 sockets in two rows of four, the two WAN RJ45 plus two WAN SFP sockets, console and USB socket, all front-panel port locations and proportions. Preserve empty socket appearance. Do not add modules, antennas, ports, rack ears, cables, or accessories.\nBackground: genuinely transparent alpha outside the hardware. No environment, table, cable, wall, white rectangle, shadow-card, caption, border, watermark, or drop shadow. This is an illustrative topology image; maintain the original equipment identity and visually faithful front geometry.",
+      "referencePaths": [
+        "/workspace/sites/noah-topology/dist/assets/huawei-ar5710-s8t2x-color.webp",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "toolProvenance": {
+        "tool": "image_gen.imagegen",
+        "mode": "built-in",
+        "transparent_background": true,
+        "generatedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-f5ea8929-123e-4c8e-b671-b2c0fd32aa30.png",
+        "unchangedCopy": true
+      },
+      "failures": [],
+      "alphaBoundingBoxThreshold32": [
+        32,
+        140,
+        2107,
+        428
+      ],
+      "sha256": "77d9fbb09d5c76166697fad4c5a1fc30de863cc1b4b627790f96680e0b68cf83",
+      "identicalToGenerated": true,
+      "qaNotes": [
+        "Straight-on front panel; no side face; native silver, black, and red colors; original hardware arrangement used.",
+        "Visible black top surface is broader than the requested tiny lip; no three-quarter angle or side face."
+      ],
+      "assetPath": "assets/huawei-ar5710-s8t2x-illustration-v03.png",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-ar5710-s8t2x-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-ar5710-s8t2x-lte4ea",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/huawei-a/huawei-ar5710-s8t2x-lte4ea-front-v03.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        0,
+        39,
+        2170,
+        678
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "prompt": "Use case: style-transfer\nAsset type: illustrative transparent equipment asset for a network topology interface.\nPrimary request: Normalize the exact Huawei NetEngine AR5710-S8T2X-LTE4EA router shown in image 1 into a clean new photorealistic studio product render, viewed straight-on at its FRONT PANEL.\nInput images: Image 1 is the equipment identity and hardware geometry source, /workspace/sites/noah-topology/dist/assets/huawei-ar5710-s8t2x-lte4ea-color.webp. Image 2 is STYLE/FRAMING ONLY, /workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp; do not copy its hardware, vents, text, or port arrangement.\nComposition: centered single device, wide horizontal front panel. Orthographic frontal view, camera exactly perpendicular to front, no yaw, no three-quarter angle, no left or right side visible, all front edges level and parallel. Only a tiny narrow black top lip may show, consistent with image 2; minimize visible top depth. Keep the complete device with transparent margin around it.\nStyle/lighting: uniformly lit clean catalog-quality new product, crisp realistic brushed silver front, native black chassis and thin red accent line. No wear, yellowed metal, or dramatic lighting.\nPreserve from image 1: exact model text \"Huawei NetEngine AR5710-S8T2X-LTE4EA\", Huawei logo, front bezel, vent-hole groups, left status LEDs including WWAN/3G/LTE, reset button, four left SFP slots, the center eight RJ45 sockets in two rows of four, two WAN RJ45 plus two WAN SFP sockets, console and USB socket. Preserve the two bare gold LTE antenna connectors at the upper right labeled DIV and MAIN, and the rightmost silver SIM access cover with small black latch as hardware only. Preserve all original front locations and proportions. Keep network sockets empty.\nBackground: genuinely transparent alpha outside the hardware. No attached antenna rods, cables, table, environment, white rectangle, shadow-card, caption, border, watermark, or drop shadow. Do not invent any module, extra port, rack ear, antenna, or accessory. This is an illustrative topology image; preserve the exact visible equipment identity and front geometry.",
+      "referencePaths": [
+        "/workspace/sites/noah-topology/dist/assets/huawei-ar5710-s8t2x-lte4ea-color.webp",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "toolProvenance": {
+        "tool": "image_gen.imagegen",
+        "mode": "built-in",
+        "transparent_background": true,
+        "generatedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-81668ef0-3791-486e-9f08-510185bd55a5.png",
+        "unchangedCopy": true
+      },
+      "failures": [],
+      "alphaBoundingBoxThreshold32": [
+        8,
+        225,
+        2155,
+        355
+      ],
+      "sha256": "8469862a7e197ee0bcde69a0fa784b869f5b6cc23b13a9785dc51a3035fe4ceb",
+      "identicalToGenerated": true,
+      "qaNotes": [
+        "Straight-on front panel; no side face; native silver, black, and red colors; original hardware arrangement used.",
+        "Thin black top lip; bare gold LTE antenna sockets and SIM latch preserved."
+      ],
+      "assetPath": "assets/huawei-ar5710-s8t2x-lte4ea-illustration-v03.png",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-ar5710-s8t2x-lte4ea-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-s5735-l8t4x-a1",
+      "prompt": "Use case: style-transfer\nAsset type: illustrative transparent equipment asset for a network topology interface.\nPrimary request: Normalize the exact Huawei CloudEngine S5735-L8T4X-A1 switch shown in image 1 into a clean new photorealistic studio product render, viewed straight-on at its FRONT PANEL.\nInput images: Image 1 is the equipment identity and hardware geometry source, /workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-a1-color.webp. Image 2 is STYLE/FRAMING ONLY, /workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp; do not copy its hardware, vent pattern, text, or port arrangement.\nComposition: centered single device, horizontal rectangular front panel. Orthographic frontal view, camera exactly perpendicular to front, no yaw, no three-quarter view, no left or right side visible, all front edges level and parallel. Only a tiny thin black top lip with the native red accent line and Huawei logo may show, with very little top depth, like image 2. Keep the complete device surrounded by transparent margin.\nStyle/lighting: uniformly lit new clean catalog-quality photorealistic brushed silver front, native black chassis and thin red accent line, crisp sockets, no wear or dramatic light.\nPreserve from image 1 exactly: Huawei logo, left \"HUAWEI\" mark, \"CloudEngine\" and \"S5735-L8T4X-A1\" model labels, front bezel design and status LEDs PWR/SYS/MST/SPEED, MODE button. At left retain exactly eight RJ45 sockets in two rows of four. Retain the single row of hexagonal vents above exactly four horizontally aligned SFP+ sockets at center/right with their numbering and 10G/1G marking. Retain the right CONSOLE RJ45 and vertical USB socket and small ID/USB/PNP indicator marks. Preserve all original front hardware positions and proportions; all network sockets empty. Do not transplant any hardware or vent layout from image 2.\nBackground: actual transparent alpha outside hardware. No table, cable, environment, white rectangle, shadow-card, caption, border, watermark, drop shadow, rack ears, additional ports, modules, or accessories. This is an illustrative topology image and must preserve the exact equipment identity and faithful original front geometry.",
+      "referencePaths": [
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-a1-color.webp",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "toolProvenance": {
+        "tool": "image_gen.imagegen",
+        "mode": "built-in",
+        "transparent_background": true,
+        "generatedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-a266cbad-1c04-4254-8cc1-b0d03947cc33.png",
+        "unchangedCopy": true
+      },
+      "failures": [],
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/huawei-a/huawei-s5735-l8t4x-a1-front-v03.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        0,
+        19,
+        2158,
+        690
+      ],
+      "alphaBoundingBoxThreshold32": [
+        16,
+        157,
+        2138,
+        453
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "1bb29767a1a58546e9d220eee54227af0bbd76a43da41e6136f1033e742d1e2c",
+      "identicalToGenerated": true,
+      "qaNotes": [
+        "Straight-on front panel; no side face; native silver, black, and red colors; original hardware arrangement used.",
+        "Visible black top surface is broader than the requested tiny lip; no three-quarter angle or side face."
+      ],
+      "assetPath": "assets/huawei-s5735-l8t4x-a1-illustration-v03.png",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-a1-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-s5735-l8t4x-qa-v2",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/huawei-b/huawei-s5735-l8t4x-qa-v2.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        27,
+        19,
+        2113,
+        706
+      ],
+      "visibleAlphaBoundingBox": [
+        32,
+        229,
+        2106,
+        304
+      ],
+      "visibleAlphaThreshold": 8,
+      "format": "PNG",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "prompt": "Use case: product-mockup.\nAsset type: illustrative topology device asset, one exact Huawei S5735-L8T4X-QA-V2.\nInput image 1 is the hardware identity and native material/color reference. It is also the shared product-photo style reference, but its visible deep top plane must be removed by changing the camera to perfectly frontal.\nPrimary request: Make a new, pristine photorealistic studio product render of the exact referenced Huawei S5735-L8T4X-QA-V2 switch. Preserve this model's silver/light-gray front bezel, black chassis edge, native red trim and Huawei/CloudEngine markings, precise bezel proportions and visible port arrangement: the eight RJ45 sockets on the left in two rows of four, the central perforated ventilation field, the four SFP+ sockets across the right portion, and the single RJ45 console socket at the far right. Preserve status LEDs and labeling positions.\nComposition: exactly one isolated device centered on a wide canvas, level straight-on orthographic FRONTAL front panel. The front bezel should be the complete, dominant visible surface, with at most an extremely thin top lip. Show the whole device without cropping. Keep authentic wide shallow equipment proportions.\nScene/backdrop: genuine transparent background, preserving clean alpha around all outer edges.\nMaterials/lighting: factory-new authentic native colors and metal materials, clean crisp studio product photography, soft even light, realistic recessed ports and ventilation, sharp details.\nConstraints: this is the referenced model, not a generic switch. No side faces, no three-quarter perspective, no visible deep top plane, no perspective trapezoid, no cables or inserted modules, no environment, no table, no shadow on any background, no caption, no card, no border, no watermark. Do not invent ports or reposition hardware.",
+      "references": [
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Exact hardware identity and shared studio-product style"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "failures": [],
+      "validationNotes": [
+        "Built-in generation preview inspected: one centered frontal device, native colors and layout, no environment or deep chassis top.",
+        "Very-low-opacity alpha residue outside visible device is retained unchanged. The raw nonzero bbox includes it; visibleAlphaBoundingBox uses alpha >=8.",
+        "view_image inspection of the saved RGBA PNG rendered nearly black in tool preview, while read-only Pillow pixel inspection confirmed native RGB colors and alpha. No conversion was applied."
+      ],
+      "assetPath": "assets/huawei-s5735-l8t4x-qa-v2-illustration-v03.png",
+      "sha256": "a77aa6473de3ca27b737567f66fb733bde656b77fe5bfa26b0c164462444c8e9",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-s5731-s48t4x",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/huawei-b/huawei-s5731-s48t4x.png",
+      "width": 2172,
+      "height": 724,
+      "alphaBoundingBox": [
+        0,
+        54,
+        2172,
+        606
+      ],
+      "visibleAlphaBoundingBox": [
+        2,
+        250,
+        2169,
+        243
+      ],
+      "visibleAlphaThreshold": 8,
+      "format": "PNG",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "prompt": "Use case: product-mockup.\nAsset type: illustrative topology device asset.\nInput image 1 is the exact hardware identity reference: Huawei S5731-S48T4X. Preserve its hardware, materials, port arrangement and branding.\nInput image 2 is only a shared lighting/product-photo style reference of another Huawei model. Do not copy its hardware or port layout.\nPrimary request: A new, pristine photorealistic studio product render of exactly one Huawei S5731-S48T4X network switch, based on input image 1. Retain the authentic light silver-gray front panel, black chassis edge with native thin red trim, black recessed network ports, Huawei and CloudEngine markings and visible native labeling. Preserve its very wide 1U bezel proportions. Keep the forty-eight RJ45 ports in two horizontal rows, arranged as four banks of twelve (six columns per bank, two rows per bank), the four SFP+ cages in a compact two-by-two bank near the right, the console and ETH management sockets stacked at the right, and the USB-A socket at the far right. Retain the left LED/status controls and honeycomb ventilation strip.\nComposition: entire isolated device centered, level perfectly straight-on orthographic FRONTAL view. Only the full front panel is visible; at most an extremely thin top lip. No deep chassis top, no side face, no angled perspective. Keep the exact wide shallow hardware silhouette, do not crop.\nScene/backdrop: genuine transparent background and clean alpha edges.\nMaterials/lighting: factory-new original native colors and metal materials, crisp photorealistic studio lighting with even neutral illumination and natural recessed-port depth.\nAvoid: generic switch substitutions, altered port count, rearranged ports, filled ports, transceivers or cables, three-quarter angle, tilted panel, trapezoid, visible broad top plane, environment, table, background shadow, caption, card, border or watermark.",
+      "references": [
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5731-s48t4x-color.webp",
+          "role": "Exact hardware identity"
+        },
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Studio-product presentation style only"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "failures": [],
+      "validationNotes": [
+        "Built-in generation preview inspected: one centered frontal device, native colors and layout, no environment or deep chassis top.",
+        "Very-low-opacity alpha residue outside visible device is retained unchanged. The raw nonzero bbox includes it; visibleAlphaBoundingBox uses alpha >=8.",
+        "view_image inspection of the saved RGBA PNG rendered nearly black in tool preview, while read-only Pillow pixel inspection confirmed native RGB colors and alpha. No conversion was applied."
+      ],
+      "assetPath": "assets/huawei-s5731-s48t4x-illustration-v03.png",
+      "sha256": "d3e5598ee5f2ff56b9f0f4fc21b6c4262e6fc61053907f031d09dbcbadac3a67",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-s5731-s48t4x-illustration-v03.png"
+    },
+    {
+      "modelId": "alcatel-os6450-10",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/huawei-b/alcatel-os6450-10.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        0,
+        29,
+        2170,
+        692
+      ],
+      "visibleAlphaBoundingBox": [
+        12,
+        188,
+        2147,
+        358
+      ],
+      "visibleAlphaThreshold": 8,
+      "format": "PNG",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "prompt": "Use case: product-mockup.\nAsset type: illustrative topology device asset.\nInput image 1 is the exact hardware identity reference: Alcatel OS6450-10 (OmniSwitch 6450). Preserve its front-panel silhouette, port arrangement and Alcatel-Lucent model branding. Its aged appearance and brown table are not part of the requested output.\nInput image 2 is only the shared Huawei studio-product presentation style reference. Do not transfer Huawei hardware, gray/black/red palette, logos or port layout into the Alcatel device.\nPrimary request: Recreate exactly the referenced Alcatel OS6450-10 as a factory-new, clean photorealistic studio product render. Use its authentic silver/light-gray metal front bezel and deep violet-purple curved accent strips along the upper and lower edges. Keep OS6450-10 model marking at the upper right and original Alcatel-Lucent purple logo/native labeling. Preserve the half-rack wide shallow front-panel proportions, left-edge fastening details, LED positions and distinctive silver-and-purple bezel design.\nHardware layout must match image 1: eight RJ45 access sockets at the left, two rows of four; one empty SFP cage immediately to their right; two additional RJ45 sockets side by side in the middle-lower area; then three empty SFP cages in a row across the right-middle area. At far right preserve RJ45 console above the horizontal USB socket, nearby round button and indicators. Remove the inserted transceiver from the supplier photo so every SFP cage is empty. Do not make it a generic rectangular switch.\nComposition: one entire isolated device centered on a wide canvas, level straight-on orthographic FRONTAL view. Show only the full front bezel, with at most a hair-thin top lip. No side face or deep top plane, no perspective tilt or trapezoid. Keep all hardware visible, no crop.\nScene/backdrop: genuinely transparent background with clean alpha outer edges. Fully eliminate the brown tabletop and surrounding supplier-photo environment.\nMaterials/lighting: new clean silver metal and authentic violet-purple details, sharp ports, neutral even photorealistic studio lighting, no dirt, stains, scratches, yellowing or worn condition.\nAvoid: Huawei branding or palette, generic switch substitution, invented ports, changed socket layout, cables, inserted optical modules, tables, environment, background shadow, three-quarter angle, deep chassis top, caption, card, border or watermark.",
+      "references": [
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/alcatel-os6450-10-color.webp",
+          "role": "Exact hardware identity"
+        },
+        {
+          "path": "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp",
+          "role": "Studio-product presentation style only; no hardware, branding or palette transfer"
+        }
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "failures": [],
+      "validationNotes": [
+        "Built-in generation preview inspected: one centered frontal device, native colors and layout, no environment or deep chassis top.",
+        "Very-low-opacity alpha residue outside visible device is retained unchanged. The raw nonzero bbox includes it; visibleAlphaBoundingBox uses alpha >=8.",
+        "view_image inspection of the saved RGBA PNG rendered nearly black in tool preview, while read-only Pillow pixel inspection confirmed native RGB colors and alpha. No conversion was applied."
+      ],
+      "assetPath": "assets/alcatel-os6450-10-illustration-v03.png",
+      "sha256": "7c4401e95dca057f7249c4e53c8c803799a0121581415b677e60a97f271c26f4",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/alcatel-os6450-10-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-ne8000-f1a",
+      "name": "Huawei NetEngine 8000 F1A",
+      "reference": {
+        "manufacturer": "Huawei",
+        "sourceURL": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/7380e0b8a92749048332c26a2b483700/M3T1A590N1190670492758011972/NetEngine%208000%20F1A-8H20Q%E5%BD%A9%E9%A1%B5V800R025C00.pdf",
+        "sourcePageURL": "https://e.huawei.com/cn/documents/products/enterprise-network/7380e0b8a92749048332c26a2b483700",
+        "localPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/f1a-pdf-003.png",
+        "sourceDocumentLocalPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/f1a-exact.pdf",
+        "sourceDocumentPage": 1,
+        "exactReferenceModel": "NetEngine 8000 F1A-8H20Q",
+        "extraction": "Original RGB image stream extracted with pdfimages; no pixel retouching, cropping, resizing, recoloring, or compositing applied to reference."
+      },
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/huawei-ne8000-f1a.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        0,
+        45,
+        2170,
+        664
+      ],
+      "alphaBoundingBoxDefinition": "[left, top, width, height] for alpha > 0",
+      "visibleAlphaBoundingBox": [
+        6,
+        273,
+        2158,
+        246
+      ],
+      "visibleAlphaBoundingBoxDefinition": "[left, top, width, height] for alpha >= 128; useful for visible device layout because very faint peripheral alpha pixels extend nonzero bounds.",
+      "prompt": "Use case: product-mockup\nAsset type: realistic network topology catalog image.\nPrimary request: Produce one clean photorealistic normalized Huawei NetEngine 8000 F1A-8H20Q router from Image 1.\nInput images: Image 1 is the sole exact hardware identity target, extracted unchanged from Huawei's official F1A-8H20Q brochure. Image 2 is only a Huawei silver/black/red material and studio-rendering style reference; do not copy its ports, chassis, or proportions.\nHardware invariants: Image 1 contains ONE shallow rectangular router. It has ONE actual front panel band, not a duplicated mirrored chassis underneath. Preserve its native very wide shallow front proportions, all visible module boundaries, dark connector areas, vent grilles, outer edges and manufacturer identity. Do not increase chassis height, repeat the panel, append a second row or invent modules.\nCamera: exact straight-on orthographic frontal view with the front panel directly facing the viewer and zero skew. Show no side surface and no broad top surface, only an extremely thin top lip. Keep the complete sole chassis in frame with modest transparent margins.\nAppearance: clean/new studio photoreal product render in authentic Huawei silver brushed-metal front, matte black enclosure and subtle red edge accent, matching the material character of Image 2. Neutral even studio lighting.\nBackground: genuinely transparent alpha, no opaque black, white, or gray background, no floor and no cast shadow.\nAvoid: three-quarter or top-down views, perspective wedge, large visible top, environment, table, cables, white rectangle, backdrop card, caption, text overlay, border, watermark, mirrored reflection, extra device, extra hardware row. Illustration only, no calibrated port claims.",
+      "toolProvenance": {
+        "tool": "image_gen.imagegen",
+        "mode": "built-in",
+        "transparentBackgroundRequested": true,
+        "referencedImagePaths": [
+          "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/f1a-pdf-003.png",
+          "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+        ],
+        "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-a7a33b1e-8ddc-4bd4-a408-c7d46cabfaf5.png",
+        "finalFileByteIdenticalToGenerated": true,
+        "sha256": "116b63b6809f7879861779c83c32e6e43e5f313ed68f678776e39d8faf6aa7e3"
+      },
+      "limitations": [
+        "Illustrative product display image; not calibrated engineering geometry or a source for port counts, supported modules, or specifications.",
+        "Visible hardware configuration follows the selected official photo; other variants or installed-module configurations can differ.",
+        "Small manufacturer/front-panel legends are rendered illustratively and should not be used as engineering documentation.",
+        "Native generated pixels and genuine alpha are preserved unchanged; very faint peripheral pixels are present outside the strong visible device bounds.",
+        "Uses an exact F1A-8H20Q official front photograph as the display representative for user-requested F1A. Initial generic-photo generation repeated the source reflection and was rejected; final uses reflection-free official photograph."
+      ],
+      "assetPath": "assets/huawei-ne8000-f1a-illustration-v03.png",
+      "sha256": "116b63b6809f7879861779c83c32e6e43e5f313ed68f678776e39d8faf6aa7e3",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-ne8000-f1a-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-ne8000-m8",
+      "name": "Huawei NetEngine 8000 M8",
+      "reference": {
+        "manufacturer": "Huawei",
+        "sourceURL": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/e9dd06e260b64df683f6221fc8442cbf/M3T1A590N1276639976843047076/NetEngine%208000%20M8%20Universal%20Service%20Router%20Datasheet.pdf",
+        "sourcePageURL": "https://e.huawei.com/en/documents/products/enterprise-network/e9dd06e260b64df683f6221fc8442cbf",
+        "localPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/m8-front-024.png",
+        "sourceDocumentLocalPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/m8.pdf",
+        "sourceDocumentPage": 2,
+        "exactReferenceModel": "NetEngine 8000 M8",
+        "extraction": "Original RGB image stream extracted with pdfimages; no pixel retouching, cropping, resizing, recoloring, or compositing applied to reference."
+      },
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/huawei-ne8000-m8.png",
+      "width": 2072,
+      "height": 759,
+      "alphaBoundingBox": [
+        0,
+        0,
+        2071,
+        733
+      ],
+      "alphaBoundingBoxDefinition": "[left, top, width, height] for alpha > 0",
+      "visibleAlphaBoundingBox": [
+        14,
+        94,
+        2044,
+        612
+      ],
+      "visibleAlphaBoundingBoxDefinition": "[left, top, width, height] for alpha >= 128; useful for visible device layout because very faint peripheral alpha pixels extend nonzero bounds.",
+      "prompt": "Use case: product-mockup\nAsset type: realistic network topology catalog image.\nPrimary request: Normalize the exact Huawei NetEngine 8000 M8 chassis in Image 1 into a clean/new studio photoreal render.\nInput images: Image 1 is the sole hardware identity target, a reflection-free photograph extracted unchanged from Huawei's current official M8 brochure. Image 2 is only a Huawei color/material/rendering style reference, not a hardware target. Never transfer Image 2's chassis height or ports.\nHardware invariants: retain the exact substantial M8 modular chassis front, its tall stacked silver removable modules, their original placement and boundaries, recessed black connector regions, vents, handles, screws, black rack ears, and the right-hand vertical fan/service bay. Keep the native front-panel proportions: this is a visibly thick modular router, considerably taller than a shallow switch. The actual front in Image 1 is roughly three-and-a-half times as wide as tall. Do not compress it into a 1RU unit. Do not invent modules, new sockets, or duplicated rows.\nCamera/composition: straight-on orthographic frontal panel, squarely facing the viewer, no perspective or skew, no visible side panels. Remove the original broad top view: at most an extremely thin top lip. Preserve full rack-ear and front chassis height. One complete chassis with modest transparent margins.\nStyle: photorealistic authentic Huawei silver brushed-metal face, matte black enclosure and restrained red edge accent; neutral studio lighting with fine realistic metal texture. Match Image 2's clean Huawei product appearance.\nBackground: genuine transparent alpha, no opaque white/black/gray backdrop, no floor or shadow.\nAvoid: three-quarter side view, large visible top, top-down view, environment, table, cables, white rectangle, card, captions, border, watermark, reflection, extra devices. Illustrative display image only, no calibrated port claims.",
+      "toolProvenance": {
+        "tool": "image_gen.imagegen",
+        "mode": "built-in",
+        "transparentBackgroundRequested": true,
+        "referencedImagePaths": [
+          "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/m8-front-024.png",
+          "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+        ],
+        "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-ace5489a-144a-4e66-a0b7-2aaaf4f609ba.png",
+        "finalFileByteIdenticalToGenerated": true,
+        "sha256": "1b6d113400f642b50aab1c99139b9153eb974dccd9b28f09a7850aa63c82703e"
+      },
+      "limitations": [
+        "Illustrative product display image; not calibrated engineering geometry or a source for port counts, supported modules, or specifications.",
+        "Visible hardware configuration follows the selected official photo; other variants or installed-module configurations can differ.",
+        "Small manufacturer/front-panel legends are rendered illustratively and should not be used as engineering documentation.",
+        "Native generated pixels and genuine alpha are preserved unchanged; very faint peripheral pixels are present outside the strong visible device bounds."
+      ],
+      "assetPath": "assets/huawei-ne8000-m8-illustration-v03.png",
+      "sha256": "1b6d113400f642b50aab1c99139b9153eb974dccd9b28f09a7850aa63c82703e",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-ne8000-m8-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-ne8000-m14",
+      "name": "Huawei NetEngine 8000 M14",
+      "reference": {
+        "manufacturer": "Huawei",
+        "sourceURL": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f4f1a7b9424a44ff9770b75a19eb5d2e/M3T1A590N1267221252983996547/NetEngine%208000%20M14%20Universal%20Service%20Router%20Datasheet.pdf",
+        "sourcePageURL": "https://e.huawei.com/en/documents/products/enterprise-network/f4f1a7b9424a44ff9770b75a19eb5d2e",
+        "localPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/m14-front-000.png",
+        "sourceDocumentLocalPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/m14.pdf",
+        "sourceDocumentPage": 2,
+        "exactReferenceModel": "NetEngine 8000 M14",
+        "extraction": "Original RGB image stream extracted with pdfimages; no pixel retouching, cropping, resizing, recoloring, or compositing applied to reference."
+      },
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/huawei-ne8000-m14.png",
+      "width": 1774,
+      "height": 887,
+      "alphaBoundingBox": [
+        0,
+        0,
+        1773,
+        876
+      ],
+      "alphaBoundingBoxDefinition": "[left, top, width, height] for alpha > 0",
+      "visibleAlphaBoundingBox": [
+        35,
+        70,
+        1706,
+        793
+      ],
+      "visibleAlphaBoundingBoxDefinition": "[left, top, width, height] for alpha >= 128; useful for visible device layout because very faint peripheral alpha pixels extend nonzero bounds.",
+      "prompt": "Use case: product-mockup\nAsset type: realistic network topology catalog image.\nPrimary request: Normalize the exact Huawei NetEngine 8000 M14 chassis in Image 1 into a clean/new studio photoreal render.\nInput images: Image 1 is the sole hardware identity target, a reflection-free front photograph extracted unchanged from Huawei's current official M14 brochure. Image 2 is only a Huawei silver/black/red material and clean-rendering style reference, not a hardware target. Do not copy Image 2's switch ports, chassis or proportions.\nHardware invariants: retain the exact thick M14 modular front from Image 1, with its many vertically stacked silver removable modules, original blank plates and connector panel placement, vent grilles, handles, black rack ears, screw positions, lower power bay and the long right-hand vertical service/fan section. Maintain its native substantial front-panel height, visually almost half its width. It is much taller than a shallow switch and taller than the M8 chassis; do not flatten or compress it into a 1RU unit. Keep visible front-panel identity and original module arrangement, no invented modules, no new connector patterns, no repeated rows.\nCamera/composition: straight-on orthographic frontal view, panel squarely facing the viewer, zero skew, no visible side panels. Remove original top-down perspective: show at most an extremely thin top lip and retain the full chassis front height. Whole single chassis in frame with modest transparent margins.\nStyle: clean/new photoreal studio product render with authentic Huawei silver brushed-metal face, matte black enclosure and subtle red top-edge accent. Neutral even studio lighting, realistic fine metal texture, matches Image 2's material character.\nBackground: genuinely transparent alpha, no opaque black/white/gray rectangle, no floor, no cast shadow.\nAvoid: three-quarter side angle, large visible top, top-down view, environment, table, cables, white rectangle, card, captions, border, watermark, mirrored reflection, extra devices. Illustrative display only, no calibrated port claims.",
+      "toolProvenance": {
+        "tool": "image_gen.imagegen",
+        "mode": "built-in",
+        "transparentBackgroundRequested": true,
+        "referencedImagePaths": [
+          "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/m14-front-000.png",
+          "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+        ],
+        "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-bd3836e2-9c66-4b75-893b-233fab44a2f6.png",
+        "finalFileByteIdenticalToGenerated": true,
+        "sha256": "76bad364f139dcd43558d08011e103c6ecab4920c4213753101f52fa98e8c8c2"
+      },
+      "limitations": [
+        "Illustrative product display image; not calibrated engineering geometry or a source for port counts, supported modules, or specifications.",
+        "Visible hardware configuration follows the selected official photo; other variants or installed-module configurations can differ.",
+        "Small manufacturer/front-panel legends are rendered illustratively and should not be used as engineering documentation.",
+        "Native generated pixels and genuine alpha are preserved unchanged; very faint peripheral pixels are present outside the strong visible device bounds."
+      ],
+      "assetPath": "assets/huawei-ne8000-m14-illustration-v03.png",
+      "sha256": "76bad364f139dcd43558d08011e103c6ecab4920c4213753101f52fa98e8c8c2",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-ne8000-m14-illustration-v03.png"
+    },
+    {
+      "modelId": "huawei-ne8000-x4",
+      "name": "Huawei NetEngine 8000 X4",
+      "reference": {
+        "manufacturer": "Huawei",
+        "sourceURL": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/406705c5a4fb4c42afbd4ae2db03af88/M3T1A590N1068255007527948470/NetEngine%208000%20X%E7%B3%BB%E5%88%97%E5%BD%A9%E9%A1%B5.pdf",
+        "sourcePageURL": "https://e.huawei.com/en/products/routers/ne8000",
+        "localPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/x4-pdf-003.png",
+        "sourceDocumentLocalPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/x4-latest.pdf",
+        "sourceDocumentPage": 1,
+        "exactReferenceModel": "NetEngine 8000 X4",
+        "extraction": "Original RGB image stream extracted with pdfimages; no pixel retouching, cropping, resizing, recoloring, or compositing applied to reference."
+      },
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/huawei-ne8000-x4.png",
+      "width": 1392,
+      "height": 1130,
+      "alphaBoundingBox": [
+        0,
+        17,
+        1376,
+        1113
+      ],
+      "alphaBoundingBoxDefinition": "[left, top, width, height] for alpha > 0",
+      "visibleAlphaBoundingBox": [
+        29,
+        62,
+        1333,
+        1040
+      ],
+      "visibleAlphaBoundingBoxDefinition": "[left, top, width, height] for alpha >= 128; useful for visible device layout because very faint peripheral alpha pixels extend nonzero bounds.",
+      "prompt": "Use case: product-mockup\nAsset type: realistic network topology catalog image.\nPrimary request: Normalize the exact Huawei NetEngine 8000 X4 chassis in Image 1 into a clean/new studio photoreal render.\nInput images: Image 1 is the sole exact hardware identity target: the X4 front photograph extracted unchanged from Huawei's official X-series brochure, where it is explicitly labeled NetEngine 8000 X4 Router. Image 2 is only a Huawei silver/black/red material and studio-rendering style reference, not a hardware target. Never transfer Image 2's shallow switch proportions, ports or grille arrangement.\nHardware invariants: preserve the native tall near-square X4 chassis silhouette, approximately five units wide for four units tall. Keep its large black upper vertical-rib ventilation panel with Huawei manufacturer mark, fine red upper edge, narrow silver control-panel bands immediately below, the original stacked broad silver blank module plates in the lower portion, long black side rack rails, screws and lower dark trim. Use only the visible original front hardware configuration; no invented cards or connectors, no extra rows, no flattened 1RU or wide switch shape.\nCamera/composition: exact straight-on orthographic frontal view; square front facing the viewer, no skew, no side panels or perspective. At most an extremely thin top lip. One complete chassis fully in frame, centered with modest transparent margins.\nStyle: clean/new photoreal studio product render, authentic Huawei silver brushed metal, matte black ventilation/enclosure and restrained red upper-edge accent. Neutral even studio lighting, realistic fine metal and vent textures matching Image 2's material character.\nBackground: genuinely transparent alpha, no opaque black/white/gray backdrop, no floor and no cast shadow.\nAvoid: three-quarter side view, top-down view, broad visible top surface, environment, table, cables, white rectangle, backdrop card, captions, border, watermark, reflection, extra device. Illustrative display only, no calibrated port claims.",
+      "toolProvenance": {
+        "tool": "image_gen.imagegen",
+        "mode": "built-in",
+        "transparentBackgroundRequested": true,
+        "referencedImagePaths": [
+          "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/x4-pdf-003.png",
+          "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+        ],
+        "generatedOriginalPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-236405e2-e719-4f63-957b-7aff3a282acf.png",
+        "finalFileByteIdenticalToGenerated": true,
+        "sha256": "afded70d1a18b6405e1c4560792b857b7c94ff85b72efc6d694b0731e7efd7f0"
+      },
+      "limitations": [
+        "Illustrative product display image; not calibrated engineering geometry or a source for port counts, supported modules, or specifications.",
+        "Visible hardware configuration follows the selected official photo; other variants or installed-module configurations can differ.",
+        "Small manufacturer/front-panel legends are rendered illustratively and should not be used as engineering documentation.",
+        "Native generated pixels and genuine alpha are preserved unchanged; very faint peripheral pixels are present outside the strong visible device bounds.",
+        "Selected image is explicitly labeled NetEngine 8000 X4 Router on source brochure page 1; preserved blank module configuration."
+      ],
+      "assetPath": "assets/huawei-ne8000-x4-illustration-v03.png",
+      "sha256": "afded70d1a18b6405e1c4560792b857b7c94ff85b72efc6d694b0731e7efd7f0",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/huawei-ne8000-x4-illustration-v03.png"
+    },
+    {
+      "modelId": "telco-t-marc-280",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/telco-fw/telco-t-marc-280-normalized.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        77,
+        19,
+        2014,
+        706
+      ],
+      "alpha8BoundingBox": [
+        85,
+        185,
+        2002,
+        401
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "originalGeneratedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-4943f56e-f770-4306-8b9b-288e8b27afb5.png",
+      "copiedUnchanged": true,
+      "prompt": "Use case: product-mockup.\nAsset type: normalized transparent network-equipment illustration.\nPrimary request: Re-render the exact Telco Systems T-Marc 280 shown in Image 1 as a clean, new photorealistic studio product render, viewed straight-on at the front panel.\nInput images: Image 1 is the exact equipment identity reference and edit target: Telco T-Marc 280; preserve its own hardware, not the other reference's hardware. Image 2 is the Huawei render-style reference only: use its crisp isolated product edges and clean realistic studio rendering; do not copy its chassis, black top, ports, labels, or proportions.\nComposition and camera: strict orthographic frontal elevation, perfectly level horizontally, centered, entire equipment visible with modest transparent margins. The front panel faces the viewer directly. No three-quarter perspective, side face, or top-down view. At most a tiny narrow top lip. Keep the T-Marc 280's compact desktop proportions and rounded silver bezel, not a wide full-rack chassis.\nHardware invariants: preserve the reference model's precise identity, bezel, Telco Systems logo and T-Marc 280 label, authentic front arrangement: console at the left, original status lights, the original SFP and copper socket groups and labeling, and original power jack at the right. No invented modules or ports. Empty original SFP cages; no cables or added accessories.\nStyle and materials: clean new silver/white/gray metal in the device's authentic native colors, detailed port interiors, restrained realistic highlights and neutral studio light. Match the general crisp photographic rendering quality of Image 2, while retaining Image 1's identity.\nBackground: genuine transparent alpha everywhere outside the equipment. No white rectangle, environment, tabletop, reflection, cast-shadow floor, caption, card, watermark, or border.\nThis is a visual product illustration, not a calibrated pixel port map. Deliver one isolated equipment asset.",
+      "references": [
+        "/workspace/sites/noah-topology/dist/assets/telco-t-marc-280-color.png",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "generationFailures": [],
+      "qualityNotes": [
+        "Nonzero-alpha bounds include very faint pixels outside the device; alpha8BoundingBox gives useful framing."
+      ],
+      "assetPath": "assets/telco-t-marc-280-illustration-v03.png",
+      "sha256": "6f198882bf432451815b23d89fe607fb5621e7b04a82e70aa8d23baddd31583d",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/telco-t-marc-280-illustration-v03.png"
+    },
+    {
+      "modelId": "telco-t-marc-340",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/telco-fw/telco-t-marc-340-normalized.png",
+      "width": 2098,
+      "height": 749,
+      "alphaBoundingBox": [
+        0,
+        21,
+        2050,
+        686
+      ],
+      "alpha8BoundingBox": [
+        61,
+        184,
+        1976,
+        418
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "originalGeneratedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-9a494d64-8e23-4ea4-ade9-b4e07827a253.png",
+      "copiedUnchanged": true,
+      "prompt": "Use case: product-mockup.\nAsset type: normalized transparent network-equipment illustration.\nPrimary request: Re-render the exact Telco Systems T-Marc 340 shown in Image 1 as a clean, new photorealistic studio product render, viewed straight-on at the front panel.\nInput images: Image 1 is the exact equipment identity reference and edit target: Telco T-Marc 340; preserve this hardware. Image 2 is the Huawei render-style reference only: use its crisp isolated product edges and clean realistic studio rendering; do not copy its chassis, black top, ports, labels, or hardware.\nComposition and camera: strict orthographic frontal elevation, perfectly level horizontally, centered, entire equipment visible with modest transparent margins. The front panel faces the viewer directly. No three-quarter perspective, side face, or top-down view. At most a tiny narrow top lip. Keep the device's exact wide silver rectangular chassis, bezel and original proportions.\nHardware invariants: preserve the precise T-Marc 340 identity, Telco Systems logo and model label at the far left, the console beneath the label, the original vent patterns, status lights, two left Network copper/SFP combo pairs and four right Access copper/SFP combo pairs as shown. Keep all six upper SFP cages and all six lower network RJ45 sockets with their original grouping; no invented modules or ports. Empty original SFP cages; no cables or accessories. Maintain the large blank right-side metal region from Image 1.\nStyle and materials: clean new silver/white/gray metal in the device's authentic native colors, detailed dark port interiors, restrained realistic highlights and neutral studio light. Match the general crisp photographic rendering quality of Image 2, while retaining Image 1's identity.\nBackground: genuine transparent alpha everywhere outside the equipment. No white rectangle, environment, tabletop, reflection, cast-shadow floor, caption, card, watermark, or border.\nThis is a visual product illustration, not a calibrated pixel port map. Deliver one isolated equipment asset.",
+      "references": [
+        "/workspace/sites/noah-topology/dist/assets/telco-t-marc-340-color.png",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "generationFailures": [],
+      "qualityNotes": [
+        "A visible top lip remains beyond the requested tiny lip; review before integration.",
+        "Nonzero-alpha bounds include very faint pixels outside the device; alpha8BoundingBox gives useful framing."
+      ],
+      "assetPath": "assets/telco-t-marc-340-illustration-v03.png",
+      "sha256": "6f4e0e504ad6a8f6757e61ead2c999d7cbda0bb424315c569ba860087ae31817",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/telco-t-marc-340-illustration-v03.png"
+    },
+    {
+      "modelId": "telco-t-marc-380",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/telco-fw/telco-t-marc-380-normalized.png",
+      "width": 2170,
+      "height": 725,
+      "alphaBoundingBox": [
+        0,
+        57,
+        2170,
+        624
+      ],
+      "alpha8BoundingBox": [
+        7,
+        159,
+        2158,
+        422
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "originalGeneratedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-c04e60ba-1219-4299-a70a-054d76c09db2.png",
+      "copiedUnchanged": true,
+      "prompt": "Use case: product-mockup.\nAsset type: normalized transparent network-equipment illustration.\nPrimary request: Re-render the exact Telco Systems T-Marc 380 shown in Image 1 as a clean, new photorealistic studio product render, viewed directly and squarely at the front panel.\nInput images: Image 1 is the exact equipment identity reference and edit target: Telco T-Marc 380; preserve its own hardware identity. Image 2 is the Huawei render-style reference only: use its crisp isolated product edges and clean realistic studio rendering. Do not copy its black top, hardware, ports, labels, or camera tilt.\nComposition and camera: strict orthographic frontal elevation, camera at the centerline of the front panel, perfectly horizontal and level, centered, entire equipment visible with modest transparent margins. Only the rectangular front fascia is visible: zero visible top surface and zero visible side surfaces, at most a thin seam/lip. No top-down view, side view, or three-quarter angle.\nHardware invariants: preserve precise T-Marc 380 identity, silver rectangular bezel, Telco Systems logo/model region and console at the far left, original vent patterns, status indicators, and original socket grouping: two left Network SFP/copper pairs plus eight Access SFP/copper pairs across the rest of the front. Twenty original network sockets total, ten upper SFP cages and ten lower RJ45 network sockets. No invented modules or sockets. Preserve the port-cage geometry and spacing from Image 1; the blue protruding demonstration transceiver in the first SFP port should be omitted, leaving the original empty cage visible. No cables or added accessories.\nStyle and materials: clean new silver/white/gray metal in the device's authentic native colors, detailed dark port interiors, restrained realistic highlights and neutral studio light. Match Image 2's general crisp photographic rendering quality while retaining Image 1's identity.\nBackground: genuine transparent alpha everywhere outside the equipment. No white rectangle, environment, tabletop, reflection, cast-shadow floor, caption, card, watermark, or border.\nThis is a visual product illustration, not a calibrated pixel port map. Deliver one isolated equipment asset.",
+      "references": [
+        "/workspace/sites/noah-topology/dist/assets/telco-t-marc-380-color.jpg",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "generationFailures": [],
+      "qualityNotes": [
+        "Nonzero-alpha bounds include very faint pixels outside the device; alpha8BoundingBox gives useful framing."
+      ],
+      "assetPath": "assets/telco-t-marc-380-illustration-v03.png",
+      "sha256": "9e31a0ff84371d772b4441bbee09ecc1093e8777826bbea9990644382a1de279",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/telco-t-marc-380-illustration-v03.png"
+    },
+    {
+      "modelId": "fortinet-fortigate-100f",
+      "outputPath": "/workspace/scratch/7360d1d45af5/v03-assets/telco-fw/fortinet-fortigate-100f-normalized.png",
+      "width": 2172,
+      "height": 724,
+      "alphaBoundingBox": [
+        0,
+        55,
+        2171,
+        653
+      ],
+      "alpha8BoundingBox": [
+        55,
+        246,
+        2065,
+        232
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "originalGeneratedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-d51d1f0d-546a-4b21-a7f6-16d7531741e7.png",
+      "copiedUnchanged": true,
+      "prompt": "Use case: product-mockup.\nAsset type: normalized transparent network-equipment illustration.\nPrimary request: Re-render the exact Fortinet FortiGate 100F shown in Image 1 as a clean, new photorealistic studio product render, viewed directly and squarely at the front panel.\nInput images: Image 1 is the exact equipment identity reference and edit target: Fortinet FortiGate 100F; preserve its own front hardware and branding. Image 2 is the Huawei render-style reference only: use its crisp isolated product edges and clean realistic studio rendering. Do not copy its black top, hardware, ports, labels, proportions, or camera tilt.\nComposition and camera: strict orthographic frontal elevation, camera at the centerline of the front panel, perfectly horizontal and level, centered. Show the whole equipment at about 90% of the canvas width with transparent margins. Only the front fascia is visible: zero visible top surface and zero visible side surfaces, at most a thin top seam/lip. No top-down view, side view, or three-quarter angle. The large FORTINET logo on the source top surface disappears with the change in viewpoint; retain the authentic smaller logo on the front.\nHardware invariants: preserve precise FortiGate 100F identity, the authentic pale white/silver rectangular chassis and bezel, the small front FORTINET logo with red brand symbol and three light-green vertical marks at left, and the exact front text FortiGate 100F. Preserve the authentic status indicators, USB, RJ45 console, DMZ/MGMT pair, WAN1/WAN2 and HA1/HA2 pairs, network RJ45 1–12 groups, the X1/X2 SFP+ pair, eight SFP cages for 13–20, and the right RJ45 shared-interface pairs for 17–20, all in the original two-row grouping shown. No invented modules, ports, SSD branding, or replacement brand. Empty original fiber cages; no cables or added accessories.\nStyle and materials: clean new white/silver/gray metal in the device's authentic native brand colors, detailed dark port interiors, restrained realistic highlights and neutral studio light. Match Image 2's general crisp photographic rendering quality while retaining Image 1's FortiGate identity.\nBackground: genuine transparent alpha everywhere outside the equipment. No white rectangle, environment, tabletop, reflection, cast-shadow floor, caption, card, watermark, or border.\nThis is a visual product illustration, not a calibrated pixel port map. Deliver one isolated equipment asset.",
+      "references": [
+        "/workspace/sites/noah-topology/dist/assets/fortinet-fortigate-100f-color.png",
+        "/workspace/sites/noah-topology/dist/assets/huawei-s5735-l8t4x-qa-v2-color.webp"
+      ],
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "generationFailures": [],
+      "qualityNotes": [
+        "Nonzero-alpha bounds include very faint pixels outside the device; alpha8BoundingBox gives useful framing."
+      ],
+      "assetPath": "assets/fortinet-fortigate-100f-illustration-v03.png",
+      "sha256": "24241897aa8d9b657860c26a4cd147d41c9f4c8f7725116491d90229e55a062e",
+      "finalSavedPath": "/workspace/sites/noah-topology/dist/assets/fortinet-fortigate-100f-illustration-v03.png"
+    }
+  ],
+  "font": {
+    "family": "Noto Sans Thai",
+    "source": "https://github.com/google/fonts/tree/main/ofl/notosansthai",
+    "license": "SIL Open Font License 1.1",
+    "file": "dist/fonts/NotoSansThai.ttf"
+  }
+}

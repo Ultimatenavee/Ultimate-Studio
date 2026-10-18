@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zip name="S6700 Series Switches Hardware Description (V200).zip" nodeId="EDOC1000013621" partNo="8001" chapterNo="k00b"> 
+  <file name="About This Document.htm" txtName="About This Document" partNo="j001" chapterNo="k001" originalNo="k001" originalName="01-01 About This Document.pdf" topicId="f2dc4beb"/>  
+  <file name="Using the Info-Finder.htm" txtName="Using the Info-Finder" partNo="j002" chapterNo="k002" originalNo="k002" originalName="01-02 Using the Info-Finder.pdf" topicId="d25789f"/>  
+  <file name="Version Requirements for Components.htm" txtName="Version Requirements for Components" partNo="j003" chapterNo="k003" originalNo="k003" originalName="01-03 Version Requirements for Components.pdf" topicId="95345a81"/>  
+  <file name="Chassis.htm" txtName="Chassis" partNo="j004" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="85db7b7d"> 
+    <file name="Chassis Overview.htm" txtName="Chassis Overview" partNo="j005" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="1cd22ac7"/>  
+    <file name="Naming Conventions.htm" txtName="Naming Conventions" partNo="j006" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="6bd51a51"/>  
+    <file name="Port Numbering Conventions.htm" txtName="Port Numbering Conventions" partNo="j007" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="ba17a118"/>  
+    <file name="S6700-EI.htm" txtName="S6700-EI" partNo="j008" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="d4ec18e2"> 
+      <file name="S6700-24-EI.htm" txtName="S6700-24-EI" partNo="j009" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="f7521d49"/>  
+      <file name="S6700-48-EI.htm" txtName="S6700-48-EI" partNo="j00a" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="32c45751"/> 
+    </file>  
+    <file name="S6720-LI.htm" txtName="S6720-LI" partNo="j00b" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="8fcfd36b"> 
+      <file name="S6720-16X-LI-16S-AC.htm" txtName="S6720-16X-LI-16S-AC" partNo="j00c" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="a94df57d"/>  
+      <file name="S6720-32X-LI-32S-AC.htm" txtName="S6720-32X-LI-32S-AC" partNo="j00d" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="725f7c82"/>  
+      <file name="S6720-26Q-LI-24S-AC.htm" txtName="S6720-26Q-LI-24S-AC" partNo="j00e" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="939e86f8"/> 
+    </file>  
+    <file name="S6720-SI.htm" txtName="S6720-SI" partNo="j00f" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="61c1b247"> 
+      <file name="S6720-26Q-SI-24S-AC.htm" txtName="S6720-26Q-SI-24S-AC" partNo="j00g" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="e0e70b58"/>  
+      <file name="S6720-32X-SI-32S-AC.htm" txtName="S6720-32X-SI-32S-AC" partNo="j00h" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="126f122"/>  
+      <file name="S6720-32C-SI-AC.htm" txtName="S6720-32C-SI-AC" partNo="j00i" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="809dba7c"/>  
+      <file name="S6720-32C-SI-DC.htm" txtName="S6720-32C-SI-DC" partNo="j00j" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="fdea4e39"/>  
+      <file name="S6720-32C-PWH-SI-AC.htm" txtName="S6720-32C-PWH-SI-AC" partNo="j00k" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="a7e944de"/>  
+      <file name="S6720-32C-PWH-SI.htm" txtName="S6720-32C-PWH-SI" partNo="j00l" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="da82ca7d"/>  
+      <file name="S6720-52X-PWH-SI.htm" txtName="S6720-52X-PWH-SI" partNo="j00m" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="f64d9747"/>  
+      <file name="S6720-56C-PWH-SI-AC.htm" txtName="S6720-56C-PWH-SI-AC" partNo="j00n" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="40aa07c"/>  
+      <file name="S6720-56C-PWH-SI.htm" txtName="S6720-56C-PWH-SI" partNo="j00o" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="8a70eb36"/> 
+    </file>  
+    <file name="S6720-EI.htm" txtName="S6720-EI" partNo="j00p" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="8a80c5ee"> 
+      <file name="S6720-30C-EI-24S-AC.htm" txtName="S6720-30C-EI-24S-AC" partNo="j00q" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="fb0c31cc"/>  
+      <file name="S6720-30C-EI-24S-DC.htm" txtName="S6720-30C-EI-24S-DC" partNo="j00r" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="867bc589"/>  
+      <file name="S6720-54C-EI-48S-AC.htm" txtName="S6720-54C-EI-48S-AC" partNo="j00s" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="4b46db72"/>  
+      <file name="S6720-54C-EI-48S-DC.htm" txtName="S6720-54C-EI-48S-DC" partNo="j00t" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="36312f37"/> 
+    </file>  
+    <file name="S6720-HI.htm" txtName="S6720-HI" partNo="j00u" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="a4e280a8"> 
+      <file name="S6720-30L-HI-24S.htm" txtName="S6720-30L-HI-24S" partNo="j00v" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="d15dbe24"/>  
+      <file name="S6720-50L-HI-48S.htm" txtName="S6720-50L-HI-48S" partNo="j00w" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="747bfddd"/> 
+    </file>  
+    <file name="S6730-S.htm" txtName="S6730-S" partNo="j00x" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="3a61ad26"> 
+      <file name="S6730-S24X6Q (02353AJW 02353AJW-001 02353AJW-003 02353AJW-004).htm" txtName="S6730-S24X6Q (02353AJW/02353AJW-001/02353AJW-003/02353AJW-004)" partNo="j00y" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="25b47d53"/>  
+      <file name="S6730-S48X6Q.htm" txtName="S6730-S48X6Q" partNo="j00z" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="437b5ff4"/> 
+    </file>  
+    <file name="S6735-S.htm" txtName="S6735-S" partNo="j010" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="1307c9ee"> 
+      <file name="S6735-S24X6C.htm" txtName="S6735-S24X6C" partNo="j011" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="40d525d3"/>  
+      <file name="S6735-S48X6C.htm" txtName="S6735-S48X6C" partNo="j012" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="be9181b8"/> 
+    </file>  
+    <file name="S6730-H.htm" txtName="S6730-H" partNo="j013" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="b44ffdc2"> 
+      <file name="S6730-H24X6C (02352FSG 02352FSG-001 02352FSG-005 02352FSG-007 02352FSG-009 02353GFC 02353GFC-001 023.htm" txtName="S6730-H24X6C (02352FSG/02352FSG-001/02352FSG-005/02352FSG-007/02352FSG-009/02353GFC/02353GFC-001/02353GFC-003/02353GFC-004)" partNo="j014" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="bf1cfe43"/>  
+      <file name="S6730-H48X6C (02352FSF 02352FSF-003 02352FSF-007 02352FSF-009 02352FSF-011 02352FSF-012 02353FWL 023.htm" txtName="S6730-H48X6C (02352FSF/02352FSF-003/02352FSF-007/02352FSF-009/02352FSF-011/02352FSF-012/02353FWL/02353FWL-003/02353FWL-005/02353FWL-006)" partNo="j015" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="7a8ab45b"/>  
+      <file name="S6730-H24X4Y4C (02353NRD).htm" txtName="S6730-H24X4Y4C (02353NRD)" partNo="j016" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="baf15fb9"/>  
+      <file name="S6730-H24X4Y4C (02353NRD-002).htm" txtName="S6730-H24X4Y4C (02353NRD-002)" partNo="j017" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="616fc8ef"/>  
+      <file name="S6730-H24X4Y4C (02353NRD-003).htm" txtName="S6730-H24X4Y4C (02353NRD-003)" partNo="j018" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="1668f879"/>  
+      <file name="S6730-H28Y4C (02353LGV).htm" txtName="S6730-H28Y4C (02353LGV)" partNo="j019" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="7d791c8b"/>  
+      <file name="S6730-H28Y4C (02353LGV-002).htm" txtName="S6730-H28Y4C (02353LGV-002)" partNo="j01a" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="bfcb8e0c"/>  
+      <file name="S6730-H28Y4C (02353LGV-003).htm" txtName="S6730-H28Y4C (02353LGV-003)" partNo="j01b" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="c8ccbe9a"/> 
+    </file>  
+    <file name="S6720S-LI.htm" txtName="S6720S-LI" partNo="j01c" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="f8c8e3fd"> 
+      <file name="S6720S-16X-LI-16S-AC.htm" txtName="S6720S-16X-LI-16S-AC" partNo="j01d" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="b366aaa2"/>  
+      <file name="S6720S-32X-LI-32S-AC.htm" txtName="S6720S-32X-LI-32S-AC" partNo="j01e" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="6874235d"/>  
+      <file name="S6720S-26Q-LI-24S-AC.htm" txtName="S6720S-26Q-LI-24S-AC" partNo="j01f" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="89b5d927"/> 
+    </file>  
+    <file name="S6720S-SI.htm" txtName="S6720S-SI" partNo="j01g" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="16c682d1"> 
+      <file name="S6720S-26Q-SI-24S-AC.htm" txtName="S6720S-26Q-SI-24S-AC" partNo="j01h" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="facc5487"/> 
+    </file>  
+    <file name="S6720S-EI.htm" txtName="S6720S-EI" partNo="j01i" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="b789753a"> 
+      <file name="S6720S-26Q-EI-24S-AC.htm" txtName="S6720S-26Q-EI-24S-AC" partNo="j01j" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="25166f7c"/>  
+      <file name="S6720S-26Q-EI-24S-DC.htm" txtName="S6720S-26Q-EI-24S-DC" partNo="j01k" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="58619b39"/> 
+    </file>  
+    <file name="S6730S-S.htm" txtName="S6730S-S" partNo="j01l" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="862cbde3"> 
+      <file name="S6730S-S24X6Q-A (02353AJX 02353AJX-001 02353AJX-003 02353AJX-004).htm" txtName="S6730S-S24X6Q-A (02353AJX/02353AJX-001/02353AJX-003/02353AJX-004)" partNo="j01m" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="db1ca75a"/> 
+    </file>  
+    <file name="S6730S-H.htm" txtName="S6730S-H" partNo="j01n" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="9fa9c2e9"> 
+      <file name="S6730S-H24X6C-A (02353HVK 02353HVK-001 02353HVK-003 02353HVK-004).htm" txtName="S6730S-H24X6C-A (02353HVK/02353HVK-001/02353HVK-003/02353HVK-004)" partNo="j01o" chapterNo="k004" originalNo="k004" originalName="01-04 Chassis.pdf" topicId="e56ffd39"/> 
+    </file> 
+  </file>  
+  <file name="Power Modules.htm" txtName="Power Modules" partNo="j01p" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="24948c96"> 
+    <file name="ES0W2PSA0150 (150 W AC Power Module).htm" txtName="ES0W2PSA0150 (150 W AC Power Module)" partNo="j01q" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="1e6120f1"/>  
+    <file name="ES0W2PSD0150 (150 W DC Power Module).htm" txtName="ES0W2PSD0150 (150 W DC Power Module)" partNo="j01r" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="6316d4b4"/>  
+    <file name="LS6W2PSD0500 (500 W DC Power Module).htm" txtName="LS6W2PSD0500 (500 W DC Power Module)" partNo="j01s" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="c7946114"/>  
+    <file name="W0PSA5000 (500 W AC Power Module).htm" txtName="W0PSA5000 (500 W AC Power Module)" partNo="j01t" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="794fe0ec"/>  
+    <file name="W2PSA0580 (580 W AC PoE Power Module).htm" txtName="W2PSA0580 (580 W AC PoE Power Module)" partNo="j01u" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="6a98a018"/>  
+    <file name="PDC-650WA-BE (650 W DC PoE Power Module).htm" txtName="PDC-650WA-BE (650 W DC PoE Power Module)" partNo="j01v" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="5649dc1a"/>  
+    <file name="PAC1000D5412 (1000 W AC PoE Power Module).htm" txtName="PAC1000D5412 (1000 W AC PoE Power Module)" partNo="j01w" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="c8178326"/>  
+    <file name="W2PSA1150 (1150 W AC PoE Power Module).htm" txtName="W2PSA1150 (1150 W AC PoE Power Module)" partNo="j01x" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="d8f84388"/>  
+    <file name="W0PSA1701 (170 W AC Power Module).htm" txtName="W0PSA1701 (170 W AC Power Module)" partNo="j01y" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="234f8d36"/>  
+    <file name="ES5M0PSD1700 (170 W DC Power Module).htm" txtName="ES5M0PSD1700 (170 W DC Power Module)" partNo="j01z" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="c6ac2e41"/>  
+    <file name="PDC260S12-DL (260 W DC Power Module).htm" txtName="PDC260S12-DL (260 W DC Power Module)" partNo="j020" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="7efa44f7"/>  
+    <file name="PAC300S12-CL (300 W AC 240 V DC Power Module).htm" txtName="PAC300S12-CL (300 W AC&amp;240 V DC Power Module)" partNo="j021" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="105a75b8"/>  
+    <file name="PDC-350WA-B (350 W DC Power Module).htm" txtName="PDC-350WA-B (350 W DC Power Module)" partNo="j022" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="27238b9c"/>  
+    <file name="PAC-600WA-B (600 W AC Power Module).htm" txtName="PAC-600WA-B (600 W AC Power Module)" partNo="j023" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="283773f4"/>  
+    <file name="PAC-600WD-B (600 W AC Power Module).htm" txtName="PAC-600WD-B (600 W AC Power Module)" partNo="j024" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="d3315154"/>  
+    <file name="PAC600S12-CB (600 W AC 240 V DC Power Module).htm" txtName="PAC600S12-CB (600 W AC&amp;240 V DC Power Module)" partNo="j025" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="1a67d1af"/>  
+    <file name="PAC600S12-DB (600 W AC 240 V DC Power Module).htm" txtName="PAC600S12-DB (600 W AC&amp;240 V DC Power Module)" partNo="j026" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="4a3800ee"/>  
+    <file name="PAC600S12-EB (600 W AC 240 V DC Power Module).htm" txtName="PAC600S12-EB (600 W AC&amp;240 V DC Power Module)" partNo="j027" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="e7b7852"/>  
+    <file name="PDC1000S12-DB (1000 W DC Power Module).htm" txtName="PDC1000S12-DB (1000 W DC Power Module)" partNo="j028" chapterNo="k005" originalNo="k005" originalName="01-05 Power Modules.pdf" topicId="55b41635"/> 
+  </file>  
+  <file name="Independent Power.htm" txtName="Independent Power" partNo="j029" chapterNo="k006" originalNo="k006" originalName="01-06 Independent Power.pdf" topicId="e6384279"> 
+    <file name="RPS1800 Redundant Power Supply (6 DC Output Ports 12V Total Output Power 140W 48V Total Output Power.htm" txtName="RPS1800 Redundant Power Supply (6 DC Output Ports, 12V Total Output Power 140W, 48V Total Output Power 1600W)" partNo="j02a" chapterNo="k006" originalNo="k006" originalName="01-06 Independent Power.pdf" topicId="8e69f8b6"/>  
+    <file name="LS5W2PSA0870 (870 W PoE Power Module Rectifier 15 A).htm" txtName="LS5W2PSA0870 (870 W PoE Power Module, Rectifier 15 A)" partNo="j02b" chapterNo="k006" originalNo="k006" originalName="01-06 Independent Power.pdf" topicId="ec4fbf52"/> 
+  </file>  
+  <file name="Fan Modules.htm" txtName="Fan Modules" partNo="j02c" chapterNo="k007" originalNo="k007" originalName="01-07 Fan Modules.pdf" topicId="d36664d6"> 
+    <file name="CX7E1FANA Fan Module.htm" txtName="CX7E1FANA Fan Module" partNo="j02d" chapterNo="k007" originalNo="k007" originalName="01-07 Fan Modules.pdf" topicId="be6209fb"/>  
+    <file name="FAN-40HA-B Fan Module.htm" txtName="FAN-40HA-B Fan Module" partNo="j02e" chapterNo="k007" originalNo="k007" originalName="01-07 Fan Modules.pdf" topicId="144e993b"/>  
+    <file name="FAN-046A-B Fan Module.htm" txtName="FAN-046A-B Fan Module" partNo="j02f" chapterNo="k007" originalNo="k007" originalName="01-07 Fan Modules.pdf" topicId="f1bfaa42"/>  
+    <file name="FAN-031A-B (Fan Box (B Fan Panel Side Exhaust)).htm" txtName="FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))" partNo="j02g" chapterNo="k007" originalNo="k007" originalName="01-07 Fan Modules.pdf" topicId="55efcfd1"/>  
+    <file name="FAN-060B-B (Fan Box (B Fan Panel Side Exhaust)).htm" txtName="FAN-060B-B (Fan Box (B, Fan Panel Side Exhaust))" partNo="j02h" chapterNo="k007" originalNo="k007" originalName="01-07 Fan Modules.pdf" topicId="f98f4cce"/> 
+  </file>  
+  <file name="Cards.htm" txtName="Cards" partNo="j02i" chapterNo="k008" originalNo="k008" originalName="01-08 Cards.pdf" topicId="43d97947"> 
+    <file name="Card Classification.htm" txtName="Card Classification" partNo="j02j" chapterNo="k008" originalNo="k008" originalName="01-08 Cards.pdf" topicId="5419c034"/>  
+    <file name="Card Structure and Dimensions.htm" txtName="Card Structure and Dimensions" partNo="j02k" chapterNo="k008" originalNo="k008" originalName="01-08 Cards.pdf" topicId="cd10918e"/>  
+    <file name="ES5D21Q02Q00 (2-Port 40 Gig QSFP+ Rear Interface Card).htm" txtName="ES5D21Q02Q00 (2-Port 40 Gig QSFP+ Rear Interface Card)" partNo="j02l" chapterNo="k008" originalNo="k008" originalName="01-08 Cards.pdf" topicId="e423e0a3"/>  
+    <file name="ES5D21Q04Q01 (4-Port 40 Gig QSFP+ Rear Interface Card).htm" txtName="ES5D21Q04Q01 (4-Port 40 Gig QSFP+ Rear Interface Card)" partNo="j02m" chapterNo="k008" originalNo="k008" originalName="01-08 Cards.pdf" topicId="b64f8fe9"/>  
+    <file name="ES5D21X04S01 (4-Port 10 GE SFP+ Rear Interface Card).htm" txtName="ES5D21X04S01 (4-Port 10 GE SFP+ Rear Interface Card)" partNo="j02n" chapterNo="k008" originalNo="k008" originalName="01-08 Cards.pdf" topicId="92c40a4f"/>  
+    <file name="ES5D21X08S00 (8-Port 10GE SFP+ Rear Optical Interface Card).htm" txtName="ES5D21X08S00 (8-Port 10GE SFP+ Rear Optical Interface Card)" partNo="j02o" chapterNo="k008" originalNo="k008" originalName="01-08 Cards.pdf" topicId="af158561"/> 
+  </file>  
+  <file name="Cables.htm" txtName="Cables" partNo="j02p" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="183b3ab0"> 
+    <file name="Ground Cable.htm" txtName="Ground Cable" partNo="j02q" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="6f3c0a26"/>  
+    <file name="Optical Fiber.htm" txtName="Optical Fiber" partNo="j02r" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="8c2f6bc0"/>  
+    <file name="Ethernet Cable.htm" txtName="Ethernet Cable" partNo="j02s" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="e843aec4"/>  
+    <file name="DC Power Cable (with OT and Cord End Terminals).htm" txtName="DC Power Cable (with OT and Cord End Terminals)" partNo="j02t" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="9f449e52"/>  
+    <file name="DC Power Cable (with Quick-Connect and Cord End Terminals).htm" txtName="DC Power Cable (with Quick-Connect and Cord End Terminals)" partNo="j02u" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="3eecd194"/>  
+    <file name="AC Power Cable.htm" txtName="AC Power Cable" partNo="j02v" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="64dcfe8"/>  
+    <file name="RPS1800 Power Cable.htm" txtName="RPS1800 Power Cable" partNo="j02w" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="6851ce3f"/>  
+    <file name="RPS Cable.htm" txtName="RPS Cable" partNo="j02x" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="714aff7e"/>  
+    <file name="Console Cable.htm" txtName="Console Cable" partNo="j02y" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="ef2e6add"/>  
+    <file name="Dedicated Stack Cable.htm" txtName="Dedicated Stack Cable" partNo="j02z" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="a38f44b1"/>  
+    <file name="Copper Cable.htm" txtName="Copper Cable" partNo="j030" chapterNo="k009" originalNo="k009" originalName="01-09 Cables.pdf" topicId="ece8e225"/> 
+  </file>  
+  <file name="Pluggable Modules for Interfaces.htm" txtName="Pluggable Modules for Interfaces" partNo="j031" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="5338ac71"> 
+    <file name="Important Notes About Using Optical Modules Certified for Huawei Switches.htm" txtName="Important Notes About Using Optical Modules Certified for Huawei Switches" partNo="j032" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="d602a783"> 
+      <file name="How to Identify Huawei-Certified Switch Optical Modules.htm" txtName="How to Identify Huawei-Certified Switch Optical Modules" partNo="j033" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="3f6102b6"/>  
+      <file name="Risks of Using Non-Huawei-Certified Switch Optical Modules.htm" txtName="Risks of Using Non-Huawei-Certified Switch Optical Modules" partNo="j034" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="48663220"/> 
+    </file>  
+    <file name="Understanding Optical Modules.htm" txtName="Understanding Optical Modules" partNo="j035" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="d16f639a"> 
+      <file name="What Is an Optical Module.htm" txtName="What Is an Optical Module" partNo="j036" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="a668530c"/>  
+      <file name="Types of Optical Modules.htm" txtName="Types of Optical Modules" partNo="j037" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="36d74e9d"/>  
+      <file name="Parameter Description.htm" txtName="Parameter Description" partNo="j038" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="41d07e0b"/>  
+      <file name="How to View Optical Module Parameters.htm" txtName="How to View Optical Module Parameters" partNo="j039" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="ce00cb94"/>  
+      <file name="Rules for Optical Module Interoperation.htm" txtName="Rules for Optical Module Interoperation" partNo="j03a" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="24f0e053"/> 
+    </file>  
+    <file name="Understanding Copper Modules.htm" txtName="Understanding Copper Modules" partNo="j03b" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="5610c778"/>  
+    <file name="GE eSFP Optical Modules.htm" txtName="GE eSFP Optical Modules" partNo="j03c" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="ac2ec864"> 
+      <file name="LE2MGSC40DE0.htm" txtName="LE2MGSC40DE0" partNo="j03d" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="b2bef8d1"/>  
+      <file name="LE2MGSC40ED0.htm" txtName="LE2MGSC40ED0" partNo="j03e" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="2bb7a96b"/>  
+      <file name="S-SFP-GE-LH40-SM1310.htm" txtName="S-SFP-GE-LH40-SM1310" partNo="j03f" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="6ff291fd"/>  
+      <file name="S-SFP-GE-LH40-SM1550.htm" txtName="S-SFP-GE-LH40-SM1550" partNo="j03g" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="18f5a16b"/>  
+      <file name="S-SFP-GE-LH80-SM1550.htm" txtName="S-SFP-GE-LH80-SM1550" partNo="j03h" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="884abcfa"/>  
+      <file name="SFP-GE-BXU1-SC.htm" txtName="SFP-GE-BXU1-SC" partNo="j03i" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="108ab738"/>  
+      <file name="SFP-GE-EX-C.htm" txtName="SFP-GE-EX-C" partNo="j03j" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="d69b9cab"/>  
+      <file name="SFP-GE-LX-SM1310 (02315200).htm" txtName="SFP-GE-LX-SM1310 (02315200)" partNo="j03k" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="49365370"/>  
+      <file name="SFP-GE-LX-SM1310-BIDI (02315285).htm" txtName="SFP-GE-LX-SM1310-BIDI (02315285)" partNo="j03l" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f1852df7"/>  
+      <file name="SFP-GE-LX-SM1490-BIDI (02315286).htm" txtName="SFP-GE-LX-SM1490-BIDI (02315286)" partNo="j03m" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="688c7c4d"/>  
+      <file name="SFP-GE-LX10-C.htm" txtName="SFP-GE-LX10-C" partNo="j03n" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="48ff0908"/>  
+      <file name="SFP-GE-SX-C (02312UUB).htm" txtName="SFP-GE-SX-C (02312UUB)" partNo="j03o" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="3ff8399e"/>  
+      <file name="SFP-GE-ZBXD1.htm" txtName="SFP-GE-ZBXD1" partNo="j03p" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="63707c27"/>  
+      <file name="SFP-GE-ZBXU1.htm" txtName="SFP-GE-ZBXU1" partNo="j03q" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="14774cb1"/>  
+      <file name="eSFP-GE-SX-MM850 (02315204).htm" txtName="eSFP-GE-SX-MM850 (02315204)" partNo="j03r" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="4e5b9769"/>  
+      <file name="eSFP-GE-ZX100-SM1550.htm" txtName="eSFP-GE-ZX100-SM1550" partNo="j03s" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="a055f645"/>  
+      <file name="OGSC10DD0.htm" txtName="OGSC10DD0" partNo="j03t" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="ab898e6a"/>  
+      <file name="OGSC40DD0.htm" txtName="OGSC40DD0" partNo="j03u" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="4587ef46"/>  
+      <file name="OGSM01880.htm" txtName="OGSM01880" partNo="j03v" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="3b3693fb"/>  
+      <file name="SFP-GE-BX-D1-I.htm" txtName="SFP-GE-BX-D1-I" partNo="j03w" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="2bbb96d4"/>  
+      <file name="SFP-GE-BX-U1-I.htm" txtName="SFP-GE-BX-U1-I" partNo="j03x" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="b5df0377"/>  
+      <file name="SFP-GE-BX40-D-I.htm" txtName="SFP-GE-BX40-D-I" partNo="j03y" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="cb26fb66"/>  
+      <file name="SFP-GE-BX40-U-I.htm" txtName="SFP-GE-BX40-U-I" partNo="j03z" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="bc21cbf0"/>  
+      <file name="eSFP-GE-SX-MM850 (02313URD).htm" txtName="eSFP-GE-SX-MM850 (02313URD)" partNo="j040" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="21666d09"/>  
+      <file name="SFP-GE-LX-SM1310 (02313URF).htm" txtName="SFP-GE-LX-SM1310 (02313URF)" partNo="j041" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="cf680c25"/>  
+      <file name="SFP-GE-SX-C (02314KKF).htm" txtName="SFP-GE-SX-C (02314KKF)" partNo="j042" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="df0713fe"/>  
+      <file name="SFP-GE-LX-SM1310-BIDI (02314KKJ).htm" txtName="SFP-GE-LX-SM1310-BIDI (02314KKJ)" partNo="j043" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="d6b15fd5"/>  
+      <file name="SFP-GE-LX-SM1490-BIDI (02314KKH).htm" txtName="SFP-GE-LX-SM1490-BIDI (02314KKH)" partNo="j044" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="38bf3ef9"/> 
+    </file>  
+    <file name="GE-CWDM eSFP Optical Modules.htm" txtName="GE-CWDM eSFP Optical Modules" partNo="j045" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="60f49c4b"> 
+      <file name="CWDM-SFPGE-1471.htm" txtName="CWDM-SFPGE-1471" partNo="j046" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f2c7d184"/>  
+      <file name="CWDM-SFPGE-1491.htm" txtName="CWDM-SFPGE-1491" partNo="j047" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="82ad250b"/>  
+      <file name="CWDM-SFPGE-1511.htm" txtName="CWDM-SFPGE-1511" partNo="j048" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="1ba474b1"/>  
+      <file name="CWDM-SFPGE-1531.htm" txtName="CWDM-SFPGE-1531" partNo="j049" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="1cc9b0a8"/>  
+      <file name="CWDM-SFPGE-1551.htm" txtName="CWDM-SFPGE-1551" partNo="j04a" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="98cf0054"/>  
+      <file name="CWDM-SFPGE-1571.htm" txtName="CWDM-SFPGE-1571" partNo="j04b" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="1c651ee"/>  
+      <file name="CWDM-SFPGE-1591.htm" txtName="CWDM-SFPGE-1591" partNo="j04c" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="e8a5f4db"/>  
+      <file name="CWDM-SFPGE-1611.htm" txtName="CWDM-SFPGE-1611" partNo="j04d" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f5aa159d"/> 
+    </file>  
+    <file name="GE-DWDM eSFP Optical Modules.htm" txtName="GE-DWDM eSFP Optical Modules" partNo="j04e" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="aea460e3"> 
+      <file name="DWDM-SFPGE-1560-61.htm" txtName="DWDM-SFPGE-1560-61" partNo="j04f" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="83625551"/> 
+    </file>  
+    <file name="GE SFP Copper Modules.htm" txtName="GE SFP Copper Modules" partNo="j04g" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="75c858b4"> 
+      <file name="SFP-1000BaseT (02314171).htm" txtName="SFP-1000BaseT (02314171)" partNo="j04h" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="cb8a2c1d"/>  
+      <file name="SFP-1000BaseT (02313URG).htm" txtName="SFP-1000BaseT (02313URG)" partNo="j04i" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="b86f3cb3"/>  
+      <file name="SFP-1000BaseT-G2.htm" txtName="SFP-1000BaseT-G2" partNo="j04j" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="b9405592"/> 
+    </file>  
+    <file name="10GE SFP+ Optical Modules.htm" txtName="10GE SFP+ Optical Modules" partNo="j04k" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="6d21121a"> 
+      <file name="OMXD30000 (02318169).htm" txtName="OMXD30000 (02318169)" partNo="j04l" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="969c2ad6"/>  
+      <file name="OSX010000 (02318170).htm" txtName="OSX010000 (02318170)" partNo="j04m" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f65ba333"/>  
+      <file name="OSX040N01 (02310CNF).htm" txtName="OSX040N01 (02310CNF)" partNo="j04n" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="23012154"/>  
+      <file name="OSXD22N00.htm" txtName="OSXD22N00" partNo="j04o" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="52a4a581"/>  
+      <file name="SFP-10G-ER-1310.htm" txtName="SFP-10G-ER-1310" partNo="j04p" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="4e60d097"/>  
+      <file name="SFP-10G-ER-C.htm" txtName="SFP-10G-ER-C" partNo="j04q" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="df2dd080"/>  
+      <file name="SFP-10G-ER-SM1270-BIDI.htm" txtName="SFP-10G-ER-SM1270-BIDI" partNo="j04r" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="8e791d8d"/>  
+      <file name="SFP-10G-ER-SM1330-BIDI.htm" txtName="SFP-10G-ER-SM1330-BIDI" partNo="j04s" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f97e2d1b"/>  
+      <file name="SFP-10G-LR-C (02312UUG).htm" txtName="SFP-10G-LR-C (02312UUG)" partNo="j04t" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="4f92cd11"/>  
+      <file name="SFP-10G-SR-C.htm" txtName="SFP-10G-SR-C" partNo="j04u" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="a19cac3d"/>  
+      <file name="SFP-10G-USR (02310MNW).htm" txtName="SFP-10G-USR (02310MNW)" partNo="j04v" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="432f2cac"/>  
+      <file name="SFP-10G-ZR.htm" txtName="SFP-10G-ZR" partNo="j04w" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="31fc0a16"/>  
+      <file name="OMXD30000 (02313URC).htm" txtName="OMXD30000 (02313URC)" partNo="j04x" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="bf02f8aa"/>  
+      <file name="OSX010000 (02313URK).htm" txtName="OSX010000 (02313URK)" partNo="j04y" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="b1d97098"/>  
+      <file name="SFP-10G-USR (02313URN).htm" txtName="SFP-10G-USR (02313URN)" partNo="j04z" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="c1b38417"/>  
+      <file name="SFP+10GE-LH10-SM1310.htm" txtName="SFP+10GE-LH10-SM1310" partNo="j050" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="bcabe17f"/>  
+      <file name="SFP-10G-BXD1.htm" txtName="SFP-10G-BXD1" partNo="j051" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="35f5cf88"/>  
+      <file name="SFP-10G-BXU1.htm" txtName="SFP-10G-BXU1" partNo="j052" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="99a0556d"/>  
+      <file name="SFP-10G-SR.htm" txtName="SFP-10G-SR" partNo="j053" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="905c31f6"/>  
+      <file name="SFP-10G-iLR.htm" txtName="SFP-10G-iLR" partNo="j054" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f7a5a529"/>  
+      <file name="SFP-10G-iLR-C.htm" txtName="SFP-10G-iLR-C" partNo="j055" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="3895fd87"/>  
+      <file name="SFP-10G-LR-I (02313ABG).htm" txtName="SFP-10G-LR-I (02313ABG)" partNo="j056" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="e982254e"/>  
+      <file name="OSX040N01 (02314KKG).htm" txtName="OSX040N01 (02314KKG)" partNo="j057" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="a8002368"/>  
+      <file name="SFP-10G-LR-C (02314KKE).htm" txtName="SFP-10G-LR-C (02314KKE)" partNo="j058" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="460e4244"/>  
+      <file name="SFP-10G-LR-I (02314LBW).htm" txtName="SFP-10G-LR-I (02314LBW)" partNo="j059" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="613a9ec0"/> 
+    </file>  
+    <file name="10GE SFP+ Copper Modules.htm" txtName="10GE SFP+ Copper Modules" partNo="j05a" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="d4127aa2"> 
+      <file name="SFP-10GBaseT-SR.htm" txtName="SFP-10GBaseT-SR" partNo="j05b" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f9ee1cc8"/> 
+    </file>  
+    <file name="10GE-CWDM SFP+ Optical Modules.htm" txtName="10GE-CWDM SFP+ Optical Modules" partNo="j05c" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="8b936b19"> 
+      <file name="SFP-10G-ZCW1471.htm" txtName="SFP-10G-ZCW1471" partNo="j05d" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="b74cdeae"/>  
+      <file name="SFP-10G-ZCW1491.htm" txtName="SFP-10G-ZCW1491" partNo="j05e" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="c04bee38"/>  
+      <file name="SFP-10G-ZCW1511.htm" txtName="SFP-10G-ZCW1511" partNo="j05f" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="5942bf82"/>  
+      <file name="SFP-10G-ZCW1531.htm" txtName="SFP-10G-ZCW1531" partNo="j05g" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="2e458f14"/>  
+      <file name="SFP-10G-ZCW1551.htm" txtName="SFP-10G-ZCW1551" partNo="j05h" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="b0211ab7"/>  
+      <file name="SFP-10G-ZCW1571.htm" txtName="SFP-10G-ZCW1571" partNo="j05i" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="c7262a21"/>  
+      <file name="SFP-10G-ZCW1591.htm" txtName="SFP-10G-ZCW1591" partNo="j05j" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="5e2f7b9b"/>  
+      <file name="SFP-10G-ZCW1611.htm" txtName="SFP-10G-ZCW1611" partNo="j05k" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="5458d28c"/> 
+    </file>  
+    <file name="10GE-DWDM SFP+ Optical Modules.htm" txtName="10GE-DWDM SFP+ Optical Modules" partNo="j05l" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="45c397b1"> 
+      <file name="SFP-10G-ZDWT.htm" txtName="SFP-10G-ZDWT" partNo="j05m" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="683fbd20"/>  
+      <file name="SFP-10G-ER-DWDM.htm" txtName="SFP-10G-ER-DWDM" partNo="j05n" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="e9de291d"/> 
+    </file>  
+    <file name="25GE SFP28 Optical Modules.htm" txtName="25GE SFP28 Optical Modules" partNo="j05o" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="cdb3a4c2"> 
+      <file name="SFP-25G-LR.htm" txtName="SFP-25G-LR" partNo="j05p" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="e4319344"/>  
+      <file name="SFP-25G-SR (02311KNR).htm" txtName="SFP-25G-SR (02311KNR)" partNo="j05q" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="8f74c3f4"/>  
+      <file name="SFP-25G-ESR.htm" txtName="SFP-25G-ESR" partNo="j05r" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="756fbafa"/>  
+      <file name="SFP-25G-LR-BXU1-I.htm" txtName="SFP-25G-LR-BXU1-I" partNo="j05s" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="66575ad9"/>  
+      <file name="SFP-25G-LR-BXD1-I.htm" txtName="SFP-25G-LR-BXD1-I" partNo="j05t" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="8f34ffec"/>  
+      <file name="SFP-25G-eLR-BXD1-I.htm" txtName="SFP-25G-eLR-BXD1-I" partNo="j05u" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="6c20f3ce"/>  
+      <file name="SFP-25G-eLR-BXU1-I.htm" txtName="SFP-25G-eLR-BXU1-I" partNo="j05v" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="1b27c358"/>  
+      <file name="SFP-25G-SR (02313URP).htm" txtName="SFP-25G-SR (02313URP)" partNo="j05w" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="3bbcb974"/> 
+    </file>  
+    <file name="40GE QSFP+ Optical Modules.htm" txtName="40GE QSFP+ Optical Modules" partNo="j05x" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f6df30c2"> 
+      <file name="QSFP-40G-ER4.htm" txtName="QSFP-40G-ER4" partNo="j05y" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="14b1a90b"/>  
+      <file name="QSFP-40G-LR4 (02310MHS).htm" txtName="QSFP-40G-LR4 (02310MHS)" partNo="j05z" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="12184f33"/>  
+      <file name="QSFP-40G-LX4.htm" txtName="QSFP-40G-LX4" partNo="j060" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="633c1c81"/>  
+      <file name="QSFP-40G-SDLC-PAM.htm" txtName="QSFP-40G-SDLC-PAM" partNo="j061" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="a855d15c"/>  
+      <file name="QSFP-40G-SR-BD.htm" txtName="QSFP-40G-SR-BD" partNo="j062" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="d7532ea6"/>  
+      <file name="QSFP-40G-SR4.htm" txtName="QSFP-40G-SR4" partNo="j063" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="fc162e1f"/>  
+      <file name="QSFP-40G-eSDLC-PAM.htm" txtName="QSFP-40G-eSDLC-PAM" partNo="j064" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="2ee81f89"/>  
+      <file name="QSFP-40G-eSM4.htm" txtName="QSFP-40G-eSM4" partNo="j065" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="34057e12"/>  
+      <file name="QSFP-40G-eSR4 (02310RMB).htm" txtName="QSFP-40G-eSR4 (02310RMB)" partNo="j066" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="12a57fc9"/>  
+      <file name="QSFP-40G-iSM4.htm" txtName="QSFP-40G-iSM4" partNo="j067" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="12352d1b"/>  
+      <file name="QSFP-40G-iSR4 (02310MHR).htm" txtName="QSFP-40G-iSR4 (02310MHR)" partNo="j068" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="651f7fa5"/>  
+      <file name="QSFP-40G-LR4-Lite (02311YVB).htm" txtName="QSFP-40G-LR4-Lite (02311YVB)" partNo="j069" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="f7a3cd7"/>  
+      <file name="QSFP-40G-LX4-MM.htm" txtName="QSFP-40G-LX4-MM" partNo="j06a" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="e75de6e5"/>  
+      <file name="QSFP-40G-LR4 (02313URY).htm" txtName="QSFP-40G-LR4 (02313URY)" partNo="j06b" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="426001d0"/>  
+      <file name="QSFP-40G-LR4-Lite (02313URS).htm" txtName="QSFP-40G-LR4-Lite (02313URS)" partNo="j06c" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="a2b5e8ce"/>  
+      <file name="QSFP-40G-eSR4 (02313URU).htm" txtName="QSFP-40G-eSR4 (02313URU)" partNo="j06d" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="4bd64dfb"/>  
+      <file name="QSFP-40G-iSR4 (02313URW).htm" txtName="QSFP-40G-iSR4 (02313URW)" partNo="j06e" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="a5d82cd7"/> 
+    </file>  
+    <file name="100GE QSFP28 Optical Modules.htm" txtName="100GE QSFP28 Optical Modules" partNo="j06f" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="3e5ff679"> 
+      <file name="QSFP-100G-CLR4.htm" txtName="QSFP-100G-CLR4" partNo="j06g" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="65f7de6a"/>  
+      <file name="QSFP-100G-CWDM4.htm" txtName="QSFP-100G-CWDM4" partNo="j06h" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="9ff8e309"/>  
+      <file name="QSFP-100G-ER4-Lite.htm" txtName="QSFP-100G-ER4-Lite" partNo="j06i" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="8c4e013d"/>  
+      <file name="QSFP-100G-eSR4.htm" txtName="QSFP-100G-eSR4" partNo="j06j" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="9d091a03"/>  
+      <file name="QSFP28-100G-10KM.htm" txtName="QSFP28-100G-10KM" partNo="j06k" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="71a1109f"/>  
+      <file name="QSFP28-100G-LR4 (02311KNU).htm" txtName="QSFP28-100G-LR4 (02311KNU)" partNo="j06l" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="11105657"/>  
+      <file name="QSFP28-100G-PSM4.htm" txtName="QSFP28-100G-PSM4" partNo="j06m" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="6f1b2b3"/>  
+      <file name="QSFP28-100G-SR4 (02311GBW).htm" txtName="QSFP28-100G-SR4 (02311GBW)" partNo="j06n" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="5ab18113"/>  
+      <file name="QSFP-100G-ER4 (02313HLU).htm" txtName="QSFP-100G-ER4 (02313HLU)" partNo="j06o" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="8b694207"/>  
+      <file name="QSFP-100G-FR1.htm" txtName="QSFP-100G-FR1" partNo="j06p" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="ce476504"/>  
+      <file name="QSFP28-100G-DR.htm" txtName="QSFP28-100G-DR" partNo="j06q" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="985d5109"/>  
+      <file name="QSFP-100G-BIDI-G2.htm" txtName="QSFP-100G-BIDI-G2" partNo="j06r" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="6f29cf78"/>  
+      <file name="QSFP-100G-CWDM4-Lite.htm" txtName="QSFP-100G-CWDM4-Lite" partNo="j06s" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="fb147b2b"/>  
+      <file name="QSFP-100G-ER4 (02314HES).htm" txtName="QSFP-100G-ER4 (02314HES)" partNo="j06t" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="2e1f64c2"/>  
+      <file name="QSFP28-100G-LR4 (02313URT).htm" txtName="QSFP28-100G-LR4 (02313URT)" partNo="j06u" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="3cd17d6d"/>  
+      <file name="QSFP28-100G-SR4 (02313URQ).htm" txtName="QSFP28-100G-SR4 (02313URQ)" partNo="j06v" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="4cbb89e2"/>  
+      <file name="QSFP-100G-LR1 (02314LBY).htm" txtName="QSFP-100G-LR1 (02314LBY)" partNo="j06w" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="8682b3c7"/>  
+      <file name="QSFP-100G-SWDM4 (02314LCB).htm" txtName="QSFP-100G-SWDM4 (02314LCB)" partNo="j06x" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="15fc4b6a"/>  
+      <file name="QSFP-100G-ZR4.htm" txtName="QSFP-100G-ZR4" partNo="j06y" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="1f433bf7"/>  
+      <file name="QSFP28-100G-ER-BXD1.htm" txtName="QSFP28-100G-ER-BXD1" partNo="j06z" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="583bce58"/>  
+      <file name="QSFP28-100G-ER-BXU1.htm" txtName="QSFP28-100G-ER-BXU1" partNo="j070" chapterNo="k00a" originalNo="k00a" originalName="01-10 Pluggable Modules for Interfaces.pdf" topicId="2f3cfece"/> 
+    </file> 
+  </file> 
+</zip>

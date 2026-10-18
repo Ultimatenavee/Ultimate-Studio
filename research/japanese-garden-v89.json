@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-15",
+  "scope": "A contemporary Japanese-inspired stroll garden for the virtual campus, not a reconstruction of a historic garden.",
+  "sources": [
+    {"url":"https://japanesegarden.org/explained-by-tono/","publisher":"Portland Japanese Garden","usedFor":"Distinguishing pond, sand-and-stone and tea gardens; stone groupings, stepping stones, water basins and restrained planting."},
+    {"url":"https://www.rhs.org.uk/garden-design/create-a-japanese-garden","publisher":"Royal Horticultural Society","usedFor":"Asymmetrical balance, naturalistic rocks and moss, composed paths, restrained materials and raked gravel."},
+    {"url":"https://www.japan.travel/en/see-and-do/japanese-garden/","publisher":"Japan National Tourism Organization","usedFor":"Changing views along a stroll and the relationship between water, space and garden scenery."},
+    {"url":"https://www.niwa.org/exhibits-list/scenery","publisher":"Japanese Friendship Garden and Museum","usedFor":"Framing distant background planting as part of a layered garden view."}
+  ],
+  "implementation": ["Moss and partly buried stones", "Separate dry gravel viewing area", "Maple leaves and pine needles with distinct geometry", "Stone lanterns", "Bamboo screen and basin", "Open timber viewing pavilion", "Unobstructed existing exits and promenades", "Decorative koi and wind controlled by the existing Animation and quality settings"],
+  "limits": "Planting and carpentry are visual interpretations; no claim of botanical, structural or historical reconstruction accuracy."
+}

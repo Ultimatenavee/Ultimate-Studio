@@ -1,0 +1,22 @@
+/* Keep device browsing above occasional settings. */
+.catalog{position:relative}
+.catalog #typeFilters{display:flex;flex-wrap:nowrap;overflow-x:auto;flex-shrink:0;margin:6px 0;gap:4px;scrollbar-width:thin}
+.catalog #typeFilters button{flex:0 0 auto;white-space:nowrap;padding:5px 8px;font-size:12px}
+.library-options{position:relative;flex:0 0 auto;margin:0;z-index:35}
+.library-options>summary{display:flex;justify-content:space-between;align-items:center;list-style:none;cursor:pointer;padding:7px 9px;border:1px solid var(--line);border-radius:10px;font-size:12px;background:var(--glass-control);color:var(--ink)}
+.library-options>summary::-webkit-details-marker{display:none}
+.library-options[open]>summary{border-color:var(--accent)}
+.library-options-panel{position:absolute;top:calc(100% + 5px);left:0;right:0;max-height:50dvh;overflow:auto;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:0 12px 36px #10233c30;backdrop-filter:blur(24px)}
+.library-options-panel .field{margin:0 0 10px;font-size:12px}
+.library-options-panel select{width:100%;min-width:0}
+.library-options-panel #filters{display:flex;flex-wrap:wrap;margin:6px 0 10px;gap:4px}
+.library-options-panel #libraryTabs{display:flex;flex-wrap:wrap}
+.catalog .catalog-caption{padding:6px 2px;font-size:11px}
+.catalog .library-footer{display:none}
+@media(min-width:901px){.catalog .section-title h1{font-size:16px;margin:0}.catalog .section-title .eyebrow{display:none}.catalog .section-title{margin-bottom:6px}.catalog #search{padding:7px 10px}}
+body.bayface-mode .library-options-panel .field:has(#libraryIconStyle){display:none}
+body.audience-external .library-options-panel .field:has(#libraryIconStyle){display:none}
+body.compact-workspace .catalog #typeFilters button,body.compact-workspace .library-options>summary{min-height:44px}
+body.compact-workspace .library-options-panel #filters{display:flex}
+body.compact-workspace .library-options-panel button{min-height:44px}
+body.compact-workspace .library-options-panel{max-height:45dvh}

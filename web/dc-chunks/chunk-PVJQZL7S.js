@@ -1,0 +1,1 @@
+var r=new Set(["cisco-c1121-8pltep","cisco-1941","cisco-2911-k9","cisco-3925e","cisco-3945e","cisco-isr-4331","cisco-isr-4431"]);function e(c){return c.interfaceSide||(r.has(c.id)?"rear":"front")}function t(c){return e(c)==="rear"?Math.PI:0}function n(c){let i=e(c);return c.interfaceImage?{...c,images:{...c.images,[i]:c.interfaceImage}}:c}export{e as a,t as b,n as c};

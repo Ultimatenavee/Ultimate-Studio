@@ -1,0 +1,6184 @@
+[
+  {
+    "id": "huawei-s5720-12tp-li-ac",
+    "name": "Huawei S5720-12TP-LI-AC",
+    "model": "S5720-12TP-LI-AC",
+    "brand": "Huawei",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "ge1",
+        "name": "GigabitEthernet0/0/1",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge2",
+        "name": "GigabitEthernet0/0/2",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge3",
+        "name": "GigabitEthernet0/0/3",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge4",
+        "name": "GigabitEthernet0/0/4",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge5",
+        "name": "GigabitEthernet0/0/5",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge6",
+        "name": "GigabitEthernet0/0/6",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge7",
+        "name": "GigabitEthernet0/0/7",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge8",
+        "name": "GigabitEthernet0/0/8",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge9c",
+        "name": "GigabitEthernet0/0/9",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo9",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge9f",
+        "name": "GigabitEthernet0/0/9",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": "combo9",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge10c",
+        "name": "GigabitEthernet0/0/10",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo10",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge10f",
+        "name": "GigabitEthernet0/0/10",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": "combo10",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge11",
+        "name": "GigabitEthernet0/0/11",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge12",
+        "name": "GigabitEthernet0/0/12",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "RJ45",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/huawei-s5720-12tp-li-ac-reference.png"
+    },
+    "photos": {
+      "front": "assets/huawei-s5720-12tp-li-ac-reference.png"
+    },
+    "powerSlots": 1,
+    "powerModes": [
+      "AC"
+    ],
+    "defaultInstalledPowerSupplies": 1,
+    "removablePSU": false,
+    "allowsMixedPower": false,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Memory (RAM)": "512 MB",
+      "Flash": "512 MB in total. To view the available flash memory size, run the display version command.",
+      "Mean time between failures (MTBF)": "23.8 years",
+      "Availability": "> 0.99999",
+      "Service port surge protection": "Common mode: ±7 kV",
+      "Power supply surge protection": "±6 kV in differential mode, ±6 kV in common mode",
+      "Dimensions (H x W x D)": "Basic dimensions (excluding the parts protruding from the body): 43.6 mm x 250.0 mm x 180.0 mm (1.72 in. x 9.8 in. x 7.1 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the parts protruding from the rear panel): 43.6 mm x 250.0 mm x 186.7 mm (1.72 in. x 9.8 in. x 7.35 in.)",
+      "Weight (with packaging)": "1.8 kg (3.97 lb)",
+      "Stack ports": "Eight 10/100/1000BASE-T ports and two 1000BASE-X ports",
+      "RTC": "Not supported",
+      "RPS": "Not supported",
+      "PoE": "Not supported",
+      "Rated voltage range": "100 V AC to 240 V AC, 50/60 Hz",
+      "Maximum voltage range": "90 V AC to 264 V AC, 47 Hz to 63 Hz",
+      "Maximum power consumption (100% throughput)": "12.85 W",
+      "Typical power consumption (30% of traffic load)Tested according to ATIS standardEEE enabledNo PoE power consumption": "10.39 W",
+      "Operating temperature": "0°C to 45°C (32°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.). The operating temperature of the switch is 0°C to 40°C (32°F to 104°F) when it uses GE SFP optical modules with 40 km transmission distance.",
+      "Storage temperature": "-40°C to +70°C (-40°F to +158°F)",
+      "Noise under normal temperature (27°C, sound power)": "Noise-free (no fans)",
+      "Relative humidity": "5% to 95%, noncondensing",
+      "Operating altitude": "0-5000 m (0-16404 ft.)",
+      "Certification": "EMC certificationSafety certificationManufacturing certification",
+      "Part number": "98010567",
+      "Fixed network ports": "8 RJ45 + 2 RJ45/SFP Combo + 2 GE SFP",
+      "Power": "Fixed internal AC",
+      "Cooling": "Fanless",
+      "Network interfaces": 12,
+      "Physical network sockets": 14
+    },
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5720-12TP-LI-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/b4dabfc4/s5720-12tp-li-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j016"
+      }
+    ],
+    "summary": "8 RJ45 + 2 RJ45/SFP Combo + 2 GE SFP",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "aliases": [
+      "S5720-12TP-LI"
+    ],
+    "confirmedSummary": "8 RJ45 + 2 RJ45/SFP Combo + 2 GE SFP",
+    "displayImage": "assets/huawei-s5720-12tp-li-ac-illustration-v07.webp",
+    "thumbnail": "assets/huawei-s5720-12tp-li-ac-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "displayFrame": [
+      29,
+      190,
+      2112,
+      395
+    ],
+    "thumbnailDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      29,
+      190,
+      2112,
+      395
+    ]
+  },
+  {
+    "id": "huawei-s5720-36c-ei-28s-ac",
+    "name": "Huawei S5720-36C-EI-28S-AC",
+    "model": "S5720-36C-EI-28S-AC",
+    "brand": "Huawei",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "ge1",
+        "name": "GigabitEthernet0/0/1",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge2",
+        "name": "GigabitEthernet0/0/2",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge3",
+        "name": "GigabitEthernet0/0/3",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge4",
+        "name": "GigabitEthernet0/0/4",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge5",
+        "name": "GigabitEthernet0/0/5",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge6",
+        "name": "GigabitEthernet0/0/6",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge7",
+        "name": "GigabitEthernet0/0/7",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge8",
+        "name": "GigabitEthernet0/0/8",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge9",
+        "name": "GigabitEthernet0/0/9",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge10",
+        "name": "GigabitEthernet0/0/10",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge11",
+        "name": "GigabitEthernet0/0/11",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge12",
+        "name": "GigabitEthernet0/0/12",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge13",
+        "name": "GigabitEthernet0/0/13",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge14",
+        "name": "GigabitEthernet0/0/14",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge15",
+        "name": "GigabitEthernet0/0/15",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge16",
+        "name": "GigabitEthernet0/0/16",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge17",
+        "name": "GigabitEthernet0/0/17",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge18",
+        "name": "GigabitEthernet0/0/18",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge19",
+        "name": "GigabitEthernet0/0/19",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge20",
+        "name": "GigabitEthernet0/0/20",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge21",
+        "name": "GigabitEthernet0/0/21",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge22",
+        "name": "GigabitEthernet0/0/22",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge23",
+        "name": "GigabitEthernet0/0/23",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge24",
+        "name": "GigabitEthernet0/0/24",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge25c",
+        "name": "GigabitEthernet0/0/25",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo25",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge25f",
+        "name": "GigabitEthernet0/0/25",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": "combo25",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge26c",
+        "name": "GigabitEthernet0/0/26",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo26",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge26f",
+        "name": "GigabitEthernet0/0/26",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": "combo26",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge27c",
+        "name": "GigabitEthernet0/0/27",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo27",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge27f",
+        "name": "GigabitEthernet0/0/27",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": "combo27",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge28c",
+        "name": "GigabitEthernet0/0/28",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo28",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge28f",
+        "name": "GigabitEthernet0/0/28",
+        "connector": "SFP",
+        "speeds": [
+          100,
+          1000
+        ],
+        "group": "combo28",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x1",
+        "name": "XGigabitEthernet0/0/1",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x2",
+        "name": "XGigabitEthernet0/0/2",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x3",
+        "name": "XGigabitEthernet0/0/3",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x4",
+        "name": "XGigabitEthernet0/0/4",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "RJ45",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "management",
+        "name": "ETH management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "usb",
+        "name": "USB",
+        "connector": "USB",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "usb"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/huawei-s5720-36c-ei-28s-ac-reference.png"
+    },
+    "photos": {
+      "front": "assets/huawei-s5720-36c-ei-28s-ac-reference.png"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 1,
+    "removablePSU": true,
+    "allowsMixedPower": true,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Memory (RAM)": "2 GB",
+      "Flash": "512 MB in total. To view the available flash memory size, run the display version command.",
+      "Mean time between failures (MTBF)": "85.45 years when no card is configured; 78.2 years when a 2-port 10GE SFP+ interface card is configured; 75.87 years when a 2-port 10GE RJ45 interface card is configured; 76.05 years when a stack card is configured",
+      "Mean time to repair (MTTR)": "2 hours",
+      "Availability": "> 0.99999",
+      "Service port surge protection": "Service ports on front panel: ±6 kV in common modePorts on the 2-port 10GE RJ45 rear interface card: ±2 kV in common mode",
+      "Power supply surge protection": "Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±1 kV in differential mode, ±2 kV in common mode",
+      "Dimensions (H x W x D)": "Basic dimensions (excluding the parts protruding from the body): 44.4 mm x 442.0 mm x 424.7 mm (1.75 in. x 17.4 in. x 16.72 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 44.4 mm x 442.0 mm x 451.8 mm (1.75 in. x 17.4 in. x 17.79 in.)",
+      "Weight (with packaging)": "9.9 kg (21.83 lb)",
+      "Stack ports": "Ports on the 2-port 10GE SFP+ rear interface cardPorts on the 2-port 10GE RJ45 rear interface cardPorts on the 2-port QSFP+ rear stack card",
+      "RTC": "Supported",
+      "RPS": "Not supported",
+      "PoE": "Not supported",
+      "Rated voltage range": "100 V AC to 240 V AC, 50/60 Hz -48 V DC to -60 V DC",
+      "Maximum voltage range": "90 V AC to 264 V AC, 47 Hz to 63 Hz -36 V DC to -72 V DC",
+      "Maximum power consumption (100% throughput, full speed of fans)": "83.9 W",
+      "Typical power consumption (30% of traffic load)Tested according to ATIS standardEEE enabledNo PoE power consumption": "47.86 W (without card)55.35 W (with 2*10GE optical card)60.25 W (with 2*QSFP+ stack card)63.5 W (with 2*10GE electrical card)",
+      "Operating temperature": "0°C to 45°C (32°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).",
+      "Short-term operating temperature": "-5°C to +50°C (23°F to 122°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.). The equipment can operate beyond the normal operating temperature range for a short-term period, but the following conditions must be met:The equipment operates at a temperature of over 45°C (113°F) consecutively for at most 96 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for a total of no more than 360 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for no more in 15 times in one year. The equipment may be damaged or experience unexpected exceptions if any of the preceding limits is exceeded. The equipment cannot start when the temperature is lower than 0°C (32°F). The maximum distance of optical modules used in these conditions cannot exceed 10 km.",
+      "Storage temperature": "-40°C to +70°C (-40°F to +158°F)",
+      "Noise under normal temperature (27°C, sound power)": "< 51.2 dB(A)",
+      "Relative humidity": "5% to 95%, noncondensing",
+      "Operating altitude": "AC power modules configured: 0-5000 m (0-16404 ft.)DC power modules configured: 0-2000 m (0-6562 ft.)",
+      "Certification": "EMC certificationSafety certificationManufacturing certification",
+      "Part number": "02359503",
+      "Fixed network ports": "28 GE SFP (4 Combo RJ45/SFP) + 4 10GE SFP+",
+      "Expansion": "1 rear slot: optional 2-port 10GE SFP+, 2-port 10GE RJ45 or dedicated QSFP+ stack card; not installed in this profile",
+      "Power": "2 removable 150W AC/DC PSU slots; 1+1 redundancy",
+      "Cooling": "FAN-028A-B removable fan",
+      "Network interfaces": 32,
+      "Physical network sockets": 36
+    },
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5720-36C-EI-28S-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/3b47a44f/s5720-36c-ei-28s-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d"
+      }
+    ],
+    "summary": "28 GE SFP (4 Combo RJ45/SFP) + 4 10GE SFP+",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "aliases": [
+      "S5720-36C-EI-28S"
+    ],
+    "confirmedSummary": "28 GE SFP (4 Combo RJ45/SFP) + 4 10GE SFP+",
+    "displayImage": "assets/huawei-s5720-36c-ei-28s-ac-illustration-v07.webp",
+    "thumbnail": "assets/huawei-s5720-36c-ei-28s-ac-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "displayFrame": [
+      23,
+      174,
+      2124,
+      350
+    ],
+    "thumbnailDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      23,
+      174,
+      2124,
+      350
+    ]
+  },
+  {
+    "id": "huawei-s5720-52x-si-ac",
+    "name": "Huawei S5720-52X-SI-AC",
+    "model": "S5720-52X-SI-AC",
+    "brand": "Huawei",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "ge1",
+        "name": "GigabitEthernet0/0/1",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge2",
+        "name": "GigabitEthernet0/0/2",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge3",
+        "name": "GigabitEthernet0/0/3",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge4",
+        "name": "GigabitEthernet0/0/4",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge5",
+        "name": "GigabitEthernet0/0/5",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge6",
+        "name": "GigabitEthernet0/0/6",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge7",
+        "name": "GigabitEthernet0/0/7",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge8",
+        "name": "GigabitEthernet0/0/8",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge9",
+        "name": "GigabitEthernet0/0/9",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge10",
+        "name": "GigabitEthernet0/0/10",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge11",
+        "name": "GigabitEthernet0/0/11",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge12",
+        "name": "GigabitEthernet0/0/12",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge13",
+        "name": "GigabitEthernet0/0/13",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge14",
+        "name": "GigabitEthernet0/0/14",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge15",
+        "name": "GigabitEthernet0/0/15",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge16",
+        "name": "GigabitEthernet0/0/16",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge17",
+        "name": "GigabitEthernet0/0/17",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge18",
+        "name": "GigabitEthernet0/0/18",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge19",
+        "name": "GigabitEthernet0/0/19",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge20",
+        "name": "GigabitEthernet0/0/20",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge21",
+        "name": "GigabitEthernet0/0/21",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge22",
+        "name": "GigabitEthernet0/0/22",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge23",
+        "name": "GigabitEthernet0/0/23",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge24",
+        "name": "GigabitEthernet0/0/24",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge25",
+        "name": "GigabitEthernet0/0/25",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge26",
+        "name": "GigabitEthernet0/0/26",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge27",
+        "name": "GigabitEthernet0/0/27",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge28",
+        "name": "GigabitEthernet0/0/28",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge29",
+        "name": "GigabitEthernet0/0/29",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge30",
+        "name": "GigabitEthernet0/0/30",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge31",
+        "name": "GigabitEthernet0/0/31",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge32",
+        "name": "GigabitEthernet0/0/32",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge33",
+        "name": "GigabitEthernet0/0/33",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge34",
+        "name": "GigabitEthernet0/0/34",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge35",
+        "name": "GigabitEthernet0/0/35",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge36",
+        "name": "GigabitEthernet0/0/36",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge37",
+        "name": "GigabitEthernet0/0/37",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge38",
+        "name": "GigabitEthernet0/0/38",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge39",
+        "name": "GigabitEthernet0/0/39",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge40",
+        "name": "GigabitEthernet0/0/40",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge41",
+        "name": "GigabitEthernet0/0/41",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge42",
+        "name": "GigabitEthernet0/0/42",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge43",
+        "name": "GigabitEthernet0/0/43",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge44",
+        "name": "GigabitEthernet0/0/44",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge45",
+        "name": "GigabitEthernet0/0/45",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge46",
+        "name": "GigabitEthernet0/0/46",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge47",
+        "name": "GigabitEthernet0/0/47",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge48",
+        "name": "GigabitEthernet0/0/48",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x1",
+        "name": "XGigabitEthernet0/0/1",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x2",
+        "name": "XGigabitEthernet0/0/2",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x3",
+        "name": "XGigabitEthernet0/0/3",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x4",
+        "name": "XGigabitEthernet0/0/4",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "RJ45",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "management",
+        "name": "ETH management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "usb",
+        "name": "USB",
+        "connector": "USB",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "usb"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/huawei-s5720-52x-si-ac-reference.png"
+    },
+    "photos": {
+      "front": "assets/huawei-s5720-52x-si-ac-reference.png"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 1,
+    "removablePSU": true,
+    "allowsMixedPower": true,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Memory (RAM)": "512 MB",
+      "Flash": "512 MB in total. To view the available flash memory size, run the display version command.",
+      "Mean time between failures (MTBF)": "73.23 years",
+      "Mean time to repair (MTTR)": "2 hours",
+      "Availability": "> 0.99999",
+      "Service port surge protection": "Common mode: ±6 kV",
+      "Power supply surge protection": "Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±1 kV in differential mode, ±2 kV in common mode",
+      "Dimensions (H x W x D)": "Basic dimensions (excluding the parts protruding from the body): 44.4 mm x 442.0 mm x 424.7 mm (1.75 in. x 17.4 in. x 16.72 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 44.4 mm x 442.0 mm x 451.8 mm (1.75 in. x 17.4 in. x 17.79 in.)",
+      "Weight (with packaging)": "9.5 kg (20.95 lb)",
+      "Stack ports": "GE electrical ports and 10GE SFP+ optical ports on the front panel",
+      "RTC": "Supported",
+      "RPS": "Not supported",
+      "PoE": "Not supported",
+      "Rated voltage range": "100 V AC to 240 V AC, 50/60 Hz -48 V DC to -60 V DC",
+      "Maximum voltage range": "90 V AC to 264 V AC, 47 Hz to 63 Hz -36 V DC to -72 V DC",
+      "Maximum power consumption (100% throughput, full speed of fans)": "56.8 W",
+      "Typical power consumption (30% of traffic load)Tested according to ATIS standardEEE enabledNo PoE power consumption": "33.8 W",
+      "Operating temperature": "0°C to 45°C (32°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).",
+      "Short-term operating temperature": "-5°C to +50°C (23°F to 122°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.). The equipment can operate beyond the normal operating temperature range for a short-term period, but the following conditions must be met:The equipment operates at a temperature of over 45°C (113°F) consecutively for at most 96 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for a total of no more than 360 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for no more in 15 times in one year. The equipment may be damaged or experience unexpected exceptions if any of the preceding limits is exceeded. The equipment cannot start when the temperature is lower than 0°C (32°F). The maximum distance of optical modules used in these conditions cannot exceed 10 km.",
+      "Storage temperature": "-40°C to +70°C (-40°F to +158°F)",
+      "Noise under normal temperature (27°C, sound power)": "< 52 dB(A)",
+      "Relative humidity": "5% to 95%, noncondensing",
+      "Operating altitude": "AC power modules configured: 0-5000 m (0-16404 ft.)DC power modules configured: 0-2000 m (0-6562 ft.)",
+      "Certification": "EMC certificationSafety certificationManufacturing certification",
+      "Part number": "02350DLV",
+      "Fixed network ports": "48 RJ45 + 4 10GE SFP+",
+      "Power": "2 removable AC/DC PSU slots; 1+1 redundancy",
+      "Network interfaces": 52,
+      "Physical network sockets": 52
+    },
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5720-52X-SI-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ea3f2e19/s5720-52x-si-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j02f"
+      }
+    ],
+    "summary": "48 RJ45 + 4 10GE SFP+",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "aliases": [
+      "S5720-52X-SI"
+    ],
+    "confirmedSummary": "48 RJ45 + 4 10GE SFP+",
+    "displayImage": "assets/huawei-s5720-52x-si-ac-illustration-v07.webp",
+    "thumbnail": "assets/huawei-s5720-52x-si-ac-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2169,
+      "height": 725
+    },
+    "displayFrame": [
+      20,
+      197,
+      2128,
+      314
+    ],
+    "thumbnailDimensions": {
+      "width": 2169,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      20,
+      197,
+      2128,
+      314
+    ]
+  },
+  {
+    "id": "huawei-s5732-h24s6q",
+    "name": "Huawei S5732-H24S6Q",
+    "model": "S5732-H24S6Q",
+    "brand": "Huawei",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "ge1",
+        "name": "GigabitEthernet0/0/1",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge2",
+        "name": "GigabitEthernet0/0/2",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge3",
+        "name": "GigabitEthernet0/0/3",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge4",
+        "name": "GigabitEthernet0/0/4",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge5",
+        "name": "GigabitEthernet0/0/5",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge6",
+        "name": "GigabitEthernet0/0/6",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge7",
+        "name": "GigabitEthernet0/0/7",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge8",
+        "name": "GigabitEthernet0/0/8",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge9",
+        "name": "GigabitEthernet0/0/9",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge10",
+        "name": "GigabitEthernet0/0/10",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge11",
+        "name": "GigabitEthernet0/0/11",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge12",
+        "name": "GigabitEthernet0/0/12",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge13",
+        "name": "GigabitEthernet0/0/13",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge14",
+        "name": "GigabitEthernet0/0/14",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge15",
+        "name": "GigabitEthernet0/0/15",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge16",
+        "name": "GigabitEthernet0/0/16",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge17",
+        "name": "GigabitEthernet0/0/17",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge18",
+        "name": "GigabitEthernet0/0/18",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge19",
+        "name": "GigabitEthernet0/0/19",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge20",
+        "name": "GigabitEthernet0/0/20",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x1",
+        "name": "XGigabitEthernet0/0/1",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x2",
+        "name": "XGigabitEthernet0/0/2",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x3",
+        "name": "XGigabitEthernet0/0/3",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x4",
+        "name": "XGigabitEthernet0/0/4",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q1",
+        "name": "40GE0/0/1",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q2",
+        "name": "40GE0/0/2",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q3",
+        "name": "40GE0/0/3",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q4",
+        "name": "40GE0/0/4",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q5",
+        "name": "40GE0/0/5",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q6",
+        "name": "40GE0/0/6",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "RJ45",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "management",
+        "name": "ETH management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "usb",
+        "name": "USB",
+        "connector": "USB",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "usb"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/huawei-s5732-h24s6q-reference.png"
+    },
+    "photos": {
+      "front": "assets/huawei-s5732-h24s6q-reference.png"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 1,
+    "removablePSU": true,
+    "allowsMixedPower": true,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Memory (RAM)": "4 GB",
+      "Flash": "2 GB in total. To view the available flash memory size, run the display version command.",
+      "Mean time between failures (MTBF)": "62.27 years",
+      "Availability": "> 0.99999",
+      "Service port surge protection": "N/A",
+      "Power supply surge protection": "Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±2 kV in differential mode, ±4 kV in common mode",
+      "Dimensions (H x W x D)": "Basic dimensions (excluding the parts protruding from the body): 43.6 mm x 442.0 mm x 420.0 mm (1.72 in. x 17.4 in. x 16.5 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 43.6 mm x 442.0 mm x 446.0 mm (1.72 in. x 17.4 in. x 17.6 in.)",
+      "Weight (with packaging)": "8.9 kg (19.62 lb)",
+      "Stack ports": "Any QSFP+ ports",
+      "RTC": "Supported",
+      "RPS": "Not supported",
+      "PoE": "Not supported",
+      "Rated voltage range": "AC input: 100 V AC to 240 V AC, 50/60 HzHigh-Voltage DC input: 240 V DCDC input: -48 V DC to -60 V DC",
+      "Maximum voltage range": "AC input: 90 V AC to 290 V AC, 45 Hz to 65 HzHigh-Voltage DC input: 190 V DC to 290 V DCDC input: -38.4 V DC to -72 V DC",
+      "Maximum power consumption (100% throughput, full speed of fans)": "229 W",
+      "Typical power consumption (30% of traffic load, tested according to ATIS standard)": "126 W",
+      "Operating temperature": "-5°C to +45°C (23°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.). The switch cannot be started when the ambient temperature is lower than 0°C (32°F). The operating temperature of the switch is -5°C to 40°C (23°F to 104°F) when it uses QSFP-100G-ER4 optical module.",
+      "Storage temperature": "-40°C to +70°C (-40°F to +158°F)",
+      "Noise under normal temperature (27°C, sound power)": "< 65 dB(A)",
+      "Relative humidity": "5% to 95%, noncondensing",
+      "Operating altitude": "0-5000 m (0-16404 ft.)",
+      "Certification": "EMC certificationSafety certificationManufacturing certification",
+      "Part number": "02353AJS 02353AJS-001 02353AJS-003 02353AJS-004 02353AJS-005",
+      "Fixed network ports": "20 GE SFP + 4 10GE SFP+ + 6 40GE QSFP+",
+      "Switching capacity": "600 Gbps device / 2.4 Tbps system",
+      "Forwarding performance": "450 Mpps",
+      "Power": "2 removable AC/DC PSU slots; 1+1 redundancy",
+      "Cooling": "4 FAN-031A-B modules",
+      "100GE option": "Requires V200R020C00 or later and port-speed license; base profile uses 40GE, no breakout",
+      "Network interfaces": 30,
+      "Physical network sockets": 30
+    },
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5732-H24S6Q",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/9b370196/s5732-h24s6q"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j08i"
+      },
+      {
+        "title": "Huawei S5732-H product specifications",
+        "url": "https://e.huawei.com/th/products/switches/campus-switches/s5732-h"
+      }
+    ],
+    "summary": "20 GE SFP + 4 10GE SFP+ + 6 40GE QSFP+",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "aliases": [
+      "S5732-H24S6Q",
+      "S5732-H"
+    ],
+    "confirmedSummary": "20 GE SFP + 4 10GE SFP+ + 6 40GE QSFP+",
+    "displayImage": "assets/huawei-s5732-h24s6q-illustration-v07.webp",
+    "thumbnail": "assets/huawei-s5732-h24s6q-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2169,
+      "height": 725
+    },
+    "displayFrame": [
+      25,
+      188,
+      2117,
+      322
+    ],
+    "thumbnailDimensions": {
+      "width": 2169,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      25,
+      188,
+      2117,
+      322
+    ]
+  },
+  {
+    "id": "huawei-s6720-30c-ei-24s-ac",
+    "name": "Huawei S6720-30C-EI-24S-AC",
+    "model": "S6720-30C-EI-24S-AC",
+    "brand": "Huawei",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "x1",
+        "name": "XGigabitEthernet0/0/1",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x2",
+        "name": "XGigabitEthernet0/0/2",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x3",
+        "name": "XGigabitEthernet0/0/3",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x4",
+        "name": "XGigabitEthernet0/0/4",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x5",
+        "name": "XGigabitEthernet0/0/5",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x6",
+        "name": "XGigabitEthernet0/0/6",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x7",
+        "name": "XGigabitEthernet0/0/7",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x8",
+        "name": "XGigabitEthernet0/0/8",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x9",
+        "name": "XGigabitEthernet0/0/9",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x10",
+        "name": "XGigabitEthernet0/0/10",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x11",
+        "name": "XGigabitEthernet0/0/11",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x12",
+        "name": "XGigabitEthernet0/0/12",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x13",
+        "name": "XGigabitEthernet0/0/13",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x14",
+        "name": "XGigabitEthernet0/0/14",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x15",
+        "name": "XGigabitEthernet0/0/15",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x16",
+        "name": "XGigabitEthernet0/0/16",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x17",
+        "name": "XGigabitEthernet0/0/17",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x18",
+        "name": "XGigabitEthernet0/0/18",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x19",
+        "name": "XGigabitEthernet0/0/19",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x20",
+        "name": "XGigabitEthernet0/0/20",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x21",
+        "name": "XGigabitEthernet0/0/21",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x22",
+        "name": "XGigabitEthernet0/0/22",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x23",
+        "name": "XGigabitEthernet0/0/23",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x24",
+        "name": "XGigabitEthernet0/0/24",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q1",
+        "name": "40GE0/0/1",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q2",
+        "name": "40GE0/0/2",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "RJ45",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "management",
+        "name": "ETH management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "usb",
+        "name": "USB",
+        "connector": "USB",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "usb"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/huawei-s6720-30c-ei-24s-ac-reference.png"
+    },
+    "photos": {
+      "front": "assets/huawei-s6720-30c-ei-24s-ac-reference.png"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 1,
+    "removablePSU": true,
+    "allowsMixedPower": true,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Memory (RAM)": "2 GB",
+      "Flash": "512 MB in total. To view the available flash memory size, run the display version command.",
+      "Mean time between failures (MTBF)": "80.60 years (without card)",
+      "Availability": "> 0.99999",
+      "Service port surge protection": "NA",
+      "Power supply surge protection": "Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±1 kV in differential mode, ±2 kV in common mode",
+      "Dimensions (H x W x D)": "Basic dimensions (excluding the parts protruding from the body): 44.4 mm x 442.0 mm x 424.7 mm (1.75 in. x 17.4 in. x 16.72 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 44.4 mm x 442.0 mm x 451.8 mm (1.75 in. x 17.4 in. x 17.79 in.)",
+      "Weight (with packaging)": "9.8 kg (21.61 lb)",
+      "Stack ports": "Any 10GE SFP+ ports (a maximum of 16 physical ports)Any 40GE QSFP+ ports (a maximum of 6 physical ports)",
+      "RTC": "Supported",
+      "RPS": "Not supported",
+      "PoE": "Not supported",
+      "Rated voltage range": "100 V AC to 240 V AC, 50/60 Hz -48 V DC to -60 V DC",
+      "Maximum voltage range": "90 V AC to 264 V AC, 47 Hz to 63 Hz -38.4 V DC to -72 V DC",
+      "Maximum power consumption (100% throughput, full speed of fans)": "233.7 W",
+      "Typical power consumption (30% of traffic load, tested according to ATIS standard)": "147 W (without card)",
+      "Operating temperature": "0°C to 45°C (32°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).",
+      "Storage temperature": "-40°C to +70°C (-40°F to +158°F)",
+      "Noise under normal temperature (27°C, sound power)": "< 72.1 dB(A)",
+      "Relative humidity": "5% to 95%, noncondensing",
+      "Operating altitude": "0-5000 m (0-16404 ft.)",
+      "Certification": "EMC certificationSafety certificationManufacturing certification",
+      "Part number": "02350DMN",
+      "Fixed network ports": "24 10GE SFP+ + 2 40GE QSFP+",
+      "Expansion": "1 rear slot: optional 4x40GE, 8x10GE or 4x10GE cards (version dependent); not installed",
+      "Power": "2 PSU slots: 600W AC / 350W DC; 1+1 redundancy",
+      "Cooling": "FAN-060B-B module",
+      "Breakout": "40GE to 4x10GE supported by hardware; not modeled",
+      "Network interfaces": 26,
+      "Physical network sockets": 26
+    },
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S6720-30C-EI-24S-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/fb0c31cc/s6720-30c-ei-24s-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j00q"
+      }
+    ],
+    "summary": "24 10GE SFP+ + 2 40GE QSFP+",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "aliases": [
+      "S6720-30C-EI-24S",
+      "S6720-30C-EI"
+    ],
+    "confirmedSummary": "24 10GE SFP+ + 2 40GE QSFP+",
+    "displayImage": "assets/huawei-s6720-30c-ei-24s-ac-illustration-v07.webp",
+    "thumbnail": "assets/huawei-s6720-30c-ei-24s-ac-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "displayFrame": [
+      21,
+      174,
+      2128,
+      326
+    ],
+    "thumbnailDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      21,
+      174,
+      2128,
+      326
+    ]
+  },
+  {
+    "id": "huawei-s6730-h24x6c",
+    "name": "Huawei S6730-H24X6C",
+    "model": "S6730-H24X6C",
+    "brand": "Huawei",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "x1",
+        "name": "XGigabitEthernet0/0/1",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x2",
+        "name": "XGigabitEthernet0/0/2",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x3",
+        "name": "XGigabitEthernet0/0/3",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x4",
+        "name": "XGigabitEthernet0/0/4",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x5",
+        "name": "XGigabitEthernet0/0/5",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x6",
+        "name": "XGigabitEthernet0/0/6",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x7",
+        "name": "XGigabitEthernet0/0/7",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x8",
+        "name": "XGigabitEthernet0/0/8",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x9",
+        "name": "XGigabitEthernet0/0/9",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x10",
+        "name": "XGigabitEthernet0/0/10",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x11",
+        "name": "XGigabitEthernet0/0/11",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x12",
+        "name": "XGigabitEthernet0/0/12",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x13",
+        "name": "XGigabitEthernet0/0/13",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x14",
+        "name": "XGigabitEthernet0/0/14",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x15",
+        "name": "XGigabitEthernet0/0/15",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x16",
+        "name": "XGigabitEthernet0/0/16",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x17",
+        "name": "XGigabitEthernet0/0/17",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x18",
+        "name": "XGigabitEthernet0/0/18",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x19",
+        "name": "XGigabitEthernet0/0/19",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x20",
+        "name": "XGigabitEthernet0/0/20",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x21",
+        "name": "XGigabitEthernet0/0/21",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x22",
+        "name": "XGigabitEthernet0/0/22",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x23",
+        "name": "XGigabitEthernet0/0/23",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x24",
+        "name": "XGigabitEthernet0/0/24",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q1",
+        "name": "40GE / 100GE0/0/1",
+        "connector": "QSFP28",
+        "speeds": [
+          40000,
+          100000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q2",
+        "name": "40GE / 100GE0/0/2",
+        "connector": "QSFP28",
+        "speeds": [
+          40000,
+          100000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q3",
+        "name": "40GE / 100GE0/0/3",
+        "connector": "QSFP28",
+        "speeds": [
+          40000,
+          100000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q4",
+        "name": "40GE / 100GE0/0/4",
+        "connector": "QSFP28",
+        "speeds": [
+          40000,
+          100000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q5",
+        "name": "40GE / 100GE0/0/5",
+        "connector": "QSFP28",
+        "speeds": [
+          40000,
+          100000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "q6",
+        "name": "40GE / 100GE0/0/6",
+        "connector": "QSFP28",
+        "speeds": [
+          40000,
+          100000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "RJ45",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "management",
+        "name": "ETH management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "usb",
+        "name": "USB",
+        "connector": "USB",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "usb"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/huawei-s6730-h24x6c-reference.png"
+    },
+    "photos": {
+      "front": "assets/huawei-s6730-h24x6c-reference.png"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 1,
+    "removablePSU": true,
+    "allowsMixedPower": true,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Memory (RAM)": "4 GB",
+      "Flash": "2 GB in total. To view the available flash memory size, run the display version command.",
+      "Mean time between failures (MTBF)": "62.27 years",
+      "Availability": "> 0.99999",
+      "Service port surge protection": "N/A",
+      "Power supply surge protection": "Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±2 kV in differential mode, ±4 kV in common mode",
+      "Dimensions (H x W x D)": "Basic dimensions (excluding the parts protruding from the body): 43.6 mm x 442.0 mm x 420.0 mm (1.72 in. x 17.4 in. x 16.5 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 43.6 mm x 442.0 mm x 446.0 mm (1.72 in. x 17.4 in. x 17.6 in.)",
+      "Weight (with packaging)": "8.9 kg (19.62 lb)",
+      "Stack ports": "Any 10GE SFP+ ports (a maximum of 16 physical ports)Any 40GE/100GE QSFP28 ports (a maximum of 6 physical ports)",
+      "RTC": "Supported",
+      "RPS": "Not supported",
+      "PoE": "Not supported",
+      "Rated voltage range": "AC input: 100 V AC to 240 V AC, 50/60 HzHigh-Voltage DC input: 240 V DCDC input: -48 V DC to -60 V DC",
+      "Maximum voltage range": "AC input: 90 V AC to 290 V AC, 45 Hz to 65 HzHigh-Voltage DC input: 190 V DC to 290 V DCDC input: -38.4 V DC to -72 V DC",
+      "Maximum power consumption (100% throughput, full speed of fans)": "254 W",
+      "Typical power consumption (30% of traffic load, tested according to ATIS standard)": "149 W",
+      "Operating temperature": "-5°C to +45°C (23°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.). The switch cannot be started when the ambient temperature is lower than 0°C (32°F). The operating temperature of the switch is -5°C to 40°C (23°F to 104°F) when it uses QSFP-100G-ER4 optical module.",
+      "Storage temperature": "-40°C to +70°C (-40°F to +158°F)",
+      "Noise under normal temperature (27°C, sound power)": "< 65 dB(A)",
+      "Relative humidity": "5% to 95%, noncondensing",
+      "Operating altitude": "0-5000 m (0-16404 ft.)",
+      "Certification": "EMC certificationSafety certificationManufacturing certification",
+      "Part number": "02352FSG 02352FSG-001 02352FSG-005 02352FSG-007 02352FSG-009 02353GFC 02353GFC-001 02353GFC-003 02353GFC-004",
+      "Fixed network ports": "24 10GE SFP+ + 6 40GE/100GE QSFP28",
+      "Power": "2 removable AC/DC PSU slots; 1+1 redundancy",
+      "Cooling": "4 FAN-031A-B modules",
+      "100GE license": "02352FSG variants require license in V200R019C00 and later; 02353GFC variants include activated 100GE license. Profile represents licensed 100GE capability; no breakout",
+      "Network interfaces": 30,
+      "Physical network sockets": 30
+    },
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S6730-H24X6C",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/bf1cfe43/s6730-h24x6c"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j014"
+      }
+    ],
+    "summary": "24 10GE SFP+ + 6 40GE/100GE QSFP28",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "aliases": [
+      "S6730-H24X6C"
+    ],
+    "confirmedSummary": "24 10GE SFP+ + 6 40GE/100GE QSFP28",
+    "displayImage": "assets/huawei-s6730-h24x6c-illustration-v07.webp",
+    "thumbnail": "assets/huawei-s6730-h24x6c-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2167,
+      "height": 726
+    },
+    "displayFrame": [
+      20,
+      201,
+      2123,
+      295
+    ],
+    "thumbnailDimensions": {
+      "width": 2167,
+      "height": 726
+    },
+    "thumbnailFrame": [
+      20,
+      201,
+      2123,
+      295
+    ]
+  },
+  {
+    "id": "huawei-s5335-s32st4x",
+    "name": "Huawei S5335-S32ST4X",
+    "model": "S5335-S32ST4X",
+    "brand": "Huawei",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "ge1",
+        "name": "GE SFP 1",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge2",
+        "name": "GE SFP 2",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge3",
+        "name": "GE SFP 3",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge4",
+        "name": "GE SFP 4",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge5",
+        "name": "GE SFP 5",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge6",
+        "name": "GE SFP 6",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge7",
+        "name": "GE SFP 7",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge8",
+        "name": "GE SFP 8",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge9",
+        "name": "GE SFP 9",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge10",
+        "name": "GE SFP 10",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge11",
+        "name": "GE SFP 11",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge12",
+        "name": "GE SFP 12",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge13",
+        "name": "GE SFP 13",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge14",
+        "name": "GE SFP 14",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge15",
+        "name": "GE SFP 15",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge16",
+        "name": "GE SFP 16",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge17",
+        "name": "Combo 1",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo17",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge18",
+        "name": "Combo 2",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo18",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge19",
+        "name": "Combo 3",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo19",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge20",
+        "name": "Combo 4",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo20",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge21",
+        "name": "Combo 5",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo21",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge22",
+        "name": "Combo 6",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo22",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge23",
+        "name": "Combo 7",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo23",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge24",
+        "name": "Combo 8",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": "combo24",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge17c",
+        "name": "Combo 1",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo17",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge18c",
+        "name": "Combo 2",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo18",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge19c",
+        "name": "Combo 3",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo19",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge20c",
+        "name": "Combo 4",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo20",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge21c",
+        "name": "Combo 5",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo21",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge22c",
+        "name": "Combo 6",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo22",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge23c",
+        "name": "Combo 7",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo23",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "ge24c",
+        "name": "Combo 8",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": "combo24",
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x1",
+        "name": "XGigabitEthernet0/0/1",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x2",
+        "name": "XGigabitEthernet0/0/2",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x3",
+        "name": "XGigabitEthernet0/0/3",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "x4",
+        "name": "XGigabitEthernet0/0/4",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/huawei-s5335-s32st4x-reference.jpeg"
+    },
+    "photos": {
+      "front": "assets/huawei-s5335-s32st4x-reference.jpeg"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 1,
+    "removablePSU": true,
+    "allowsMixedPower": true,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Model": "CloudEngine S5335-S32ST4X",
+      "Fixed network ports": "24 GE SFP (8 shared RJ45/SFP Combo) + 4 10GE SFP+",
+      "Switching capacity": "144 Gbps device / 432 Gbps system",
+      "Forwarding performance": "108 Mpps",
+      "Dimensions (H x W x D)": "43.6 x 442 x 420 mm",
+      "Rack height": "1U",
+      "Weight including packaging": "7.47 kg",
+      "Power": "2 removable PSU slots; 60W AC / 1000W DC; mixed AC/DC allowed; 1+1 redundancy",
+      "Maximum power consumption": "66 W",
+      "Rated voltage": "100–240 VAC 50/60Hz; -48 to -60 VDC",
+      "Operating temperature": "0 to 50°C at 0–1800m; reduce upper limit 1°C per 220m above 1800m",
+      "Short-term temperature": "-5 to 55°C at 0–1800m",
+      "Storage temperature": "-40 to 70°C",
+      "Relative humidity": "5–95%, non-condensing",
+      "Cooling": "Air cooling with intelligent fan speed adjustment",
+      "PoE": "No",
+      "VLAN": "4094; 802.1Q, QinQ, VLAN mapping",
+      "Routing": "OSPF, IS-IS, BGP, VRRP; IPv4/IPv6 dual stack",
+      "Reliability": "STP/RSTP/MSTP, SEP, ERPS, Smart Link",
+      "OAM": "IEEE 802.3ah / 802.1ag",
+      "Management": "SNMPv1/v2c/v3, SSHv2, RMON, sFlow, telemetry",
+      "Security": "802.1X, MAC/Portal authentication, DHCP snooping, strict ARP learning",
+      "Port convention": "Brochure verifies 8 shared pairs but does not identify CLI numbers; Combo 1–8 are diagram identifiers, not vendor CLI labels",
+      "Network interfaces": 28,
+      "Physical network sockets": 36
+    },
+    "sources": [
+      {
+        "title": "Huawei CloudEngine S5335-S vendor brochure",
+        "url": "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf"
+      }
+    ],
+    "summary": "24 GE SFP (8 shared RJ45/SFP Combo) + 4 10GE SFP+",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "confirmedSummary": "24 GE SFP (8 shared RJ45/SFP Combo) + 4 10GE SFP+",
+    "displayImage": "assets/huawei-s5335-s32st4x-illustration-v07.webp",
+    "thumbnail": "assets/huawei-s5335-s32st4x-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2168,
+      "height": 725
+    },
+    "displayFrame": [
+      14,
+      181,
+      2141,
+      383
+    ],
+    "thumbnailDimensions": {
+      "width": 2168,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      14,
+      181,
+      2141,
+      383
+    ]
+  },
+  {
+    "id": "hitachi-apresia13200-48x-psr3",
+    "name": "Hitachi APRESIA13200-48X-PSR3",
+    "model": "APRESIA13200-48X-PSR3",
+    "brand": "Hitachi",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "p1",
+        "name": "1",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p2",
+        "name": "2",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p3",
+        "name": "3",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p4",
+        "name": "4",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p5",
+        "name": "5",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p6",
+        "name": "6",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p7",
+        "name": "7",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p8",
+        "name": "8",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p9",
+        "name": "9",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p10",
+        "name": "10",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p11",
+        "name": "11",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p12",
+        "name": "12",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p13",
+        "name": "13",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p14",
+        "name": "14",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p15",
+        "name": "15",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p16",
+        "name": "16",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p17",
+        "name": "17",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p18",
+        "name": "18",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p19",
+        "name": "19",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p20",
+        "name": "20",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p21",
+        "name": "21",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p22",
+        "name": "22",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p23",
+        "name": "23",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p24",
+        "name": "24",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p25",
+        "name": "25",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p26",
+        "name": "26",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p27",
+        "name": "27",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p28",
+        "name": "28",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p29",
+        "name": "29",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p30",
+        "name": "30",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p31",
+        "name": "31",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p32",
+        "name": "32",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p33",
+        "name": "33",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p34",
+        "name": "34",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p35",
+        "name": "35",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p36",
+        "name": "36",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p37",
+        "name": "37",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p38",
+        "name": "38",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p39",
+        "name": "39",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p40",
+        "name": "40",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p41",
+        "name": "41",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p42",
+        "name": "42",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p43",
+        "name": "43",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p44",
+        "name": "44",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p45",
+        "name": "45",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p46",
+        "name": "46",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p47",
+        "name": "47",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p48",
+        "name": "48",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p49",
+        "name": "49",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p50",
+        "name": "50",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p51",
+        "name": "51",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p52",
+        "name": "52",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "management",
+        "name": "Management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "DB9",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "sd",
+        "name": "SD card",
+        "connector": "SD",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "storage"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/hitachi-apresia13200-48x-psr3-reference.jpg"
+    },
+    "photos": {
+      "front": "assets/hitachi-apresia13200-48x-psr3-reference.jpg"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 2,
+    "removablePSU": true,
+    "allowsMixedPower": false,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Manufacturer / family": "Hitachi heritage · APRESIA Systems AEOS8",
+      "Power": "2 hot-swappable AC/DC PSU slots; units sold separately",
+      "PoE": "No",
+      "Layer 3": "Optional L3 license",
+      "Rack height": "1U",
+      "VLAN": "4094",
+      "Management": "Console, dedicated management port, SD-card boot, SNMPv1/v2c/v3, SSH, LLDP, NETCONF (partial)",
+      "Security": "802.1X, MAC/Web authentication, DHCP snooping, RADIUS/TACACS+",
+      "Reliability": "STP/RSTP/MSTP, LACP, MMRP-Plus, port redundancy",
+      "Jumbo Frame": "Supported; topology MTU is documentation only",
+      "Operating temperature": "0–45°C; depends on selected PSU",
+      "Humidity": "See linked standard specification",
+      "Fanless": "No",
+      "Source detail": "Complete vendor specification table retained below (Japanese headings)",
+      " · ": "Apresia13200-48X-PSR3",
+      "Interface · 10BASE-T/100BASE-TX": "—",
+      "Interface · 100BASE-FX": "—",
+      "Interface · 10BASE-T/100BASE-TX/1000BASE-T": "48",
+      "Interface · 1000BASE-X": "—",
+      "Interface · 10GBASE-R": "—",
+      "Interface · 1000BASE-X/10GBASE-R": "4(SFP/SFP+)",
+      "Interface · 40GBASE-R": "—",
+      "Interface · Management Port": "○",
+      "パフォーマンス · スイッチ容量": "176Gbps",
+      "パフォーマンス · スループット": "130.9Mpps",
+      "パフォーマンス · パケットバッファ": "4Mbyte",
+      "パフォーマンス · MAC登録数": "32k",
+      "VLAN · ポートベースVLAN": "○",
+      "VLAN · 802.1Qベース TAG VLAN": "○",
+      "VLAN · サポートVLAN数": "4094",
+      "VLAN · Protocol VLAN": "○",
+      "VLAN · Stacked VLAN": "○",
+      "Layer3機能(IPv4) · IP Interface 最大値": "1024",
+      "Layer3機能(IPv4) · 経路情報保持数(目安)": "16000",
+      "Layer3機能(IPv4) · ユニキャストルーティングプロトコル": "Static, RIPv1/v2, OSPFv2",
+      "Layer3機能(IPv4) · マルチキャストルーティングプロトコル": "PIM-SM",
+      "Layer3機能(IPv4) · 二重化機能": "VRRP",
+      "Layer3機能(IPv4) · ハードウェアポリシーベースルーティング": "○",
+      "Layer3機能(IPv6) · IP Interface 最大値": "64",
+      "Layer3機能(IPv6) · 経路情報保持数(目安)": "8000",
+      "Layer3機能(IPv6) · ユニキャストルーティングプロトコル": "Static,RIPng,OSPFv3",
+      "Layer3機能(IPv6) · マルチキャストルーティングプロトコル": "PIM-SM",
+      "Layer3機能(IPv6) · 二重化機能": "VRRP",
+      "DHCP · DHCP リレー": "○",
+      "DHCP · DHCP サーバー": "○",
+      "ネットワーク認証 · 802.1X": "○",
+      "ネットワーク認証 · MAC認証": "○",
+      "ネットワーク認証 · Web認証(SSL対応)": "○",
+      "ネットワーク認証 · ゲートウェイ認証": "○",
+      "ネットワーク認証 · DHCP Snooping": "○",
+      "ネットワーク認証 · 1ポート複数認証方式対応": "○(802.1X/MAC認証/Web認証)",
+      "ネットワーク認証 · Dynamic VLAN": "○(1ポート複数VLAN)",
+      "ネットワーク認証 · 認証ページリダイレクト": "○",
+      "ネットワーク認証 · ローカルDB 認証/ 強制認証": "○",
+      "ネットワーク認証 · User Policy Control": "○",
+      "ハードウェアPacket Filter · 最大エントリー数": "7168",
+      "ハードウェアPacket Filter · L1～L4制御": "○",
+      "ハードウェアPacket Filter · IPv6制御": "○",
+      "QoS · キューの数(優先クラス)": "8",
+      "QoS · フレーム識別": "802.1p/ToS",
+      "QoS · スケジューリング": "SPQ/WRR/DRR",
+      "QoS · Condition Based QoS": "○",
+      "QoS · ポリシー毎の帯域保証": "○",
+      "QoS · ポリシー毎の帯域制限": "○",
+      "帯域制御 · 入力Traffic 制限(Policing)": "○(64k単位)",
+      "帯域制御 · 出力Traffic 制限(Shaping)": "○(64k単位)",
+      "Multicast Filtering · IGMP-Snooping": "v1/v2/v3",
+      "Multicast Filtering · IGMP-Snooping Proxy": "○",
+      "Multicast Filtering · IGMP クエリア": "○",
+      "Multicast Filtering · MLD-Snooping": "v1/v2",
+      "入力時フラッディング制限機能(Flooding Limit) · フレーム種別": "BC/MC/DLF ※1",
+      "ストームコントロール(Flooding control) · フレーム種別": "UC/BC/MC ※1",
+      "ストームコントロール(Flooding control) · 制御動作": "Limit/Shutdown",
+      "ユーザーループ検知 · Loop-Watch": "○",
+      "Layer2冗長機能 · 802.3ad Link Aggregation": "○(Static,LACP)",
+      "Layer2冗長機能 · Multi-Chassis Link-Aggregation(MLAG)": "○",
+      "Layer2冗長機能 · LAGグループ数/ポート数": "最大32グループ/装置、最大8ポート/1グループ",
+      "Layer2冗長機能 · MMRPv1 Aware": "—",
+      "Layer2冗長機能 · MMRPv2 Aware": "○",
+      "Layer2冗長機能 · MMRP-Plus": "○",
+      "Layer2冗長機能 · Port Redundant": "○",
+      "Layer2冗長機能 · Flush FDB": "○",
+      "Layer2冗長機能 · xSTP": "STP/RSTP/MSTP",
+      "Layer2冗長機能 · Rapid-PVST+": "○ ※2",
+      "ミラーリング · Port Based Mirroring": "○",
+      "ミラーリング · Condition Based Mirroring": "○",
+      "マネージメント · SNMP": "v1/v2c/v3",
+      "マネージメント · TRAP/syslog": "○",
+      "マネージメント · RMON": "○",
+      "マネージメント · sFlow": "v4",
+      "マネージメント · Console/Telnet/SSH": "○",
+      "マネージメント · SSH Client": "○",
+      "マネージメント · Web-based GUI": "—",
+      "マネージメント · RADIUS/TACACS+": "○",
+      "マネージメント · 802.1ab LLDP": "○",
+      "マネージメント · SDカードブート": "○",
+      "マネージメント · Virtual BoxCore": "○",
+      "マネージメント · NETCONF": "○ ※3",
+      "PoE · PoE給電ポート数": "—",
+      "PoE · 15.4Wフル給電ポート数": "—",
+      "PoE · 30Wフル給電ポート数": "—",
+      "PoE · 給電電力": "—",
+      "データセンター · 802.1Qaz DCBX/ETS": "—",
+      "データセンター · 802.1Qbb PFC": "—",
+      "データセンター · 802.1Qbg EVB": "—",
+      "データセンター · Cut-Through": "—",
+      "データセンター · FCoE": "—",
+      "データセンター · BFS": "○",
+      "その他 · 中継パス制限機能": "○",
+      "その他 · Port Security": "—",
+      "その他 · Jumbo Frame": "○",
+      "その他 · 停電時のログ保存機能": "○",
+      "ハードウェア · サイズW (mm)": "436",
+      "ハードウェア · サイズD (mm)": "400",
+      "ハードウェア · サイズH (mm)": "43.8",
+      "ハードウェア · 概算質量": "5.5kg以下 ※4",
+      "ハードウェア · 消費電力(AC100V 時)最大 / 典型値 ※5": "190W/136W",
+      "ハードウェア · 動作温度": "0～45℃ ※6",
+      "ハードウェア · 周囲温度監視": "○",
+      "ハードウェア · 騒音特性※7": "約65dB(A) ※8",
+      "ハードウェア · 電源二重化対応": "○",
+      "ハードウェア · AC電源対応": "100 ～ 120V ±10%200 ～ 240V ±10%(50/60Hz)",
+      "ハードウェア · DC電源対応": "-57～-40V",
+      "ハードウェア · FANレス対応": "—",
+      "ハードウェア · MTBF(本体のみ)": "20年",
+      "省エネ法 · 区分": "※9",
+      "省エネ法 · 補足": "※1UC：ユニキャスト、BC：ブロードキャスト、MC：マルチキャスト、DLF：宛先不明ユニキャスト ※2PVST+との相互接続はサポートしていません。 ※3NETCONFは一部機能をサポート ※4電源含まず ※5全ポート1518ByteユニキャストL2フレーム、IFG 12Byte通信、SFPポートH-SX-SFP/R、SFP+ポートH-LR-SFP+搭載時 ※6使用する電源ユニットにより異なります。 ※7AC電源搭載時におけるJISX7779による音響パワーレベル測定値 ※8PSU-200-AC-ER2台実装時 ※9L3スイッチのため省エネ法対象外。",
+      "Fixed network ports": "48 RJ45 + 4 1G/10G SFP/SFP+",
+      "Dimensions (W x D x H)": "436 x 400 x 43.8 mm",
+      "Weight excluding PSU": "≤5.5 kg",
+      "Switching capacity": "176 Gbps",
+      "Forwarding performance": "130.9 Mpps",
+      "MAC table": "32K",
+      "Packet buffer": "4 MB",
+      "Network interfaces": 52,
+      "Physical network sockets": 52
+    },
+    "sources": [
+      {
+        "title": "APRESIA manufacturer product and full specification",
+        "url": "https://www.apresia.jp/products/ent/apresia13200-48x-psr3.html"
+      },
+      {
+        "title": "APRESIA manufacturer hardware manuals / standard specifications",
+        "url": "https://www.apresia.jp/products/ent/support/manual.html"
+      }
+    ],
+    "summary": "48 RJ45 + 4 1G/10G SFP/SFP+",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "confirmedSummary": "48 RJ45 + 4 1G/10G SFP/SFP+",
+    "displayImage": "assets/hitachi-apresia13200-48x-psr3-illustration-v07.webp",
+    "thumbnail": "assets/hitachi-apresia13200-48x-psr3-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "displayFrame": [
+      25,
+      193,
+      2120,
+      313
+    ],
+    "thumbnailDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      25,
+      193,
+      2120,
+      313
+    ]
+  },
+  {
+    "id": "hitachi-apresia13200-52gt-psr2",
+    "name": "Hitachi APRESIA13200-52GT-PSR2",
+    "model": "APRESIA13200-52GT-PSR2",
+    "brand": "Hitachi",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "p1",
+        "name": "1",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p2",
+        "name": "2",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p3",
+        "name": "3",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p4",
+        "name": "4",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p5",
+        "name": "5",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p6",
+        "name": "6",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p7",
+        "name": "7",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p8",
+        "name": "8",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p9",
+        "name": "9",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p10",
+        "name": "10",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p11",
+        "name": "11",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p12",
+        "name": "12",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p13",
+        "name": "13",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p14",
+        "name": "14",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p15",
+        "name": "15",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p16",
+        "name": "16",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p17",
+        "name": "17",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p18",
+        "name": "18",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p19",
+        "name": "19",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p20",
+        "name": "20",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p21",
+        "name": "21",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p22",
+        "name": "22",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p23",
+        "name": "23",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p24",
+        "name": "24",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p25",
+        "name": "25",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p26",
+        "name": "26",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p27",
+        "name": "27",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p28",
+        "name": "28",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p29",
+        "name": "29",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p30",
+        "name": "30",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p31",
+        "name": "31",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p32",
+        "name": "32",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p33",
+        "name": "33",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p34",
+        "name": "34",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p35",
+        "name": "35",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p36",
+        "name": "36",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p37",
+        "name": "37",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p38",
+        "name": "38",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p39",
+        "name": "39",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p40",
+        "name": "40",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p41",
+        "name": "41",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p42",
+        "name": "42",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p43",
+        "name": "43",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p44",
+        "name": "44",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p45",
+        "name": "45",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p46",
+        "name": "46",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p47",
+        "name": "47",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p48",
+        "name": "48",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p49",
+        "name": "49",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p50",
+        "name": "50",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p51",
+        "name": "51",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p52",
+        "name": "52",
+        "connector": "SFP",
+        "speeds": [
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "management",
+        "name": "Management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "DB9",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "sd",
+        "name": "SD card",
+        "connector": "SD",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "storage"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/hitachi-apresia13200-52gt-psr2-reference.jpg"
+    },
+    "photos": {
+      "front": "assets/hitachi-apresia13200-52gt-psr2-reference.jpg"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 2,
+    "removablePSU": true,
+    "allowsMixedPower": false,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Manufacturer / family": "Hitachi heritage · APRESIA Systems AEOS8",
+      "Power": "2 hot-swappable AC/DC PSU slots; units sold separately",
+      "PoE": "No",
+      "Layer 3": "Optional L3 license",
+      "Rack height": "1U",
+      "VLAN": "4094",
+      "Management": "Console, dedicated management port, SD-card boot, SNMPv1/v2c/v3, SSH, LLDP, NETCONF (partial)",
+      "Security": "802.1X, MAC/Web authentication, DHCP snooping, RADIUS/TACACS+",
+      "Reliability": "STP/RSTP/MSTP, LACP, MMRP-Plus, port redundancy",
+      "Jumbo Frame": "Supported; topology MTU is documentation only",
+      "Operating temperature": "0–45°C; depends on selected PSU",
+      "Humidity": "See linked standard specification",
+      "Fanless": "No",
+      "Source detail": "Complete vendor specification table retained below (Japanese headings)",
+      " · ": "Apresia13200-52GT-PSR2",
+      "Interface · 10BASE-T/100BASE-TX": "—",
+      "Interface · 100BASE-FX": "—",
+      "Interface · 10BASE-T/100BASE-TX/1000BASE-T": "48",
+      "Interface · 1000BASE-X": "4(SFP)",
+      "Interface · 10GBASE-R": "—",
+      "Interface · 1000BASE-X/10GBASE-R": "—",
+      "Interface · 40GBASE-R": "—",
+      "Interface · Management Port": "○",
+      "パフォーマンス · スイッチ容量": "104Gbps",
+      "パフォーマンス · スループット": "77.3Mpps",
+      "パフォーマンス · パケットバッファ": "4Mbyte",
+      "パフォーマンス · MAC登録数": "32k",
+      "VLAN · ポートベースVLAN": "○",
+      "VLAN · 802.1Qベース TAG VLAN": "○",
+      "VLAN · サポートVLAN数": "4094",
+      "VLAN · Protocol VLAN": "○",
+      "VLAN · Stacked VLAN": "○",
+      "Layer3機能(IPv4) · IP Interface 最大値": "1024",
+      "Layer3機能(IPv4) · 経路情報保持数(目安)": "16000",
+      "Layer3機能(IPv4) · ユニキャストルーティングプロトコル": "Static, RIPv1/v2, OSPFv2",
+      "Layer3機能(IPv4) · マルチキャストルーティングプロトコル": "PIM-SM",
+      "Layer3機能(IPv4) · 二重化機能": "VRRP",
+      "Layer3機能(IPv4) · ハードウェアポリシーベースルーティング": "○",
+      "Layer3機能(IPv6) · IP Interface 最大値": "64",
+      "Layer3機能(IPv6) · 経路情報保持数(目安)": "8000",
+      "Layer3機能(IPv6) · ユニキャストルーティングプロトコル": "Static,RIPng,OSPFv3",
+      "Layer3機能(IPv6) · マルチキャストルーティングプロトコル": "PIM-SM",
+      "Layer3機能(IPv6) · 二重化機能": "VRRP",
+      "DHCP · DHCP リレー": "○",
+      "DHCP · DHCP サーバー": "○",
+      "ネットワーク認証 · 802.1X": "○",
+      "ネットワーク認証 · MAC認証": "○",
+      "ネットワーク認証 · Web認証(SSL対応)": "○",
+      "ネットワーク認証 · ゲートウェイ認証": "○",
+      "ネットワーク認証 · DHCP Snooping": "○",
+      "ネットワーク認証 · 1ポート複数認証方式対応": "○(802.1X/MAC認証/Web認証)",
+      "ネットワーク認証 · Dynamic VLAN": "○(1ポート複数VLAN)",
+      "ネットワーク認証 · 認証ページリダイレクト": "○",
+      "ネットワーク認証 · ローカルDB認証/強制認証": "○",
+      "ネットワーク認証 · User Policy Control": "○",
+      "ハードウェアPacket Filter · 最大エントリー数": "7168",
+      "ハードウェアPacket Filter · L1～L4制御": "○",
+      "ハードウェアPacket Filter · IPv6制御": "○",
+      "QoS · キューの数(優先クラス)": "8",
+      "QoS · フレーム識別": "802.1p/ToS",
+      "QoS · スケジューリング": "SPQ/WRR/DRR",
+      "QoS · Condition Based QoS": "○",
+      "QoS · ポリシー毎の帯域保証": "○",
+      "QoS · ポリシー毎の帯域制限": "○",
+      "帯域制御 · 入力Traffic 制限(Policing)": "○(64k単位)",
+      "帯域制御 · 出力Traffic 制限(Shaping)": "○(64k単位)",
+      "Multicast Filtering · IGMP-Snooping": "v1/v2/v3",
+      "Multicast Filtering · IGMP-Snooping Proxy": "○",
+      "Multicast Filtering · IGMP クエリア": "○",
+      "Multicast Filtering · MLD-Snooping": "v1/v2",
+      "入力時フラッディング制限機能(Flooding Limit) · フレーム種別": "BC/MC/DLF ※1",
+      "ストームコントロール(Flooding control) · フレーム種別": "UC/BC/MC ※1",
+      "ストームコントロール(Flooding control) · 制御動作": "Limit/Shutdown",
+      "ユーザーループ検知 · Loop-Watch": "○",
+      "Layer2冗長機能 · 802.3ad Link Aggregation": "○(Static,LACP)",
+      "Layer2冗長機能 · Multi-Chassis Link-Aggregation(MLAG)": "—",
+      "Layer2冗長機能 · LAGグループ数/ポート数": "最大32グループ/装置、最大8ポート/1グループ",
+      "Layer2冗長機能 · MMRPv1 Aware": "—",
+      "Layer2冗長機能 · MMRPv2 Aware": "○",
+      "Layer2冗長機能 · MMRP-Plus": "○",
+      "Layer2冗長機能 · Port Redundant": "○",
+      "Layer2冗長機能 · Flush FDB": "○",
+      "Layer2冗長機能 · xSTP": "STP/RSTP/MSTP",
+      "Layer2冗長機能 · Rapid-PVST+": "○ ※2",
+      "ミラーリング · Port Based Mirroring": "○",
+      "ミラーリング · Condition Based Mirroring": "○",
+      "マネージメント · SNMP": "v1/v2c/v3",
+      "マネージメント · TRAP/syslog": "○",
+      "マネージメント · RMON": "○",
+      "マネージメント · sFlow": "v4",
+      "マネージメント · Console/Telnet/SSH": "○",
+      "マネージメント · SSH Client": "○",
+      "マネージメント · Web-based GUI": "—",
+      "マネージメント · RADIUS/TACACS+": "○",
+      "マネージメント · 802.1ab LLDP": "○",
+      "マネージメント · SDカードブート": "○",
+      "マネージメント · Virtual BoxCore": "○",
+      "マネージメント · NETCONF": "○ ※3",
+      "PoE · PoE給電ポート数": "—",
+      "PoE · 15.4Wフル給電ポート数": "—",
+      "PoE · 30Wフル給電ポート数": "—",
+      "PoE · 給電電力": "—",
+      "データセンター · 802.1Qaz DCBX/ETS": "—",
+      "データセンター · 802.1Qbb PFC": "—",
+      "データセンター · 802.1Qbg EVB": "—",
+      "データセンター · Cut-Through": "—",
+      "データセンター · FCoE": "—",
+      "データセンター · BFS": "—",
+      "その他 · 中継パス制限機能": "○",
+      "その他 · Port Security": "—",
+      "その他 · Jumbo Frame": "○",
+      "その他 · 停電時のログ保存機能": "○",
+      "ハードウェア · サイズW (mm)": "436",
+      "ハードウェア · サイズD (mm)": "400",
+      "ハードウェア · サイズH (mm)": "43.8",
+      "ハードウェア · 概算質量": "5.5kg以下 ※4",
+      "ハードウェア · 消費電力(AC100V 時)最大 / 典型値 ※5": "170W/119W",
+      "ハードウェア · 動作温度": "0～45℃ ※6",
+      "ハードウェア · 周囲温度監視": "○",
+      "ハードウェア · 騒音特性 ※7": "約65dB(A) ※8",
+      "ハードウェア · 電源二重化対応": "○",
+      "ハードウェア · AC電源対応": "100 ～ 120V ±10%200 ～ 240V ±10%(50/60Hz)",
+      "ハードウェア · DC電源対応": "-57～-40V",
+      "ハードウェア · FANレス対応": "—",
+      "ハードウェア · MTBF(本体のみ)": "22年",
+      "省エネ法 · 区分": "※9",
+      "省エネ法 · 補足": "※1UC：ユニキャスト、BC：ブロードキャスト、MC：マルチキャスト、DLF：宛先不明ユニキャスト ※2PVST+との相互接続はサポートしていません。 ※3NETCONFは一部機能をサポート ※4電源含まず ※5全ポート1518ByteユニキャストL2フレーム、IFG 12Byte通信、SFPポートH-SX-SFP/R、SFP+ポートH-LR-SFP+搭載時 ※6使用する電源ユニットにより異なります。 ※7AC電源搭載時におけるJISX7779による音響パワーレベル測定値 ※8PSU-200-AC-ER2台実装時 ※9L3スイッチのため省エネ法対象外",
+      "Fixed network ports": "48 RJ45 + 4 GE SFP",
+      "Dimensions (W x D x H)": "436 x 400 x 43.8 mm",
+      "Weight excluding PSU": "≤5.5 kg",
+      "Switching capacity": "104 Gbps",
+      "Forwarding performance": "77.3 Mpps",
+      "MAC table": "32K",
+      "Packet buffer": "4 MB",
+      "Network interfaces": 52,
+      "Physical network sockets": 52
+    },
+    "sources": [
+      {
+        "title": "APRESIA manufacturer product and full specification",
+        "url": "https://www.apresia.jp/products/ent/apresia13200-52gt-psr2.html"
+      },
+      {
+        "title": "APRESIA manufacturer hardware manuals / standard specifications",
+        "url": "https://www.apresia.jp/products/ent/support/manual.html"
+      }
+    ],
+    "summary": "48 RJ45 + 4 GE SFP",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "confirmedSummary": "48 RJ45 + 4 GE SFP",
+    "displayImage": "assets/hitachi-apresia13200-52gt-psr2-illustration-v07.webp",
+    "thumbnail": "assets/hitachi-apresia13200-52gt-psr2-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "displayFrame": [
+      5,
+      230,
+      2160,
+      305
+    ],
+    "thumbnailDimensions": {
+      "width": 2170,
+      "height": 725
+    },
+    "thumbnailFrame": [
+      5,
+      230,
+      2160,
+      305
+    ]
+  },
+  {
+    "id": "hitachi-apresia15000-32xl-psr2",
+    "name": "Hitachi APRESIA15000-32XL-PSR2",
+    "model": "APRESIA15000-32XL-PSR2",
+    "brand": "Hitachi",
+    "category": "switch",
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [
+      {
+        "id": "p1",
+        "name": "1",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p2",
+        "name": "2",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p3",
+        "name": "3",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p4",
+        "name": "4",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p5",
+        "name": "5",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p6",
+        "name": "6",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p7",
+        "name": "7",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p8",
+        "name": "8",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p9",
+        "name": "9",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p10",
+        "name": "10",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p11",
+        "name": "11",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p12",
+        "name": "12",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p13",
+        "name": "13",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p14",
+        "name": "14",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p15",
+        "name": "15",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p16",
+        "name": "16",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p17",
+        "name": "17",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p18",
+        "name": "18",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p19",
+        "name": "19",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p20",
+        "name": "20",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p21",
+        "name": "21",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p22",
+        "name": "22",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p23",
+        "name": "23",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p24",
+        "name": "24",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network"
+      },
+      {
+        "id": "p25",
+        "name": "25",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q25"
+        ]
+      },
+      {
+        "id": "p26",
+        "name": "26",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q25"
+        ]
+      },
+      {
+        "id": "p27",
+        "name": "27",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q25"
+        ]
+      },
+      {
+        "id": "p28",
+        "name": "28",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q25"
+        ]
+      },
+      {
+        "id": "p29",
+        "name": "29",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q29"
+        ]
+      },
+      {
+        "id": "p30",
+        "name": "30",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q29"
+        ]
+      },
+      {
+        "id": "p31",
+        "name": "31",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q29"
+        ]
+      },
+      {
+        "id": "p32",
+        "name": "32",
+        "connector": "SFP+",
+        "speeds": [
+          1000,
+          10000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "q29"
+        ]
+      },
+      {
+        "id": "q25",
+        "name": "25 (40GE)",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "p25",
+          "p26",
+          "p27",
+          "p28"
+        ],
+        "allowedOptics": [
+          "sr4"
+        ]
+      },
+      {
+        "id": "q29",
+        "name": "29 (40GE)",
+        "connector": "QSFP+",
+        "speeds": [
+          40000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "network",
+        "conflictPorts": [
+          "p29",
+          "p30",
+          "p31",
+          "p32"
+        ],
+        "allowedOptics": [
+          "sr4"
+        ]
+      },
+      {
+        "id": "management",
+        "name": "Management",
+        "connector": "RJ45",
+        "speeds": [
+          10,
+          100,
+          1000
+        ],
+        "group": null,
+        "face": "front",
+        "kind": "management"
+      },
+      {
+        "id": "console",
+        "name": "Console",
+        "connector": "DB9",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "console"
+      },
+      {
+        "id": "sd",
+        "name": "SD card",
+        "connector": "SD",
+        "speeds": [],
+        "group": null,
+        "face": "front",
+        "kind": "storage"
+      }
+    ],
+    "components": {
+      "front": [],
+      "rear": []
+    },
+    "images": {
+      "front": "assets/hitachi-apresia15000-32xl-psr2-reference.jpg"
+    },
+    "photos": {
+      "front": "assets/hitachi-apresia15000-32xl-psr2-reference.jpg"
+    },
+    "powerSlots": 2,
+    "powerModes": [
+      "AC",
+      "DC"
+    ],
+    "defaultInstalledPowerSupplies": 2,
+    "removablePSU": true,
+    "allowsMixedPower": true,
+    "alarmStates": [
+      "normal"
+    ],
+    "originalSpecs": {},
+    "verifiedSpecs": {
+      "Manufacturer / family": "Hitachi heritage · APRESIA Systems AEOS8",
+      "Power": "2 hot-swappable AC/DC PSU slots; mixed AC/DC supported with matching airflow direction",
+      "PoE": "No",
+      "Layer 3": "Optional L3 license",
+      "Rack height": "1U",
+      "VLAN": "4094",
+      "Management": "Console, dedicated management port, SD-card boot, SNMPv1/v2c/v3, SSH, LLDP, NETCONF (partial)",
+      "Security": "802.1X, MAC/Web authentication, DHCP snooping, RADIUS/TACACS+",
+      "Reliability": "STP/RSTP/MSTP, LACP, MMRP-Plus, port redundancy",
+      "Jumbo Frame": "Supported; topology MTU is documentation only",
+      "Operating temperature": "0–45°C; depends on selected PSU",
+      "Humidity": "See linked standard specification",
+      "Fanless": "No",
+      "Source detail": "Complete vendor specification table retained below (Japanese headings)",
+      " · ": "Apresia15000-32XL-PSR2",
+      "Interface · 10BASE-T/100BASE-TX": "—",
+      "Interface · 100BASE-FX": "—",
+      "Interface · 10BASE-T/100BASE-TX/1000BASE-T": "—",
+      "Interface · 1000BASE-X": "—",
+      "Interface · 10GBASE-R": "—",
+      "Interface · 1000BASE-X/10GBASE-R": "最大32(SFP/SFP+)",
+      "Interface · 40GBASE-R": "最大2(QSFP+)",
+      "Interface · Management Port": "○",
+      "パフォーマンス · スイッチ容量": "640Gbps",
+      "パフォーマンス · スループット": "476.1Mpps",
+      "パフォーマンス · パケットバッファ": "9Mbyte",
+      "パフォーマンス · MAC 登録数": "128k",
+      "VLAN · ポートベースVLAN": "○",
+      "VLAN · 802.1Qベース TAG VLAN": "○",
+      "VLAN · サポートVLAN数": "4094",
+      "VLAN · Protocol VLAN": "○",
+      "VLAN · Stacked VLAN": "○",
+      "Layer3機能(IPv4) · IP Interface 最大値": "1024",
+      "Layer3機能(IPv4) · 経路情報保持数(目安)": "16000",
+      "Layer3機能(IPv4) · ユニキャストルーティングプロトコル": "Static, RIPv1/v2, OSPFv2",
+      "Layer3機能(IPv4) · マルチキャストルーティングプロトコル": "PIM-SM",
+      "Layer3機能(IPv4) · 二重化機能": "VRRP",
+      "Layer3機能(IPv4) · ハードウェアポリシーベースルーティング": "○",
+      "Layer3機能(IPv6) · IP Interface 最大値": "64",
+      "Layer3機能(IPv6) · 経路情報保持数(目安)": "8000",
+      "Layer3機能(IPv6) · ユニキャストルーティングプロトコル": "Static,RIPng,OSPFv3",
+      "Layer3機能(IPv6) · マルチキャストルーティングプロトコル": "PIM-SM",
+      "Layer3機能(IPv6) · 二重化機能": "VRRP",
+      "DHCP · DHCPリレー": "○",
+      "DHCP · DHCPサーバー": "○",
+      "ネットワーク認証 · 802.1X": "○",
+      "ネットワーク認証 · MAC認証": "○",
+      "ネットワーク認証 · Web認証(SSL対応)": "○",
+      "ネットワーク認証 · ゲートウェイ認証": "○",
+      "ネットワーク認証 · DHCP Snooping": "○",
+      "ネットワーク認証 · 1ポート複数認証方式対応": "○ (802.1X/MAC認証/Web認証)",
+      "ネットワーク認証 · Dynamic VLAN": "○ (1ポート複数VLAN)",
+      "ネットワーク認証 · 認証ページリダイレクト": "○",
+      "ネットワーク認証 · ローカルDB 認証/強制認証": "○",
+      "ネットワーク認証 · User Policy Control": "○",
+      "ハードウェアPacket Filter · 最大エントリー数": "1792",
+      "ハードウェアPacket Filter · L1～L4制御": "○",
+      "ハードウェアPacket Filter · IPv6制御": "○",
+      "QoS · キューの数(優先クラス)": "8+4 ※1",
+      "QoS · フレーム識別": "802.1p/ToS",
+      "QoS · スケジューリング": "SPQ/WRR/DRR",
+      "QoS · Condition Based QoS": "○",
+      "QoS · ポリシー毎の帯域保証": "○",
+      "QoS · ポリシー毎の帯域制限": "○",
+      "帯域制御 · 入力Traffic 制限(Policing)": "○ (64k単位)",
+      "帯域制御 · 出力Traffic 制限(Shaping)": "○ (64k/128k/256k単位)",
+      "Multicast Filtering · IGMP-Snooping": "v1/v2/v3",
+      "Multicast Filtering · IGMP-Snooping Proxy": "○",
+      "Multicast Filtering · IGMPクエリア": "○",
+      "Multicast Filtering · MLD-Snooping": "v1/v2",
+      "入力時フラッディング制御機能(Flooding Limit) · フレーム種別": "BC/MC/DLF ※2",
+      "ストームコントロール(Flooding control) · フレーム種別": "UC/BC/MC ※2",
+      "ストームコントロール(Flooding control) · 制御動作": "Limit/Shutdown",
+      "ユーザーループ検知 · Loop-Watch": "○",
+      "Layer2冗長機能 · 802.3ad Link Aggregation": "○ (Static,LACP)",
+      "Layer2冗長機能 · Multi-Chassis Link-Aggregation(MLAG)": "○",
+      "Layer2冗長機能 · LAGグループ数/ポート数": "最大32グループ/装置、最大8ポート/1グループ",
+      "Layer2冗長機能 · MMRPv1 Aware": "—",
+      "Layer2冗長機能 · MMRPv2 Aware": "○",
+      "Layer2冗長機能 · MMRP-Plus": "○",
+      "Layer2冗長機能 · Port Redundant": "○",
+      "Layer2冗長機能 · Flush FDB": "〇",
+      "Layer2冗長機能 · xSTP": "STP/RSTP/MSTP",
+      "Layer2冗長機能 · Rapid-PVST+": "○ ※3",
+      "ミラーリング · Port Based Mirroring": "○",
+      "ミラーリング · Condition Based Mirroring": "○",
+      "マネージメント · SNMP": "v1/v2c/v3",
+      "マネージメント · TRAP/syslog": "○",
+      "マネージメント · RMON": "○",
+      "マネージメント · sFlow": "v4",
+      "マネージメント · Console/Telnet/SSH": "○",
+      "マネージメント · SSH Client": "○",
+      "マネージメント · Web-based GUI": "—",
+      "マネージメント · RADIUS/TACACS+": "○",
+      "マネージメント · 802.1ab LLDP": "○",
+      "マネージメント · SDカードブート": "○",
+      "マネージメント · Virtual BoxCore": "○",
+      "マネージメント · NETCONF": "○ ※4",
+      "PoE · PoE 給電ポート数": "—",
+      "PoE · 15.4W フル給電ポート数": "—",
+      "PoE · 30W フル給電ポート数": "—",
+      "PoE · 給電電力": "—",
+      "データセンター · 802.1Qaz DCBX/ETS": "○",
+      "データセンター · 802.1Qbb PFC": "○",
+      "データセンター · 802.1Qbg EVB": "○ ※5",
+      "データセンター · Cut-Through": "○",
+      "データセンター · FCoE": "○",
+      "データセンター · BFS": "○",
+      "その他 · 中継パス制限機能": "○",
+      "その他 · Port Security": "—",
+      "その他 · Jumbo Frame": "○",
+      "その他 · 停電時のログ保存機能": "○",
+      "ハードウェア · サイズW (mm)": "436",
+      "ハードウェア · サイズD (mm)": "380.4",
+      "ハードウェア · サイズH (mm)": "43.8",
+      "ハードウェア · 概算質量": "6kg以下 ※6",
+      "ハードウェア · 消費電力(AC100V時)最大 / 典型値※7": "165W/117W",
+      "ハードウェア · 動作温度": "0℃ ～ 45℃ ※8",
+      "ハードウェア · 周囲温度監視": "○",
+      "ハードウェア · 騒音特性 ※9": "約65dB(A) ※10",
+      "ハードウェア · 電源二重化対応": "○",
+      "ハードウェア · AC電源対応": "100 ～ 120V ±10%200 ～ 240V ±10%(50/60Hz)",
+      "ハードウェア · DC電源対応": "-57～-40V",
+      "ハードウェア · FANレス対応": "—",
+      "ハードウェア · MTBF(本体のみ)": "35年",
+      "省エネ法 · 区分": "※11",
+      "省エネ法 · 補足": "※1ユニキャスト用に8個、非ユニキャスト用に4個 ※2UC：ユニキャスト、BC：ブロードキャスト、MC：マルチキャスト、DLF：宛先不明ユニキャスト ※3PVST+との相互接続はサポートしていません ※4NETCONFは一部機能をサポート ※5Reflective Relayのみサポート ※6電源含まず ※7全ポート1518ByteユニキャストL2フレーム、IFG 12Byte通信、SFPポートH-SX-SFP/R、SFP+ポートH-LR-SFP+搭載時 ※8使用する電源ユニットにより異なります ※9AC電源搭載時におけるJISX7779による音響パワーレベル測定値 ※10 PSU-200-AC-ER 2台実装時 ※11 L3スイッチのため省エネ法対象外",
+      "Fixed network ports": "32 1G/10G SFP/SFP+; 2 40G QSFP+ share banks 25–28 and 29–32",
+      "Port constraints": "40GE25 disables SFP25–28; 40GE29 disables SFP29–32; remaining independent ports remain usable",
+      "40GE optics": "Vendor standard lists 40GBASE-SR4 only; MM Fiber offered",
+      "Dimensions (W x D x H)": "436 x 380.4 x 43.8 mm",
+      "Weight excluding PSU": "≤6 kg",
+      "Switching capacity": "640 Gbps",
+      "Forwarding performance": "476.1 Mpps",
+      "MAC table": "128K",
+      "Packet buffer": "9 MB",
+      "Network interfaces": 32,
+      "Physical network sockets": 34
+    },
+    "sources": [
+      {
+        "title": "APRESIA manufacturer product and full specification",
+        "url": "https://www.apresia.jp/products/ent/apresia15000-32xl-psr2.html"
+      },
+      {
+        "title": "APRESIA manufacturer hardware manuals / standard specifications",
+        "url": "https://www.apresia.jp/products/ent/support/manual.html"
+      },
+      {
+        "title": "APRESIA15000 standard specification",
+        "url": "https://www.apresia.jp/products/ent/support/docs/Specification_for_Apresia15000-32XL-PSR2_SP61-90751A.pdf"
+      }
+    ],
+    "summary": "32 1G/10G SFP/SFP+; 2 40G QSFP+ share banks 25–28 and 29–32",
+    "limitations": "ภาพจำลองเป็นภาพประกอบ ไม่ใช่แผนผังพอร์ตที่สอบเทียบ; พอร์ตเลือกจากรายการ; ไม่จำลอง Configuration หรือ Traffic",
+    "sourceStatus": "vendor-hardware-verified",
+    "nodeWidth": 244,
+    "nodeHeight": 88,
+    "confirmedSummary": "32 1G/10G SFP/SFP+; 2 40G QSFP+ share banks 25–28 and 29–32",
+    "displayImage": "assets/hitachi-apresia15000-32xl-psr2-illustration-v07.webp",
+    "thumbnail": "assets/hitachi-apresia15000-32xl-psr2-illustration-v07.webp",
+    "displayIllustrative": true,
+    "displayDimensions": {
+      "width": 2172,
+      "height": 724
+    },
+    "displayFrame": [
+      17,
+      231,
+      2136,
+      305
+    ],
+    "thumbnailDimensions": {
+      "width": 2172,
+      "height": 724
+    },
+    "thumbnailFrame": [
+      17,
+      231,
+      2136,
+      305
+    ],
+    "maxNetworkInterfaces": 32
+  },
+  {
+    "id": "huawei-ne40e-x8a",
+    "name": "Huawei NE40E-X8A",
+    "model": "NE40E-X8A",
+    "brand": "Huawei",
+    "category": "router",
+    "deviceRole": "PE",
+    "topologyOnly": true,
+    "physicalReady": true,
+    "calibrated": false,
+    "ports": [],
+    "components": {},
+    "images": {},
+    "photos": {},
+    "powerSlots": 0,
+    "powerModes": [],
+    "originalSpecs": {},
+    "verifiedSpecs": {},
+    "summary": "PE Router · ภาพอุปกรณ์",
+    "confirmedSummary": "PE Router สำหรับวาง Topology ใช้ชื่อ Interface ที่ระบุเอง",
+    "limitations": "ภาพจำลองตามรุ่นอ้างอิง ไม่มีข้อมูลสเปกหรือพอร์ตของรุ่นนี้",
+    "sources": [
+      {
+        "title": "Huawei NE40E-X8A chassis appearance",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100383693/ee8c26a3/ne40e-x8a"
+      }
+    ],
+    "displayImage": "assets/huawei-ne40e-x8a-illustration-v07.webp",
+    "displayDimensions": {
+      "width": 992,
+      "height": 1585
+    },
+    "displayFrame": [
+      88,
+      24,
+      816,
+      1545
+    ],
+    "displayIllustrative": true,
+    "nodeWidth": 158,
+    "nodeHeight": 176,
+    "thumbnail": "assets/huawei-ne40e-x8a-illustration-v07.webp",
+    "thumbnailDimensions": {
+      "width": 992,
+      "height": 1585
+    },
+    "thumbnailFrame": [
+      88,
+      24,
+      816,
+      1545
+    ],
+    "aliases": [
+      "NE40E-X8A(V8)"
+    ]
+  }
+]

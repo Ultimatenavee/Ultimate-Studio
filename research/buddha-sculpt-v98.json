@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-16",
+  "subject": "Todaiji's present seated Vairocana / Rushana Daibutsu",
+  "sources": [
+    {"url":"https://www.todaiji.or.jp/information/daibutsuden/", "owner":"Todaiji", "usedFor":"Identity, seated bronze image, 14.98 m statue height, lotus pedestal and engraved leaves; official front photograph inspected as reference only."},
+    {"url":"https://narashikanko.or.jp/feature/daibutsu", "owner":"Nara City Tourism Association", "usedFor":"Facial, ear, palm, middle finger and lotus pedestal measurements, photographed proportions."},
+    {"url":"https://www.todaiji.or.jp/faq/", "owner":"Todaiji", "usedFor":"Present curls: 483 retained; 492 including nine missing. The commonly repeated 966 is the original Nara-era head, not the present head."}
+  ],
+  "referenceMeasurementsMetres": {
+    "seatedStatue":14.98, "faceLengthTourismTable":4.13, "faceWidth":3.20,
+    "eyeLength":1.02, "noseWidth":0.98, "noseProjection":0.50, "mouthWidth":1.33,
+    "earLength":2.54, "palmLength":1.48, "middleFingerLength":1.08,
+    "leftFootLength":3.74, "kneeThickness":2.23, "bronzePedestal":3.04
+  },
+  "landmarkCaution":"Todaiji's page lists face length as 5.33 m while the tourism table lists 4.13 m. Their landmark definitions are not reconciled here. The photograph and the tourism facial table guide the face; 5.33 m is not silently substituted for 4.13 m.",
+  "sculpture": {
+    "construction":"Original native polygon sculpture with smooth lofted face, integrated nose and cheek relief, surface-conforming eyelids and lips, elongated ears, continuous torso, cloth relief, five-finger hands, cupped bronze lotus leaves and gilded relief mandorla.",
+    "scale":"Uniform visual scale of 4.25 / 14.98 to fit the existing garden hall. Hall and attendant placement are scenic adaptations, not surveyed reconstruction.",
+    "curls":"483 instanced curl forms; newly laid out in staggered rows. Individual curl locations are not scan-derived and missing-curl positions are not claimed.",
+    "materials":"Dark olive bronze, aged gilt aureole, procedural micro-surface and subtle vertex patina. No image textures or downloaded statue geometry.",
+    "performance":"Lazy existing temple interior loading, coarser attendant tessellation, immutable material batches, indexed vertices and shared instance geometry.",
+    "limits":"Photograph-referenced interpretation. No access to survey, laser scan or rear photographic coverage. Unseen surface detail and ornament are artistic reconstruction; no 1:1 accuracy claim."
+  },
+  "assets":"Reference photographs are viewed for research and are not included in source assets or published site."
+}

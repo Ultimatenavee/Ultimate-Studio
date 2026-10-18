@@ -1,0 +1,15 @@
+.audience-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:9px 18px;border-bottom:1px solid var(--border);background:rgba(130,175,220,.1)}
+.audience-toolbar strong{font-size:13px}.audience-toolbar span{font-size:12px;opacity:.8}.audience-toolbar button{margin-left:auto}
+.new-audience-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:24px}.new-audience-options button{display:flex;flex-direction:column;gap:12px;padding:28px;text-align:left}.new-audience-options span{font-size:13px;line-height:1.6}.external-card img{object-fit:contain;width:100%;height:110px}.external-card small{display:block;padding:8px;font-size:11px}
+.audience-external #filters,.audience-external #typeFilters,.audience-external #sourcesBtn{display:none}.bayface-mode .audience-toolbar,.specs-mode .audience-toolbar{display:none}
+@media(max-width:600px){.new-audience-options{grid-template-columns:1fr}.audience-toolbar span{width:100%}}
+
+.link-color-palette{display:grid;grid-template-columns:repeat(10,28px);gap:8px;padding:12px 0}.link-color-palette button{width:28px;height:28px;padding:0;background:var(--swatch);border:1px solid #94a3b8;border-radius:50%;cursor:pointer}.link-color-palette button:hover{outline:2px solid #38bdf8;outline-offset:2px}
+
+#nodes,#regions,#textLabels,#links,#groups{display:contents!important}.object-link{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}.object-link .link-hit,.object-link .link-label,.object-link .link-bend-handle{pointer-events:auto}.device-node.equipment-only>.device-image{width:100%!important;height:100%!important}.device-resize{position:absolute;right:-5px;bottom:-5px;width:12px;height:12px;border:2px solid white;background:#2563eb;border-radius:3px;cursor:nwse-resize;z-index:100}.selection-rect{transition:width .035s linear,height .035s linear;background:#38bdf822;border:1px dashed #2563eb;box-shadow:0 0 0 1px #ffffff66}.world{isolation:isolate}
+
+.selection-rect{transition:none!important;will-change:transform,width,height;pointer-events:none}.canvas.is-panning .device-node,.canvas.is-panning .topology-label{pointer-events:none}.canvas.is-panning .world{will-change:transform}
+
+.group-editing{border-color:#f97316!important;border-style:dashed!important}.group-editing .group-header:after{content:' · กำลังแก้ไข';font-size:11px}.audience-external #libraryIconStyle{display:none}
+
+.brand-logo{width:52px;height:52px;object-fit:contain;border-radius:10px;flex-shrink:0}.welcome-logo{display:block;width:132px;height:132px;object-fit:contain;margin:0 auto 18px;border-radius:20px}.external-icon-picker{display:none}.audience-external .external-icon-picker{display:block}

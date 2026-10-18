@@ -1,0 +1,1003 @@
+
+
+      
+   
+
+
+
+
+
+
+
+
+S5720-36C-EI-28S-AC
+
+S5720-36C-EI-28S-AC
+
+Version MappingTable 4-645 lists the mapping between the S5720-36C-EI-28S-AC chassis and software versions.
+
+Table 4-645  Version mappingSeries
+
+Model
+
+Software Version
+
+
+
+S5720-EI
+
+S5720-C-EI
+
+S5720-36C-EI-28S-AC
+
+V200R007C00 to V200R019C10 versions
+ NOTE: This model does not match V200R007C10.
+
+
+
+
+
+
+
+Appearance and StructureFigure 4-260  S5720-36C-EI-28S-AC appearance
+1
+
+Twenty-four 100/1000BASE-X ports
+Applicable modules:FE optical moduleGE optical moduleGE-CWDM optical moduleGE copper module (works at 10 Mbit/s, 100 Mbit/s, or 1000 Mbit/s)
+
+
+2
+
+Four combo ports (10/100/1000BASE-T + 100/1000BASE-X)
+Modules applicable to combo optical ports:FE optical moduleGE optical moduleGE-CWDM optical module
+
+
+
+3
+
+Four 10GE SFP+ ports
+Applicable modules and cables:GE optical moduleGE-CWDM optical moduleGE-DWDM optical moduleGE copper module (only 1000 Mbit/s supported)10GE SFP+ optical module (OSXD22N00 not supported)10GE-CWDM optical module10GE-DWDM optical module (applicable in V200R009C00 and later versions)1 m, 3 m, and 10 m SFP+ high-speed copper cables5 m SFP+ high-speed copper cable (applicable in V200R009C00 and later versions)3 m and 10 m AOC cables
+
+
+4
+
+One mini USB port
+
+
+5
+
+One console port
+ NOTE: It is used with a console cable. The console cable is not delivered with the switch and needs to be separately purchased if needed.
+
+
+6
+
+One ETH management port
+
+
+7
+
+One USB port
+
+8
+
+Ground screw
+ NOTE: It is used with a ground cable.
+
+
+9
+
+ESN label
+ NOTE: You can draw it out to view the ESN and MAC address of the switch.
+
+
+10
+
+Rear card slot
+ NOTE: Card supported:ES5D21X02S01 (2-Port 10 Gig SFP+ Rear Interface Card, Used in S5720-EI Series)ES5D21X02T01 (2-Port 10 Gig RJ45 Rear Interface Card, Used in S5720-EI Series)ES5D21VST000 (Dedicated Stack Card with 2*QSFP+ Interface)
+
+
+
+
+11
+
+Fan slot
+ NOTE: Applicable fan module: FAN-028A-B Fan Module
+
+
+12
+
+Power module slot 2
+ NOTE: Applicable power modules:150 W AC power module150 W DC power module
+
+
+
+
+13
+
+Power module slot 1
+ NOTE: Applicable power modules:150 W AC power module150 W DC power module
+
+
+
+-
+
+-
+
+
+
+
+Port Description100/1000BASE-X port
+A 100/1000BASE-X port can send and receive data at 100 Mbit/s or 1000 Mbit/s. Table 4-646 describes the attributes of a 100/1000BASE-X port.
+Table 4-646  Attributes of a 100/1000BASE-X portAttribute
+
+Description
+
+
+
+Connector type
+
+LC/PC
+
+
+Optical interface attributes
+
+Depend on the optical module used
+
+
+Standards compliance
+
+IEEE802.3z
+
+
+Working mode
+
+100/1000 Mbit/s auto-sensing
+
+
+
+
+
+
+Combo port
+A combo port consists of an optical Ethernet port and an electrical Ethernet port on the panel. Each combo port matches only one internal forwarding port. The electrical and optical ports of a combo port are multiplexed, and only one of them can work at a time. When one of the Ethernet ports is working, the other port is shut down. By default, a combo port works in auto mode, in which the port type is determined as follows:
+If the optical port has no optical module installed and the electrical port has no Ethernet cable connected, the port type depends on which port is connected first. If the electrical port is connected by an Ethernet cable first, the electrical port is used for data switching. If the optical port has an optical module installed first, the optical port is used for data switching.If the electrical port has an Ethernet cable connected and is in Up state, the electrical port is still used for data switching when the optical port has an optical module installed.If the optical port, no matter in Up or Down state, has an optical module installed, the optical port is still used for data switching when the electrical port has an Ethernet cable connected.If the optical port has an optical module installed and the electrical port has an Ethernet cable connected, the optical port is used for data switching after the switch restarts.
+You can configure a combo port as an electrical or optical port using the combo-port command.
+
+
+10GE SFP+ port
+A 10GE SFP+ Ethernet optical port supports auto-sensing to 1000 Mbit/s. It sends and receives service data at 1000 Mbit/s or 10 Gbit/s. Table 4-647 describes the attributes of a 10GE SFP+ Ethernet optical port.
+Table 4-647  Attributes of a 10GE SFP+ portAttribute
+
+Description
+
+
+
+Connector type
+
+LC/PC
+
+
+Optical port attributes
+
+Depend on the optical module used
+
+
+Standards compliance
+
+IEEE802.3ae
+
+
+Working mode
+
+GE/10GE auto-sensing
+
+
+
+
+
+
+Console port
+The console port is connected
+to a console for on-site configuration. The port must use a console cable. The console port is
+used when a switch is powered on for the first time. For details about
+the attributes of a console port, see Table 4-648.
+Table 4-648  Attributes of a console port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+RJ45
+
+
+
+
+
+Standards compliance
+
+
+RS-232
+
+
+
+
+
+Working mode
+
+
+Duplex Universal Asynchronous Receiver/Transmitter (UART)
+
+
+
+
+
+Baud rate
+
+
+9600 bit/s, 19200 bit/s, 38400 bit/s, 57600 bit/s, or 115200
+bit/s
+Default value: 9600 bit/s
+
+
+
+
+
+
+
+
+
+Mini USB port
+The mini USB port is connected
+to a console for on-site configuration. When both the Mini USB and
+console port have a cable connected, only the Mini USB port works.
+ETH management port
+You can connect a switch to a configuration terminal or network management workstation through the ETH management port to configure the switch locally or remotely. The port must use an Ethernet cable. You can choose to download the software package through the ETH management port in the BootLoad menu. File transfer through the ETH management port is faster than transfer through the console port. Table 4-649 describes the attributes of an ETH management port.
+Table 4-649  Attributes of an ETH management portAttribute
+
+Description
+
+
+
+Connector type
+
+RJ45
+
+
+Standards compliance
+
+IEEE802.3
+
+
+Working mode
+
+10/100 Mbit/s auto-sensing
+
+
+Maximum transmission distance
+
+100 m
+
+
+
+
+
+In V200R012C00 and later versions, you can log in to the switch that contains the ETH management port for the first time through the ETH port. For details, see "First Login to a Switch" in the Configuration Guide - Basic Configuration. If you have logged in to the device for the first time by pressing and holding the MODE button for 6 seconds or longer and saved the configuration, the default configuration on the ETH port will be cleared. In this case, you cannot log in to the switch for the first time through the ETH port. You are advised to log in to the switch for the first time through the ETH port.
+USB port
+The USB port can have a USB flash drive connected to upgrade the switch, or transfer configuration files or other files. The USB port of the S5720-EI does not support USB 1.1 and can only connect to a USB flash drive that complies with USB 2.0. USB flash drives from different vendors differ in model compatibility and drivers. If a USB flash drive cannot be used, try to replace it with another one from a mainstream vendor. Switches support a maximum of 128 GB USB flash drives.
+
+
+
+Indicator Description Hold down the mode switch button for 6s and release it to start the web initial login mode. Either of the following situations will occur:If the switch has no configuration file, the system attempts to enter the web initial login mode. In this mode, the status of mode indicators is as follows:If the system enters the web initial login mode successfully, all mode indicators turn green and stay on for a maximum of 10 minutes.If the system fails to enter the initial login mode, all mode indicators fast blink for 10 seconds and then restore the default status.
+If the switch has a configuration file, the system cannot enter the web initial login mode. In this case, all mode indicators fast blink for 10s, and then return to the default states.
+
+
+Figure 4-261  Indicators on the S5720-36C-EI-28S-AC
+ The S5720-EI series switches provide a command for setting fault indicators, which help field maintenance personnel find a faulty switch quickly.
+The SYS indicator and mode indicators (STAT, SPED, STCK, and PoE) are used as fault indicators. When an S5720-EI switch is faulty, you can run the command to turn on the fault indicators. Then the SYS indicator and mode indicators fast blink red to help field maintenance personnel quickly find the faulty switch.
+
+
+Table 4-650  Description of indicators on the switchNo.
+
+Indicator
+
+Name
+
+Color
+
+Status
+
+Description
+
+
+
+1
+
+PWR1
+
+Power module indicator
+
+-
+
+Off
+
+No power module is available in power module slot 1, or the switch has only one power module but the power module does not work normally.
+
+
+Green
+
+Steady on
+
+A power module is installed in power module slot 1 and is working normally.
+
+
+Yellow
+
+Steady on
+
+The switch has two power modules installed. Any of the following situations occurs in power module slot 1:
+A power module is available in this slot but its power switch is in the OFF position.
+A power module is available in this slot but it is not connected to a power source.
+The power module in this slot has failed.
+
+
+
+2
+
+PWR2
+
+Power module indicator
+
+-
+
+Off
+
+No power module is available in power module slot 2, or the switch has only one power module but the power module does not work normally.
+
+
+Green
+
+Steady on
+
+A power module is installed in power module slot 2 and is working normally.
+
+
+Yellow
+
+Steady on
+
+The switch has two power modules installed. Any of the following situations occurs in power module slot 2:
+A power module is available in this slot but its power switch is in the OFF position.
+A power module is available in this slot but it is not connected to a power source.
+The power module in this slot has failed.
+
+
+
+3
+
+SYS
+
+System status indicator
+
+-
+
+Off
+
+The system is not running.
+
+
+Green
+
+Fast blinking
+
+The system is starting.
+
+
+Green
+
+Slow blinking
+
+The system is running normally.
+
+
+Red
+
+Steady on
+
+The system does not work normally after registration, or a fan alarm or temperature alarm has been generated.
+
+
+4
+
+STAT
+
+Status indicator
+
+-
+
+Off
+
+The status mode is not selected.
+
+
+Green
+
+Steady on
+
+The status mode (default mode) is selected. If the status mode is selected, the service port indicator shows the port link or activity state.
+
+
+5
+
+SPED
+
+Speed indicator
+
+-
+
+Off
+
+The speed mode is not selected.
+
+
+Green
+
+Steady on
+
+The service port indicators show the port speeds. After 45 seconds, the service port indicators automatically restore to the status mode.
+
+
+6
+
+STCK
+
+Stack indicator
+
+-
+
+Off
+
+If you are not changing the indicator mode (default): The switch is in stack standby or slave state or the stacking function is not enabled on the switch.If you are changing the indicator mode: The stack mode is not selected.
+
+
+Green
+
+Steady on
+
+The switch is a standby or slave switch in a stack, and the service port indicators show the stack ID of the switch.
+
+
+Green
+
+Blinking
+
+If you are not changing the indicator mode (default): The switch is a stack master switch or a standalone switch with the stacking function enabled.If you are changing the indicator mode: The switch is the master switch in a stack or a standalone switch, and the service port indicators show the stack ID of the master switch.
+After 45 seconds, the service port indicators automatically restore to the status mode.
+
+
+7
+
+MODE
+
+Mode switch button
+
+-
+
+-
+
+When you press this button once, the service port indicators change to the speed mode and show the speed of each service port.When you press this button a second time, the service port indicators change to the stack mode and show the stack ID of the local switch.When you press this button a third time, the service port indicators restore to the default mode, and the STAT indicator turns green.
+If you do not press the MODE button within 45 seconds, the service port indicators restore to the default mode. In this case, the STAT indicator is steady green, the SPED indicator is off, and the STCK indicator is off or blinking green.
+
+
+8
+
+-
+
+Service port indicator (two indicators for each port)
+
+Meanings of service port indicators vary in different modes. For details, see Table 4-651.
+
+
+9
+
+-
+
+Service port indicator (one indicator for each port)
+
+Meanings of service port indicators vary in different modes. For details, see Table 4-652.
+
+
+10
+
+-
+
+Mini USB indicator
+
+-
+
+Off
+
+The Mini USB port is disabled, and the console port is enabled.
+
+
+Green
+
+Steady on
+
+The Mini USB port is enabled.
+When the Mini USB indicator is steady green, the console indicator is off.
+
+
+11
+
+-
+
+Console indicator
+
+-
+
+Off
+
+The console port is disabled, and the Mini USB port is enabled.
+
+
+Green
+
+Steady on
+
+The console port is enabled (default state).
+When the console indicator is steady green, the Mini USB indicator is off.
+
+
+12
+
+-
+
+ETH port indicator
+
+-
+
+Off
+
+The ETH port is not connected.
+
+
+Green
+
+Steady on
+
+The ETH port is connected.
+
+
+Green
+
+Blinking
+
+The ETH port is sending or receiving data.
+
+
+13
+
+-
+
+USB-based deployment indicator
+
+-
+
+Off
+
+No USB flash drive is connected to the switch.The USB port is damaged.The indicator is damaged.The USB flash drive does not have any configuration file and cannot be used for deployment.The switch has been upgraded using the USB flash drive and is restarting.
+
+
+Green
+
+Steady on
+
+A USB-based deployment has been completed.
+
+
+Green
+
+Blinking
+
+The system is reading data from the USB flash drive.
+
+
+Yellow
+
+Steady on
+
+The switch has copied all the required files and completed the file check. The USB flash drive can be removed from the switch.
+
+
+Red
+
+Blinking
+
+An error has occurred when the system is executing the configuration file or reading data from the USB flash drive.
+
+
+
+
+
+
+Table 4-651  Description of service port indicators in different modes (two indicators for each port)Display Mode
+
+Color
+
+Status
+
+Description
+
+
+
+Status
+
+-
+
+Off
+
+The port is not connected or has been shut down.
+
+
+Green
+
+Steady on
+
+A link has been established on the port.
+
+
+Yellow
+
+Blinking
+
+The port is sending or receiving data.
+
+
+Speed
+
+-
+
+Off
+
+The port is not connected or has been shut down.
+
+
+Green and yellow
+
+Steady on
+
+10M/100M/1000M port: The port is operating at 10/100 Mbit/s.
+100M/1000M port: The port is operating at 100 Mbit/s.
+
+
+Green and yellow
+
+Blinking
+
+10M/100M/1000M port: The port is operating at 1000 Mbit/s.
+100M/1000M port: The port is operating at 1000 Mbit/s.
+
+
+Stack
+
+-
+
+Off
+
+Port indicators do not show the stack ID of the switch.
+
+
+Green and yellow
+
+Steady on
+
+The switch is not the master switch in a stack.If the indicator of a port is steady on, the number of this port is the stack ID of the switch.
+If the indicators of ports 1 to 9 are steady on, the stack ID of the switch is 0.
+
+
+
+
+Green and yellow
+
+Blinking
+
+The switch is the master switch in a stack.If the indicator of a port is blinking, the number of this port is the stack ID of the switch.
+If the indicators of ports 1 to 9 are blinking, the stack ID of the switch is 0.
+
+
+
+
+
+
+
+
+Table 4-652  Description of service port indicators in different modes (one indicator for each port)Display Mode
+
+Color
+
+Status
+
+Description
+
+
+
+Status
+
+-
+
+Off
+
+The port is not connected or has been shut down.
+
+
+Green
+
+Steady on
+
+A link has been established on the port.
+
+
+Green
+
+Blinking
+
+The port is sending or receiving data.
+
+
+Speed
+
+-
+
+Off
+
+The port is not connected or has been shut down.
+
+
+Green
+
+Steady on
+
+10M/100M/1000M port: The port is operating at 10/100 Mbit/s.
+1000M/10GE port: The port is operating at 1000 Mbit/s.
+
+
+Green
+
+Blinking
+
+10M/100M/1000M port: The port is operating at 1000 Mbit/s.
+1000M/10GE port: The port is operating at 10 Gbit/s.
+
+
+Stack
+
+-
+
+Off
+
+Port indicators do not show the stack ID of the switch.
+
+
+Green
+
+Steady on
+
+The switch is not the master switch in a stack.If the indicator of a port is steady on, the number of this port is the stack ID of the switch.
+If the indicators of ports 1 to 9 are steady on, the stack ID of the switch is 0.
+
+
+
+
+Green
+
+Blinking
+
+The switch is the master switch in a stack.If the indicator of a port is blinking, the number of this port is the stack ID of the switch.
+If the indicators of ports 1 to 9 are blinking, the stack ID of the switch is 0.
+
+
+
+
+
+
+
+
+Power Supply ConfigurationThe S5720-36C-EI-28S-AC uses pluggable power modules. It can be configured with a single power module or double power modules for 1+1 power redundancy. Pluggable AC and DC power modules can be used together in the same switch.
+Figure 4-262 shows the power supply connections of dual DC power modules. After DC power is transmitted to the PWR module, the PWR module provides 12 V output voltage, and the motherboard provides power for the entire device.Figure 4-262  Power supply connections of dual DC power modulesNEG: negative wire
+
+RTN: positive wire
+
+GND: 12 V reference ground
+
+
+
+
+
+Figure 4-263 shows the power supply connections of dual AC power modules. After AC power is transmitted to the PWR module, the PWR module provides 12 V output voltage, and the motherboard provides power for the entire device.Figure 4-263  Power supply connections of dual AC power modulesL: Live wire
+
+N: Neutral wire
+
+PGND: Protection ground wire
+
+GND: 12 V reference ground
+
+
+
+
+
+
+Heat DissipationThe S5720-36C-EI-28S-AC uses pluggable fan modules for forced air cooling. Air flows in from the left side, right side, and front panel, and exhausts from the rear panel.
+
+ This figure only shows the airflow direction and does not depict the actual device.
+
+
+Technical SpecificationsTable 4-653 lists technical specifications of the S5720-36C-EI-28S-AC.
+
+Table 4-653  Technical specificationsItem
+
+Description
+
+
+
+Memory (RAM)
+
+2 GB
+
+
+Flash
+
+512 MB in total. To view the available flash memory size, run the display version command.
+
+
+Mean time between failures (MTBF)
+
+85.45 years when no card is configured; 78.2 years when a 2-port 10GE SFP+ interface card is configured; 75.87 years when a 2-port 10GE RJ45 interface card is configured; 76.05 years when a stack card is configured
+
+
+Mean time to repair (MTTR)
+
+2 hours
+
+
+Availability
+
+> 0.99999
+
+
+Service port surge protection
+
+Service ports on front panel: ±6 kV in common modePorts on the 2-port 10GE RJ45 rear interface card: ±2 kV in common mode
+
+
+Power supply surge protection
+
+Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±1 kV in differential mode, ±2 kV in common mode
+
+
+Dimensions (H x W x D)
+
+Basic dimensions (excluding the parts protruding from the body): 44.4 mm x 442.0 mm x 424.7 mm (1.75 in. x 17.4 in. x 16.72 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 44.4 mm x 442.0 mm x 451.8 mm (1.75 in. x 17.4 in. x 17.79 in.)
+
+
+Weight (with packaging)
+
+9.9 kg (21.83 lb)
+
+
+Stack ports
+
+Ports on the 2-port 10GE SFP+ rear interface cardPorts on the 2-port 10GE RJ45 rear interface cardPorts on the 2-port QSFP+ rear stack card
+
+
+RTC
+
+Supported
+
+
+RPS
+
+Not supported
+
+
+PoE
+
+Not supported
+
+
+Rated voltage range
+
+100 V AC to 240 V AC, 50/60 Hz
+-48 V DC to -60 V DC
+
+
+Maximum voltage range
+
+90 V AC to 264 V AC, 47 Hz to 63 Hz
+-36 V DC to -72 V DC
+
+
+Maximum power consumption (100% throughput, full speed of fans)
+
+83.9 W
+
+
+Typical power consumption (30% of traffic load)Tested according to ATIS standardEEE enabledNo PoE power consumption
+
+
+47.86 W (without card)55.35 W (with 2*10GE optical card)60.25 W (with 2*QSFP+ stack card)63.5 W (with 2*10GE electrical card)
+
+
+Operating temperature
+
+0°C to 45°C (32°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.)
+ NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).
+
+
+
+Short-term operating temperature
+
+-5°C to +50°C (23°F to 122°F) at an altitude of 0-1800 m (0-5906 ft.)
+ NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).
+The equipment can operate beyond the normal operating temperature range for a short-term period, but the following conditions must be met:The equipment operates at a temperature of over 45°C (113°F) consecutively for at most 96 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for a total of no more than 360 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for no more in 15 times in one year.
+The equipment may be damaged or experience unexpected exceptions if any of the preceding limits is exceeded.
+The equipment cannot start when the temperature is lower than 0°C (32°F). The maximum distance of optical modules used in these conditions cannot exceed 10 km.
+
+
+
+Storage temperature
+
+-40°C to +70°C (-40°F to +158°F)
+
+
+Noise under normal temperature (27°C, sound power)
+
+< 51.2 dB(A)
+
+
+Relative humidity
+
+5% to 95%, noncondensing
+
+
+Operating altitude
+
+AC power modules configured: 0-5000 m (0-16404 ft.)DC power modules configured: 0-2000 m (0-6562 ft.)
+
+
+Certification
+
+EMC certificationSafety certificationManufacturing certification
+
+
+Part number
+
+02359503
+
+
+
+
+
+
+
+Version MappingAppearance and StructurePort DescriptionIndicator DescriptionPower Supply ConfigurationHeat DissipationTechnical Specifications
+
+
+
+<!--
+image_size('.imgResize');
+var msg_imageMax = "view original image";
+var msg_imageClose = "close";
+//-->

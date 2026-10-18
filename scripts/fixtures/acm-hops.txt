@@ -1,0 +1,181 @@
+{
+  "url": "https://example.invalid/?tkn=do-not-persist",
+  "serviceInfo": {
+    "CID": "DI-DEMO",
+    "Service Access Point Name": "Demo branch",
+    "Remark": "line one
+line two"
+  },
+  "hops": {
+    "HOP1": {
+      "start": {
+        "Node Name": "PE-A",
+        "Model": "NE40E-X8A(V8)",
+        "Brand": "Huawei",
+        "Interface Name": "GigabitEthernet5/0/0",
+        "Int. Redundant 1": "",
+        "Int. Redundant 2": "",
+        "Redundant Node": "",
+        "Redundant Int. 1": "",
+        "Redundant Int. 2": "",
+        "MTU": "9600",
+        "cVLAN Number": "2101",
+        "Tagged Type": "Tagged",
+        "Type Name": "PE",
+        "BGP Password": "secret-do-not-persist"
+      },
+      "end": {
+        "Node Name": "Access-A (main)",
+        "Model": "S6730-H24",
+        "Brand": "Huawei",
+        "Interface Name": "XGigabitEthernet0/0/4",
+        "Int. Redundant 1": "XGigabitEthernet0/0/24",
+        "Int. Redundant 2": "",
+        "Redundant Node": "Access-A (Backup)",
+        "Redundant Int. 1": "XGigabitEthernet1/0/24",
+        "Redundant Int. 2": "",
+        "MTU": "",
+        "cVLAN Number": "2101",
+        "Tagged Type": "Tagged",
+        "Type Name": "Access Switch",
+        "BGP Password": "secret-do-not-persist"
+      },
+      "backup": {
+        "start": {
+          "Node Name": "PE-B",
+          "Model": "NE40E-X8A(V8)",
+          "Brand": "Huawei",
+          "Interface Name": "GigabitEthernet5/0/0",
+          "Int. Redundant 1": "",
+          "Int. Redundant 2": "",
+          "Redundant Node": "",
+          "Redundant Int. 1": "",
+          "Redundant Int. 2": "",
+          "MTU": "9600",
+          "cVLAN Number": "2101",
+          "Tagged Type": "Tagged",
+          "Type Name": "PE",
+          "BGP Password": "secret-do-not-persist"
+        },
+        "end": {
+          "Node Name": "Access-A (ฺBackup)",
+          "Model": "S6730-H24",
+          "Brand": "Huawei",
+          "Interface Name": "XGigabitEthernet1/0/4",
+          "Int. Redundant 1": "XGigabitEthernet1/0/24",
+          "Int. Redundant 2": "",
+          "Redundant Node": "Access-A (main)",
+          "Redundant Int. 1": "XGigabitEthernet0/0/24",
+          "Redundant Int. 2": "",
+          "MTU": "",
+          "cVLAN Number": "2101",
+          "Tagged Type": "Tagged",
+          "Type Name": "Access Switch",
+          "BGP Password": "secret-do-not-persist"
+        }
+      }
+    },
+    "HOP2": {
+      "start": {
+        "Node Name": "Access-A (main)",
+        "Model": "S6730-H24",
+        "Brand": "Huawei",
+        "Interface Name": "XGigabitEthernet0/0/10",
+        "Int. Redundant 1": "",
+        "Int. Redundant 2": "",
+        "Redundant Node": "",
+        "Redundant Int. 1": "",
+        "Redundant Int. 2": "",
+        "MTU": "",
+        "cVLAN Number": "2101",
+        "Tagged Type": "Tagged",
+        "Type Name": "Access Switch",
+        "BGP Password": "secret-do-not-persist"
+      },
+      "end": {
+        "Node Name": "Branch-A",
+        "Model": "S5735-L8T4X-A1",
+        "Brand": "Huawei",
+        "Interface Name": "XGigabitEthernet0/0/1",
+        "Int. Redundant 1": "XGigabitEthernet0/0/2",
+        "Int. Redundant 2": "",
+        "Redundant Node": "Branch-B",
+        "Redundant Int. 1": "XGigabitEthernet1/0/3",
+        "Redundant Int. 2": "",
+        "MTU": "",
+        "cVLAN Number": "2101",
+        "Tagged Type": "Tagged",
+        "Type Name": "Access Switch",
+        "BGP Password": "secret-do-not-persist"
+      },
+      "backup": {
+        "start": {
+          "Node Name": "Access-A (ฺBackup)",
+          "Model": "S6730-H24",
+          "Brand": "Huawei",
+          "Interface Name": "XGigabitEthernet1/0/10",
+          "Int. Redundant 1": "",
+          "Int. Redundant 2": "",
+          "Redundant Node": "",
+          "Redundant Int. 1": "",
+          "Redundant Int. 2": "",
+          "MTU": "",
+          "cVLAN Number": "2101",
+          "Tagged Type": "Tagged",
+          "Type Name": "Access Switch",
+          "BGP Password": "secret-do-not-persist"
+        },
+        "end": {
+          "Node Name": "Branch-B",
+          "Model": "S5735-L8T4X-A1",
+          "Brand": "Huawei",
+          "Interface Name": "XGigabitEthernet1/0/1",
+          "Int. Redundant 1": "XGigabitEthernet1/0/3",
+          "Int. Redundant 2": "",
+          "Redundant Node": "Branch-A",
+          "Redundant Int. 1": "XGigabitEthernet0/0/2",
+          "Redundant Int. 2": "",
+          "MTU": "",
+          "cVLAN Number": "2101",
+          "Tagged Type": "Tagged",
+          "Type Name": "Access Switch",
+          "BGP Password": "secret-do-not-persist"
+        }
+      }
+    },
+    "HOP3": {
+      "start": {
+        "Node Name": "Branch-A",
+        "Model": "S5735-L8T4X-A1",
+        "Brand": "Huawei",
+        "Interface Name": "XGigabitEthernet0/0/3",
+        "Int. Redundant 1": "",
+        "Int. Redundant 2": "",
+        "Redundant Node": "",
+        "Redundant Int. 1": "",
+        "Redundant Int. 2": "",
+        "MTU": "",
+        "cVLAN Number": "2101",
+        "Tagged Type": "Untagged",
+        "Type Name": "Access Switch",
+        "BGP Password": "secret-do-not-persist"
+      },
+      "end": {
+        "Node Name": "CPE-A",
+        "Model": "ASR1001-x",
+        "Brand": "Cisco",
+        "Interface Name": "Ten0/0",
+        "Int. Redundant 1": "",
+        "Int. Redundant 2": "",
+        "Redundant Node": "",
+        "Redundant Int. 1": "",
+        "Redundant Int. 2": "",
+        "MTU": "",
+        "cVLAN Number": "",
+        "Tagged Type": "",
+        "Type Name": "CPE",
+        "BGP Password": "secret-do-not-persist"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "subject": "Japanese timber hall scenery replacing the campus glass building",
+  "researchedAt": "2026-10-16",
+  "reference": "User-provided Japanese timber hall garden visual, image(20261016-021928).png",
+  "sources": [
+    {
+      "publisher": "Tōdai-ji Temple",
+      "url": "https://www.todaiji.or.jp/en/information/daibutsuden/",
+      "observations": ["Current Great Buddha Hall is seven bays wide.", "Official published dimensions are 57.012m wide, 50.480m long and 48.742m high."],
+      "usedFor": "Research context and seven-bay timber facade rhythm only. This campus hall deliberately has different dimensions and is not a reconstruction."
+    },
+    {
+      "publisher": "Tōdai-ji Temple",
+      "url": "https://www.todaiji.or.jp/en/information/nandaimon/",
+      "observations": ["Great South Gate uses a double hip-and-gable roof and large timber pillars above a stone plinth.", "The temple identifies its construction as Daibutsu style."],
+      "usedFor": "Exposed timber, layered roof silhouette and stone podium architectural vocabulary, together with the user's visual reference."
+    },
+    {
+      "publisher": "Tokyo National Museum",
+      "url": "https://www.tnm.jp/modules/r_free_page/index.php?id=2122&lang=en",
+      "observations": ["Museum exhibit documents historic temple roof tiles, including lotus-patterned and bucket-molded tile examples."],
+      "usedFor": "Rounded modeled tile ribs, separate eave bands and ridge courses rather than smooth flat roofing."
+    }
+  ],
+  "model": {
+    "module": "src/datacenter/japanese-temple.js",
+    "originalScenery": true,
+    "downloadedPhotosOrModels": false,
+    "centerXZ": [-18, -43.5],
+    "facadeFaces": "+Z",
+    "bodyWidthDepth": [30, 12],
+    "maximumHeight": 16.6,
+    "floorY": 0.75,
+    "navigation": "Decorative landmark beyond north garden fence, not a walk-in interior. Bounds metadata is exported for integration."
+  },
+  "limitations": ["No claim of survey accuracy, temple replica, structural engineering accuracy or exact historical joinery.", "Research source imagery is not copied or shipped; all runtime geometry/textures are generated locally from code."]
+}

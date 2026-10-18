@@ -1,0 +1,119 @@
+{
+  "checkedAt": "2026-10-10",
+  "generationTool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hitachi-apresia13200-48x-psr3",
+      "path": "web/assets/hitachi-apresia13200-48x-psr3-audited-rear-20261010.webp",
+      "dimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "prompt": "Use case: product-mockup. Asset type: exact vendor-referenced rear physical simulator asset. Reference image is official APRESIA13000 hardware manual PDF page97, Fig2-14 TOP DIAGRAM ONLY; lower diagrams are different NON-PSR models and MUST NOT be used. Produce one straight-on orthographic rear view of APRESIA13200-48X-PSR3 chassis with EMPTY removable power supply bays exactly matching top drawing: very wide slim 1U neutral light grey metal rectangle, two large empty horizontal rectangular PSU apertures occupying most rear width, narrow vertical metal strips at far left,center,far right, screw positions as reference. Small PSU2 label left and PSU1 label right. NO installed modules, NO fan circles, NO AC connectors, NO network ports, no invented components. Inside empty bays dark recessed neutral grey. High quality clean realistic studio catalog render, crisp metal, transparent background, centered complete chassis, no manual page/title/arrows/callouts, no perspective or top surface. Keep chassis approximately10:1 width-to-height. This asset shows chassis bays only; installed PSU overlays added by app separately.",
+      "vendorReference": {
+        "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia13000_Series_TD61-4588N.pdf",
+        "pdfPageIndex": 97,
+        "figure": "2-14"
+      },
+      "face": "rear",
+      "illustrative": true,
+      "verifiedHardwareLayout": true,
+      "installedModules": "empty PSU bays; configured modules must be overlaid separately",
+      "visualQa": "inspected generated output against official diagram"
+    },
+    {
+      "id": "hitachi-apresia13200-52gt-psr2",
+      "path": "web/assets/hitachi-apresia13200-52gt-psr2-audited-rear-20261010.webp",
+      "dimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "prompt": "Use case: product-mockup. Asset type: exact vendor-referenced rear physical simulator asset. Reference image is official APRESIA13000 hardware manualPDFpage97, Fig2-14 TOP DIAGRAM ONLY; vendor explicitly states13200-52GT-PSR2 same rear form.Lower diagrams are NON-PSR models andMUSTNOTbeused. Produce one straight-on orthographic rear view APRESIA13200-52GT-PSR2 chassis with EMPTY removable power supply bays exactly matching top drawing: verywide slim1U neutral lightgrey metalrectangle,two largeempty horizontalrectangular PSUapertures occupying mostrearwidth,narrowverticalmetalstrips at farleft,center,far right,screwpositionsasreference.Small PSU2labelleft andPSU1labelright. NOinstalledmodules,NOfancircles,NOACconnectors,NOnetworkports,noinventedcomponents. Insideemptybaysdarkrecessedneutralgrey.Highqualitycleanrealisticstudiocatalogrender,crispmetal,transparentbackground,centeredcompletechassis,nomanualpage/title/arrows/callouts,noperspectiveortopsurface. Keepchassisapproximately10:1 width-to-height.Thisassetshowschassisbaysonly;installedPSUoverlaysaddedbyappseparately.",
+      "vendorReference": {
+        "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia13000_Series_TD61-4588N.pdf",
+        "pdfPageIndex": 97,
+        "figure": "2-14"
+      },
+      "face": "rear",
+      "illustrative": true,
+      "verifiedHardwareLayout": true,
+      "installedModules": "empty PSU bays; configured modules must be overlaid separately",
+      "visualQa": "inspected generated output against official diagram"
+    },
+    {
+      "id": "hitachi-apresia15000-32xl-psr2",
+      "path": "web/assets/hitachi-apresia15000-32xl-psr2-audited-rear-20261010.webp",
+      "dimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "prompt": "Use case: product-mockup. Asset type: exact vendor-referenced rear physical simulator asset. Reference image is official APRESIA15000 hardware manual PDF page54, Fig2-3 TOP CHASSIS DIAGRAM ONLY; lower chassis is64XL and MUST NOT be used. Produce one straight-on orthographic rear view APRESIA15000-32XL-PSR2 chassis with EMPTY removable power supply bays exactly matching top drawing: very wide slim1U neutral light grey metal rectangle, two large empty horizontal rectangular PSU apertures occupying most rearwidth,narrow vertical metal strips at farleft,center,far right,screw positions asreference. Small PSU2 label left andPSU1 label right. NO installed modules,NO fan circles,NO AC connectors,NO network ports,no invented components. Inside empty bays darkrecessed neutralgrey. Highquality clean realisticstudio catalogrender, crispmetal, transparentbackground,centeredcompletechassis,no manualpage/title/arrows/callouts,no perspective or topsurface. Keep chassisapproximately10:1 width-to-height.This assetshows chassis baysonly;installed PSUoverlaysadded byapp separately.",
+      "vendorReference": {
+        "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia15000_Series_TD61-4662N.pdf",
+        "pdfPageIndex": 54,
+        "figure": "2-3"
+      },
+      "face": "rear",
+      "illustrative": true,
+      "verifiedHardwareLayout": true,
+      "installedModules": "empty PSU bays; configured modules must be overlaid separately",
+      "visualQa": "inspected generated output against official diagram"
+    },
+    {
+      "id": "alcatel-os6450-10",
+      "path": "web/assets/alcatel-os6450-10-audited-rear-20261010.webp",
+      "dimensions": {
+        "width": 1774,
+        "height": 887
+      },
+      "frame": [
+        33,
+        327,
+        1708,
+        260
+      ],
+      "prompt": "Use case: product-mockup. Asset type: rear simulator image. The reference image is manufacturer-authored OmniSwitch6450 hardware guide September2015 page3-3, specifically OmniSwitch6450-10 rear panel. Generate one beautiful realistic straight-on orthographic rear view of Alcatel-Lucent OmniSwitch OS6450-10 non-PoE chassis. Preserve the exact simple reference geometry: half-rack wide 1U cream light grey plain rectangle about5:1 width-height; ONE black IEC AC inlet on left, small round green indicator immediately left of inlet; small rectangular metal groundingblock at upper-right with TWO round threaded grounding points. Everything else plain cream metal, no fans, no vents, no Ethernetports, no second AC inlet, no backupconnector, no expansion slot, no inventedlabels. Physicalgeometry from reference paneldiagram only; remove manual page text/arrows/callouts. Crisp premium product visualization, complete chassis centered with margin, absolutely transparent background, no shadowground,no perspective,no topsurface. Reference is preproduction diagram without safetylabels, so do not invent labelcontent.",
+      "vendorReference": {
+        "url": "https://www.trovaprezzi.it/manuali/alcatel_os6450_24.pdf",
+        "manufacturer": "Alcatel-Lucent Enterprise",
+        "publication": "OmniSwitch6450 Hardware Users Guide September2015 RevG page3-3; corroborated RevN Dec2017 page3-4",
+        "sourceType": "manufacturer-authored manual hosted by mirror",
+        "exactModel": true
+      },
+      "face": "rear",
+      "illustrative": true,
+      "verifiedHardwareLayout": true,
+      "note": "ภาพจำลองตามคู่มือผู้ผลิตสำหรับ OS6450-10; คู่มือเป็นรุ่นก่อนผลิตและไม่มีข้อความฉลาก compliance",
+      "visualQa": "inspected exactOS6450-10 rear drawing:oneACleft,two-pointgroundingupperright,nofans"
+    },
+    {
+      "id": "fortinet-fortigate-100f",
+      "path": "web/assets/fortinet-fortigate-100f-audited-rear-20261010.webp",
+      "dimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "frame": [
+        12,
+        254,
+        2148,
+        222
+      ],
+      "prompt": "Use case: product-mockup. Asset type: rear simulator image based on manufacturer shared FortiGate100F/101F chassis guide, NOT an exactmodel photograph. Generate one clean realistic straight-on orthographic rear-view render using reference manufacturer100FSeriesrearfigure. Preservegeometryexactly:wide silverwhite1U chassisapproximately10:1 width-height, ONEblack IECACinputleft nearouteredge, ONEblack IECACinputright nearouteredge, single densecentralrectangular honeycomb ventilation patch(roundholes),grounding screwandsymbol toleftofleftAC andrightofrightAC, small yellowcautionlabelbetweencentralventandrightAC.Countersunkpanelscrewspositions andedgemetalstripsfromreference. Dualpowersupplies areBUILT-IN NON-HOT-SWAPPABLE;do notdepictremovablemodules.NOnetworkports,NOpowerswitch,NOfancircles,NOfortinetlogo,NOmodeltext.No inventedlegibletext;tinysafetytext neutralindistinct.Layoutexactlyasreference.Highquality crispneutralmetal cleanproductrender,fullchassiscentered,absolutelytransparentbackground,no perspective,no topsurface,no manuals/arrows/callouts.",
+      "vendorReference": {
+        "url": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+        "manufacturer": "Fortinet",
+        "pdfPageIndex": 5,
+        "sourceType": "manufacturer-authored datasheet hosted bymirror",
+        "exactModel": false,
+        "family": "FortiGate100FSeries (100F/101F)",
+        "referenceImage": "/workspace/scratch/7360d1d45af5/upgrade-assets/telco-fortinet/fortigate-100f-family-rear-figure.png"
+      },
+      "face": "rear",
+      "illustrative": true,
+      "verifiedHardwareLayout": true,
+      "note": "ด้านหลังอ้างอิง FortiGate 100F Series (คู่มือรวม 100F/101F) ไม่ใช่ภาพถ่ายตรงรุ่น",
+      "visualQa": "Inspected against sharedmanufacturerrear:dualbuilt-inACinletsoppositeedges,onecentralhoneycombvent,noremovablePSU"
+    }
+  ]
+}

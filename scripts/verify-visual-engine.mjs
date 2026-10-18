@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const context=vm.createContext({});context.window=context;
+for(const name of ['catalog.js','spec-matrix-data.js','pe-interfaces.js','port-resources.js','network-visual-engine.js'])vm.runInContext(fs.readFileSync(new URL('../web/'+name,import.meta.url),'utf8'),context);
+const V=context.UTS_VISUAL_ENGINE,catalog=context.NOAH_CATALOG,matrix=context.NOAH_SPEC_MATRIX,R=context.NOAH_PORT_RESOURCES,P=context.NOAH_PE_INTERFACES.profiles;
+const plain=v=>JSON.parse(JSON.stringify(v));
+const p={devices:[{id:'a',modelId:'cisco-c1121-8pltep',x:100,y:100},{id:'b',modelId:'huawei-ne40e-x8a',x:500,y:100},{id:'c',modelId:'cisco-asr-1001-x',x:900,y:100}],links:[{id:'l1',a:{device:'a',port:'Gi0/0/0'},b:{device:'b',port:'50|100GE1/0/0'},speed:100000,cable:'sm'},{id:'l2',a:{device:'b',port:'GE5/0/0'},b:{device:'c',port:'TenGigabitEthernet0/0/0'},speed:10000,cable:'sm'}]};
+const original=plain(p),run=s=>V.calculate(p,catalog,matrix,s,R,P);
+assert.equal(V.licenseCapacity('cisco-c1121-8pltep',matrix,'security'),250);assert.equal(V.licenseCapacity('huawei-ne40e-x8a',matrix),null);
+let s=run({mode:'percent',load:50,license:'data'});assert.equal(s.links[0].offered,50000);assert.equal(s.links[0].utilization,50);assert.equal(s.counts.active,2);assert(s.routerCapacity.find(r=>r.id==='a').warning);
+s=run({mode:'fixed',bandwidth:1000,license:'security'});assert.equal(s.links[0].offered,1000);assert.equal(s.links[1].offered,1000);assert.equal(s.links[0].utilization,1);
+s=run({mode:'percent',load:150,downDevices:['b']});assert(s.links.every(l=>l.status==='down'&&l.carried===0));assert.equal(s.counts.down,2);
+s=run({mode:'percent',load:150});assert.equal(s.links[1].carried,10000);assert.equal(s.links[1].unserved,5000);assert.equal(s.links[1].status,'warning');assert.equal(s.links[1].utilization,100);assert.deepEqual(plain(p),original);
+p.devices[0].supplies=[{present:true,connected:false}];assert.equal(run({load:50}).links[0].status,'down');delete p.devices[0].supplies;
+assert.equal(s.counts.knownUsed,4); // Two X8A sockets plus the two documented router sockets.
+assert.equal(new Set(V.layout(p,catalog).map(d=>d.id)).size,3);assert(V.layout(p,catalog).find(d=>d.id==='b').x<V.layout(p,catalog).find(d=>d.id==='a').x);
+assert.deepEqual(plain(V.layout(p,catalog,['a','c'])).map(d=>d.id).sort(),['a','c']);assert.deepEqual(plain(p),original);
+const big={devices:Array.from({length:200},(_,i)=>({id:'d'+i,modelId:'huawei-ne40e-x8a',x:i*100,y:100})),links:Array.from({length:400},(_,i)=>({id:'l'+i,a:{device:'d'+(i%200),port:'GE5/0/'+(i%24)},b:{device:'d'+((i+1)%200),port:'GE6/0/'+(i%24)},speed:10000}))};
+const start=performance.now();for(let i=0;i<20;i++)V.calculate(big,catalog,matrix,{load:80},R,P);const elapsed=performance.now()-start;
+assert.equal(V.layout(big,catalog).length,200);assert(elapsed<5000,'Visual calculations should remain bounded at the supported project limit');
+console.log('PASS License-specific capacities, unknown data, utilization, faults, overload, immutable data, physical socket counts, deterministic layout and 200-device / 400-link stress');
+console.log(`20 visual calculations at project limit: ${Math.round(elapsed)} ms (local CPU, not browser FPS)`);

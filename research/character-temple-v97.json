@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-16",
+  "character": {
+    "name": "Satoru Gojo",
+    "visualReferences": ["User supplied figure photo", "Official Jujutsu Kaisen character artwork"],
+    "features": ["Spiked white hair", "Black blindfold", "Dark high-collar jacket and trousers", "Slim tall adult silhouette"],
+    "source": "https://jujutsukaisen.jp/character/shibuyajihen.php",
+    "implementation": "Original articulated native geometry; no downloaded model, figure photography or official artwork redistributed."
+  },
+  "temple": {
+    "subject": "Vairocana / Daibutsu in Todaiji's Daibutsuden",
+    "sources": [
+      "https://www.todaiji.or.jp/en/information/daibutsuden/",
+      "https://www.todaiji.or.jp/information/daibutsuden/",
+      "https://www.visitnara.jp/venues/A00485/"
+    ],
+    "visualReferences": ["User supplied interior photograph", "Official temple Great Buddha photograph viewed for research"],
+    "features": ["Dark bronze seated main image", "Raised right palm and open left palm", "Lotus pedestal", "Ornate aureole", "Flanking crowned seated figures", "Exposed timber structure and altar furnishings"],
+    "implementation": "New sculptural interpretation scaled to the existing garden hall; not a survey-grade reconstruction. Images from reference websites are not distributed.",
+    "activity": "Two-digit random result is a fictional entertainment interaction in this application, not a Todaiji practice, prediction or temple service."
+  }
+}

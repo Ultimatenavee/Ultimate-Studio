@@ -1,0 +1,483 @@
+
+
+      
+   
+
+
+
+
+
+
+
+
+S5720-52X-SI-AC
+
+S5720-52X-SI-AC
+
+Version MappingTable 4-448 lists the mapping between the S5720-52X-SI-AC chassis and software versions.
+
+Table 4-448  Version mappingSeries
+
+Model
+
+Software Version
+
+
+
+S5720-SI
+
+S5720-X-SI
+
+S5720-52X-SI-AC
+
+V200R008C00 to V200R019C10 versions
+
+
+
+
+
+
+Appearance and StructureFigure 4-171  S5720-52X-SI-AC appearance
+1
+
+Forty-eight 10/100/1000BASE-T ports
+
+2
+
+Four 10GE SFP+ ports
+Applicable modules and cables:GE optical moduleGE-CWDM optical moduleGE-DWDM optical moduleGE copper module (only 1000 Mbit/s supported)10GE SFP+ optical module (OSXD22N00 not supported)10GE-CWDM optical module10GE-DWDM optical module (applicable in V200R009C00 and later versions)1 m, 3 m, and 10 m SFP+ high-speed copper cables5 m SFP+ high-speed copper cable (applicable in V200R009C00 and later versions)3 m and 10 m AOC cables0.5 m and 1.5 m SFP+ dedicated stack copper cables (used for zero-configuration stacking, supported in V200R011C10 and later versions)H87MMA5671A2 GPON optical module (applicable in V200R012C00 and later versions)
+ NOTE: If a port uses a GPON optical module, other 10GE SFP+ optical ports cannot be used.
+
+
+
+
+3
+
+One ETH management port
+
+4
+
+One console port
+ NOTE: It is used with a console cable. The console cable is not delivered with the switch and needs to be separately purchased if needed.
+
+
+
+5
+
+One USB port
+
+6
+
+Ground screw
+ NOTE: It is used with a ground cable.
+
+
+7
+
+ESN label
+ NOTE: You can draw it out to view the ESN and MAC address of the switch.
+
+
+8
+
+Power module slot 2
+ NOTE: Applicable power modules:60 W AC power module (supported in V200R011C10 and later versions)150 W AC power module150 W DC power module
+
+
+
+
+9
+
+Power module slot 1
+ NOTE: Applicable power modules:60 W AC power module (supported in V200R011C10 and later versions)150 W AC power module150 W DC power module
+
+
+
+-
+
+-
+
+
+
+
+Port Description10/100/1000BASE-T port
+A 10/100/1000BASE-T
+Ethernet electrical port sends and receives service data at 10/100/1000
+Mbit/s, and must use an Ethernet cable. Table 4-449 describes the attributes
+of a 10/100/1000BASE-T Ethernet electrical port.
+Table 4-449  Attributes of a 10/100/1000BASE-T Ethernet electrical port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+RJ45
+
+
+
+
+
+Standards compliance
+
+
+IEEE802.3, IEEE802.3u, IEEE802.3ab
+
+
+
+
+
+Working mode
+
+
+10/100/1000 Mbit/s auto-sensing
+
+
+
+
+
+Maximum transmission distance
+
+
+100 m
+
+
+
+
+
+
+
+
+
+10GE SFP+ port
+A 10GE SFP+ Ethernet optical port supports auto-sensing to 1000 Mbit/s. It sends and receives service data at 1000 Mbit/s or 10 Gbit/s. Table 4-450 describes the attributes of a 10GE SFP+ Ethernet optical port.
+Table 4-450  Attributes of a 10GE SFP+ portAttribute
+
+Description
+
+
+
+Connector type
+
+LC/PC
+
+
+Optical port attributes
+
+Depend on the optical module used
+
+
+Standards compliance
+
+IEEE802.3ae
+
+
+Working mode
+
+GE/10GE auto-sensing
+
+
+
+
+
+
+Console port
+The console port is connected
+to a console for on-site configuration. The port must use a console cable. The console port is
+used when a switch is powered on for the first time. For details about
+the attributes of a console port, see Table 4-451.
+Table 4-451  Attributes of a console port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+RJ45
+
+
+
+
+
+Standards compliance
+
+
+RS-232
+
+
+
+
+
+Working mode
+
+
+Duplex Universal Asynchronous Receiver/Transmitter (UART)
+
+
+
+
+
+Baud rate
+
+
+9600 bit/s, 19200 bit/s, 38400 bit/s, 57600 bit/s, or 115200
+bit/s
+Default value: 9600 bit/s
+
+
+
+
+
+
+
+
+
+ETH management port
+You can connect a switch to a configuration terminal or network management workstation through the ETH management port to configure the switch locally or remotely. The port must use an Ethernet cable. You can choose to download the software package through the ETH management port in the BootLoad menu. File transfer through the ETH management port is faster than transfer through the console port. Table 4-452 describes the attributes of an ETH management port.
+Table 4-452  Attributes of an ETH management portAttribute
+
+Description
+
+
+
+Connector type
+
+RJ45
+
+
+Standards compliance
+
+IEEE802.3
+
+
+Working mode
+
+10/100 Mbit/s auto-sensing
+
+
+Maximum transmission distance
+
+100 m
+
+
+
+
+
+In V200R012C00 and later versions, you can log in to the switch that contains the ETH management port for the first time through the ETH port. For details, see "First Login to a Switch" in the Configuration Guide - Basic Configuration. If you have logged in to the device for the first time by pressing and holding the MODE button for 6 seconds or longer and saved the configuration, the default configuration on the ETH port will be cleared. In this case, you cannot log in to the switch for the first time through the ETH port. You are advised to log in to the switch for the first time through the ETH port.
+USB port
+The USB port can have a USB flash drive connected to upgrade the switch, or transfer configuration files or other files. The USB port can only connect to a USB flash drive that complies with USB 2.0. USB flash drives from different vendors differ in model compatibility and drivers. If a USB flash drive cannot be used, try to replace it with another one from a mainstream vendor. Switches support a maximum of 128 GB USB flash drives.
+
+
+
+Indicator DescriptionThe S5720-52X-SI-AC has similar indicators to those on the S5720-52X-PWR-SI-AC, except that the S5720-52X-SI-AC does not have a PoE mode indicator. For details, see Indicator Description.
+
+Power Supply ConfigurationThe S5720-52X-SI-AC uses pluggable power modules. It can be configured with a single power module or double power modules for 1+1 power redundancy. Pluggable AC and DC power modules can be used together in the same switch.
+ If a 60 W power module and a 150 W power module is used in the same switch, the maximum output power of the 150 W power module is 60 W.
+
+Figure 4-172 shows the power supply connections of dual DC power modules. After DC power is transmitted to the PWR module, the PWR module provides 12 V output voltage, and the motherboard provides power for the entire device.Figure 4-172  Power supply connections of dual DC power modulesNEG: negative wire
+
+RTN: positive wire
+
+GND: 12 V reference ground
+
+
+
+
+
+Figure 4-173 shows the power supply connections of dual AC power modules. After AC power is transmitted to the PWR module, the PWR module provides 12 V output voltage, and the motherboard provides power for the entire device.Figure 4-173  Power supply connections of dual AC power modulesL: Live wire
+
+N: Neutral wire
+
+PGND: Protection ground wire
+
+GND: 12 V reference ground
+
+
+
+
+
+
+Heat DissipationThe S5720-52X-SI-AC has a built-in fan for forced air cooling. The airflow direction is left-to-right.
+
+ This figure only shows the airflow direction and does not depict the actual device.
+
+
+Technical SpecificationsTable 4-453 lists technical specifications of the S5720-52X-SI-AC.
+
+Table 4-453  Technical specificationsItem
+
+Description
+
+
+
+Memory (RAM)
+
+512 MB
+
+
+Flash
+
+512 MB in total. To view the available flash memory size, run the display version command.
+
+
+Mean time between failures (MTBF)
+
+73.23 years
+
+
+Mean time to repair (MTTR)
+
+2 hours
+
+
+Availability
+
+> 0.99999
+
+
+Service port surge protection
+
+Common mode: ±6 kV
+
+
+Power supply surge protection
+
+Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±1 kV in differential mode, ±2 kV in common mode
+
+
+Dimensions (H x W x D)
+
+Basic dimensions (excluding the parts protruding from the body): 44.4 mm x 442.0 mm x 424.7 mm (1.75 in. x 17.4 in. x 16.72 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 44.4 mm x 442.0 mm x 451.8 mm (1.75 in. x 17.4 in. x 17.79 in.)
+
+
+Weight (with packaging)
+
+9.5 kg (20.95 lb)
+
+
+Stack ports
+
+GE electrical ports and 10GE SFP+ optical ports on the front panel
+
+
+RTC
+
+Supported
+
+
+RPS
+
+Not supported
+
+
+PoE
+
+Not supported
+
+
+Rated voltage range
+
+100 V AC to 240 V AC, 50/60 Hz
+-48 V DC to -60 V DC
+
+
+Maximum voltage range
+
+90 V AC to 264 V AC, 47 Hz to 63 Hz
+-36 V DC to -72 V DC
+
+
+Maximum power consumption (100% throughput, full speed of fans)
+
+56.8 W
+
+
+Typical power consumption (30% of traffic load)Tested according to ATIS standardEEE enabledNo PoE power consumption
+
+
+33.8 W
+
+
+Operating temperature
+
+0°C to 45°C (32°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.)
+ NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).
+
+
+
+Short-term operating temperature
+
+-5°C to +50°C (23°F to 122°F) at an altitude of 0-1800 m (0-5906 ft.)
+ NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).
+The equipment can operate beyond the normal operating temperature range for a short-term period, but the following conditions must be met:The equipment operates at a temperature of over 45°C (113°F) consecutively for at most 96 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for a total of no more than 360 hours in one year.The equipment operates at a temperature of over 45°C (113°F) for no more in 15 times in one year.
+The equipment may be damaged or experience unexpected exceptions if any of the preceding limits is exceeded.
+The equipment cannot start when the temperature is lower than 0°C (32°F). The maximum distance of optical modules used in these conditions cannot exceed 10 km.
+
+
+
+Storage temperature
+
+-40°C to +70°C (-40°F to +158°F)
+
+
+Noise under normal temperature (27°C, sound power)
+
+< 52 dB(A)
+
+
+Relative humidity
+
+5% to 95%, noncondensing
+
+
+Operating altitude
+
+AC power modules configured: 0-5000 m (0-16404 ft.)DC power modules configured: 0-2000 m (0-6562 ft.)
+
+
+Certification
+
+EMC certificationSafety certificationManufacturing certification
+
+
+Part number
+
+02350DLV
+
+
+
+
+
+
+
+Version MappingAppearance and StructurePort DescriptionIndicator DescriptionPower Supply ConfigurationHeat DissipationTechnical Specifications
+
+
+
+<!--
+image_size('.imgResize');
+var msg_imageMax = "view original image";
+var msg_imageClose = "close";
+//-->

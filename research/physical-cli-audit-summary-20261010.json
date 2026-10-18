@@ -1,0 +1,943 @@
+[
+  {
+    "modelId": "cisco-c1121-8pltep",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0/0 combo, GigabitEthernet0/0/1 WAN; GigabitEthernet0/1/0–7 switch ports"
+    },
+    "front": false,
+    "rear": true,
+    "referenceFaces": [
+      "rear"
+    ],
+    "sources": [
+      {
+        "title": "Cisco ISR 1000 Datasheet · C1121-8PLTEP",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html"
+      },
+      {
+        "title": "Hardware reference · C1121-8PLTEP",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html"
+      },
+      {
+        "title": "Hardware reference · C1121-8PLTEP",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/isr1100/software/configuration/guide/isr1100-sw-config/configuring_ethernet_switchports.html"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-1941",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0 and GigabitEthernet0/1"
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Cisco 1900 Hardware Installation Guide · Cisco 1941",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-2911-k9",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0–2"
+    },
+    "front": false,
+    "rear": true,
+    "referenceFaces": [
+      "rear"
+    ],
+    "sources": [
+      {
+        "title": "Cisco 2900/3900 Hardware Guide · Cisco 2911",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-3925e",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0–3 · SFP-to-copper combo bank pairing is not explicit in parsed vendor caption; existing Gi0/0 and Gi0/1 pairing not independently confirmed by visual figure. Keep network names but mark mapping pending."
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Cisco 2900/3900 Hardware Guide · Cisco 3925E",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-3945e",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0–3 · SFP-to-copper combo bank pairing is not explicit in parsed vendor caption; existing Gi0/0 and Gi0/1 pairing not independently confirmed by visual figure. Keep network names but mark mapping pending."
+    },
+    "front": false,
+    "rear": true,
+    "referenceFaces": [
+      "rear"
+    ],
+    "sources": [
+      {
+        "title": "Cisco 2900/3900 Hardware Guide · Cisco 3945E",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-asr-1001",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0/0–3; management GigabitEthernet0"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Cisco ASR 1000 Hardware Installation Guide · ASR1001",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig.pdf"
+      },
+      {
+        "title": "Hardware reference · ASR1001",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/configuration/guide/chassis/xe-16-9/asr1000-software-config-guide-16-9/mgmt-ether-asr.html"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-asr-1001-x",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0/0–5; TenGigabitEthernet0/0/0–1; management GigabitEthernet0"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Hardware / Product reference · ASR1001-X",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html"
+      },
+      {
+        "title": "Hardware / Product reference · ASR1001-X",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book.pdf"
+      },
+      {
+        "title": "Manufacturer Hardware Guide · mirror",
+        "url": "https://products.b-cdn.net/Brochures/1029053851.pdf"
+      },
+      {
+        "title": "Cisco · ASR1001-X · Rack / Dimensions",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/asr1hig-book_chapter_0111.html"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/configuration/guide/chassis/xe-16-9/asr1000-software-config-guide-16-9/mgmt-ether-asr.html"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-ar5710-s8t2x",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "V600R023C00: GE0/0/0–7; WAN MultiGE0/0/0–1 (2.5GE electrical) / 10GE0/0/0–1 (optical mode). GE4 ใช้เป็น MGMT ได้ ไม่ใช่พอร์ตแยก"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei NetEngine AR5710-S · S8T2X specifications",
+        "url": "https://e.huawei.com/en/products/routers/ar5710-s"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/5d4194fe/interface-numbering-conventions"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-ar5710-s8t2x-lte4ea",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "V600R023C00: GE0/0/0–7; WAN MultiGE0/0/0–1 (2.5GE electrical) / 10GE0/0/0–1 (optical mode). GE4 ใช้เป็น MGMT ได้ ไม่ใช่พอร์ตแยก"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei NetEngine AR5710-S · LTE4EA specifications",
+        "url": "https://e.huawei.com/en/products/routers/ar5710-s"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X-LTE4EA",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X-LTE4EA",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/5d4194fe/interface-numbering-conventions"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-isr-4331",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0/0–2; management GigabitEthernet0"
+    },
+    "front": false,
+    "rear": true,
+    "referenceFaces": [
+      "rear"
+    ],
+    "sources": [
+      {
+        "title": "Cisco ISR 4000 Datasheet · ISR4331",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html"
+      },
+      {
+        "title": "Hardware reference · ISR4331 / ISR4331/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html"
+      },
+      {
+        "title": "Hardware reference · ISR4331 / ISR4331/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr.pdf"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/initconfig.html"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.cisco.com/c/ja_jp/td/docs/routers/access/4400/hardware/installation/C4400_isr/Overview.html"
+      }
+    ]
+  },
+  {
+    "modelId": "cisco-isr-4431",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "GigabitEthernet0/0/0–3; management GigabitEthernet0"
+    },
+    "front": false,
+    "rear": true,
+    "referenceFaces": [
+      "rear"
+    ],
+    "sources": [
+      {
+        "title": "Cisco ISR 4000 Datasheet · ISR4431",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html"
+      },
+      {
+        "title": "Hardware reference · ISR4431/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html"
+      },
+      {
+        "title": "Hardware reference · ISR4431/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr.pdf"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/initconfig.html"
+      }
+    ]
+  },
+  {
+    "modelId": "alcatel-os6450-10",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "unverified",
+      "note": "No publicly accessible CLI guide on ALE vendor domain found; cannot claim vendorwebsite verification of exact name list."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Hardware / Product reference · OS6450-10",
+        "url": "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf"
+      },
+      {
+        "title": "Manufacturer Hardware Guide · mirror",
+        "url": "https://www.trovaprezzi.it/manuali/alcatel_os6450_24.pdf"
+      },
+      {
+        "title": "Official vendor-authored OmniSwitch6450 CLI reference2011, Ethernetportcommands interfaces slot/port; mirror notvendorwebsite.",
+        "url": "https://www.scribd.com/document/830607224/OS6450-AOS-6-6-2-R02-CLI-Reference-Guide"
+      },
+      {
+        "title": "September2015 Hardwareguide page3-2 front,3-3 rear; do not confuse24portrearfigures.",
+        "url": "https://manualzz.com/doc/7491199/alcatel-lucent-omniswitch-os6450-10-hardware-user-s-manual"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5735-l8t4x-a1",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei CloudEngine S5735-L Datasheet · L8T4X-A1",
+        "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a7d76a8a16614cefb9943336bb224d69/M2T1A590N889230686196621601/Huawei%20CloudEngine%20S5735-L%20Series%20Switches%20Datasheet.pdf"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-A1",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-A1",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5735-l8t4x-qa-v2",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Fresh official V600 numbering chapter: standalone slot 1/subcard 0, GE1/0/n and 10GE1/0/n, upper row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Hardware / Product reference · S5735-L8T4X-QA-V2",
+        "url": "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2"
+      },
+      {
+        "title": "Hardware / Product reference · S5735-L8T4X-QA-V2",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-QA-V2",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/55e0dc88/s5735-l8t4x-qa-v2-98012073-005"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-QA-V2",
+        "url": "https://support.huawei.cn/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073"
+      },
+      {
+        "title": "Huawei · S5735-L8T4X-QA-V2 · Rack / Dimensions",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j022"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j007"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/884016b/port-numbering-conventions"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5731-s48t4x",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei CloudEngine S5731-S · S48T4X specifications",
+        "url": "https://e.huawei.com/en/products/switches/campus-switches/s5731-s"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/f79a7296/s5731-s48t4x-02353ajb-02353ajb-003"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a910c627eaee4d0a91c4c0ede3ad041b/M3T1A590N1066742086921986218/Huawei%20CloudEngine%20S5731-S%20Series%20Switches%20Datasheet.pdf"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands"
+      }
+    ]
+  },
+  {
+    "modelId": "telco-t-marc-340",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "unverified",
+      "note": "Public vendorCLI/manual not found.340/380 existingcatalog references mirroredmanufacturer v10.1 UserGuide;280 format has no CLIvendorreference."
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+        "title": "T-Marc 300 series manufacturer datasheet 2016"
+      },
+      {
+        "url": "https://www.scribd.com/doc/243913942/T-Marc-300-Series-v10-1-Rx-User-Guide",
+        "title": "Telco Systems T-Marc300 v10.1 User Guide, manufacturer authored, mirrored; Appendix B verifies CLI names and one internal PSU"
+      },
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2025/12/Telco-Systems-TM-340.pdf",
+        "title": "TM-340 manufacturer datasheet 2025"
+      }
+    ]
+  },
+  {
+    "modelId": "telco-t-marc-280",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "unverified",
+      "note": "Public vendorCLI/manual not found.340/380 existingcatalog references mirroredmanufacturer v10.1 UserGuide;280 format has no CLIvendorreference."
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+        "title": "T-Marc 280 manufacturer datasheet"
+      },
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2025/12/BATM-Networks-TM-280-Datasheet.pdf",
+        "title": "TM-280 manufacturer datasheet 2025"
+      }
+    ]
+  },
+  {
+    "modelId": "telco-t-marc-380",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "unverified",
+      "note": "Public vendorCLI/manual not found.340/380 existingcatalog references mirroredmanufacturer v10.1 UserGuide;280 format has no CLIvendorreference."
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [
+      "front",
+      "rear"
+    ],
+    "sources": [
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+        "title": "T-Marc300 manufacturer datasheet"
+      },
+      {
+        "url": "https://www.scribd.com/doc/243913942/T-Marc-300-Series-v10-1-Rx-User-Guide",
+        "title": "Telco Systems T-Marc300 v10.1 User Guide, manufacturer authored, mirrored; Appendix B verifies 1/1/1-2 and 1/2/1-8"
+      }
+    ]
+  },
+  {
+    "modelId": "fortinet-fortigate-100f",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "config system interface; edit port15"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/brochures/fg-100f-intro.pdf",
+        "title": "Fortinet100F Series official product brochure"
+      },
+      {
+        "url": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+        "title": "Fortinet100F Series manufacturer datasheet mirrored, pages6-7"
+      },
+      {
+        "url": "https://community.fortinet.com/fortigate-3/troubleshooting-tip-speed-options-missing-in-fortigate-100f-101f-after-upgrading-to-v7-2-8-or-v7-4-2-178374",
+        "title": "Fortinet staff: supported interface speed settings, all physical and CLI names"
+      },
+      {
+        "url": "https://community.fortinet.com/fortigate-3/technical-tip-sfp-transceiver-support-on-fortigate-100f-and-200f-sfp-slots-95363",
+        "title": "Fortinet staff:1G fiber SFP support in100F SFP+slots"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://docs.fortinet.com/document/fortigate/hardware/fortigate-100f-series-qsg"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/42d64717-83f1-11e9-81a4-00505692583a/FortiGate-100F-Series-QSG.pdf"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-ne8000-f1a",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "configurable",
+      "note": "PE ใช้ Interface ตาม Slot/PIC และบอร์ดที่ติดตั้ง จึงไม่มีรายการ CLI ตายตัว; เก็บชื่อจาก JSON/ผู้ใช้โดยไม่เดา"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [],
+    "sources": [
+      {
+        "title": "ภาพอ้างอิง Huawei · NetEngine 8000 F1A-8H20Q",
+        "url": "https://e.huawei.com/cn/documents/products/enterprise-network/7380e0b8a92749048332c26a2b483700"
+      },
+      {
+        "title": "Huawei · NetEngine 8000 F1A · Rack / Dimensions",
+        "url": "https://e.huawei.com/en/products/routers/ne8000"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-ne8000-m8",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "configurable",
+      "note": "PE ใช้ Interface ตาม Slot/PIC และบอร์ดที่ติดตั้ง จึงไม่มีรายการ CLI ตายตัว; เก็บชื่อจาก JSON/ผู้ใช้โดยไม่เดา"
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [],
+    "sources": [
+      {
+        "title": "ภาพอ้างอิง Huawei · NetEngine 8000 M8",
+        "url": "https://e.huawei.com/en/documents/products/enterprise-network/e9dd06e260b64df683f6221fc8442cbf"
+      },
+      {
+        "title": "Huawei · NetEngine 8000 M8 · Rack / Dimensions",
+        "url": "https://e.huawei.com/en/products/routers/ne8000"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-ne8000-m14",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "configurable",
+      "note": "PE ใช้ Interface ตาม Slot/PIC และบอร์ดที่ติดตั้ง จึงไม่มีรายการ CLI ตายตัว; เก็บชื่อจาก JSON/ผู้ใช้โดยไม่เดา"
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [],
+    "sources": [
+      {
+        "title": "ภาพอ้างอิง Huawei · NetEngine 8000 M14",
+        "url": "https://e.huawei.com/en/documents/products/enterprise-network/f4f1a7b9424a44ff9770b75a19eb5d2e"
+      },
+      {
+        "title": "Huawei · NetEngine 8000 M14 · Rack / Dimensions",
+        "url": "https://e.huawei.com/en/products/routers/ne8000"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-ne8000-x4",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "configurable",
+      "note": "PE ใช้ Interface ตาม Slot/PIC และบอร์ดที่ติดตั้ง จึงไม่มีรายการ CLI ตายตัว; เก็บชื่อจาก JSON/ผู้ใช้โดยไม่เดา"
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [],
+    "sources": [
+      {
+        "title": "ภาพอ้างอิง Huawei · NetEngine 8000 X4",
+        "url": "https://e.huawei.com/en/products/routers/ne8000"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5720-12tp-li-ac",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5720-12TP-LI-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/b4dabfc4/s5720-12tp-li-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j016"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5720-36c-ei-28s-ac",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5720-36C-EI-28S-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/3b47a44f/s5720-36c-ei-28s-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5720-52x-si-ac",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5720-52X-SI-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ea3f2e19/s5720-52x-si-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j02f"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5732-h24s6q",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S5732-H24S6Q",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/9b370196/s5732-h24s6q"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j08i"
+      },
+      {
+        "title": "Huawei S5732-H product specifications",
+        "url": "https://e.huawei.com/th/products/switches/campus-switches/s5732-h"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s6720-30c-ei-24s-ac",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd."
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S6720-30C-EI-24S-AC",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/fb0c31cc/s6720-30c-ei-24s-ac"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j00q"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s6730-h24x6c",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "Official V200 hardware numbering: standalone slot 0/subcard 0, GigabitEthernet0/0/n, XGigabitEthernet0/0/n and 40GE0/0/n, different speeds numbered separately; lower row odd. · โปรไฟล์นี้ใช้ SKU/License 100GE; ชื่อ 40GE เป็นอีกโหมดของพอร์ต ไม่ใช่ชื่อรวม"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei hardware reference · S6730-H24X6C",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/bf1cfe43/s6730-h24x6c"
+      },
+      {
+        "title": "Huawei hardware reference · direct chapter",
+        "url": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j014"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100248441/bbf12ab5/arp-configuration-commands"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-s5335-s32st4x",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "unverified",
+      "note": "ยังไม่ยืนยัน CLI และด้านหลังของ S5335-S32ST4X จากเอกสารรุ่นตรงบนเว็บไซต์ Vendor"
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "Huawei CloudEngine S5335-S vendor brochure",
+        "url": "https://carrier.huawei.com/~/media/CNBGV2/download/products/networks/campus-switches/CloudEngine-S5335-S-Series-Switches-Brochure-en.pdf"
+      }
+    ]
+  },
+  {
+    "modelId": "hitachi-apresia13200-48x-psr3",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "interface port 1/3"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "APRESIA manufacturer product and full specification",
+        "url": "https://www.apresia.jp/products/ent/apresia13200-48x-psr3.html"
+      },
+      {
+        "title": "APRESIA manufacturer hardware manuals / standard specifications",
+        "url": "https://www.apresia.jp/products/ent/support/manual.html"
+      },
+      {
+        "title": "3.5 Virtual BoxCore; 12.7 show running-config PDF pages120–121;31.13 40g-port enable PDF pages350–351",
+        "url": "https://www.apresia.jp/products/ent/support/docs/CommandReference_AEOS8.45_TD61-8154A.pdf"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia13000_Series_TD61-4588N.pdf"
+      }
+    ]
+  },
+  {
+    "modelId": "hitachi-apresia13200-52gt-psr2",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "interface port 1/3"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "APRESIA manufacturer product and full specification",
+        "url": "https://www.apresia.jp/products/ent/apresia13200-52gt-psr2.html"
+      },
+      {
+        "title": "APRESIA manufacturer hardware manuals / standard specifications",
+        "url": "https://www.apresia.jp/products/ent/support/manual.html"
+      },
+      {
+        "title": "3.5 Virtual BoxCore; 12.7 show running-config PDF pages120–121;31.13 40g-port enable PDF pages350–351",
+        "url": "https://www.apresia.jp/products/ent/support/docs/CommandReference_AEOS8.45_TD61-8154A.pdf"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia13000_Series_TD61-4588N.pdf"
+      }
+    ]
+  },
+  {
+    "modelId": "hitachi-apresia15000-32xl-psr2",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "vendor-verified",
+      "note": "interface port 1/3"
+    },
+    "front": true,
+    "rear": true,
+    "referenceFaces": [
+      "front"
+    ],
+    "sources": [
+      {
+        "title": "APRESIA manufacturer product and full specification",
+        "url": "https://www.apresia.jp/products/ent/apresia15000-32xl-psr2.html"
+      },
+      {
+        "title": "APRESIA manufacturer hardware manuals / standard specifications",
+        "url": "https://www.apresia.jp/products/ent/support/manual.html"
+      },
+      {
+        "title": "APRESIA15000 standard specification",
+        "url": "https://www.apresia.jp/products/ent/support/docs/Specification_for_Apresia15000-32XL-PSR2_SP61-90751A.pdf"
+      },
+      {
+        "title": "3.5 Virtual BoxCore; 12.7 show running-config PDF pages120–121;31.13 40g-port enable PDF pages350–351",
+        "url": "https://www.apresia.jp/products/ent/support/docs/CommandReference_AEOS8.45_TD61-8154A.pdf"
+      },
+      {
+        "title": "Vendor audit reference",
+        "url": "https://www.apresia.jp/products/ent/support/docs/Hardware_manual_for_Apresia15000_Series_TD61-4662N.pdf"
+      }
+    ]
+  },
+  {
+    "modelId": "huawei-ne40e-x8a",
+    "cliAudit": {
+      "checkedAt": "2026-10-10",
+      "status": "configurable",
+      "note": "PE ใช้ Interface ตาม Slot/PIC และบอร์ดที่ติดตั้ง จึงไม่มีรายการ CLI ตายตัว; เก็บชื่อจาก JSON/ผู้ใช้โดยไม่เดา"
+    },
+    "front": true,
+    "rear": false,
+    "referenceFaces": [],
+    "sources": [
+      {
+        "title": "Huawei NE40E-X8A chassis appearance",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100383693/ee8c26a3/ne40e-x8a"
+      },
+      {
+        "title": "Huawei · NE40E-X8A · Rack / Dimensions",
+        "url": "https://e.huawei.com/cn/products/routers/ne40e"
+      }
+    ]
+  }
+]

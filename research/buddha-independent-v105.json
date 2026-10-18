@@ -1,0 +1,14 @@
+{
+  "checkedAt":"2026-10-16",
+  "revision":105,
+  "reason":"v104 retained the original blockout and its shape change was insufficient. This revision builds new sculpture geometry rather than remeshing that head/body.",
+  "construction":"Independent Blender surfaces for head/face/eyes/ears/neck, curls/scalp, robe torso, sleeves/forearms, two folded leg masses, lotus and aureole. Only connected anatomical hand surfaces are reused and scaled at their wrists.",
+  "changes":"Broader facial silhouette and jaw, half-open lens geometry, nose wings and full lips, attached elongated ears, short ringed neck, broader robe torso, fuller sleeves, separated crossed legs, pointed lotus surfaces and new flat gilt backing.",
+  "references":[
+    {"url":"https://www.todaiji.or.jp/en/information/daibutsuden/","use":"Identity of the current Vairocana; official photographs viewed for research only."},
+    {"url":"https://commons.wikimedia.org/wiki/File:Todaiji_great_buddha.jpg","author":"Ph0kin","license":"Public-domain release","use":"Front-oblique gesture, robe folds and proportions."},
+    {"url":"https://commons.wikimedia.org/wiki/File:Nara_Todai-ji_Daibutsuden_Interior_Daibutsu_05.jpg","author":"Zairon","license":"CC BY 4.0","licenseUrl":"https://creativecommons.org/licenses/by/4.0/","use":"Frontal silhouette and face reference. No photo texture or pixels included in GLBs."}
+  ],
+  "limits":"Photograph-referenced artistic interpretation, not a scan or exact replica. Rear detail and aureole ornaments are interpreted. Temple architectural scale and two flanking figures remain the existing scenic design.",
+  "review":"Before/after actual GLBs rendered in neutral clay; distinct meshes, hand orientation, finite geometry, LOD budgets, lazy loading, error fallback and native scene/navigation tests. Browser/GPU QA unavailable."
+}

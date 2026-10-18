@@ -1,0 +1,154 @@
+{
+  "source": "Local RagnarokOnline client archive stack",
+  "sprites": {
+    "portal": {
+      "source": "data\\sprite\\npc\\portal.spr",
+      "action": 0,
+      "frames": 20,
+      "columns": 8,
+      "rows": 3,
+      "width": 169,
+      "height": 213,
+      "frameMs": 100.0
+    },
+    "purple-portal": {
+      "source": "data\\sprite\\npc\\4_purple_warp.spr",
+      "action": 0,
+      "frames": 35,
+      "columns": 8,
+      "rows": 5,
+      "width": 145,
+      "height": 80,
+      "frameMs": 100.0
+    },
+    "scientist": {
+      "source": "data\\sprite\\npc\\4_m_science.spr",
+      "action": 0,
+      "frames": 1,
+      "columns": 1,
+      "rows": 1,
+      "width": 40,
+      "height": 102,
+      "frameMs": 100.0
+    },
+    "researcher": {
+      "source": "data\\sprite\\npc\\4_f_science.spr",
+      "action": 0,
+      "frames": 1,
+      "columns": 1,
+      "rows": 1,
+      "width": 45,
+      "height": 103,
+      "frameMs": 100.0
+    },
+    "warp-ring": {
+      "source": "data\\texture\\내부소품\\warp1.bmp",
+      "frames": 1,
+      "columns": 1,
+      "rows": 1,
+      "width": 256,
+      "height": 256,
+      "frameMs": 100
+    },
+    "warp-light": {
+      "source": "data\\texture\\effect\\new_fatal_menace\\new_fatal_menace\\warp_light_blue.tga",
+      "frames": 1,
+      "columns": 1,
+      "rows": 1,
+      "width": 90,
+      "height": 300,
+      "frameMs": 100
+    }
+  },
+  "models": {
+    "buddha": {
+      "source": "data\\model\\아요타야\\불상01.rsm",
+      "scale": 0.05
+    },
+    "urn": {
+      "source": "data\\model\\아요타야\\항아리01.rsm",
+      "scale": 0.05
+    },
+    "plant": {
+      "source": "data\\model\\아요타야\\화분.rsm",
+      "scale": 0.05
+    },
+    "brazier": {
+      "source": "data\\model\\아요타야\\화로.rsm",
+      "scale": 0.05
+    },
+    "temple-cabinet": {
+      "source": "data\\model\\아요타야\\장식장.rsm",
+      "scale": 0.05
+    },
+    "lab-console": {
+      "source": "data\\model\\아인브로크\\조정판.rsm",
+      "scale": 0.05
+    },
+    "lab-tank": {
+      "source": "data\\model\\아인브로크\\실험관.rsm",
+      "scale": 0.05
+    },
+    "lab-cabinet": {
+      "source": "data\\model\\리히타르젠\\약장.rsm",
+      "scale": 0.05
+    },
+    "werner-monitor": {
+      "source": "data\\model\\tera\\monitor_h_01.rsm",
+      "scale": 0.05
+    },
+    "verus-monitor": {
+      "source": "data\\model\\verus\\monitor_01.rsm",
+      "scale": 0.05
+    },
+    "lab-desk": {
+      "source": "data\\model\\tera\\desk.rsm",
+      "scale": 0.05
+    },
+    "lab-chair": {
+      "source": "data\\model\\tera\\chair_h_01.rsm",
+      "scale": 0.05
+    },
+    "lab-storage": {
+      "source": "data\\model\\tera\\cabi_01.rsm",
+      "scale": 0.05
+    },
+    "lab-extinguisher": {
+      "source": "data\\model\\tera\\extingu.rsm",
+      "scale": 0.05
+    },
+    "temple-lantern": {
+      "source": "data\\model\\일본\\일본_등불.rsm",
+      "scale": 0.05
+    },
+    "payon-lantern": {
+      "source": "data\\model\\페이욘\\등.rsm",
+      "scale": 0.05
+    },
+    "taiwan-lantern": {
+      "source": "data\\model\\대만\\대만_등.rsm",
+      "scale": 0.05
+    },
+    "town-lantern": {
+      "source": "data\\model\\외부소품\\가로등01.rsm",
+      "scale": 0.05
+    }
+  },
+  "textures": {
+    "temple-wood": {
+      "source": "data\\texture\\기타마을내부\\T_tile004.bmp",
+      "width": 256,
+      "height": 128
+    },
+    "temple-mural": {
+      "source": "data\\texture\\기타마을내부\\T_sa002.bmp",
+      "width": 256,
+      "height": 256
+    },
+    "temple-carpet": {
+      "source": "data\\texture\\기타마을내부\\T_inca001.bmp",
+      "width": 256,
+      "height": 128
+    }
+  }
+}

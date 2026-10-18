@@ -1,0 +1,530 @@
+[
+  {
+    "model": "Cisco C1121-8PLTEP",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco ISR 1000 Datasheet · C1121-8PLTEP",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html"
+      },
+      {
+        "title": "Hardware reference · C1121-8PLTEP",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html"
+      },
+      {
+        "title": "Hardware reference · C1121-8PLTEP",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/isr1100/software/configuration/guide/isr1100-sw-config/configuring_ethernet_switchports.html"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.ebay.com/itm/236574126807",
+      "imageUrl": "https://i.ebayimg.com/images/g/uJ8AAeSwbKlpYfXV/s-l1600.jpg",
+      "exactModel": true,
+      "face": "rear",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "StableIT Networks seller photograph; visible watermark. No open reuse license found."
+      }
+    },
+    "confirmedSummary": "10 fixed Network interfaces · 10 RJ45 / 1 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Cisco 1941",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco 1900 Hardware Installation Guide · Cisco 1941",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://business.currys.co.uk/catalogue/computing/servers-networking/networking/modem-routers/cisco-1941-router-desktop-rack-mountable/P139399P",
+      "imageUrl": "https://cdn.cs.1worldsync.com/87/84/8784c72d-2aa5-40a2-ab87-d6611fedc4ee.jpg",
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "Distributed through 1WorldSync product-content CDN; image owner/license not explicitly identified; no open reuse license found."
+      }
+    },
+    "confirmedSummary": "2 fixed Network interfaces · 2 RJ45 / 0 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Cisco 2911/K9",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco 2900/3900 Hardware Guide · Cisco 2911",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.dougdeals.com/cisco-2911-cisco2911-k9-v07-integrated-services-router/",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-1ygf19te2/images/stencil/1280x1280/products/52418/239577/v28o014-3__53951.1667482647.jpg",
+      "exactModel": true,
+      "face": "rear",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "DougDeals product photograph. No open reuse license found."
+      }
+    },
+    "confirmedSummary": "3 fixed Network interfaces · 3 RJ45 / 0 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Cisco 3925E",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco 2900/3900 Hardware Guide · Cisco 3925E",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.router-switch.com/cisco3925e-k9-p-1554.html",
+      "imageUrl": "https://media.router-switch.com/media/catalog/product/cache/b90fceee6a5fa7acd36a04c7b968181c/r/o/routers-cisco-3925e-router.jpg",
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "Router-Switch product image; no open reuse license found."
+      }
+    },
+    "confirmedSummary": "4 fixed Network interfaces · 4 RJ45 / 2 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Cisco 3945E",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco 2900/3900 Hardware Guide · Cisco 3945E",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://sklep.comel-it.com/pl/products/cisco3945e-k9-6503.html",
+      "imageUrl": "https://sklep.comel-it.com/hpeciai/8aaf18f1b0001b5d1a533747423342fb/pol_pl_CISCO3945E-K9-SPE250-4xGE-2x1G-RJ45-2x1G-RJ45-SFP-combo-3x-EHWIC-4x-SM-3x-DSP-256MB-FLASH-1GB-DRAM-opr-IP-Base-1-4Gbps-Cisco-ISR-G2-Router-6503_3.jpg",
+      "exactModel": true,
+      "face": "rear",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "Comel-IT product image; no open reuse license found."
+      }
+    },
+    "confirmedSummary": "4 fixed Network interfaces · 4 RJ45 / 2 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Cisco ASR 1001",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco ASR 1000 Hardware Installation Guide · ASR1001",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig.pdf"
+      },
+      {
+        "title": "Hardware reference · ASR1001",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/asr1routers/asr-1000-series-hig/asr-hig-1001.html"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.piospartslap.de/Cisco-ASR1001-68-3376-Cisco-ASR-1000-Series-Router-4x-SFP-Rack-Ears",
+      "imageUrl": "https://www.piospartslap.de/media/image/product/17488/lg/cisco-asr1001-68-3376-cisco-asr-1000-series-router-4x-sfp-rack-ears~2.jpg",
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "Piospartslap product photograph; no open reuse license found."
+      }
+    },
+    "confirmedSummary": "4 fixed Network interfaces · 0 RJ45 / 4 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Cisco ASR 1001-X",
+    "status": "physical-verified",
+    "sources": [
+      {
+        "title": "Hardware / Product reference · ASR1001-X",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html"
+      },
+      {
+        "title": "Hardware / Product reference · ASR1001-X",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book.pdf"
+      },
+      {
+        "title": "Manufacturer Hardware Guide · mirror",
+        "url": "https://products.b-cdn.net/Brochures/1029053851.pdf"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.techbuyer.com/de/cisco-asr-1001-x-aggregation-services-router-asr1001-x-167668",
+      "imageUrl": "https://www.techbuyer.com/media/catalog/product/A/S/ASR1001_X_cisco_aggregation_services_router_1_7ed5.jpg",
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "Techbuyer product photograph; no open reuse license found."
+      }
+    },
+    "confirmedSummary": "8 fixed Network interfaces · 0 RJ45 / 6 SFP / 2 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE; SFP+ ใช้ได้เฉพาะ 10G และชุดไฟในต้นแบบเป็น AC คู่"
+  },
+  {
+    "model": "Huawei AR5710-S8T2X",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Huawei NetEngine AR5710-S · S8T2X specifications",
+        "url": "https://e.huawei.com/en/products/routers/ar5710-s"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/5d4194fe/interface-numbering-conventions"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/83b51c8e/ar5710-s8t2x-50010720",
+      "imageUrl": "https://download.huawei.cn/mdl/image/download?uuid=0a87a80e98b247cf9a71574f2ac7963f",
+      "exactModel": true,
+      "face": "front",
+      "rights": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution."
+    },
+    "confirmedSummary": "10 Network interfaces / 16 sockets · Combo ใช้ Copper หรือ Fiber ได้ทีละช่อง",
+    "limitations": "พอร์ตคงที่ตาม Hardware reference; ไม่จำลองการสลับ LAN/WAN หรือ Protocol; ภาพและชุดไฟอาจต่างตาม SKU/Hardware revision"
+  },
+  {
+    "model": "Huawei AR5710-S8T2X-LTE4EA",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Huawei NetEngine AR5710-S · LTE4EA specifications",
+        "url": "https://e.huawei.com/en/products/routers/ar5710-s"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X-LTE4EA",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723"
+      },
+      {
+        "title": "Hardware reference · AR5710-S8T2X-LTE4EA",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/5d4194fe/interface-numbering-conventions"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100213474/1abc4d34/ar5710-s8t2x-lte4ea-50010723",
+      "imageUrl": "https://download.huawei.cn/mdl/image/download?uuid=aff8421190f347a6abd58ffa3c495852",
+      "exactModel": true,
+      "face": "front",
+      "rights": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution."
+    },
+    "confirmedSummary": "10 Network interfaces / 16 sockets · Combo ใช้ Copper หรือ Fiber ได้ทีละช่อง",
+    "limitations": "พอร์ตคงที่ตาม Hardware reference; ไม่จำลองการสลับ LAN/WAN หรือ Protocol; ภาพและชุดไฟอาจต่างตาม SKU/Hardware revision"
+  },
+  {
+    "model": "Cisco ISR 4331",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco ISR 4000 Datasheet · ISR4331",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html"
+      },
+      {
+        "title": "Hardware reference · ISR4331 / ISR4331/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html"
+      },
+      {
+        "title": "Hardware reference · ISR4331 / ISR4331/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr.pdf"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.shi.com/product/29402706/Cisco-Integrated-Services-Router-4331",
+      "imageUrl": "https://cdn.cs.1worldsync.com/bd/3f/bd3f0a43-f1cb-4ca9-a985-d6d97d1e2c94.jpg",
+      "exactModel": true,
+      "face": "rear",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "Distributed through 1WorldSync product-content CDN; image owner/license not explicitly identified; no open reuse license found."
+      }
+    },
+    "confirmedSummary": "3 fixed Network interfaces · 2 RJ45 / 2 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Cisco ISR 4431",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Cisco ISR 4000 Datasheet · ISR4431",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.html"
+      },
+      {
+        "title": "Hardware reference · ISR4431/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html"
+      },
+      {
+        "title": "Hardware reference · ISR4431/K9",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr.pdf"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://sklep.comel-it.com/pl/products/isr4431-k9-6061.html",
+      "imageUrl": "https://sklep.comel-it.com/hpeciai/d4a0b986e7a897622dfa92e83542137d/pol_pl_ISR4431-K9-4x-1GE-RJ45-SFP-Combo-3x-NIM-8G-FLASH-4G-DRAM-opr-IP-Base-500Mbps-Cisco-ISR-4000-Router-6061_1.jpg",
+      "exactModel": true,
+      "face": "rear",
+      "rights": {
+        "openLicenseFound": false,
+        "notes": "Comel-IT product image; no open reuse license found."
+      }
+    },
+    "confirmedSummary": "4 fixed Network interfaces · 4 RJ45 / 4 SFP / 0 SFP+",
+    "limitations": "แสดงพอร์ต Network คงที่; ไม่เปิดพอร์ตจากโมดูลเสริมในภาพตัวอย่าง; ไม่มีการจำลอง License/Throughput หรือ PoE"
+  },
+  {
+    "model": "Alcatel OS6450-10",
+    "status": "physical-verified",
+    "sources": [
+      {
+        "title": "Hardware / Product reference · OS6450-10",
+        "url": "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf"
+      },
+      {
+        "title": "Manufacturer Hardware Guide · mirror",
+        "url": "https://www.trovaprezzi.it/manuali/alcatel_os6450_24.pdf"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.ebay.com/itm/274134407878",
+      "imageUrl": "https://i.ebayimg.com/images/g/LPsAAOSw64Zd7fzy/s-l1600.webp",
+      "exactModel": true,
+      "face": "front",
+      "rights": "No affirmative image reuse license found on source product listing. This is a third-party product photograph; retain the source URL and attribution."
+    },
+    "confirmedSummary": "12 Network interfaces / 14 sockets · Combo ใช้ Copper หรือ Fiber ได้ทีละช่อง",
+    "limitations": "พอร์ตคงที่ตาม Hardware reference; ไม่จำลองการสลับ LAN/WAN หรือ Protocol; ภาพและชุดไฟอาจต่างตาม SKU/Hardware revision; ไม่จำลอง Stacking และไม่เปิดพอร์ตเสริมจาก Transceiver ที่ติดอยู่ในภาพตัวอย่าง"
+  },
+  {
+    "model": "Huawei S5735-L8T4X-A1",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Huawei CloudEngine S5735-L Datasheet · L8T4X-A1",
+        "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a7d76a8a16614cefb9943336bb224d69/M2T1A590N889230686196621601/Huawei%20CloudEngine%20S5735-L%20Series%20Switches%20Datasheet.pdf"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-A1",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-A1",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.mf-telecom.com/products/s5735-l8t4x-a1",
+      "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPBB/UPBB755/2508/06/products/S5735-L8T4X-A1-1.jpg",
+      "exactModel": true,
+      "face": "front",
+      "rights": "No affirmative image reuse license found on source product listing. This is a third-party product photograph; retain the source URL and attribution."
+    },
+    "confirmedSummary": "12 Network interfaces / 12 sockets · Combo ใช้ Copper หรือ Fiber ได้ทีละช่อง",
+    "limitations": "พอร์ตคงที่ตาม Hardware reference; ไม่จำลองการสลับ LAN/WAN หรือ Protocol; ภาพและชุดไฟอาจต่างตาม SKU/Hardware revision"
+  },
+  {
+    "model": "Huawei S5735-L8T4X-QA-V2",
+    "status": "physical-verified",
+    "sources": [
+      {
+        "title": "Hardware / Product reference · S5735-L8T4X-QA-V2",
+        "url": "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2"
+      },
+      {
+        "title": "Hardware / Product reference · S5735-L8T4X-QA-V2",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-QA-V2",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/55e0dc88/s5735-l8t4x-qa-v2-98012073-005"
+      },
+      {
+        "title": "Hardware reference · S5735-L8T4X-QA-V2",
+        "url": "https://support.huawei.cn/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2",
+      "imageUrl": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/products/switches/campusswitches/s5735lqv2/overview-pc3-1.png",
+      "exactModel": true,
+      "face": "front",
+      "rights": "No affirmative reuse license found. Public manufacturer product pages state Copyright Huawei Technologies Co., Ltd., All rights reserved. Retain source attribution."
+    },
+    "confirmedSummary": "12 Network interfaces / 12 sockets · Combo ใช้ Copper หรือ Fiber ได้ทีละช่อง",
+    "limitations": "พอร์ตคงที่ตาม Hardware reference; ไม่จำลองการสลับ LAN/WAN หรือ Protocol; ภาพและชุดไฟอาจต่างตาม SKU/Hardware revision; ชื่อ GE1/0/x และ 10GE1/0/x ใช้ Convention จาก Catalog ที่คุณส่งมา"
+  },
+  {
+    "model": "Huawei S5731-S48T4X",
+    "status": "photo-and-ports-verified",
+    "sources": [
+      {
+        "title": "Huawei CloudEngine S5731-S · S48T4X specifications",
+        "url": "https://e.huawei.com/en/products/switches/campus-switches/s5731-s"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/f79a7296/s5731-s48t4x-02353ajb-02353ajb-003"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      },
+      {
+        "title": "Hardware reference · S5731-S48T4X",
+        "url": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a910c627eaee4d0a91c4c0ede3ad041b/M3T1A590N1066742086921986218/Huawei%20CloudEngine%20S5731-S%20Series%20Switches%20Datasheet.pdf"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://alltron.ch/de/product/1087095",
+      "imageUrl": "https://cdn.competec.ch/images2/8/3/9/229258938/229258938_xxl3.jpg",
+      "exactModel": true,
+      "face": "front",
+      "rights": "No affirmative image reuse license found on source product listing. This is a third-party product photograph; retain the source URL and attribution."
+    },
+    "confirmedSummary": "52 Network interfaces / 52 sockets · Combo ใช้ Copper หรือ Fiber ได้ทีละช่อง",
+    "limitations": "พอร์ตคงที่ตาม Hardware reference; ไม่จำลองการสลับ LAN/WAN หรือ Protocol; ภาพและชุดไฟอาจต่างตาม SKU/Hardware revision"
+  },
+  {
+    "model": "Telco T-Marc 340",
+    "status": "physical-verified",
+    "sources": [
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+        "title": "T-Marc 300 series manufacturer datasheet 2016"
+      },
+      {
+        "url": "https://www.scribd.com/doc/243913942/T-Marc-300-Series-v10-1-Rx-User-Guide",
+        "title": "Telco Systems T-Marc300 v10.1 User Guide, manufacturer authored, mirrored; Appendix B verifies CLI names and one internal PSU"
+      },
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2025/12/Telco-Systems-TM-340.pdf",
+        "title": "TM-340 manufacturer datasheet 2025"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.telco.com/product-ce/t-series/tm-340/",
+      "imageUrl": "https://www.telco.com/wp-content/uploads/2025/12/340-device-reflect.png",
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "owner": "Telco Systems / BATM Networks",
+        "notice": "Manufacturer page says 2026 all rights reserved; 2016 datasheet says all rights reserved.",
+        "reuseLicense": null,
+        "reuseStatus": "No explicit reuse permission or open license found."
+      }
+    },
+    "confirmedSummary": "6 Network interfaces / 12 sockets · ใช้ Copper/Fiber ของ Combo Port ได้ทีละช่อง",
+    "limitations": "Front photo does not identify the installed AC/DC power SKU; choose and label a power profile rather than assuming dual AC.; ชุดไฟต้นแบบเริ่มที่ Internal AC 1 ชุด เลือก AC/DC ได้และต้องตรวจ Ordering SKU ของเครื่องจริง"
+  },
+  {
+    "model": "Telco T-Marc 280",
+    "status": "physical-verified",
+    "sources": [
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+        "title": "T-Marc 280 manufacturer datasheet"
+      },
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2025/12/BATM-Networks-TM-280-Datasheet.pdf",
+        "title": "TM-280 manufacturer datasheet 2025"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.telco.com/product-ce/t-series/tm-280/",
+      "imageUrl": "https://www.telco.com/wp-content/uploads/2025/12/TM-280-Reflect.png",
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "owner": "Telco Systems / BATM Networks",
+        "notice": "Manufacturer page says 2026 all rights reserved; 2016 datasheet says all rights reserved.",
+        "reuseLicense": null,
+        "reuseStatus": "No explicit reuse permission or open license found."
+      }
+    },
+    "confirmedSummary": "4 Network interfaces / 5 sockets · ใช้ Copper/Fiber ของ Combo Port ได้ทีละช่อง",
+    "limitations": "Full CLI names were not independently verified. Use the physical names 1/1,2/1,2/2,3/1, or disclose a catalog-derived full-name convention. Do not invent a second SFP 1/2 or count every port as combo.; This model is one external PSU, not dual built-in AC or DC."
+  },
+  {
+    "model": "Telco T-Marc 380",
+    "status": "physical-verified",
+    "sources": [
+      {
+        "url": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+        "title": "T-Marc300 manufacturer datasheet"
+      },
+      {
+        "url": "https://www.scribd.com/doc/243913942/T-Marc-300-Series-v10-1-Rx-User-Guide",
+        "title": "Telco Systems T-Marc300 v10.1 User Guide, manufacturer authored, mirrored; Appendix B verifies 1/1/1-2 and 1/2/1-8"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.ebay.com/itm/355859481374",
+      "imageUrl": "https://i.ebayimg.com/images/g/zxIAAOSwwpFmjun9/s-l1600.webp",
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "owner": "Seller Cyber Valley Deals (listing photographs)",
+        "notice": null,
+        "reuseLicense": null,
+        "reuseStatus": "No explicit reuse permission or open license found on listing."
+      }
+    },
+    "confirmedSummary": "10 Network interfaces / 20 sockets · ใช้ Copper/Fiber ของ Combo Port ได้ทีละช่อง",
+    "limitations": "The primary manufacturer cutout is only199x66. The readable669x143 crop comes from a third-party listing and preserves actual model labels.; The front photograph contains an example transceiver in the first SFP slot; do not assume it is installed in newly added app devices.; ชุดไฟต้นแบบเริ่มที่ Internal AC 1 ชุด เลือก AC/DC ได้และต้องตรวจ Ordering SKU ของเครื่องจริง"
+  },
+  {
+    "model": "Fortinet FortiGate100F",
+    "status": "physical-verified",
+    "sources": [
+      {
+        "url": "https://www.fortinet.com/content/dam/fortinet/assets/brochures/fg-100f-intro.pdf",
+        "title": "Fortinet100F Series official product brochure"
+      },
+      {
+        "url": "https://www.itk.co.th/Data-Sheet/Firewall/FortiGate/fortigate-100f-series.pdf",
+        "title": "Fortinet100F Series manufacturer datasheet mirrored, pages6-7"
+      },
+      {
+        "url": "https://community.fortinet.com/fortigate-3/troubleshooting-tip-speed-options-missing-in-fortigate-100f-101f-after-upgrading-to-v7-2-8-or-v7-4-2-178374",
+        "title": "Fortinet staff: supported interface speed settings, all physical and CLI names"
+      },
+      {
+        "url": "https://community.fortinet.com/fortigate-3/technical-tip-sfp-transceiver-support-on-fortigate-100f-and-200f-sfp-slots-95363",
+        "title": "Fortinet staff:1G fiber SFP support in100F SFP+slots"
+      }
+    ],
+    "photoSource": {
+      "pageUrl": "https://www.fortinet.com/content/dam/fortinet/assets/brochures/fg-100f-intro.pdf",
+      "imageUrl": null,
+      "exactModel": true,
+      "face": "front",
+      "rights": {
+        "owner": "Fortinet, Inc.",
+        "notice": "2019 brochure: Copyright 2019 Fortinet, Inc. All rights reserved.",
+        "reuseLicense": null,
+        "reuseStatus": "No explicit reuse permission or open license found."
+      }
+    },
+    "confirmedSummary": "28 Network interfaces / 32 sockets · ใช้ Copper/Fiber ของ Combo Port ได้ทีละช่อง",
+    "limitations": "100F has no onboard480GBSSD; that is101F. Do not copy the family hardware480GB icon to100F specifications.; Port17-20 physicalSFP/RJ45 sockets must share occupancy in the app.; Allow SFP/SFP+Fiber connectivity and RJ45 UTP connectivity using the verified speeds.; ต้นแบบจำลองสายและไฟเลี้ยง ไม่มี Firewall policy, FortiLink หรือ HA configuration; ยังไม่มีภาพด้านหลังที่ยืนยันตรงรุ่น"
+  }
+]

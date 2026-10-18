@@ -1,0 +1,20 @@
+{
+ "checkedAt":"2026-10-16",
+ "references":[
+  {"url":"https://www.todaiji.or.jp/faq/","owner":"Todaiji","usedFor":"Direct left-hand measurements: wrist/palm boundary to middle-finger base about 1.8 m; middle finger along its curve about 1.5 m; thumb about 1.05 m. These landmarks differ from the shorter summary table used previously."},
+  {"url":"https://www.todaiji.or.jp/information/daibutsuden/","owner":"Todaiji","usedFor":"Overall figure and raised-right/open-left palm arrangement in the official photograph."},
+  {"url":"https://narayado.info/buddha-statue/todaiji-yoganin.html","owner":"Taishoro photographer","usedFor":"Front and oblique photographs of the displayed left-hand replica: cupped palm and prominently curved middle finger. Reference only, no photo redistributed."},
+  {"url":"https://jujutsukaisen.jp/character/index_1st.php","owner":"Official Jujutsu Kaisen anime site","usedFor":"Adult Gojo identity and established character direction; user's supplied white-haired, black-blindfolded, high-collar figure photo is the main 3D appearance reference."}
+ ],
+ "buddhaHands":{
+  "corrections":["Anatomical little/ring/middle/index ordering instead of the old incorrect lengths","Five fingers including an opposed, continuous thumb saddle","Single closed surface with connected finger webs and rounded tips","Explicit mirrored triangle winding rather than negative group scale baked into reversed faces","Wrist attachment uses the actual end of each forearm","Cupped left palm with raised curved middle finger"],
+  "method":"Original signed-distance sculpture, developed and polygonized offline; reduced with the existing Three.js Meshopt simplifier. Browser loads only indexed meshes.",
+  "scaleNote":"Photo-guided visual fit to the existing scaled statue, not a direct survey of either hand. The official hand landmark values are recorded separately from the conflicting earlier summary table; individual finger surfaces are artistic reconstruction."
+ },
+ "gojo":{
+  "corrections":["Contoured jaw, cheek and nose instead of ellipsoid head assembly","Facial smile patch, recessed nostrils and wrapping blindfold","Dense layered, flattened and curved white hair locks with strand bump detail","Tailored navy/purple jacket, high folded collar, zipper and pockets","Cloth weave and localized fabric folds","Anatomical five-finger hands; inward-facing palms at rest","Two-bone prayer IK aligns opposing palms and upward fingers","Grounded existing walking, running, crouching, jumping and bowing poses"],
+  "performance":"Single articulated avatar, under 30 material draws / 75,000 triangles / 3 MB render attributes. Prebaked hands; no runtime voxelization or new browser engine dependency.",
+  "limits":"Original reference-inspired fan-art, not a licensed character scan or photoreal actor digital double. Browser/GPU appearance and device FPS are not measured in this environment."
+ },
+ "privacy":"No uploaded reference photographs or customer documents added to public assets."
+}

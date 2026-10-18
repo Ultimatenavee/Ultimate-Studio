@@ -1,0 +1,41 @@
+/* First-person tools are opt-in; keep the center of the view clear. */
+.walking .walk-top{top:max(10px,env(safe-area-inset-top));left:12px;right:12px;justify-content:flex-end;z-index:20}
+.walking .walk-top>span{display:none}
+.walk-primary{display:flex;gap:6px;pointer-events:auto}
+.walk-primary button{font-size:13px;min-height:44px;border-radius:12px;background:#163244e8;color:#f3f8fc;border:1px solid #c5dfed66}
+.walking #walkMenu{position:absolute;top:64px!important;right:12px!important;left:auto;width:300px;max-width:calc(100% - 24px)!important;max-height:calc(100% - 84px);display:grid!important;grid-template-columns:1fr 1fr;gap:7px;padding:12px;overflow:auto;overscroll-behavior:contain;pointer-events:auto;z-index:19;border:1px solid #bfcedc;border-radius:16px;background:#eff6fcf5;box-shadow:0 12px 35px #122b4433;backdrop-filter:blur(14px)}
+.walking #walkMenu[hidden]{display:none!important}
+.walking #walkMenu button{font:inherit;font-size:13px!important;min-height:44px;white-space:normal;margin:0;padding:8px;color:#173b50;border:1px solid #b5cbd8;border-radius:10px;background:#fff}
+.walking #walkMenu button:hover,.walking #walkMenu button[aria-pressed=true]{background:#d9ecf5}
+.walking .layer-toolbar,.walking #navHint,.walking #editStatus,.walking .performance-hud,.walking .museum-performance,.walking .museum-nav{display:none!important}
+.walking #minimap,.walking .museum-map{display:none!important}
+.walking.walk-map-visible #minimap:not([hidden]),.walking.walk-map-visible .museum-map:not([hidden]){display:block!important;top:64px;bottom:auto;left:12px;max-height:35%;width:min(180px,40%);overflow:auto}
+.walking #walkMenu .museum-walk-option{display:none}
+.museum-active .walking #walkMenu .museum-walk-option{display:block}
+.walking #deviceLibrary:not([hidden]),.walking .inspector-panel,.walking .help-panel{top:64px;bottom:24px;max-height:calc(100% - 88px)}
+.walking .walk-guide{top:64px;right:12px;left:auto;width:min(370px,calc(100% - 24px));max-height:calc(100% - 88px)}
+.walking .walk-joystick{display:grid}
+.walking .museum-prompt{bottom:16px;max-width:min(500px,calc(100% - 32px));left:50%;right:auto;transform:translateX(-50%)}
+.walk-active .workspace-top{display:none}
+.walk-active .stage{height:calc(100dvh - 82px);min-height:260px}
+.walk-active .stage:fullscreen{height:100dvh;min-height:0}
+@media(pointer:coarse){
+ .walking .walk-joystick{display:grid;bottom:max(12px,env(safe-area-inset-bottom));left:max(12px,env(safe-area-inset-left))}
+ .walking .walk-joystick small{display:none}
+ .walking .museum-prompt{left:144px;right:8px;bottom:12px;max-width:none;transform:none;max-height:70px;overflow:auto;font-size:12px}
+ .walking #deviceLibrary:not([hidden]),.walking .inspector-panel{bottom:132px;max-height:calc(100% - 196px)}
+}
+@media(max-width:600px){
+ .walk-primary{gap:4px}.walk-primary button{font-size:12px;padding:7px 10px}
+ .walk-active .stage{height:calc(100dvh - 70px)}
+ .walking #walkMenu{width:280px}
+}
+
+/* A short/fullscreen viewport must never squeeze the circular loader. */
+#fallback{padding:24px 20px;overflow:auto}
+#fallback .dc-poster{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(90%,560px);height:auto;max-height:80%;object-fit:contain;pointer-events:none}
+#fallback>h2{font-size:clamp(18px,3vw,26px);line-height:1.4;margin:0 0 8px}
+#fallback>p{margin:6px 0;max-width:100%;overflow-wrap:anywhere}
+#fallback.is-loading #load3d{display:none}
+#fallback:not(.is-loading) #load3d{margin-top:12px}
+@media(max-height:430px){#fallback{justify-content:safe center}.dc-loading-orbit{margin:8px auto 14px}}

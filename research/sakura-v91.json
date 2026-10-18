@@ -1,0 +1,75 @@
+{
+  "topic": "Research-first sakura model for the Japanese campus garden",
+  "researched_at": "2026-10-16",
+  "model": "Prunus × yedoensis, Yoshino / pale-pink Akebono inspired late-bloom ornamental planting",
+  "sources": [
+    {
+      "publisher": "United States National Park Service",
+      "title": "Types of Trees — Cherry Blossom Festival",
+      "url": "https://www.nps.gov/subjects/cherryblossom/types-of-trees.htm",
+      "facts": [
+        "Yoshino and Akebono have round-topped, wide-spreading habits.",
+        "Yoshino flowers are single white blossoms in clusters; Akebono single blossoms are pale pink fading toward white.",
+        "The guide describes clusters of two to five flowers for these selections."
+      ],
+      "model_choices": [
+        "Asymmetric tiered spreading limbs and an open, broad rounded crown.",
+        "Small groups of four pale pink-white cupped blossoms distributed along visible woody twigs.",
+        "Avoid Kwanzan-like dense double-petal pompons."
+      ]
+    },
+    {
+      "publisher": "North Carolina State University Extension",
+      "title": "Prunus x yedoensis — Extension Gardener Plant Toolbox",
+      "url": "https://plants.ces.ncsu.edu/plants/prunus-x-yedoensis/",
+      "facts": [
+        "The canopy is arching, rounded and spreading rather than a conical crown.",
+        "Flowers are cup-shaped with four to five petals and white to pink coloration.",
+        "Leaves are alternate, simple, ovate or elliptical with serrated margins.",
+        "The bark has prominent horizontal lenticels."
+      ],
+      "model_choices": [
+        "Nearby native flowers have five separate notched and physically cupped petal surfaces, pink receptacle and small golden stamens; distant individual surfaces preserve this five-petal shape through an analytical alpha mask.",
+        "Sparse young green-bronze serrated leaves represent late bloom, not a midsummer mass of green foliage.",
+        "Locally generated reddish-brown bark texture with horizontal lighter lenticel markings."
+      ]
+    },
+    {
+      "publisher": "Keele University, National Collection of Flowering Cherries",
+      "title": "About cherries",
+      "url": "https://www.keele.ac.uk/arboretum/nationalcollectionoffloweringcherries/aboutcherries/",
+      "facts": [
+        "Cherry twigs bear clusters of buds.",
+        "Cherry bark is usually smooth with regularly placed rougher horizontal lenticel lines."
+      ],
+      "model_choices": [
+        "Pedicels begin on woody twig surfaces; blossoms are not randomly floating throughout a sphere.",
+        "Short forks and tapered branch segments remain visible through small crown openings."
+      ]
+    }
+  ],
+  "reference_handling": "Official source photographs were viewed for research, not copied, redistributed or used as texture assets. Geometry and procedural textures were authored locally.",
+  "artistic_adaptations": [
+    "This is a botanical reference-based ornamental scene model, not a scanned specimen or a named garden replica.",
+    "Default campus trees are younger and smaller than fully mature 30–50 foot specimens to fit existing walkable planting beds.",
+    "Blossom diameter is deliberately enlarged to approximately 7–10 cm for legibility at campus viewing distance; this is an explicit rendering adaptation, not a botanical measurement.",
+    "Reduced-quality modes retain every tree and broaden individual petals slightly to preserve crown coverage while reducing instances.",
+    "Distant individual flowers use a locally painted analytical five-petal alpha mask on fixed 3D oriented surfaces. They do not rotate to face the camera; no whole-tree billboard or opaque crown shell is used.",
+    "Nearby flowers add real cupped petal and pedicel geometry. Texture alpha testing writes depth normally and avoids transparency sorting."
+  ],
+  "rendering": {
+    "full_blossoms_per_tree": 32000,
+    "balanced_blossoms_per_tree": 22000,
+    "low_blossoms_per_tree": 6500,
+    "near_native_detail_per_tree": 500,
+    "near_detail_distance_metres": 18,
+    "balanced_canopy_alpha_projection_coverage_percent": 87.6,
+    "coverage_note": "Coverage is a CPU alpha-aware projection of the actual generated model, not a browser/GPU performance or photorealism claim.",
+    "full_young_leaves_per_tree": 360,
+    "deterministic": true,
+    "offline_assets": true,
+    "motion_control": "Wind animation uses a pause-aware local clock and is disabled for low and performance presets.",
+    "draw_groups_per_tree": 5,
+    "spatial_batching": "v92: exact existing instance samples partitioned per tree with shared geometry/materials/textures for native camera and shadow frustum culling. No per-frame instance uploads."
+  }
+}

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+<link rel="stylesheet" type="text/css" href="https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/css?uuid=7d8a854d0e474775ab7060e21654af81.css"  >
+<title>Interface Numbering Conventions</title></head>
+<body class="idp-ltr-html-body">
+<h1 class="idp-ltr-html-topictitle1">Interface Numbering Conventions</h1>
+<div class="idp-ltr-html-topicbody"><p>On a router, interfaces are numbered in the format of <em>slot ID</em>/<em>subcard ID</em>/<em>interface sequence number</em>.</p>
+<div class="idp-ltr-html-note"><img  data-original="9920d365a3914f69bf04ed4afc1124ab.png"  class="" ><span class="idp-ltr-html-notetitle"> </span><div class="idp-ltr-html-notebody"><p>The management interface (marked with the MGMT silkscreen) is numbered MEth0/0/0. Interfaces of different rates are numbered separately. For example, the first GE interface is numbered GE0/0/0, the first 10GE interface is numbered 10GE0/0/0, the first 25GE interface is numbered 25GE0/0/0, the first 40GE interface is numbered 40GE0/0/0, and the first multi-GE interface is numbered MultiGE0/0/0. Subsequent GE interfaces are numbered in ascending order, as are subsequent 10GE, 25GE, 40GE, and multi-GE interfaces.</p>
+</div></div>
+<ul class="idp-ltr-html-ul"><li class="idp-ltr-html-li">Slot ID<p>The slot ID identifies the slot in which a card is installed.</p>
+<ul class="idp-ltr-html-ul"><li class="idp-ltr-html-li">The slot ID of an SRU is 0.</li><li class="idp-ltr-html-li">When slots are combined into one slot, the larger slot ID is used as the new slot ID. For example, when slot 1 and slot 2 are combined, slot ID 2 is used as the new slot ID.</li></ul>
+</li><li class="idp-ltr-html-li">Subcard ID<p>The subcard ID specifies the ID of a subcard. Since the router does not support subcards, its subcard ID is fixed at 0.</p>
+</li><li class="idp-ltr-html-li">Interface sequence number<p>The interface sequence number indicates the position of an interface on a card.</p>
+
+<div class="idp-ltr-html-tablenoborder"><span class="idp-ltr-html-tablecap"><span class="idp-ltr-html-tablenumber">Table 3-3</span>  Interface numbering conventions on the AR5700, AR6700, and AR8000 series routers</span><table cellpadding="4" cellspacing="0" summary="" class="idp-ltr-html-tb-normal" id="EN-US_TOPIC_0000001425886206__tabled0e582" frame="border" border="1" rules="all"><thead align="left"><tr><th class="idp-ltr-html-cellrowborder" valign="top" width="50%" id="mcps1.6.6.3.3.3.2.2.3.1.1"><p>Interface Numbering Diagram</p>
+</th>
+<th class="idp-ltr-html-cellrowborder" valign="top" width="50%" id="mcps1.6.6.3.3.3.2.2.3.1.2"><p>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr><td class="idp-ltr-html-cellrowborder" valign="top" width="50%" headers="mcps1.6.6.3.3.3.2.2.3.1.1 "><p><br><img  data-original="c0dd8e29f8304eeaba8afce4004b0241.png"  width="265.33500000000004" height="49.875" title="Click to enlarge" class="idp-ltr-html-imgResize" ><br></p>
+</td>
+<td class="idp-ltr-html-cellrowborder" valign="top" width="50%" headers="mcps1.6.6.3.3.3.2.2.3.1.2 "><p>If there is only one row of interfaces on an interface card, these interfaces are numbered from left to right, starting from 0/0/0.</p>
+</td>
+</tr>
+<tr><td class="idp-ltr-html-cellrowborder" valign="top" width="50%" headers="mcps1.6.6.3.3.3.2.2.3.1.1 "><p><br><img  data-original="99f49e7eb37a42db8a7c1aa62a79bfb2.png"  ><br></p>
+</td>
+<td class="idp-ltr-html-cellrowborder" valign="top" width="50%" headers="mcps1.6.6.3.3.3.2.2.3.1.2 "><p>If there are two rows of interfaces on an interface card, these interfaces are numbered from bottom to top and left to right starting from 0/0/0.</p>
+</td>
+</tr>
+<tr><td class="idp-ltr-html-cellrowborder" valign="top" width="50%" headers="mcps1.6.6.3.3.3.2.2.3.1.1 "><p><img  data-original="a52ef83fed94412cbccc09e559fc732b.png"  ></p>
+</td>
+<td class="idp-ltr-html-cellrowborder" valign="top" width="50%" headers="mcps1.6.6.3.3.3.2.2.3.1.2 "><p>If there are two rows of interfaces on an interface card, these interfaces are numbered from top to bottom and left to right starting from 0/0/0.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li></ul>
+</div>
+<div></div></body>
+</html>

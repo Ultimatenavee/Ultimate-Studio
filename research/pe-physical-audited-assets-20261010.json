@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-10",
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "topologyOnlyPreserved": true,
+  "generatedAssets": [
+    {
+      "modelId": "huawei-ne8000-f1a",
+      "representativeModel": "NetEngine 8000 F1A-8H20Q (AC)",
+      "face": "rear",
+      "assetPath": "assets/huawei-ne8000-f1a-audited-rear-20261010.webp",
+      "sourcePdf": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/7380e0b8a92749048332c26a2b483700/M3T1A590N1190670492758011972/NetEngine%208000%20F1A-8H20Q%E5%BD%A9%E9%A1%B5V800R025C00.pdf",
+      "sourcePage": 1,
+      "referencePath": "/workspace/scratch/7360d1d45af5/v03-assets/pe/reference/f1a-pdf-009.png",
+      "originalGeneratedPath": "/workspace/scratch/7360d1d45af5/generated_images/exec-06ae4069-7c65-4433-886b-4c86d5acfa83.png",
+      "width": 2170,
+      "height": 725,
+      "prompt": "Use case: product-mockup. Create one consistent clean photorealistic product illustration of Huawei NetEngine 8000 F1A-8H20Q REAR panel from this exact official Huawei brochure reference. Preserve every original rear module boundary and arrangement: left utility/control patch, four fan modules with blue handles across middle, two AC power modules with blue handles and IEC inlets at right. Use ONLY the pictured rear; do not add front fiber ports. Camera exact straight-on orthographic rear elevation, horizontal level, full chassis, zero visible top or side surfaces, at most thin top lip. Keep original wide shallow chassis proportions. Authentic silver brushed metal panel and matte black port interiors, subtle Huawei red top seam, fresh neutral studio lighting. Genuine transparent alpha outside isolated equipment, no white rectangle, no backdrop, no floor, cast shadow, cables or captions. This is an illustrative appearance asset, not calibrated engineering geometry. Small legends remain illustrative. Match detailed realistic existing network equipment visual style.",
+      "inspection": "Straight-on rear: left utility patch, four fan modules with blue handles, two AC power modules at right. Genuine alpha preserved via lossless WebP encoding.",
+      "limitations": [
+        "Illustrative rendering only, not calibrated hardware port map.",
+        "AC representative; official brochure also depicts DC rear configuration in f1a-pdf-007.png.",
+        "Small legends rendered illustratively; do not use asset to derive CLI names."
+      ],
+      "note": "ภาพจำลองด้านหลัง NetEngine 8000 F1A-8H20Q รุ่น AC ตามเอกสารผู้ผลิต"
+    }
+  ],
+  "unresolved": [
+    {
+      "modelId": "huawei-ne8000-m8",
+      "source": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/e9dd06e260b64df683f6221fc8442cbf/M3T1A590N1276639976843047076/NetEngine%208000%20M8%20Universal%20Service%20Router%20Datasheet.pdf",
+      "examinedPages": 12,
+      "reason": "Cached official brochure contains front AC/DC product images on page2, no genuine rear reference retrieved."
+    },
+    {
+      "modelId": "huawei-ne8000-m14",
+      "source": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f4f1a7b9424a44ff9770b75a19eb5d2e/M3T1A590N1267221252983996547/NetEngine%208000%20M14%20Universal%20Service%20Router%20Datasheet.pdf",
+      "examinedPages": 8,
+      "reason": "Cached official brochure contains front AC/DC product images on page2, no genuine rear reference retrieved."
+    },
+    {
+      "modelId": "huawei-ne8000-x4",
+      "source": "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/406705c5a4fb4c42afbd4ae2db03af88/M3T1A590N1068255007527948470/NetEngine%208000%20X%E7%B3%BB%E5%88%97%E5%BD%A9%E9%A1%B5.pdf",
+      "examinedPages": 7,
+      "reason": "Official X-series brochure page1 establishes X4 front only; generic orthogonal architecture description cannot establish exact X4 rear layout."
+    },
+    {
+      "modelId": "huawei-ne40e-x8a",
+      "source": "https://support.huawei.com/enterprise/en/doc/EDOC1100383693/ee8c26a3/ne40e-x8a",
+      "cachedHtml": "research/vendor-v07/ne40e-x8a.html",
+      "reason": "Cached appearance image ne40e-x8a-1.png is front. Additional components image references exist in HTML but no genuine rear raster retrieved; no fabricated rear generated."
+    }
+  ]
+}

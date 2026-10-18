@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import * as T from 'three';
+import {rackCapturePosition} from '../src/datacenter/viewer-scene.js';
+for(const units of [1,12,42,60])for(const aspect of [.5,700/950,2]){const camera=new T.PerspectiveCamera(35,aspect,.005,30),center=new T.Vector3(0,units*.04445/2,0);camera.position.copy(rackCapturePosition(units,aspect));camera.lookAt(center);camera.updateMatrixWorld();for(const x of [-.33,.33])for(const y of [-.06,units*.04445+.06])for(const z of [-.58,.62]){const p=new T.Vector3(x,y,z).project(camera);assert(Math.abs(p.x)<1&&Math.abs(p.y)<1,'3D report camera fits full rack');}}
+
+import {composeReportPages} from '../src/datacenter/bayface-report.js';
+const models=[{id:'router',name:'Router model test',power:{status:'unknown'}},{id:'switch',name:'Switch test',power:{status:'verified',maxW:80}}];
+const project={title:'รายงานทดสอบ Bayface / Synthetic fixture',racks:[{id:'r',name:'ISP Rack A01',room:'Network Room A',phase:'Test site',units:42,powerBudgetW:1000}],items:[{id:'a',rackId:'r',modelId:'router',label:'PE ทดสอบหลาย U',height:3,u:30,serialNumber:'SN-SYNTHETIC-001',powerOverrideW:240,powerOverrideNote:'ค่าผู้ใช้กรอกเพื่อทดสอบ'},{id:'b',rackId:'r',modelId:'switch',label:'Access switch',height:1,u:20},{id:'c',rackId:'r',modelId:'router',label:'ชื่อยาวทดสอบ'.repeat(12),serialNumber:'SERIAL'.repeat(25),height:1,u:10}]};
+const pages=composeReportPages(project,models,[], '2026-10-15T00:00:00Z');assert(pages.length>=4);const source=pages.map(p=>p.svg).join('');assert(source.includes('320 W'));assert(source.includes('Manual 1'));assert(source.includes('ไม่ทราบค่า 1'));assert.equal((source.match(/รวมที่ U30/g)||[]).length,2);assert(source.includes('SN-SYNTHETIC-001'));assert(source.includes('Network Room A'));assert(source.includes('42U'));assert(!source.includes('undefined'));assert(!source.includes('NaN'));
+const autoPowerPages=composeReportPages({...project,racks:[{...project.racks[0],powerBasis:'auto'}]},[...models,{id:'typical',name:'Typical model',power:{status:'verified',typicalW:35}}]);assert(autoPowerPages.some(p=>p.svg.includes('Auto')));assert(autoPowerPages.every(p=>!p.svg.includes('undefined')));
+if(process.env.REPORT_QA){
+ const {createRequire}=await import('node:module');const req=createRequire(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES+'/package.json'),sharp=req('sharp'),{PDFDocument}=req('pdf-lib');const pdf=await PDFDocument.create();
+ const placeholder=Buffer.from('<svg width="400" height="600"><rect width="400" height="600" fill="#e8edf1"/><rect x="80" y="15" width="240" height="560" fill="#263a49"/><rect x="95" y="50" width="210" height="30" fill="#97aab4"/><rect x="95" y="90" width="210" height="30" fill="#97aab4"/></svg>');const png='data:image/png;base64,'+(await sharp(placeholder).png().toBuffer()).toString('base64');
+ for(const p of composeReportPages(project,models,[{rackId:'r',studio:png,three:png}],'2026-10-15T00:00:00Z')){const image=await pdf.embedPng(await sharp(Buffer.from(p.svg)).png().toBuffer()),size=p.width>p.height?[841.89,595.28]:[595.28,841.89];pdf.addPage(size).drawImage(image,{x:0,y:0,width:size[0],height:size[1]});}fs.writeFileSync('/tmp/bayface-report-qa.pdf',await pdf.save());console.log('QA PDF: synthetic illustration fixtures, not WebGL capture.');
+}
+console.log('PASS Bayface PDF pages: per-U listing, multi-U power counted once, manual/unknown totals, serial, room, long text pagination.');

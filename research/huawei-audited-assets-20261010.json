@@ -1,0 +1,310 @@
+{
+  "checkedAt": "2026-10-10",
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "modelId": "huawei-s6730-h24x6c",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-44d349d9-3b13-4858-84cd-fe0830e55c66.png",
+      "path": "web/assets/huawei-s6730-h24x6c-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s6730-h24x6c-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Asset type: network simulator exact hardware rear view. Input is official Huawei S6730-H24X6C rear diagram, sole geometric authority. Create a clean realistic product illustration of only this rear panel, straight orthographic camera, perfectly level, no top/side visible, transparent background. Match geometry faithfully: from left ground screw and serial/MAC small plate, SSD reserved opening below; vertically stacked CONSOLE RJ45 above ETH RJ45, USB to right, adjacent small PNP button and LEDs; four equal removable honeycomb fan modules across center with small red FAN labels; two broad equal empty covered PSU module bays on right, PSU1 then PSU2. Preserve exact number and placement of sockets, fan modules and bays. Brushed dark silver metal, natural black honeycomb, modest red labels, soft studio lighting, crisp new equipment. No cables, no data SFP ports, no invented connectors, no callout arrows/numbers, no watermark, no background. Keep Huawei wordmark near console block. Entire chassis contained with narrow transparent margin. Wide aspect ratio.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        8,
+        262,
+        2154,
+        220
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "28b57756b909236c9b2f558ac2e87cd9d7d3584d1d9a011982323be93f328de7",
+      "vendorSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/bf1cfe43/s6730-h24x6c",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j014",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=f2dcddc60a2a4b519735ff115e0e8514"
+    },
+    {
+      "modelId": "huawei-s5732-h24s6q",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-ccbf7467-fd99-43b3-82a6-83318191418e.png",
+      "path": "web/assets/huawei-s5732-h24s6q-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s5732-h24s6q-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Network simulator exact rear view illustration. Input official Huawei S5732-H24S6Q rear diagram is sole geometric authority. Render ONLY this rear panel, orthographic straight-on perfectly level, no top/side visible, transparent background. Left-to-right: ground screw and tiny serial/MAC labels, reserved SSD slot; console RJ45 above ETH management RJ45, USB beside, small PNP and LED block; four equal removable black honeycomb fan modules across center with modest red FAN labels; two broad empty covered power module bays on right marked PSU1 and PSU2. Preserve every component placement and exact counts. Clean brushed dark silver metal chassis, realistic sockets, brand Huawei near utility block, soft neutral studio lighting. No SFP/data ports, invented connectors, cables, callout lines/numbers, background or watermark. Entire device contained with small transparent margin, wide horizontal image.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        3,
+        263,
+        2164,
+        232
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "7b715f75772905b96d1bb8b8faefc710008465fbb7715f611e6601aa2d472cee",
+      "vendorSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/9b370196/s5732-h24s6q",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j08i",
+        "https://e.huawei.com/th/products/switches/campus-switches/s5732-h",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=f35faa45f3d742c79358feb49e852415"
+    },
+    {
+      "modelId": "huawei-s6720-30c-ei-24s-ac",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-cc119c78-f69f-45b2-ac45-d4a0c3f14dab.png",
+      "path": "web/assets/huawei-s6720-30c-ei-24s-ac-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s6720-30c-ei-24s-ac-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Exact hardware rear product illustration for network simulator. Input official Huawei S6720-30C-EI-24S-AC cropped rear diagram is sole geometric reference. Render ONLY this panel, perfectly orthographic straight-on level, transparent background, no top or side, entire chassis contained with small transparent margins, wide image. Dark silver rear panel: ground screw at far left; large blank optional expansion card bay at left; center fan module with exactly TWO visible fans; a blank covered left power bay center-right; one installed AC power supply at far right with vent, vertical handle, status LED and IEC C14 inlet. No console or Ethernet ports at rear. Preserve exact component counts, positions, panel proportions and geometry from reference. New clean brushed dark silver metal, black realistic apertures, soft studio lighting. Remove reference callout lines/numbers. Do not invent connectors, logos, extra fans, modules or cables. No background or watermark.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        22,
+        260,
+        2126,
+        218
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "784ef29581405864122e33ec019d1516a67729e731dd0fa167489523c651383d",
+      "vendorSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013621/fb0c31cc/s6720-30c-ei-24s-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013621&partNo=j00q",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=dd6b8a99066d4dbfa6d423dc5f67d395"
+    },
+    {
+      "modelId": "huawei-s5720-36c-ei-28s-ac",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-d913ccc8-ab24-4523-86a6-fa3e24f9722c.png",
+      "path": "web/assets/huawei-s5720-36c-ei-28s-ac-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s5720-36c-ei-28s-ac-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Exact hardware rear product illustration for network simulator. Input official Huawei S5720-36C-EI-28S-AC cropped rear diagram is sole geometric reference. Render ONLY this panel, perfectly orthographic straight-on level, transparent background, no top or side, entire chassis contained with small transparent margins, wide image. Dark silver rear panel: ground screw at far left; blank optional expansion card bay at left; center fan module with exactly TWO visible fans; blank covered power bay center-right; one installed AC power supply at far right with vertical handle, status LED, rocker power switch and IEC C14 inlet. No console or Ethernet ports at rear. Preserve exact component counts, positions, panel proportions and geometry from reference. New clean brushed dark silver metal, black realistic apertures, soft studio lighting. Remove reference callout lines/numbers. Do not invent connectors, logos, extra fans, modules or cables. No background or watermark.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        7,
+        263,
+        2157,
+        215
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "cd323da72c8c5005cc0db32fae70ba8120ec435c0d00ce71ca1932ad40142812",
+      "vendorSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/3b47a44f/s5720-36c-ei-28s-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=f52f8b74cfec45ff993a87e63b866108"
+    },
+    {
+      "modelId": "huawei-s5720-52x-si-ac",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-10c8f205-50f0-4380-922a-49e506066d26.png",
+      "path": "web/assets/huawei-s5720-52x-si-ac-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s5720-52x-si-ac-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Exact hardware rear product illustration for network simulator. Input official Huawei S5720-52X-SI-AC cropped rear diagram is sole geometric reference. Render ONLY this panel, perfectly orthographic straight-on level, transparent background, no top or side, entire chassis contained with small transparent margins, wide image. Dark silver rear panel: ground screw at far left; very broad blank rear plate occupying left half; covered blank power bay center-right; one installed AC supply at far right with vertical handle, status LED, rocker power switch and IEC C14 inlet. NO exposed removable fan module. No console or Ethernet ports at rear. Preserve exact component counts, positions, panel proportions and geometry from reference. New clean brushed dark silver metal, black realistic apertures, soft studio lighting. Remove reference callout lines/numbers. Do not invent connectors, logos, extra fans, modules or cables. No background or watermark.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        6,
+        254,
+        2157,
+        218
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "eea920ed9765c4389d7ca13665fbad548931cd116e5f5fe8733eafe648f2080d",
+      "vendorSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ea3f2e19/s5720-52x-si-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j02f",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=88e41fa5d935446e947f7b61fca4abbc"
+    },
+    {
+      "modelId": "huawei-s5720-12tp-li-ac",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-12df37ac-1536-43ca-97cb-5878ecce15e1.png",
+      "path": "web/assets/huawei-s5720-12tp-li-ac-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s5720-12tp-li-ac-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Exact hardware rear product illustration for network simulator. Input official Huawei S5720-12TP-LI-AC cropped rear diagram is sole geometric reference. Render ONLY this panel, perfectly orthographic straight-on level, transparent background, no top or side, entire chassis contained with small transparent margins, wide image. Black/dark silver compact rear panel: left blank strip with small safety label; IEC C14 AC inlet near left quarter, tiny round AC retention hole beside; large continuous honeycomb ventilation panel across right two-thirds, one grounding screw at far right. No rocker switch, USB, console, network ports or removable PSU. Preserve exact component counts, positions, panel proportions and geometry from reference. Clean new equipment, brushed dark silver/black materials matching reference, soft studio lighting. Remove reference callout lines/numbers. Do not invent connectors, logos, extra fans, modules or cables. No background or watermark.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        37,
+        171,
+        2097,
+        382
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "042702eed32538220e5d2cc6d2c475e787778f5797c43cf67a70c862131dbb8a",
+      "vendorSources": [
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/b4dabfc4/s5720-12tp-li-ac",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j016",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=5edcd9b5a7f2434f939d610566122a17"
+    },
+    {
+      "modelId": "huawei-s5735-l8t4x-qa-v2",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-80d1e210-96a4-4b23-9591-8ae2b5dfa3bf.png",
+      "path": "web/assets/huawei-s5735-l8t4x-qa-v2-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s5735-l8t4x-qa-v2-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Exact hardware rear product illustration for network simulator. Input official Huawei S5735-L8T4X-QA-V2 cropped rear diagram is sole geometric reference. Render ONLY this panel, perfectly orthographic straight-on level, transparent background, no top or side, entire chassis contained with small transparent margins, wide image. Black compact rear panel: ground screw at far left; IEC C14 AC inlet near left quarter; tiny retention holes beside; broad continuous honeycomb ventilation grille across right two-thirds with one screw near bottom. NO USB, console, network ports, rocker switch or removable PSU at rear. Preserve exact component counts, positions, panel proportions and geometry from reference. Clean new equipment, brushed dark silver/black materials matching reference, soft studio lighting. Remove reference callout lines/numbers. Do not invent connectors, logos, extra fans, modules or cables. No background or watermark.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        17,
+        192,
+        2136,
+        345
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "fdb6685b4b6ad6ea7b78f27736d208eec4dc141e5603aab96d7bb9b6531fd69b",
+      "vendorSources": [
+        "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/55e0dc88/s5735-l8t4x-qa-v2-98012073-005",
+        "https://support.huawei.cn/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j022",
+        "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j007"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=add807af0b1a4aa794ef12ec1f54739e"
+    },
+    {
+      "modelId": "huawei-s5735-l8t4x-a1",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-d0e0e5cb-61d0-4ba9-b075-1208a47dcfa8.png",
+      "path": "web/assets/huawei-s5735-l8t4x-a1-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s5735-l8t4x-a1-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Exact hardware rear product illustration for network simulator. Input official Huawei S5735-L8T4X-A1 cropped rear diagram is sole geometric reference. Render ONLY this panel, perfectly orthographic straight-on level, transparent background, no top or side, entire chassis contained with small transparent margins, wide image. Dark charcoal compact rear panel: ground screw at far left; IEC C14 AC inlet immediately right of ground; retention holes beside; otherwise broad plain blank metal with several screw heads. NO ventilation honeycomb, fan bays, rocker switch, USB, console or network ports at rear. Preserve exact component counts, positions, panel proportions and geometry from reference. Clean new equipment, brushed dark silver/black materials matching reference, soft studio lighting. Remove reference callout lines/numbers. Do not invent connectors, logos, extra fans, modules or cables. No background or watermark.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2170,
+        "height": 725
+      },
+      "frame": [
+        47,
+        187,
+        2077,
+        329
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "22f4e67a38eeada5334e3a5481dc85f9486fe9b494dcec6f29fb91e43c883c2a",
+      "vendorSources": [
+        "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a7d76a8a16614cefb9943336bb224d69/M2T1A590N889230686196621601/Huawei%20CloudEngine%20S5735-L%20Series%20Switches%20Datasheet.pdf",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/a34cc129/s5735-l8t4x-a1",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=ccd045aee28e48839b57d4ced9df01f6"
+    },
+    {
+      "modelId": "huawei-s5731-s48t4x",
+      "face": "rear",
+      "illustrative": true,
+      "exactHardwareReference": true,
+      "sourcePng": "/workspace/scratch/7360d1d45af5/generated_images/exec-b776a0ce-c733-4b00-b529-4c38d8aecc67.png",
+      "path": "web/assets/huawei-s5731-s48t4x-audited-rear-20261010.webp",
+      "reference": "research/huawei-switch-audit-20261010/s5731-s48t4x-rear-reference.png",
+      "prompt": "Use case: sketch-to-render. Exact hardware rear product illustration for network simulator. Input official Huawei S5731-S48T4X cropped rear diagram is sole geometric reference. Render ONLY this panel, perfectly orthographic straight-on level, transparent background, no top or side, entire chassis contained with small transparent margins, wide image. Hardware revision 02353AJB. Dark silver rear panel: left ground screw plus small serial/MAC label block; broad plain blank plate across left-middle; exactly TWO removable black honeycomb fan modules with modest red FAN labels in center; exactly TWO broad blank covered PSU bays at right with vertical handles, marked PWR1/PWR2. No console/USB/network ports on rear. Do not show installed AC supplies. Preserve exact component counts, positions, panel proportions and geometry from reference. Clean new equipment, brushed dark silver/black materials matching reference, soft studio lighting. Remove reference callout lines/numbers. Do not invent connectors, logos, extra fans, modules or cables. No background or watermark.",
+      "qa": "Visually checked component counts and placement against exact official rear reference; decorative labels remain illustrative.",
+      "dimensions": {
+        "width": 2172,
+        "height": 724
+      },
+      "frame": [
+        16,
+        258,
+        2143,
+        220
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "068603260a1855c4753fda0a614e742924b58d5af7d893d6e6a11e30db324c72",
+      "vendorSources": [
+        "https://e.huawei.com/en/products/switches/campus-switches/s5731-s",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/f79a7296/s5731-s48t4x-02353ajb-02353ajb-003",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/7204ff7c/s5731-s48t4x-98011847",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions",
+        "https://e.huawei.com/marketingcloud/pep/asset/20000001/Material/a910c627eaee4d0a91c4c0ede3ad041b/M3T1A590N1066742086921986218/Huawei%20CloudEngine%20S5731-S%20Series%20Switches%20Datasheet.pdf",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1000013597/ba17a118/port-numbering-conventions"
+      ],
+      "officialImageUrl": "https://download.huawei.com/mdl/image/download?uuid=4d45481e5ab744c3af79f40eea629b54",
+      "note": "ภาพด้านหลังอ้างอิง S5731-S48T4X SKU 02353AJB; SKU 98011847 มีแผงด้านหลังต่างกัน"
+    }
+  ],
+  "unavailable": [
+    {
+      "modelId": "huawei-s5335-s32st4x",
+      "reason": "No exact rear reference or CLI numbering verified from vendor. No generated rear asset."
+    }
+  ],
+  "frameFormat": "x,y,width,height using alpha >=160"
+}

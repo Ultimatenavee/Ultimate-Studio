@@ -1,0 +1,374 @@
+{
+  "checkedAt": "2026-10-15",
+  "scope": "All40 catalog models, bothfront/rear images,80faceentries. Visualframeauditonly, not a newvendorhardwareverification.",
+  "method": "Rendered all80configuredfaces, then inspectedpixel-gridnativeproportionimagesfor14affectedfronts. Appliedframe-onlyoverridesandrenderedfinal14facecomparison.",
+  "summary": {
+    "modelsInspected": 40,
+    "facesInspected": 80,
+    "modelsCorrected": 14,
+    "prominentFrontPerspectiveRemaining": 0,
+    "minorFrontTopRimRemaining": 6
+  },
+  "items": {
+    "cisco-c1121-8pltep": {
+      "name": "Cisco C1121-8PLTEP",
+      "facesInspected": [
+        "rear",
+        "front"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "cisco-1941": {
+      "name": "Cisco 1941",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "cisco-2911-k9": {
+      "name": "Cisco 2911/K9",
+      "facesInspected": [
+        "rear",
+        "front"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "cisco-3925e": {
+      "name": "Cisco 3925E",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "cisco-3945e": {
+      "name": "Cisco 3945E",
+      "facesInspected": [
+        "rear",
+        "front"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "cisco-asr-1001": {
+      "name": "Cisco ASR 1001",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "cisco-asr-1001-x": {
+      "name": "Cisco ASR 1001-X",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "huawei-ar5710-s8t2x": {
+      "name": "Huawei AR5710-S8T2X",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-ar5710-s8t2x-lte4ea": {
+      "name": "Huawei AR5710-S8T2X-LTE4EA",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "front-top-rim-or-small-perspective-remains",
+      "note": "Smalltopedge/bezelorcurvedbodyvisible. Individualnativeinspection neededbeforecrop; front/rearportgeometrynotaudited."
+    },
+    "cisco-isr-4331": {
+      "name": "Cisco ISR 4331",
+      "facesInspected": [
+        "rear",
+        "front"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "cisco-isr-4431": {
+      "name": "Cisco ISR 4431",
+      "facesInspected": [
+        "rear",
+        "front"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "alcatel-os6450-10": {
+      "name": "Alcatel OS6450-10",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "huawei-s5735-l8t4x-a1": {
+      "name": "Huawei S5735-L8T4X-A1",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-s5735-l8t4x-qa-v2": {
+      "name": "Huawei S5735-L8T4X-QA-V2",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "front-top-rim-or-small-perspective-remains",
+      "note": "Smalltopedge/bezelorcurvedbodyvisible. Individualnativeinspection neededbeforecrop; front/rearportgeometrynotaudited."
+    },
+    "huawei-s5731-s48t4x": {
+      "name": "Huawei S5731-S48T4X",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "front-top-rim-or-small-perspective-remains",
+      "note": "Smalltopedge/bezelorcurvedbodyvisible. Individualnativeinspection neededbeforecrop; front/rearportgeometrynotaudited."
+    },
+    "telco-t-marc-340": {
+      "name": "Telco T-Marc 340",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "telco-t-marc-280": {
+      "name": "Telco T-Marc 280",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "front-top-rim-or-small-perspective-remains",
+      "note": "Smalltopedge/bezelorcurvedbodyvisible. Individualnativeinspection neededbeforecrop; front/rearportgeometrynotaudited."
+    },
+    "telco-t-marc-380": {
+      "name": "Telco T-Marc 380",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "fortinet-fortigate-100f": {
+      "name": "Fortinet FortiGate100F",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "huawei-ne8000-f1a": {
+      "name": "Huawei NetEngine 8000 F1A",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "front-top-rim-or-small-perspective-remains",
+      "note": "Smalltopedge/bezelorcurvedbodyvisible. Individualnativeinspection neededbeforecrop; front/rearportgeometrynotaudited."
+    },
+    "huawei-ne8000-m8": {
+      "name": "Huawei NetEngine 8000 M8",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "huawei-ne8000-m14": {
+      "name": "Huawei NetEngine 8000 M14",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "huawei-ne8000-x4": {
+      "name": "Huawei NetEngine 8000 X4",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "huawei-s5720-12tp-li-ac": {
+      "name": "Huawei S5720-12TP-LI-AC",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-s5720-36c-ei-28s-ac": {
+      "name": "Huawei S5720-36C-EI-28S-AC",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-s5720-52x-si-ac": {
+      "name": "Huawei S5720-52X-SI-AC",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-s5732-h24s6q": {
+      "name": "Huawei S5732-H24S6Q",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-s6720-30c-ei-24s-ac": {
+      "name": "Huawei S6720-30C-EI-24S-AC",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-s6730-h24x6c": {
+      "name": "Huawei S6730-H24 / S6730-H24X6C",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "huawei-s5335-s32st4x": {
+      "name": "Huawei S5335-S32ST4X",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Inspectednativeproportionimagewithpixelgrid; croppedoffperspectivetop. Frontcontrolsandlabelsretained. Originalassetbytesunchanged. Notnewvendorspecverification."
+    },
+    "hitachi-apresia13200-48x-psr3": {
+      "name": "Hitachi APRESIA13200-48X-PSR3",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Straightrectangularfrontface cropped belowperspectivetop; allphysicalportaperturesretained. Seeoverlays."
+    },
+    "hitachi-apresia13200-52gt-psr2": {
+      "name": "Hitachi APRESIA13200-52GT-PSR2",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Straightrectangularfrontface cropped belowperspectivetop; allphysicalportaperturesretained. Seeoverlays."
+    },
+    "hitachi-apresia15000-32xl-psr2": {
+      "name": "Hitachi APRESIA15000-32XL-PSR2",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "corrected-front-only-frame",
+      "note": "Straightrectangularfrontface cropped belowperspectivetop; allphysicalportaperturesretained. Seeoverlays."
+    },
+    "huawei-ne40e-x8a": {
+      "name": "Huawei NE40E-X8A",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "odf-commscope-760241650": {
+      "name": "ODF · CommScope 760241650",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "odf-commscope-fms1u-sc24": {
+      "name": "ODF · CommScope FMS 24 SC",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "front-top-rim-or-small-perspective-remains",
+      "note": "Smalltopedge/bezelorcurvedbodyvisible. Individualnativeinspection neededbeforecrop; front/rearportgeometrynotaudited."
+    },
+    "ac-apc-ap9565": {
+      "name": "AC PDU · APC AP9565",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "ac-apc-smt1500rmi2u": {
+      "name": "AC UPS · APC SMT1500RMI2U",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "dc-vertiv-netsure211-1u": {
+      "name": "DC Rectifier · Vertiv NetSure 211 · 1U",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    },
+    "dc-vertiv-netsure211-2u": {
+      "name": "DC Rectifier · Vertiv NetSure 211 · 2U",
+      "facesInspected": [
+        "front",
+        "rear"
+      ],
+      "result": "none-prominent-in-contact-sheet",
+      "note": "Bothframes inspected; no prominentperspectivetop. This doesnotverifyportcount,labels,PSUvariantorCADaccuracy."
+    }
+  }
+}

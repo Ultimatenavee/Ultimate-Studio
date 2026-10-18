@@ -1,0 +1,82 @@
+/* Canvas-first controls: retain primary tools and reveal secondary tools on demand. */
+.audience-toolbar{flex:0 0 auto;min-height:34px;padding:4px 12px;gap:8px;flex-wrap:nowrap}
+.audience-toolbar button{padding:5px 10px;font-size:12px;min-height:28px;white-space:nowrap}
+.audience-toolbar strong{font-size:12px;white-space:nowrap}
+.editor-tools{padding:5px 10px;gap:6px;overflow:visible;position:relative;z-index:16;flex-wrap:wrap}
+#toolHint{display:none}
+.topology-extra-tools{position:relative;flex:0 0 auto}
+.topology-extra-tools>summary{padding:6px 10px;min-height:32px;cursor:pointer;border-radius:999px;border:1px solid var(--line);color:var(--ink);background:var(--glass-control);font-size:12px;white-space:nowrap}
+.topology-extra-tools>div{min-width:220px;left:0;right:auto;z-index:70}
+.topology-extra-tools>div button{display:block;width:100%;text-align:left}
+#serviceToolbar{display:none}
+.service-tools-open #serviceToolbar:not([hidden]){display:flex;padding:5px 10px;gap:6px}
+.bayface-mode #serviceToolbar,.specs-mode #serviceToolbar{display:none!important}
+body:not(.compact-workspace):not(.specs-mode) .canvas-toolbar button{min-height:30px;padding:5px 10px;font-size:12px}
+body:not(.compact-workspace):not(.specs-mode) .canvas-toolbar{gap:6px;flex-wrap:nowrap}
+body:not(.compact-workspace):not(.specs-mode) .editor-tools button{min-height:30px;padding:5px 9px;font-size:12px}
+body:not(.compact-workspace):not(.specs-mode) .canvas-footer{padding:4px 12px;font-size:11px}
+body:not(.compact-workspace):not(.specs-mode) .canvas-footer>span:last-child{display:none}
+body:not(.compact-workspace):not(.specs-mode) .workspace{grid-template-columns:var(--library-width,240px) 8px minmax(0,1fr) 8px var(--inspector-width,260px)}
+body:not(.compact-workspace):not(.specs-mode) .workspace.inspector-hidden{grid-template-columns:var(--library-width,240px) 8px minmax(0,1fr)}
+body:not(.compact-workspace):not(.specs-mode) .workspace.library-hidden{grid-template-columns:minmax(0,1fr) 8px var(--inspector-width,260px)}
+body:not(.compact-workspace):not(.specs-mode) .workspace.library-hidden.inspector-hidden{grid-template-columns:minmax(0,1fr)}
+@media(min-width:901px){
+body:not(.compact-workspace):not(.specs-mode) .topbar{min-height:76px;padding:6px 14px;gap:2px 12px;border-radius:22px;margin-top:6px}
+body:not(.compact-workspace):not(.specs-mode) .brand-logo{width:36px;height:36px}
+body:not(.compact-workspace):not(.specs-mode) .brand{font-size:14px}
+body:not(.compact-workspace):not(.specs-mode) .top-actions>button,body:not(.compact-workspace):not(.specs-mode) .top-actions summary{padding:6px 10px;min-height:32px;font-size:12px}
+body:not(.compact-workspace):not(.specs-mode) .project-header{align-items:center;gap:8px}
+body:not(.compact-workspace):not(.specs-mode) #projectName{font-size:14px;line-height:1.35;padding:2px 8px;min-height:24px}
+body:not(.compact-workspace):not(.specs-mode) .workspace-navigation{margin:6px 12px 0;padding:4px;border-radius:18px}
+body:not(.compact-workspace):not(.specs-mode) .workspace-navigation .design-tabs button{min-height:42px;padding:6px 12px;gap:0 8px;border-radius:12px}
+body:not(.compact-workspace):not(.specs-mode) .workspace-navigation strong{font-size:14px}
+body:not(.compact-workspace):not(.specs-mode) .workspace-navigation small{font-size:10px}
+body:not(.compact-workspace):not(.specs-mode) #workspaceHelp{min-height:32px;font-size:12px;padding:5px 10px}
+body:not(.compact-workspace):not(.specs-mode) .canvas-toolbar{padding:6px 12px;min-height:38px;gap:6px}
+body:not(.compact-workspace):not(.specs-mode) .catalog{padding:12px 12px 0}
+body:not(.compact-workspace):not(.specs-mode) .catalog .section-title{margin-bottom:8px}
+body:not(.compact-workspace):not(.specs-mode) .catalog #search{padding:8px 12px}
+body:not(.compact-workspace):not(.specs-mode) .catalog-caption{padding:8px 2px}
+}
+/* iPad and phones share canvas-first panels, with full-size touch targets. */
+body.compact-workspace .topbar{margin:4px 6px 0;padding:4px 9px;gap:2px 6px;border-radius:18px}
+body.compact-workspace .brand-logo{width:30px;height:30px}
+body.compact-workspace .topbar .brand{font-size:12px;line-height:1.2}
+body.compact-workspace .topbar .brand strong{font-size:11px}
+body.compact-workspace .topbar .project-header{gap:4px;align-items:center}
+body.compact-workspace #projectName{min-height:28px;font-size:16px;line-height:1.35;padding:2px 6px}
+body.compact-workspace .workspace-navigation{margin:4px 6px 0;padding:3px;gap:3px;border-radius:16px}
+body.compact-workspace .workspace-navigation .design-tabs{gap:3px}
+body.compact-workspace .workspace-navigation .design-tabs button{display:flex;flex-direction:row;justify-content:center;align-items:center;min-height:44px;padding:5px 7px;gap:4px;white-space:nowrap;border-radius:12px}
+body.compact-workspace .workspace-navigation small,body.compact-workspace .workspace-navigation .design-tabs button>span{display:none}
+body.compact-workspace .workspace-navigation strong{font-size:13px}
+body.compact-workspace #workspaceHelp{min-height:44px;min-width:44px;padding:6px}
+body.compact-workspace #workspaceHelp span{display:none}
+body.compact-workspace #workspace{padding:5px;gap:0}
+body.compact-workspace .audience-toolbar{min-height:36px;padding:2px 8px;gap:6px}
+body.compact-workspace .audience-toolbar span{display:none}
+body.compact-workspace .audience-toolbar button{min-height:44px;padding:5px 9px}
+body.compact-workspace .canvas-toolbar{grid-template-columns:minmax(0,1fr) auto;min-height:44px;padding:2px 6px;gap:3px}
+body.compact-workspace .canvas-heading{grid-row:1;grid-column:1}
+body.compact-workspace #compactInspector{grid-row:1;grid-column:2;min-height:44px;padding:5px 9px}
+body.compact-workspace .editor-tools{padding:2px 5px;gap:4px;overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap}
+body.compact-workspace .editor-tools .tool-segment{padding:2px;gap:2px}
+body.compact-workspace .editor-tools button{min-height:44px;padding:5px 8px;font-size:12px}
+body.compact-workspace .topology-extra-tools{display:none}
+body.compact-workspace .canvas-footer{display:none}
+body.compact-workspace .bayface-toolbar{margin:4px;padding:4px 6px;gap:5px}
+body.compact-workspace .bayface-toolbar>.field{min-width:140px;width:160px}
+body.compact-workspace .bayface-toolbar .field{font-size:11px}
+body.compact-workspace .bayface-toolbar>.field input{min-height:36px;padding:5px 8px;font-size:16px}
+@media(max-height:520px) and (orientation:landscape){
+ body.compact-workspace .topbar{grid-template-columns:auto minmax(0,1fr) auto}
+ body.compact-workspace .topbar .project-header{grid-row:1;grid-column:2}
+ body.compact-workspace .topbar .top-actions{grid-column:3;grid-row:1}
+ body.compact-workspace .brand>span{display:none}
+ body.compact-workspace .audience-toolbar{display:none}
+ body.compact-workspace .workspace-navigation .design-tabs button{min-height:44px}
+}
+/* Bayface keeps its three-column shell and presentation still fills the viewport. */
+body.bayface-mode:not(.compact-workspace) #workspace{grid-template-columns:min(var(--library-width,240px),320px) 8px minmax(0,1fr)}
+body.bayface-mode:not(.compact-workspace) #workspace.library-hidden{grid-template-columns:0 0 minmax(0,1fr)}
+body.presentation #workspace,body.bayface-presentation #workspace{grid-template-columns:minmax(0,1fr)!important}

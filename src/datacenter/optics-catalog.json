@@ -1,0 +1,2397 @@
+[
+  {
+    "id": "optic-lx",
+    "name": "1G GLC-LH-SMD",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-LH-SMD",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-LH-SMD",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "10 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "GLC-LH-SMD · SMF · LC duplex · 10 km",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-ct",
+    "name": "1G GLC-TE",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-TE",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "Copper",
+    "connector": "RJ45",
+    "strands": 0,
+    "reachM": 100.0,
+    "reachLabel": "100 m",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-TE",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "Copper",
+      "Connector": "RJ45",
+      "Fiber strands": 0,
+      "Reach": "100 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "GLC-TE · Copper · RJ45 · 100 m",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "rj45",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-sx",
+    "name": "1G GLC-SX-MMD",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-SX-MMD",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "MMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 550.0,
+    "reachLabel": "550 m",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-SX-MMD",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "MMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "550 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "550 m on 50 µm MMF 500 MHz·km; reach varies with MMF grade."
+    },
+    "summary": "550 m on 50 µm MMF 500 MHz·km; reach varies with MMF grade.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#222831",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-lx20",
+    "name": "1G SFP1G-ELX-31",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "SFP1G-ELX-31",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 20000.0,
+    "reachLabel": "20 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "SFP1G-ELX-31",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "20 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "SFP1G-ELX-31 · SMF · LC duplex · 20 km",
+    "source": "https://resource.fs.com/mall/resource/sfp1g-elx-31-datasheet.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.7,
+        "height": 8.5,
+        "depth": 57.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://resource.fs.com/mall/resource/sfp1g-elx-31-datasheet.pdf"
+      ],
+      "note": "FS mechanical drawing p8: 57.4 mm overall length; 13.7 mm nose width; 8.5 mm shell height."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://resource.fs.com/mall/resource/sfp1g-elx-31-datasheet.pdf",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 52.4,
+      "referenceNote": "FS mechanical drawing p8: 57.4 mm overall length; 13.7 mm nose width; 8.5 mm shell height."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-ex40",
+    "name": "1G GLC-EX-SMD",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-EX-SMD",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-EX-SMD",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "40 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "GLC-EX-SMD · SMF · LC duplex · 40 km",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-zx80",
+    "name": "1G SFP1G-ZX-55",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "SFP1G-ZX-55",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 80000.0,
+    "reachLabel": "80 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "SFP1G-ZX-55",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "80 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "FS 80 km variant; this is not Cisco GLC-ZX-SMD, whose published reach is approximately 70 km."
+    },
+    "summary": "FS 80 km variant; this is not Cisco GLC-ZX-SMD, whose published reach is approximately 70 km.",
+    "source": "https://resource.fs.com/mall/resource/sfp1g-elx-31-datasheet.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.7,
+        "height": 8.5,
+        "depth": 57.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://resource.fs.com/mall/resource/sfp1g-elx-31-datasheet.pdf"
+      ],
+      "note": "FS mechanical drawing p8: 57.4 mm overall length; 13.7 mm nose width; 8.5 mm shell height."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://resource.fs.com/mall/resource/sfp1g-elx-31-datasheet.pdf",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 52.4,
+      "referenceNote": "FS mechanical drawing p8: 57.4 mm overall length; 13.7 mm nose width; 8.5 mm shell height."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-bx10-0",
+    "name": "1G GLC-BX-U",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-BX-U",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-BX-U",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "10 km",
+      "Wavelength / pairing": "GLC-BX-U / GLC-BX-D",
+      "Conditions": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU."
+    },
+    "summary": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-bx10-1",
+    "name": "1G GLC-BX-D",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-BX-D",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-BX-D",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "10 km",
+      "Wavelength / pairing": "GLC-BX-U / GLC-BX-D",
+      "Conditions": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU."
+    },
+    "summary": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-bx40-0",
+    "name": "1G GLC-BX40-U-I",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-BX40-U-I",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-BX40-U-I",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "40 km",
+      "Wavelength / pairing": "GLC-BX40-U-I / GLC-BX40-D-I",
+      "Conditions": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU."
+    },
+    "summary": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-bx40-1",
+    "name": "1G GLC-BX40-D-I",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-BX40-D-I",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-BX40-D-I",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "40 km",
+      "Wavelength / pairing": "GLC-BX40-U-I / GLC-BX40-D-I",
+      "Conditions": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU."
+    },
+    "summary": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-bx80-0",
+    "name": "1G GLC-BX80-U-I",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-BX80-U-I",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 80000.0,
+    "reachLabel": "80 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-BX80-U-I",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "80 km",
+      "Wavelength / pairing": "GLC-BX80-U-I / GLC-BX80-D-I",
+      "Conditions": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU."
+    },
+    "summary": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-1g-bx80-1",
+    "name": "1G GLC-BX80-D-I",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "GLC-BX80-D-I",
+    "form": "SFP",
+    "family": "SFP",
+    "speedGbps": 1,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 80000.0,
+    "reachLabel": "80 km",
+    "specs": {
+      "Form factor": "SFP",
+      "Manufacturer part number": "GLC-BX80-D-I",
+      "Bandwidth": "1 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "80 km",
+      "Wavelength / pairing": "GLC-BX80-U-I / GLC-BX80-D-I",
+      "Conditions": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU."
+    },
+    "summary": "BiDi uses one fiber strand. Select the complementary U/D wavelength pair specified for this SKU.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/gigabit-ethernet-gbic-sfp-modules/datasheet-c78-366584.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-lr",
+    "name": "10G SFP-10G-LR",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-LR",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-LR",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "10 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "SFP-10G-LR · SMF · LC duplex · 10 km",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-bx10-0",
+    "name": "10G BiDi 10 km · U / Tx1270",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-BXU-I",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BXU-I",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "10 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-sr",
+    "name": "10G SFP-10G-SR",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-SR",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "MMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 400.0,
+    "reachLabel": "400 m",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-SR",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "MMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "400 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "300 m on OM3; 400 m on OM4. Two MMF strands."
+    },
+    "summary": "300 m on OM3; 400 m on OM4. Two MMF strands.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#c3b397",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-er40",
+    "name": "10G SFP-10G-ER",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-ER",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-ER",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "40 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Check minimum attenuation / receiver overload when used over short spans."
+    },
+    "summary": "Check minimum attenuation / receiver overload when used over short spans.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#b94345",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-zr80",
+    "name": "10G SFP-10G-ZR",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-ZR",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 80000.0,
+    "reachLabel": "80 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-ZR",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "80 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Cisco extended-reach specification; about 80 km subject to link loss and dispersion."
+    },
+    "summary": "Cisco extended-reach specification; about 80 km subject to link loss and dispersion.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#438360",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-t",
+    "name": "10G SFP-10G-T-X",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-T-X",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "Copper",
+    "connector": "RJ45",
+    "strands": 0,
+    "reachM": 30.0,
+    "reachLabel": "30 m",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-T-X",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "Copper",
+      "Connector": "RJ45",
+      "Fiber strands": 0,
+      "Reach": "30 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "10G: Cat6A/Cat7 or better, up to 30 m. 100M/1G up to 100 m."
+    },
+    "summary": "10G: Cat6A/Cat7 or better, up to 30 m. 100M/1G up to 100 m.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "rj45",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#c7aa50",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-bx10-1",
+    "name": "10G BiDi 10 km · D / Tx1330",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-BXD-I",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BXD-I",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "10 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-bx20-0",
+    "name": "10G BiDi 20 km · U / Tx1270",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "SFP-10G-BX",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 20000.0,
+    "reachLabel": "20 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BX",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "20 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://img-en.fs.com/file/datasheet/bidi-sfp%2B-1330tx1270rx-20km-transceiver-datasheet.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 57
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://img-en.fs.com/file/datasheet/bidi-sfp%2B-1330tx1270rx-20km-transceiver-datasheet.pdf"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://img-en.fs.com/file/datasheet/bidi-sfp%2B-1330tx1270rx-20km-transceiver-datasheet.pdf",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 52,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-bx20-1",
+    "name": "10G BiDi 20 km · D / Tx1330",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "SFP-10G-BX",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 20000.0,
+    "reachLabel": "20 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BX",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "20 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://img-en.fs.com/file/datasheet/bidi-sfp%2B-1330tx1270rx-20km-transceiver-datasheet.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 57
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://img-en.fs.com/file/datasheet/bidi-sfp%2B-1330tx1270rx-20km-transceiver-datasheet.pdf"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://img-en.fs.com/file/datasheet/bidi-sfp%2B-1330tx1270rx-20km-transceiver-datasheet.pdf",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 52,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-bx40-0",
+    "name": "10G BiDi 40 km · U / Tx1270",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-BX40U-I",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BX40U-I",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "40 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#b94345",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-bx40-1",
+    "name": "10G BiDi 40 km · D / Tx1330",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-BX40D-I",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BX40D-I",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "40 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#b94345",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-bx80-0",
+    "name": "10G BiDi 80 km · U / Tx1270",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "SFP-10G-BX80",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 80000.0,
+    "reachLabel": "80 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BX80",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "80 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 57
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf",
+      "latchColor": "#b94345",
+      "shellDepthMm": 52,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15",
+    "referenceImage": {
+      "src": "assets/optics/fs-bidi-sfp.png",
+      "source": "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf",
+      "caption": "SFP-10G-BX80 — manufacturer datasheet image"
+    }
+  },
+  {
+    "id": "optic-10g-bx80-1",
+    "name": "10G BiDi 80 km · D / Tx1330",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "SFP-10G-BX80",
+    "form": "SFP+",
+    "family": "SFP+",
+    "speedGbps": 10,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 80000.0,
+    "reachLabel": "80 km",
+    "specs": {
+      "Form factor": "SFP+",
+      "Manufacturer part number": "SFP-10G-BX80",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "80 km",
+      "Wavelength / pairing": "Tx1270 / Rx1330 ↔ Tx1330 / Rx1270",
+      "Conditions": "Use the complementary wavelength unit from the same documented product family."
+    },
+    "summary": "Use the complementary wavelength unit from the same documented product family.",
+    "source": "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 57
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf",
+      "latchColor": "#b94345",
+      "shellDepthMm": 52,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15",
+    "referenceImage": {
+      "src": "assets/optics/fs-bidi-sfp.png",
+      "source": "https://img-en.fs.com/file/datasheet/bidi-sfp-plus-1270tx1330rx-80km-transceiver-datasheet.pdf",
+      "caption": "SFP-10G-BX80 — manufacturer datasheet image"
+    }
+  },
+  {
+    "id": "optic-lr4",
+    "name": "40G QSFP-40G-LR4",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-40G-LR4",
+    "form": "QSFP+",
+    "family": "QSFP+",
+    "speedGbps": 40,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "QSFP+",
+      "Manufacturer part number": "QSFP-40G-LR4",
+      "Bandwidth": "40 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "10 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "QSFP-40G-LR4 · SMF · LC duplex · 10 km",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-sr4",
+    "name": "40G QSFP-40G-SR4",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-40G-SR4",
+    "form": "QSFP+",
+    "family": "QSFP+",
+    "speedGbps": 40,
+    "media": "MMF",
+    "connector": "MPO-12",
+    "strands": 8,
+    "reachM": 150.0,
+    "reachLabel": "150 m",
+    "specs": {
+      "Form factor": "QSFP+",
+      "Manufacturer part number": "QSFP-40G-SR4",
+      "Bandwidth": "40 Gbps",
+      "Fiber / media": "MMF",
+      "Connector": "MPO-12",
+      "Fiber strands": 8,
+      "Reach": "150 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "100 m OM3 / 150 m OM4. MPO-12 ferrule has 12 positions; 8 active fibers (4 Tx + 4 Rx)."
+    },
+    "summary": "100 m OM3 / 150 m OM4. MPO-12 ferrule has 12 positions; 8 active fibers (4 Tx + 4 Rx).",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "mpo",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+      "latchColor": "#c3b397",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-40g-bidi",
+    "name": "40G QSFP-40G-SR-BD",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-40G-SR-BD",
+    "form": "QSFP+",
+    "family": "QSFP+",
+    "speedGbps": 40,
+    "media": "MMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 150.0,
+    "reachLabel": "150 m",
+    "specs": {
+      "Form factor": "QSFP+",
+      "Manufacturer part number": "QSFP-40G-SR-BD",
+      "Bandwidth": "40 Gbps",
+      "Fiber / media": "MMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "150 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "MMF BiDi still uses TWO strands: 100 m OM3 / 150 m OM4. It is not single-strand SMF BiDi."
+    },
+    "summary": "MMF BiDi still uses TWO strands: 100 m OM3 / 150 m OM4. It is not single-strand SMF BiDi.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-40g-er4",
+    "name": "40G QSFP-40G-ER4",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-40G-ER4",
+    "form": "QSFP+",
+    "family": "QSFP+",
+    "speedGbps": 40,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "QSFP+",
+      "Manufacturer part number": "QSFP-40G-ER4",
+      "Bandwidth": "40 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "40 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "QSFP-40G-ER4 · SMF · LC duplex · 40 km",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+      "latchColor": "#b94345",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-lr100",
+    "name": "100G QSFP-100G-LR4-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-LR4-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 10000.0,
+    "reachLabel": "10 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-LR4-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "10 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "QSFP-100G-LR4-S · SMF · LC duplex · 10 km",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#3778b4",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-sr100",
+    "name": "100G QSFP-100G-SR4-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-SR4-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "MMF",
+    "connector": "MPO-12",
+    "strands": 8,
+    "reachM": 100.0,
+    "reachLabel": "100 m",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-SR4-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "MMF",
+      "Connector": "MPO-12",
+      "Fiber strands": 8,
+      "Reach": "100 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "70 m OM3 / 100 m OM4. MPO-12: 8 active fibers, not duplex LC."
+    },
+    "summary": "70 m OM3 / 100 m OM4. MPO-12: 8 active fibers, not duplex LC.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "mpo",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#c3b397",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-bidi-mm",
+    "name": "100G QSFP-100G-SR1.2",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-SR1.2",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "MMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 150.0,
+    "reachLabel": "150 m",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-SR1.2",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "MMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "150 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "70 m OM3 / 100 m OM4 / 150 m OM5; duplex MMF BiDi."
+    },
+    "summary": "70 m OM3 / 100 m OM4 / 150 m OM5; duplex MMF BiDi.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-sr1",
+    "name": "100G QSFP-100G-SR-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-SR-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "MMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 100.0,
+    "reachLabel": "100 m",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-SR-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "MMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "100 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "100GBASE-SR1 PAM4; host FEC required. 70 m OM3 / 100 m OM4."
+    },
+    "summary": "100GBASE-SR1 PAM4; host FEC required. 70 m OM3 / 100 m OM4.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-psm4",
+    "name": "100G QSFP-100G-PSM4-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-PSM4-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "MPO-12",
+    "strands": 8,
+    "reachM": 500.0,
+    "reachLabel": "500 m",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-PSM4-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "MPO-12",
+      "Fiber strands": 8,
+      "Reach": "500 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Parallel SMF: 4 Tx + 4 Rx, MPO-12."
+    },
+    "summary": "Parallel SMF: 4 Tx + 4 Rx, MPO-12.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "mpo",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-dr",
+    "name": "100G QSFP-100G-DR-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-DR-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 500.0,
+    "reachLabel": "500 m",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-DR-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "500 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Single-lambda PAM4; verify host FEC."
+    },
+    "summary": "Single-lambda PAM4; verify host FEC.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-fr",
+    "name": "100G QSFP-100G-FR-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-FR-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 2000.0,
+    "reachLabel": "2 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-FR-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "2 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Single-lambda PAM4; verify host FEC."
+    },
+    "summary": "Single-lambda PAM4; verify host FEC.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-cwdm4",
+    "name": "100G QSFP-100G-CWDM4-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-CWDM4-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 2000.0,
+    "reachLabel": "2 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-CWDM4-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "2 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Reach depends on fiber grade and link loss budget; verify host support."
+    },
+    "summary": "QSFP-100G-CWDM4-S · SMF · LC duplex · 2 km",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#438360",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-er4",
+    "name": "100G QSFP-100G-ER4L-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-ER4L-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 40000.0,
+    "reachLabel": "40 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-ER4L-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "40 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "40 km with host FEC; 30 km without host FEC. Minimum channel insertion loss applies."
+    },
+    "summary": "40 km with host FEC; 30 km without host FEC. Minimum channel insertion loss applies.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#b94345",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-zr4",
+    "name": "100G QSFP-100G-ZR4-S",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-ZR4-S",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 80000.0,
+    "reachLabel": "80 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-ZR4-S",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "80 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Requires host FEC; reach depends on fiber and connector loss."
+    },
+    "summary": "Requires host FEC; reach depends on fiber and connector loss.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#242a30",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-bx20-0",
+    "name": "100G QSFP-100G-B20U4-I",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-B20U4-I",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 20000.0,
+    "reachLabel": "20 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-B20U4-I",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "20 km",
+      "Wavelength / pairing": "QSFP-100G-B20U4-I ↔ QSFP-100G-B20D4-I",
+      "Conditions": "Single-strand SMF U/D pair; host RS-FEC required. Uses the longer 87.4 mm module envelope."
+    },
+    "summary": "Single-strand SMF U/D pair; host RS-FEC required. Uses the longer 87.4 mm module envelope.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 87.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 82.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-bx20-1",
+    "name": "100G QSFP-100G-B20D4-I",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-B20D4-I",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC simplex",
+    "strands": 1,
+    "reachM": 20000.0,
+    "reachLabel": "20 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "QSFP-100G-B20D4-I",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC simplex",
+      "Fiber strands": 1,
+      "Reach": "20 km",
+      "Wavelength / pairing": "QSFP-100G-B20U4-I ↔ QSFP-100G-B20D4-I",
+      "Conditions": "Single-strand SMF U/D pair; host RS-FEC required. Uses the longer 87.4 mm module envelope."
+    },
+    "summary": "Single-strand SMF U/D pair; host RS-FEC required. Uses the longer 87.4 mm module envelope.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 87.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "simplex-lc",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 82.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-lr20",
+    "name": "100G Q28-100/112G-20",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "Q28-100/112G-20",
+    "form": "QSFP28",
+    "family": "QSFP28",
+    "speedGbps": 100,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 20000.0,
+    "reachLabel": "20 km",
+    "specs": {
+      "Form factor": "QSFP28",
+      "Manufacturer part number": "Q28-100/112G-20",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "20 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "FS LR4/OTU4 extended-reach SKU; 20 km requires host FEC. Not every 100G LR4 supports 20 km."
+    },
+    "summary": "FS LR4/OTU4 extended-reach SKU; 20 km requires host FEC. Not every 100G LR4 supports 20 km.",
+    "source": "https://resource.fs.com/mall/doc/20230403154821f3r427.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.35,
+        "height": 8.5,
+        "depth": 123.41
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://resource.fs.com/mall/doc/20230403154821f3r427.pdf"
+      ],
+      "note": "FS 100G catalog Table4 p29 gives 8.5 × 18.35 × 123.41 mm including pull tab; verify the shipping revision for fit."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://resource.fs.com/mall/doc/20230403154821f3r427.pdf",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 72.4,
+      "referenceNote": "FS 100G catalog Table4 p29 gives 8.5 × 18.35 × 123.41 mm including pull tab; verify the shipping revision for fit."
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-400g-fr4",
+    "name": "400G QDD-FR4-400G",
+    "brand": "FS",
+    "category": "optic",
+    "sku": "QDD-FR4-400G",
+    "form": "QSFP-DD",
+    "family": "QSFP-DD",
+    "speedGbps": 400,
+    "media": "SMF",
+    "connector": "LC duplex",
+    "strands": 2,
+    "reachM": 2000.0,
+    "reachLabel": "2 km",
+    "specs": {
+      "Form factor": "QSFP-DD",
+      "Manufacturer part number": "QDD-FR4-400G",
+      "Bandwidth": "400 Gbps",
+      "Fiber / media": "SMF",
+      "Connector": "LC duplex",
+      "Fiber strands": 2,
+      "Reach": "2 km",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "400G reference exhibit from FS p1 / mechanical outline p14. Host FEC required."
+    },
+    "summary": "400G reference exhibit from FS p1 / mechanical outline p14. Host FEC required.",
+    "source": "https://resource.fs.com/mall/resource/qdd-fr4-400g-data-sheet-2.pdf",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.35,
+        "height": 9.2,
+        "depth": 128.06
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://resource.fs.com/mall/resource/qdd-fr4-400g-data-sheet-2.pdf"
+      ],
+      "note": "FS p14 mechanical drawing: 128.06 mm with pull tab, 18.35 mm width, 9.2 mm overall height; 71.59 mm shell section."
+    },
+    "geometry": {
+      "kind": "duplex-lc",
+      "source": "https://resource.fs.com/mall/resource/qdd-fr4-400g-data-sheet-2.pdf",
+      "latchColor": "#438360",
+      "shellDepthMm": 71.59,
+      "referenceNote": "FS p14 mechanical drawing: 128.06 mm with pull tab, 18.35 mm width, 9.2 mm overall height; 71.59 mm shell section."
+    },
+    "checkedAt": "2026-10-15",
+    "referenceImage": {
+      "src": "assets/optics/fs-qsfpdd.png",
+      "source": "https://resource.fs.com/mall/resource/qdd-fr4-400g-data-sheet-2.pdf",
+      "caption": "QDD-FR4-400G — manufacturer datasheet image"
+    }
+  },
+  {
+    "id": "optic-10g-dac",
+    "name": "10G SFP-H10GB-CU1M",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-H10GB-CU1M",
+    "form": "DAC",
+    "family": "DAC",
+    "speedGbps": 10,
+    "media": "Copper",
+    "connector": "Fixed cable",
+    "strands": 0,
+    "reachM": 1.0,
+    "reachLabel": "1 m",
+    "specs": {
+      "Form factor": "DAC",
+      "Manufacturer part number": "SFP-H10GB-CU1M",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "Copper",
+      "Connector": "Fixed cable",
+      "Fiber strands": "Factory-terminated assembly",
+      "Reach": "1 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length."
+    },
+    "summary": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+        "https://prolabs.com/Datasheets/DAC-SFP-10G-1-5M-C_datasheets_EN.pdf"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "cable",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing. Jacket diameter is referenced to a documented ProLabs 10G passive twinax assembly, not a Cisco-specific measured cable.",
+      "endForm": "SFP+",
+      "cableDiameterMm": 4.2,
+      "bendRadiusMm": 25,
+      "jacketColor": "#242a30",
+      "detailSource": "https://prolabs.com/Datasheets/DAC-SFP-10G-1-5M-C_datasheets_EN.pdf"
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-40g-dac",
+    "name": "40G QSFP-H40G-CU1M",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-H40G-CU1M",
+    "form": "DAC",
+    "family": "DAC",
+    "speedGbps": 40,
+    "media": "Copper",
+    "connector": "Fixed cable",
+    "strands": 0,
+    "reachM": 1.0,
+    "reachLabel": "1 m",
+    "specs": {
+      "Form factor": "DAC",
+      "Manufacturer part number": "QSFP-H40G-CU1M",
+      "Bandwidth": "40 Gbps",
+      "Fiber / media": "Copper",
+      "Connector": "Fixed cable",
+      "Fiber strands": "Factory-terminated assembly",
+      "Reach": "1 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length."
+    },
+    "summary": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "cable",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing.",
+      "endForm": "QSFP+",
+      "cableDiameterMm": 7,
+      "bendRadiusMm": 50,
+      "jacketColor": "#242a30"
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-dac",
+    "name": "100G QSFP-100G-CU1M",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-CU1M",
+    "form": "DAC",
+    "family": "DAC",
+    "speedGbps": 100,
+    "media": "Copper",
+    "connector": "Fixed cable",
+    "strands": 0,
+    "reachM": 1.0,
+    "reachLabel": "1 m",
+    "specs": {
+      "Form factor": "DAC",
+      "Manufacturer part number": "QSFP-100G-CU1M",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "Copper",
+      "Connector": "Fixed cable",
+      "Fiber strands": "Factory-terminated assembly",
+      "Reach": "1 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length."
+    },
+    "summary": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "cable",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing.",
+      "endForm": "QSFP28",
+      "cableDiameterMm": 7,
+      "bendRadiusMm": 50,
+      "jacketColor": "#242a30"
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-10g-aoc",
+    "name": "10G SFP-10G-AOC10M",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "SFP-10G-AOC10M",
+    "form": "AOC",
+    "family": "AOC",
+    "speedGbps": 10,
+    "media": "Optical assembly",
+    "connector": "Fixed cable",
+    "strands": 0,
+    "reachM": 10.0,
+    "reachLabel": "10 m",
+    "specs": {
+      "Form factor": "AOC",
+      "Manufacturer part number": "SFP-10G-AOC10M",
+      "Bandwidth": "10 Gbps",
+      "Fiber / media": "Optical assembly",
+      "Connector": "Fixed cable",
+      "Fiber strands": "Factory-terminated assembly",
+      "Reach": "10 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length."
+    },
+    "summary": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 13.4,
+        "height": 8.5,
+        "depth": 56.5
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+        "https://www.optcore.net/product/sfp-10g-aoc10m-csc/"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "cable",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 51.5,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing. Captive fiber assembly physical reference: Optcore SFP-10G-AOC10M compatible product; jacket finish is illustrative.",
+      "endForm": "SFP+",
+      "cableDiameterMm": 3.5,
+      "bendRadiusMm": 25,
+      "jacketColor": "#e66f32",
+      "detailSource": "https://www.optcore.net/product/sfp-10g-aoc10m-csc/"
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-40g-aoc",
+    "name": "40G QSFP-H40G-AOC10M",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-H40G-AOC10M",
+    "form": "AOC",
+    "family": "AOC",
+    "speedGbps": 40,
+    "media": "Optical assembly",
+    "connector": "Fixed cable",
+    "strands": 0,
+    "reachM": 10.0,
+    "reachLabel": "10 m",
+    "specs": {
+      "Form factor": "AOC",
+      "Manufacturer part number": "QSFP-H40G-AOC10M",
+      "Bandwidth": "40 Gbps",
+      "Fiber / media": "Optical assembly",
+      "Connector": "Fixed cable",
+      "Fiber strands": "Factory-terminated assembly",
+      "Reach": "10 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length."
+    },
+    "summary": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "cable",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing.",
+      "endForm": "QSFP+",
+      "cableDiameterMm": 3.5,
+      "bendRadiusMm": 60,
+      "jacketColor": "#e66f32"
+    },
+    "checkedAt": "2026-10-15"
+  },
+  {
+    "id": "optic-100g-aoc",
+    "name": "100G QSFP-100G-AOC10M",
+    "brand": "Cisco",
+    "category": "optic",
+    "sku": "QSFP-100G-AOC10M",
+    "form": "AOC",
+    "family": "AOC",
+    "speedGbps": 100,
+    "media": "Optical assembly",
+    "connector": "Fixed cable",
+    "strands": 0,
+    "reachM": 10.0,
+    "reachLabel": "10 m",
+    "specs": {
+      "Form factor": "AOC",
+      "Manufacturer part number": "QSFP-100G-AOC10M",
+      "Bandwidth": "100 Gbps",
+      "Fiber / media": "Optical assembly",
+      "Connector": "Fixed cable",
+      "Fiber strands": "Factory-terminated assembly",
+      "Reach": "10 m",
+      "Wavelength / pairing": "See manufacturer optical table",
+      "Conditions": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length."
+    },
+    "summary": "Factory-terminated cable with two transceiver ends. Display coil is a presentation arrangement, not a scale rendering of the entire cable length.",
+    "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+    "physical": {
+      "dimensionsMm": {
+        "width": 18.4,
+        "height": 13.5,
+        "depth": 72.4
+      },
+      "dimensionStatus": "vendor-verified",
+      "sources": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html"
+      ],
+      "note": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing."
+    },
+    "geometry": {
+      "kind": "cable",
+      "source": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html",
+      "latchColor": "#8796a0",
+      "shellDepthMm": 67.4,
+      "referenceNote": "Maximum module envelope from the manufacturer; latch details follow the cited form-factor drawing.",
+      "endForm": "QSFP28",
+      "cableDiameterMm": 3.5,
+      "bendRadiusMm": 30,
+      "jacketColor": "#e66f32"
+    },
+    "checkedAt": "2026-10-15"
+  }
+]

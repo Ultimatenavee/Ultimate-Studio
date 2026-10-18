@@ -1,0 +1,652 @@
+{
+  "version": 1,
+  "width": 3072,
+  "height": 2048,
+  "source": "Local device models/catalog imagery and Ragnarok decor GLBs; offline orthographic capture",
+  "frames": {
+    "cisco-c1121-8pltep": {
+      "x": 4,
+      "y": 4,
+      "width": 248,
+      "height": 97,
+      "aspect": 2.5655737704918034
+    },
+    "cisco-1941": {
+      "x": 260,
+      "y": 4,
+      "width": 248,
+      "height": 118,
+      "aspect": 2.103448275862069
+    },
+    "cisco-2911-k9": {
+      "x": 516,
+      "y": 4,
+      "width": 248,
+      "height": 104,
+      "aspect": 2.37984496124031
+    },
+    "cisco-3925e": {
+      "x": 772,
+      "y": 4,
+      "width": 248,
+      "height": 126,
+      "aspect": 1.972972972972973
+    },
+    "cisco-3945e": {
+      "x": 1028,
+      "y": 4,
+      "width": 248,
+      "height": 126,
+      "aspect": 1.972972972972973
+    },
+    "cisco-asr-1001": {
+      "x": 1284,
+      "y": 4,
+      "width": 248,
+      "height": 92,
+      "aspect": 2.705357142857143
+    },
+    "cisco-asr-1001-x": {
+      "x": 1540,
+      "y": 4,
+      "width": 248,
+      "height": 94,
+      "aspect": 2.6422018348623855
+    },
+    "huawei-ar5710-s8t2x": {
+      "x": 1796,
+      "y": 4,
+      "width": 248,
+      "height": 92,
+      "aspect": 2.6923076923076925
+    },
+    "huawei-ar5710-s8t2x-lte4ea": {
+      "x": 2052,
+      "y": 4,
+      "width": 248,
+      "height": 92,
+      "aspect": 2.6923076923076925
+    },
+    "cisco-isr-4331": {
+      "x": 2308,
+      "y": 4,
+      "width": 248,
+      "height": 91,
+      "aspect": 2.7363636363636363
+    },
+    "cisco-isr-4431": {
+      "x": 2564,
+      "y": 4,
+      "width": 248,
+      "height": 93,
+      "aspect": 2.672727272727273
+    },
+    "alcatel-os6450-10": {
+      "x": 2820,
+      "y": 4,
+      "width": 248,
+      "height": 112,
+      "aspect": 2.207692307692308
+    },
+    "huawei-s5735-l8t4x-a1": {
+      "x": 4,
+      "y": 260,
+      "width": 248,
+      "height": 101,
+      "aspect": 2.4645669291338583
+    },
+    "huawei-s5735-l8t4x-qa-v2": {
+      "x": 260,
+      "y": 260,
+      "width": 248,
+      "height": 101,
+      "aspect": 2.4645669291338583
+    },
+    "huawei-s5731-s48t4x": {
+      "x": 516,
+      "y": 260,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.7410714285714284
+    },
+    "telco-t-marc-340": {
+      "x": 772,
+      "y": 260,
+      "width": 248,
+      "height": 109,
+      "aspect": 2.282442748091603
+    },
+    "telco-t-marc-280": {
+      "x": 1028,
+      "y": 260,
+      "width": 248,
+      "height": 103,
+      "aspect": 2.3969465648854964
+    },
+    "telco-t-marc-380": {
+      "x": 1284,
+      "y": 260,
+      "width": 248,
+      "height": 109,
+      "aspect": 2.282442748091603
+    },
+    "fortinet-fortigate-100f": {
+      "x": 1540,
+      "y": 260,
+      "width": 248,
+      "height": 83,
+      "aspect": 2.9813084112149535
+    },
+    "huawei-ne8000-f1a": {
+      "x": 1796,
+      "y": 260,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.7410714285714284
+    },
+    "huawei-ne8000-m8": {
+      "x": 2052,
+      "y": 260,
+      "width": 248,
+      "height": 124,
+      "aspect": 2.0064935064935066
+    },
+    "huawei-ne8000-m14": {
+      "x": 2308,
+      "y": 260,
+      "width": 248,
+      "height": 167,
+      "aspect": 1.4846938775510203
+    },
+    "huawei-ne8000-x4": {
+      "x": 2564,
+      "y": 260,
+      "width": 248,
+      "height": 220,
+      "aspect": 1.1273584905660377
+    },
+    "huawei-s5720-12tp-li-ac": {
+      "x": 2820,
+      "y": 260,
+      "width": 248,
+      "height": 101,
+      "aspect": 2.4645669291338583
+    },
+    "huawei-s5720-36c-ei-28s-ac": {
+      "x": 4,
+      "y": 516,
+      "width": 248,
+      "height": 91,
+      "aspect": 2.732142857142857
+    },
+    "huawei-s5720-52x-si-ac": {
+      "x": 260,
+      "y": 516,
+      "width": 248,
+      "height": 91,
+      "aspect": 2.732142857142857
+    },
+    "huawei-s5732-h24s6q": {
+      "x": 516,
+      "y": 516,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.7410714285714284
+    },
+    "huawei-s6720-30c-ei-24s-ac": {
+      "x": 772,
+      "y": 516,
+      "width": 248,
+      "height": 91,
+      "aspect": 2.732142857142857
+    },
+    "huawei-s6730-h24x6c": {
+      "x": 1028,
+      "y": 516,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.7410714285714284
+    },
+    "huawei-s5335-s32st4x": {
+      "x": 1284,
+      "y": 516,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.7410714285714284
+    },
+    "hitachi-apresia13200-48x-psr3": {
+      "x": 1540,
+      "y": 516,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.75
+    },
+    "hitachi-apresia13200-52gt-psr2": {
+      "x": 1796,
+      "y": 516,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.75
+    },
+    "hitachi-apresia15000-32xl-psr2": {
+      "x": 2052,
+      "y": 516,
+      "width": 248,
+      "height": 90,
+      "aspect": 2.767857142857143
+    },
+    "huawei-ne40e-x8a": {
+      "x": 2308,
+      "y": 516,
+      "width": 154,
+      "height": 248,
+      "aspect": 0.6224489795918368
+    },
+    "odf-commscope-760241650": {
+      "x": 2564,
+      "y": 516,
+      "width": 248,
+      "height": 83,
+      "aspect": 2.97196261682243
+    },
+    "odf-commscope-fms1u-sc24": {
+      "x": 2820,
+      "y": 516,
+      "width": 248,
+      "height": 81,
+      "aspect": 3.0673076923076925
+    },
+    "ac-apc-ap9565": {
+      "x": 4,
+      "y": 772,
+      "width": 248,
+      "height": 92,
+      "aspect": 2.690265486725664
+    },
+    "ac-apc-smt1500rmi2u": {
+      "x": 260,
+      "y": 772,
+      "width": 248,
+      "height": 110,
+      "aspect": 2.263157894736842
+    },
+    "dc-vertiv-netsure211-1u": {
+      "x": 516,
+      "y": 772,
+      "width": 248,
+      "height": 83,
+      "aspect": 3
+    },
+    "dc-vertiv-netsure211-2u": {
+      "x": 772,
+      "y": 772,
+      "width": 248,
+      "height": 102,
+      "aspect": 2.441860465116279
+    },
+    "optic-lx": {
+      "x": 1028,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-ct": {
+      "x": 1284,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-sx": {
+      "x": 1540,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-lx20": {
+      "x": 1796,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-ex40": {
+      "x": 2052,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-zx80": {
+      "x": 2308,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-bx10-0": {
+      "x": 2564,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-bx10-1": {
+      "x": 2820,
+      "y": 772,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-bx40-0": {
+      "x": 4,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-bx40-1": {
+      "x": 260,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-bx80-0": {
+      "x": 516,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-1g-bx80-1": {
+      "x": 772,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-lr": {
+      "x": 1028,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx10-0": {
+      "x": 1284,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-sr": {
+      "x": 1540,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-er40": {
+      "x": 1796,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-zr80": {
+      "x": 2052,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-t": {
+      "x": 2308,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx10-1": {
+      "x": 2564,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx20-0": {
+      "x": 2820,
+      "y": 1028,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx20-1": {
+      "x": 4,
+      "y": 1284,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx40-0": {
+      "x": 260,
+      "y": 1284,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx40-1": {
+      "x": 516,
+      "y": 1284,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx80-0": {
+      "x": 772,
+      "y": 1284,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-10g-bx80-1": {
+      "x": 1028,
+      "y": 1284,
+      "width": 248,
+      "height": 152,
+      "aspect": 1.6341463414634145
+    },
+    "optic-lr4": {
+      "x": 1284,
+      "y": 1284,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-sr4": {
+      "x": 1540,
+      "y": 1284,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-40g-bidi": {
+      "x": 1796,
+      "y": 1284,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-40g-er4": {
+      "x": 2052,
+      "y": 1284,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-lr100": {
+      "x": 2308,
+      "y": 1284,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-sr100": {
+      "x": 2564,
+      "y": 1284,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-bidi-mm": {
+      "x": 2820,
+      "y": 1284,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-sr1": {
+      "x": 4,
+      "y": 1540,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-psm4": {
+      "x": 260,
+      "y": 1540,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-dr": {
+      "x": 516,
+      "y": 1540,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-fr": {
+      "x": 772,
+      "y": 1540,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-cwdm4": {
+      "x": 1028,
+      "y": 1540,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-er4": {
+      "x": 1284,
+      "y": 1540,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-zr4": {
+      "x": 1540,
+      "y": 1540,
+      "width": 248,
+      "height": 162,
+      "aspect": 1.5303030303030303
+    },
+    "optic-100g-bx20-0": {
+      "x": 1796,
+      "y": 1540,
+      "width": 248,
+      "height": 159,
+      "aspect": 1.564516129032258
+    },
+    "optic-100g-bx20-1": {
+      "x": 2052,
+      "y": 1540,
+      "width": 248,
+      "height": 159,
+      "aspect": 1.564516129032258
+    },
+    "optic-100g-lr20": {
+      "x": 2308,
+      "y": 1540,
+      "width": 248,
+      "height": 141,
+      "aspect": 1.7596153846153846
+    },
+    "optic-400g-fr4": {
+      "x": 2564,
+      "y": 1540,
+      "width": 248,
+      "height": 139,
+      "aspect": 1.7843137254901962
+    },
+    "optic-10g-dac": {
+      "x": 2820,
+      "y": 1540,
+      "width": 248,
+      "height": 96,
+      "aspect": 2.5824175824175826
+    },
+    "optic-40g-dac": {
+      "x": 4,
+      "y": 1796,
+      "width": 248,
+      "height": 94,
+      "aspect": 2.641304347826087
+    },
+    "optic-100g-dac": {
+      "x": 260,
+      "y": 1796,
+      "width": 248,
+      "height": 94,
+      "aspect": 2.641304347826087
+    },
+    "optic-10g-aoc": {
+      "x": 516,
+      "y": 1796,
+      "width": 248,
+      "height": 95,
+      "aspect": 2.6222222222222222
+    },
+    "optic-40g-aoc": {
+      "x": 772,
+      "y": 1796,
+      "width": 248,
+      "height": 86,
+      "aspect": 2.895348837209302
+    },
+    "optic-100g-aoc": {
+      "x": 1028,
+      "y": 1796,
+      "width": 248,
+      "height": 97,
+      "aspect": 2.5604395604395602
+    },
+    "ro:plant": {
+      "x": 1284,
+      "y": 1796,
+      "width": 125,
+      "height": 248,
+      "aspect": 0.5036764705882353
+    },
+    "ro:verus-monitor": {
+      "x": 1540,
+      "y": 1796,
+      "width": 248,
+      "height": 204,
+      "aspect": 1.2163461538461537
+    },
+    "ro:lab-extinguisher": {
+      "x": 1796,
+      "y": 1796,
+      "width": 241,
+      "height": 248,
+      "aspect": 0.9720930232558139
+    }
+  }
+}

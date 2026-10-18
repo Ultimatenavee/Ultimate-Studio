@@ -1,0 +1,23 @@
+{
+  "name": "noah-topology-studio",
+  "version": "1.7.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-worker.mjs",
+    "db:generate": "drizzle-kit generate",
+    "test": "node scripts/test.mjs",
+    "local": "node scripts/local-server.mjs",
+    "test:ayothaya:browser": "node scripts/verify-ayothaya-browser.cjs && node scripts/verify-ayothaya-rooms.cjs && node scripts/verify-ayothaya-visuals.cjs && node scripts/verify-ayothaya-avatar.cjs && node scripts/verify-ayothaya-wardrobe.cjs && node scripts/verify-ayothaya-live-preview.cjs && node scripts/verify-wardrobe-controls.cjs && node scripts/verify-hybrid-lab.cjs"
+  },
+  "dependencies": {
+    "drizzle-orm": "0.45.2",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.10",
+    "esbuild": "0.25.12",
+    "jszip": "^3.10.1",
+    "playwright": "^1.58.2"
+  }
+}

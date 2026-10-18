@@ -1,0 +1,1196 @@
+{
+  "schemaVersion": 1,
+  "coordinateNote": "Port boxes are manually observed approximate hit areas in [x,y,width,height] pixel units relative to each cropped image. They are not mechanical drawings or millimeter measurements. Use labels/types from documentation; do not infer add-in interfaces.",
+  "models": [
+    {
+      "model": "Huawei S5735-L8T4X-QA-V2",
+      "primarySources": [
+        "https://e.huawei.com/en/products/switches/campus-switches/s5735-l-q-v2",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/55e0dc88/s5735-l8t4x-qa-v2-98012073-005",
+        "https://support.huawei.cn/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073"
+      ],
+      "front": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/huawei-s5735-l8t4x-qa-v2-front.png",
+        "width": 531,
+        "height": 93,
+        "sourceImageUrl": "https://download.huawei.cn/mdl/image/download?uuid=add807af0b1a4aa794ef12ec1f54739e",
+        "originalImageSize": [
+          535,
+          291
+        ],
+        "crop": [
+          4,
+          71,
+          535,
+          164
+        ],
+        "type": "manufacturer exact-model hardware diagram crop",
+        "figure": "4-74 S5735-L8T4X-QA-V2 appearance",
+        "ports": [
+          {
+            "label": "GE 1",
+            "kind": "RJ45 GE",
+            "box": [
+              44,
+              21,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/1",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "GE 3",
+            "kind": "RJ45 GE",
+            "box": [
+              74,
+              21,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/3",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "GE 5",
+            "kind": "RJ45 GE",
+            "box": [
+              104,
+              21,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/5",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "GE 7",
+            "kind": "RJ45 GE",
+            "box": [
+              134,
+              21,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/7",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "GE 2",
+            "kind": "RJ45 GE",
+            "box": [
+              44,
+              52,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/2",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "GE 4",
+            "kind": "RJ45 GE",
+            "box": [
+              74,
+              52,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/4",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "GE 6",
+            "kind": "RJ45 GE",
+            "box": [
+              104,
+              52,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/6",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "GE 8",
+            "kind": "RJ45 GE",
+            "box": [
+              134,
+              52,
+              26,
+              22
+            ],
+            "catalogIdentifier": "GE1/0/8",
+            "supportedMbps": [
+              10,
+              100,
+              1000
+            ]
+          },
+          {
+            "label": "10GE 1",
+            "kind": "SFP+ 10GE",
+            "box": [
+              277,
+              54,
+              34,
+              23
+            ],
+            "catalogIdentifier": "10GE1/0/1",
+            "supportedMbps": [
+              1000,
+              10000
+            ],
+            "supports1GAdaptation": true
+          },
+          {
+            "label": "10GE 2",
+            "kind": "SFP+ 10GE",
+            "box": [
+              321,
+              54,
+              34,
+              23
+            ],
+            "catalogIdentifier": "10GE1/0/2",
+            "supportedMbps": [
+              1000,
+              10000
+            ],
+            "supports1GAdaptation": true
+          },
+          {
+            "label": "10GE 3",
+            "kind": "SFP+ 10GE",
+            "box": [
+              363,
+              54,
+              34,
+              23
+            ],
+            "catalogIdentifier": "10GE1/0/3",
+            "supportedMbps": [
+              1000,
+              10000
+            ],
+            "supports1GAdaptation": true
+          },
+          {
+            "label": "10GE 4",
+            "kind": "SFP+ 10GE",
+            "box": [
+              406,
+              54,
+              34,
+              23
+            ],
+            "catalogIdentifier": "10GE1/0/4",
+            "supportedMbps": [
+              1000,
+              10000
+            ],
+            "supports1GAdaptation": true
+          },
+          {
+            "label": "CONSOLE",
+            "kind": "RJ45 console",
+            "box": [
+              465,
+              43,
+              30,
+              30
+            ]
+          }
+        ],
+        "sha256": "8654ab9dd9bf6d2413afb8e2dc301b3ab1de97a07c61f939fbef23e26311119c"
+      },
+      "rear": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/huawei-s5735-l8t4x-qa-v2-rear.png",
+        "width": 531,
+        "height": 94,
+        "sourceImageUrl": "https://download.huawei.cn/mdl/image/download?uuid=add807af0b1a4aa794ef12ec1f54739e",
+        "originalImageSize": [
+          535,
+          291
+        ],
+        "crop": [
+          4,
+          169,
+          535,
+          263
+        ],
+        "type": "manufacturer exact-model hardware diagram crop",
+        "figure": "4-74 S5735-L8T4X-QA-V2 appearance",
+        "ports": [
+          {
+            "label": "AC socket",
+            "kind": "AC power",
+            "box": [
+              78,
+              16,
+              65,
+              55
+            ]
+          },
+          {
+            "label": "Ground screw",
+            "kind": "grounding",
+            "box": [
+              23,
+              16,
+              19,
+              19
+            ]
+          },
+          {
+            "label": "AC locking strap jack",
+            "kind": "power cable strap",
+            "box": [
+              157,
+              36,
+              11,
+              11
+            ]
+          }
+        ],
+        "sha256": "f4aaf15c386948e7971287cc124f583b08f64788950391cb28b0dfa37ffad085"
+      },
+      "notes": [
+        "Exact model suffix S5735-L8T4X-QA-V2 confirmed by official hardware chapter, Figure4-74 and Table4-239. Both front and rear are drawn in the same official model-specific appearance illustration.",
+        "Hardware docs distinguish part numbers98012073,98012073-004 and98012073-005. The base98012073 and-005 appearance images are byte-identical SHA256 d86def5a2fc357841fa8615a786b0e78fe9daadba29a3547bb3a933be51c0f26. Specific unit revision not supplied.",
+        "Faceplate GE1\u20138 numbering is odd-upper/even-lower; four10GE ports are numbered1\u20134 left-to-right. User-supplied full catalog identifiers GE1/0/1..8 and10GE1/0/1..4 map to these observed labels; full CLI identifier syntax was not independently verified in hardware chapter.",
+        "Table4-240 explicitly states10GE SFP+ optical ports support auto-sensing to1000Mbit/s and carry1000Mbit/s or10Gbit/s. GE eSFP,GE-CWDM eSFP andGE SFP copper modules are listed, as well as10GE SFP+ optical modules. Use compatible listed modules.",
+        "Rear shows ground screw,AC socket and jack for AC power cable locking strap. No rear network ports are depicted.",
+        "Manufacturer diagram annotation lines remain in cropped pixels. Alternate official product photograph has reflection excluded by a rectangular crop."
+      ],
+      "reuse": "No affirmative reuse license found. Manufacturer product page states Copyright 2026 Huawei Technologies Co., Ltd., All rights reserved.",
+      "alternateFrontPhoto": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/huawei-s5735-l8t4x-qa-v2-front-photo.png",
+        "width": 592,
+        "height": 129,
+        "sourceImageUrl": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/products/switches/campusswitches/s5735lqv2/overview-pc3-1.png",
+        "originalImageSize": [
+          650,
+          488
+        ],
+        "crop": [
+          30,
+          188,
+          622,
+          317
+        ],
+        "type": "manufacturer photograph crop",
+        "ports": [
+          {
+            "label": "GE 1",
+            "kind": "RJ45 GE",
+            "box": [
+              42,
+              72,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/1"
+          },
+          {
+            "label": "GE 3",
+            "kind": "RJ45 GE",
+            "box": [
+              68,
+              72,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/3"
+          },
+          {
+            "label": "GE 5",
+            "kind": "RJ45 GE",
+            "box": [
+              94,
+              72,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/5"
+          },
+          {
+            "label": "GE 7",
+            "kind": "RJ45 GE",
+            "box": [
+              120,
+              72,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/7"
+          },
+          {
+            "label": "GE 2",
+            "kind": "RJ45 GE",
+            "box": [
+              41,
+              97,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/2"
+          },
+          {
+            "label": "GE 4",
+            "kind": "RJ45 GE",
+            "box": [
+              68,
+              97,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/4"
+          },
+          {
+            "label": "GE 6",
+            "kind": "RJ45 GE",
+            "box": [
+              94,
+              97,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/6"
+          },
+          {
+            "label": "GE 8",
+            "kind": "RJ45 GE",
+            "box": [
+              120,
+              97,
+              23,
+              15
+            ],
+            "catalogIdentifier": "GE1/0/8"
+          },
+          {
+            "label": "10GE 1",
+            "kind": "SFP+ 10GE",
+            "box": [
+              325,
+              96,
+              31,
+              22
+            ],
+            "catalogIdentifier": "10GE1/0/1"
+          },
+          {
+            "label": "10GE 2",
+            "kind": "SFP+ 10GE",
+            "box": [
+              377,
+              96,
+              31,
+              22
+            ],
+            "catalogIdentifier": "10GE1/0/2"
+          },
+          {
+            "label": "10GE 3",
+            "kind": "SFP+ 10GE",
+            "box": [
+              429,
+              96,
+              31,
+              22
+            ],
+            "catalogIdentifier": "10GE1/0/3"
+          },
+          {
+            "label": "10GE 4",
+            "kind": "SFP+ 10GE",
+            "box": [
+              481,
+              96,
+              31,
+              22
+            ],
+            "catalogIdentifier": "10GE1/0/4"
+          },
+          {
+            "label": "CONSOLE",
+            "kind": "RJ45 console",
+            "box": [
+              528,
+              96,
+              28,
+              22
+            ]
+          }
+        ],
+        "sha256": "0b5e6e19ee64ebb00044e3e0a7938f91eb0f5a25f87cf3f793e3bcb446941782"
+      },
+      "hardwareSourceLocalFile": "/workspace/scratch/7360d1d45af5/research-assets/huawei-s5735-l8t4x-98012073-hardware.html",
+      "hardwareRetrievedEndpoint": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1100277349&partNo=j022",
+      "hardwarePublicationDate": "2026-07-28",
+      "opticalPortEvidence": {
+        "table": "4-240 Ports on the S5735-L8T4X-QA-V2",
+        "supports1GAdaptation": true,
+        "speedsMbps": [
+          1000,
+          10000
+        ],
+        "listed1GModuleTypes": [
+          "GE eSFP optical",
+          "GE-CWDM eSFP optical",
+          "GE SFP copper"
+        ],
+        "sourceLocalFile": "/workspace/scratch/7360d1d45af5/research-assets/huawei-s5735-l8t4x-98012073-hardware.html"
+      }
+    },
+    {
+      "model": "Alcatel-Lucent Enterprise OmniSwitch OS6450-10 (non-PoE)",
+      "primarySources": [
+        "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf"
+      ],
+      "manufacturerManualMirror": "https://www.trovaprezzi.it/manuali/alcatel_os6450_24.pdf",
+      "manualIdentity": "OmniSwitch 6450 Hardware Users Guide, Part No. 060351-10 Rev. N, December 2017; PDF metadata author Alcatel-Lucent Enterprise.",
+      "front": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-10-front.png",
+        "width": 1464,
+        "height": 252,
+        "pdfFile": "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-hardware-rev-n.pdf",
+        "pdfPage": 31,
+        "printedPage": "3-3",
+        "pdfClipPoints": [
+          129,
+          299,
+          495,
+          362
+        ],
+        "renderScale": 4,
+        "type": "manufacturer vector manual diagram crop",
+        "ports": [
+          {
+            "label": "1",
+            "kind": "RJ45 GE",
+            "box": [
+              99,
+              60,
+              90,
+              67
+            ],
+            "logicalPort": "1"
+          },
+          {
+            "label": "3",
+            "kind": "RJ45 GE",
+            "box": [
+              201,
+              60,
+              90,
+              67
+            ],
+            "logicalPort": "3"
+          },
+          {
+            "label": "5",
+            "kind": "RJ45 GE",
+            "box": [
+              302,
+              60,
+              90,
+              67
+            ],
+            "logicalPort": "5"
+          },
+          {
+            "label": "7",
+            "kind": "RJ45 GE",
+            "box": [
+              403,
+              60,
+              90,
+              67
+            ],
+            "logicalPort": "7"
+          },
+          {
+            "label": "2",
+            "kind": "RJ45 GE",
+            "box": [
+              99,
+              150,
+              90,
+              69
+            ],
+            "logicalPort": "2"
+          },
+          {
+            "label": "4",
+            "kind": "RJ45 GE",
+            "box": [
+              201,
+              150,
+              90,
+              69
+            ],
+            "logicalPort": "4"
+          },
+          {
+            "label": "6",
+            "kind": "RJ45 GE",
+            "box": [
+              302,
+              150,
+              90,
+              69
+            ],
+            "logicalPort": "6"
+          },
+          {
+            "label": "8",
+            "kind": "RJ45 GE",
+            "box": [
+              403,
+              150,
+              90,
+              69
+            ],
+            "logicalPort": "8"
+          },
+          {
+            "label": "9 copper",
+            "kind": "RJ45 GE combo",
+            "box": [
+              651,
+              141,
+              89,
+              70
+            ],
+            "logicalPort": "9"
+          },
+          {
+            "label": "10 copper",
+            "kind": "RJ45 GE combo",
+            "box": [
+              751,
+              141,
+              90,
+              70
+            ],
+            "logicalPort": "10"
+          },
+          {
+            "label": "9 fiber",
+            "kind": "SFP GE combo",
+            "box": [
+              509,
+              139,
+              108,
+              82
+            ],
+            "logicalPort": "9"
+          },
+          {
+            "label": "10 fiber",
+            "kind": "SFP GE combo",
+            "box": [
+              880,
+              150,
+              109,
+              71
+            ],
+            "logicalPort": "10"
+          },
+          {
+            "label": "11",
+            "kind": "SFP uplink/stack",
+            "box": [
+              996,
+              150,
+              108,
+              71
+            ],
+            "logicalPort": "11"
+          },
+          {
+            "label": "12",
+            "kind": "SFP uplink/stack",
+            "box": [
+              1110,
+              150,
+              108,
+              71
+            ],
+            "logicalPort": "12"
+          },
+          {
+            "label": "Console",
+            "kind": "RJ45 console",
+            "box": [
+              1243,
+              96,
+              89,
+              68
+            ]
+          },
+          {
+            "label": "USB",
+            "kind": "USB A",
+            "box": [
+              1245,
+              170,
+              84,
+              31
+            ]
+          }
+        ],
+        "sha256": "aaa5257ae2e62cac57733bfa93f48234b5f55bf625f30a06e5c4e0d807d5c2ee"
+      },
+      "rear": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-10-rear.png",
+        "width": 1704,
+        "height": 330,
+        "pdfFile": "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-hardware-rev-n.pdf",
+        "pdfPage": 32,
+        "printedPage": "3-4",
+        "pdfClipPoints": [
+          84,
+          176.5,
+          510,
+          259
+        ],
+        "renderScale": 4,
+        "type": "manufacturer vector manual diagram crop",
+        "ports": [
+          {
+            "label": "AC inlet",
+            "kind": "AC power",
+            "box": [
+              138,
+              60,
+              256,
+              202
+            ]
+          },
+          {
+            "label": "Ground block",
+            "kind": "grounding",
+            "box": [
+              1474,
+              24,
+              230,
+              94
+            ]
+          }
+        ],
+        "sha256": "21d6086999186157c6629556e27486c7759d2217a86f480cce8b9326371a9aac"
+      },
+      "notes": [
+        "OS6450-10 explicitly printed in front illustration. Non-PoE model; OS6450-P10 is a different model.",
+        "Eight non-combo RJ45 ports numbered 1-8, odd ports upper row and even lower. Two combo logical ports 9 and 10 have both copper and SFP sockets. Dedicated SFP 11 and 12 can act as uplinks/stacking.",
+        "There are 14 physical network sockets (10 copper plus 4 SFP), with copper/fiber shared on logical ports 9 and 10; ports 11 and 12 are additional dedicated interfaces.",
+        "Diagram prints both dedicated SFP captions as STK B (11/STK B and 12/STK B). This apparent source typo is retained in pixels; avoid assigning A/B from this figure alone.",
+        "Rear diagram states pre-production chassis omits product/safety/compliance labels; production chassis have labels. No rear network ports shown."
+      ],
+      "reuse": "No affirmative reuse license found. Official 2021 datasheet says copyright ALE International, ALE USA Inc., All rights reserved in all countries. Rev. N manual identifies manufacturer ownership/trademarks but no affirmative asset reuse grant found.",
+      "logicalNetworkPorts": [
+        {
+          "port": "1",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "2",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "3",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "4",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "5",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "6",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "7",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "8",
+          "physicalSockets": [
+            "RJ45"
+          ],
+          "combo": false,
+          "role": "access"
+        },
+        {
+          "port": "9",
+          "physicalSockets": [
+            "RJ45",
+            "SFP"
+          ],
+          "combo": true,
+          "role": "combo"
+        },
+        {
+          "port": "10",
+          "physicalSockets": [
+            "RJ45",
+            "SFP"
+          ],
+          "combo": true,
+          "role": "combo"
+        },
+        {
+          "port": "11",
+          "physicalSockets": [
+            "SFP"
+          ],
+          "combo": false,
+          "role": "uplink/stack"
+        },
+        {
+          "port": "12",
+          "physicalSockets": [
+            "SFP"
+          ],
+          "combo": false,
+          "role": "uplink/stack"
+        }
+      ],
+      "physicalNetworkSocketCount": 14,
+      "logicalNetworkPortCountWithDedicatedUplinks": 12,
+      "familyPhotoReference": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/ale-os6450-10-family-photo.png",
+        "width": 455,
+        "height": 214,
+        "type": "manufacturer family photograph extracted with originalPDF alpha mask",
+        "sourceUrl": "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf",
+        "pdfPage": 1,
+        "pdfImageXref": 73,
+        "pdfAlphaMaskXref": 72,
+        "caption": "OS6450-10L/10/10M; OmniSwitch6450-P10L/P10",
+        "observedFaceplateModel": "OS6450-10L",
+        "exactModelPhoto": false,
+        "geometryDefault": false,
+        "notes": "Manufacturer caption covers sharedchassis family, includingOS6450-10; photographedunit is visiblylabeledOS6450-10L. Keep exactOS6450-10manualdiagram for physicalport geometry.",
+        "sha256": "a957c67a0d5835ffb73b9a722752d701f5cdc29c8eed6f94a2941dac767de9b7"
+      }
+    },
+    {
+      "model": "Cisco ASR1001-X",
+      "primarySources": [
+        "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book/router_overview.html",
+        "https://www.cisco.com/c/en/us/td/docs/routers/asr1000/install/guide/1001-x/asr1hig-book.pdf"
+      ],
+      "manufacturerManualMirror": "https://products.b-cdn.net/Brochures/1029053851.pdf",
+      "manualIdentity": "Cisco ASR1001-X Router Hardware Installation Guide OL-32376-02, 2014, manufacturer-authored PDF mirror. Diagram IDs match current manufacturer manual.",
+      "front": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-front.png",
+        "width": 1640,
+        "height": 128,
+        "sourceImageUrl": "https://www.cisco.com/c/dam/en/us/td/i/300001-400000/370001-380000/371001-372000/371075.eps/_jcr_content/renditions/371075.jpg",
+        "pdfFile": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-2014.pdf",
+        "pdfPage": 20,
+        "printedPage": "1-2",
+        "figure": "1-1 / ID 371075",
+        "currentOfficialPdfPage": 10,
+        "pdfClipPoints": [
+          140,
+          365,
+          550,
+          397
+        ],
+        "renderScale": 4,
+        "type": "manufacturer vector manual diagram crop",
+        "ports": [
+          {
+            "label": "TE1",
+            "kind": "10GE SFP+",
+            "box": [
+              594,
+              31,
+              47,
+              31
+            ],
+            "logicalPort": "TenGigabitEthernet0/0/1"
+          },
+          {
+            "label": "TE0",
+            "kind": "10GE SFP+",
+            "box": [
+              594,
+              79,
+              47,
+              28
+            ],
+            "logicalPort": "TenGigabitEthernet0/0/0"
+          },
+          {
+            "label": "GE1",
+            "kind": "GE SFP",
+            "box": [
+              643,
+              31,
+              47,
+              31
+            ],
+            "logicalPort": "GigabitEthernet0/0/1"
+          },
+          {
+            "label": "GE0",
+            "kind": "GE SFP",
+            "box": [
+              643,
+              79,
+              47,
+              28
+            ],
+            "logicalPort": "GigabitEthernet0/0/0"
+          },
+          {
+            "label": "GE3",
+            "kind": "GE SFP",
+            "box": [
+              692,
+              31,
+              47,
+              31
+            ],
+            "logicalPort": "GigabitEthernet0/0/3"
+          },
+          {
+            "label": "GE2",
+            "kind": "GE SFP",
+            "box": [
+              692,
+              79,
+              47,
+              28
+            ],
+            "logicalPort": "GigabitEthernet0/0/2"
+          },
+          {
+            "label": "GE5",
+            "kind": "GE SFP",
+            "box": [
+              741,
+              31,
+              47,
+              31
+            ],
+            "logicalPort": "GigabitEthernet0/0/5"
+          },
+          {
+            "label": "GE4",
+            "kind": "GE SFP",
+            "box": [
+              741,
+              79,
+              47,
+              28
+            ],
+            "logicalPort": "GigabitEthernet0/0/4"
+          },
+          {
+            "label": "MGMT",
+            "kind": "RJ45 management GE",
+            "box": [
+              899,
+              20,
+              38,
+              30
+            ]
+          },
+          {
+            "label": "AUX",
+            "kind": "RJ45 auxiliary",
+            "box": [
+              825,
+              36,
+              36,
+              26
+            ]
+          },
+          {
+            "label": "CON",
+            "kind": "RJ45 console",
+            "box": [
+              825,
+              78,
+              36,
+              26
+            ]
+          },
+          {
+            "label": "USB 0",
+            "kind": "USB A",
+            "box": [
+              896,
+              63,
+              43,
+              13
+            ]
+          },
+          {
+            "label": "USB 1",
+            "kind": "USB A",
+            "box": [
+              896,
+              90,
+              43,
+              13
+            ]
+          },
+          {
+            "label": "CON mini USB",
+            "kind": "mini USB console",
+            "box": [
+              465,
+              94,
+              24,
+              16
+            ]
+          }
+        ],
+        "optionalModuleRegions": [
+          {
+            "kind": "NIM bay; sample module depicted",
+            "box": [
+              157,
+              17,
+              235,
+              81
+            ]
+          },
+          {
+            "kind": "half-height SPA bay; sample four-port module depicted",
+            "box": [
+              1016,
+              12,
+              498,
+              60
+            ]
+          }
+        ],
+        "sha256": "cfe1db80a2f86a96f30d559c58be5f5ce071a2b12aaab589bc28e9aec4836eaa",
+        "leds": [
+          {
+            "label": "PWR",
+            "box": [
+              522.41,
+              79.17,
+              11.18,
+              9.59
+            ],
+            "center": [
+              528.0,
+              83.97
+            ]
+          },
+          {
+            "label": "STAT",
+            "box": [
+              522.41,
+              93.93,
+              11.18,
+              9.59
+            ],
+            "center": [
+              528.0,
+              98.73
+            ]
+          },
+          {
+            "label": "CRIT",
+            "box": [
+              548.22,
+              64.41,
+              11.18,
+              9.6
+            ],
+            "center": [
+              553.81,
+              69.21
+            ]
+          },
+          {
+            "label": "MAJ",
+            "box": [
+              548.22,
+              79.17,
+              11.18,
+              9.59
+            ],
+            "center": [
+              553.81,
+              83.97
+            ]
+          },
+          {
+            "label": "MIN",
+            "box": [
+              548.22,
+              93.93,
+              11.18,
+              9.59
+            ],
+            "center": [
+              553.81,
+              98.73
+            ]
+          }
+        ],
+        "ledGeometryEvidence": {
+          "identificationFigure": "371077 / Figure1-2 in2014manufacturerPDF page21 / currentofficialPDF page11",
+          "positions": "Outer LED ellipse vector rectangles in frontFigure371075, transformed by crop[140,365,550,397] and renderScale4.",
+          "detailLocalPath": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-front-led-detail.png"
+        }
+      },
+      "rear": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-rear-ac.png",
+        "width": 1668,
+        "height": 144,
+        "sourceImageUrl": "https://www.cisco.com/c/dam/en/us/td/i/300001-400000/370001-380000/371001-372000/371076.eps/_jcr_content/renditions/371076.jpg",
+        "pdfFile": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-2014.pdf",
+        "pdfPage": 22,
+        "printedPage": "1-4",
+        "figure": "1-4 / ID 371076",
+        "currentOfficialPdfPage": 12,
+        "pdfClipPoints": [
+          139,
+          490,
+          556,
+          526
+        ],
+        "renderScale": 4,
+        "type": "manufacturer vector manual diagram crop; AC configuration",
+        "ports": [
+          {
+            "label": "PS0 AC inlet",
+            "kind": "AC power",
+            "box": [
+              369,
+              31,
+              59,
+              81
+            ]
+          },
+          {
+            "label": "PS1 AC inlet",
+            "kind": "AC power",
+            "box": [
+              1437,
+              31,
+              60,
+              81
+            ]
+          }
+        ],
+        "sha256": "10e8f63b75f62eabc8911ad8d145a818c865772022d8dbc346d8f0ddbf2e0755"
+      },
+      "portNumbering": {
+        "localPath": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-port-numbering.png",
+        "width": 904,
+        "height": 616,
+        "sourceImageUrl": "https://www.cisco.com/c/dam/en/us/td/i/300001-400000/370001-380000/371001-372000/371320.eps/_jcr_content/renditions/371320.jpg",
+        "pdfFile": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-2014.pdf",
+        "pdfPage": 23,
+        "printedPage": "1-5",
+        "figure": "1-5 / ID 371320",
+        "currentOfficialPdfPage": 13,
+        "pdfClipPoints": [
+          147,
+          193,
+          373,
+          347
+        ],
+        "renderScale": 4,
+        "type": "manufacturer vector numbered ports diagram crop",
+        "sha256": "d16032a09986cbd850feecce8bcde931da1a10e58c86b80cf126d227a4911c44"
+      },
+      "notes": [
+        "Fixed central port bank is two columns/rows layout: upper row TE1, GE1, GE3, GE5; lower row TE0, GE0, GE2, GE4. First column TE0/TE1 are 10GE SFP+, remaining six are 1GE SFP.",
+        "Full network IDs are TenGigabitEthernet0/0/0-1 and GigabitEthernet0/0/0-5; MGMT is separate Ethernet.",
+        "Front manufacturer figure depicts installed optional NIM/SPA modules. Their shown sockets must not be treated as universally fixed ASR1001-X ports. Front annotation arrows remain part of original manual art.",
+        "Rear depicted here is two AC supplies; DC configuration has different power receptacles. Four central fans; no rear network sockets shown.",
+        "Official manufacturer JPG/PDF direct downloads were unavailable in this environment; web official PDF screenshots verified IDs and geometry against downloaded 2014 mirror."
+      ],
+      "reuse": "No affirmative reuse license found. Current official PDF states Copyright 2024 Cisco Systems, Inc., All rights reserved.",
+      "manufacturerPhotoReference": {
+        "sourcePageUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.html",
+        "sourceImageUrl": "https://www.cisco.com/c/dam/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.docx/_jcr_content/renditions/datasheet-c78-731632_1.png",
+        "figure": "2 CiscoASR1001-XRouter",
+        "exactModelPhoto": true,
+        "localPath": null,
+        "dimensions": null,
+        "downloadStatus": "Officialdirectimage andPDFdownloadresponses were195byte SiteUnavailableHTML; officialpublicpage andwebimage were successfullyobserved.",
+        "fallbackLocalPath": "/workspace/scratch/7360d1d45af5/research-assets/cisco-asr1001x-front.png",
+        "geometryDefault": false
+      }
+    }
+  ],
+  "verification": "Every final front/rear crop was visually inspected. Manifest local paths, exact dimensions and all port bounding boxes were validated."
+}

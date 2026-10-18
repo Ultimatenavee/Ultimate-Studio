@@ -1,0 +1,138 @@
+{
+  "version": 4,
+  "sources": [
+    "data\\sprite\\인간족\\몸통\\남\\초보자_남",
+    "data\\sprite\\인간족\\머리통\\남\\1_남"
+  ],
+  "columns": 8,
+  "rows": 14,
+  "width": 89,
+  "height": 120,
+  "actions": [
+    {
+      "start": 0,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 3,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 6,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 9,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 12,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 15,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 18,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 21,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 24,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 32,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 40,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 48,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 56,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 64,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 72,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 80,
+      "count": 8,
+      "frameMs": 75.0
+    },
+    {
+      "start": 88,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 91,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 94,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 97,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 100,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 103,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 106,
+      "count": 3,
+      "frameMs": 100.0
+    },
+    {
+      "start": 109,
+      "count": 3,
+      "frameMs": 100.0
+    }
+  ],
+  "frames": 112,
+  "origin": [
+    44,
+    100
+  ]
+}

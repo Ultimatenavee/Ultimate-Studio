@@ -1,0 +1,451 @@
+
+
+      
+   
+
+S6730-H24X6C (02352FSG/02352FSG-001/02352FSG-005/02352FSG-007/02352FSG-009/02353GFC/02353GFC-001/02353GFC-003/02353GFC-004)
+
+S6730-H24X6C (02352FSG/02352FSG-001/02352FSG-005/02352FSG-007/02352FSG-009/02353GFC/02353GFC-001/02353GFC-003/02353GFC-004)
+
+Version MappingTable 4-167 lists the mapping between the S6730-H24X6C chassis and software versions.
+
+Table 4-167  Version mappingSeries
+
+Model
+
+Software Version
+
+
+
+S6730-H
+
+S6730-H24X6C
+
+02352FSG: V200R013C02 and later versions
+02352FSG-001: V200R020C10 and later versions
+02352FSG-005: V200R021C10SPC500 and later versions (If V200R021C00SPC100 is used, install V200R021SPH011 or a later patch.)
+02352FSG-007: V200R021C10SPC600 and later versions (If V200R021C00SPC100 is used, install V200R021SPH013 or a later patch.)
+02352FSG-009: V200R021C10SPC600 and later versions (If V200R021C00SPC100 is used, install V200R021SPH013 or a later patch.)
+02353GFC: V200R013C02 and later versions
+02353GFC-001: V200R020C10 and later versions
+02353GFC-003: V200R021C10SPC500 and later versions (If V200R021C00SPC100 is used, install V200R021SPH011 or a later patch.)
+02353GFC-004: V200R021C10SPC600 and later versions (If V200R021C00SPC100 is used, install V200R021SPH013 or a later patch.)
+ NOTE: V200R021C01 is not supported.
+Some models cannot be downgraded due to component upgrade. Therefore, you are advised to run the display system-software information command (supported in V200R021C00 and later versions) to check the software versions supported by the device before performing a downgrade.
+
+
+
+
+
+
+
+Appearance and StructureFigure 4-72  S6730-H24X6C appearance
+1
+
+Twenty-four 10GE SFP+ ports
+Applicable modules and cables:GE optical moduleGE-CWDM optical moduleGE-DWDM optical moduleGE copper module10GE SFP+ optical module (OSXD22N00 not supported)10GE SFP+ Copper Modules (supported in V200R023C10 and later versions)10GE-CWDM optical module10GE-DWDM optical module1 m, 3 m, 5 m, and 10 m SFP+ high-speed copper cables3 m and 10 m SFP+ AOC cables0.5 m and 1.5 m SFP+ dedicated stack cables (supported by the last 16 SFP+ ports and used only for zero-configuration stacking)
+
+
+2
+
+Six 40GE/100GE QSFP28 optical ports
+Applicable modules and cables:QSFP+ optical moduleQSFP28 optical module1 m, 3 m, and 5 m QSFP+ to QSFP+ high-speed copper cables10 m QSFP+ to QSFP+ AOC cable1 m QSFP28 to QSFP28 high-speed copper cable10 m QSFP28 to QSFP28 AOC cable2 m QSFP28 dedicated stack cable (supported in V200R020C10 and later versions)
+
+ NOTE: A QSFP28 optical port cannot be split into four 10GE ports, regardless of whether the port uses a QSFP28 or QSFP+ optical module.
+For the S6730-H24X6C (part number: 02352FSG/02352FSG-001/02352FSG-005/02352FSG-007/02352FSG-009):
+By default, the license is not loaded on a switch.In V200R013C02, QSFP28 ports are 100GE ports.In V200R019C00 and later versions, QSFP28 ports are 40GE ports. To use the 100GE rate, you need to purchase and activate a license.After a switch is upgraded from V200R013C02 to V200R019C00 or a later version, QSFP28 ports  are still 100GE ports. You can load a license to change the port rate.To configure QSFP28 ports as 100GE ports, load and activate this license, run the assign port-speed 100GE [ slot slot-id | all ] or assign port-type 100GE [ slot slot-id | all ] command, and restart the switch.In versions earlier than V200R020C00, the command format is assign port-speed 100GE [ slot slot-id | all ].
+In V200R020C00 and later versions, the command format is assign port-type 100GE [ slot slot-id | all ].
+
+For the S6730-H24X6C (part number: 02353GFC/02353GFC-001/02353GFC-003/02353GFC-004), the license has been activated and QSFP28 ports on the switch work as 100GE ports.
+
+
+
+3
+
+Ground screw
+ NOTE: It is used with a ground cable.
+
+4
+
+SSD card slot
+ NOTE: This slot is reserved for future use.
+
+
+
+5
+
+One console port
+
+6
+
+One ETH management port
+
+
+7
+
+One USB port
+
+8
+
+One PNP button
+ NOTICE: To restore the factory settings and reset the switch, hold down the button for at least 6 seconds.
+To reset the switch, press the button.
+Resetting the switch will cause service interruption. Exercise caution when you press the PNP button.
+
+
+
+9
+
+Fan module slot 1
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+10
+
+Fan module slot 2
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+
+11
+
+Fan module slot 3
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+12
+
+Fan module slot 4
+ NOTE: Applicable fan module: FAN-031A-B (Fan Box (B, Fan Panel Side Exhaust))
+
+
+
+13
+
+Power module slot 1
+ NOTE: Applicable power module:
+PAC600S12-CB (600 W AC&240 V DC Power Module)PAC600S12-EB (600 W AC&240 V DC Power Module)PAC600S12-DB (600 W AC&240 V DC Power Module) (applicable in V200R020C10 and later versions)PDC1000S12-DB (1000 W DC Power Module)
+
+
+14
+
+Power module slot 2
+ NOTE: Applicable power module:
+PAC600S12-CB (600 W AC&240 V DC Power Module)PAC600S12-EB (600 W AC&240 V DC Power Module)PAC600S12-DB (600 W AC&240 V DC Power Module) (applicable in V200R020C10 and later versions)PDC1000S12-DB (1000 W DC Power Module)
+
+
+
+
+
+Port Description10GE SFP+ optical port
+A 10GE SFP+ Ethernet optical port supports auto-sensing to 1000 Mbit/s. It sends and receives service data at 1000 Mbit/s or 10 Gbit/s. Table 4-168 describes the attributes of a 10GE SFP+ Ethernet optical port.
+Table 4-168  Attributes of a 10GE SFP+ portAttribute
+
+Description
+
+
+
+Connector type
+
+LC/PC
+
+
+Optical port attributes
+
+Depend on the optical module used
+
+
+Standards compliance
+
+IEEE802.3ae
+
+
+Working mode
+
+GE/10GE auto-sensing
+
+
+
+
+
+
+40GE/100GE QSFP28 optical port
+A 40GE/100GE QSFP28 optical port sends and receives service traffic at 40 Gbit/s or 100 Gbit/s. Table 4-169 describes the attributes of a QSFP28 optical port.
+Table 4-169  Attributes of a QSFP28 optical portAttribute
+
+Description
+
+
+
+Connector type
+
+MPO/LC
+
+
+Optical port attributes
+
+Depend on the optical module used
+
+
+Standards compliance
+
+IEEE802.3ba
+
+
+
+
+
+
+Console port
+The console port is connected
+to a console for on-site configuration. The port must use a console cable. The console port is
+used when a switch is powered on for the first time. For details about
+the attributes of a console port, see Table 4-170.
+Table 4-170  Attributes of a console port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+RJ45
+
+
+
+
+
+Standards compliance
+
+
+RS-232
+
+
+
+
+
+Working mode
+
+
+Duplex Universal Asynchronous Receiver/Transmitter (UART)
+
+
+
+
+
+Baud rate
+
+
+9600 bit/s, 19200 bit/s, 38400 bit/s, 57600 bit/s, or 115200
+bit/s
+Default value: 9600 bit/s
+
+
+
+
+
+
+
+
+
+ETH management port
+You can connect a switch to a configuration terminal or network management workstation through the ETH management port to configure the switch locally or remotely. The port must use an Ethernet cable. You can choose to download the software package through the ETH management port in the BootLoad menu. File transfer through the ETH management port is faster than transfer through the console port. Table 4-171 describes the attributes of an ETH management port.
+Table 4-171  Attributes of an ETH management portAttribute
+
+Description
+
+
+
+Connector type
+
+RJ45
+
+
+Standards compliance
+
+IEEE802.3
+
+
+Working Mode
+
+10/100 Mbit/s auto-sensing
+
+
+Maximum transmission distance
+
+100 m
+
+
+
+
+
+In V200R012C00 and later versions, you can log in to the switch that contains the ETH management port for the first time through the ETH port. For details, see "First Login to a Switch" in the Configuration Guide - Basic Configuration.
+USB port
+The USB port can have a USB flash drive connected to upgrade the switch, or transfer configuration files or other files. The USB port can only connect to a USB flash drive that complies with USB 2.0. USB flash drives from different vendors differ in model compatibility and drivers. If a USB flash drive cannot be used, try to replace it with another one from a mainstream vendor. Switches support a maximum of 128 GB USB flash drives.
+
+
+
+Indicator DescriptionThe S6730-H24X6C has the same types of indicators as the S6730-H48X6C. For details, see Indicator Description.
+
+Power Supply ConfigurationThe switch can use a single power module or double power modules for 1+1 power redundancy. Pluggable AC and DC power modules can be used together in the same switch.
+
+Heat DissipationThe S6730-H24X6C uses pluggable fan modules for forced air cooling. Air flows in from the front side and exhausts from the rear panel.
+
+ This figure only shows the airflow direction and does not depict the actual device.
+
+
+Technical SpecificationsTable 4-172 lists technical specifications of the S6730-H24X6C.
+
+Table 4-172  Technical specificationsItem
+
+Description
+
+
+
+Memory (RAM)
+
+4 GB
+
+
+Flash
+
+2 GB in total. To view the available flash memory size, run the display version command.
+
+
+Mean time between failures (MTBF)
+
+62.27 years
+
+
+Availability
+
+> 0.99999
+
+
+Service port surge protection
+
+N/A
+
+
+Power supply surge protection
+
+Using AC power modules: ±6 kV in differential mode, ±6 kV in common modeUsing DC power modules: ±2 kV in differential mode, ±4 kV in common mode
+
+
+Dimensions (H x W x D)
+
+Basic dimensions (excluding the parts protruding from the body): 43.6 mm x 442.0 mm x 420.0 mm (1.72 in. x 17.4 in. x 16.5 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the handle on the rear panel): 43.6 mm x 442.0 mm x 446.0 mm (1.72 in. x 17.4 in. x 17.6 in.)
+
+
+Weight (with packaging)
+
+8.9 kg (19.62 lb)
+
+
+Stack ports
+
+Any 10GE SFP+ ports (a maximum of 16 physical ports)Any 40GE/100GE QSFP28 ports (a maximum of 6 physical ports)
+
+
+RTC
+
+Supported
+
+
+RPS
+
+Not supported
+
+
+PoE
+
+Not supported
+
+
+Rated voltage range
+
+AC input: 100 V AC to 240 V AC, 50/60 HzHigh-Voltage DC input: 240 V DCDC input: -48 V DC to -60 V DC
+
+
+
+Maximum voltage range
+
+AC input: 90 V AC to 290 V AC, 45 Hz to 65 HzHigh-Voltage DC input: 190 V DC to 290 V DCDC input: -38.4 V DC to -72 V DC
+
+
+
+Maximum power consumption (100% throughput, full speed of fans)
+
+254 W
+
+
+Typical power consumption (30% of traffic load, tested according to ATIS standard)
+
+149 W
+
+
+Operating temperature
+
+-5°C to +45°C (23°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).
+The switch cannot be started when the ambient temperature is lower than 0°C (32°F).
+The operating temperature of the switch is -5°C to 40°C (23°F to 104°F) when it uses QSFP-100G-ER4 optical module.
+
+
+
+
+Storage temperature
+
+-40°C to +70°C (-40°F to +158°F)
+
+
+Noise under normal temperature (27°C, sound power)
+
+< 65 dB(A)
+
+
+Relative humidity
+
+5% to 95%, noncondensing
+
+
+Operating altitude
+
+0-5000 m (0-16404 ft.)
+
+
+Certification
+
+EMC certificationSafety certificationManufacturing certification
+
+
+Part number
+
+02352FSG
+02352FSG-001
+02352FSG-005
+02352FSG-007
+02352FSG-009
+02353GFC
+02353GFC-001
+02353GFC-003
+02353GFC-004
+
+
+
+
+
+
+
+Version MappingAppearance and StructurePort DescriptionIndicator DescriptionPower Supply ConfigurationHeat DissipationTechnical Specifications
+
+

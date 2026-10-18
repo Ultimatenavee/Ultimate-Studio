@@ -1,0 +1,147 @@
+{
+  "alcatel-os6450-10": {
+    "status": "verified",
+    "basis": "Vendor measured system consumption at specified traffic levels; no declared typical or maximum rating",
+    "configuration": "OS6450-10/10M column, non-PoE; 64-byte packets on all ports including stacking; idle 13W, 50% traffic 15W, 100% traffic15.2W",
+    "sourceUrl": "https://www.al-enterprise.com/-/media/assets/internet/documents/omniswitch-6450-10-datasheet-en.pdf",
+    "sourceTitle": "Alcatel-Lucent OmniSwitch 6450-10 datasheet",
+    "section": "Page 3 System power consumption (watts/btu), footnote **",
+    "note": "No formal typical or maximum supported. Load-test values are not sizing maxima; input voltage not specified.",
+    "loadTestsW": {
+      "traffic0Percent": 13,
+      "traffic50Percent": 15,
+      "traffic100Percent": 15.2
+    }
+  },
+  "telco-t-marc-340": {
+    "status": "verified",
+    "basis": "Vendor explicit device Power Consumption typical/maximum, separate from output power rating",
+    "configuration": "T-Marc 300 Series; family-level specification covering 340 and 380; port population and AC/DC measurement split not specified",
+    "sourceUrl": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+    "sourceTitle": "T-Marc 300 Series datasheet PN TMARC300-OCT16",
+    "section": "Page 2 Product Specifications / Power",
+    "note": "Family-level device consumption; AC/DC variants share the table. This is not a configuration-specific AC wall measurement; never add PSU output rating.",
+    "typicalW": 25,
+    "maxW": 45
+  },
+  "telco-t-marc-280": {
+    "status": "unknown",
+    "basis": "AC input consumption not verified",
+    "configuration": "Telco T-Marc 280",
+    "sourceUrl": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+    "sourceTitle": "T-Marc 280 Series datasheet",
+    "section": "Page 2 General Specifications",
+    "note": "Only 5VDC at 3A maximum with external adapter is specified. 15W derived DC ceiling is not measured AC input consumption; adapter losses and load unknown."
+  },
+  "telco-t-marc-380": {
+    "status": "verified",
+    "basis": "Vendor explicit device Power Consumption typical/maximum, separate from output power rating",
+    "configuration": "T-Marc 300 Series; family-level specification covering 340 and 380; port population and AC/DC measurement split not specified",
+    "sourceUrl": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc300_datasheet_A4.pdf",
+    "sourceTitle": "T-Marc 300 Series datasheet PN TMARC300-OCT16",
+    "section": "Page 2 Product Specifications / Power",
+    "note": "Family-level device consumption; AC/DC variants share the table. This is not a configuration-specific AC wall measurement; never add PSU output rating.",
+    "typicalW": 25,
+    "maxW": 45
+  },
+  "fortinet-fortigate-100f": {
+    "status": "unknown",
+    "basis": "AC input consumption not verified",
+    "configuration": "Fortinet FortiGate100F",
+    "sourceUrl": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/ja_jp/FGT100F_DS.pdf",
+    "sourceTitle": "FortiGate 100F official regional datasheets",
+    "section": "Power Consumption (Average / Maximum)",
+    "note": "Conflicting official indexed revisions: Japanese 26.5/29.5W versus Korean 35.1/38.7W. Current English PDF blocked; Japanese direct fetch failed; Korean fetch exceeded tool size. No value selected without identifying hardware revision. Korean source: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/ko_kr/ds-fortigate-100f-series_ko.pdf Retried current English vendor data-sheets URL (plain and download=true) and alternate assets/datasheets/pdf URL using curl; all returned HTML/JavaScript, not PDF. pdftotext cannot validate these responses."
+  },
+  "hitachi-apresia13200-48x-psr3": {
+    "status": "verified",
+    "basis": "Vendor device consumption, typical and maximum at AC100V; not PSU capacity",
+    "configuration": "All ports: 1518-byte L2 unicast, 12-byte IFG; H-SX-SFP/R in SFP ports, H-LR-SFP+ in SFP+ ports",
+    "sourceUrl": "https://www.apresia.jp/products/ent/apresia13200-48x-psr3.html",
+    "sourceTitle": "Hitachi APRESIA13200-48X-PSR3 vendor documentation",
+    "section": "Hardware: 消費電力(AC100V時), 最大/典型値 and footnote 5 (13200) / 7 (15000)",
+    "note": "Published at 100V AC. Do not imply identical consumption at other input voltages or optics configurations.",
+    "typicalW": 136,
+    "maxW": 190
+  },
+  "hitachi-apresia13200-52gt-psr2": {
+    "status": "verified",
+    "basis": "Vendor device consumption, typical and maximum at AC100V; not PSU capacity",
+    "configuration": "All ports: 1518-byte L2 unicast, 12-byte IFG; H-SX-SFP/R in SFP ports, H-LR-SFP+ in SFP+ ports",
+    "sourceUrl": "https://www.apresia.jp/products/ent/apresia13200-52gt-psr2.html",
+    "sourceTitle": "Hitachi APRESIA13200-52GT-PSR2 vendor documentation",
+    "section": "Hardware: 消費電力(AC100V時), 最大/典型値 and footnote 5 (13200) / 7 (15000)",
+    "note": "Published at 100V AC. Do not imply identical consumption at other input voltages or optics configurations.",
+    "typicalW": 119,
+    "maxW": 170
+  },
+  "hitachi-apresia15000-32xl-psr2": {
+    "status": "verified",
+    "basis": "Vendor device consumption, typical and maximum at AC100V; not PSU capacity",
+    "configuration": "All ports: 1518-byte L2 unicast, 12-byte IFG; H-SX-SFP/R in SFP ports, H-LR-SFP+ in SFP+ ports",
+    "sourceUrl": "https://www.apresia.jp/products/ent/apresia15000-32xl-psr2.html",
+    "sourceTitle": "Hitachi APRESIA15000-32XL-PSR2 vendor documentation",
+    "section": "Hardware: 消費電力(AC100V時), 最大/典型値 and footnote 5 (13200) / 7 (15000)",
+    "note": "Published at 100V AC. Do not imply identical consumption at other input voltages or optics configurations.",
+    "typicalW": 117,
+    "maxW": 165
+  },
+  "odf-commscope-760241650": {
+    "status": "passive",
+    "basis": "Passive optical patch/splice panel; no powered electronics in vendor-described assembly",
+    "configuration": "Mechanical fiber panel, adapters, pigtails and splice management only",
+    "sourceUrl": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/item760241650/",
+    "sourceTitle": "ODF · CommScope 760241650 vendor documentation",
+    "section": "Product classification / General Specifications / Assembly description",
+    "note": "Zero electrical input applies to passive assembly only; excludes any independently installed active optical equipment.",
+    "typicalW": 0,
+    "maxW": 0
+  },
+  "odf-commscope-fms1u-sc24": {
+    "status": "passive",
+    "basis": "Passive optical patch/splice panel; no powered electronics in vendor-described assembly",
+    "configuration": "Mechanical fiber panel, adapters, pigtails and splice management only",
+    "sourceUrl": "https://www.commscope.com/product-type/frames-panels-cassettes-modules/fiber-panels-modules-cassettes/fiber-panels/fms1u-panels/",
+    "sourceTitle": "ODF · CommScope FMS 24 SC vendor documentation",
+    "section": "Product classification / General Specifications / Assembly description",
+    "note": "Zero electrical input applies to passive assembly only; excludes any independently installed active optical equipment.",
+    "typicalW": 0,
+    "maxW": 0
+  },
+  "ac-apc-ap9565": {
+    "status": "unknown",
+    "basis": "AC input consumption not verified",
+    "configuration": "AC PDU · APC AP9565",
+    "sourceUrl": "https://www.se.com/us/en/product/AP9565/apc-netshelter-basic-rack-pdu-1u-1-phase-3-7kw-230v-16a-or-3-3kw-208v-16a-12-c13-outlets-c20-cord/",
+    "sourceTitle": "AC PDU · APC AP9565 vendor documentation",
+    "section": "Electrical / power specifications",
+    "note": "Basic PDU current/kW ratings describe downstream distribution capacity, not self-consumption. Own losses not verified; do not count downstream watts again."
+  },
+  "ac-apc-smt1500rmi2u": {
+    "status": "unknown",
+    "basis": "AC input consumption not verified",
+    "configuration": "AC UPS · APC SMT1500RMI2U",
+    "sourceUrl": "https://www.se.com/au/en/product/SMT1500RMI2U/apc-smartups-line-interactive-1500va-rackmount-2u-230v-4x-iec-c13-outlets-smartslot-avr-lcd/",
+    "sourceTitle": "AC UPS · APC SMT1500RMI2U vendor documentation",
+    "section": "Electrical / power specifications",
+    "note": "1500VA is rated output apparent power, not AC draw. Input depends on connected load, efficiency, charging and operating mode. No validated own-loss watts for selected operating point."
+  },
+  "dc-vertiv-netsure211-1u": {
+    "status": "unknown",
+    "basis": "AC input consumption not verified",
+    "configuration": "DC Rectifier · Vertiv NetSure 211 · 1U",
+    "sourceUrl": "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf",
+    "sourceTitle": "Vertiv NetSure 211 brochure",
+    "section": "Page 7 Technical specifications / Operating Efficiency and DC Output",
+    "note": "500W/1000W module ratings are DC output, not consumption. Vendor efficiencies91%/92% depend on module/operating point; selected rectifier count, output load and charging not defined. Do not add downstream load twice or infer fixed self-consumption."
+  },
+  "dc-vertiv-netsure211-2u": {
+    "status": "unknown",
+    "basis": "AC input consumption not verified",
+    "configuration": "DC Rectifier · Vertiv NetSure 211 · 2U",
+    "sourceUrl": "https://www.vertiv.com/4a57b9/globalassets/products/critical-power/dc-power-systems/netsure-211-brochure.pdf",
+    "sourceTitle": "Vertiv NetSure 211 brochure",
+    "section": "Page 7 Technical specifications / Operating Efficiency and DC Output",
+    "note": "500W/1000W module ratings are DC output, not consumption. Vendor efficiencies91%/92% depend on module/operating point; selected rectifier count, output load and charging not defined. Do not add downstream load twice or infer fixed self-consumption."
+  }
+}

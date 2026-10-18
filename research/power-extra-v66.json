@@ -1,0 +1,107 @@
+{
+  "items": {
+    "huawei-s5735-l8t4x-qa-v2": {
+      "status": "verified",
+      "basis": "Manufacturer-authored Q-V2 datasheet mirrored by reseller; explicit maximum consumption and ATIS 30% typical traffic load",
+      "configuration": "CloudEngine S5735-L8T4X-QA-V2, built-in AC, non-PoE; Q-V2 reference table, not older L-V2 16.92W table",
+      "sourceUrl": "https://entec.cz/wp-content/uploads/2025/10/Huawei_CloudEngine-S5735-L-Q-V2.pdf",
+      "sourceTitle": "Huawei CloudEngine S5735-L-Q-V2 Series Switches Datasheet (manufacturer document mirrored by Entec)",
+      "section": "Printed pages7–8 hardware table first model column; page14 footnote1",
+      "note": "16.2W typical is ATIS 30% service traffic with EEE enabled and no PoE output. Maximum16.97W. Official exact98012073 support search index independently confirms16.2W, but chapter direct access403. Older L-V2 brochure lists16.15/16.92W; selected values explicitly refer to Q-V2 manufacturer reference document and are not live measurements. Optics population not specified in table.",
+      "typicalW": 16.2,
+      "maxW": 16.97,
+      "loadTestsW": {
+        "traffic0Percent": 10.05,
+        "traffic30Percent": 16.2,
+        "traffic100Percent": 16.54
+      },
+      "corroboratingSourceUrl": "https://support.huawei.com/enterprise/en/doc/EDOC1100277349/42e296f0/s5735-l8t4x-qa-v2-98012073"
+    },
+    "fortinet-fortigate-100f": {
+      "status": "unknown",
+      "basis": "Conflicting manufacturer document reference values; user must explicitly select a reference profile",
+      "configuration": "FortiGate100F, dual AC supplies; document reference does not identify hardware revision",
+      "sourceUrl": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/ja_jp/FGT100F_DS.pdf",
+      "sourceTitle": "FortiGate 100F official regional datasheets",
+      "section": "Power Consumption (Average / Maximum)",
+      "note": "No default numerical load: Japanese and Korean manufacturer publications disagree; neither reliably identifies a hardware revision. Profiles below are explicit document references, not claimed revision matches. User must confirm appropriate reference or enter actual measured consumption. Count appliance once, not once per redundant PSU.",
+      "referenceProfiles": [
+        {
+          "id": "fg100f-ja-reference",
+          "label": "Fortinet JP document · Average26.5W / Max29.5W",
+          "typicalW": 26.5,
+          "maxW": 29.5,
+          "sourceUrl": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/ja_jp/FGT100F_DS.pdf",
+          "configuration": "FortiGate100F Japanese datasheet reference; AC100–240V, dual redundant supplies",
+          "note": "Japanese official publication; exact publication date and hardware revision not verified; retrieved2026-10-15. Search index exposes average/maximum table; direct PDF fetch failed. Do not label as a particular hardware revision."
+        },
+        {
+          "id": "fg100f-ko-reference",
+          "label": "Fortinet KO document · Average35.1W / Max38.7W",
+          "typicalW": 35.1,
+          "maxW": 38.7,
+          "sourceUrl": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/ko_kr/ds-fortigate-100f-series_ko.pdf",
+          "configuration": "FortiGate100F Korean datasheet reference; AC100–240V, dual redundant supplies",
+          "note": "Korean official publication; exact publication date and hardware revision not verified; retrieved2026-10-15. Search index exposes average/maximum table; full fetch exceeded10MB tool limit. Do not label as a particular hardware revision."
+        }
+      ]
+    },
+    "cisco-c1121-8pltep": {
+      "status": "unknown",
+      "basis": "AC/PDU input consumption not verified; published device consumption excludes external adapter loss",
+      "configuration": "C1121-8PLTEP, nonWiFi8-portLTE family; optionalPoE and radio configuration notspecified",
+      "sourceUrl": "https://www.cisco.com/c/en/us/products/collateral/routers/1000-series-integrated-services-routers-isr/datasheet-c78-739512.html",
+      "sourceTitle": "Cisco1000 Series Integrated Services Routers Data Sheet",
+      "section": "Table15 Mechanical specifications forC112x-8P / C112x(X)-8PLTEP column",
+      "note": "Vendor publishes24.6W maximum excludingexternalPSloss; not valid asAC/PDUinput.66W normaladapter and150W optionalPoEadapter are outputcapacities, notactualdraw. PoEpoweredendpoint consumption mustbeadded usingactualconfiguration.21.8W is C1101-4PLTEP inTable29 and MUSTNOTbeusedforC1121-8PLTEP. No typicalorACinputmaximum verified. Rechecked2026-10-15 official Cisco HTML Table15, explicitly24.6W excluding external PS loss. No credible adapter-specific AC input consumption curve identified; remains unknown at AC/PDU boundary.",
+      "deviceOnlyMaxW": 24.6,
+      "deviceOnlyMeasurementBoundary": "Router DC input, excludes external ACadapterloss; optionalPoEendpointbudget notincluded"
+    },
+    "telco-t-marc-280": {
+      "status": "unknown",
+      "basis": "AC input consumption not verified",
+      "configuration": "Telco T-Marc 280",
+      "sourceUrl": "https://www.telco.com/wp-content/uploads/2021/03/T-Marc-280-A4.pdf",
+      "sourceTitle": "T-Marc 280 Series datasheet",
+      "section": "Page 2 General Specifications",
+      "note": "Only 5VDC at 3A maximum with external adapter is specified. 15W derived DC ceiling is not measured AC input consumption; adapter losses and load unknown. Rechecked2026-10-15 vendor PDF PN:TMC280-APR13 page2. Vendor gives power supply specification only; no verified consumption from reseller found."
+    },
+    "huawei-s5720-36c-ei-28s-ac": {
+      "status": "verified",
+      "basis": "Typical: 30% traffic, ATIS standard. Maximum: 100% throughput, fans at full speed",
+      "configuration": "S5720-36C-EI-28S-AC; no expansion card for typical value",
+      "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d",
+      "sourceTitle": "Huawei Hardware Description: S5720-36C-EI-28S-AC",
+      "section": "Technical specifications — power consumption",
+      "note": "Typical/max verified in official full chapter. Typical alternatives: 55.35 W with 2x10GE optical card; 60.25 W with 2xQSFP+ stack card; 63.5 W with 2x10GE electrical card.",
+      "typicalW": 47.86,
+      "maxW": 83.9,
+      "referenceProfiles": [
+        {
+          "id": "s5720-2x10ge-optical",
+          "label": "S5720 · 1 slot · 2×10GE optical · Typical55.35W",
+          "typicalW": 55.35,
+          "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d",
+          "configuration": "S5720 · 1 slot · 2×10GE optical · Typical55.35W",
+          "note": "ATIS 30% traffic Typical ของชุดที่เลือก · ใช้หนึ่ง rear expansion slot · ไม่ถือเป็น Maximum และไม่บวกค่า Card ซ้ำกับยอดรวมนี้"
+        },
+        {
+          "id": "s5720-2xqsfp-stack",
+          "label": "S5720 · 1 slot · 2×QSFP+ stack · Typical60.25W",
+          "typicalW": 60.25,
+          "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d",
+          "configuration": "S5720 · 1 slot · 2×QSFP+ stack · Typical60.25W",
+          "note": "ATIS 30% traffic Typical ของชุดที่เลือก · ใช้หนึ่ง rear expansion slot · ไม่ถือเป็น Maximum และไม่บวกค่า Card ซ้ำกับยอดรวมนี้"
+        },
+        {
+          "id": "s5720-2x10ge-electrical",
+          "label": "S5720 · 1 slot · 2×10GE electrical · Typical63.5W",
+          "typicalW": 63.5,
+          "sourceUrl": "https://support.huawei.cn/supportgateway/view/v1/enterprise/doc/main-content?nid=EDOC1000013597&partNo=j03d",
+          "configuration": "S5720 · 1 slot · 2×10GE electrical · Typical63.5W",
+          "note": "ATIS 30% traffic Typical ของชุดที่เลือก · ใช้หนึ่ง rear expansion slot · ไม่ถือเป็น Maximum และไม่บวกค่า Card ซ้ำกับยอดรวมนี้"
+        }
+      ]
+    }
+  }
+}

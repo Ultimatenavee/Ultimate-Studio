@@ -1,0 +1,80 @@
+/* A fluid composition, from a phone viewport to an ultrawide monitor. */
+:root { --page-gutter: clamp(24px,4.5vw,144px); }
+body { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+.nav, .hero, .workspaces, footer { max-width: none; width: calc(100% - var(--page-gutter)*2); margin-inline: auto; }
+.nav { margin-top: clamp(16px,1.6vw,36px); padding: 14px 20px; }
+.hero { padding: clamp(50px,5vw,120px) 0 clamp(40px,3vw,88px); grid-template-columns: minmax(0,.94fr) minmax(0,1.06fr); column-gap: clamp(24px,4vw,128px); min-height: min(76svh,1120px); }
+.copy { min-width: 0; }
+.copy h1 { font-size: clamp(42px,4.3vw,124px); line-height: 1.12; margin: clamp(22px,2vw,50px) 0; }
+.copy > p { font-size: clamp(16px,1.02vw,24px); max-width: 52ch; }
+.eyebrow { font-size: clamp(12px,.65vw,16px); }
+.launch { font-size: clamp(14px,.8vw,20px); min-height: 48px; padding: 15px 25px; }
+.explore, .nav nav { font-size: clamp(14px,.75vw,19px); }
+.technical { font-size: clamp(11px,.65vw,16px); flex-wrap: wrap; }
+.scene { height: clamp(420px,32vw,920px); }
+.scene-heading > span, .caption, .legend { font-size: clamp(12px,.65vw,16px); }
+.scene-heading > strong { font-size: clamp(16px,.9vw,23px); }
+.scene-tabs button, #sceneMotion { font-size: clamp(13px,.75vw,18px); min-height: 44px; }
+.workspaces { padding: 0; margin-top: 22px; margin-bottom: clamp(40px,4vw,100px); }
+.section-heading h2 { font-size: clamp(24px,1.5vw,40px); }
+.section-heading > p, .entry p { font-size: clamp(15px,.85vw,22px); }
+.entry-grid { gap: clamp(16px,1.5vw,40px); }
+.entry { padding: clamp(24px,2.2vw,60px); border-radius: clamp(22px,1.6vw,36px); }
+.entry-top, .entry-footer { font-size: clamp(12px,.65vw,16px); }
+.entry h3 { font-size: clamp(27px,1.7vw,48px); }
+footer { font-size: clamp(12px,.7vw,16px); margin-bottom: 28px; }
+@media (max-width:1180px) and (min-width:901px) {
+  :root { --page-gutter: 32px; }
+  .hero { column-gap: 20px; padding-top: 64px; min-height: 580px; }
+  .copy h1 { font-size: clamp(40px,4.3vw,51px); }
+  .scene { height: 460px; }
+  .scene-tabs button, #sceneMotion { font-size: 12px; padding-inline: 9px; }
+  .entry { padding: 22px; }
+}
+@media (max-width:900px) {
+  :root { --page-gutter: clamp(20px,4vw,36px); }
+  .hero { display: grid; grid-template-columns: minmax(0,1fr); gap: 32px; min-height: 0; padding: 54px 0 26px; }
+  .copy h1 { font-size: clamp(40px,7.8vw,68px); }
+  .copy > p { max-width: 60ch; }
+  .scene { height: clamp(350px,65vw,560px); }
+  .nav { gap: 12px; }
+  .nav nav { gap: 16px; }
+  .section-heading { align-items: start; }
+  .section-heading > p { max-width: 32ch; }
+  .entry-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .entry { padding: 20px; }
+  .entry h3 { font-size: 25px; }
+  .entry p br { display: none; }
+}
+@media (max-width:700px) {
+  .nav { border-radius: 24px; padding: 10px 12px; }
+  .nav nav > a:not(.enter) { display: none; }
+  .brand strong small { display: none; }
+  .nav .enter { min-height: 44px; display: inline-flex; align-items: center; padding: 8px 13px; font-size: 13px; }
+  .hero { padding-top: 42px; gap: 28px; }
+  .copy h1 { font-size: clamp(36px,8.4vw,56px); }
+  .copy > p { font-size: 15px; }
+  .copy > p br { display: none; }
+  .technical { gap: 10px; font-size: 10px; }
+  .technical span + span { padding-left: 10px; }
+  .scene { height: clamp(340px,95vw,480px); }
+  .scene-heading { left: 10px; }
+  .scene-heading > span { font-size: 10px; }
+  .scene-heading > strong { font-size: 14px; }
+  .controls { padding: 4px; gap: 2px; }
+  .scene-tabs button, #sceneMotion { padding: 9px 8px; font-size: 11px; }
+  .caption { margin-inline: 0; font-size: 12px; }
+  .legend { font-size: 10px; right: 15px; }
+  .section-heading { display: block; }
+  .section-heading h2 { font-size: 23px; }
+  .section-heading > p { max-width: none; }
+  .entry-grid { grid-template-columns: minmax(0,1fr); }
+  .entry { padding: 24px; }
+  .entry h3 { font-size: 28px; }
+  .entry p { margin-bottom: 24px; }
+  footer { flex-wrap: wrap; }
+}
+@media (pointer:coarse) { a,button { touch-action: manipulation; } }
+
+/* The national silhouette has room to breathe on every screen. */
+.scene{height:clamp(560px,44vw,960px);border:1px solid #8ecfe51c;border-radius:36px;background-color:#0718266b;mask-image:none;box-shadow:inset 0 1px 0 #c9efff20,0 28px 100px #0002}.scene-heading{top:22px;left:24px}.legend{bottom:18px}.experience .controls{margin-top:20px}.scene:before{inset:5%;background:radial-gradient(ellipse,#1c7ca62b,transparent 70%)}@media(max-width:900px){.scene{height:620px}}@media(max-width:700px){.scene{height:520px;border-radius:26px}.scene-heading{top:18px;left:18px}.scene-heading>strong{font-size:14px}}

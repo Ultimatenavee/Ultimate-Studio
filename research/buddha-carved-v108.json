@@ -1,0 +1,17 @@
+{
+  "revision": 108,
+  "createdAt": "2026-10-17",
+  "request": "Create our own detailed statue because the referenced Meshy model requires credits to download.",
+  "provenance": "Original Blender-authored garment and lotus vertex surfaces built on the independently authored v107 statue. No Meshy mesh, textures or paid download were retrieved or extracted.",
+  "visualReference": "https://www.meshy.ai/th/posts/019e7342-90d9-7a75-8c87-ace17270d198",
+  "referenceUse": "Quality reference only: layered robes and carved lotus craftsmanship. Not a reproduction of the linked 3D file.",
+  "method": [
+    "Asymmetric garment tension fields, thick sculpture surfaces",
+    "Hanging fabric sleeve and bent-arm compression folds",
+    "Thick cupped lotus petals with recessed central and nested veins",
+    "Voxel union and local retopology for continuous sculpture surfaces",
+    "Original packed bronze normal map and per-vertex patina",
+    "Separate coarse/detail GLBs and lazy web loading"
+  ],
+  "limits": "An original artistic model. Not a scan, not an exact copy of the linked Meshy model, and not a claim of equal artistic quality. v107 face and anatomical hand meshes are retained. Blender renders do not substitute for browser/GPU verification."
+}

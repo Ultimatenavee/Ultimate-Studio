@@ -1,0 +1,40 @@
+{
+  "incomplete": [
+    {
+      "kind": "headgear",
+      "id": "13fd5baa15e580471df0",
+      "name": "남_cons_of_poison",
+      "actions": 1
+    },
+    {
+      "kind": "headgear",
+      "id": "a8ed5c027c1183563623",
+      "name": "남_보자기망토",
+      "actions": 1
+    },
+    {
+      "kind": "headgear",
+      "id": "a5415f216d7f43591e84",
+      "name": "남_음계의오오라",
+      "actions": 1
+    },
+    {
+      "kind": "headgear",
+      "id": "522424d4ef79db77bd13",
+      "name": "여_cons_of_poison",
+      "actions": 1
+    },
+    {
+      "kind": "headgear",
+      "id": "fe8e6dc0aa750e96c48f",
+      "name": "여_보자기망토",
+      "actions": 1
+    },
+    {
+      "kind": "headgear",
+      "id": "b86d5417a43e4df1d5cf",
+      "name": "여_음계의오오라",
+      "actions": 1
+    }
+  ]
+}

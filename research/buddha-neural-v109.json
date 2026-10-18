@@ -1,0 +1,12 @@
+{
+  "revision": 109,
+  "generation": "Original image concept \u2192 Tencent Hunyuan3D-2 public GPU demo \u2192 Blender 4.5.3 bronze material finish",
+  "topology": "New neural geometry; no v108 body/head/hands reused",
+  "detailTriangles": 620000,
+  "walkingTriangles": 140000,
+  "license": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/main/LICENSE",
+  "distribution": "NOT published in final client. v109 static gate proved ineffective on the hosting platform; assets removed in v110, stable v108 sculpture restored in v111.",
+  "verificationLimit": "Blender renders + actual GLB parser + Worker/loader tests; browser/GPU QA unavailable",
+  "qualityLimit": "Single-image neural reconstruction; finer face/finger details still differ from the Meshy reference.",
+  "status": "Private authoring candidate; Meshy-quality public replacement remains blocked by GPU quota and candidate licensing."
+}

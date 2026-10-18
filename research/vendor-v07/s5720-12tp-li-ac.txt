@@ -1,0 +1,671 @@
+
+
+      
+   
+
+S5720-12TP-LI-AC
+
+S5720-12TP-LI-AC
+
+Version MappingTable 4-178 lists the mapping between the S5720-12TP-LI-AC chassis and software versions.
+
+Table 4-178  Version mappingSeries
+
+Model
+
+Software Version
+
+
+
+S5720-LI
+
+S5720-12TP-LI-AC
+
+V200R010C00 to V200R023C00 versions
+ NOTE: V200R021C01 is not supported.
+
+
+
+
+
+
+
+Appearance and StructureFigure 4-68  S5720-12TP-LI-AC appearance
+1
+
+Eight 10/100/1000BASE-T ports
+
+2
+
+Two combo ports (10/100/1000BASE-T + 100/1000BASE-X)
+Modules applicable to combo optical ports:FE optical moduleGE optical module (the maximum transmission distance cannot exceed 40 km)
+
+
+
+3
+
+Two 1000BASE-X ports
+Applicable modules:GE optical module (the maximum transmission distance cannot exceed 40 km)GE copper module (works at 10 Mbit/s, 100 Mbit/s, or 1000 Mbit/s)Stack optical module (only applicable to stack ports)1 m, 3 m, 5 m, 10 m SFP+ high-speed copper cables (only applicable to stack ports)3 m and 10 m AOC cables (only applicable to stack ports)0.5 m and 1.5 m SFP+ dedicated stack copper cables (used for zero-configuration stacking, supported in V200R011C10 and later versions)H87MMA5671A2 GPON optical module (applicable in V200R012C00 and later versions)
+ NOTE: If a port uses a GPON optical module, other 1000BASE-X optical ports cannot be used.
+
+
+
+4
+
+One console port
+
+
+5
+
+One PNP button
+ NOTICE: Applicable in V200R012C00 and later versions:
+To restore the factory settings and reset the switch, hold down the button for at least 6 seconds.
+To reset the switch, press the button.
+Resetting the switch will cause service interruption. Exercise caution when you press the PNP button.
+
+
+6
+
+AC socket
+ NOTE: It is used with an AC power cable.
+
+
+
+7
+
+Jack for AC power cable locking strap
+ NOTE: The AC power cable locking strap is not delivered
+with the switch.
+
+-
+
+-
+
+
+
+
+Port Description10/100/1000BASE-T port
+A 10/100/1000BASE-T
+Ethernet electrical port sends and receives service data at 10/100/1000
+Mbit/s, and must use an Ethernet cable. Table 4-179 describes the attributes
+of a 10/100/1000BASE-T Ethernet electrical port.
+Table 4-179  Attributes of a 10/100/1000BASE-T Ethernet electrical port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+RJ45
+
+
+
+
+
+Standards compliance
+
+
+IEEE802.3, IEEE802.3u, IEEE802.3ab
+
+
+
+
+
+Working mode
+
+
+10/100/1000 Mbit/s auto-sensing
+
+
+
+
+
+Maximum transmission distance
+
+
+100 m
+
+
+
+
+
+
+
+
+
+Combo port
+A combo port refers to a pair of ports
+consisting of an optical Ethernet port and an electrical Ethernet
+port on the panel. Each combo port matches only one internal forwarding
+port. A combo port can be configured as an electrical port or an optical
+port, but only one port can be active at a time. When one port is
+active, the other port is shut down. By default,
+a combo port works in auto mode, in which the port type is determined
+as follows:
+
+If the optical port has no optical module installed and the electrical
+port has no Ethernet cable connected, the port type depends on which
+port is connected first. If the electrical port is connected by an
+Ethernet cable first, the electrical port is used for data switching.
+If the optical port has an optical module installed first, the optical
+port is used for data switching.
+If the electrical port has an Ethernet cable connected and is
+in Up state, the electrical port is still used for data switching
+when the optical port has an optical module installed.
+If the optical port, no matter in Up or Down state, has an optical
+module installed, the optical port is still used for data switching
+when the electrical port has an Ethernet cable connected.
+If the optical port has an optical module installed and the electrical
+port has an Ethernet cable connected, the optical port is used for
+data switching after the switch restarts.
+
+You can configure a combo port as an electrical or optical port
+using the combo-port command. 
+
+
+1000BASE-X port
+When
+a 1000BASE-X port uses a GE optical module, it can only transmit and
+receive data at 1000 Mbit/s and does not support the 100 Mbit/s transmission
+speed. When a 1000BASE-X port uses a GE copper module, it can transmit
+and receive data at 10 Mbit/s, 100 Mbit/s, or 1000 Mbit/s. Table 4-180 describes the attributes of a
+1000BASE-X Ethernet optical port.
+Table 4-180  Attributes of a 1000BASE-X Ethernet optical port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+LC/PC
+
+
+
+
+
+Optical port attributes
+
+
+Depend on the module used
+
+
+
+
+
+Standards compliance
+
+
+IEEE802.3z
+
+
+
+
+
+
+
+
+
+Console port
+The console port is connected
+to a console for on-site configuration. The port must use a console cable. The console port is
+used when a switch is powered on for the first time. For details about
+the attributes of a console port, see Table 4-181.
+Table 4-181  Attributes of a console port
+
+
+Attribute
+
+
+Description
+
+
+
+
+
+
+
+
+Connector type
+
+
+RJ45
+
+
+
+
+
+Standards compliance
+
+
+RS-232
+
+
+
+
+
+Working mode
+
+
+Duplex Universal Asynchronous Receiver/Transmitter (UART)
+
+
+
+
+
+Baud rate
+
+
+9600 bit/s, 19200 bit/s, 38400 bit/s, 57600 bit/s, or 115200
+bit/s
+Default value: 9600 bit/s
+
+
+
+
+
+
+
+
+
+
+Indicator Description Hold down the mode switch button for 6s and release it to start the web initial login mode. Either of the following situations will occur:If the switch has no configuration file, the system attempts to enter the web initial login mode. In this mode, the status of mode indicators is as follows:If the system enters the web initial login mode successfully, all mode indicators turn green and stay on for a maximum of 10 minutes.If the system fails to enter the initial login mode, all mode indicators fast blink for 10 seconds and then restore the default status.
+If the switch has a configuration file, the system cannot enter the web initial login mode. In this case, all mode indicators fast blink for 10s, and then return to the default states.
+
+
+Figure 4-69  Indicators on the S5720-12TP-LI-AC
+
+Table 4-182  Description of indicators on the switchNo.
+
+Indicator
+
+Name
+
+Color
+
+Status
+
+Description
+
+
+
+1
+
+
+PWR
+
+
+Power module indicator
+
+
+-
+
+Off
+
+The switch is powered off.
+
+
+Green
+
+Steady on
+
+The system power supply is normal.
+
+
+Yellow or red
+
+Steady on
+
+The built-in power module has failed.
+
+
+2
+
+SYS
+
+System status indicator
+
+-
+
+Off
+
+The system is not running.
+
+
+Green
+
+Fast blinking
+
+The system is starting.
+
+
+Green
+
+Slow blinking
+
+The system is running normally.
+
+
+Red
+
+Steady on
+
+The system does not work normally after registration, or a temperature alarm has been generated.
+
+
+3
+
+STAT
+
+Status indicator
+
+-
+
+Off
+
+The status mode is not selected.
+
+
+Green
+
+Steady on
+
+The status mode (default mode) is selected. If the status mode is selected, the service port indicator shows the port link or activity state.
+
+
+4
+
+SPED
+
+Speed indicator
+
+-
+
+Off
+
+The speed mode is not selected.
+
+
+Green
+
+Steady on
+
+The service port indicators show the port speeds. After 45 seconds, the service port indicators automatically restore to the status mode.
+
+
+5
+
+STCK
+
+Stack indicator
+
+-
+
+Off
+
+If you are not changing the indicator mode (default): The switch is in stack standby or slave state or the stacking function is not enabled on the switch.If you are changing the indicator mode: The stack mode is not selected.
+
+
+Green
+
+Steady on
+
+The switch is a standby or slave switch in a stack, and the service port indicators show the stack ID of the switch.
+
+
+Green
+
+Blinking
+
+If you are not changing the indicator mode (default): The switch is a stack master switch or a standalone switch with the stacking function enabled.If you are changing the indicator mode: The switch is the master switch in a stack or a standalone switch, and the service port indicators show the stack ID of the master switch.
+After 45 seconds, the service port indicators automatically restore to the status mode.
+
+
+6
+
+MODE
+
+Mode switch button
+
+-
+
+-
+
+When you press this button once, the service port indicators change to the speed mode and show the speed of each service port.When you press this button a second time, the service port indicators change to the stack mode and show the stack ID of the local switch.When you press this button a third time, the service port indicators restore to the default mode, and the STAT indicator turns green.
+If you do not press the MODE button within 45 seconds, the service port indicators restore to the default mode. In this case, the STAT indicator is steady green, the SPED indicator is off, and the STCK indicator is off or blinking green.
+
+
+7
+
+-
+
+Service port indicator
+
+Meanings of service port indicators vary in different modes. For details, see Table 4-183.
+
+
+
+
+
+
+Table 4-183  Description of service port indicators in different modes (one indicator for each port)Display Mode
+
+Color
+
+Description
+
+
+
+Status
+
+Green
+
+Off: The port is not connected or has been shut down.Steady on: The port is connected.
+Blinking: The port is sending or receiving data.
+
+
+
+Speed
+
+Green
+
+Off: The port is not connected or has been shut down.Steady on:
+10M/100M/1000M port: The port is operating at 10/100 Mbit/s.
+Blinking:
+10M/100M/1000M port: The port is operating at 1000 Mbit/s.
+
+
+
+Stack
+
+Green
+
+Off: Port indicators do not show the stack ID of the switch.
+If the indicator is steady on, the switch is not a master switch:
+If the indicator of a port is steady on, the number of this port is the stack ID of the switch.
+If the indicators of ports 1 to 9 are steady on, the stack ID of the switch is 0.
+
+
+If the indicator is blinking, the switch is a master switch:
+If the indicator of a port is blinking, the number of this port is the stack ID of the switch.
+If the indicators of ports 1 to 9 are blinking, the stack ID of the switch is 0.
+
+
+
+
+
+
+
+
+Power Supply ConfigurationThe S5720-12TP-LI-AC has a built-in power module and does not support pluggable power modules.
+Figure 4-70 shows the power supply mode of a built-in AC power module. The built-in AC power module (PWR) receives power from an external power source and provides a 12 V output to the chassis.Figure 4-70  Power supply mode of a built-in AC power moduleL: live wire
+
+N: neutral wire
+
+PGND: protection ground wire
+
+GND: 12 V reference ground
+
+
+
+
+
+
+Heat DissipationThe S5720-12TP-LI-AC has no fans and uses natural heat dissipation.
+
+Technical SpecificationsTable 4-184 lists technical specifications of the S5720-12TP-LI-AC.
+
+Table 4-184  Technical specificationsItem
+
+Description
+
+
+
+Memory (RAM)
+
+512 MB
+
+
+Flash
+
+512 MB in total. To view the available flash memory size, run the display version command.
+
+
+Mean time between failures (MTBF)
+
+23.8 years
+
+
+Availability
+
+> 0.99999
+
+
+Service port surge protection
+
+Common mode: ±7 kV
+
+
+Power supply surge protection
+
+±6 kV in differential mode, ±6 kV in common mode
+
+
+Dimensions (H x W x D)
+
+Basic dimensions (excluding the parts protruding from the body): 43.6 mm x 250.0 mm x 180.0 mm (1.72 in. x 9.8 in. x 7.1 in.)Maximum dimensions (the depth is the distance from ports on the front panel to the parts protruding from the rear panel): 43.6 mm x 250.0 mm x 186.7 mm (1.72 in. x 9.8 in. x 7.35 in.)
+
+
+Weight (with packaging)
+
+1.8 kg (3.97 lb)
+
+
+Stack ports
+
+Eight 10/100/1000BASE-T ports and two 1000BASE-X ports
+
+
+RTC
+
+Not supported
+
+
+RPS
+
+Not supported
+
+
+PoE
+
+Not supported
+
+
+Rated voltage range
+
+100 V AC to 240 V AC, 50/60 Hz
+
+
+Maximum voltage range
+
+90 V AC to 264 V AC, 47 Hz to 63 Hz
+
+
+Maximum power consumption (100% throughput)
+
+12.85 W
+
+
+Typical power consumption (30% of traffic load)Tested according to ATIS standardEEE enabledNo PoE power consumption
+
+
+10.39 W
+
+
+Operating temperature
+
+0°C to 45°C (32°F to 113°F) at an altitude of 0-1800 m (0-5906 ft.) NOTE: When the altitude is 1800-5000 m (5906-16404 ft.), the highest operating temperature reduces by 1°C (1.8°F) every time the altitude increases by 220 m (722 ft.).
+The operating temperature of the switch is 0°C to 40°C (32°F to 104°F) when it uses GE SFP optical modules with 40 km transmission distance.
+
+
+
+
+Storage temperature
+
+-40°C to +70°C (-40°F to +158°F)
+
+
+Noise under normal temperature (27°C, sound power)
+
+Noise-free (no fans)
+
+
+Relative humidity
+
+5% to 95%, noncondensing
+
+
+Operating altitude
+
+0-5000 m (0-16404 ft.)
+
+
+Certification
+
+EMC certificationSafety certificationManufacturing certification
+
+
+Part number
+
+98010567
+
+
+
+
+
+
+
+Version MappingAppearance and StructurePort DescriptionIndicator DescriptionPower Supply ConfigurationHeat DissipationTechnical Specifications
+
+

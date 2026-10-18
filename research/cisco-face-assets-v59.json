@@ -1,0 +1,294 @@
+{
+  "cisco-1941": {
+    "interfaceSide": "rear",
+    "images": {
+      "rear": {
+        "src": "assets/vendor-faces-v59/cisco/cisco-1941-rear.svg",
+        "width": 1100,
+        "height": 230,
+        "frame": [
+          0,
+          0,
+          1100,
+          230
+        ],
+        "source": "https://www.cisco.com/c/en/us/td/docs/routers/access/1900/hardware/installation/guide/1900_HIG/19over.html",
+        "status": "vendor-referenced-vector-illustration",
+        "note": "อ้างอิง Figure1-5 และภาพด้านหลัง1941ตรงรุ่น; ช่องเสริมแสดงแบบปิดว่าง ภาพประกอบ ไม่ใช่ CAD หรือพิกัดพอร์ตสอบเทียบ",
+        "referencePhoto": "https://media.router-switch.com/media/catalog/product/r/o/routers-cisco1941.jpg"
+      },
+      "front": {
+        "src": "assets/cisco-1941-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          77,
+          147,
+          2014,
+          511
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      }
+    }
+  },
+  "cisco-2911-k9": {
+    "interfaceSide": "rear",
+    "images": {
+      "front": {
+        "src": "assets/vendor-faces-v59/cisco/cisco-2911-k9-front.svg",
+        "width": 1100,
+        "height": 222,
+        "frame": [
+          0,
+          0,
+          1100,
+          222
+        ],
+        "source": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+        "status": "vendor-referenced-vector-illustration",
+        "note": "อ้างอิง Figure1-4 และภาพ2911front; ACด้านซ้ายและRPSblankตามภาพ ภาพประกอบ ไม่ใช่ CAD หรือพิกัดพอร์ตสอบเทียบ",
+        "referencePhoto": "https://media.router-switch.com/media/catalog/product/c/i/cisco2911-k9-front.jpg"
+      },
+      "rear": {
+        "src": "assets/cisco-2911-k9-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          18,
+          169,
+          2133,
+          461
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      }
+    }
+  },
+  "cisco-3925e": {
+    "interfaceSide": "rear",
+    "images": {
+      "rear": {
+        "src": "assets/vendor-faces-v59/cisco/cisco-3925e-rear.svg",
+        "width": 1100,
+        "height": 330,
+        "frame": [
+          0,
+          0,
+          1100,
+          330
+        ],
+        "source": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+        "status": "vendor-referenced-vector-illustration",
+        "note": "อ้างอิง Cisco HIG Figure1-13 และCisco FIPS140sp1560 Figure8/14; layoutโดยสังเขป ไม่จำลองFIPSseal ภาพประกอบ ไม่ใช่ CAD หรือพิกัดพอร์ตสอบเทียบ",
+        "referencePhotos": "https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1560.pdf"
+      },
+      "front": {
+        "src": "assets/cisco-3925e-illustration-v03.png",
+        "width": 2065,
+        "height": 761,
+        "frame": [
+          52,
+          111,
+          1961,
+          548
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      }
+    }
+  },
+  "cisco-3945e": {
+    "interfaceSide": "rear",
+    "images": {
+      "rear": {
+        "src": "assets/vendor-faces-v59/cisco/cisco-3945e-rear.svg",
+        "width": 1100,
+        "height": 330,
+        "frame": [
+          0,
+          0,
+          1100,
+          330
+        ],
+        "source": "https://www.cisco.com/c/en/us/td/docs/routers/access/2900/hardware/installation/guide/Hardware_Installation_Guide/Overview.html",
+        "status": "vendor-referenced-vector-illustration",
+        "note": "อ้างอิง Cisco HIG Figure1-13 และCisco FIPS140sp1560 Figure8/14; layoutโดยสังเขป ไม่จำลองFIPSseal ภาพประกอบ ไม่ใช่ CAD หรือพิกัดพอร์ตสอบเทียบ",
+        "referencePhotos": "https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1560.pdf"
+      },
+      "front": {
+        "src": "assets/cisco-3945e-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          80,
+          111,
+          2011,
+          513
+        ],
+        "status": "illustration",
+        "note": "Corrected orientation: existing illustration shows front bezel/PSU, not rear I/O."
+      }
+    }
+  },
+  "cisco-c1121-8pltep": {
+    "interfaceSide": "rear",
+    "images": {
+      "front": {
+        "src": "assets/vendor-faces-v59/cisco/cisco-c1121-8pltep-front.svg",
+        "width": 1100,
+        "height": 166,
+        "frame": [
+          0,
+          0,
+          1100,
+          166
+        ],
+        "source": "https://www.cisco.com/c/en/us/td/docs/routers/access/1100/hardware/installation/guide/b-cisco-1100-series-hig/isr1k-hig-overview.html",
+        "status": "vendor-referenced-vector-illustration",
+        "note": "อ้างอิง C1121 bezel family shared drawing Figure13/16; ไม่มีการเพิ่มportหรือไฟที่ไม่ได้ยืนยัน ภาพประกอบ ไม่ใช่ CAD หรือพิกัดพอร์ตสอบเทียบ"
+      },
+      "rear": {
+        "src": "assets/cisco-c1121-8pltep-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          24,
+          226,
+          2118,
+          334
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      }
+    }
+  },
+  "cisco-isr-4331": {
+    "interfaceSide": "rear",
+    "images": {
+      "front": {
+        "src": "assets/vendor-faces-v59/cisco/cisco-isr-4331-front.jpg",
+        "width": 1600,
+        "height": 1280,
+        "frame": [
+          41,
+          564,
+          1519,
+          152
+        ],
+        "source": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+        "imageSource": "https://sklep.comel-it.com/hpeciai/546b16ddff980b152dcc313f162ac642/pol_pl_Router-Cisco-ISR-4331-3GE-2NIM-1SM-4G-FLASH-4G-DRAM-IPB-SEC-DATA-6057_1.jpg",
+        "status": "vendor-verified-third-party-photo",
+        "note": "ตรงกับCiscoFigure1-22; console/managementด้านซ้าย ACด้านขวา; cropด้วยframe ไม่ใช่พิกัดportสอบเทียบ"
+      },
+      "rear": {
+        "src": "assets/cisco-isr-4331-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          39,
+          236,
+          2099,
+          247
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      }
+    }
+  },
+  "cisco-isr-4431": {
+    "interfaceSide": "rear",
+    "images": {
+      "front": {
+        "src": "assets/vendor-faces-v59/cisco/cisco-isr-4431-front.svg",
+        "width": 1100,
+        "height": 114,
+        "frame": [
+          0,
+          0,
+          1100,
+          114
+        ],
+        "source": "https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400-4300/C4400_isr/Overview.html",
+        "status": "vendor-referenced-vector-illustration",
+        "note": "อ้างอิงCiscoFigure1-13และภาพตรงรุ่นISR4431; PSUคู่เป็นตัวอย่างconfiguration ภาพประกอบ ไม่ใช่ CAD หรือพิกัดพอร์ตสอบเทียบ",
+        "referencePhoto": "https://www.hengyuandigital.com/buckets/hengyuan-dev/5f21d2d541df3682255e1ace481c20b0.jpg"
+      },
+      "rear": {
+        "src": "assets/cisco-isr-4431-illustration-v03.png",
+        "width": 2172,
+        "height": 724,
+        "frame": [
+          42,
+          233,
+          2088,
+          252
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      }
+    }
+  },
+  "cisco-asr-1001": {
+    "interfaceSide": "front",
+    "images": {
+      "front": {
+        "src": "assets/cisco-asr-1001-illustration-v03.png",
+        "width": 2170,
+        "height": 725,
+        "frame": [
+          34,
+          253,
+          2103,
+          215
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      },
+      "rear": {
+        "src": "assets/cisco-asr-1001-audited-rear-20261010.webp",
+        "width": 2172,
+        "height": 724,
+        "frame": [
+          40,
+          259,
+          2092,
+          248
+        ],
+        "status": "vendor-referenced-illustration",
+        "note": "ภาพจำลองจากภาพตรงรุ่น ตรวจเทียบองค์ประกอบกับคู่มือ Cisco; ภาพต้นแบบไม่ได้อยู่บนเว็บ Vendor"
+      }
+    }
+  },
+  "cisco-asr-1001-x": {
+    "interfaceSide": "front",
+    "images": {
+      "front": {
+        "src": "assets/cisco-asr-1001-x-illustration-v03.png",
+        "width": 2172,
+        "height": 724,
+        "frame": [
+          26,
+          282,
+          2121,
+          205
+        ],
+        "status": "illustration",
+        "note": "ภาพประกอบ ไม่ใช่ภาพสอบเทียบพอร์ต"
+      },
+      "rear": {
+        "src": "assets/cisco-asr-1001-x-audited-rear-20261010.webp",
+        "width": 2172,
+        "height": 724,
+        "frame": [
+          2,
+          271,
+          2169,
+          190
+        ],
+        "status": "vendor-referenced-illustration",
+        "note": "ภาพจำลองด้านหลังตามแผนผังผู้ผลิต ไม่ใช่ Hotspot สอบเทียบ"
+      }
+    }
+  }
+}

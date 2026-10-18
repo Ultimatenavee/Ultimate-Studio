@@ -1,0 +1,6 @@
+import {inspectionPower} from './device-power-info.js';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function createPowerHover(element,{racks,devices}){
+ let key='';
+ return {show(anchor){const r=racks[anchor?.rack],item=r?.items.find(i=>i.id===anchor?.itemId);if(!anchor?.visible||!item){element.hidden=true;return;}const power=inspectionPower(devices.find(m=>m.id===item.model)||{id:item.model},{item,powerBasis:r.powerBasis||'auto'}),next=JSON.stringify([item.id,item.name,r.name,item.u,item.size,power.value,power.basis]);if(key!==next){key=next;element.innerHTML='<strong>'+esc(item.name)+'</strong><small>'+esc(r.name)+' · U'+item.u+'–'+(item.u+item.size-1)+'</small><b>'+esc(power.value)+'</b><span>'+esc(power.basis)+'</span><small>ค่าเพื่อวางแผน · คลิกดูโมเดล 360°</small>';}element.hidden=false;const width=Math.min(280,Math.max(170,anchor.width-24));element.style.width=width+'px';element.style.left=Math.max(8,Math.min(anchor.width-width-8,anchor.x+20))+'px';element.style.top=Math.max(62,Math.min(anchor.height-element.offsetHeight-12,anchor.y+18))+'px';},hide(){element.hidden=true;},dispose(){element.hidden=true;element.replaceChildren();}};
+}
