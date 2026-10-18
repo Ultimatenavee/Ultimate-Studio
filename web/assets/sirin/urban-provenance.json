@@ -1,0 +1,148 @@
+{
+  "assets": [
+    {
+      "id": "CafeTable",
+      "source": "data\\model\\휘겔\\휘겔_테이블.rsm",
+      "file": "ro-assets/CafeTable.glb",
+      "origin": "휘겔"
+    },
+    {
+      "id": "CafeChair",
+      "source": "data\\model\\휘겔\\휘겔_테이블의자.rsm",
+      "file": "ro-assets/CafeChair.glb",
+      "origin": "휘겔"
+    },
+    {
+      "id": "ParasolSeat",
+      "source": "data\\model\\휘겔\\휘겔_파라솔의자.rsm",
+      "file": "ro-assets/ParasolSeat.glb",
+      "origin": "휘겔"
+    },
+    {
+      "id": "MarketStall",
+      "source": "data\\model\\라헬\\상점가판대02.rsm",
+      "file": "ro-assets/MarketStall.glb",
+      "origin": "라헬"
+    },
+    {
+      "id": "ThaiJar",
+      "source": "data\\model\\아요타야\\항아리01.rsm",
+      "file": "ro-assets/ThaiJar.glb",
+      "origin": "아요타야"
+    },
+    {
+      "id": "WoodBarrel",
+      "source": "data\\model\\내부소품\\술통01.rsm",
+      "file": "ro-assets/WoodBarrel.glb",
+      "origin": "내부소품"
+    },
+    {
+      "id": "Mailbox",
+      "source": "data\\model\\리히타르젠\\우체통.rsm",
+      "file": "ro-assets/Mailbox.glb",
+      "origin": "리히타르젠"
+    },
+    {
+      "id": "GardenFence",
+      "source": "data\\model\\휘겔\\휘겔_울타리01.rsm",
+      "file": "ro-assets/GardenFence.glb",
+      "origin": "휘겔"
+    },
+    {
+      "id": "GardenFenceLow",
+      "source": "data\\model\\휘겔\\휘겔_울타리02.rsm",
+      "file": "ro-assets/GardenFenceLow.glb",
+      "origin": "휘겔"
+    },
+    {
+      "id": "FlowerPink",
+      "source": "data\\model\\brasilis\\덤불꽃01.rsm",
+      "file": "ro-assets/FlowerPink.glb",
+      "origin": "brasilis"
+    },
+    {
+      "id": "FlowerWhite",
+      "source": "data\\model\\brasilis\\덤불꽃02.rsm",
+      "file": "ro-assets/FlowerWhite.glb",
+      "origin": "brasilis"
+    },
+    {
+      "id": "FlowerPurple",
+      "source": "data\\model\\brasilis\\덤불꽃03.rsm",
+      "file": "ro-assets/FlowerPurple.glb",
+      "origin": "brasilis"
+    },
+    {
+      "id": "TropicalFlower",
+      "source": "data\\model\\dewata\\꽃a04.rsm",
+      "file": "ro-assets/TropicalFlower.glb",
+      "origin": "dewata"
+    },
+    {
+      "id": "TropicalFlowerB",
+      "source": "data\\model\\dewata\\꽃b02.rsm",
+      "file": "ro-assets/TropicalFlowerB.glb",
+      "origin": "dewata"
+    },
+    {
+      "id": "MalayaBed",
+      "source": "data\\model\\malaya\\화단02.rsm",
+      "file": "ro-assets/MalayaBed.glb",
+      "origin": "malaya"
+    },
+    {
+      "id": "ShrubRound",
+      "source": "data\\model\\나무잡초꽃\\덤불04.rsm",
+      "file": "ro-assets/ShrubRound.glb",
+      "origin": "나무잡초꽃"
+    },
+    {
+      "id": "Bamboo",
+      "source": "data\\model\\나무잡초꽃\\대나무01.rsm",
+      "file": "ro-assets/Bamboo.glb",
+      "origin": "나무잡초꽃"
+    },
+    {
+      "id": "ShadeTree",
+      "source": "data\\model\\나무잡초꽃\\나무02.rsm",
+      "file": "ro-assets/ShadeTree.glb",
+      "origin": "나무잡초꽃"
+    },
+    {
+      "id": "Willow",
+      "source": "data\\model\\나무잡초꽃\\페이욘버드나무.rsm",
+      "file": "ro-assets/Willow.glb",
+      "origin": "나무잡초꽃"
+    },
+    {
+      "id": "GardenRock",
+      "source": "data\\model\\나무잡초꽃\\바위01.rsm",
+      "file": "ro-assets/GardenRock.glb",
+      "origin": "나무잡초꽃"
+    },
+    {
+      "id": "TownWell",
+      "source": "data\\model\\페이욘\\우물.rsm",
+      "file": "ro-assets/TownWell.glb",
+      "origin": "페이욘"
+    },
+    {
+      "id": "FlowerPot_C",
+      "source": "data\\model\\나무잡초꽃\\화분02.rsm",
+      "file": "ro-assets/FlowerPot_C.glb",
+      "origin": "나무잡초꽃"
+    },
+    {
+      "id": "FlowerPot_D",
+      "source": "data\\model\\나무잡초꽃\\화분04.rsm",
+      "file": "ro-assets/FlowerPot_D.glb",
+      "origin": "나무잡초꽃"
+    },
+    {
+      "id": "MarketWagon",
+      "source": "data\\model\\외부소품\\수레01.rsm",
+      "file": "ro-assets/MarketWagon.glb",
+      "origin": "외부소품"
+    }
+  ]
+}

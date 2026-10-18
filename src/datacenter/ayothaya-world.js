@@ -111,11 +111,11 @@ export async function createAyothayaWorld(host,opts){
   if(next!=='capital'||capitalLoaded)return;
   if(capitalLoading)return capitalLoading;
   capitalLoading=(async()=>{
-   const response=await fetch('assets/sirin/navigation.json');
+   const response=await fetch('assets/sirin/navigation.json?v=urban-v005');
    if(!response.ok)throw Error('SIRIN navigation unavailable');
    const data=await response.json();
    if(!Array.isArray(data.colliders)||data.bounds?.length!==4)throw Error('Invalid SIRIN navigation');
-   const gltf=await new GLTFLoader().loadAsync('assets/sirin/capital.glb');
+   const gltf=await new GLTFLoader().loadAsync('assets/sirin/capital.glb?v=urban-v005');
    if(disposed){gltf.scene.traverse(o=>{o.geometry?.dispose();for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){for(const t of Object.values(m))if(t?.isTexture)t.dispose();m.dispose();}});throw Error('World disposed');}
    gltf.scene.traverse(o=>{if(o.isLight)o.visible=false;if(!o.isMesh)return;o.castShadow=false;o.receiveShadow=false;
     for(const m of Array.isArray(o.material)?o.material:[o.material]){if(m.color&&!cityMaterials.has(m))cityMaterials.set(m,m.color.clone());if(m.map)m.map.anisotropy=Math.min(4,renderer.capabilities.getMaxAnisotropy());}

@@ -8,10 +8,10 @@ const output='artifacts/sirin-qa';fs.mkdirSync(output,{recursive:true});
  await pose('city',[25.5,1,-4],-Math.PI/2);await p.screenshot({path:output+'/ayothaya-east-gate.png'});
  assert.equal(await p.evaluate(()=>window.__UTS_WORLD__.visualStats().world.capitalLoaded),false,'capital is lazy');
  // A failed first download leaves the old town playable and allows a retry.
- await p.route('**/assets/sirin/capital.glb',route=>route.abort());await p.keyboard.down('KeyW');
+ await p.route('**/assets/sirin/capital.glb*',route=>route.abort());await p.keyboard.down('KeyW');
  await p.waitForFunction(()=>!document.querySelector('.ayothaya-fade').hidden);await p.keyboard.up('KeyW');
  await p.waitForFunction(()=>document.querySelector('.ayothaya-fade').hidden,null,{timeout:15000});
- await p.waitForTimeout(1200);assert.equal(await p.evaluate(()=>window.__UTS_WORLD__.currentArea()),'city');assert(await p.locator('.ayothaya-fade').isHidden(),'failed warp does not loop');await p.unroute('**/assets/sirin/capital.glb');
+ await p.waitForTimeout(1200);assert.equal(await p.evaluate(()=>window.__UTS_WORLD__.currentArea()),'city');assert(await p.locator('.ayothaya-fade').isHidden(),'failed warp does not loop');await p.unroute('**/assets/sirin/capital.glb*');
  await pose('city',[25.5,1,-4],-Math.PI/2);await p.keyboard.down('KeyW');await waitArea('capital');
  await p.waitForTimeout(1200);assert.equal(await p.evaluate(()=>window.__UTS_WORLD__.currentArea()),'capital','arrival does not bounce');
  await p.screenshot({path:output+'/capital-west-arrival.png'});
