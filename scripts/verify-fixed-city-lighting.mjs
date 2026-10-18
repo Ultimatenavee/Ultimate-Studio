@@ -1,0 +1,13 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {decodeNavigation,cityCanStand,gridSample,CITY_SPAWN,TEMPLE_GATE} from '../src/datacenter/ayothaya-navigation.js';
+import {capitalCanStand} from '../src/datacenter/sirin-navigation.js';
+import {buildLightField} from '../src/datacenter/static-city-lighting.js';
+const read=p=>JSON.parse(fs.readFileSync(p)),ay=decodeNavigation(read('web/assets/ayothaya/ground-navigation.json')),old=decodeNavigation(read('web/assets/ayothaya/navigation.json')),capital=read('web/assets/sirin/ground-navigation.json'),prior=read('web/assets/sirin/navigation.json'),lights=read('web/assets/sirin/lighting-layout.json'),al=read('web/assets/ayothaya/lighting-extension.json');
+let expanded=0;for(let i=0;i<ay.types.length;i++){if(old.types[i]!==0&&ay.types[i]===0){expanded++;assert(Array.from(ay.heights.slice(i*4,i*4+4)).every(y=>Number.isFinite(y)&&y>-1.005),'new ground stays above water');}}
+for(const b of ay.buildings){const ps=b.polygon.slice(0,-1),x=ps.reduce((s,p)=>s+p[0],0)/ps.length,z=ps.reduce((s,p)=>s+p[1],0)/ps.length;assert(!cityCanStand(ay,x,z),'solid building '+b.source);}
+assert(expanded>30000);for(const p of [CITY_SPAWN,TEMPLE_GATE,{x:28,z:-4}])assert(cityCanStand(ay,p.x,p.z));assert(!cityCanStand(ay,40,40));assert(!cityCanStand(ay,-39,39),'sea stays blocked');
+assert.equal(capital.colliders.length,74);assert(prior.colliders.length>capital.colliders.length*10);assert(!capitalCanStand(capital,0,0));assert(capitalCanStand(capital,-11,156),'lamp is decoration, not a walking blocker');
+for(const [layout,bounds,maxDistance]of [[lights,[-180,180,-180,180],24],[al,[-40,40,-40,40],11]]){const field=buildLightField(layout.sources,bounds,layout.field_radius);assert(field.data.some((v,i)=>i%4===0&&v>0));assert(layout.max_distance_m<maxDistance);assert(layout.added.length>0);}
+let samples=0,max=0;for(let x=-176;x<=176;x+=2)for(let z=-176;z<=176;z+=2){if(!capitalCanStand(capital,x,z))continue;max=Math.max(max,Math.min(...lights.sources.map(p=>Math.hypot(x-p.x,z-p.z))));samples++;}assert(max<25,'all capital floor samples inside the fixed light field');
+let ayMax=0;for(let i=0;i<ay.types.length;i++){if(ay.types[i]!==0)continue;const x=(i%320+.5)*.25-40,z=40-(Math.floor(i/320)+.5)*.25;ayMax=Math.max(ayMax,Math.min(...al.sources.map(p=>Math.hypot(x-p.x,z-p.z))));}assert(ayMax<11,'all Ayothaya floor cells are within fixed lamp coverage');
+console.log('PASS physical land/deck expansion, water/building exclusion, unchanged warps, nonblocking city decoration, fixed irradiance fields and complete capital floor coverage:',{expanded,samples,maxDistance:max,ayothayaMaxDistance:ayMax,capitalAdded:lights.added.length,ayothayaAdded:al.added.length});

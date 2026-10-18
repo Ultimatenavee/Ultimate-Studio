@@ -12,7 +12,8 @@ function clip(poly,axis,edge,greater){
  return out;
 }
 const area=p=>Math.abs(p.reduce((s,a,i)=>{const b=p[(i+1)%p.length];return s+a[0]*b[1]-b[0]*a[1];},0))/2;
-for(const object of [...manifest.placements,...manifest.characters]){
+const lamps=JSON.parse(fs.readFileSync(base+'lighting-layout.json')).added.map((p,i)=>({object:'Additional lamp '+i,surface:p.surface,envelope:[p.bounds[0],-p.bounds[3],p.bounds[1],-p.bounds[2]]}));
+for(const object of [...manifest.placements,...manifest.characters,...lamps]){
  const b=object.envelope;assert(b?.length===4&&b.every(Number.isFinite));let covered=0;
  for(const t of terrain){
   if(t.b[2]<b[0]||t.b[0]>b[2]||t.b[3]<b[1]||t.b[1]>b[3])continue;
@@ -28,4 +29,4 @@ const bytes=fs.readFileSync(base+'capital.glb');assert(bytes.length<12*1024*1024
 const gltf=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)));
 assert(gltf.extensionsUsed.includes('EXT_mesh_gpu_instancing'),'repeat props must be instanced');
 assert(gltf.images.every(i=>!i.uri),'all texture artwork is embedded; no game installation needed');
-console.log(`PASS exact triangle/rectangle coverage: ${manifest.placements.length} models + ${manifest.characters.length} citizens stay entirely on their assigned surface; instanced self-contained asset ${(bytes.length/1e6).toFixed(2)} MB.`);
+console.log(`PASS exact triangle/rectangle coverage: ${manifest.placements.length} models + ${manifest.characters.length} citizens + ${lamps.length} additional lamps stay entirely on their assigned surface; instanced self-contained asset ${(bytes.length/1e6).toFixed(2)} MB.`);

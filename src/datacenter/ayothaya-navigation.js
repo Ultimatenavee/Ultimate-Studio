@@ -54,7 +54,7 @@ export function gridSample(nav,x,z){
  return {index,type:nav.types[index],height:south*(1-v)+north*v};
 }
 export function cityCanStand(nav,x,z,radius=.1){
- if(CITY_LANTERNS.some(p=>Math.abs(x-p.x)<p.radius+radius&&Math.abs(z-p.z)<p.radius+radius))return false;
+ if(!nav.surfacePolicy&&CITY_LANTERNS.some(p=>Math.abs(x-p.x)<p.radius+radius&&Math.abs(z-p.z)<p.radius+radius))return false;
  return [[0,0],[radius,0],[-radius,0],[0,radius],[0,-radius]].every(([dx,dz])=>{
   const s=gridSample(nav,x+dx,z+dz);return s&&[0,3,6].includes(s.type);
  });

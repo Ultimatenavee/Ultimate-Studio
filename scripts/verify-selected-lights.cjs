@@ -6,8 +6,8 @@ const fs=require('node:fs'),assert=require('node:assert/strict'),{chromium}=requ
  const stats=()=>p.evaluate(()=>window.__UTS_WORLD__.visualStats());const shot=async name=>{await p.waitForTimeout(200);await p.screenshot({path:'artifacts/selected-lights/'+name+'.png'});};
  await p.evaluate(()=>{window.__UTS_WORLD__.openingView();window.__UTS_WORLD__.timeOfDay('day');});await shot('city-day');
  await p.evaluate(()=>window.__UTS_WORLD__.timeOfDay('night'));await shot('city-night');
- assert.deepEqual((await stats()).world.lanterns.models,{L013:2,L047:32,L026:2,L027:2,L241:4});
- assert.deepEqual((await stats()).interior.chandeliers.models,{L233:2,L238:2});assert.equal((await stats()).world.lanterns.lit,58);
+ const extra=JSON.parse(fs.readFileSync('web/assets/ayothaya/lighting-extension.json'));assert.deepEqual((await stats()).world.lanterns.models,{L013:2,L047:20+extra.added.length,L107:12,L026:2,L027:2,L241:4});
+ assert.deepEqual((await stats()).interior.chandeliers.models,{L233:2,L238:2});assert.equal((await stats()).world.lanterns.lit,(await stats()).world.lanterns.count);assert.equal((await stats()).world.lanterns.activeLights,0,'outdoor illumination uses a fixed field, not camera-selected point lights');
  async function pose(area,position,rotation){await p.evaluate(async({area,position,rotation})=>{const w=window.__UTS_WORLD__;await w.visitCampus(area,true);const s=w.snapshot(),v=['city','lobby'].includes(area)?s.world:s.interior;v.position=position;v.rotation=[...rotation,'YXZ'];await w.restore(s);},{area,position,rotation});}
  await pose('city',[-24,.225,9],[0,0,0]);await shot('village-night');
  await pose('city',[-1.25,.5,12.8],[0,Math.PI/2,0]);await shot('harbor-night');
