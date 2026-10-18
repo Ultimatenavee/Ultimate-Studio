@@ -1,4 +1,5 @@
 import './build-datacenter.mjs';
+import './split-ayothaya-gltf.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -8,6 +9,9 @@ const root=process.cwd(),web=path.join(root,'web'),dist=path.join(root,'dist'),c
 try{await fs.access(path.join(web,'assets/sculpt/neural-v109'));throw new Error('Restricted sculpture assets must not be copied to the public web tree');}catch(e){if(e.code!=='ENOENT')throw e;}
 await fs.rm(client,{recursive:true,force:true});await fs.rm(server,{recursive:true,force:true});await fs.mkdir(client,{recursive:true});await fs.mkdir(server,{recursive:true});
 for(const entry of await fs.readdir(web,{withFileTypes:true})){if(['client','server','.openai'].includes(entry.name))continue;await fs.cp(path.join(web,entry.name),path.join(client,entry.name),{recursive:true});}
+// The original GLB remains a development source; hosted clients use its exact
+// data repacked into bounded glTF buffers.
+await fs.unlink(path.join(client,'assets/ayothaya/ayothaya.glb'));
 const ctx=vm.createContext({window:{}});vm.runInContext(await fs.readFile(path.join(web,'catalog.js'),'utf8'),ctx);vm.runInContext(await fs.readFile(path.join(web,'audience.js'),'utf8'),ctx);
 const models=Object.fromEntries(ctx.window.NOAH_CATALOG.map(m=>[m.id,{powerSlots:m.powerSlots,powerModes:m.powerModes,allowsMixedPower:!!m.allowsMixedPower,topologyOnly:!!m.topologyOnly,id:m.id,brand:m.brand,ports:m.ports}]));
 await fs.writeFile(path.join(root,'server/models.mjs'),'export default '+JSON.stringify(models)+';\n');
