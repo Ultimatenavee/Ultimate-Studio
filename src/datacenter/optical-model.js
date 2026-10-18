@@ -1,3 +1,4 @@
+import {batchStaticMeshes} from './static-mesh-batches.js';
 import * as T from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 // Geometry is driven by cited manufacturer envelopes, connector types and mechanical drawings.
@@ -7,12 +8,12 @@ export function opticalDimensions(model){
  if(!d||!model.geometry?.source)throw Error('Optical model requires manufacturer dimensions and physical evidence: '+model.id);
  return {width:d.width/1000,height:d.height/1000,depth:d.depth/1000,verified:model.physical.dimensionStatus==='vendor-verified'};
 }
-export function createOpticalModel(model){
+export function createOpticalModel(model,{detail=true}={}){
  const group=new T.Group(),moduleDim=opticalDimensions(model),geos=[],mats=[],textures=[],instances=[],g=model.geometry;
  const material=(color,metalness=0,roughness=.45)=>{const m=new T.MeshStandardMaterial({color,metalness,roughness});mats.push(m);return m};
  const metal=material('#bfc6ca',.9,.29),edge=material('#879198',.87,.35),dark=material('#111b20',.05,.7),pcb=material('#244e42',.1,.7),gold=material('#c6a455',.83,.3),latch=material(g.latchColor||'#8f969b',.35,.36),label=material('#f2f0e9',.05,.75);
  function mesh(geo,mat,parent=group){geos.push(geo);const m=new T.Mesh(geo,mat);m.castShadow=m.receiveShadow=true;parent.add(m);return m;}
- function box(w,h,d,x,y,z,mat=metal,parent=group,bevel=.00018){const geo=new RoundedBoxGeometry(w,h,d,2,Math.min(bevel,h/5,w/5,d/5));geo.userData.shapeKey='box:'+JSON.stringify([w,h,d,bevel]);const m=mesh(geo,mat,parent);m.position.set(x,y,z);return m;}
+ function box(w,h,d,x,y,z,mat=metal,parent=group,bevel=.00018){const geo=detail?new RoundedBoxGeometry(w,h,d,2,Math.min(bevel,h/5,w/5,d/5)):new T.BoxGeometry(w,h,d);geo.userData.shapeKey='box:'+JSON.stringify([w,h,d,bevel]);const m=mesh(geo,mat,parent);m.position.set(x,y,z);return m;}
  function hole(radius,x,y,z,parent){const ring=mesh(new T.RingGeometry(radius*.65,radius,20),edge,parent);ring.position.set(x,y,z);const inside=mesh(new T.CircleGeometry(radius*.65,16),dark,parent);inside.position.set(x,y,z-.0001);}
  function buildModule(parent,{cable=false}={}){
   const {width:w,height:h}=moduleDim,d=(g.shellDepthMm||model.physical.dimensionsMm.depth-5)/1000,q=w>.016,dd=model.form==='QSFP-DD';
@@ -80,7 +81,7 @@ export function createOpticalModel(model){
   coil.add(new T.CubicBezierCurve3(boots[0],boots[0].clone().add(new T.Vector3(0,0,-.014)),new T.Vector3(first.x,wireRadius,first.z+.014),first));
   coil.add(new T.CatmullRomCurve3(loopPoints,false,'centripetal'));
   coil.add(new T.CubicBezierCurve3(last,new T.Vector3(last.x,wireRadius,last.z+.014),boots[1].clone().add(new T.Vector3(0,0,-.014)),boots[1]));
-  const tube=mesh(new T.TubeGeometry(coil,256,wireRadius,12,false),cableMat);tube.name='optic-captive-'+model.form;
+  const tube=mesh(new T.TubeGeometry(coil,detail?256:96,wireRadius,detail?12:6,false),cableMat);tube.name='optic-captive-'+model.form;
   group.userData.cableSupport={mode:'gravity-settled-on-tray',planeY:0,radius:wireRadius,boots:boots.map(v=>v.toArray()),coilPoints:loopPoints.map(v=>v.toArray())};
  }else buildModule(group);
  // Real SKU label. No invented brand artwork, serial number or certification marks.
@@ -89,7 +90,8 @@ export function createOpticalModel(model){
   const tex=new T.CanvasTexture(c);tex.colorSpace=T.SRGBColorSpace;tex.anisotropy=4;textures.push(tex);const m=new T.MeshBasicMaterial({map:tex,toneMapped:false});mats.push(m);const face=mesh(new T.PlaneGeometry(moduleDim.width*.85,(g.shellDepthMm||moduleDim.depth*1000-5)/1000*.54),m);face.rotation.x=-Math.PI/2;face.position.set(0,moduleDim.height/2+.0006,-.002);face.name='optic-sku-label';
  }
  // Repeated electrical contacts and ferrules share draw calls without reducing visual detail.
- group.updateMatrixWorld(true);const repeated=new Map();group.traverse(o=>{if(!o.isMesh)return;const key=(o.geometry.userData.shapeKey||o.geometry.type+JSON.stringify(o.geometry.parameters))+o.material.uuid;const rows=repeated.get(key)||[];rows.push(o);repeated.set(key,rows);});for(const rows of repeated.values()){if(rows.length<3)continue;const batch=new T.InstancedMesh(rows[0].geometry,rows[0].material,rows.length);for(let i=0;i<rows.length;i++){batch.setMatrixAt(i,rows[i].matrixWorld);rows[i].removeFromParent();}batch.castShadow=batch.receiveShadow=true;batch.computeBoundingSphere();group.add(batch);instances.push(batch);}
+ if(!detail)batchStaticMeshes(group,{isStatic:()=>true,ownGeometry:g=>geos.push(g),cellSize:100});
+ if(detail){group.updateMatrixWorld(true);const repeated=new Map();group.traverse(o=>{if(!o.isMesh)return;const key=(o.geometry.userData.shapeKey||o.geometry.type+JSON.stringify(o.geometry.parameters))+o.material.uuid;const rows=repeated.get(key)||[];rows.push(o);repeated.set(key,rows);});for(const rows of repeated.values()){if(rows.length<3)continue;const batch=new T.InstancedMesh(rows[0].geometry,rows[0].material,rows.length);for(let i=0;i<rows.length;i++){batch.setMatrixAt(i,rows[i].matrixWorld);rows[i].removeFromParent();}batch.castShadow=batch.receiveShadow=true;batch.computeBoundingSphere();group.add(batch);instances.push(batch);}}
  group.userData.opticalEvidence=g.source;group.userData.connectorKind=g.kind;
  let bounds=new T.Box3().setFromObject(group),size=bounds.getSize(new T.Vector3());if(g.kind==='cable'){const shape=new T.Group(),center=bounds.getCenter(new T.Vector3());for(const child of [...group.children])shape.add(child);shape.position.copy(center).multiplyScalar(-1);group.add(shape);group.userData.cableSupport.centerOffset=center.toArray();}if(g.kind!=='cable'){const shape=new T.Group(),center=bounds.getCenter(new T.Vector3());for(const child of [...group.children])shape.add(child);shape.position.copy(center).multiplyScalar(-1);const envelope=new T.Group();envelope.add(shape);envelope.scale.set(moduleDim.width/size.x,moduleDim.height/size.y,moduleDim.depth/size.z);group.add(envelope);bounds=new T.Box3().setFromObject(group);size=bounds.getSize(new T.Vector3());}
  const dim=g.kind==='cable'?{width:size.x,height:size.y,depth:size.z,verified:false}:moduleDim;

@@ -5,13 +5,13 @@ import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js'
 // Device dimensions are separate from the engineering catalog. Unknown surfaces remain blank.
 export function dimensions(model){if(model.category==='optic')return opticalDimensions(model);const d=model.physical?.dimensionsMm;return {width:(d?.width||440)/1000,height:(d?.height||model.rackProfile?.heightMm||model.u*44.45)/1000,depth:(d?.depth||450)/1000,verified:!!(d?.width&&d?.depth&&d?.height)}}
 export function createDeviceModel(model,{invalidate=()=>{},detail=true,textureCache=null,preserveFaceColors=false,loadingManager=undefined}={}){
- if(model.category==='optic')return createOpticalModel(model);
+ if(model.category==='optic')return createOpticalModel(model,{detail});
  const refiners=[];const pending=[];const group=new T.Group(),textures=new Set(),geometries=new Set(),materials=new Set();let disposed=false;
  const dim=dimensions(model),{width:w,height:h,depth:d}=dim;
  const metal=new T.MeshStandardMaterial({color:0x879095,metalness:.68,roughness:.33});materials.add(metal);
  if(detail){const data=new Uint8Array(128*16*4);for(let y=0;y<16;y++)for(let x=0;x<128;x++){const i=(y*128+x)*4,v=170+((y*37+x*3)%25);data[i]=data[i+1]=data[i+2]=v;data[i+3]=255}const grain=new T.DataTexture(data,128,16);grain.needsUpdate=true;grain.wrapS=grain.wrapT=T.RepeatWrapping;grain.repeat.set(3,12);textures.add(grain);metal.bumpMap=grain;metal.bumpScale=.00008;}
  const box=(ww,hh,dd,x,y,z,material=metal,rounded=false)=>{const geo=rounded?new RoundedBoxGeometry(ww,hh,dd,2,Math.min(.002,hh/5)):new T.BoxGeometry(ww,hh,dd);geometries.add(geo);const m=new T.Mesh(geo,material);m.position.set(x,y,z);m.castShadow=m.receiveShadow=true;group.add(m);return m};
- box(w,h,d,0,0,0,metal,true);
+ box(w,h,d,0,0,0,metal,detail);
  // Subtle chassis seam, without inventing vents, modules or sockets.
  const seam=new T.MeshStandardMaterial({color:0x394248,metalness:.5,roughness:.5});materials.add(seam);
  box(w*.99,.0008,d*.985,0,h/2-.001,0,seam);
