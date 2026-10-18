@@ -111,7 +111,7 @@ export async function createAyothayaWorld(host,opts){
   if(next!=='capital'||capitalLoaded)return;
   if(capitalLoading)return capitalLoading;
   capitalLoading=(async()=>{
-   const response=await fetch('assets/sirin/ground-navigation.json?v=ground-v1');
+   const response=await fetch('assets/sirin/ground-navigation.json?v=footprints-v2');
    if(!response.ok)throw Error('SIRIN navigation unavailable');
    const data=await response.json();
    if(!Array.isArray(data.colliders)||data.bounds?.length!==4)throw Error('Invalid SIRIN navigation');
@@ -171,7 +171,7 @@ export async function createAyothayaWorld(host,opts){
  }
  function dispose(){if(disposed)return;disposed=true;cancelAnimationFrame(frame);abort.abort();ro?.disconnect();orbit.dispose();avatar?.dispose();lanterns?.dispose();capitalLanterns?.dispose();decor?.dispose();const gs=new Set(),ms=new Set(),ts=new Set(allocations);scene.traverse(o=>{if(o.isInstancedMesh)o.dispose();if(o.geometry)gs.add(o.geometry);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){ms.add(m);for(const v of Object.values(m))if(v?.isTexture)ts.add(v);}});gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose());ts.forEach(t=>t.dispose());renderer.dispose();renderer.forceContextLoss();canvas.remove();}
  frame=requestAnimationFrame(tick);show('city',{walk:false});openingCover=true;resize(true);
- return {mapObstacles:()=>area==='capital'?(capitalNav?.colliders||[]).map(b=>({minX:b[0],maxX:b[1],minZ:b[2],maxZ:b[3]})):[],sprintSpeed(v){if(v!==undefined)runMultiplier=sprintMultiplier(v);return runMultiplier;},teleport(x,z){
+ return {mapObstacles:()=>area==='capital'?(capitalNav?.colliders||[]).map((b,i)=>({minX:b[0],maxX:b[1],minZ:b[2],maxZ:b[3],polygons:capitalNav.footprints?.[i]?.polygons})):[],sprintSpeed(v){if(v!==undefined)runMultiplier=sprintMultiplier(v);return runMultiplier;},teleport(x,z){
  if(!walking||blocked()||document.querySelector('dialog[open]'))return null;
  const stand=(a,b)=>!portalAt(area,a,b)&&(area==='capital'?capitalCanStand(capitalNav,a,b):area==='city'?cityCanStand(nav,a,b):lobbyCanStand(a,b));
  const p=nearestWalkPoint(x,z,stand);if(!p)return null;stopInput();jump.reset();camera.position.set(p.x,ground(p.x,p.z)+WALK_EYE[area],p.z);dirty=true;opts.onPosition?.(p.x,p.z,camera.rotation.y);return p;

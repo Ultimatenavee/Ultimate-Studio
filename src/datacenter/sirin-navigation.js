@@ -15,7 +15,21 @@ export function capitalPortalAt(x,z){
 export function capitalCanStand(nav,x,z,r=.25){
  if(!nav)return false;
  const [x0,x1,z0,z1]=nav.bounds;
- return x>x0+r&&x<x1-r&&z>z0+r&&z<z1-r&&!nav.colliders.some(b=>x>b[0]-r&&x<b[1]+r&&z>b[2]-r&&z<b[3]+r);
+ return x>x0+r&&x<x1-r&&z>z0+r&&z<z1-r&&!nav.colliders.some((b,i)=>{
+  if(x<=b[0]-r||x>=b[1]+r||z<=b[2]-r||z>=b[3]+r)return false;
+  const footprint=nav.footprints?.[i];
+  return !footprint||footprint.polygons.some(p=>circleTouchesPolygon(p,x,z,r));
+ });
+}
+function circleTouchesPolygon(poly,x,z,r){
+ let inside=false;
+ for(let i=0,j=poly.length-1;i<poly.length;j=i++){
+  const [ax,az]=poly[j],[bx,bz]=poly[i],dx=bx-ax,dz=bz-az,length=dx*dx+dz*dz;
+  const t=length?Math.max(0,Math.min(1,((x-ax)*dx+(z-az)*dz)/length)):0;
+  if((x-ax-t*dx)**2+(z-az-t*dz)**2<=r*r)return true;
+  if((az>z)!==(bz>z)&&x<(bx-ax)*(z-az)/(bz-az)+ax)inside=!inside;
+ }
+ return inside;
 }
 export function capitalStep(nav,position,dx,dz,stopAt){
  let {x,z}=position;if(stopAt?.(x,z))return {x,z};const n=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.1));

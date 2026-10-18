@@ -52,3 +52,5 @@ for p in manifest['placements']:
  if p['kind'] not in ['building','landmark','gate']:continue
  a,b,c,d=p['envelope'];sn['colliders'].append([a,c,-d,-b])
 sn['surfacePolicy']='All terrain, excluding buildings, towers and structural gate sections';(sirin/'ground-navigation.json').write_text(json.dumps(sn,separators=(',',':')),encoding='utf8');print('SIRIN structural blockers',len(sn['colliders']))
+import runpy
+runpy.run_path('scripts/build-sirin-footprints.py', run_name='__main__')

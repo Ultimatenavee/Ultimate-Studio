@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {decodeNavigation,cityCanStand,worldStep,portalAt,CITY_SPAWN} from '../src/datacenter/ayothaya-navigation.js';
 import {EAST_GATE,EAST_RETURN,CAPITAL_GATE,CAPITAL_SPAWN,CAPITAL_ROOMS,CAPITAL_RETURNS,capitalCanStand,capitalStep} from '../src/datacenter/sirin-navigation.js';
 import {ayothayaMap} from '../src/datacenter/ayothaya-map.js';
-const ay=decodeNavigation(JSON.parse(fs.readFileSync('web/assets/ayothaya/navigation.json'))),nav=JSON.parse(fs.readFileSync('web/assets/sirin/navigation.json'));
+const ay=decodeNavigation(JSON.parse(fs.readFileSync('web/assets/ayothaya/navigation.json'))),nav=JSON.parse(fs.readFileSync('web/assets/sirin/ground-navigation.json'));
 for(const p of [EAST_GATE,EAST_RETURN])assert(cityCanStand(ay,p.x,p.z));
 let p={...EAST_RETURN};for(let n=0;n<90&&!portalAt('city',p.x,p.z);n++)p=worldStep('city',ay,p,.04,0);
 assert.equal(portalAt('city',p.x,p.z),'capital');assert.equal(portalAt('city',EAST_RETURN.x,EAST_RETURN.z),null);
