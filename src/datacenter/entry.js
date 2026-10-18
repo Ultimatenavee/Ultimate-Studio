@@ -1,3 +1,4 @@
+import {bindFullscreen} from './fullscreen.js';
 import {AYOTHAYA_DESTINATIONS} from './ayothaya-navigation.js';
 import {setupCampusMenu} from './campus-menu.js';
 import {createPowerHover} from './power-hover.js';
@@ -83,7 +84,9 @@ $('walkFullscreen').onclick=()=>$('fullscreen').click();
 $('walkMuseumDirectory').onclick=()=>{setWalkMenu(false);museumUI?.toggleDirectory();};
 $('walkMuseumLights').onclick=()=>{setWalkMenu(false);museumUI?.toggleLighting();};
 $('walkDatacenter').onclick=()=>{setWalkMenu(false);museumUI?.returnDatacenter();};
-$('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else {await $('stage').requestFullscreen();try{await navigator.keyboard?.lock?.(['Escape']);}catch{/* Browser retains its standard fullscreen escape when Keyboard Lock is unavailable. */}}}catch{$('navHint').textContent='Browser ไม่รองรับ Fullscreen บนหน้านี้'}};
+const fullscreenMode=bindFullscreen($('stage'),[$('fullscreen'),$('walkFullscreen'),$('walkFullscreenQuick')]);
+$('fullscreen').onclick=()=>fullscreenMode.toggle();
+$('walkFullscreenQuick').onclick=()=>$('fullscreen').click();
 $('walkSprint').onclick=()=>{const next=$('walkSprint').getAttribute('aria-pressed')!=='true';$('walkSprint').setAttribute('aria-pressed',String(next));scene?.sprint(next);};
 const toggleSprint=$('walkSprint').onclick;
 $('walkSprint').onclick=e=>{if(e.detail===0)toggleSprint();};
@@ -94,7 +97,7 @@ walkJoystick=bindJoystick($('walkJoystick'),{onMove:(forward,strafe)=>scene?.tou
 $('motion').onchange=()=>{syncMotionHint();scene?.motion($('motion').checked);};media.addEventListener('change',e=>{if(e.matches){$('motion').checked=false;syncMotionHint();scene?.motion(false)}});
 
 function stopPresentation(){scene?.interruptPresentation();}
-window.addEventListener('pagehide',()=>{campusMenu?.dispose();powerHover?.dispose();walkJoystick?.dispose();powerNotices?.dispose();panelResizers.forEach(r=>r.dispose());scene?.dispose();museumUI?.dispose()});window.addEventListener('pageshow',e=>{if(e.persisted)location.reload()});
+window.addEventListener('pagehide',()=>{fullscreenMode.dispose();campusMenu?.dispose();powerHover?.dispose();walkJoystick?.dispose();powerNotices?.dispose();panelResizers.forEach(r=>r.dispose());scene?.dispose();museumUI?.dispose()});window.addEventListener('pageshow',e=>{if(e.persisted)location.reload()});
 
 
 async function rebuild(){updateMap();if(scene?.syncRacks())return;const pose=scene?.snapshot();scene?.dispose();scene=null;await start();await scene?.restore(pose);}

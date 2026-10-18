@@ -167,3 +167,14 @@ body.motion-paused .walk-pointing-hand{animation:none}
 .walk-touch-actions button>span{white-space:nowrap;line-height:1.4}.walk-touch-actions button>span:first-child{font-size:26px;line-height:1.1}.walk-touch-actions button[aria-pressed=true]{background:#fff0a4;color:#16374a;border-color:#f1d36d}.walk-touch-actions button:active{transform:scale(.95)}
 @media(max-width:600px){.walk-touch-actions{right:max(12px,env(safe-area-inset-right));bottom:max(28px,env(safe-area-inset-bottom));gap:8px}.walk-touch-actions button{width:64px;min-height:66px;border-radius:20px}}
 @media(max-height:430px){.walk-touch-actions{bottom:max(12px,env(safe-area-inset-bottom))}.walk-touch-actions button{min-height:58px}}
+
+/* Fullscreen controls share one state for native Safari/Chromium and iOS fallback. */
+body.immersive-active{overflow:hidden;overscroll-behavior:none}
+.stage.is-fullscreen{position:fixed!important;inset:0!important;width:var(--fullscreen-width,100vw)!important;height:var(--fullscreen-height,100dvh)!important;min-height:0!important;max-width:none!important;max-height:none!important;margin:0!important;border:0!important;border-radius:0!important;z-index:1000;background:#102534;box-sizing:border-box}
+.stage.is-fullscreen #viewport{width:100%;height:100%;min-height:0}.stage.is-fullscreen .fullscreen-only{display:block}.stage.is-fullscreen .dc-panel{bottom:115px}
+.exit-fullscreen{position:absolute;top:max(8px,env(safe-area-inset-top));left:max(8px,env(safe-area-inset-left));z-index:50;min-height:44px;padding:7px 10px;background:#17394def;color:white;border:1px solid #bad4e4;border-radius:12px;font-size:12px;pointer-events:auto}.exit-fullscreen[hidden]{display:none}
+.stage.is-fullscreen .ayothaya-place{top:max(62px,calc(env(safe-area-inset-top) + 54px))}.stage.is-fullscreen .scene-tag{display:none}
+.stage.is-fullscreen .walk-top{right:max(12px,env(safe-area-inset-right))}.stage.is-fullscreen.walking .walk-primary{gap:4px}.stage.is-fullscreen.walking .walk-primary button{padding:7px 9px}
+@media(max-width:600px){.stage.is-fullscreen.walking #walkFullscreenQuick{display:none}.stage.is-fullscreen .exit-fullscreen{font-size:11px;padding:6px 8px}.stage.is-fullscreen .walk-top{left:105px}}
+
+.stage.is-fullscreen .walk-quick-tip{display:none!important}
