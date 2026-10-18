@@ -59,9 +59,11 @@ export function cityCanStand(nav,x,z,radius=.1){
   const s=gridSample(nav,x+dx,z+dz);return s&&[0,3,6].includes(s.type);
  });
 }
-export function worldStep(area,nav,position,dx,dz){
- let {x,z}=position;const n=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.06));
- const stand=(a,b)=>area==='city'?cityCanStand(nav,a,b):Math.abs(a)<8.25&&Math.abs(b)<8.55&&!lobbyDecorBoxes.some(r=>a>r.minX-.15&&a<r.maxX+.15&&b>r.minZ-.15&&b<r.maxZ+.15)&&![-6,6].some(px=>[-7,7].some(pz=>Math.abs(a-px)<.42&&Math.abs(b-pz)<.42));
- for(let i=0;i<n;i++){if(stand(x+dx/n,z))x+=dx/n;if(stand(x,z+dz/n))z+=dz/n;}
+export function worldStep(area,nav,position,dx,dz,stopAt){
+ let {x,z}=position;if(stopAt?.(x,z))return {x,z};const n=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.06));
+ const stand=(a,b)=>area==='city'?cityCanStand(nav,a,b):lobbyCanStand(a,b);
+ for(let i=0;i<n;i++){if(stand(x+dx/n,z))x+=dx/n;if(stand(x,z+dz/n))z+=dz/n;if(stopAt?.(x,z))break;}
  return {x,z};
 }
+
+export const lobbyCanStand=(a,b)=>Math.abs(a)<8.25&&Math.abs(b)<8.55&&!lobbyDecorBoxes.some(r=>a>r.minX-.15&&a<r.maxX+.15&&b>r.minZ-.15&&b<r.maxZ+.15)&&![-6,6].some(px=>[-7,7].some(pz=>Math.abs(a-px)<.42&&Math.abs(b-pz)<.42));

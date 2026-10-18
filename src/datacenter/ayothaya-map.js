@@ -1,6 +1,6 @@
 import {EAST_GATE,CAPITAL_GATE,CAPITAL_ROOMS} from './sirin-navigation.js';
 import {TEMPLE_GATE,AREA_NAMES} from './ayothaya-navigation.js';
-export function ayothayaMap(area='city'){
+export function ayothayaMap(area='city',boxes=[]){
  const size=320;
  const point=(x,z)=>area==='city'?{x:(x+40)*4,y:(z+40)*4}:area==='capital'?{x:160+x*.8,y:160+z*.8}:area==='lobby'?{x:160+x*15,y:160+z*15}:area==='museum'?{x:160+(x+26)*8,y:160+z*10}:{x:160+x*14,y:160+z*12};
  const marker='<g id="campusMapPlayer" visibility="hidden"><circle r="5" fill="#ffb46b" stroke="#fff" stroke-width="2"/><path d="M0-14 5-6-5-6Z" fill="#ffb46b"/></g>';
@@ -16,5 +16,7 @@ export function ayothayaMap(area='city'){
  }else if(area==='lobby'){
   content='<rect x="28" y="32" width="264" height="264" rx="8" fill="#39454b" stroke="#bc9e62"/><path d="M50 160H270 M160 160V278" stroke="#cbb36f" stroke-width="4"/><text x="36" y="148" fill="#84d8e5" font-size="12">Library</text><text x="218" y="148" fill="#edc384" font-size="12">Datacenter</text><text x="160" y="285" text-anchor="middle" fill="#fff" font-size="12">ออกสู่เมือง</text>';
  }else content='<rect x="28" y="35" width="264" height="260" rx="8" fill="#344951" stroke="#91afb7"/><text x="160" y="282" text-anchor="middle" fill="#e8c582" font-size="13">ประตูออก → โถงกลาง</text>';
- return {point,zone:()=>area,svg:`<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="แผนที่ ${AREA_NAMES[area]}"><rect width="320" height="320" fill="#20333c"/>${content}${title}${marker}</svg>`};
+ for(const b of boxes){const a=point(b.minX,b.minZ),c=point(b.maxX,b.maxZ);const x=Math.max(0,a.x),y=Math.max(30,a.y),w=Math.min(320,c.x)-x,h=Math.min(320,c.y)-y;if(w>0&&h>0)content+=`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#77928d" stroke="#c7d5c1" stroke-width=".3"/>`;}
+ const unpoint=(x,y)=>area==='city'?{x:x/4-40,z:y/4-40}:area==='capital'?{x:(x-160)/.8,z:(y-160)/.8}:area==='lobby'?{x:(x-160)/15,z:(y-160)/15}:area==='museum'?{x:(x-160)/8-26,z:(y-160)/10}:{x:(x-160)/14,z:(y-160)/12};
+ return {point,unpoint,zone:()=>area,svg:`<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="แผนที่ ${AREA_NAMES[area]}"><rect width="320" height="320" fill="#20333c"/>${content}${title}${marker}</svg>`};
 }

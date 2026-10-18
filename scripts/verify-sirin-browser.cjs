@@ -3,7 +3,7 @@ const output='artifacts/sirin-qa';fs.mkdirSync(output,{recursive:true});
 (async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});try{
  const p=await browser.newPage({viewport:{width:1440,height:960}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
  await p.goto((process.env.UTS_TEST_URL||'http://127.0.0.1:8080/')+'?debug=ayothaya');await p.waitForFunction(()=>window.__UTS_WORLD__,null,{timeout:90000});
- const pose=async(area,position,yaw)=>{await p.evaluate(async({area,position,yaw})=>{const w=window.__UTS_WORLD__;await w.visitCampus(area,true);let s=w.snapshot(),v=area==='museum'||area==='datacenter'?s.interior:s.world;v.position=position;v.rotation=[0,yaw,0,'YXZ'];await w.restore(s);w.focusWalkInput();},{area,position,yaw});};
+ const pose=async(area,position,yaw)=>{await p.keyboard.up('Shift');await p.evaluate(async({area,position,yaw})=>{const w=window.__UTS_WORLD__;await w.visitCampus(area,true);let s=w.snapshot(),v=area==='museum'||area==='datacenter'?s.interior:s.world;v.position=position;v.rotation=[0,yaw,0,'YXZ'];await w.restore(s);w.focusWalkInput();},{area,position,yaw});if(process.env.UTS_SPRINT_TEST==='20'){await p.evaluate(()=>window.__UTS_WORLD__.sprintSpeed(20));await p.keyboard.down('Shift');}};
  const waitArea=async area=>{await p.waitForFunction(area=>window.__UTS_WORLD__.currentArea()===area&&document.querySelector('.ayothaya-fade').hidden,area,{timeout:90000});await p.keyboard.up('KeyW');};
  await pose('city',[25.5,1,-4],-Math.PI/2);await p.screenshot({path:output+'/ayothaya-east-gate.png'});
  assert.equal(await p.evaluate(()=>window.__UTS_WORLD__.visualStats().world.capitalLoaded),false,'capital is lazy');

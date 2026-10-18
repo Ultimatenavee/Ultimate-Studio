@@ -1,15 +1,16 @@
+import {createWalkTools} from './walk-tools.js';
 import {EAST_RETURN} from './sirin-navigation.js';
 import {createWardrobe,savedAppearance} from './ayothaya-wardrobe.js';
 import {WALK_EYE} from './ayothaya-navigation.js';
 import {createScene as createInterior} from './scene.js';
 import {createAyothayaWorld} from './ayothaya-world.js';
-import {AREA_NAMES,createPortalLatch} from './ayothaya-navigation.js';
+import {AREA_NAMES,createPortalLatch,portalAt} from './ayothaya-navigation.js';
 import {ayothayaMap} from './ayothaya-map.js';
 
 // Keeps the existing rack editor and device museum intact behind room portals.
 export async function createScene(host,opts){
  let roomOrigin='lobby';
- let area='city',world,interior,disposed=false,ready=false,timeOfDay='day',perspective='first',sitting=false,wardrobe;
+ let area='city',world,interior,disposed=false,ready=false,timeOfDay='day',perspective='first',sitting=false,wardrobe,walkTools;
  try{timeOfDay=localStorage.getItem('uts-ayothaya-sky')==='night'?'night':'day';}catch{}
 
  const gate=createPortalLatch(),isIndoor=()=>area==='museum'||area==='datacenter';
@@ -35,6 +36,7 @@ export async function createScene(host,opts){
  function setPerspective(value,{start=false}={}){perspective=value==='third'?'third':'first';world?.perspective(perspective);interior?.perspective(perspective);cameraModes.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.perspective===perspective)));if(start&&!current().isWalking())current().walk(true);host.dataset.perspective=perspective;const label=document.getElementById('walkViewLabel');if(label)label.textContent=perspective==='third'?'THIRD PERSON':'FIRST PERSON';sitButton.hidden=!current().isWalking();}
  const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  function announce(){
+  walkTools?.refresh();
   opts.onMuseumZone?.(area==='museum'?'library':area==='datacenter'?'datacenter':'outdoor');
   sitButton.hidden=!(isIndoor()?interior:world)?.isWalking();opts.onArea?.(area);place.querySelector('b').textContent=AREA_NAMES[area];
   place.querySelector('span').textContent=area==='city'?'วัดใหญ่ → โถงกลาง · ฝั่งขวา → มหานครศิริน':area==='capital'?'ประตูตะวันตก → อโยธยา · วาร์ปหน้าอาคาร → Library / Datacenter':area==='lobby'?'ซ้าย Device Library · ขวา Datacenter · ด้านหลังออกเมือง':(roomOrigin==='capital'?'เดินเข้าประตู EXIT เพื่อกลับมหานครศิริน':'เดินเข้าประตู EXIT เพื่อกลับโถงกลาง');
@@ -76,23 +78,23 @@ export async function createScene(host,opts){
   }
  }
  const onStep=(dt,map,x,z)=>{const next=gate.tick(dt,map,x,z,true);if(next)void warp(isIndoor()&&next==='lobby'?roomOrigin:next);};
- const interiorOpts={...opts,indoorOnly:true,eyeHeight:WALK_EYE.interior};
+ const interiorOpts={...opts,indoorOnly:true,eyeHeight:WALK_EYE.interior,stopAtPortal:(x,z)=>isIndoor()&&!!portalAt(area,x,z)};
  // Inactive renderers never update UI or consume input in the other map.
  for(const [key,value]of Object.entries(opts))if(key.startsWith('on')&&typeof value==='function'&&!['onAssets','onMuseumReady'].includes(key))interiorOpts[key]=(...args)=>{if(isIndoor())return value(...args);};
- const indoorWalk=interiorOpts.onWalk;interiorOpts.onWalk=value=>{if(isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;indoorWalk?.(value);}};
- interiorOpts.onPosition=(x,z,yaw)=>{if(!isIndoor())return;opts.onPosition?.(x,z,yaw);onStep(.12,area,x,z);};
+ const indoorWalk=interiorOpts.onWalk;interiorOpts.onWalk=value=>{if(isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;indoorWalk?.(value);walkTools?.refresh();}};
+ interiorOpts.onPosition=(x,z,yaw)=>{if(!isIndoor())return;opts.onPosition?.(x,z,yaw);walkTools?.position(x,z,yaw);onStep(.12,area,x,z);};
  try{
   world=await createAyothayaWorld(outdoorHost,{
    motion:opts.motion,blocked:()=>gate.busy,onProgress:p=>opts.onHint?.(p===null?'กำลังโหลดเมืองอโยธยา…':`กำลังโหลดเมืองอโยธยา ${p}%`),onStep,
-   onWalk:value=>{if(!isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;opts.onWalk?.(value);}},onArea:()=>{if(ready&&!isIndoor())announce();},
-   onPosition:(x,z,yaw)=>{if(!isIndoor())opts.onPosition?.(x,z,yaw);},onPerformance:p=>{if(!isIndoor())opts.onPerformance?.(p);}
+   onWalk:value=>{if(!isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;opts.onWalk?.(value);walkTools?.refresh();}},onArea:()=>{if(ready&&!isIndoor())announce();},
+   onPosition:(x,z,yaw)=>{if(!isIndoor()){opts.onPosition?.(x,z,yaw);walkTools?.position(x,z,yaw);}},onPerformance:p=>{if(!isIndoor())opts.onPerformance?.(p);}
   });
   interior=await createInterior(indoorHost,interiorOpts);interior.setActive(false);await interior.ensureMuseum();interior.interiorRoom('datacenter');
  }catch(error){world?.dispose();interior?.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();throw error;}
  const current=()=>isIndoor()?interior:world;
  const api=new Proxy({
-  sprint(value){current().sprint(value);},jump(){if(gate.busy||!current().isWalking())return false;if(sitting)setSit(false);return current().jump();},sit(value){if(current().isWalking())setSit(value);},touch(f,s){if((f||s)&&sitting)setSit(false);current().touch(f,s);},
-  async appearance(base){await Promise.all([world.appearance(base),interior.appearance(base)]);},perspective:(value)=>setPerspective(value),timeOfDay:setTime,visualStats:()=>({timeOfDay,perspective,sitting,world:world.visualStats(),interior:interior.visualStats()}),currentArea:()=>area,mapView:()=>ayothayaMap(area),
+  sprintSpeed(value){world.sprintSpeed(value);return interior.sprintSpeed(value);},teleport(x,z){if(gate.busy||!current().isWalking())return null;setSit(false);const p=current().teleport(x,z);if(p){gate.finish();opts.onWalk?.(true);walkTools?.refresh();current().focusWalkInput();}return p;},sprint(value){current().sprint(value);},jump(){if(gate.busy||!current().isWalking())return false;if(sitting)setSit(false);return current().jump();},sit(value){if(current().isWalking())setSit(value);},touch(f,s){if((f||s)&&sitting)setSit(false);current().touch(f,s);},
+  async appearance(base){await Promise.all([world.appearance(base),interior.appearance(base)]);},perspective:(value)=>setPerspective(value),timeOfDay:setTime,visualStats:()=>({timeOfDay,perspective,sitting,world:world.visualStats(),interior:interior.visualStats()}),currentArea:()=>area,mapView:()=>ayothayaMap(area,current().mapObstacles?.()),
   async visitCampus(id,walking=false){if(gate.busy)return false;const next=({campus:'city',garden:'city',temple:'lobby'})[id]||id;if(!AREA_NAMES[next])return false;if(next==='capital'&&!world.visualStats().capitalLoaded)return warp(next,walking);await travel(next,walking);return true;},
   visitTemple:()=>gate.busy?false:travel('lobby',true),visitZone:(id,walking=true)=>gate.busy?false:travel(id==='datacenter'?'datacenter':'museum',walking,id),
   async focusExhibit(id){if(area!=='museum')await travel('museum',true);return interior.focusExhibit(id);},
@@ -110,8 +112,9 @@ export async function createScene(host,opts){
   stopPresentation(){world.stopPresentation();interior.stopPresentation();opts.onRotate?.(false);},interruptPresentation(){world.interruptPresentation();interior.interruptPresentation();},
   snapshot:()=>({ayothaya:true,area,roomOrigin,timeOfDay,perspective,sitting,world:world.snapshot(),interior:interior.snapshot()}),
   async restore(v){if(!v)return;setSit(false);if(!v.ayothaya){activateInterior('datacenter');await interior.restore(v);return;}if(v.timeOfDay)setTime(v.timeOfDay);setPerspective(v.perspective||'first');roomOrigin=v.roomOrigin==='capital'?'capital':'lobby';area=v.area;interior.interiorRoom(area==='museum'?'museum':'datacenter');await interior.restore(v.interior);await world.restore(v.world);if(v.sitting&&current().isWalking())setSit(true);visibility();announce();opts.onWalk?.(current().isWalking());},
-  dispose(){if(disposed)return;disposed=true;wardrobe?.dispose();world.dispose();interior.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();},
+  dispose(){if(disposed)return;disposed=true;walkTools?.dispose();wardrobe?.dispose();world.dispose();interior.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();},
  },{get(target,key){if(key in target)return target[key];const navigation=['zoom','touch','crouch','focusWalkInput'];const owner=navigation.includes(key)?current():interior;const value=owner[key];return typeof value==='function'?value.bind(owner):value;}});
+ walkTools=createWalkTools({host,getScene:()=>api});
  wardrobe=createWardrobe(host,{apply:async base=>{await api.appearance(base);setPerspective('third',{start:true});},pause:()=>api.pauseWalkInput()});
  const saved=savedAppearance();if(saved?.base)try{if(saved.base.startsWith('ro-outfit:'))await api.appearance(saved.base);else{const metadata=await fetch(saved.base+'.json').then(r=>r.json());if(metadata.version!==4&&saved.appearance){const response=await fetch('/api/ayothaya/wardrobe/render',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(saved.appearance)});if(!response.ok)throw Error('Outfit migration failed');const updated=await response.json();await api.appearance(updated.base);try{localStorage.setItem('uts-ayothaya-appearance',JSON.stringify(updated));}catch{}}else await api.appearance(saved.base);}}catch{opts.onHint?.('โหลดชุดที่บันทึกไว้ไม่ได้ ใช้ Novice ชั่วคราว');}
  ready=true;setTime(timeOfDay);setPerspective(perspective);visibility();announce();opts.onHint?.('เดินเข้าประตูวัดใหญ่เพื่อเข้าสู่ Device Library และ Datacenter');return api;

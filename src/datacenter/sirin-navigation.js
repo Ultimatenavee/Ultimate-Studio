@@ -17,8 +17,8 @@ export function capitalCanStand(nav,x,z,r=.25){
  const [x0,x1,z0,z1]=nav.bounds;
  return x>x0+r&&x<x1-r&&z>z0+r&&z<z1-r&&!nav.colliders.some(b=>x>b[0]-r&&x<b[1]+r&&z>b[2]-r&&z<b[3]+r);
 }
-export function capitalStep(nav,position,dx,dz){
- let {x,z}=position;const n=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.1));
- for(let i=0;i<n;i++){if(capitalCanStand(nav,x+dx/n,z))x+=dx/n;if(capitalCanStand(nav,x,z+dz/n))z+=dz/n;}
+export function capitalStep(nav,position,dx,dz,stopAt){
+ let {x,z}=position;if(stopAt?.(x,z))return {x,z};const n=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.1));
+ for(let i=0;i<n;i++){if(capitalCanStand(nav,x+dx/n,z))x+=dx/n;if(capitalCanStand(nav,x,z+dz/n))z+=dz/n;if(stopAt?.(x,z))break;}
  return {x,z};
 }

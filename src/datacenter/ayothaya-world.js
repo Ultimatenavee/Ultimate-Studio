@@ -1,4 +1,4 @@
-import {EAST_GATE,EAST_RETURN,CAPITAL_GATE,CAPITAL_SPAWN,CAPITAL_ROOMS,CAPITAL_RETURNS,capitalStep} from './sirin-navigation.js';
+import {EAST_GATE,EAST_RETURN,CAPITAL_GATE,CAPITAL_SPAWN,CAPITAL_ROOMS,CAPITAL_RETURNS,capitalStep,capitalCanStand} from './sirin-navigation.js';
 import {createTempleLanterns} from './ayothaya-selected-lights.js';
 import {createRagnarokAvatar} from './ayothaya-avatar.js';
 import {normalizeAyothayaBuildings} from './ayothaya-materials.js';
@@ -10,10 +10,10 @@ import {frameBounds,frameCityCover} from './ayothaya-camera.js';
 import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import {movement} from './navigation.js';
+import {movement,sprintMultiplier,nearestWalkPoint} from './navigation.js';
 import {panOverview} from './overview-camera.js';
 import {createJump} from './jump.js';
-import {CITY_SCALE,CITY_SPAWN,CITY_RETURN,TEMPLE_GATE,LOBBY_SPAWN,LOBBY_RETURNS,decodeNavigation,gridSample,worldStep} from './ayothaya-navigation.js';
+import {CITY_SCALE,CITY_SPAWN,CITY_RETURN,TEMPLE_GATE,LOBBY_SPAWN,LOBBY_RETURNS,decodeNavigation,gridSample,worldStep,cityCanStand,lobbyCanStand,portalAt} from './ayothaya-navigation.js';
 
 // The world is a view/controller; navigation and portal decisions live in pure modules.
 export async function createAyothayaWorld(host,opts){
@@ -30,7 +30,7 @@ export async function createAyothayaWorld(host,opts){
  const sky=createAyothayaSky(city),capitalSky=createAyothayaSky(capital),cityMaterials=new Map();let timeOfDay='day',decor,avatar,buildingColors,lanterns;let openingCover=false;
  const cameraBlockers=()=>{const list=[];(area==='city'?city:area==='capital'?capital:lobby).traverseVisible(o=>{if(o.isMesh&&!o.isSprite&&!o.userData.cameraIgnore&&o.material?.side!==T.BackSide)list.push(o);});return list;};
  let ro=null,active=false,area='city',walking=false,disposed=false,dirty=true,rotate=false,motion=opts.motion!==false,speed=1,quality='balanced',frame=0,previous=0,perfAt=0,frames=0,drag=null,crouching=false,sitting=false,positionAt=0;
- let touchSprint=false;const keys=new Set(),touch={forward:0,strafe:0},jump=createJump(),saved=new Map();
+ let touchSprint=false,runMultiplier=3;const keys=new Set(),touch={forward:0,strafe:0},jump=createJump(),saved=new Map();
  const abort=new AbortController(),on=(target,event,fn,config={})=>target.addEventListener(event,fn,{...config,signal:abort.signal});
  const allocations=new Set();
  function mesh(geometry,material,x,y,z,parent=lobby){const o=new T.Mesh(geometry,material);o.position.set(x,y,z);parent.add(o);return o;}
@@ -159,7 +159,7 @@ export async function createAyothayaWorld(host,opts){
  function tick(t){if(disposed)return;frame=requestAnimationFrame(tick);const dt=previous?Math.min((t-previous)/1000,.05):0;previous=t;if(!active||document.hidden)return;
   if(!blocked()){
    if(walking){const f=(keys.has('KeyW')||keys.has('ArrowUp')?1:0)-(keys.has('KeyS')||keys.has('ArrowDown')?1:0)+touch.forward,s=(keys.has('KeyD')||keys.has('ArrowRight')?1:0)-(keys.has('KeyA')||keys.has('ArrowLeft')?1:0)+touch.strafe;
-    const {dx,dz}=movement(f,s,camera.rotation.y,dt,touchSprint||keys.has('ShiftLeft')||keys.has('ShiftRight')),p=area==='capital'?capitalStep(capitalNav,camera.position,dx*speed,dz*speed):worldStep(area,nav,camera.position,dx*speed,dz*speed);camera.position.x=p.x;camera.position.z=p.z;
+    const {dx,dz}=movement(f,s,camera.rotation.y,dt,touchSprint||keys.has('ShiftLeft')||keys.has('ShiftRight'),runMultiplier),stopAt=(x,z)=>!!portalAt(area,x,z),p=area==='capital'?capitalStep(capitalNav,camera.position,dx*speed,dz*speed,stopAt):worldStep(area,nav,camera.position,dx*speed,dz*speed,stopAt);camera.position.x=p.x;camera.position.z=p.z;
     const h=ground(p.x,p.z)+(sitting?WALK_EYE[area]*.55:crouching||keys.has('ControlLeft')||keys.has('ControlRight')?WALK_EYE[area]*.65:WALK_EYE[area])+jump.step(dt,area==='lobby'?2.5:50)*(area==='city'?.55:1);if(dx||dz||Math.abs(camera.position.y-h)>.001)dirty=true;camera.position.y=h;
     opts.onStep?.(dt,area,p.x,p.z);if(t-positionAt>120){positionAt=t;opts.onPosition?.(p.x,p.z,camera.rotation.y);}
    }else{const f=(keys.has('KeyW')||keys.has('ArrowUp')?1:0)-(keys.has('KeyS')||keys.has('ArrowDown')?1:0),s=(keys.has('KeyD')||keys.has('ArrowRight')?1:0)-(keys.has('KeyA')||keys.has('ArrowLeft')?1:0);if(panOverview(camera,orbit.target,f,s,dt,touchSprint||keys.has('ShiftLeft')||keys.has('ShiftRight'),area==='capital'?{minX:-178,maxX:178,minZ:-178,maxZ:178}:undefined)){orbit.update();dirty=true;}else if(rotate&&motion){const delta=camera.position.clone().sub(orbit.target).applyAxisAngle(new T.Vector3(0,1,0),dt*.08);camera.position.copy(orbit.target).add(delta);orbit.update();dirty=true;}}
@@ -169,7 +169,11 @@ export async function createAyothayaWorld(host,opts){
  }
  function dispose(){if(disposed)return;disposed=true;cancelAnimationFrame(frame);abort.abort();ro?.disconnect();orbit.dispose();avatar?.dispose();lanterns?.dispose();decor?.dispose();const gs=new Set(),ms=new Set(),ts=new Set(allocations);scene.traverse(o=>{if(o.isInstancedMesh)o.dispose();if(o.geometry)gs.add(o.geometry);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){ms.add(m);for(const v of Object.values(m))if(v?.isTexture)ts.add(v);}});gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose());ts.forEach(t=>t.dispose());renderer.dispose();renderer.forceContextLoss();canvas.remove();}
  frame=requestAnimationFrame(tick);show('city',{walk:false});openingCover=true;resize(true);
- return {sprint(v){touchSprint=!!v;},jump(){if(!walking||blocked()||document.querySelector('dialog[open]'))return false;jump.trigger();dirty=true;return true;},sit(v){sitting=!!v;stopInput();jump.reset();dirty=true;},openingView(){overview();openingCover=true;resize(true);},async appearance(base){await avatar?.appearance(base);dirty=true;},perspective(value){avatar?.setMode(value);dirty=true;},timeOfDay:setTime,visualStats:()=>({timeOfDay,eyeHeight:WALK_EYE[area],decor:decor?.stats(),avatar:avatar?.stats(),lanterns:lanterns?.stats(),buildingColors,capitalLoaded}),prepare,show,overview,walk:setWalk,isWalking:()=>walking,focusWalkInput:focus,pauseWalkInput:stopInput,renderReady:render,
+ return {mapObstacles:()=>area==='capital'?(capitalNav?.colliders||[]).map(b=>({minX:b[0],maxX:b[1],minZ:b[2],maxZ:b[3]})):[],sprintSpeed(v){if(v!==undefined)runMultiplier=sprintMultiplier(v);return runMultiplier;},teleport(x,z){
+ if(!walking||blocked()||document.querySelector('dialog[open]'))return null;
+ const stand=(a,b)=>!portalAt(area,a,b)&&(area==='capital'?capitalCanStand(capitalNav,a,b):area==='city'?cityCanStand(nav,a,b):lobbyCanStand(a,b));
+ const p=nearestWalkPoint(x,z,stand);if(!p)return null;stopInput();jump.reset();camera.position.set(p.x,ground(p.x,p.z)+WALK_EYE[area],p.z);dirty=true;opts.onPosition?.(p.x,p.z,camera.rotation.y);return p;
+ },sprint(v){touchSprint=!!v;},jump(){if(!walking||blocked()||document.querySelector('dialog[open]'))return false;jump.trigger();dirty=true;return true;},sit(v){sitting=!!v;stopInput();jump.reset();dirty=true;},openingView(){overview();openingCover=true;resize(true);},async appearance(base){await avatar?.appearance(base);dirty=true;},perspective(value){avatar?.setMode(value);dirty=true;},timeOfDay:setTime,visualStats:()=>({timeOfDay,eyeHeight:WALK_EYE[area],decor:decor?.stats(),avatar:avatar?.stats(),lanterns:lanterns?.stats(),buildingColors,capitalLoaded}),prepare,show,overview,walk:setWalk,isWalking:()=>walking,focusWalkInput:focus,pauseWalkInput:stopInput,renderReady:render,
   setActive(v){active=v;orbit.enabled=v&&!walking;stopInput();resize();dirty=true;},
   zoom,
   touch(f,s){touch.forward=f;touch.strafe=s;},crouch(v){crouching=v;},speed(v){speed=T.MathUtils.clamp(Number(v)||1,.5,2);},motion(v){motion=v;},
