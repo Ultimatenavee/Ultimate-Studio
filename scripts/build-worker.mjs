@@ -1,5 +1,6 @@
 import './build-datacenter.mjs';
 import './split-ayothaya-gltf.mjs';
+import {CITY_LANTERNS,CITY_STRINGS,INDOOR_CHANDELIERS} from '../src/datacenter/ayothaya-decor-layout.js';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -12,6 +13,12 @@ for(const entry of await fs.readdir(web,{withFileTypes:true})){if(['client','ser
 // The original GLB remains a development source; hosted clients use its exact
 // data repacked into bounded glTF buffers.
 await fs.unlink(path.join(client,'assets/ayothaya/ayothaya.glb'));
+// The full selection catalogue remains available. Ship all in-use fixtures;
+// optional catalogue-only models are immutable public repository assets.
+const lightDirectory=path.join(client,'assets/ayothaya/light-catalog'),includedModels=[...new Set([...CITY_LANTERNS,...CITY_STRINGS,...Object.values(INDOOR_CHANDELIERS).flat()].map(p=>p.id).filter(id=>/^L\d{3}$/.test(id)))];
+const lightCatalog=JSON.parse(await fs.readFile(path.join(lightDirectory,'catalog.json'),'utf8'));lightCatalog.includedModels=includedModels;lightCatalog.modelArchive='https://raw.githubusercontent.com/Ultimatenavee/Ultimate-Studio/aa9d265dd844150ad04fd41f92c2e1491dded0df/web/assets/ayothaya/light-catalog/';
+await fs.writeFile(path.join(lightDirectory,'catalog.json'),JSON.stringify(lightCatalog));
+for(const name of await fs.readdir(lightDirectory))if(name.endsWith('.glb')&&!includedModels.includes(name.slice(0,-4)))await fs.unlink(path.join(lightDirectory,name));
 const ctx=vm.createContext({window:{}});vm.runInContext(await fs.readFile(path.join(web,'catalog.js'),'utf8'),ctx);vm.runInContext(await fs.readFile(path.join(web,'audience.js'),'utf8'),ctx);
 const models=Object.fromEntries(ctx.window.NOAH_CATALOG.map(m=>[m.id,{powerSlots:m.powerSlots,powerModes:m.powerModes,allowsMixedPower:!!m.allowsMixedPower,topologyOnly:!!m.topologyOnly,id:m.id,brand:m.brand,ports:m.ports}]));
 await fs.writeFile(path.join(root,'server/models.mjs'),'export default '+JSON.stringify(models)+';\n');
