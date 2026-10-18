@@ -95,4 +95,12 @@ await check('ODF and AC/DC Templates retain accessory identities for independent
 await check('Long project names persist in shared templates without truncation',async()=>{
  const p={...project,name:'โครงข่าย Service Provider / '.repeat(50)},id=crypto.randomUUID();assert.equal((await worker.fetch(request('','POST',{id,name:'Long project title',project:p}),env)).status,201);assert.equal((await (await worker.fetch(request('/'+id),env)).json()).project.name,p.name);
 });
+await check('GitHub Pages CORS permits the published frontend and preserves revision validation',async()=>{
+ const origin='https://ultimatenavee.github.io',headers={Origin:origin};
+ const preflight=await worker.fetch(request('','OPTIONS',null,headers),env);assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),origin);assert(preflight.headers.get('Access-Control-Allow-Methods').includes('PUT'));
+ const fresh={id:crypto.randomUUID(),name:'Pages shared template',project};const created=await worker.fetch(request('','POST',fresh,headers),env);assert.equal(created.status,201);assert.equal(created.headers.get('Access-Control-Allow-Origin'),origin);
+ const current=await(await worker.fetch(request('/'+fresh.id,'GET',null,headers),env)).json();const edited=await worker.fetch(request('/'+fresh.id,'PUT',{...current,name:'Pages edited'},headers),env);assert.equal(edited.status,200);
+ const denied=await worker.fetch(request('','POST',fresh,{Origin:'https://ultimatenavee.github.io.evil.test'}),env);assert.equal(denied.status,403);assert.equal(denied.headers.get('Access-Control-Allow-Origin'),null);
+ assert.equal((await worker.fetch(request('','OPTIONS',null,{Origin:'https://unrelated.example'}),env)).status,403);
+});
 console.log('Verified '+count+' API behavior groups against real SQLite migrations.');database.close();

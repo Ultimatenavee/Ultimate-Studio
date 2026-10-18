@@ -3,7 +3,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 
 // Independent from sculpture construction: lazy assets, distance/quality choice,
 // and ownership of late asynchronous results. No traffic or engineering data.
-const URLS=Object.freeze({walking:'/assets/sculpt/buddha-walking.glb?v=108',detail:'/assets/sculpt/buddha-detail.glb?v=108'});
+const URLS=Object.freeze({walking:'assets/sculpt/buddha-walking.glb?v=108',detail:'assets/sculpt/buddha-detail.glb?v=108'});
 const defaultLoad=url=>new GLTFLoader().loadAsync(url);
 export function createBuddhaAssets({parent,fallback,load=defaultLoad}){
  let disposed=false,quality='balanced',near=false,dirty=false,active=null;

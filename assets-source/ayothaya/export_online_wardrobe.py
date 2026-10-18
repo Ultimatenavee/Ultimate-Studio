@@ -52,10 +52,10 @@ palettes={}
 for x in db['palettes']:
     try:palettes[x['id']]=base64.b64encode(archive.read(x['source'])).decode('ascii')
     except KeyError:pass
-for k in ['bodies','heads','headgear','weapons','shields','palettes']:
+for k in ['bodies','heads','headgear','robes','weapons','shields','palettes']:
     for i,x in enumerate(db[k]):
         x.update(ui['items'].get(x['id'],{}))
-        x.setdefault('label',x['name'])
+        x.setdefault('label',x.get('name') or x['id'])
         if any('\uac00'<=c<='\ud7af' or c=='\ufffd' for c in x['label']):x['label']='Item '+str(i+1).zfill(4)
 db['classes']=ui['classes'];db['assets']=assets;db['paletteData']=palettes
 (out/'catalog.jsonz').write_bytes(zlib.compress(json.dumps(db,ensure_ascii=False,separators=(',',':')).encode('utf8'),9))

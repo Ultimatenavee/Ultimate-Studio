@@ -6,7 +6,7 @@ const id=v=>typeof v==='string'&&/^[\da-f]{8}-[\da-f-]{27}$/i.test(v);
 const text=(v,max)=>typeof v==='string'&&v.trim()&&v.trim().length<=max;
 const meta=v=>({tags:Array.isArray(v?.tags)?v.tags.slice(0,12).filter(t=>typeof t==='string'&&t.length<=40):[],favorite:v?.favorite===true});
 function validateInput(project){try{return validateProject(project,models);}catch(e){e.isValidation=true;throw e;}}
-export default {async fetch(request,env){
+async function handle(request,env){
  const url=new URL(request.url);if(decodeURIComponent(url.pathname).toLowerCase().endsWith('.pptx'))return new Response('Not found',{status:404,headers:{'Cache-Control':'no-store'}});if(!url.pathname.startsWith('/api/'))return env.ASSETS.fetch(request);
  const match=url.pathname.match(/^\/api\/(templates|reviews)(?:\/([\w-]{1,64}))?(?:\/(comments)(?:\/([\w-]{1,64}))?)?$/);if(!match)return json({error:'ไม่พบรายการ'},404);
  if(!env.DB)return json({error:'ข้อมูลในเว็บไซต์ยังไม่พร้อมใช้งาน กรุณาลองใหม่'},503);
@@ -14,7 +14,7 @@ export default {async fetch(request,env){
  const first=(sql,...args)=>db.prepare(sql).bind(...args).first();const run=(sql,...args)=>db.prepare(sql).bind(...args).run();const all=async(sql,...args)=>(await db.prepare(sql).bind(...args).all()).results;
  try{
   if(request.method!=='GET'){
-   if(request.headers.get('Origin')&&request.headers.get('Origin')!==url.origin)return json({error:'บันทึกจากเว็บไซต์นี้เท่านั้น'},403);
+   if(request.headers.get('Origin')&&request.headers.get('Origin')!==url.origin&&request.headers.get('Origin')!==PAGES_ORIGIN)return json({error:'บันทึกจากเว็บไซต์นี้เท่านั้น'},403);
    if(!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json'))return json({error:'ส่งข้อมูล JSON เท่านั้น'},415);
   }
   if(kind==='reviews'){
@@ -42,4 +42,13 @@ export default {async fetch(request,env){
   const previous=await first('SELECT * FROM topology_templates WHERE id=?',b.id);if(previous)return previous.name===name&&previous.project_json===projectJson?json({id:b.id}):json({error:'รหัส Template นี้มีข้อมูลอยู่แล้ว'},409);
   const result=await run('INSERT INTO topology_templates(id,name,project_json,device_count,link_count,created_at,metadata_json) SELECT ?,?,?,?,?,?,? WHERE (SELECT COUNT(*) FROM topology_templates)<500 ON CONFLICT(id) DO NOTHING',b.id,name,projectJson,p.devices.length,p.links.length,new Date().toISOString(),metadata);return result.meta?.changes?json({id:b.id},201):json({error:'Shared Templates เต็มหรือมีรายการซ้ำ'},409);
  }catch(e){if(e.isValidation||e instanceof SyntaxError||/ข้อมูล|Topology|Template|MB/.test(e.message))return json({error:e.message},422);console.error('Database operation failed',e?.name);return json({error:'เปิดหรือบันทึกข้อมูลไม่ได้ ข้อมูลบน Canvas ยังอยู่ กรุณาลองใหม่'},503);}
+}
+
+// Allow only this owner's GitHub Pages frontend to use the existing public API.
+const PAGES_ORIGIN='https://ultimatenavee.github.io';
+export default {async fetch(request,env){
+ const api=new URL(request.url).pathname.startsWith('/api/'),allowed=api&&request.headers.get('Origin')===PAGES_ORIGIN;
+ if(api&&request.method==='OPTIONS')return new Response(null,{status:allowed?204:403,headers:allowed?{'Access-Control-Allow-Origin':PAGES_ORIGIN,'Access-Control-Allow-Methods':'GET, POST, PUT, PATCH, DELETE, OPTIONS','Access-Control-Allow-Headers':'Content-Type','Vary':'Origin'}:{}});
+ const response=await handle(request,env);if(!allowed)return response;
+ const headers=new Headers(response.headers);headers.set('Access-Control-Allow-Origin',PAGES_ORIGIN);headers.append('Vary','Origin');return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
 }};
