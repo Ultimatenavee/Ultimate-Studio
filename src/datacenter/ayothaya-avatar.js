@@ -12,7 +12,7 @@ export async function createRagnarokAvatar(scene,{blockers=()=>[]}={}){
  let mode='first',initialized=false,heading=0,lastTime=0,elapsed=0,frame=0,action=4,moving=false,distance=0,zoomScale=1,renderCamera=null,appearanceBase='assets/ayothaya/avatar/novice',loadRevision=0,disposed=false;
  async function appearance(base){
   if(base===appearanceBase)return;const revision=++loadRevision;
-  const [nextMeta,nextMap]=await Promise.all([fetch(base+'.json').then(r=>{if(!r.ok)throw Error('โหลดข้อมูลชุดไม่สำเร็จ');return r.json();}),new T.TextureLoader().loadAsync(base+'.png')]);
+  const online=base.startsWith('ro-outfit:')?await (await import('./online-wardrobe.js')).onlineOutfitAssets(base):null;const [nextMeta,nextMap]=await Promise.all([online?online.meta:fetch(base+'.json').then(r=>{if(!r.ok)throw Error('โหลดข้อมูลชุดไม่สำเร็จ');return r.json();}),new T.TextureLoader().loadAsync(online?.url||base+'.png')]);
   if(disposed||revision!==loadRevision){nextMap.dispose();return;}
   nextMap.colorSpace=T.SRGBColorSpace;nextMap.generateMipmaps=false;nextMap.minFilter=nextMap.magFilter=T.NearestFilter;nextMap.repeat.set(1/nextMeta.columns,1/nextMeta.rows);
   map.dispose();map=nextMap;meta=nextMeta;material.map=map;material.needsUpdate=true;avatar.center.set(...(meta.anchor||[.5,2/meta.height]));appearanceBase=base;elapsed=0;

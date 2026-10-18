@@ -2,6 +2,10 @@
 
 ## Local Ayothaya campus
 
+เวอร์ชันออนไลน์ใช้งานเมือง Hall และระบบแต่งตัวได้โดยไม่ต้องติดตั้ง Ragnarok หรือ Python ที่เครื่องผู้เข้าชม สไปรต์และท่าทางที่เตรียมไว้จะโหลดจากเว็บเฉพาะชิ้นที่เลือก แล้วประกอบชุดในเบราว์เซอร์ พร้อมท่าเดิน/นั่ง 8 ทิศทางและบันทึกชุดใน browser เดิม การเปิดผ่าน `npm run local` ยังรองรับตัวสร้างชุดในเครื่องสำหรับงานพัฒนา
+
+ตรวจเวอร์ชันออนไลน์ด้วย static server ที่ไม่มี backend: เปิด `python -m http.server 8081 --bind 127.0.0.1 --directory web` แล้วรัน `node scripts/verify-online-wardrobe-data.mjs` และ `node scripts/verify-online-wardrobe.cjs` ตัวส่งออก assets สำหรับผู้พัฒนาอยู่ที่ `assets-source/ayothaya/export_online_wardrobe.py`; ผู้เข้าชมไม่ต้องเรียกใช้งานไฟล์นี้
+
 พื้นที่ภายนอกเปลี่ยนเป็นเมืองอโยธยา เดินเข้าวัดใหญ่เพื่อวาร์ปสู่โถงกลาง: ซ้าย Device Library ขวา Datacenter พร้อมทางออกกลับเมือง ระบบเดินและภาพรวมยังใช้งานได้ ดู [วิธีเปิดและรายละเอียดการเปลี่ยนแปลง](docs/AYOTHAYA.md)
 
 โปรแกรมออกแบบ Network Topology ด้วยภาพอุปกรณ์หลาย Brand โดยไม่มี CLI, Configuration หรือการจำลอง Routing Protocol
