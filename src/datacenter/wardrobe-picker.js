@@ -2,7 +2,13 @@
 // Text from local item tables is always assigned as text, never parsed as HTML.
 export function bindWardrobePickers(dialog,{fields,items,onSelect}){
  const q=s=>dialog.querySelector(s),job=q('[data-class-trigger]'),menu=q('[data-class-list]');
- let slot='upper',limit=120;
+ const scroll=q('.ro-item-scroll'),grid=q('[data-equipment-grid]'),sentinel=q('[data-autoload]'),abort=new AbortController();
+ let slot='upper',matching=[],rendered=0,signature='',pending=0,disposed=false;
+ function append(){const end=Math.min(rendered+120,matching.length);grid.append(...matching.slice(rendered,end).map(x=>imageButton(x,slot,fields[slot].value)));rendered=end;sentinel.textContent=`แสดง ${rendered.toLocaleString()} / ${matching.length.toLocaleString()} ชิ้น`;sentinel.hidden=!matching.length;queueMore();}
+ function queueMore(){if(pending||disposed||!dialog.open||rendered>=matching.length)return;pending=requestAnimationFrame(()=>{pending=0;if(!disposed&&dialog.open&&scroll.clientHeight>0&&scroll.scrollHeight-scroll.scrollTop-scroll.clientHeight<120)append();});}
+ scroll.addEventListener('scroll',queueMore,{passive:true,signal:abort.signal});
+ const observer=typeof IntersectionObserver==='undefined'?null:new IntersectionObserver(queueMore,{root:scroll,rootMargin:'0px 0px 120px 0px'});observer?.observe(sentinel);
+ const sizeObserver=typeof ResizeObserver==='undefined'?null:new ResizeObserver(queueMore);sizeObserver?.observe(scroll);
  const icon=(item,size=48)=>{const im=document.createElement('img');im.src=item.icon;im.alt='';im.width=im.height=size;im.loading='lazy';return im;};
  const label=item=>item?.label||'ไม่ใส่';
  function imageButton(item,key,selected){const b=document.createElement('button');b.type='button';b.dataset.item=item.id;b.title=label(item);b.setAttribute('aria-label',label(item));b.setAttribute('aria-pressed',String(item.id===selected));if(item.icon)b.append(icon(item));else b.textContent='◇';b.onclick=()=>onSelect(key,item.id);return b;}
@@ -16,13 +22,13 @@ export function bindWardrobePickers(dialog,{fields,items,onSelect}){
   dialog.querySelectorAll('[data-sex]').forEach(b=>b.setAttribute('aria-pressed',String(fields.sex.value===b.dataset.sex)));
  }
  function hair(){const grid=q('[data-hair-grid]');grid.replaceChildren(...items('head').filter(x=>x.icon).map(x=>imageButton(x,'head',fields.head.value)));q('[data-hair-caption]').textContent=`Hair Style · ${fields.sex.value==='female'?'หญิง':'ชาย'} · ${grid.children.length} แบบ`;}
- function equipment(){
+ function equipment(reset=false){
   dialog.querySelectorAll('[data-slot]').forEach(b=>{const key=b.dataset.slot,selected=items(key).find(x=>x.id===fields[key].value);b.setAttribute('aria-selected',String(key===slot));b.tabIndex=key===slot?0:-1;const picture=b.querySelector('span');picture.replaceChildren();if(selected?.icon)picture.append(icon(selected,38));else picture.textContent='⊘';b.title=label(selected);q(`[data-clear="${key}"]`).disabled=!selected;});
   const term=fields.search.value.trim().toLocaleLowerCase(),unknown=q('[data-unknown]').checked;
-  const matching=items(slot).filter(x=>x.icon&&(slot==='robe'||x.slots?.includes(slot)||unknown&&!x.slots?.length)&&(!term||`${x.label} ${x.itemId||''}`.toLocaleLowerCase().includes(term)));
-  q('[data-equipment-grid]').replaceChildren(...matching.slice(0,limit).map(x=>imageButton(x,slot,fields[slot].value)));
+  matching=items(slot).filter(x=>x.icon&&(slot==='robe'||x.slots?.includes(slot)||unknown&&!x.slots?.length)&&(!term||`${x.label} ${x.itemId||''}`.toLocaleLowerCase().includes(term)));
+  const key=slot+':'+matching.map(x=>x.id).join('|');if(reset||signature!==key){signature=key;rendered=0;grid.replaceChildren();scroll.scrollTop=0;append();}else{grid.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.item===fields[slot].value)));queueMore();}
   q('[data-item-count]').textContent=`${({upper:'Upper',middle:'Middle',lower:'Lower',robe:'Garment'})[slot]} · ${matching.length.toLocaleString()} ชิ้น`;
-  q('[data-more]').hidden=matching.length<=limit;q('[data-empty]').hidden=!!matching.length;q('[data-unknown-label]').hidden=slot==='robe';
+  q('[data-empty]').hidden=!!matching.length;q('[data-unknown-label]').hidden=slot==='robe';
   const selected=items(slot).find(x=>x.id===fields[slot].value);q('[data-selected-item]').textContent=selected?label(selected)+(slot==='robe'||selected.slots?.length?'':' · ไม่ระบุตำแหน่งในข้อมูลเกม'):'เลือกภาพไอเทมเพื่อดูตัวอย่างทันที';
  }
  job.onclick=()=>{menu.hidden=!menu.hidden;job.setAttribute('aria-expanded',String(!menu.hidden));if(!menu.hidden)menu.querySelector('[aria-selected=true]')?.focus();};
@@ -30,8 +36,8 @@ export function bindWardrobePickers(dialog,{fields,items,onSelect}){
  menu.onkeydown=e=>{const options=[...menu.querySelectorAll('[role=option]')],at=options.indexOf(document.activeElement);if(['ArrowDown','ArrowUp','Home','End'].includes(e.key)){e.preventDefault();options[e.key==='Home'?0:e.key==='End'?options.length-1:(at+(e.key==='ArrowDown'?1:-1)+options.length)%options.length]?.focus();}if(e.key==='Escape'){e.preventDefault();e.stopPropagation();close();job.focus();}};
  dialog.addEventListener('click',e=>{if(!e.target.closest('.ro-class-picker'))close();});
  dialog.querySelectorAll('[data-sex]').forEach(b=>b.onclick=()=>{fields.sex.value=b.dataset.sex;fields.sex.onchange();});
- dialog.querySelectorAll('[data-slot]').forEach(b=>{b.onclick=()=>{slot=b.dataset.slot;limit=120;equipment();};b.onkeydown=e=>{const tabs=[...dialog.querySelectorAll('[data-slot]')];if(['ArrowRight','ArrowLeft','Home','End'].includes(e.key)){e.preventDefault();const n=e.key==='Home'?0:e.key==='End'?3:(tabs.indexOf(b)+(e.key==='ArrowRight'?1:3))%4;tabs[n].click();tabs[n].focus();}};});
+ dialog.querySelectorAll('[data-slot]').forEach(b=>{b.onclick=()=>{slot=b.dataset.slot;equipment(true);};b.onkeydown=e=>{const tabs=[...dialog.querySelectorAll('[data-slot]')];if(['ArrowRight','ArrowLeft','Home','End'].includes(e.key)){e.preventDefault();const n=e.key==='Home'?0:e.key==='End'?3:(tabs.indexOf(b)+(e.key==='ArrowRight'?1:3))%4;tabs[n].click();tabs[n].focus();}};});
  dialog.querySelectorAll('[data-clear]').forEach(b=>b.onclick=()=>onSelect(b.dataset.clear,''));
- fields.search.oninput=()=>{limit=120;equipment();};q('[data-unknown]').onchange=()=>{limit=120;equipment();};q('[data-more]').onclick=()=>{limit+=120;equipment();};
- return {refresh(){classes();hair();equipment();},equipment,close};
+ fields.search.oninput=()=>equipment(true);q('[data-unknown]').onchange=()=>equipment(true);
+ return {refresh(){classes();hair();equipment();},equipment,close,dispose(){disposed=true;abort.abort();observer?.disconnect();sizeObserver?.disconnect();cancelAnimationFrame(pending);}};
 }

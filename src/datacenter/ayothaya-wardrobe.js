@@ -19,10 +19,14 @@ export function createWardrobe(host,{apply,pause,onError}){
  <div><button type="button" role="tab" data-slot="lower" aria-selected="false" aria-controls="ro-equipment-grid">LOWER<span>⊘</span></button><button type="button" data-clear="lower" aria-label="ล้าง Lower">CLEAR</button></div>
  <div><button type="button" role="tab" data-slot="robe" aria-selected="false" aria-controls="ro-equipment-grid">GARMENT<span>⊘</span></button><button type="button" data-clear="robe" aria-label="ล้าง Garment">CLEAR</button></div></div>
  <div class="ro-item-meta"><small data-item-count></small><label data-unknown-label><input type="checkbox" data-unknown> รวมไอเทมที่ไม่ระบุตำแหน่ง</label></div>
- <div class="ro-item-scroll"><div id="ro-equipment-grid" data-equipment-grid class="ro-icon-grid" role="tabpanel" aria-label="ของสวมใส่"></div><p data-empty hidden>ไม่พบไอเทมที่ตรงกัน ลองเปลี่ยนคำค้นหรือหมวด</p><button type="button" data-more hidden>แสดงเพิ่ม</button></div><p data-selected-item></p></section></div>
+ <div class="ro-item-scroll"><div id="ro-equipment-grid" data-equipment-grid class="ro-icon-grid" role="tabpanel" aria-label="ของสวมใส่"></div><p data-empty hidden>ไม่พบไอเทมที่ตรงกัน ลองเปลี่ยนคำค้นหรือหมวด</p><div data-autoload role="status" aria-live="polite" hidden></div></div><p data-selected-item></p></section></div>
  <footer><span role="status" aria-live="polite"></span><button type="button" data-reset>คืนชุด Novice</button><button type="button" data-retry hidden>ลองโหลดอีกครั้ง</button><button type="button" data-apply disabled>ใช้ชุดนี้</button></footer>`;
+ const content=dialog.querySelector('.ro-dress-content'),preview=dialog.querySelector('.ro-dress-preview'),equipment=dialog.querySelector('.ro-equipment');
+ const compact=matchMedia('(max-width:600px), (max-width:1100px) and (max-height:500px)');
+ const layoutPreview=()=>{const focus=document.activeElement;if(compact.matches)dialog.insertBefore(preview,content);else content.insertBefore(preview,equipment);if(dialog.open&&focus&&dialog.contains(focus))focus.focus({preventScroll:true});};
+ compact.addEventListener('change',layoutPreview);layoutPreview();
  document.body.append(dialog);
- const fields=Object.fromEntries([...dialog.querySelectorAll('[name]')].map(e=>[e.name,e])),status=dialog.querySelector('[role=status]'),retry=dialog.querySelector('[data-retry]'),save=dialog.querySelector('[data-apply]'),canvas=dialog.querySelector('canvas'),ctx=canvas.getContext('2d');
+ const fields=Object.fromEntries([...dialog.querySelectorAll('[name]')].map(e=>[e.name,e])),status=dialog.querySelector('footer [role=status]'),retry=dialog.querySelector('[data-retry]'),save=dialog.querySelector('[data-apply]'),canvas=dialog.querySelector('canvas'),ctx=canvas.getContext('2d');
  let catalog=null,draft={},candidate=null,image=null,meta=null,direction=0,walking=false,sitting=false,frame=0,revision=0,openRevision=0,previewRevision=0,closed=false,loading=false,loadingChoices=false,rendering=false,queued=null,timer=0,lists={};
  const previews=new Map();
  const pickers=bindWardrobePickers(dialog,{fields,items:key=>lists[key]?.items||[],onSelect:(key,id)=>{fields[key].value=id;fields[key].onchange();}});
@@ -67,7 +71,7 @@ export function createWardrobe(host,{apply,pause,onError}){
   ctx.drawImage(image,(f%meta.columns)*meta.width,Math.floor(f/meta.columns)*meta.height,meta.width,meta.height,150-meta.width*anchor[0]*s,318-meta.height*(1-anchor[1])*s,meta.width*s,meta.height*s);
  }
  retry.onclick=()=>void refresh();
- save.onclick=async()=>{if(!candidate||loading)return;const selected=candidate;loading=true;save.disabled=true;dialog.querySelector('.ro-dress-content').inert=true;message('กำลังเปลี่ยนชุด…');try{await apply(selected.base);try{localStorage.setItem(KEY,JSON.stringify(selected));}catch{}dialog.close();}catch(e){message(e.message);}finally{loading=false;dialog.querySelector('.ro-dress-content').inert=false;save.disabled=!candidate;}};
+ save.onclick=async()=>{if(!candidate||loading)return;const selected=candidate;loading=true;save.disabled=true;dialog.querySelector('.ro-dress-content').inert=true;preview.inert=true;message('กำลังเปลี่ยนชุด…');try{await apply(selected.base);try{localStorage.setItem(KEY,JSON.stringify(selected));}catch{}dialog.close();}catch(e){message(e.message);}finally{loading=false;dialog.querySelector('.ro-dress-content').inert=false;preview.inert=false;save.disabled=!candidate;}};
  dialog.querySelector('[data-reset]').onclick=async()=>{if(loading)return;try{await apply('assets/ayothaya/avatar/novice');localStorage.removeItem(KEY);draft={};dialog.close();}catch(e){message(e.message);}};
  dialog.querySelectorAll('[data-turn]').forEach(b=>b.onclick=()=>direction=(direction+Number(b.dataset.turn)+8)%8);
  dialog.querySelector('[data-walk]').onclick=e=>{sitting=false;dialog.querySelector('[data-sit-preview]').textContent='นั่ง';walking=!walking;e.currentTarget.textContent=walking?'หยุดเดิน':'ทดลองเดิน';};
@@ -80,9 +84,9 @@ export function createWardrobe(host,{apply,pause,onError}){
  }
  dialog.addEventListener('close',()=>{pickers.close();revision++;openRevision++;invalid();loadingChoices=false;});
  button.onclick=async()=>{
-  pause();dialog.showModal();invalid();const n=++openRevision;dialog.querySelector('.ro-dress-content').inert=true;message('กำลังเปิดตู้เสื้อผ้า…');
-  try{catalog??=await request('catalog');const saved=savedAppearance(),pixels=await loadOutfit(saved?.base||'assets/ayothaya/avatar/novice');if(n!==openRevision||closed||!dialog.open)return;({meta,image}=pixels);draft={...(saved?.appearance||{})};const initial=catalog.bodies.find(x=>x.id===draft.body)||catalog.bodies.find(x=>x.label==='Novice'&&x.sex==='male');draft.body=initial.id;fields.race.value=initial.race;fields.sex.value=initial.sex;fields.search.value='';bodies();await refresh();dialog.querySelector('[data-counts]').textContent=`${new Set(catalog.bodies.map(x=>x.label)).size} อาชีพ · สไปรต์ต้นฉบับ`;}catch(e){if(n===openRevision&&!closed){message('เปิดตู้เสื้อผ้าไม่สำเร็จ: '+e.message);onError?.(e);}}finally{if(n===openRevision)dialog.querySelector('.ro-dress-content').inert=false;}
+  pause();dialog.showModal();invalid();const n=++openRevision;dialog.querySelector('.ro-dress-content').inert=true;preview.inert=true;message('กำลังเปิดตู้เสื้อผ้า…');
+  try{catalog??=await request('catalog');const saved=savedAppearance(),pixels=await loadOutfit(saved?.base||'assets/ayothaya/avatar/novice');if(n!==openRevision||closed||!dialog.open)return;({meta,image}=pixels);draft={...(saved?.appearance||{})};const initial=catalog.bodies.find(x=>x.id===draft.body)||catalog.bodies.find(x=>x.label==='Novice'&&x.sex==='male');draft.body=initial.id;fields.race.value=initial.race;fields.sex.value=initial.sex;fields.search.value='';bodies();await refresh();dialog.querySelector('[data-counts]').textContent=`${new Set(catalog.bodies.map(x=>x.label)).size} อาชีพ · สไปรต์ต้นฉบับ`;}catch(e){if(n===openRevision&&!closed){message('เปิดตู้เสื้อผ้าไม่สำเร็จ: '+e.message);onError?.(e);}}finally{if(n===openRevision){dialog.querySelector('.ro-dress-content').inert=false;preview.inert=false;}}
  };
  frame=requestAnimationFrame(paint);
- return {dispose(){closed=true;revision++;invalid();previews.clear();cancelAnimationFrame(frame);dialog.remove();button.remove();}};
+ return {dispose(){closed=true;revision++;invalid();pickers.dispose();compact.removeEventListener('change',layoutPreview);previews.clear();cancelAnimationFrame(frame);dialog.remove();button.remove();}};
 }
