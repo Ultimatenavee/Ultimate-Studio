@@ -1,0 +1,6428 @@
+{
+  "version": 4,
+  "size_m": [
+    360,
+    360
+  ],
+  "placements": [
+    {
+      "object": "A08_Wall_000.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        -18.0,
+        -171.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": 0,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A08_Wall_001.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        18.0,
+        -171.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": 0,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A08_Wall_002.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        18.0,
+        171.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": 180,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A08_Wall_003.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        -18.0,
+        171.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": 180,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A08_Wall_004.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        -171.0,
+        -18.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": 90,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A08_Wall_005.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        -171.0,
+        18.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": 90,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A08_Wall_006.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        171.0,
+        18.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": -90,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A08_Wall_007.001",
+      "asset": "A08_Wall",
+      "source": "data\\model\\아요타야\\궁외벽01.rsm",
+      "position": [
+        171.0,
+        -18.0,
+        0
+      ],
+      "scale": 70.51402875709749,
+      "rotation_deg": -90,
+      "kind": "gate",
+      "region": "01_CITY_ENTRANCES"
+    },
+    {
+      "object": "A01_Temple_008.001",
+      "asset": "A01_Temple",
+      "source": "data\\model\\아요타야\\사원.rsm",
+      "position": [
+        -73,
+        72,
+        0
+      ],
+      "scale": 70.80393884866989,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "02_DEVICE_LIBRARY_CAMPUS"
+    },
+    {
+      "object": "V01_Lab_009.001",
+      "asset": "V01_Lab",
+      "source": "data\\model\\verus\\center_lab.rsm",
+      "position": [
+        73,
+        73,
+        0
+      ],
+      "scale": 137.32662297103042,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "03_DATACENTER_CAMPUS"
+    },
+    {
+      "object": "A07_Tower_010.001",
+      "asset": "A07_Tower",
+      "source": "data\\model\\아요타야\\탑.rsm",
+      "position": [
+        -102,
+        100,
+        0
+      ],
+      "scale": 94.92714349250905,
+      "rotation_deg": 0,
+      "kind": "landmark",
+      "region": "02_DEVICE_LIBRARY_CAMPUS"
+    },
+    {
+      "object": "A07_Tower_011.001",
+      "asset": "A07_Tower",
+      "source": "data\\model\\아요타야\\탑.rsm",
+      "position": [
+        -44,
+        100,
+        0
+      ],
+      "scale": 94.92714349250905,
+      "rotation_deg": 0,
+      "kind": "landmark",
+      "region": "02_DEVICE_LIBRARY_CAMPUS"
+    },
+    {
+      "object": "L02_Trade_012.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        48,
+        119,
+        0
+      ],
+      "scale": 80.71309241417919,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "03_DATACENTER_CAMPUS"
+    },
+    {
+      "object": "L02_Trade_013.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        98,
+        119,
+        0
+      ],
+      "scale": 80.71309241417919,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "03_DATACENTER_CAMPUS"
+    },
+    {
+      "object": "L01_Alchemist_014.001",
+      "asset": "L01_Alchemist",
+      "source": "data\\model\\리히타르젠\\연금술사길드.rsm",
+      "position": [
+        74,
+        147,
+        0
+      ],
+      "scale": 75.28179436425854,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "03_DATACENTER_CAMPUS"
+    },
+    {
+      "object": "Y01_Library_015.001",
+      "asset": "Y01_Library",
+      "source": "data\\model\\유노\\유노_도서관.rsm",
+      "position": [
+        -75,
+        141,
+        0
+      ],
+      "scale": 95.4043901023593,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "02_DEVICE_LIBRARY_CAMPUS"
+    },
+    {
+      "object": "A02_Inn_016.001",
+      "asset": "A02_Inn",
+      "source": "data\\model\\아요타야\\여관.rsm",
+      "position": [
+        0,
+        137,
+        0
+      ],
+      "scale": 111.80483517370214,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "04_ROYAL_TECH_AXIS"
+    },
+    {
+      "object": "A07_Tower_017.001",
+      "asset": "A07_Tower",
+      "source": "data\\model\\아요타야\\탑.rsm",
+      "position": [
+        -22,
+        149,
+        0
+      ],
+      "scale": 144.88879796225066,
+      "rotation_deg": 0,
+      "kind": "landmark",
+      "region": "04_ROYAL_TECH_AXIS"
+    },
+    {
+      "object": "A07_Tower_018.001",
+      "asset": "A07_Tower",
+      "source": "data\\model\\아요타야\\탑.rsm",
+      "position": [
+        22,
+        149,
+        0
+      ],
+      "scale": 144.88879796225066,
+      "rotation_deg": 0,
+      "kind": "landmark",
+      "region": "04_ROYAL_TECH_AXIS"
+    },
+    {
+      "object": "V03_Tower_019.001",
+      "asset": "V03_Tower",
+      "source": "data\\model\\verus\\tower.rsm",
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "scale": 101.94450394219432,
+      "rotation_deg": 0,
+      "kind": "landmark",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "T01_Teleport_020.001",
+      "asset": "T01_Teleport",
+      "source": "data\\model\\tera\\teleport_h_01.rsm",
+      "position": [
+        -22,
+        -20,
+        0
+      ],
+      "scale": 83.31944700659173,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "RO_Tera_Monitor_021.001",
+      "asset": "RO_Tera_Monitor",
+      "source": "data\\model\\tera\\monitor_h_01.rsm",
+      "position": [
+        -17,
+        -20,
+        0
+      ],
+      "scale": 24.04456339293685,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "T01_Teleport_022.001",
+      "asset": "T01_Teleport",
+      "source": "data\\model\\tera\\teleport_h_01.rsm",
+      "position": [
+        22,
+        -20,
+        0
+      ],
+      "scale": 83.31944700659173,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "RO_Tera_Monitor_023.001",
+      "asset": "RO_Tera_Monitor",
+      "source": "data\\model\\tera\\monitor_h_01.rsm",
+      "position": [
+        27,
+        -20,
+        0
+      ],
+      "scale": 24.04456339293685,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "T01_Teleport_024.001",
+      "asset": "T01_Teleport",
+      "source": "data\\model\\tera\\teleport_h_01.rsm",
+      "position": [
+        -22,
+        22,
+        0
+      ],
+      "scale": 83.31944700659173,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "RO_Tera_Monitor_025.001",
+      "asset": "RO_Tera_Monitor",
+      "source": "data\\model\\tera\\monitor_h_01.rsm",
+      "position": [
+        -17,
+        22,
+        0
+      ],
+      "scale": 24.04456339293685,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "T01_Teleport_026.001",
+      "asset": "T01_Teleport",
+      "source": "data\\model\\tera\\teleport_h_01.rsm",
+      "position": [
+        22,
+        22,
+        0
+      ],
+      "scale": 83.31944700659173,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "RO_Tera_Monitor_027.001",
+      "asset": "RO_Tera_Monitor",
+      "source": "data\\model\\tera\\monitor_h_01.rsm",
+      "position": [
+        27,
+        22,
+        0
+      ],
+      "scale": 24.04456339293685,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "A07_Tower_028.001",
+      "asset": "A07_Tower",
+      "source": "data\\model\\아요타야\\탑.rsm",
+      "position": [
+        -32,
+        0,
+        0
+      ],
+      "scale": 89.93097804553489,
+      "rotation_deg": 0,
+      "kind": "landmark",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "A07_Tower_029.001",
+      "asset": "A07_Tower",
+      "source": "data\\model\\아요타야\\탑.rsm",
+      "position": [
+        32,
+        0,
+        0
+      ],
+      "scale": 89.93097804553489,
+      "rotation_deg": 0,
+      "kind": "landmark",
+      "region": "05_ENERGY_NEXUS"
+    },
+    {
+      "object": "A04_Toolshop_030.001",
+      "asset": "A04_Toolshop",
+      "source": "data\\model\\아요타야\\도구점.rsm",
+      "position": [
+        -86,
+        -151,
+        0
+      ],
+      "scale": 62.898913895168576,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "A04_Toolshop_031.001",
+      "asset": "A04_Toolshop",
+      "source": "data\\model\\아요타야\\도구점.rsm",
+      "position": [
+        -86,
+        -123,
+        0
+      ],
+      "scale": 62.898913895168576,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "D01_House_032.001",
+      "asset": "D01_House",
+      "source": "data\\model\\dewata\\민가01.rsm",
+      "position": [
+        -86,
+        -84,
+        0
+      ],
+      "scale": 83.5857484452886,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "D03_Inn_033.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        -86,
+        -57,
+        0
+      ],
+      "scale": 83.06862539141605,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "A02_Inn_034.001",
+      "asset": "A02_Inn",
+      "source": "data\\model\\아요타야\\여관.rsm",
+      "position": [
+        -57,
+        -151,
+        0
+      ],
+      "scale": 63.45679834183095,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "A02_Inn_035.001",
+      "asset": "A02_Inn",
+      "source": "data\\model\\아요타야\\여관.rsm",
+      "position": [
+        -57,
+        -123,
+        0
+      ],
+      "scale": 63.45679834183095,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "A04_Toolshop_036.001",
+      "asset": "A04_Toolshop",
+      "source": "data\\model\\아요타야\\도구점.rsm",
+      "position": [
+        -57,
+        -84,
+        0
+      ],
+      "scale": 62.898913895168576,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "D01_House_037.001",
+      "asset": "D01_House",
+      "source": "data\\model\\dewata\\민가01.rsm",
+      "position": [
+        -57,
+        -57,
+        0
+      ],
+      "scale": 83.5857484452886,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "06_THAI_MARKET"
+    },
+    {
+      "object": "Y06_Home_038.001",
+      "asset": "Y06_Home",
+      "source": "data\\model\\유노\\유노_민가1.rsm",
+      "position": [
+        56,
+        -151,
+        0
+      ],
+      "scale": 139.98650521987028,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "Y06_Home_039.001",
+      "asset": "Y06_Home",
+      "source": "data\\model\\유노\\유노_민가1.rsm",
+      "position": [
+        56,
+        -123,
+        0
+      ],
+      "scale": 139.98650521987028,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "L02_Trade_040.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        56,
+        -84,
+        0
+      ],
+      "scale": 77.04431548626195,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "L03_Bank_041.001",
+      "asset": "L03_Bank",
+      "source": "data\\model\\리히타르젠\\은행.rsm",
+      "position": [
+        56,
+        -57,
+        0
+      ],
+      "scale": 86.28659357776033,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "L04_Store_042.001",
+      "asset": "L04_Store",
+      "source": "data\\model\\리히타르젠\\상점.rsm",
+      "position": [
+        85,
+        -151,
+        0
+      ],
+      "scale": 89.99568913026195,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "L04_Store_043.001",
+      "asset": "L04_Store",
+      "source": "data\\model\\리히타르젠\\상점.rsm",
+      "position": [
+        85,
+        -123,
+        0
+      ],
+      "scale": 89.99568913026195,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "L03_Bank_044.001",
+      "asset": "L03_Bank",
+      "source": "data\\model\\리히타르젠\\은행.rsm",
+      "position": [
+        85,
+        -84,
+        0
+      ],
+      "scale": 86.28659357776033,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "L02_Trade_045.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        85,
+        -57,
+        0
+      ],
+      "scale": 77.04431548626195,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "07_INNOVATION_QUARTER"
+    },
+    {
+      "object": "D01_House_046.001",
+      "asset": "D01_House",
+      "source": "data\\model\\dewata\\민가01.rsm",
+      "position": [
+        -150,
+        -150,
+        0
+      ],
+      "scale": 71.64492723881881,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A04_Toolshop_047.001",
+      "asset": "A04_Toolshop",
+      "source": "data\\model\\아요타야\\도구점.rsm",
+      "position": [
+        -150,
+        -125,
+        0
+      ],
+      "scale": 53.91335476728735,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_048.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        -150,
+        -83,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A02_Inn_049.001",
+      "asset": "A02_Inn",
+      "source": "data\\model\\아요타야\\여관.rsm",
+      "position": [
+        -150,
+        -57,
+        0
+      ],
+      "scale": 54.391541435855096,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "D01_House_050.001",
+      "asset": "D01_House",
+      "source": "data\\model\\dewata\\민가01.rsm",
+      "position": [
+        -150,
+        55,
+        0
+      ],
+      "scale": 71.64492723881881,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A04_Toolshop_051.001",
+      "asset": "A04_Toolshop",
+      "source": "data\\model\\아요타야\\도구점.rsm",
+      "position": [
+        -150,
+        82,
+        0
+      ],
+      "scale": 53.91335476728735,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_052.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        -150,
+        126,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A02_Inn_053.001",
+      "asset": "A02_Inn",
+      "source": "data\\model\\아요타야\\여관.rsm",
+      "position": [
+        -150,
+        151,
+        0
+      ],
+      "scale": 54.391541435855096,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "D01_House_054.001",
+      "asset": "D01_House",
+      "source": "data\\model\\dewata\\민가01.rsm",
+      "position": [
+        -125,
+        -150,
+        0
+      ],
+      "scale": 71.64492723881881,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A04_Toolshop_055.001",
+      "asset": "A04_Toolshop",
+      "source": "data\\model\\아요타야\\도구점.rsm",
+      "position": [
+        -125,
+        -125,
+        0
+      ],
+      "scale": 53.91335476728735,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_056.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        -125,
+        -83,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A02_Inn_057.001",
+      "asset": "A02_Inn",
+      "source": "data\\model\\아요타야\\여관.rsm",
+      "position": [
+        -125,
+        -57,
+        0
+      ],
+      "scale": 54.391541435855096,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "D01_House_058.001",
+      "asset": "D01_House",
+      "source": "data\\model\\dewata\\민가01.rsm",
+      "position": [
+        -125,
+        55,
+        0
+      ],
+      "scale": 71.64492723881881,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A04_Toolshop_059.001",
+      "asset": "A04_Toolshop",
+      "source": "data\\model\\아요타야\\도구점.rsm",
+      "position": [
+        -125,
+        82,
+        0
+      ],
+      "scale": 53.91335476728735,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_060.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        -125,
+        126,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "A02_Inn_061.001",
+      "asset": "A02_Inn",
+      "source": "data\\model\\아요타야\\여관.rsm",
+      "position": [
+        -125,
+        151,
+        0
+      ],
+      "scale": 54.391541435855096,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "08_WEST_RESIDENTIAL"
+    },
+    {
+      "object": "L04_Store_062.001",
+      "asset": "L04_Store",
+      "source": "data\\model\\리히타르젠\\상점.rsm",
+      "position": [
+        125,
+        -150,
+        0
+      ],
+      "scale": 77.13916211165309,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_063.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        125,
+        -125,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "L02_Trade_064.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        125,
+        -83,
+        0
+      ],
+      "scale": 66.03798470251024,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "Y06_Home_065.001",
+      "asset": "Y06_Home",
+      "source": "data\\model\\유노\\유노_민가1.rsm",
+      "position": [
+        125,
+        -57,
+        0
+      ],
+      "scale": 119.98843304560309,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "L04_Store_066.001",
+      "asset": "L04_Store",
+      "source": "data\\model\\리히타르젠\\상점.rsm",
+      "position": [
+        125,
+        55,
+        0
+      ],
+      "scale": 77.13916211165309,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_067.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        125,
+        82,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "L02_Trade_068.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        125,
+        126,
+        0
+      ],
+      "scale": 66.03798470251024,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "Y06_Home_069.001",
+      "asset": "Y06_Home",
+      "source": "data\\model\\유노\\유노_민가1.rsm",
+      "position": [
+        125,
+        151,
+        0
+      ],
+      "scale": 119.98843304560309,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "L04_Store_070.001",
+      "asset": "L04_Store",
+      "source": "data\\model\\리히타르젠\\상점.rsm",
+      "position": [
+        150,
+        -150,
+        0
+      ],
+      "scale": 77.13916211165309,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_071.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        150,
+        -125,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "L02_Trade_072.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        150,
+        -83,
+        0
+      ],
+      "scale": 66.03798470251024,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "Y06_Home_073.001",
+      "asset": "Y06_Home",
+      "source": "data\\model\\유노\\유노_민가1.rsm",
+      "position": [
+        150,
+        -57,
+        0
+      ],
+      "scale": 119.98843304560309,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "L04_Store_074.001",
+      "asset": "L04_Store",
+      "source": "data\\model\\리히타르젠\\상점.rsm",
+      "position": [
+        150,
+        55,
+        0
+      ],
+      "scale": 77.13916211165309,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "D03_Inn_075.001",
+      "asset": "D03_Inn",
+      "source": "data\\model\\dewata\\여관01.rsm",
+      "position": [
+        150,
+        82,
+        0
+      ],
+      "scale": 71.20167890692804,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "L02_Trade_076.001",
+      "asset": "L02_Trade",
+      "source": "data\\model\\리히타르젠\\무역회사01.rsm",
+      "position": [
+        150,
+        126,
+        0
+      ],
+      "scale": 66.03798470251024,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "Y06_Home_077.001",
+      "asset": "Y06_Home",
+      "source": "data\\model\\유노\\유노_민가1.rsm",
+      "position": [
+        150,
+        151,
+        0
+      ],
+      "scale": 119.98843304560309,
+      "rotation_deg": 180,
+      "kind": "building",
+      "region": "09_EAST_RESIDENTIAL"
+    },
+    {
+      "object": "A05_Weaponshop_078.001",
+      "asset": "A05_Weaponshop",
+      "source": "data\\model\\아요타야\\무기점.rsm",
+      "position": [
+        -85,
+        0,
+        0
+      ],
+      "scale": 46.82264525262948,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "10_MAKER_ARCADE"
+    },
+    {
+      "object": "A05_Weaponshop_079.001",
+      "asset": "A05_Weaponshop",
+      "source": "data\\model\\아요타야\\무기점.rsm",
+      "position": [
+        -57,
+        0,
+        0
+      ],
+      "scale": 46.82264525262948,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "10_MAKER_ARCADE"
+    },
+    {
+      "object": "Y02_Science_080.001",
+      "asset": "Y02_Science",
+      "source": "data\\model\\유노\\유노_과학자건물.rsm",
+      "position": [
+        55,
+        0,
+        0
+      ],
+      "scale": 60.74845243164484,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "Y02_Science_081.001",
+      "asset": "Y02_Science",
+      "source": "data\\model\\유노\\유노_과학자건물.rsm",
+      "position": [
+        85,
+        0,
+        0
+      ],
+      "scale": 60.74845243164484,
+      "rotation_deg": 0,
+      "kind": "building",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "V04_Generator_082.001",
+      "asset": "V04_Generator",
+      "source": "data\\model\\verus\\generator.rsm",
+      "position": [
+        126,
+        20,
+        0
+      ],
+      "scale": 58.477577707363054,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T03_Engine_083.001",
+      "asset": "T03_Engine",
+      "source": "data\\model\\tera\\engine_h_01.rsm",
+      "position": [
+        126,
+        -19,
+        0
+      ],
+      "scale": 200.25809822872577,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "V04_Generator_084.001",
+      "asset": "V04_Generator",
+      "source": "data\\model\\verus\\generator.rsm",
+      "position": [
+        152,
+        20,
+        0
+      ],
+      "scale": 58.477577707363054,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T03_Engine_085.001",
+      "asset": "T03_Engine",
+      "source": "data\\model\\tera\\engine_h_01.rsm",
+      "position": [
+        152,
+        -19,
+        0
+      ],
+      "scale": 200.25809822872577,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "RO_LHZ_Fountain_086.001",
+      "asset": "RO_LHZ_Fountain",
+      "source": "data\\model\\리히타르젠\\분수대.rsm",
+      "position": [
+        -142,
+        0,
+        0
+      ],
+      "scale": 32.03807833407629,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Fountain_087.001",
+      "asset": "RO_LHZ_Fountain",
+      "source": "data\\model\\리히타르젠\\분수대.rsm",
+      "position": [
+        142,
+        0,
+        0
+      ],
+      "scale": 32.03807833407629,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "T02_Hologram_088.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        -93,
+        -26,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T02_Hologram_089.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        -93,
+        25,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T02_Hologram_090.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        -53,
+        -26,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T02_Hologram_091.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        -53,
+        25,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T02_Hologram_092.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        53,
+        -26,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T02_Hologram_093.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        53,
+        25,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T02_Hologram_094.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        93,
+        -26,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "T02_Hologram_095.001",
+      "asset": "T02_Hologram",
+      "source": "data\\model\\tera\\hologrammachine_s_02.rsm",
+      "position": [
+        93,
+        25,
+        0
+      ],
+      "scale": 33.68085308204345,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "11_RESEARCH_GARDEN"
+    },
+    {
+      "object": "RO_Malaya_Tree_096.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        -153,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_097.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        -128,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_098.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        -97,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_099.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        -70,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_100.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        -48,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_101.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        52,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_102.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        82,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_103.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        113,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_104.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        -16,
+        158,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_105.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        -153,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_106.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        -128,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_107.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        -97,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_108.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        -70,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_109.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        -48,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_110.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        52,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_111.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        82,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_112.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        113,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_Malaya_Tree_113.001",
+      "asset": "RO_Malaya_Tree",
+      "source": "data\\model\\malaya\\나무02.rsm",
+      "position": [
+        16,
+        158,
+        0
+      ],
+      "scale": 88.80649399382324,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_114.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        -151,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_115.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        -108,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_116.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        -65,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_117.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        -20,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_118.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        20,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_119.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        65,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_120.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        108,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_121.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -159,
+        151,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_122.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        -151,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_123.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        -108,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_124.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        -65,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_125.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        -20,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_126.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        20,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_127.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        65,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_128.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        108,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_129.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        159,
+        151,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_130.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -146,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_131.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -121,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_132.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -98,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_133.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -51,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_134.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        50,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_135.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        99,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_136.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        121,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_137.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        146,
+        -98,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_138.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -146,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_139.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -121,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_140.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -98,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_141.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -51,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_142.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        50,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_143.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        99,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_144.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        121,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_145.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        146,
+        35,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_146.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -146,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_147.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -121,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_148.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -98,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_149.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -51,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_150.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        50,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_151.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        99,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_152.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        121,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_B_153.001",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        146,
+        108,
+        0
+      ],
+      "scale": 80.96384568953933,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_154.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -153,
+        -15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_155.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -153,
+        15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_156.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -130,
+        -15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_157.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        -130,
+        15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_158.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        130,
+        -15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_159.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        130,
+        15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_160.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        153,
+        -15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Tree_A_161.001",
+      "asset": "RO_LHZ_Tree_A",
+      "source": "data\\model\\리히타르젠\\나무01.rsm",
+      "position": [
+        153,
+        15,
+        0
+      ],
+      "scale": 87.19183381950388,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_162.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -151,
+        -8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_163.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -151,
+        8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 180,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_164.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -132,
+        -8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_165.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -132,
+        8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 180,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_166.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        132,
+        -8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_167.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        132,
+        8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 180,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_168.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        151,
+        -8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_Outdoor_Bench_169.001",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        151,
+        8,
+        0
+      ],
+      "scale": 40.32417365377261,
+      "rotation_deg": 180,
+      "kind": "prop",
+      "region": "12_PUBLIC_PARKS"
+    },
+    {
+      "object": "RO_LHZ_Planter_170.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        -92,
+        44,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Planter_171.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        -92,
+        96,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Planter_172.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        -52,
+        44,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Planter_173.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        -52,
+        96,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Planter_174.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        52,
+        44,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Planter_175.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        52,
+        96,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Planter_176.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        92,
+        44,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "RO_LHZ_Planter_177.001",
+      "asset": "RO_LHZ_Planter",
+      "source": "data\\model\\리히타르젠\\나무받침01.rsm",
+      "position": [
+        92,
+        96,
+        0
+      ],
+      "scale": 319.99997735023663,
+      "rotation_deg": 0,
+      "kind": "prop",
+      "region": "13_LANDSCAPE"
+    },
+    {
+      "object": "M01_Lamp_178.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        -156,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_179.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        -132,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_180.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        -108,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_181.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        -84,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_182.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        -60,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_183.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        -36,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_184.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        60,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_185.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        84,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_186.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        108,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_187.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        132,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_188.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -11,
+        156,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_189.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        -156,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_190.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        -132,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_191.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        -108,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_192.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        -84,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_193.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        -60,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_194.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        -36,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_195.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        60,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_196.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        84,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_197.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        108,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_198.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        132,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_199.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        11,
+        156,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_200.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -150,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_201.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -124,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_202.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -98,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_203.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -72,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_204.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -46,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_205.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        46,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_206.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        72,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_207.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        98,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_208.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        124,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_209.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        150,
+        -115,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_210.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -150,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_211.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -124,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_212.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -98,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_213.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -72,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_214.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -46,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_215.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        46,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_216.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        72,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_217.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        98,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_218.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        124,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_219.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        150,
+        -42,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_220.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -150,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_221.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -124,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_222.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -98,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_223.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -72,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_224.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -46,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_225.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        46,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_226.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        72,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_227.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        98,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_228.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        124,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_229.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        150,
+        28,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_230.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -150,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_231.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -124,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_232.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -98,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_233.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -72,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_234.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -46,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_235.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        46,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_236.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        72,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_237.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        98,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_238.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        124,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "M01_Lamp_239.001",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        150,
+        101,
+        0
+      ],
+      "scale": 49.93111378151086,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_240.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        -151,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_241.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        -128,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_242.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        -81,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_243.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        -58,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_244.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        -11,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_245.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        14,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_246.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        61,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_247.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        84,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_248.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        131,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_249.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -113,
+        154,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_250.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        -151,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_251.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        -128,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_252.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        -81,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_253.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        -58,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_254.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        -11,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_255.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        14,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_256.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        61,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_257.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        84,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_258.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        131,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "RO_LHZ_Lamp_259.001",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        113,
+        154,
+        0
+      ],
+      "scale": 57.29427944799515,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "14_STREET_LIGHTS"
+    },
+    {
+      "object": "LIFE_ParkBench_0",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        -149,
+        -25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_ParkBench_1",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        -135,
+        -25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_LitterBin_2",
+      "asset": "LitterBin",
+      "source": "data\\model\\malaya\\쓰레기통01.rsm",
+      "position": [
+        -142,
+        -25,
+        0
+      ],
+      "scale": 52.262536403557306,
+      "rotation_deg": 0,
+      "kind": "bin",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.38562227652718095
+    },
+    {
+      "object": "LIFE_ParkBench_3",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        -149,
+        25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 180,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_ParkBench_4",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        -135,
+        25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 180,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_LitterBin_5",
+      "asset": "LitterBin",
+      "source": "data\\model\\malaya\\쓰레기통01.rsm",
+      "position": [
+        -142,
+        25,
+        0
+      ],
+      "scale": 52.262536403557306,
+      "rotation_deg": 0,
+      "kind": "bin",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.38562227652718095
+    },
+    {
+      "object": "LIFE_ParkBench_6",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        135,
+        -25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_ParkBench_7",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        149,
+        -25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_LitterBin_8",
+      "asset": "LitterBin",
+      "source": "data\\model\\malaya\\쓰레기통01.rsm",
+      "position": [
+        142,
+        -25,
+        0
+      ],
+      "scale": 52.262536403557306,
+      "rotation_deg": 0,
+      "kind": "bin",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.38562227652718095
+    },
+    {
+      "object": "LIFE_ParkBench_9",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        135,
+        25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 180,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_ParkBench_10",
+      "asset": "ParkBench",
+      "source": "data\\model\\malaya\\벤치.rsm",
+      "position": [
+        149,
+        25,
+        0
+      ],
+      "scale": 44.34355387359761,
+      "rotation_deg": 180,
+      "kind": "bench",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.9525633949063882
+    },
+    {
+      "object": "LIFE_LitterBin_11",
+      "asset": "LitterBin",
+      "source": "data\\model\\malaya\\쓰레기통01.rsm",
+      "position": [
+        142,
+        25,
+        0
+      ],
+      "scale": 52.262536403557306,
+      "rotation_deg": 0,
+      "kind": "bin",
+      "region": "20_PARK_SEATING",
+      "clearance_radius": 0.38562227652718095
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_12",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -45,
+        -18,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 90,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_13",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -45,
+        18,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 90,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_14",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -45,
+        88,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 90,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_15",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        45,
+        -18,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": -90,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_16",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        45,
+        18,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": -90,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_17",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -96,
+        -20,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_18",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -96,
+        19,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_19",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -49,
+        -20,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_20",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        -49,
+        19,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_21",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        49,
+        -20,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_22",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        49,
+        19,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_23",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        96,
+        -20,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_RO_Outdoor_Bench_24",
+      "asset": "RO_Outdoor_Bench",
+      "source": "data\\model\\외부소품\\벤치01.rsm",
+      "position": [
+        96,
+        19,
+        0
+      ],
+      "scale": 42.44649858291854,
+      "rotation_deg": 0,
+      "kind": "bench",
+      "region": "21_CIVIC_WAITING",
+      "clearance_radius": 0.8209149095691957
+    },
+    {
+      "object": "LIFE_FlowerPot_B_25",
+      "asset": "FlowerPot_B",
+      "source": "data\\model\\나무잡초꽃\\화분03.rsm",
+      "position": [
+        -97,
+        -57,
+        0
+      ],
+      "scale": 45.73466457053909,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.39585766199168265
+    },
+    {
+      "object": "LIFE_FlowerPot_B_26",
+      "asset": "FlowerPot_B",
+      "source": "data\\model\\나무잡초꽃\\화분03.rsm",
+      "position": [
+        -97,
+        49,
+        0
+      ],
+      "scale": 45.73466457053909,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.39585766199168265
+    },
+    {
+      "object": "LIFE_FlowerPot_A_27",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -97,
+        88,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_B_28",
+      "asset": "FlowerPot_B",
+      "source": "data\\model\\나무잡초꽃\\화분03.rsm",
+      "position": [
+        -97,
+        127,
+        0
+      ],
+      "scale": 45.73466457053909,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.39585766199168265
+    },
+    {
+      "object": "LIFE_FlowerPot_A_29",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -97,
+        150,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_30",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -42,
+        -149,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_31",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -42,
+        -123,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_32",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -42,
+        -83,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_33",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -42,
+        -57,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_34",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -42,
+        49,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_B_35",
+      "asset": "FlowerPot_B",
+      "source": "data\\model\\나무잡초꽃\\화분03.rsm",
+      "position": [
+        -42,
+        88,
+        0
+      ],
+      "scale": 45.73466457053909,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.39585766199168265
+    },
+    {
+      "object": "LIFE_FlowerPot_A_36",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        -42,
+        127,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_B_37",
+      "asset": "FlowerPot_B",
+      "source": "data\\model\\나무잡초꽃\\화분03.rsm",
+      "position": [
+        -42,
+        150,
+        0
+      ],
+      "scale": 45.73466457053909,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.39585766199168265
+    },
+    {
+      "object": "LIFE_FlowerPot_A_38",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        42,
+        -149,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_39",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        42,
+        -123,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_40",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        42,
+        -83,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_41",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        42,
+        -57,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_A_42",
+      "asset": "FlowerPot_A",
+      "source": "data\\model\\나무잡초꽃\\화분01.rsm",
+      "position": [
+        42,
+        49,
+        0
+      ],
+      "scale": 93.52170495256081,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 1.4483833307005718
+    },
+    {
+      "object": "LIFE_FlowerPot_B_43",
+      "asset": "FlowerPot_B",
+      "source": "data\\model\\나무잡초꽃\\화분03.rsm",
+      "position": [
+        42,
+        88,
+        0
+      ],
+      "scale": 45.73466457053909,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.39585766199168265
+    },
+    {
+      "object": "LIFE_FlowerPot_B_44",
+      "asset": "FlowerPot_B",
+      "source": "data\\model\\나무잡초꽃\\화분03.rsm",
+      "position": [
+        42,
+        150,
+        0
+      ],
+      "scale": 45.73466457053909,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.39585766199168265
+    },
+    {
+      "object": "LIFE_CityPlanter_45",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        -70,
+        -95,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_CityPlanter_46",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        -70,
+        -45,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_CityPlanter_47",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        -70,
+        16,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_CityPlanter_48",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        70,
+        -95,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_CityPlanter_49",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        70,
+        -45,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_CityPlanter_50",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        70,
+        16,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_CityPlanter_51",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        70,
+        121,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_CityPlanter_52",
+      "asset": "CityPlanter",
+      "source": "data\\model\\유노추가\\유노_화분.rsm",
+      "position": [
+        70,
+        161,
+        0
+      ],
+      "scale": 22.704373672748773,
+      "rotation_deg": 0,
+      "kind": "planter",
+      "region": "22_STREET_PLANTERS",
+      "clearance_radius": 0.6500226265211517
+    },
+    {
+      "object": "LIFE_GardenFlowers_53",
+      "asset": "GardenFlowers",
+      "source": "data\\model\\나무잡초꽃\\둥근꽃밭.rsm",
+      "position": [
+        -131,
+        -157,
+        0
+      ],
+      "scale": 25.990563302257318,
+      "rotation_deg": 0,
+      "kind": "flowerbed",
+      "region": "23_GARDENS",
+      "clearance_radius": 1.248
+    },
+    {
+      "object": "LIFE_GardenFlowers_54",
+      "asset": "GardenFlowers",
+      "source": "data\\model\\나무잡초꽃\\둥근꽃밭.rsm",
+      "position": [
+        -153,
+        12,
+        0
+      ],
+      "scale": 25.990563302257318,
+      "rotation_deg": 0,
+      "kind": "flowerbed",
+      "region": "23_GARDENS",
+      "clearance_radius": 1.248
+    },
+    {
+      "object": "LIFE_GardenFlowers_55",
+      "asset": "GardenFlowers",
+      "source": "data\\model\\나무잡초꽃\\둥근꽃밭.rsm",
+      "position": [
+        -131,
+        -12,
+        0
+      ],
+      "scale": 25.990563302257318,
+      "rotation_deg": 0,
+      "kind": "flowerbed",
+      "region": "23_GARDENS",
+      "clearance_radius": 1.248
+    },
+    {
+      "object": "LIFE_GardenFlowers_56",
+      "asset": "GardenFlowers",
+      "source": "data\\model\\나무잡초꽃\\둥근꽃밭.rsm",
+      "position": [
+        131,
+        12,
+        0
+      ],
+      "scale": 25.990563302257318,
+      "rotation_deg": 0,
+      "kind": "flowerbed",
+      "region": "23_GARDENS",
+      "clearance_radius": 1.248
+    },
+    {
+      "object": "LIFE_GardenFlowers_57",
+      "asset": "GardenFlowers",
+      "source": "data\\model\\나무잡초꽃\\둥근꽃밭.rsm",
+      "position": [
+        153,
+        -12,
+        0
+      ],
+      "scale": 25.990563302257318,
+      "rotation_deg": 0,
+      "kind": "flowerbed",
+      "region": "23_GARDENS",
+      "clearance_radius": 1.248
+    },
+    {
+      "object": "LIFE_ParkTree_58",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        -143,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_59",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        -118,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_60",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        -91,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_61",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        -67,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_62",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        52,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_63",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        82,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_64",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        122,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_65",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -35,
+        155,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_66",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        35,
+        -143,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_67",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        35,
+        -118,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_68",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        35,
+        -91,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_69",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        35,
+        -67,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_70",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        35,
+        52,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_71",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        35,
+        82,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_72",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        35,
+        155,
+        0
+      ],
+      "scale": 34.4268804637759,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_73",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        -150,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_74",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        -128,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_75",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        -84,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_76",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        -62,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_77",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        4,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_78",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        48,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_79",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        70,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_80",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        92,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_81",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        -164,
+        136,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_82",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        -150,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_83",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        -128,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_84",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        -84,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_85",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        -62,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_86",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        4,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_87",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        48,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_88",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        70,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_89",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        92,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_ParkTree_90",
+      "asset": "ParkTree",
+      "source": "data\\model\\brasilis\\나무03.rsm",
+      "position": [
+        164,
+        136,
+        0
+      ],
+      "scale": 33.44325530766802,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "23_GARDENS",
+      "clearance_radius": 2.2
+    },
+    {
+      "object": "LIFE_GardenBush_91",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        -40,
+        -152,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_92",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        -40,
+        -130,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_93",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        -40,
+        -85,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_94",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        -40,
+        -61,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_95",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        -40,
+        95,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_96",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        -40,
+        151,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_97",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        40,
+        -152,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_98",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        40,
+        -130,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_99",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        40,
+        -85,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_100",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        40,
+        -61,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_101",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        40,
+        95,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_GardenBush_102",
+      "asset": "GardenBush",
+      "source": "data\\model\\유노\\유노_덤블1.rsm",
+      "position": [
+        40,
+        151,
+        0
+      ],
+      "scale": 16.19269415063707,
+      "rotation_deg": 0,
+      "kind": "shrub",
+      "region": "23_GARDENS",
+      "clearance_radius": 0.9599999999999999
+    },
+    {
+      "object": "LIFE_M01_Lamp_103",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        -155,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_104",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        -131,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_105",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        -83,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_106",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        -59,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_107",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        -16,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_108",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        15,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_109",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        57,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_110",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        131,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_111",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -100,
+        155,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_112",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        -155,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_113",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        -131,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_114",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        -83,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_115",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        -59,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_116",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        -16,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_117",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        15,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_118",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        131,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_119",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        100,
+        155,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_120",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        -149,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_121",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        -123,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_122",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        -77,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_123",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        -53,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_124",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        57,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_125",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        91,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_126",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        128,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_127",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        -45,
+        155,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_128",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        45,
+        -149,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_129",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        45,
+        -123,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_130",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        45,
+        -53,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_RO_LHZ_Lamp_131",
+      "asset": "RO_LHZ_Lamp",
+      "source": "data\\model\\리히타르젠\\가로등03.rsm",
+      "position": [
+        45,
+        155,
+        0
+      ],
+      "scale": 55.00250827007534,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.4
+    },
+    {
+      "object": "LIFE_M01_Lamp_132",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -153,
+        -27,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_133",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        -153,
+        27,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_134",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        153,
+        -27,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_M01_Lamp_135",
+      "asset": "M01_Lamp",
+      "source": "data\\model\\malaya\\가로등.rsm",
+      "position": [
+        153,
+        27,
+        0
+      ],
+      "scale": 48.08181327108453,
+      "rotation_deg": 0,
+      "kind": "lamp",
+      "region": "24_NEIGHBORHOOD_LIGHTING",
+      "clearance_radius": 0.5
+    },
+    {
+      "object": "LIFE_FireHydrant_136",
+      "asset": "FireHydrant",
+      "source": "data\\model\\리히타르젠\\소화전.rsm",
+      "position": [
+        -99,
+        -96,
+        0
+      ],
+      "scale": 28.796865804376676,
+      "rotation_deg": 0,
+      "kind": "utility",
+      "region": "25_STREET_SERVICES",
+      "clearance_radius": 0.3
+    },
+    {
+      "object": "LIFE_FireHydrant_137",
+      "asset": "FireHydrant",
+      "source": "data\\model\\리히타르젠\\소화전.rsm",
+      "position": [
+        -99,
+        96,
+        0
+      ],
+      "scale": 28.796865804376676,
+      "rotation_deg": 0,
+      "kind": "utility",
+      "region": "25_STREET_SERVICES",
+      "clearance_radius": 0.3
+    },
+    {
+      "object": "LIFE_FireHydrant_138",
+      "asset": "FireHydrant",
+      "source": "data\\model\\리히타르젠\\소화전.rsm",
+      "position": [
+        99,
+        -96,
+        0
+      ],
+      "scale": 28.796865804376676,
+      "rotation_deg": 0,
+      "kind": "utility",
+      "region": "25_STREET_SERVICES",
+      "clearance_radius": 0.3
+    },
+    {
+      "object": "LIFE_MarketCart_139",
+      "asset": "MarketCart",
+      "source": "data\\model\\아요타야\\리어카.rsm",
+      "position": [
+        -98,
+        -72,
+        0
+      ],
+      "scale": 20.898484926506285,
+      "rotation_deg": 0,
+      "kind": "market_cart",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 1.4
+    },
+    {
+      "object": "LIFE_FruitCrate_140",
+      "asset": "FruitCrate",
+      "source": "data\\model\\아요타야\\과일박스.rsm",
+      "position": [
+        -95.6,
+        -72,
+        0
+      ],
+      "scale": 32.046142737964196,
+      "rotation_deg": 0,
+      "kind": "market_crate",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 0.384
+    },
+    {
+      "object": "LIFE_MarketCart_141",
+      "asset": "MarketCart",
+      "source": "data\\model\\아요타야\\리어카.rsm",
+      "position": [
+        -43,
+        -137,
+        0
+      ],
+      "scale": 20.898484926506285,
+      "rotation_deg": 0,
+      "kind": "market_cart",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 1.4
+    },
+    {
+      "object": "LIFE_FruitCrate_142",
+      "asset": "FruitCrate",
+      "source": "data\\model\\아요타야\\과일박스.rsm",
+      "position": [
+        -40.6,
+        -137,
+        0
+      ],
+      "scale": 32.046142737964196,
+      "rotation_deg": 0,
+      "kind": "market_crate",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 0.384
+    },
+    {
+      "object": "LIFE_MarketCart_143",
+      "asset": "MarketCart",
+      "source": "data\\model\\아요타야\\리어카.rsm",
+      "position": [
+        -43,
+        -68,
+        0
+      ],
+      "scale": 20.898484926506285,
+      "rotation_deg": 0,
+      "kind": "market_cart",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 1.4
+    },
+    {
+      "object": "LIFE_FruitCrate_144",
+      "asset": "FruitCrate",
+      "source": "data\\model\\아요타야\\과일박스.rsm",
+      "position": [
+        -40.6,
+        -68,
+        0
+      ],
+      "scale": 32.046142737964196,
+      "rotation_deg": 0,
+      "kind": "market_crate",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 0.384
+    },
+    {
+      "object": "LIFE_MarketCart_145",
+      "asset": "MarketCart",
+      "source": "data\\model\\아요타야\\리어카.rsm",
+      "position": [
+        -99,
+        -135,
+        0
+      ],
+      "scale": 20.898484926506285,
+      "rotation_deg": 0,
+      "kind": "market_cart",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 1.4
+    },
+    {
+      "object": "LIFE_FruitCrate_146",
+      "asset": "FruitCrate",
+      "source": "data\\model\\아요타야\\과일박스.rsm",
+      "position": [
+        -96.6,
+        -135,
+        0
+      ],
+      "scale": 32.046142737964196,
+      "rotation_deg": 0,
+      "kind": "market_crate",
+      "region": "26_MARKET_LIFE",
+      "clearance_radius": 0.384
+    },
+    {
+      "object": "LIFE_BulletinBoard_147",
+      "asset": "BulletinBoard",
+      "source": "data\\model\\외부소품\\게시판.rsm",
+      "position": [
+        -53,
+        47,
+        0
+      ],
+      "scale": 36.60353714731932,
+      "rotation_deg": 0,
+      "kind": "noticeboard",
+      "region": "25_STREET_SERVICES",
+      "clearance_radius": 0.6
+    },
+    {
+      "object": "LIFE_BulletinBoard_148",
+      "asset": "BulletinBoard",
+      "source": "data\\model\\외부소품\\게시판.rsm",
+      "position": [
+        -91,
+        -92,
+        0
+      ],
+      "scale": 36.60353714731932,
+      "rotation_deg": 0,
+      "kind": "noticeboard",
+      "region": "25_STREET_SERVICES",
+      "clearance_radius": 0.6
+    },
+    {
+      "object": "LIFE_BulletinBoard_149",
+      "asset": "BulletinBoard",
+      "source": "data\\model\\외부소품\\게시판.rsm",
+      "position": [
+        -132,
+        -21,
+        0
+      ],
+      "scale": 36.60353714731932,
+      "rotation_deg": 0,
+      "kind": "noticeboard",
+      "region": "25_STREET_SERVICES",
+      "clearance_radius": 0.6
+    },
+    {
+      "object": "LIFE_CivicBedTree_410",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -92,
+        44,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_170.001"
+    },
+    {
+      "object": "LIFE_CivicBedTree_411",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -92,
+        96,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_171.001"
+    },
+    {
+      "object": "LIFE_CivicBedTree_412",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -52,
+        44,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_172.001"
+    },
+    {
+      "object": "LIFE_CivicBedTree_413",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        -52,
+        96,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_173.001"
+    },
+    {
+      "object": "LIFE_CivicBedTree_414",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        52,
+        44,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_174.001"
+    },
+    {
+      "object": "LIFE_CivicBedTree_415",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        52,
+        96,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_175.001"
+    },
+    {
+      "object": "LIFE_CivicBedTree_416",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        92,
+        44,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_176.001"
+    },
+    {
+      "object": "LIFE_CivicBedTree_417",
+      "asset": "RO_LHZ_Tree_B",
+      "source": "data\\model\\리히타르젠\\나무02.rsm",
+      "position": [
+        92,
+        96,
+        0.65
+      ],
+      "scale": 68.5078694296102,
+      "rotation_deg": 0,
+      "kind": "tree",
+      "region": "28_PLANTED_CIVIC_BEDS",
+      "container": "RO_LHZ_Planter_177.001"
+    }
+  ],
+  "building_count": 59,
+  "lamp_count": 115,
+  "unique_ro_models": 42,
+  "runtime_status": "Decorated Blender/GLB scene; static NPC poses, idle atlases included, website unchanged",
+  "provenance": "All building and prop models are Ragnarok Online assets; city arrangement is new.",
+  "characters": [
+    {
+      "object": "CITIZEN_Kafra_0",
+      "sprite": "Kafra",
+      "position": [
+        -66,
+        48,
+        0
+      ],
+      "height_m": 1.7,
+      "role": "Hall information",
+      "atlas": "sprites/Kafra-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiWoman_1",
+      "sprite": "ThaiWoman",
+      "position": [
+        -79,
+        50,
+        0
+      ],
+      "height_m": 1.65,
+      "role": "temple host",
+      "atlas": "sprites/ThaiWoman-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Guard_2",
+      "sprite": "Guard",
+      "position": [
+        -88,
+        51,
+        0
+      ],
+      "height_m": 1.8,
+      "role": "campus guard",
+      "atlas": "sprites/Guard-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Guard_3",
+      "sprite": "Guard",
+      "position": [
+        85,
+        43,
+        0
+      ],
+      "height_m": 1.8,
+      "role": "lab guard",
+      "atlas": "sprites/Guard-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Kafra_4",
+      "sprite": "Kafra",
+      "position": [
+        47,
+        -21,
+        0
+      ],
+      "height_m": 1.7,
+      "role": "city information",
+      "atlas": "sprites/Kafra-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiMan_5",
+      "sprite": "ThaiMan",
+      "position": [
+        -47,
+        23,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "resident",
+      "atlas": "sprites/ThaiMan-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiElder_6",
+      "sprite": "ThaiElder",
+      "position": [
+        -144,
+        -20,
+        0
+      ],
+      "height_m": 1.65,
+      "role": "park visitor",
+      "atlas": "sprites/ThaiElder-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiMan_7",
+      "sprite": "ThaiMan",
+      "position": [
+        -139,
+        -20,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "park visitor",
+      "atlas": "sprites/ThaiMan-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiWoman_8",
+      "sprite": "ThaiWoman",
+      "position": [
+        136,
+        23,
+        0
+      ],
+      "height_m": 1.65,
+      "role": "park visitor",
+      "atlas": "sprites/ThaiWoman-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiElder_9",
+      "sprite": "ThaiElder",
+      "position": [
+        140,
+        23,
+        0
+      ],
+      "height_m": 1.65,
+      "role": "park visitor",
+      "atlas": "sprites/ThaiElder-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_FruitSeller_10",
+      "sprite": "FruitSeller",
+      "position": [
+        -42,
+        -134,
+        0
+      ],
+      "height_m": 1.65,
+      "role": "market merchant",
+      "atlas": "sprites/FruitSeller-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiMan_11",
+      "sprite": "ThaiMan",
+      "position": [
+        -43,
+        -76,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "shopper",
+      "atlas": "sprites/ThaiMan-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiMan_12",
+      "sprite": "ThaiMan",
+      "position": [
+        -42,
+        -127,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "shopper",
+      "atlas": "sprites/ThaiMan-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Scientist_13",
+      "sprite": "Scientist",
+      "position": [
+        43,
+        8,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "research campus visitor",
+      "atlas": "sprites/Scientist-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Guard_14",
+      "sprite": "Guard",
+      "position": [
+        16,
+        -164,
+        0
+      ],
+      "height_m": 1.8,
+      "role": "south gate guard",
+      "atlas": "sprites/Guard-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Guard_15",
+      "sprite": "Guard",
+      "position": [
+        -16,
+        -164,
+        0
+      ],
+      "height_m": 1.8,
+      "role": "south gate guard",
+      "atlas": "sprites/Guard-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Guard_16",
+      "sprite": "Guard",
+      "position": [
+        -162,
+        14,
+        0
+      ],
+      "height_m": 1.8,
+      "role": "west gate guard",
+      "atlas": "sprites/Guard-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Guard_17",
+      "sprite": "Guard",
+      "position": [
+        162,
+        14,
+        0
+      ],
+      "height_m": 1.8,
+      "role": "east gate guard",
+      "atlas": "sprites/Guard-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Poring_18",
+      "sprite": "Poring",
+      "position": [
+        -139,
+        5,
+        0
+      ],
+      "height_m": 0.6,
+      "role": "park creature",
+      "atlas": "sprites/Poring-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Poring_19",
+      "sprite": "Poring",
+      "position": [
+        -143,
+        9,
+        0
+      ],
+      "height_m": 0.6,
+      "role": "park creature",
+      "atlas": "sprites/Poring-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Lunatic_20",
+      "sprite": "Lunatic",
+      "position": [
+        -148,
+        3,
+        0
+      ],
+      "height_m": 0.55,
+      "role": "park creature",
+      "atlas": "sprites/Lunatic-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Lunatic_21",
+      "sprite": "Lunatic",
+      "position": [
+        -139,
+        -5,
+        0
+      ],
+      "height_m": 0.55,
+      "role": "park creature",
+      "atlas": "sprites/Lunatic-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Poring_22",
+      "sprite": "Poring",
+      "position": [
+        137,
+        -5,
+        0
+      ],
+      "height_m": 0.6,
+      "role": "park creature",
+      "atlas": "sprites/Poring-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Lunatic_23",
+      "sprite": "Lunatic",
+      "position": [
+        145,
+        -3,
+        0
+      ],
+      "height_m": 0.55,
+      "role": "park creature",
+      "atlas": "sprites/Lunatic-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Poring_24",
+      "sprite": "Poring",
+      "position": [
+        147,
+        6,
+        0
+      ],
+      "height_m": 0.6,
+      "role": "park creature",
+      "atlas": "sprites/Poring-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Lunatic_25",
+      "sprite": "Lunatic",
+      "position": [
+        138,
+        7,
+        0
+      ],
+      "height_m": 0.55,
+      "role": "park creature",
+      "atlas": "sprites/Lunatic-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Merchant_26",
+      "sprite": "Merchant",
+      "position": [
+        -98,
+        -69,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "fruit stall merchant",
+      "atlas": "sprites/Merchant-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Merchant_27",
+      "sprite": "Merchant",
+      "position": [
+        -99,
+        -132,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "market merchant",
+      "atlas": "sprites/Merchant-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Merchant_28",
+      "sprite": "Merchant",
+      "position": [
+        -43,
+        -65,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "market merchant",
+      "atlas": "sprites/Merchant-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_Scientist_29",
+      "sprite": "Scientist",
+      "position": [
+        62,
+        43,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "Datacenter researcher",
+      "atlas": "sprites/Scientist-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiMan_30",
+      "sprite": "ThaiMan",
+      "position": [
+        -44,
+        125,
+        0
+      ],
+      "height_m": 1.72,
+      "role": "resident",
+      "atlas": "sprites/ThaiMan-idle-atlas.png"
+    },
+    {
+      "object": "CITIZEN_ThaiWoman_31",
+      "sprite": "ThaiWoman",
+      "position": [
+        43,
+        129,
+        0
+      ],
+      "height_m": 1.65,
+      "role": "resident",
+      "atlas": "sprites/ThaiWoman-idle-atlas.png"
+    }
+  ],
+  "added_props": 158,
+  "added_citizens": 32,
+  "added_by_category": {
+    "bench": 21,
+    "bin": 4,
+    "flowerbed": 5,
+    "lamp": 33,
+    "market_cart": 4,
+    "market_crate": 4,
+    "noticeboard": 3,
+    "planter": 28,
+    "shrub": 12,
+    "tree": 41,
+    "utility": 3
+  },
+  "npc_count": 24,
+  "park_creature_count": 8,
+  "unique_sprite_types": 10
+}

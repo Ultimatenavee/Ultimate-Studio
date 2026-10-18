@@ -1,3 +1,4 @@
+import {EAST_RETURN} from './sirin-navigation.js';
 import {createWardrobe,savedAppearance} from './ayothaya-wardrobe.js';
 import {WALK_EYE} from './ayothaya-navigation.js';
 import {createScene as createInterior} from './scene.js';
@@ -7,6 +8,7 @@ import {ayothayaMap} from './ayothaya-map.js';
 
 // Keeps the existing rack editor and device museum intact behind room portals.
 export async function createScene(host,opts){
+ let roomOrigin='lobby';
  let area='city',world,interior,disposed=false,ready=false,timeOfDay='day',perspective='first',sitting=false,wardrobe;
  try{timeOfDay=localStorage.getItem('uts-ayothaya-sky')==='night'?'night':'day';}catch{}
 
@@ -16,7 +18,7 @@ export async function createScene(host,opts){
  indoorHost.style.visibility='hidden';indoorHost.style.pointerEvents='none';
  const fade=document.createElement('div');fade.className='ayothaya-fade';fade.setAttribute('role','status');fade.setAttribute('aria-live','polite');fade.hidden=true;host.append(fade);
  const place=document.createElement('div');place.className='ayothaya-place';place.innerHTML='<b></b><span></span><button type="button">กลับโถงกลาง</button>';host.append(place);
- const back=place.querySelector('button');back.onclick=()=>warp(area==='lobby'?'city':'lobby');
+ const back=place.querySelector('button');back.onclick=()=>warp(area==='lobby'||area==='capital'?'city':roomOrigin);
  const skyButton=document.createElement('button');skyButton.type='button';skyButton.className='ayothaya-sky-toggle';host.append(skyButton);
  function setTime(value){timeOfDay=value==='night'?'night':'day';world?.timeOfDay(timeOfDay);skyButton.textContent=timeOfDay==='night'?'☾ กลางคืน':'☀ กลางวัน';skyButton.setAttribute('aria-label','สลับท้องฟ้ากลางวันและกลางคืน');skyButton.setAttribute('aria-pressed',String(timeOfDay==='night'));try{localStorage.setItem('uts-ayothaya-sky',timeOfDay);}catch{}}
  skyButton.onclick=()=>{setTime(timeOfDay==='night'?'day':'night');current().focusWalkInput();};
@@ -35,18 +37,18 @@ export async function createScene(host,opts){
  function announce(){
   opts.onMuseumZone?.(area==='museum'?'library':area==='datacenter'?'datacenter':'outdoor');
   sitButton.hidden=!(isIndoor()?interior:world)?.isWalking();opts.onArea?.(area);place.querySelector('b').textContent=AREA_NAMES[area];
-  place.querySelector('span').textContent=area==='city'?'เดินเข้าประตูวัดใหญ่เพื่อวาร์ป':area==='lobby'?'ซ้าย Device Library · ขวา Datacenter · ด้านหลังออกเมือง':'เดินเข้าประตู EXIT เพื่อกลับโถงกลาง';
-  back.hidden=area==='city';back.textContent=area==='lobby'?'กลับเมือง':'กลับโถงกลาง';
+  place.querySelector('span').textContent=area==='city'?'วัดใหญ่ → โถงกลาง · ฝั่งขวา → มหานครศิริน':area==='capital'?'ประตูตะวันตก → อโยธยา · วาร์ปหน้าอาคาร → Library / Datacenter':area==='lobby'?'ซ้าย Device Library · ขวา Datacenter · ด้านหลังออกเมือง':(roomOrigin==='capital'?'เดินเข้าประตู EXIT เพื่อกลับมหานครศิริน':'เดินเข้าประตู EXIT เพื่อกลับโถงกลาง');
+  back.hidden=area==='city';back.textContent=area==='lobby'||area==='capital'?'กลับอโยธยา':roomOrigin==='capital'?'กลับมหานครศิริน':'กลับโถงกลาง';
  }
  function visibility(){
   const indoors=isIndoor();outdoorHost.style.visibility=indoors?'hidden':'visible';outdoorHost.style.pointerEvents=indoors?'none':'auto';indoorHost.style.visibility=indoors?'visible':'hidden';indoorHost.style.pointerEvents=indoors?'auto':'none';
   world?.setActive(!indoors&&!gate.busy);interior?.setActive(indoors&&!gate.busy);host.dataset.area=area;
  }
  function activateInterior(next){
-  if(!interior)return;world.pauseWalkInput();area=next;interior.interiorRoom(next);visibility();opts.onWalk?.(interior.isWalking());announce();
+  if(!interior)return;if(!isIndoor())roomOrigin=area==='capital'?'capital':'lobby';world.pauseWalkInput();area=next;interior.interiorRoom(next);visibility();opts.onWalk?.(interior.isWalking());announce();
  }
  async function travel(next,walking=true,zone){
-  setSit(false);const from=area;
+  const from=area;await world.prepare(next);setSit(false);if(!isIndoor()&&(next==='museum'||next==='datacenter'))roomOrigin=from==='capital'?'capital':'lobby';
   if(next==='museum'||next==='datacenter'){
    activateInterior(next);await interior.visitZone(zone||(next==='museum'?'welcome':'datacenter'),walking);
   }else{
@@ -54,24 +56,26 @@ export async function createScene(host,opts){
   }
   announce();
  }
- async function warp(next){
+ async function warp(next,walking=true){
   if(disposed||!ready||!gate.begin())return false;
   const previous=api.snapshot();world.pauseWalkInput();interior.pauseWalkInput();visibility();
   fade.hidden=false;fade.replaceChildren();const spiral=document.createElement('i');spiral.className='ayothaya-warp-burst';spiral.setAttribute('aria-hidden','true');const label=document.createElement('span');label.textContent='กำลังเข้าสู่ '+AREA_NAMES[next];fade.append(spiral,label);fade.classList.add('is-active');
   try{
    await delay(matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);
    if(disposed)return false;
-   await travel(next,true);
+   await travel(next,walking);
    await delay(180);
    return true;
   }catch(error){
+   if(disposed)return false;
+   if(next==='capital'&&previous.area==='city'){previous.world.position[0]=EAST_RETURN.x;previous.world.position[2]=EAST_RETURN.z;previous.world.rotation[1]=EAST_RETURN.yaw;}
    await api.restore(previous);opts.onHint?.('วาร์ปไม่สำเร็จ กรุณาลองอีกครั้ง');console.warn('Ayothaya portal:',error);return false;
   }finally{
    gate.finish();fade.classList.remove('is-active');fade.hidden=true;
    if(!disposed){visibility();(isIndoor()?interior:world).focusWalkInput();}
   }
  }
- const onStep=(dt,map,x,z)=>{const next=gate.tick(dt,map,x,z,true);if(next)void warp(next);};
+ const onStep=(dt,map,x,z)=>{const next=gate.tick(dt,map,x,z,true);if(next)void warp(isIndoor()&&next==='lobby'?roomOrigin:next);};
  const interiorOpts={...opts,indoorOnly:true,eyeHeight:WALK_EYE.interior};
  // Inactive renderers never update UI or consume input in the other map.
  for(const [key,value]of Object.entries(opts))if(key.startsWith('on')&&typeof value==='function'&&!['onAssets','onMuseumReady'].includes(key))interiorOpts[key]=(...args)=>{if(isIndoor())return value(...args);};
@@ -89,7 +93,7 @@ export async function createScene(host,opts){
  const api=new Proxy({
   sprint(value){current().sprint(value);},jump(){if(gate.busy||!current().isWalking())return false;if(sitting)setSit(false);return current().jump();},sit(value){if(current().isWalking())setSit(value);},touch(f,s){if((f||s)&&sitting)setSit(false);current().touch(f,s);},
   async appearance(base){await Promise.all([world.appearance(base),interior.appearance(base)]);},perspective:(value)=>setPerspective(value),timeOfDay:setTime,visualStats:()=>({timeOfDay,perspective,sitting,world:world.visualStats(),interior:interior.visualStats()}),currentArea:()=>area,mapView:()=>ayothayaMap(area),
-  async visitCampus(id,walking=false){if(gate.busy)return false;const next=({campus:'city',garden:'city',temple:'lobby'})[id]||id;if(!AREA_NAMES[next])return false;await travel(next,walking);return true;},
+  async visitCampus(id,walking=false){if(gate.busy)return false;const next=({campus:'city',garden:'city',temple:'lobby'})[id]||id;if(!AREA_NAMES[next])return false;if(next==='capital'&&!world.visualStats().capitalLoaded)return warp(next,walking);await travel(next,walking);return true;},
   visitTemple:()=>gate.busy?false:travel('lobby',true),visitZone:(id,walking=true)=>gate.busy?false:travel(id==='datacenter'?'datacenter':'museum',walking,id),
   async focusExhibit(id){if(area!=='museum')await travel('museum',true);return interior.focusExhibit(id);},
   async tour(){await travel('museum',true);return interior.tour();},
@@ -104,8 +108,8 @@ export async function createScene(host,opts){
   startDrone:()=>travel('city',false).then(()=>world.rotateOverview()),stopDrone(){world.stopPresentation();interior.stopDrone();},
   rotateOverview(){const result=current().rotateOverview();opts.onRotate?.(!!result);return result;},
   stopPresentation(){world.stopPresentation();interior.stopPresentation();opts.onRotate?.(false);},interruptPresentation(){world.interruptPresentation();interior.interruptPresentation();},
-  snapshot:()=>({ayothaya:true,area,timeOfDay,perspective,sitting,world:world.snapshot(),interior:interior.snapshot()}),
-  async restore(v){if(!v)return;setSit(false);if(!v.ayothaya){activateInterior('datacenter');await interior.restore(v);return;}if(v.timeOfDay)setTime(v.timeOfDay);setPerspective(v.perspective||'first');area=v.area;interior.interiorRoom(area==='museum'?'museum':'datacenter');await interior.restore(v.interior);world.restore(v.world);if(v.sitting&&current().isWalking())setSit(true);visibility();announce();opts.onWalk?.(current().isWalking());},
+  snapshot:()=>({ayothaya:true,area,roomOrigin,timeOfDay,perspective,sitting,world:world.snapshot(),interior:interior.snapshot()}),
+  async restore(v){if(!v)return;setSit(false);if(!v.ayothaya){activateInterior('datacenter');await interior.restore(v);return;}if(v.timeOfDay)setTime(v.timeOfDay);setPerspective(v.perspective||'first');roomOrigin=v.roomOrigin==='capital'?'capital':'lobby';area=v.area;interior.interiorRoom(area==='museum'?'museum':'datacenter');await interior.restore(v.interior);await world.restore(v.world);if(v.sitting&&current().isWalking())setSit(true);visibility();announce();opts.onWalk?.(current().isWalking());},
   dispose(){if(disposed)return;disposed=true;wardrobe?.dispose();world.dispose();interior.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();},
  },{get(target,key){if(key in target)return target[key];const navigation=['zoom','touch','crouch','focusWalkInput'];const owner=navigation.includes(key)?current():interior;const value=owner[key];return typeof value==='function'?value.bind(owner):value;}});
  wardrobe=createWardrobe(host,{apply:async base=>{await api.appearance(base);setPerspective('third',{start:true});},pause:()=>api.pauseWalkInput()});

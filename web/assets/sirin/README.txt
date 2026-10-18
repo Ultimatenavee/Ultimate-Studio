@@ -1,0 +1,1 @@
+SIRIN city v004: a new city arrangement using Ragnarok Online assets. Source/provenance retained in the accompanying manifests. Runtime: instanced geometry and WebP textures (quality 88), self-contained GLB. Navigation uses building footprints and trunk/pole colliders. Citizens are static scenery. Source Blender scene is maintained separately.

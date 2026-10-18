@@ -1,4 +1,5 @@
 import {spawnSync} from 'node:child_process';
+const sirin=spawnSync(process.execPath,['scripts/verify-sirin-portals.mjs'],{stdio:'inherit'});if(sirin.status!==0)process.exit(sirin.status||1);
 const ayothaya=spawnSync(process.execPath,['scripts/verify-ayothaya.mjs'],{stdio:'inherit'});if(ayothaya.status!==0)process.exit(ayothaya.status||1);
 const wardrobe=spawnSync(process.execPath,['scripts/verify-ayothaya-wardrobe-data.mjs'],{stdio:'inherit'});if(wardrobe.status!==0)process.exit(wardrobe.status||1);
 const lighting=spawnSync(process.execPath,['scripts/verify-selected-light-layout.mjs'],{stdio:'inherit'});if(lighting.status!==0)process.exit(lighting.status||1);
