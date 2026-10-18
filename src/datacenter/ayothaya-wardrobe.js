@@ -27,7 +27,7 @@ export function createWardrobe(host,{apply,pause,onError}){
  const previews=new Map();
  const pickers=bindWardrobePickers(dialog,{fields,items:key=>lists[key]?.items||[],onSelect:(key,id)=>{fields[key].value=id;fields[key].onchange();}});
  const message=text=>status.textContent=text;
- const request=async(url,options)=>{if(!window.UTS_BROWSER_LOCAL)return (await import('./online-wardrobe.js')).onlineWardrobeRequest(url,options);const r=await fetch(BASE+url,options),data=await r.json();if(!r.ok)throw Error(data.error||'โหลดรายการไม่สำเร็จ');return data;};
+ const request=async(url,options)=>{if(!window.UTS_BROWSER_LOCAL||window.UTS_PORTABLE_WARDROBE!==false)return (await import('./online-wardrobe.js')).onlineWardrobeRequest(url,options);const r=await fetch(BASE+url,options),data=await r.json();if(!r.ok)throw Error(data.error||'โหลดรายการไม่สำเร็จ');return data;};
  function fill(key,items,{optional=true,search=false}={}){
   lists[key]={items,optional,search};const selected=draft[key]||'',query='',shown=search&&query?items.filter(x=>x.id===selected||(x.label+' '+x.name).toLowerCase().includes(query)):items;
   fields[key].replaceChildren();if(optional)fields[key].add(new Option(key.includes('Palette')?'สีต้นฉบับ':'ไม่ใส่',''));
