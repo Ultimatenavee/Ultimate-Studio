@@ -5,7 +5,7 @@ export const SIRIN_DRONE_SHOTS=[
  {title:'Device Library',note:'วิทยาเขตฝั่งตะวันตก · ประตูเข้าสู่ Hall',position:[-170,95,-30],target:[-73,12,-72]},
  {title:'แกนวัฒนธรรมแห่งเมือง',note:'งานสถาปัตยกรรมไทยและย่านเหนือ',position:[-65,125,-210],target:[0,12,-110]},
  {title:'Datacenter Campus',note:'แล็บและศูนย์ข้อมูลฝั่งตะวันออก',position:[185,110,-130],target:[73,12,-73]},
- {title:'Energy Nexus',note:'หอพลังงานกลางเมือง · กลับสู่ภาพรวม',position:[205,100,75],target:[0,15,0]}
+ {title:'Lotus Nexus',note:'จัตุรัสวิจัย · อาคารไทยอนาคต A / B / C',position:[205,100,75],target:[0,15,0]}
 ];
 export const SIRIN_SHOT_SECONDS=16;
 const positions=new T.CatmullRomCurve3(SIRIN_DRONE_SHOTS.map(s=>new T.Vector3(...s.position)),true,'centripetal');

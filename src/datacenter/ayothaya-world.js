@@ -1,3 +1,5 @@
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+import {installResearchQuarter,researchNavigation} from './sirin-research-quarter.js';
 import {SIRIN_DRONE_SHOTS,SIRIN_SHOT_SECONDS,sirinDronePose} from './sirin-drone.js';
 import {EAST_GATE,EAST_RETURN,CAPITAL_GATE,CAPITAL_SPAWN,CAPITAL_ROOMS,CAPITAL_RETURNS,capitalStep,capitalCanStand} from './sirin-navigation.js';
 import {HOME_CAPITAL_OFFSET,HOME_WORLD_BOUNDS,homeWorldPoint} from './home-world-layout.js';
@@ -29,7 +31,7 @@ export async function createAyothayaWorld(host,opts){
  const ambient=new T.HemisphereLight('#fff6df','#657b94',1.45);scene.add(ambient);
  const sun=new T.DirectionalLight('#fff2d7',1.8);sun.position.set(-25,65,30);scene.add(sun);
  const city=new T.Group(),lobby=new T.Group(),capital=new T.Group();capital.name='SIRIN capital';capital.visible=false;scene.add(capital);city.name='Ayothaya';lobby.name='Temple lobby';scene.add(city,lobby);
- const sky=createAyothayaSky(city),capitalSky=createAyothayaSky(capital),cityMaterials=new Map();let timeOfDay='day',decor,avatar,buildingColors,lanterns,capitalLanterns;let openingCover=false;
+ const sky=createAyothayaSky(city),capitalSky=createAyothayaSky(capital),cityMaterials=new Map();let timeOfDay='day',decor,avatar,buildingColors,lanterns,capitalLanterns,researchQuarter;let openingCover=false;
  const cameraBlockers=()=>{const list=[];(area==='city'?city:area==='capital'?capital:lobby).traverseVisible(o=>{if(o.isMesh&&!o.isSprite&&!o.userData.cameraIgnore&&o.material?.side!==T.BackSide)list.push(o);});return list;};
  let ro=null,active=false,area='city',walking=false,disposed=false,dirty=true,rotate=false,motion=opts.motion!==false,speed=1,quality='balanced',frame=0,previous=0,perfAt=0,frames=0,drag=null,crouching=false,sitting=false,positionAt=0;
  let drone=null;const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
@@ -87,7 +89,7 @@ export async function createAyothayaWorld(host,opts){
  let nav,capitalNav,capitalLoading,capitalLoaded=false;
  const capitalBounds={min:new T.Vector3(-180,0,-180),max:new T.Vector3(180,34,180)};
  const bounds=()=>homeOverview()&&capitalLoaded?{min:new T.Vector3(HOME_WORLD_BOUNDS.minX,HOME_WORLD_BOUNDS.minY,HOME_WORLD_BOUNDS.minZ),max:new T.Vector3(HOME_WORLD_BOUNDS.maxX,HOME_WORLD_BOUNDS.maxY,HOME_WORLD_BOUNDS.maxZ)}:area==='capital'?capitalBounds:area==='city'?{min:new T.Vector3(-40,-3,-40),max:new T.Vector3(40,12,40)}:{min:new T.Vector3(-9,0,-10),max:new T.Vector3(9,5,10)};
- function setTime(value){timeOfDay=value==='night'?'night':'day';const night=timeOfDay==='night',outdoors=area!=='lobby';sky.setNight(night);capitalSky.setNight(night);lanterns?.setNight(night);capitalLanterns?.setNight(night);sky.update(camera,0,false);ambient.color.set(outdoors&&night?'#8bafff':'#fff6df');ambient.groundColor.set(outdoors&&night?'#263354':'#657b94');ambient.intensity=outdoors?(night?.85:1.45):1.6;sun.color.set(outdoors&&night?'#a4bcff':'#fff2d7');sun.intensity=outdoors?(night?.65:1.8):1.3;for(const [m,color]of cityMaterials)m.color.copy(color).multiply(outdoors&&night?new T.Color('#c5d1e8'):new T.Color('#ffffff'));scene.background.set(outdoors?(night?'#101c3a':'#74bce8'):'#202e37');dirty=true;}
+ function setTime(value){timeOfDay=value==='night'?'night':'day';const night=timeOfDay==='night',outdoors=area!=='lobby';sky.setNight(night);capitalSky.setNight(night);lanterns?.setNight(night);capitalLanterns?.setNight(night);researchQuarter?.setNight(night);sky.update(camera,0,false);ambient.color.set(outdoors&&night?'#8bafff':'#fff6df');ambient.groundColor.set(outdoors&&night?'#263354':'#657b94');ambient.intensity=outdoors?(night?.85:1.45):1.6;sun.color.set(outdoors&&night?'#a4bcff':'#fff2d7');sun.intensity=outdoors?(night?.65:1.8):1.3;for(const [m,color]of cityMaterials)m.color.copy(color).multiply(outdoors&&night?new T.Color('#c5d1e8'):new T.Color('#ffffff'));scene.background.set(outdoors?(night?'#101c3a':'#74bce8'):'#202e37');dirty=true;}
 
  try{
   const [gltf,json]=await Promise.all([
@@ -130,13 +132,22 @@ export async function createAyothayaWorld(host,opts){
    if(!response.ok)throw Error('SIRIN navigation unavailable');
    const data=await response.json();
    if(!Array.isArray(data.colliders)||data.bounds?.length!==4)throw Error('Invalid SIRIN navigation');
-   const gltf=await new GLTFLoader().loadAsync('assets/sirin/capital.glb?v=urban-v005');
+   const [gltf,labs,labLayout]=await Promise.all([
+    new GLTFLoader().loadAsync('assets/sirin/capital.glb?v=urban-v005'),
+    new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('assets/sirin/labs/research-quarter.glb?v=ro-materials-v2'),
+    fetch('assets/sirin/labs/layout.json?v=ro-materials-v2').then(r=>{if(!r.ok)throw Error('SIRIN research layout unavailable');return r.json();})
+   ]);
+   researchQuarter=installResearchQuarter(gltf.scene,labs.scene,labLayout);
    if(disposed){gltf.scene.traverse(o=>{o.geometry?.dispose();for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){for(const t of Object.values(m))if(t?.isTexture)t.dispose();m.dispose();}});throw Error('World disposed');}
    gltf.scene.traverse(o=>{if(o.isLight)o.visible=false;if(!o.isMesh)return;o.castShadow=false;o.receiveShadow=false;
     for(const m of Array.isArray(o.material)?o.material:[o.material]){if(m.color&&!cityMaterials.has(m))cityMaterials.set(m,m.color.clone());if(m.map)m.map.anisotropy=Math.min(4,renderer.capabilities.getMaxAnisotropy());}
    });
-   capital.add(gltf.scene);capitalNav=data;
+   capital.add(gltf.scene);capitalNav=researchNavigation(data,labLayout);
    const lighting=await fetch('assets/sirin/lighting-layout.json?v=fixed-v1').then(r=>{if(!r.ok)throw Error('SIRIN lighting unavailable');return r.json();});
+   const insideParcel=p=>labLayout.buildings.some(({parcel:b})=>p.x>b[0]&&p.x<b[1]&&p.z>b[2]&&p.z<b[3]);
+   lighting.added=lighting.added.filter(p=>!insideParcel(p));
+   lighting.sources=lighting.sources.filter(p=>!insideParcel(p));lighting.emitters=lighting.emitters.filter(p=>!insideParcel(p));
+   for(const b of labLayout.buildings)for(const [x,y,z]of b.lamps){lighting.sources.push({x,y,z});lighting.emitters.push({x,y,z,size:.85});}
    capitalLanterns=await createCapitalLanterns(capital,lighting);
    const gates=[{...CAPITAL_GATE,label:'← AYOTHAYA',yaw:Math.PI/2},...Object.entries(CAPITAL_ROOMS).map(([id,p])=>({...p,label:id==='museum'?'DEVICE LIBRARY':'DATACENTER',yaw:0}))];
    for(const p of gates){gate(p.x,p.z,p.yaw,p.label,'#81e6ed',capital,3);await decor.portal(capital,p.x,.03,p.z,3);}
@@ -200,7 +211,7 @@ export async function createAyothayaWorld(host,opts){
  if(!walking||blocked()||document.querySelector('dialog[open]'))return null;
  const stand=(a,b)=>!portalAt(area,a,b)&&(area==='capital'?capitalCanStand(capitalNav,a,b):area==='city'?cityCanStand(nav,a,b):lobbyCanStand(a,b));
  const p=nearestWalkPoint(x,z,stand);if(!p)return null;stopInput();jump.reset();camera.position.set(p.x,ground(p.x,p.z)+WALK_EYE[area],p.z);dirty=true;opts.onPosition?.(p.x,p.z,camera.rotation.y);return p;
- },sprint(v){touchSprint=!!v;},jump(){if(!walking||blocked()||document.querySelector('dialog[open]'))return false;jump.trigger();dirty=true;return true;},sit(v){sitting=!!v;stopInput();jump.reset();dirty=true;},openingView(){overview();openingCover=true;resize(true);},async appearance(base){await avatar?.appearance(base);dirty=true;},perspective(value){avatar?.setMode(value);dirty=true;},timeOfDay:setTime,visualStats:()=>({timeOfDay,eyeHeight:WALK_EYE[area],decor:decor?.stats(),avatar:avatar?.stats(),lanterns:lanterns?.stats(),capitalLanterns:capitalLanterns?.stats(),buildingColors,capitalLoaded,drone:drone?{...drone,paused:drone.paused||!motion}:null,homeOverview:homeOverview(),homeReady:homeOverview()&&capitalLoaded,capitalOffset:capital.position.toArray(),visibleMaps:[city.visible?'city':null,capital.visible?'capital':null].filter(Boolean)}),prepare,show,overview,walk:setWalk,isWalking:()=>walking,focusWalkInput:focus,pauseWalkInput:stopInput,renderReady:render,
+ },sprint(v){touchSprint=!!v;},jump(){if(!walking||blocked()||document.querySelector('dialog[open]'))return false;jump.trigger();dirty=true;return true;},sit(v){sitting=!!v;stopInput();jump.reset();dirty=true;},openingView(){overview();openingCover=true;resize(true);},async appearance(base){await avatar?.appearance(base);dirty=true;},perspective(value){avatar?.setMode(value);dirty=true;},timeOfDay:setTime,visualStats:()=>({timeOfDay,eyeHeight:WALK_EYE[area],decor:decor?.stats(),avatar:avatar?.stats(),lanterns:lanterns?.stats(),capitalLanterns:capitalLanterns?.stats(),buildingColors,capitalLoaded,researchQuarter:researchQuarter?.stats(),drone:drone?{...drone,paused:drone.paused||!motion}:null,homeOverview:homeOverview(),homeReady:homeOverview()&&capitalLoaded,capitalOffset:capital.position.toArray(),visibleMaps:[city.visible?'city':null,capital.visible?'capital':null].filter(Boolean)}),prepare,show,overview,walk:setWalk,isWalking:()=>walking,focusWalkInput:focus,pauseWalkInput:stopInput,renderReady:render,
   setActive(v){active=v;orbit.enabled=v&&!walking;stopInput();resize();dirty=true;},
   zoom,
   touch(f,s){touch.forward=f;touch.strafe=s;},crouch(v){crouching=v;},speed(v){speed=T.MathUtils.clamp(Number(v)||1,.5,2);},motion(v){motion=v;emitDrone();},

@@ -1,0 +1,339 @@
+{
+  "geometry": "Original Blender meshes based on approved A/B/C concepts",
+  "surfaceArtwork": "Ragnarok Online / Gravity; extracted from local client data.grf",
+  "signage": "Original project labels",
+  "materials": [
+    {
+      "material": "jade_tiles",
+      "source": "data\\texture\\기타마을\\tl_inn02.bmp",
+      "origin": "Ayothaya",
+      "crop": [
+        166,
+        83,
+        246,
+        189
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        80,
+        106
+      ],
+      "sourceSHA256": "8ca98fb54f9454df9857336cccf5dd9514f730e6f308557e5ab85de06b06935f",
+      "pngSHA256": "2875ed31bb978a8b13f2686006f088b7e0511a8f7e2699fc20f4b43ca3cc03bc",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "indigo_tiles",
+      "source": "data\\texture\\기타마을\\busi_comroof.bmp",
+      "origin": "Lighthalzen",
+      "crop": [
+        0,
+        87,
+        256,
+        244
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        256,
+        157
+      ],
+      "sourceSHA256": "f676b2b6a7c5070fc642feb7c4e9848ac93e8fc10fa1e6c145d2218890dd6c89",
+      "pngSHA256": "dfb192775dea7f1b20971a6bad4af9a57a9e7f37a49214093bf82fa40eef7fee",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "clay_tiles",
+      "source": "data\\texture\\기타마을\\t_002.bmp",
+      "origin": "Ayothaya",
+      "crop": [
+        75,
+        147,
+        181,
+        201
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        106,
+        54
+      ],
+      "sourceSHA256": "0ddb25e7a422fd9c96af4e2d713752b4656c439d456b74ad97d94a340d013735",
+      "pngSHA256": "42d6efd70b8de75a9325a4aece6f907caddce091606c2ebcea7c604ed60756c9",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "limestone",
+      "source": "data\\texture\\dewata\\ind_house00.bmp",
+      "origin": "Dewata",
+      "crop": [
+        9,
+        39,
+        246,
+        164
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        237,
+        125
+      ],
+      "sourceSHA256": "15f7bbdc5e6fb48366967b7e36be1f10d214ac9ad5d67540973388a8f3609f10",
+      "pngSHA256": "cf7f51f6f1a41d1dc55021d1794bc86fb19d281254038afbe0f73f3259cd3ea2",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "plaster",
+      "source": "data\\texture\\dewata\\ind_hotel02.bmp",
+      "origin": "Dewata",
+      "crop": [
+        82,
+        29,
+        252,
+        153
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        170,
+        124
+      ],
+      "sourceSHA256": "d1fd20a9f8d3d2af28b22b0aac558b0527986862bf1ba7bc07adfd9a933a69fb",
+      "pngSHA256": "fa9fc3c81e9bcfb7b38fd453970a4bcf3e5b54ac914bb1c5f10f54c32e81638c",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "teak",
+      "source": "data\\texture\\dewata\\ind_hotel06.bmp",
+      "origin": "Dewata",
+      "crop": [
+        100,
+        110,
+        246,
+        152
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        146,
+        42
+      ],
+      "sourceSHA256": "f35a1642fa24d0b88ec13dac9670376d6fe4f59713beff137c7f72fbc6f45c1c",
+      "pngSHA256": "2006496d44c6de97071a1d46606e905f972174b96040b1866c80773314cea2a7",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "bronze",
+      "source": "data\\texture\\verus\\ver_j_04.bmp",
+      "origin": "Verus",
+      "crop": [
+        8,
+        97,
+        237,
+        142
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        229,
+        45
+      ],
+      "sourceSHA256": "69e891dd0af6a8df2f24698ff7ee047780b575f3fddd47c23bc1a70d1bbb93ab",
+      "pngSHA256": "8b7b61482cfbd27d116c54325c1db329439532ab1c14c6f40c450a413d63ea36",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "steel",
+      "source": "data\\texture\\기타마을\\busi_compill.bmp",
+      "origin": "Lighthalzen",
+      "crop": [
+        23,
+        4,
+        82,
+        247
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        59,
+        243
+      ],
+      "sourceSHA256": "f31d3d6b8f55f378e6ceb2229339af4ff18d9bc9a9a224fa14fe0280778eb29e",
+      "pngSHA256": "bb8a6ef8887c0f087ee50d2d8571abd957d681ccb890d5263e53a536b34db954",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "glass",
+      "source": "data\\texture\\verus\\ver_j_32.bmp",
+      "origin": "Verus",
+      "crop": [
+        51,
+        101,
+        90,
+        155
+      ],
+      "originalSize": [
+        512,
+        512
+      ],
+      "size": [
+        39,
+        54
+      ],
+      "sourceSHA256": "e308c279dd395b090698acfaaf2724af6fee719d88ff55c6a99877210b3dc979",
+      "pngSHA256": "ee83d9376ec24b17f41b17a7ba2f32e4fa9780ded9402d43ce379866cb913c30",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "warm",
+      "source": "data\\texture\\기타마을\\t_wall002.bmp",
+      "origin": "Ayothaya",
+      "crop": [
+        112,
+        139,
+        155,
+        228
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        43,
+        89
+      ],
+      "sourceSHA256": "af401fb9563b1c6c802393a861fb08e0be617d8b0728fd170d85a8adfa3f11a0",
+      "pngSHA256": "913c83c935ea98e14b1d598c9cfcba028f312624c5ae4ba5ee006b10a983235f",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "cyan",
+      "source": "data\\texture\\verus\\ver_j_08.bmp",
+      "origin": "Verus",
+      "crop": [
+        171,
+        3,
+        211,
+        43
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        40,
+        40
+      ],
+      "sourceSHA256": "14c177cfe57eb2b56d1f01ce148f39cdd8e0119e93425d7e94a0c19c20b50934",
+      "pngSHA256": "d380b2adfbc4af34d93050dae73e0fb61a87364b095f5205439737b2a7b57441",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "shadow",
+      "source": "data\\texture\\기타마을\\te_muroof.bmp",
+      "origin": "Ayothaya",
+      "crop": [
+        198,
+        88,
+        232,
+        163
+      ],
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        34,
+        75
+      ],
+      "sourceSHA256": "ae890bf05a899c13533a71006d7664ad6f3a48df2b31a38b38e2e7c840162806",
+      "pngSHA256": "eedbe787742588579cbc96a4acdf8a1c5d150aaa7c457dfa06487e9dbfd6c964",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "pavers",
+      "source": "data\\texture\\필드바닥\\태국풀바닥20.bmp",
+      "origin": "Ayothaya",
+      "crop": null,
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "sourceSHA256": "6cf37cb3eea690e59084d229e8f5fae9c4ed8372f1f26110828234bf31beda22",
+      "pngSHA256": "540b43868691e1b1f410c467389aaadb91543f022cc0466b4b3cad249c550c61",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "leaf",
+      "source": "data\\texture\\프론테라\\weed.bmp",
+      "origin": "Prontera",
+      "crop": null,
+      "originalSize": [
+        128,
+        128
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "sourceSHA256": "8034a525f56da02f74ef50bf3ae6d7cdfd85c6b27cdf2f448dff24cef08d19d9",
+      "pngSHA256": "626473983edf6ddbc43381c25f9d32974996b22b64361df6790535d43aa6f82a",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "leaf_light",
+      "source": "data\\texture\\프론테라\\weed.bmp",
+      "origin": "Prontera",
+      "crop": null,
+      "originalSize": [
+        128,
+        128
+      ],
+      "size": [
+        128,
+        128
+      ],
+      "sourceSHA256": "8034a525f56da02f74ef50bf3ae6d7cdfd85c6b27cdf2f448dff24cef08d19d9",
+      "pngSHA256": "626473983edf6ddbc43381c25f9d32974996b22b64361df6790535d43aa6f82a",
+      "processing": "lossless atlas crop; original RGB colors"
+    },
+    {
+      "material": "soil",
+      "source": "data\\texture\\verus\\ver_j_45.bmp",
+      "origin": "Verus",
+      "crop": null,
+      "originalSize": [
+        256,
+        256
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "sourceSHA256": "b53252cad5c7b45d2f424d75445082d2030502057ded7cf6cf86dd98d1414968",
+      "pngSHA256": "157c8259e76781d9c582633a6b67d5137dd10341d41dd6256996dda0cbfe9a70",
+      "processing": "lossless atlas crop; original RGB colors"
+    }
+  ]
+}

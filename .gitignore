@@ -22,3 +22,6 @@ assets-source/sculpt/*.blend1
 assets-source/sculpt/neural-v109/
 __pycache__/
 *.pyc
+
+# Reproducible SIRIN Blender backup (editable main file is tracked).
+assets-source/sirin-labs/*.blend1
