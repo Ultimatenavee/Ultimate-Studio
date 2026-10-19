@@ -1,0 +1,54 @@
+{
+  "models": {
+    "amatsu-column": "일본\\일본_내부기둥.rsm",
+    "amatsu-teacup": "일본\\일본_내부찻잔.rsm",
+    "amatsu-shoji1": "일본\\일본_다다미문1.rsm",
+    "amatsu-shoji2": "일본\\일본_다다미문2.rsm",
+    "amatsu-shoji3": "일본\\일본_다다미문3.rsm",
+    "amatsu-vase": "일본\\일본_도자기1.rsm",
+    "amatsu-bonsai": "일본\\일본_분재.rsm",
+    "amatsu-table": "일본\\일본_술상.rsm",
+    "amatsu-jar": "일본\\일본_항아리.rsm",
+    "japanese-screen": "히나마쯔리\\일본병풍.rsm",
+    "japanese-lantern": "히나마쯔리\\일본등.rsm",
+    "japanese-cushion": "히나마쯔리\\일본방석.rsm"
+  },
+  "textures": {
+    "japan_bottom01": "data\\texture\\기타마을내부\\japan_bottom01.bmp",
+    "japan_bottom02": "data\\texture\\기타마을내부\\japan_bottom02.bmp",
+    "japan_door01": "data\\texture\\기타마을내부\\japan_door01.bmp",
+    "japan_door02": "data\\texture\\기타마을내부\\japan_door02.bmp",
+    "japan_door03": "data\\texture\\기타마을내부\\japan_door03.bmp",
+    "japan_in01": "data\\texture\\기타마을내부\\japan_in01.bmp",
+    "japan_in02": "data\\texture\\기타마을내부\\japan_in02.bmp",
+    "japan_in03": "data\\texture\\기타마을내부\\japan_in03.bmp",
+    "japan_in04": "data\\texture\\기타마을내부\\japan_in04.bmp"
+  },
+  "mapTextures": {
+    "ama_in01": [
+      "BLACK.BMP",
+      "기타마을내부\\japan_bottom02.BMP",
+      "기타마을내부\\japan_in01.BMP",
+      "기타마을내부\\japan_in04.BMP",
+      "기타마을내부\\japan_bottom01.BMP",
+      "기타마을내부\\japan_in02.BMP",
+      "기타마을내부\\japan_in03.bmp"
+    ],
+    "ama_in02": [
+      "BLACK.BMP",
+      "기타마을내부\\japan_bottom02.BMP",
+      "필드바닥\\일본바닥11.bmp",
+      "기타마을내부\\japan_bottom01.BMP",
+      "기타마을내부\\japan_in02.BMP",
+      "기타마을내부\\japan_in04.BMP",
+      "기타마을내부\\japan_in01.BMP",
+      "필드바닥\\일본바닥13.bmp",
+      "기타마을내부\\japan_in03.bmp",
+      "필드바닥\\일본바닥10.bmp",
+      "필드바닥\\일본바닥12.bmp",
+      "필드바닥\\일본바닥01.bmp",
+      "필드바닥\\일본바닥14.bmp"
+    ]
+  },
+  "note": "Amatsu original furniture/surfaces, supplemented by Japanese Hinamatsuri screen, lantern and cushion. No Thai interior props."
+}
