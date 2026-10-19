@@ -1,10 +1,11 @@
 import * as T from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {createRagnarokLife} from './ragnarok-life.js';
 
 const BASE='assets/ayothaya/decor/';
 export async function createRagnarokDecor(){
  const response=await fetch(BASE+'manifest.json');if(!response.ok)throw Error('Ragnarok decoration manifest unavailable');
- const manifest=await response.json(),loader=new T.TextureLoader(),modelLoader=new GLTFLoader(),textures=new Map(),models=new Map(),roots=[],animated=[];
+ const manifest=await response.json(),life=await createRagnarokLife(),loader=new T.TextureLoader(),modelLoader=new GLTFLoader(),textures=new Map(),models=new Map(),roots=[],animated=[];
  const texture=id=>{if(!textures.has(id))textures.set(id,loader.loadAsync(BASE+id+'.png').then(t=>{t.colorSpace=T.SRGBColorSpace;t.generateMipmaps=!manifest.sprites[id];t.minFilter=t.generateMipmaps?T.LinearMipmapLinearFilter:T.LinearFilter;t.magFilter=T.LinearFilter;return t;}));return textures.get(id);};
  const model=id=>{if(!models.has(id))models.set(id,modelLoader.loadAsync(BASE+id+'.glb').then(g=>g.scene));return models.get(id);};
  async function sprite(id,height,additive=false){
@@ -27,7 +28,7 @@ export async function createRagnarokDecor(){
    group.rotation.y=p.yaw||0;group.position.set(p.x,p.y||0,p.z);parent.add(group);roots.push(group);
   }));
  }
- async function person(parent,id,x,z,height=1.45){const s=await sprite(id,height);s.position.set(x,0,z);parent.add(s);roots.push(s);return s;}
+ async function person(parent,id,x,z,height=1.45){return life.actor(parent,id,{x,z,height,phase:roots.length*.731});}
  function labWorkspace(parent,benches,label){
   const metal=new T.MeshStandardMaterial({color:'#637d8c',metalness:.4,roughness:.6}),top=new T.MeshStandardMaterial({color:'#253c48',roughness:.85}),trim=new T.MeshStandardMaterial({color:'#b2c7d1',metalness:.5,roughness:.4});
   for(const p of benches){const g=new T.Group();g.position.set(p.x,0,p.z);g.rotation.y=p.yaw||0;parent.add(g);roots.push(g);
@@ -56,9 +57,9 @@ export async function createRagnarokDecor(){
   for(const x of [-4.2,4.2]){const panel=new T.Mesh(new T.PlaneGeometry(3.4,2.5),new T.MeshBasicMaterial({map:mural,color:'#f4dda9'}));panel.position.set(x,1.9,-9.31);parent.add(panel);roots.push(panel);}
   const rug=new T.Mesh(new T.PlaneGeometry(2.5,11.8),new T.MeshStandardMaterial({map:carpet,roughness:1,color:'#d5a383'}));rug.rotation.x=-Math.PI/2; rug.position.set(0,.032,2.4);parent.add(rug);roots.push(rug);
  }
- return {portal,props,person,templeSurfaces,labWorkspace,
-  update(time,motion){let changed=false;for(const a of animated){const frame=motion?Math.floor(time/a.m.frameMs)%a.m.frames:Math.floor(a.m.frames/2);if(frame===a.frame)continue;a.frame=frame;a.t.offset.set((frame%a.m.columns)/a.m.columns,1-(Math.floor(frame/a.m.columns)+1)/a.m.rows);changed=true;}return changed;},
-  stats:()=>({props:roots.filter(r=>r.name.startsWith('RO prop')).length,portals:roots.filter(r=>r.name==='Ragnarok animated warp').length,sprites:roots.filter(r=>r.isSprite).length,frames:animated.map(a=>({id:a.id,frame:a.frame}))}),
-  dispose(){const gs=new Set(),ms=new Set(),ts=new Set();for(const root of roots){root.removeFromParent();root.traverse(o=>{if(o.geometry)gs.add(o.geometry);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){ms.add(m);for(const t of Object.values(m))if(t?.isTexture)ts.add(t);}});}gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose());ts.forEach(t=>t.dispose());for(const p of textures.values())p.then(t=>{if(!ts.has(t))t.dispose();});roots.length=0;}
+ return {portal,props,person,templeSurfaces,labWorkspace,capitalLife:life.capital,
+  update(time,motion,camera){let changed=life.update(time,motion,camera);for(const a of animated){const frame=motion?Math.floor(time/a.m.frameMs)%a.m.frames:Math.floor(a.m.frames/2);if(frame===a.frame)continue;a.frame=frame;a.t.offset.set((frame%a.m.columns)/a.m.columns,1-(Math.floor(frame/a.m.columns)+1)/a.m.rows);changed=true;}return changed;},
+  stats:()=>({props:roots.filter(r=>r.name.startsWith('RO prop')).length,portals:roots.filter(r=>r.name==='Ragnarok animated warp').length,sprites:roots.filter(r=>r.isSprite).length+life.stats().count,frames:animated.map(a=>({id:a.id,frame:a.frame})),life:life.stats()}),
+  dispose(){life.dispose();const gs=new Set(),ms=new Set(),ts=new Set();for(const root of roots){root.removeFromParent();root.traverse(o=>{if(o.geometry)gs.add(o.geometry);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){ms.add(m);for(const t of Object.values(m))if(t?.isTexture)ts.add(t);}});}gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose());ts.forEach(t=>t.dispose());for(const p of textures.values())p.then(t=>{if(!ts.has(t))t.dispose();});roots.length=0;}
  };
 }
