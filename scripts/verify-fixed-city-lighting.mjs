@@ -1,7 +1,13 @@
 import fs from 'node:fs';import assert from 'node:assert/strict';
 import {decodeNavigation,cityCanStand,gridSample,CITY_SPAWN,TEMPLE_GATE} from '../src/datacenter/ayothaya-navigation.js';
 import {capitalCanStand} from '../src/datacenter/sirin-navigation.js';
-import {buildLightField} from '../src/datacenter/static-city-lighting.js';
+import {buildLightField,createStaticLightField} from '../src/datacenter/static-city-lighting.js';
+import * as T from 'three';
+// Home moves the same map group; its lighting must stay anchored to that map.
+const root=new T.Group(),material=new T.MeshBasicMaterial(),originalCompile=material.onBeforeCompile,geometry=new T.BoxGeometry();root.add(new T.Mesh(geometry,material));root.position.set(232,0,-4);
+const shifted=createStaticLightField(root,[{x:12,z:-3}]),shader={uniforms:{},vertexShader:'#include <project_vertex>',fragmentShader:'#include <opaque_fragment>'};material.onBeforeCompile(shader);
+assert.deepEqual(new T.Vector3(244,1,-7).applyMatrix4(shader.uniforms.fixedLampWorldToLocal.value).toArray(),[12,1,-3]);
+root.position.set(0,0,0);shifted.updateTransform();assert.deepEqual(new T.Vector3(12,1,-3).applyMatrix4(shader.uniforms.fixedLampWorldToLocal.value).toArray(),[12,1,-3]);shifted.dispose();assert.equal(material.onBeforeCompile,originalCompile);geometry.dispose();material.dispose();
 const read=p=>JSON.parse(fs.readFileSync(p)),ay=decodeNavigation(read('web/assets/ayothaya/ground-navigation.json')),old=decodeNavigation(read('web/assets/ayothaya/navigation.json')),capital=read('web/assets/sirin/ground-navigation.json'),prior=read('web/assets/sirin/navigation.json'),lights=read('web/assets/sirin/lighting-layout.json'),al=read('web/assets/ayothaya/lighting-extension.json');
 let expanded=0;for(let i=0;i<ay.types.length;i++){if(old.types[i]!==0&&ay.types[i]===0){expanded++;assert(Array.from(ay.heights.slice(i*4,i*4+4)).every(y=>Number.isFinite(y)&&y>-1.005),'new ground stays above water');}}
 for(const b of ay.buildings){const ps=b.polygon.slice(0,-1),x=ps.reduce((s,p)=>s+p[0],0)/ps.length,z=ps.reduce((s,p)=>s+p[1],0)/ps.length;assert(!cityCanStand(ay,x,z),'solid building '+b.source);}

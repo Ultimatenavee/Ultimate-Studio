@@ -29,5 +29,5 @@ export function createAyothayaSky(parent){
  for(let i=0;i<500;i++){const y=.08+random()*.92,a=random()*Math.PI*2,r=Math.sqrt(1-y*y);positions.push(Math.cos(a)*r*270,y*270,Math.sin(a)*r*270);}
  const geo=new T.BufferGeometry();geo.setAttribute('position',new T.Float32BufferAttribute(positions,3));
  const stars=new T.Points(geo,new T.PointsMaterial({color:'#d3e7ff',size:1.5,sizeAttenuation:false,transparent:true,opacity:.85,depthWrite:false,toneMapped:false}));stars.renderOrder=-19;stars.visible=false;root.add(stars);
- return {setNight(value){uniforms.night.value=value?1:0;stars.visible=value;},update(camera,time,motion){root.position.copy(camera.position);uniforms.time.value=motion?time/1000:0;}};
+ return {setVisible(value){root.visible=!!value;},setNight(value){uniforms.night.value=value?1:0;stars.visible=value;},update(camera,time,motion){root.position.copy(camera.position);uniforms.time.value=motion?time/1000:0;}};
 }

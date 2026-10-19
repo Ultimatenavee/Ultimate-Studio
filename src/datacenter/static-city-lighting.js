@@ -13,22 +13,24 @@ export function buildLightField(sources,bounds,radius,size=512){
 }
 export function createStaticLightField(root,sources,{bounds=[-40,40,-40,40],radius=12,height=7,size=512}={}){
  const field=buildLightField(sources,bounds,radius,size),night={value:0},map=new T.DataTexture(field.data,size,size,T.RGBAFormat);map.minFilter=map.magFilter=T.LinearFilter;map.needsUpdate=true;
+ const worldToLocal={value:new T.Matrix4()};const updateTransform=()=>{root.updateWorldMatrix(true,false);worldToLocal.value.copy(root.matrixWorld).invert();};updateTransform();
  const materials=new Map();root.traverse(o=>{if(!o.isMesh||o.userData.cameraIgnore)return;for(const m of Array.isArray(o.material)?o.material:[o.material])if((m.isMeshStandardMaterial||m.isMeshBasicMaterial)&&!m.transparent&&!materials.has(m))materials.set(m,{compile:m.onBeforeCompile,key:m.customProgramCacheKey});});
  for(const [m,original]of materials){m.onBeforeCompile=function(shader,renderer){original.compile.call(this,shader,renderer);shader.uniforms.fixedLampField={value:map};shader.uniforms.fixedLampNight=night;
-  shader.vertexShader='varying vec3 vFixedLampWorld;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <project_vertex>',`#include <project_vertex>
+  shader.uniforms.fixedLampWorldToLocal=worldToLocal;
+  shader.vertexShader='uniform mat4 fixedLampWorldToLocal; varying vec3 vFixedLampWorld;\n'+shader.vertexShader;shader.vertexShader=shader.vertexShader.replace('#include <project_vertex>',`#include <project_vertex>
   vec4 fixedLampPosition=vec4(transformed,1.0);
   #ifdef USE_INSTANCING
    fixedLampPosition=instanceMatrix*fixedLampPosition;
   #endif
-  vFixedLampWorld=(modelMatrix*fixedLampPosition).xyz;`);
+  vFixedLampWorld=(fixedLampWorldToLocal*modelMatrix*fixedLampPosition).xyz;`);
   shader.fragmentShader='uniform sampler2D fixedLampField; uniform float fixedLampNight; varying vec3 vFixedLampWorld;\n'+shader.fragmentShader;
   shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>',`vec2 fixedLampUV=(vFixedLampWorld.xz-vec2(${bounds[0].toFixed(3)},${bounds[2].toFixed(3)}))/vec2(${(bounds[1]-bounds[0]).toFixed(3)},${(bounds[3]-bounds[2]).toFixed(3)});
   float fixedLampFill=(.12+texture2D(fixedLampField,fixedLampUV).r)*fixedLampNight;
   fixedLampFill*=1.0-smoothstep(${(height*.4).toFixed(3)},${height.toFixed(3)},vFixedLampWorld.y);
   outgoingLight+=diffuseColor.rgb*vec3(2.1,1.25,.55)*fixedLampFill;
   #include <opaque_fragment>`);
- };m.customProgramCacheKey=()=>`fixed-city-lights-v1-${bounds.join(',')}-${height}`;m.needsUpdate=true;}
- return {setNight:v=>{night.value=v?1:0;},stats:()=>({mode:'fixed-world-field',cameraDependent:false,sources:sources.length,enabled:!!night.value,radius,materials:materials.size}),dispose(){map.dispose();for(const [m,old]of materials){m.onBeforeCompile=old.compile;m.customProgramCacheKey=old.key;m.needsUpdate=true;}}};
+ };m.customProgramCacheKey=()=>`fixed-city-lights-v2-${bounds.join(',')}-${height}`;m.needsUpdate=true;}
+ return {updateTransform,setNight:v=>{night.value=v?1:0;},stats:()=>({mode:'fixed-world-field',cameraDependent:false,sources:sources.length,enabled:!!night.value,radius,materials:materials.size}),dispose(){map.dispose();for(const [m,old]of materials){m.onBeforeCompile=old.compile;m.customProgramCacheKey=old.key;m.needsUpdate=true;}}};
 }
 export function createFixedGlows(parent,emitters){
  const canvas=document.createElement('canvas');canvas.width=canvas.height=64;const ctx=canvas.getContext('2d'),gradient=ctx.createRadialGradient(32,32,0,32,32,32);gradient.addColorStop(0,'#fff8da');gradient.addColorStop(.18,'#ffe2a8e8');gradient.addColorStop(.5,'#ffba5a60');gradient.addColorStop(1,'#ffad4000');ctx.fillStyle=gradient;ctx.fillRect(0,0,64,64);

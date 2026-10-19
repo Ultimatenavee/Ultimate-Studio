@@ -73,5 +73,5 @@ export async function createCapitalLanterns(capital,layout){
  const f=await fixtures(capital,layout.added.map(p=>p.id));
  for(const p of layout.added)f.model(p.id,capital,p.x,p.y,p.z,p.height);
  f.batch(capital);const glows=createFixedGlows(capital,layout.emitters),field=createStaticLightField(capital,layout.sources,{bounds:[-180,180,-180,180],radius:layout.field_radius,height:15});
- return {setNight(v){glows.setNight(v);field.setNight(v);},stats:()=>({lamps:layout.sources.length,added:layout.added.length,models:f.stats().models,glows:glows.stats(),field:field.stats()}),dispose(){field.dispose();glows.dispose();f.dispose();}};
+ return {updateTransform:field.updateTransform,setNight(v){glows.setNight(v);field.setNight(v);},stats:()=>({lamps:layout.sources.length,added:layout.added.length,models:f.stats().models,glows:glows.stats(),field:field.stats()}),dispose(){field.dispose();glows.dispose();f.dispose();}};
 }
