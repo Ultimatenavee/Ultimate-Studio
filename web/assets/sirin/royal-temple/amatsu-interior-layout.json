@@ -1,7 +1,6 @@
 {
   "theme": "Amatsu Japanese interior",
   "models": {
-    "amatsu-column": 10,
     "amatsu-shoji1": 4,
     "amatsu-shoji2": 4,
     "amatsu-shoji3": 12,
@@ -15,70 +14,10 @@
     "amatsu-teacup": 1,
     "japanese-pendant": 6
   },
-  "columns": 10,
+  "columns": 0,
   "area": 816,
   "ceilingHeight": 11,
   "colliders": [
-    {
-      "minX": -9.35,
-      "maxX": -7.45,
-      "minZ": -12.95,
-      "maxZ": -11.05
-    },
-    {
-      "minX": -9.35,
-      "maxX": -7.45,
-      "minZ": -6.95,
-      "maxZ": -5.05
-    },
-    {
-      "minX": -9.35,
-      "maxX": -7.45,
-      "minZ": -0.95,
-      "maxZ": 0.95
-    },
-    {
-      "minX": -9.35,
-      "maxX": -7.45,
-      "minZ": 5.05,
-      "maxZ": 6.95
-    },
-    {
-      "minX": -9.35,
-      "maxX": -7.45,
-      "minZ": 11.05,
-      "maxZ": 12.95
-    },
-    {
-      "minX": 7.45,
-      "maxX": 9.35,
-      "minZ": -12.95,
-      "maxZ": -11.05
-    },
-    {
-      "minX": 7.45,
-      "maxX": 9.35,
-      "minZ": -6.95,
-      "maxZ": -5.05
-    },
-    {
-      "minX": 7.45,
-      "maxX": 9.35,
-      "minZ": -0.95,
-      "maxZ": 0.95
-    },
-    {
-      "minX": 7.45,
-      "maxX": 9.35,
-      "minZ": 5.05,
-      "maxZ": 6.95
-    },
-    {
-      "minX": 7.45,
-      "maxX": 9.35,
-      "minZ": 11.05,
-      "maxZ": 12.95
-    },
     {
       "minX": -5.8,
       "maxX": 5.8,

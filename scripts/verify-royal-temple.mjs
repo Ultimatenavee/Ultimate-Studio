@@ -9,7 +9,7 @@ import {capitalCanStand,capitalStep} from '../src/datacenter/sirin-navigation.js
 import {ayothayaMap} from '../src/datacenter/ayothaya-map.js';
 assert.equal(portalAt('capital',ROYAL_TEMPLE.gate.x,ROYAL_TEMPLE.gate.z),'royalTemple');assert.equal(portalAt('royalTemple',0,15.6),'capital');
 assert(!portalAt('capital',ROYAL_TEMPLE.return.x,ROYAL_TEMPLE.return.z));assert(!portalAt('royalTemple',0,12));
-assert(royalCanStand(0,12));assert(royalCanStand(0,-2.7));assert(!royalCanStand(0,-11));assert(!royalCanStand(12,0));assert(!royalCanStand(8.4,6));
+assert(royalCanStand(0,12));assert(royalCanStand(0,-2.7));assert(!royalCanStand(0,-11));assert(!royalCanStand(12,0));for(const x of [-8.4,8.4])for(const z of [-12,-6,0,6,12])assert(royalCanStand(x,z),"former column position is walkable");
 assert(nearRoyalPrayer(0,-3));assert(!nearRoyalPrayer(0,12));
 assert.equal(sixDigitBlessing(w=>w[0]=0),'000000');assert.equal(sixDigitBlessing(w=>w[0]=999999),'999999');let calls=0;assert.equal(sixDigitBlessing(w=>w[0]=++calls===1?4294967295:7),'000007');assert.equal(calls,2);
 const nav=royalNavigation(JSON.parse(fs.readFileSync('web/assets/sirin/ground-navigation.json')));assert(capitalCanStand(nav,ROYAL_TEMPLE.gate.x,ROYAL_TEMPLE.gate.z));assert(!capitalCanStand(nav,15,-140));assert(capitalCanStand(nav,24,-137));assert(capitalCanStand(nav,20,-137));assert(capitalCanStand(nav,0,-156));assert(!capitalCanStand(nav,0,-112));
@@ -33,5 +33,6 @@ const interiorLayout=JSON.parse(fs.readFileSync('web/assets/sirin/royal-temple/a
 assert.deepEqual(ROYAL_OBSTACLES,interiorLayout.colliders);
 for(let z=-3;z<=15;z+=.5)for(const x of [-2,0,2])assert(royalCanStand(x,z),'central aisle stays clear');
 for(const p of [[-10.15,-3],[10.15,5],[-10.1,9.5],[10.35,10.3],[-6.4,-10.1]])assert(!royalCanStand(...p),'solid side furnishing '+p);
+assert.equal(interiorLayout.columns,0);assert(!interiorLayout.models['amatsu-column']);
 assert(interiorLayout.models['amatsu-bonsai']===6&&interiorLayout.models['amatsu-shoji3']===12);
 console.log('PASS Japanese interior embedded resources, ceiling visibility group, clear central aisle and furniture collisions.',{interiorDraws,bytes:interiorBytes.length});

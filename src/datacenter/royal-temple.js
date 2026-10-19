@@ -26,8 +26,8 @@ export async function createRoyalInterior(decor){
  const root=new T.Group();root.name='Amatsu Kamakura Buddha Hall';
  const loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
  const [interior,buddha,layout]=await Promise.all([
-  loader.loadAsync(BASE+'amatsu-interior.glb'),loader.loadAsync(BASE+'kamakura-buddha.glb'),
-  fetch(BASE+'amatsu-interior-layout.json').then(r=>{if(!r.ok)throw Error('Amatsu interior layout unavailable');return r.json();})
+  loader.loadAsync(BASE+'amatsu-interior.glb?v=open-hall'),loader.loadAsync(BASE+'kamakura-buddha.glb'),
+  fetch(BASE+'amatsu-interior-layout.json?v=open-hall').then(r=>{if(!r.ok)throw Error('Amatsu interior layout unavailable');return r.json();})
  ]);
  root.add(interior.scene);const ceiling=interior.scene.getObjectByName('AmatsuCeiling');
  if(!ceiling)throw Error('Amatsu ceiling group missing');

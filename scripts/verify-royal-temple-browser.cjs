@@ -11,6 +11,7 @@ const fs=require('fs'),assert=require('assert/strict'),{chromium}=require('playw
  await page.keyboard.down('KeyW');await page.waitForFunction(()=>window.__UTS_WORLD__.currentArea()==='royalTemple',null,{timeout:30000});await page.keyboard.up('KeyW');await page.waitForTimeout(700);
  assert.equal(await page.evaluate(()=>window.__UTS_WORLD__.visualStats().world.royalTemple.buddhaModel),'Kamakura Buddha');assert.equal(await page.evaluate(()=>window.__UTS_WORLD__.visualStats().world.royalExterior.model),'Amatsu intact Japanese keep');await page.screenshot({path:out+'/interior.png'});
  assert.equal(await page.evaluate(()=>window.__UTS_WORLD__.visualStats().world.royalTemple.theme),'Amatsu Japanese interior');
+ assert.equal(await page.evaluate(()=>window.__UTS_WORLD__.visualStats().world.royalTemple.columns),0);
  await page.evaluate(async()=>{const w=window.__UTS_WORLD__;w.perspective('first');const s=w.snapshot();s.world.position=[-5,1.5,9];s.world.rotation=[0,.8,0,'YXZ'];await w.restore(s);});await page.waitForTimeout(600);await page.screenshot({path:out+'/amatsu-side.png'});
  await page.evaluate(async()=>{const w=window.__UTS_WORLD__;const s=w.snapshot();s.world.position=[5,1.5,3];s.world.rotation=[0,-1.1,0,'YXZ'];await w.restore(s);});await page.waitForTimeout(600);await page.screenshot({path:out+'/amatsu-shoji.png'});
 
