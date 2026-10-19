@@ -91,9 +91,14 @@ export async function createAyothayaWorld(host,opts){
  const bounds=()=>homeOverview()&&capitalLoaded?{min:new T.Vector3(HOME_WORLD_BOUNDS.minX,HOME_WORLD_BOUNDS.minY,HOME_WORLD_BOUNDS.minZ),max:new T.Vector3(HOME_WORLD_BOUNDS.maxX,HOME_WORLD_BOUNDS.maxY,HOME_WORLD_BOUNDS.maxZ)}:area==='capital'?capitalBounds:area==='city'?{min:new T.Vector3(-40,-3,-40),max:new T.Vector3(40,12,40)}:{min:new T.Vector3(-9,0,-10),max:new T.Vector3(9,5,10)};
  function setTime(value){timeOfDay=value==='night'?'night':'day';const night=timeOfDay==='night',outdoors=area!=='lobby';sky.setNight(night);capitalSky.setNight(night);lanterns?.setNight(night);capitalLanterns?.setNight(night);researchQuarter?.setNight(night);sky.update(camera,0,false);ambient.color.set(outdoors&&night?'#8bafff':'#fff6df');ambient.groundColor.set(outdoors&&night?'#263354':'#657b94');ambient.intensity=outdoors?(night?.85:1.45):1.6;sun.color.set(outdoors&&night?'#a4bcff':'#fff2d7');sun.intensity=outdoors?(night?.65:1.8):1.3;for(const [m,color]of cityMaterials)m.color.copy(color).multiply(outdoors&&night?new T.Color('#c5d1e8'):new T.Color('#ffffff'));scene.background.set(outdoors?(night?'#101c3a':'#74bce8'):'#202e37');dirty=true;}
 
+ const assetManager=new T.LoadingManager(),pendingAssets=new Set();
+ const itemStart=assetManager.itemStart.bind(assetManager),itemEnd=assetManager.itemEnd.bind(assetManager);
+ const reportAssets=()=>opts.onResource?.('กำลังโหลดแผนที่ · รอ '+pendingAssets.size+' ไฟล์ · '+[...pendingAssets].slice(0,2).map(url=>url.startsWith('blob:')?'อ่านภาพพื้นผิว':url.split('/').pop()).join(', '));
+ assetManager.itemStart=url=>{pendingAssets.add(url);itemStart(url);reportAssets();};
+ assetManager.itemEnd=url=>{pendingAssets.delete(url);itemEnd(url);reportAssets();};
  try{
   const [gltf,json]=await Promise.all([
-   new GLTFLoader().loadAsync('assets/ayothaya/ayothaya.gltf?v=stream-v2',e=>opts.onProgress?.(e.total?Math.min(99,Math.round(e.loaded/e.total*100)):null)),
+   new GLTFLoader(assetManager).loadAsync('assets/ayothaya/ayothaya.gltf?v=stream-v2',e=>opts.onProgress?.(e.total?Math.min(99,Math.round(e.loaded/e.total*100)):null)),
    fetch('assets/ayothaya/ground-navigation.json?v=ground-v1').then(r=>{if(!r.ok)throw Error('โหลดเส้นทางเมืองไม่สำเร็จ');return r.json();})
   ]);
   buildingColors=normalizeAyothayaBuildings(gltf.scene);nav=decodeNavigation(json);gltf.scene.scale.setScalar(CITY_SCALE);city.add(gltf.scene);gltf.scene.updateMatrixWorld(true);

@@ -91,7 +91,7 @@ export async function createScene(host,opts){
  try{
   opts.onStartup?.('กำลังโหลดแผนที่อโยธยาและตัวละคร…');
   world=await startupResource(createAyothayaWorld(outdoorHost,{
-   onDrone:state=>{if(!isIndoor())opts.onDrone?.(state);},motion:opts.motion,blocked:()=>gate.busy,onHint:opts.onHint,onEnterCity:id=>warp(id,true),onProgress:p=>opts.onHint?.(p===null?'กำลังโหลดเมืองอโยธยา…':`กำลังโหลดเมืองอโยธยา ${p}%`),onStep,
+   onResource:opts.onStartup,onDrone:state=>{if(!isIndoor())opts.onDrone?.(state);},motion:opts.motion,blocked:()=>gate.busy,onHint:opts.onHint,onEnterCity:id=>warp(id,true),onProgress:p=>opts.onHint?.(p===null?'กำลังโหลดเมืองอโยธยา…':`กำลังโหลดเมืองอโยธยา ${p}%`),onStep,
    onWalk:value=>{if(!isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;opts.onWalk?.(value);walkTools?.refresh();}},onArea:()=>{if(ready&&!isIndoor())announce();},
    onPosition:(x,z,yaw)=>{if(!isIndoor()){opts.onPosition?.(x,z,yaw);walkTools?.position(x,z,yaw);}},onPerformance:p=>{if(!isIndoor())opts.onPerformance?.(p);}
   }));
