@@ -1,5 +1,5 @@
 import {createRoyalInterior,installRoyalExterior} from './royal-temple.js';
-import {ROYAL_TEMPLE,ROYAL_OBSTACLES,royalCanStand,royalNavigation} from './royal-temple-layout.js';
+import {ROYAL_TEMPLE,ROYAL_LANTERNS,ROYAL_OBSTACLES,royalCanStand,royalNavigation} from './royal-temple-layout.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {installResearchQuarter,researchNavigation} from './sirin-research-quarter.js';
 import {SIRIN_DRONE_SHOTS,SIRIN_SHOT_SECONDS,sirinDronePose} from './sirin-drone.js';
@@ -157,7 +157,7 @@ export async function createAyothayaWorld(host,opts){
    const insideParcel=p=>(p.x>ROYAL_TEMPLE.parcel[0]&&p.x<ROYAL_TEMPLE.parcel[1]&&p.z>ROYAL_TEMPLE.parcel[2]&&p.z<ROYAL_TEMPLE.parcel[3])||labLayout.buildings.some(({parcel:b})=>p.x>b[0]&&p.x<b[1]&&p.z>b[2]&&p.z<b[3]);
    lighting.added=lighting.added.filter(p=>!insideParcel(p));
    lighting.sources=lighting.sources.filter(p=>!insideParcel(p));lighting.emitters=lighting.emitters.filter(p=>!insideParcel(p));
-   for(const x of [-23,23])for(const z of [-153,-126,-109]){lighting.added.push({id:'L266',x,y:0,z,height:3});lighting.sources.push({x,y:2.1,z});lighting.emitters.push({x,y:2.1,z,size:.65});}
+   for(const p of ROYAL_LANTERNS){const {x,z}=p;lighting.added.push({...p});lighting.sources.push({x,y:2.1,z});lighting.emitters.push({x,y:2.1,z,size:.65});}
    for(const b of labLayout.buildings)for(const [x,y,z]of b.lamps){lighting.sources.push({x,y,z});lighting.emitters.push({x,y,z,size:.85});}
    capitalLanterns=await createCapitalLanterns(capital,lighting);
    const gates=[{...ROYAL_TEMPLE.gate,label:'KAMAKURA HALL',yaw:0},{...CAPITAL_GATE,label:'← AYOTHAYA',yaw:Math.PI/2},...Object.entries(CAPITAL_ROOMS).map(([id,p])=>({...p,label:id==='museum'?'DEVICE LIBRARY':'DATACENTER',yaw:0}))];

@@ -1,6 +1,7 @@
 import './build-datacenter.mjs';
 import './split-ayothaya-gltf.mjs';
 import {CITY_LANTERNS,CITY_STRINGS,INDOOR_CHANDELIERS} from '../src/datacenter/ayothaya-decor-layout.js';
+import {ROYAL_LANTERNS} from '../src/datacenter/royal-temple-layout.js';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -15,7 +16,9 @@ for(const entry of await fs.readdir(web,{withFileTypes:true})){if(['client','ser
 await fs.unlink(path.join(client,'assets/ayothaya/ayothaya.glb'));
 // The full selection catalogue remains available. Ship all in-use fixtures;
 // optional catalogue-only models are immutable public repository assets.
-const lightDirectory=path.join(client,'assets/ayothaya/light-catalog'),includedModels=[...new Set([...CITY_LANTERNS,...CITY_STRINGS,...Object.values(INDOOR_CHANDELIERS).flat()].map(p=>p.id).filter(id=>/^L\d{3}$/.test(id)))];
+const capitalLighting=JSON.parse(await fs.readFile(path.join(client,'assets/sirin/lighting-layout.json'),'utf8'));
+const lightDirectory=path.join(client,'assets/ayothaya/light-catalog'),includedModels=[...new Set([...CITY_LANTERNS,...CITY_STRINGS,...Object.values(INDOOR_CHANDELIERS).flat(),...capitalLighting.added,...ROYAL_LANTERNS].map(p=>p.id).filter(id=>/^L\d{3}$/.test(id)))];
+await Promise.all(includedModels.map(id=>fs.access(path.join(lightDirectory,id+'.glb'))));
 const lightCatalog=JSON.parse(await fs.readFile(path.join(lightDirectory,'catalog.json'),'utf8'));lightCatalog.includedModels=includedModels;lightCatalog.modelArchive='https://raw.githubusercontent.com/Ultimatenavee/Ultimate-Studio/aa9d265dd844150ad04fd41f92c2e1491dded0df/web/assets/ayothaya/light-catalog/';
 await fs.writeFile(path.join(lightDirectory,'catalog.json'),JSON.stringify(lightCatalog));
 for(const name of await fs.readdir(lightDirectory))if(name.endsWith('.glb')&&!includedModels.includes(name.slice(0,-4)))await fs.unlink(path.join(lightDirectory,name));
