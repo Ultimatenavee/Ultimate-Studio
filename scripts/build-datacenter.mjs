@@ -6,6 +6,7 @@ await fs.rm('web/dc-chunks',{recursive:true,force:true});
 await build({entryPoints:{'datacenter-entry':'src/datacenter/entry.js','device-viewer-entry':'src/datacenter/studio-viewer.js'},outdir:'web',bundle:true,splitting:true,format:'esm',platform:'browser',target:'es2022',minify:true,chunkNames:'dc-chunks/[name]-[hash]',legalComments:'eof'});
 // One self-contained boot module avoids a stalled dynamic-import dependency waterfall.
 await build({entryPoints:['src/datacenter/entry.js'],outfile:'web/datacenter-entry.js',bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'eof'});
+await build({entryPoints:['src/datacenter/studio-viewer.js'],outfile:'web/device-viewer-entry.js',bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'eof'});
 await build({entryPoints:['assets-source/ayothaya/light-catalog-ui.js'],outfile:'web/lantern-catalog.js',bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'eof'});
 await fs.copyFile('node_modules/three/LICENSE','web/THREE-LICENSE.txt');
 console.log('Bundled local Datacenter assets; Three.js is loaded on demand.');
@@ -19,3 +20,8 @@ for(const file of moduleFiles){const text=await fs.readFile(file,'utf8');await f
 const entryVersion=createHash('sha256').update(await fs.readFile('web/datacenter-entry.js')).digest('hex').slice(0,12);
 const index=await fs.readFile('web/index.html','utf8');
 await fs.writeFile('web/index.html',index.replace(/src="datacenter-entry\.js(?:\?v=[a-f0-9]+)?"/,'src="datacenter-entry.js?v='+entryVersion+'"'));
+
+const viewerVersion=createHash('sha256').update(await fs.readFile('web/device-viewer-entry.js')).digest('hex').slice(0,12);
+const specsVersion=createHash('sha256').update(await fs.readFile('web/specs.js')).digest('hex').slice(0,12);
+const studio=await fs.readFile('web/studio.html','utf8');
+await fs.writeFile('web/studio.html',studio.replace(/src="device-viewer-entry\.js(?:\?v=[a-f0-9]+)?"/,'src="device-viewer-entry.js?v='+viewerVersion+'"').replace(/src="specs\.js(?:\?v=[a-f0-9]+)?"/,'src="specs.js?v='+specsVersion+'"'));
