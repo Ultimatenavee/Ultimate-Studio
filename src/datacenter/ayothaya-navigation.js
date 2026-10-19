@@ -10,9 +10,9 @@ export const TEMPLE_GATE={x:12,z:-29.45,width:2.2,depth:1.15};
 export const CITY_RETURN={x:12,z:-27.3,yaw:Math.PI};
 export const LOBBY_SPAWN={x:0,z:5.5,yaw:0};
 export const LOBBY_RETURNS={museum:{x:-5.6,z:0,yaw:-Math.PI/2},datacenter:{x:5.6,z:0,yaw:Math.PI/2}};
-export const AREA_NAMES={royalTemple:'พระอุโบสถหลวงศิริน',city:'เมืองอโยธยา',capital:'มหานครศิริน · SIRIN',lobby:'โถงกลางวัด',museum:'Device Library',datacenter:'Datacenter'};
+export const AREA_NAMES={royalTemple:'หอพระคามาคุระ · ศิริน',city:'เมืองอโยธยา',capital:'มหานครศิริน · SIRIN',lobby:'โถงกลางวัด',museum:'Device Library',datacenter:'Datacenter'};
 export const AYOTHAYA_DESTINATIONS=[
- {id:'royalTemple',number:'06',name:'พระอุโบสถหลวงศิริน',note:'พระประธาน · ไหว้พระและเลขสุ่ม 6 หลัก',color:'#dfc078'},
+ {id:'royalTemple',number:'06',name:'หอพระคามาคุระ · ศิริน',note:'พระประธาน · ไหว้พระและเลขสุ่ม 6 หลัก',color:'#dfc078'},
  {id:'capital',number:'05',name:'มหานครศิริน · SIRIN',note:'วาร์ปฝั่งขวาอโยธยา · เมืองใหม่และย่านเทคโนโลยี',color:'#81e6ed'},
  {id:'city',number:'01',name:'เมืองอโยธยา',note:'เดินสำรวจเมืองและท่าเรือ',color:'#82baac'},
  {id:'lobby',number:'02',name:'โถงกลางวัด',note:'ซ้าย Device Library · ขวา Datacenter',color:'#d6b570'},

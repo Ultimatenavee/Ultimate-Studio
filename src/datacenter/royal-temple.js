@@ -5,18 +5,22 @@ import {ROYAL_TEMPLE} from './royal-temple-layout.js';
 import {installResearchQuarter} from './sirin-research-quarter.js';
 const BASE='assets/sirin/royal-temple/';
 export async function installRoyalExterior(city,decor){
- const root=(await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(BASE+'royal-palace.glb')).scene;
- const b=new T.Box3().setFromObject(root),size=b.getSize(new T.Vector3()),c=b.getCenter(new T.Vector3()),scale=ROYAL_TEMPLE.depth/size.z;
- root.scale.multiplyScalar(scale);root.position.set(-c.x*scale,-b.min.y*scale,ROYAL_TEMPLE.z-c.z*scale);
+ const root=(await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(BASE+'japanese-keep.glb')).scene;
+ const b=new T.Box3().setFromObject(root),size=b.getSize(new T.Vector3()),c=b.getCenter(new T.Vector3());
+ // Authored in metres with one uniform scale. Align the foot of the original
+ // stair with the existing portal; never stretch the building to fill a parcel.
+ root.position.set(-c.x,-b.min.y,ROYAL_TEMPLE.frontZ-b.max.z);
  // Retire only this parcel's old INN and overlapping props (including instances).
  const result=installResearchQuarter(city,root,{replaces:['A02_Inn_016.002','A02_Inn_016.001'],buildings:[{id:'RoyalUbosot',parcel:ROYAL_TEMPLE.parcel}]});
- root.name='SIRIN Royal Ubosot / RO palace composition';
+ root.name='SIRIN Kamakura Hall / intact Amatsu keep';
  const dress=new T.Group();dress.name='Royal temple entrance furnishings';city.add(dress);
- const canvas=document.createElement('canvas');canvas.width=1536;canvas.height=320;const ctx=canvas.getContext('2d');ctx.fillStyle='#372e22';ctx.fillRect(0,0,1536,320);ctx.strokeStyle='#d9bc76';ctx.lineWidth=12;ctx.strokeRect(8,8,1520,304);ctx.fillStyle='#f5dfaa';ctx.textAlign='center';ctx.font='600 76px sans-serif';ctx.fillText('พระอุโบสถหลวงศิริน',768,138);ctx.font='38px sans-serif';ctx.fillText('SIRIN  /  ROYAL UBOSOT',768,235);
- const tx=new T.CanvasTexture(canvas);tx.colorSpace=T.SRGBColorSpace;const plaque=new T.Mesh(new T.PlaneGeometry(8,1.67),new T.MeshBasicMaterial({map:tx}));plaque.position.set(0,6.2,-110.92);dress.add(plaque);
- // The imported palace already includes gilded door columns and a lintel.
- await decor.props(dress,[-7.5,7.5].flatMap(x=>[{id:'plant',x,z:-109,width:2,height:3.1},{id:'urn',x,z:-112.5,width:1.2,height:1.8}]));
- return {width:size.x*scale,height:size.y*scale,depth:size.z*scale,...result.stats()};
+ const canvas=document.createElement('canvas');canvas.width=1536;canvas.height=320;const ctx=canvas.getContext('2d');ctx.fillStyle='#302b25';ctx.fillRect(0,0,1536,320);ctx.strokeStyle='#aa9061';ctx.lineWidth=12;ctx.strokeRect(8,8,1520,304);ctx.fillStyle='#ede1c9';ctx.textAlign='center';ctx.font='600 76px sans-serif';ctx.fillText('หอพระคามาคุระ · ศิริน',768,138);ctx.font='38px sans-serif';ctx.fillText('KAMAKURA BUDDHA HALL',768,235);
+ const tx=new T.CanvasTexture(canvas);tx.colorSpace=T.SRGBColorSpace;const plaque=new T.Mesh(new T.PlaneGeometry(4.8,1),new T.MeshBasicMaterial({map:tx}));plaque.position.set(-8,2.1,-108);dress.add(plaque);
+ // Grounded information board beside the stair, not a floating facade sign.
+ const timber=new T.MeshStandardMaterial({color:'#4a372b',roughness:.9});
+ for(const x of [-10,-6]){const post=new T.Mesh(new T.BoxGeometry(.16,2.7,.16),timber);post.position.set(x,1.35,-108.12);dress.add(post);}
+ const back=new T.Mesh(new T.BoxGeometry(4.9,1.1,.12),timber);back.position.set(-8,2.1,-108.08);dress.add(back);
+ return {model:'Amatsu intact Japanese keep',width:size.x,height:size.y,depth:size.z,...result.stats()};
 }
 export async function createRoyalInterior(decor){
  const root=new T.Group();root.name='Royal Ubosot Interior';const ceiling=new T.Group();root.add(ceiling);

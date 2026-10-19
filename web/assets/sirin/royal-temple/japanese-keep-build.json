@@ -1,0 +1,12 @@
+{
+  "source": "data\\model\\일본\\일본_천수각1.rsm",
+  "approach": "Intact Amatsu keep: uniform scale only, no architectural kitbash",
+  "sizeXYZ": [
+    38.432118715666135,
+    44.0,
+    40.724133725995046
+  ],
+  "triangles": 978,
+  "reference": "https://www.himejicastle.jp/en/guide/history/",
+  "note": "Stylized RO Japanese castle typology; not a measured reconstruction of Himeji or a Buddhist temple exterior."
+}

@@ -10,7 +10,7 @@ export function createRoyalPrayer(host,{pause,sit,focus,isSitting}){
  @media(max-height:500px){.royal-pray{bottom:70px;min-height:42px;padding:8px 15px}.royal-prayer-dialog{padding:14px}.royal-prayer-dialog h2{font-size:19px;margin:3px}.royal-prayer-mark{font-size:25px}.royal-prayer-dialog output{margin:6px 0;min-height:40px}.royal-prayer-dialog p,.royal-prayer-dialog small{margin:6px 0}}
  `;host.append(style);
  const button=document.createElement('button');button.type='button';button.className='royal-pray';button.textContent='🙏 ไหว้พระ · E';button.hidden=true;host.append(button);
- const dialog=document.createElement('dialog');dialog.className='royal-prayer-dialog';dialog.setAttribute('aria-labelledby','royalPrayerTitle');dialog.innerHTML='<div class="royal-prayer-mark" aria-hidden="true">🙏</div><h2 id="royalPrayerTitle">ไหว้พระประธาน</h2><p>พระอุโบสถหลวงศิริน</p><output aria-live="polite"></output><small>เลขสุ่ม 6 หลักเพื่อความเพลิดเพลิน</small><button type="button">กลับสู่พระอุโบสถ</button>';host.append(dialog);
+ const dialog=document.createElement('dialog');dialog.className='royal-prayer-dialog';dialog.setAttribute('aria-labelledby','royalPrayerTitle');dialog.innerHTML='<div class="royal-prayer-mark" aria-hidden="true">🙏</div><h2 id="royalPrayerTitle">ไหว้พระประธาน</h2><p>หอพระคามาคุระ · ศิริน</p><output aria-live="polite"></output><small>เลขสุ่ม 6 หลักเพื่อความเพลิดเพลิน</small><button type="button">กลับสู่หอพระ</button>';host.append(dialog);
  const output=dialog.querySelector('output');
  function close(){if(timer!==null){clearTimeout(timer);timer=null;}sit(previousSit);focus();}
  dialog.addEventListener('close',close,{signal:abort.signal});dialog.querySelector('button').onclick=()=>dialog.close();
