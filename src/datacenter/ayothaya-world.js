@@ -93,7 +93,7 @@ export async function createAyothayaWorld(host,opts){
 
  try{
   const [gltf,json]=await Promise.all([
-   new GLTFLoader().loadAsync('assets/ayothaya/ayothaya.gltf',e=>opts.onProgress?.(e.total?Math.round(e.loaded/e.total*100):null)),
+   new GLTFLoader().loadAsync('assets/ayothaya/ayothaya.gltf?v=stream-v2',e=>opts.onProgress?.(e.total?Math.min(99,Math.round(e.loaded/e.total*100)):null)),
    fetch('assets/ayothaya/ground-navigation.json?v=ground-v1').then(r=>{if(!r.ok)throw Error('โหลดเส้นทางเมืองไม่สำเร็จ');return r.json();})
   ]);
   buildingColors=normalizeAyothayaBuildings(gltf.scene);nav=decodeNavigation(json);gltf.scene.scale.setScalar(CITY_SCALE);city.add(gltf.scene);gltf.scene.updateMatrixWorld(true);

@@ -8,7 +8,12 @@ await build({entryPoints:['assets-source/ayothaya/light-catalog-ui.js'],outfile:
 await fs.copyFile('node_modules/three/LICENSE','web/THREE-LICENSE.txt');
 console.log('Bundled local Datacenter assets; Three.js is loaded on demand.');
 
-// HTML must select the matching entry after a deploy, even with an older cached entry.
+// Version the entire module graph together. A cached/incomplete dependency from
+// a previous deployment must not keep a fresh entry waiting indefinitely.
+const moduleFiles=['web/datacenter-entry.js','web/device-viewer-entry.js',...(await fs.readdir('web/dc-chunks')).filter(f=>f.endsWith('.js')).sort().map(f=>'web/dc-chunks/'+f)];
+const graphHash=createHash('sha256');for(const file of moduleFiles)graphHash.update(await fs.readFile(file));
+const graphVersion=graphHash.digest('hex').slice(0,12);
+for(const file of moduleFiles){const text=await fs.readFile(file,'utf8');await fs.writeFile(file,text.replace(/(["'])(\.\.?\/[^"']+\.js)\1/g,(_,quote,url)=>quote+url+'?v='+graphVersion+quote));}
 const entryVersion=createHash('sha256').update(await fs.readFile('web/datacenter-entry.js')).digest('hex').slice(0,12);
 const index=await fs.readFile('web/index.html','utf8');
 await fs.writeFile('web/index.html',index.replace(/src="datacenter-entry\.js(?:\?v=[a-f0-9]+)?"/,'src="datacenter-entry.js?v='+entryVersion+'"'));
