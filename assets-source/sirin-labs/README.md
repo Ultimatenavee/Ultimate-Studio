@@ -3,7 +3,7 @@
 Three original Blender building meshes replace five buildings around SIRIN's central square:
 
 - **A — Naga Courtyard**, west: layered jade roofs and a public courtyard.
-- **B — Lotus Nexus**, center: a blue lotus roof above an octagonal atrium.
+- **B — Lotus Nexus**, Datacenter parcel at (73, -51): a blue lotus roof above an octagonal atrium. The original central energy tower is retained.
 - **C — Monsoon Terraces**, east: terracotta roofs, garden terraces and an elevated bridge.
 
 Geometry was authored for this project from the approved concepts. Surface artwork is extracted from **Ragnarok Online / Gravity**, including Ayothaya, Dewata, Lighthalzen, Verus and Prontera. It is not original project artwork. `texture-provenance.json` records original archive paths, crop rectangles and SHA-256 hashes. Source crops preserve RGB pixels; the runtime GLB uses WebP compression. Project signage is authored separately.

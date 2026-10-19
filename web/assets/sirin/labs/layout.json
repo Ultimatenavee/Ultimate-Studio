@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "buildings": [
     {
       "id": "A_Naga_Courtyard",
@@ -56,80 +56,80 @@
     {
       "id": "B_Lotus_Nexus",
       "position": [
+        73,
         0,
-        0,
-        -1
+        -51
       ],
       "parcel": [
-        -16,
-        16,
-        -16,
-        14
+        57,
+        89,
+        -66,
+        -36
       ],
       "colliders": [
         [
-          -14.85,
-          -6.549999999999999,
-          -9.0,
-          5.0
+          58.15,
+          66.45,
+          -59.0,
+          -45.0
         ],
         [
-          6.549999999999999,
-          14.85,
-          -9.0,
-          5.0
+          79.55,
+          87.85,
+          -59.0,
+          -45.0
         ],
         [
-          -7.1,
-          7.1,
-          -8.1,
-          6.1
+          65.9,
+          80.1,
+          -58.1,
+          -43.9
         ]
       ],
       "lamps": [
         [
-          -12.5,
+          60.5,
           3,
-          11.3
+          -38.7
         ],
         [
-          12.5,
+          85.5,
           3,
-          11.3
+          -38.7
         ]
       ],
       "atriumPolygon": [
         [
-          6.5595,
-          -3.7171
+          79.5595,
+          -53.7171
         ],
         [
-          2.7171,
-          -7.5595
+          75.7171,
+          -57.5595
         ],
         [
-          -2.7171,
-          -7.5595
+          70.2829,
+          -57.5595
         ],
         [
-          -6.5595,
-          -3.7171
+          66.4405,
+          -53.7171
         ],
         [
-          -6.5595,
-          1.7171
+          66.4405,
+          -48.2829
         ],
         [
-          -2.7171,
-          5.5595
+          70.2829,
+          -44.4405
         ],
         [
-          2.7171,
-          5.5595
+          75.7171,
+          -44.4405
         ],
         [
-          6.5595,
-          1.7171
+          79.5595,
+          -48.2829
         ]
       ]
     },
@@ -180,9 +180,9 @@
       ]
     }
   ],
-  "design": "Original A/B/C concept geometry with Ragnarok Online surface textures; see texture-provenance.json",
+  "design": "Original A/B/C concept geometry with Ragnarok Online surface textures; Lotus Nexus replaces Datacenter; central energy tower preserved",
   "replaces": [
-    "V03_Tower_019.002",
+    "V01_Lab_009.002",
     "A05_Weaponshop_078.002",
     "A05_Weaponshop_079.002",
     "Y02_Science_080.002",

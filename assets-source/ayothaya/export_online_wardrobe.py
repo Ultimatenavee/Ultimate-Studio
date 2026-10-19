@@ -62,3 +62,6 @@ db['classes']=ui['classes'];db['assets']=assets;db['paletteData']=palettes
 (out/'catalog.json').unlink(missing_ok=True)
 shipped=[*out.glob('*.sprz'),*out.glob('*.jsonz'),*action_dir.glob('*.jsonz')]
 print('DONE',len(assets),'components',len(shipped),'files',round(sum(f.stat().st_size for f in shipped)/1048576,1),'MB',flush=True)
+# Extend the portable catalogue with independently selected class mounts.
+import runpy
+runpy.run_path(str(root/'assets-source/ayothaya/export_mounts.py'),run_name='__main__')

@@ -7,12 +7,17 @@ import {capitalCanStand,capitalStep,CAPITAL_ROOMS,CAPITAL_RETURNS} from '../src/
 const base='web/assets/sirin/',layout=JSON.parse(fs.readFileSync(base+'labs/layout.json'));
 const old=JSON.parse(fs.readFileSync(base+'ground-navigation.json')),nav=researchNavigation(old,layout);
 assert.equal(layout.buildings.length,3);assert.equal(layout.replaces.length,5);
+assert(!layout.replaces.includes('V03_Tower_019.002'),'energy tower retained');
+assert(layout.replaces.includes('V01_Lab_009.002'),'old datacenter replaced');
+assert(nav.footprints.some(f=>f.object==='V03_Tower_019.002'),'original tower collision retained');
 assert.equal(nav.colliders.length,nav.footprints.length);
 for(const name of layout.replaces)assert(!nav.footprints.some(f=>f.object===name),'retired building collision removed');
-for(const p of [[0,-1],[-71,-1],[57,-1],[84,-2]])assert(!capitalCanStand(nav,...p),'solid original building '+p);
-for(const p of [[0,12],[-71,8],[71,-3],[-40,0],[40,0],[0,20]])assert(capitalCanStand(nav,...p),'plaza, courtyard and bridge remain open '+p);
-for(const p of Object.values({...CAPITAL_ROOMS,...CAPITAL_RETURNS}))assert(capitalCanStand(nav,p.x,p.z),'existing interior approach remains accessible');
-const stop=capitalStep(nav,{x:0,z:20},0,-40);assert(stop.z>5,'sprint cannot pass through the atrium');
+for(const p of [[0,-1],[-71,-1],[57,-1],[84,-2],[73,-51]])assert(!capitalCanStand(nav,...p),'solid building '+p);
+for(const p of [[0,20],[-71,8],[71,-3],[-40,0],[40,0],[73,-38],[73,-43]])assert(capitalCanStand(nav,...p),'plaza, courtyard, bridge and Lotus doorway remain open '+p);
+for(const p of [...Object.values(CAPITAL_ROOMS),...Object.values(CAPITAL_RETURNS)])assert(capitalCanStand(nav,p.x,p.z),'existing interior approach remains accessible');
+const atrium=layout.buildings.find(b=>b.id==='B_Lotus_Nexus').atriumPolygon;
+const stop=capitalStep(nav,{x:73,z:-38},0,-30);assert(stop.z>Math.max(...atrium.map(p=>p[1])),'sprint cannot pass through the relocated atrium');
+const towerStop=capitalStep(nav,{x:0,z:20},0,-40);assert(towerStop.z>5,'sprint cannot pass through the energy tower');
 // Verify individual instance retirement, including objects whose pivot is
 // outside the parcel but whose canopy would intersect the new building.
 const city=new T.Group(),newRoot=new T.Group(),mesh=new T.InstancedMesh(new T.BoxGeometry(2,2,2),new T.MeshBasicMaterial(),3);

@@ -7,8 +7,8 @@ const fs=require('node:fs'),assert=require('node:assert/strict'),{chromium}=requ
  assert.equal(stats.buildings.length,3);assert(stats.retiredInstances>=4);assert(stats.retiredMeshes>=1);assert(stats.batches<=48);
  const out='artifacts/sirin-labs-qa';fs.mkdirSync(out,{recursive:true});
  const pose=async(position,target)=>{await page.evaluate(async({position,target})=>{const w=window.__UTS_WORLD__;const s=w.snapshot();s.world.drone=null;s.world.walking=false;s.world.position=position;s.world.target=target;s.world.fov=46;await w.restore(s);},{position,target});await page.waitForTimeout(400);};
- for(const [id,x]of [['A',-71],['B',0],['C',71]]){
-  await page.evaluate(()=>window.__UTS_WORLD__.timeOfDay('day'));await pose([x+30,23,44],[x,6,0]);await page.screenshot({path:out+'/'+id+'-day.png'});
+ for(const [id,x,z]of [['A',-71,0],['B',73,-51],['C',71,0]]){
+  await page.evaluate(()=>window.__UTS_WORLD__.timeOfDay('day'));await pose([x+30,23,z+44],[x,6,z]);await page.screenshot({path:out+'/'+id+'-day.png'});
   await page.evaluate(()=>window.__UTS_WORLD__.timeOfDay('night'));await page.screenshot({path:out+'/'+id+'-night.png'});
   assert(await page.evaluate(()=>window.__UTS_WORLD__.visualStats().world.researchQuarter.night));
  }

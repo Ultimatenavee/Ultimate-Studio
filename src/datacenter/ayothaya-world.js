@@ -134,8 +134,8 @@ export async function createAyothayaWorld(host,opts){
    if(!Array.isArray(data.colliders)||data.bounds?.length!==4)throw Error('Invalid SIRIN navigation');
    const [gltf,labs,labLayout]=await Promise.all([
     new GLTFLoader().loadAsync('assets/sirin/capital.glb?v=urban-v005'),
-    new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('assets/sirin/labs/research-quarter.glb?v=ro-materials-v2'),
-    fetch('assets/sirin/labs/layout.json?v=ro-materials-v2').then(r=>{if(!r.ok)throw Error('SIRIN research layout unavailable');return r.json();})
+    new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('assets/sirin/labs/research-quarter.glb?v=datacenter-v3'),
+    fetch('assets/sirin/labs/layout.json?v=datacenter-v3').then(r=>{if(!r.ok)throw Error('SIRIN research layout unavailable');return r.json();})
    ]);
    researchQuarter=installResearchQuarter(gltf.scene,labs.scene,labLayout);
    if(disposed){gltf.scene.traverse(o=>{o.geometry?.dispose();for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){for(const t of Object.values(m))if(t?.isTexture)t.dispose();m.dispose();}});throw Error('World disposed');}

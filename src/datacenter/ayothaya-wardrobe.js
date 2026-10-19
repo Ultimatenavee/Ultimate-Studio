@@ -8,6 +8,7 @@ export function createWardrobe(host,{apply,pause,onError}){
  <div class="ro-dress-content"><section class="ro-dress-fields">
  <div class="ro-class-picker"><label id="ro-class-label">Class Selection</label><button type="button" data-class-trigger aria-labelledby="ro-class-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="ro-class-list"></button><div id="ro-class-list" data-class-list role="listbox" aria-label="เลือกอาชีพ" hidden></div></div>
  <div class="ro-gender" role="group" aria-label="เพศ"><button type="button" data-sex="male">♂ ชาย</button><button type="button" data-sex="female">♀ หญิง</button></div>
+ <label class="ro-mount-field">สัตว์ขี่ประจำอาชีพ<select name="mount" aria-label="สัตว์ขี่ประจำอาชีพ"><option value="">ไม่ขี่</option></select></label><small data-mount-note></small>
  <strong data-hair-caption>Hair Style</strong><div data-hair-grid class="ro-icon-grid ro-hair-grid" aria-label="เลือกทรงผม"></div>
  <div class="ro-dress-pair"><label>สีผม<select name="hairPalette"></select></label><label>สีชุด<select name="bodyPalette"></select></label></div>
  <details class="ro-advanced"><summary>อาวุธ / โล่</summary><label>อาวุธ<select name="weapon"></select></label><label>โล่<select name="shield"></select></label></details>
@@ -31,10 +32,10 @@ export function createWardrobe(host,{apply,pause,onError}){
  const previews=new Map();
  const pickers=bindWardrobePickers(dialog,{fields,items:key=>lists[key]?.items||[],onSelect:(key,id)=>{fields[key].value=id;fields[key].onchange();}});
  const message=text=>status.textContent=text;
- const request=async(url,options)=>{if(!window.UTS_BROWSER_LOCAL||window.UTS_PORTABLE_WARDROBE!==false)return (await import('./online-wardrobe.js')).onlineWardrobeRequest(url,options);const r=await fetch(BASE+url,options),data=await r.json();if(!r.ok)throw Error(data.error||'โหลดรายการไม่สำเร็จ');return data;};
+ const request=async(url,options)=>{if(!window.UTS_BROWSER_LOCAL||window.UTS_PORTABLE_WARDROBE!==false||url.startsWith('choices?')||url==='render'&&JSON.parse(options.body).mount)return (await import('./online-wardrobe.js')).onlineWardrobeRequest(url,options);const r=await fetch(BASE+url,options),data=await r.json();if(!r.ok)throw Error(data.error||'โหลดรายการไม่สำเร็จ');return data;};
  function fill(key,items,{optional=true,search=false}={}){
   lists[key]={items,optional,search};const selected=draft[key]||'',query='',shown=search&&query?items.filter(x=>x.id===selected||(x.label+' '+x.name).toLowerCase().includes(query)):items;
-  fields[key].replaceChildren();if(optional)fields[key].add(new Option(key.includes('Palette')?'สีต้นฉบับ':'ไม่ใส่',''));
+  fields[key].replaceChildren();if(optional)fields[key].add(new Option(key==='mount'?'ไม่ขี่':key.includes('Palette')?'สีต้นฉบับ':'ไม่ใส่',''));
   for(const item of shown){const label=key.includes('Palette')?'สี '+item.name.split('_').at(-1):item.label;fields[key].add(new Option(label,item.id));}
   fields[key].value=items.some(x=>x.id===selected)?selected:optional?'':shown[0]?.id||'';draft[key]=fields[key].value;
  }
@@ -48,7 +49,11 @@ export function createWardrobe(host,{apply,pause,onError}){
   const job=queued;queued=null;rendering=true;const key=JSON.stringify(job.config);
   try{
    let outfit=previews.get(key);
-   if(!outfit){const result=await request('render',{method:'POST',headers:{'Content-Type':'application/json'},body:key});const pixels=await loadOutfit(result.base);outfit={result,...pixels};previews.set(key,outfit);if(previews.size>24)previews.delete(previews.keys().next().value);}
+   if(!outfit){const result=await request('render',{method:'POST',headers:{'Content-Type':'application/json'},body:key});const pixels=await loadOutfit(result.base);outfit={result,...pixels};previews.set(key,outfit);
+    // Mounted sheets are larger: bound decoded preview memory on phones/tablets.
+    let area=[...previews.values()].reduce((n,p)=>n+p.image.naturalWidth*p.image.naturalHeight,0);
+    while(previews.size>1&&(previews.size>24||area>16000000)){const oldest=previews.keys().next().value,p=previews.get(oldest);area-=p.image.naturalWidth*p.image.naturalHeight;previews.delete(oldest);}
+   }
    if(job.version!==previewRevision||closed||!dialog.open)return;
    ({meta,image}=outfit);candidate=outfit.result;canvas.dataset.appearance=candidate.base;canvas.setAttribute('aria-busy','false');save.disabled=false;message('พรีวิวอัปเดตแล้ว · หมุนดูหรือทดลองเดิน แล้วกด “ใช้ชุดนี้”');
   }catch(e){if(job.version===previewRevision&&dialog.open&&!closed){message(e.message);retry.hidden=false;canvas.setAttribute('aria-busy','false');}}
@@ -56,10 +61,10 @@ export function createWardrobe(host,{apply,pause,onError}){
  }
  async function refresh(){
   const n=++revision;loadingChoices=true;invalid();message('กำลังโหลดรายการที่เข้ากับชุด…');
-  try{const data=await request('choices?'+new URLSearchParams({body:draft.body,head:draft.head||''}));if(n!==revision||closed||!dialog.open)return;fill('head',data.heads,{optional:false});for(const [key,list]of Object.entries({upper:'headgear',middle:'headgear',lower:'headgear',robe:'robes',weapon:'weapons',shield:'shields',bodyPalette:'bodyPalettes',hairPalette:'hairPalettes'}))fill(key,data[list],{search:!key.includes('Palette')});loadingChoices=false;pickers.refresh();dialog.querySelector('[data-preview-class]').textContent=catalog.bodies.find(x=>x.id===draft.body)?.label||'';schedule();}
+  try{const data=await request('choices?'+new URLSearchParams({body:draft.body,head:draft.head||'',mount:draft.mount||''}));if(n!==revision||closed||!dialog.open)return;fill('mount',data.mounts||[]);fill('head',data.heads,{optional:false});for(const [key,list]of Object.entries({upper:'headgear',middle:'headgear',lower:'headgear',robe:'robes',weapon:'weapons',shield:'shields',bodyPalette:'bodyPalettes',hairPalette:'hairPalettes'}))fill(key,data[list],{search:!key.includes('Palette')});loadingChoices=false;pickers.refresh();dialog.querySelector('[data-mount-note]').textContent=draft.mount?'แสดงของสวมใส่ที่เข้ากับท่าขี่ · กดนั่งเพื่อลงจากสัตว์ขี่':'เลือกสัตว์ขี่เพื่อพรีวิวทันที';dialog.querySelector('[data-preview-class]').textContent=catalog.bodies.find(x=>x.id===draft.body)?.label||'';schedule();}
   catch(e){if(n===revision){message(e.message);retry.hidden=false;canvas.setAttribute('aria-busy','false');}}finally{if(n===revision)loadingChoices=false;}
  }
- function read(){for(const key of ['body','head','upper','middle','lower','robe','weapon','shield','bodyPalette','hairPalette'])draft[key]=fields[key].value;return {...draft};}
+ function read(){for(const key of ['body','mount','head','upper','middle','lower','robe','weapon','shield','bodyPalette','hairPalette'])draft[key]=fields[key].value;return {...draft};}
  async function loadOutfit(base){
   if(base.startsWith('ro-outfit:')){const a=await (await import('./online-wardrobe.js')).onlineOutfitAssets(base),im=new Image();im.src=a.url;await im.decode();return {meta:a.meta,image:im};}const r=await fetch(base+'.json');if(!r.ok)throw Error('โหลดภาพชุดไม่สำเร็จ');const m=await r.json(),im=new Image();im.src=base+'.png';await im.decode();return {meta:m,image:im};
  }
@@ -78,6 +83,7 @@ export function createWardrobe(host,{apply,pause,onError}){
  dialog.querySelector('[data-sit-preview]').onclick=e=>{sitting=!sitting;walking=false;dialog.querySelector('[data-walk]').textContent='ทดลองเดิน';e.currentTarget.textContent=sitting?'ยืน':'นั่ง';};
  fields.sex.onchange=()=>{const label=catalog.bodies.find(x=>x.id===draft.body)?.label,body=catalog.bodies.find(x=>x.sex===fields.sex.value&&x.label===label)||catalog.bodies.find(x=>x.sex===fields.sex.value&&x.label==='Novice');draft={body:body.id};bodies();void refresh();};
  fields.body.onchange=()=>{draft={body:fields.body.value};void refresh();};fields.head.onchange=()=>{draft.head=fields.head.value;draft.hairPalette='';pickers.refresh();void refresh();};
+ fields.mount.onchange=()=>{draft.mount=fields.mount.value;draft.bodyPalette='';void refresh();};
  for(const key of ['upper','middle','lower','robe','weapon','shield','bodyPalette','hairPalette']){
   fields[key].onchange=()=>{draft[key]=fields[key].value;pickers.refresh();schedule();};
 

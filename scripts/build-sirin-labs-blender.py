@@ -212,7 +212,7 @@ for x in [-8,8]:
 for x in [-23,23]:a.lamp(x,-9,'A');a.bench(x,4);a.planter(x,8,0,3)
 records.append(a.finish([-97,-45,-12,12]))
 
-b=Builder('B_Lotus_Nexus',(0,1));foundation(b,32,30)
+b=Builder('B_Lotus_Nexus',(73,51));foundation(b,32,30)
 for x in [-10.7,10.7]:
     b.block(x,1,8.3,14,8,2,True)
     for y in [-2,4]:b.hvac(x,y,8.4)
@@ -248,8 +248,8 @@ for i in range(8):
 b.beam((0,0,16.3),(0,0,17.1),1.5,'bronze',8,r2=.75)
 b.entry(0,-6.65,4.5,'B')
 for x in [-12.5,12.5]:b.lamp(x,-12.3,'B');b.bench(x,11.7);b.planter(x,8.8,0,3)
-records.append(b.finish([-16,16,-16,14]))
-records[-1]['atriumPolygon']=[[round(x,4),round(-y-1,4)] for x,y in poly]
+records.append(b.finish([57,89,-66,-36]))
+records[-1]['atriumPolygon']=[[round(x+73,4),round(-y-51,4)] for x,y in poly]
 
 c=Builder('C_Monsoon_Terraces',(71,0));foundation(c,52,24)
 c.block(-14,1,12,13,9.2,2);c.block(13,2,14,12,11.4,3)
@@ -282,7 +282,7 @@ next(n for n in scene.world.node_tree.nodes if n.type=='BACKGROUND').inputs['Str
 RAW=ROOT/'artifacts/sirin-labs/research-quarter-raw.glb'
 RAW.parent.mkdir(parents=True,exist_ok=True)
 bpy.ops.export_scene.gltf(filepath=str(RAW),export_format='GLB',use_selection=True,use_active_scene=True,export_extras=True,export_cameras=False,export_lights=False)
-json.dump({'version':1,'buildings':records,'design':'Original A/B/C concept geometry with Ragnarok Online surface textures; see texture-provenance.json','replaces':['V03_Tower_019.002','A05_Weaponshop_078.002','A05_Weaponshop_079.002','Y02_Science_080.002','Y02_Science_081.002']},open(OUT/'layout.json','w'),indent=2)
+json.dump({'version':2,'buildings':records,'design':'Original A/B/C concept geometry with Ragnarok Online surface textures; Lotus Nexus replaces Datacenter; central energy tower preserved','replaces':['V01_Lab_009.002','A05_Weaponshop_078.002','A05_Weaponshop_079.002','Y02_Science_080.002','Y02_Science_081.002']},open(OUT/'layout.json','w'),indent=2)
 # Save an editable source with textures packed and a camera for later inspection.
 light_data=bpy.data.lights.new('Studio Sun','SUN');light=bpy.data.objects.new('Studio Sun',light_data);scene.collection.objects.link(light);light.rotation_euler=(.5,-.4,-.6);light_data.energy=2
 cam_data=bpy.data.cameras.new('Review Camera');cam=bpy.data.objects.new('Review Camera',cam_data);scene.collection.objects.link(cam);scene.camera=cam

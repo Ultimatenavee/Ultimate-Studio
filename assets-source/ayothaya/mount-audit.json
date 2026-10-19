@@ -1,0 +1,1308 @@
+{
+  "mounts": [
+    {
+      "id": "7caac122bcca26d1c608",
+      "classId": "2fff4cc5dfacd94db363",
+      "label": "Poring",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\노비스포링_여.spr"
+    },
+    {
+      "id": "01dc18178c5eabc4a0b2",
+      "classId": "14d864b1cd94c960cab3",
+      "label": "Poring",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\노비스포링_남.spr"
+    },
+    {
+      "id": "3ceb5e7bdad459caac54",
+      "classId": "ec77efbd280d43b768b0",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\페코검사_여.spr"
+    },
+    {
+      "id": "da6e21874f2667738bd6",
+      "classId": "1ff3d61baecc0a66b189",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\페코검사_남.spr"
+    },
+    {
+      "id": "d753c2be20506a299124",
+      "classId": "fc156a320b6d59974e5d",
+      "label": "Fox",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\여우마법사_여.spr"
+    },
+    {
+      "id": "47cf4981b4d4de9d56cb",
+      "classId": "fa7cfc5c07e479f29ade",
+      "label": "Fox",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\여우마법사_남.spr"
+    },
+    {
+      "id": "894a3674532abb145886",
+      "classId": "ec833c3b972f26ad555d",
+      "label": "Ostrich",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\타조궁수_여.spr"
+    },
+    {
+      "id": "6777fd6af3c3b6901c15",
+      "classId": "f9ccfe02a920a6a93cc3",
+      "label": "Ostrich",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\타조궁수_남.spr"
+    },
+    {
+      "id": "c6bdda2bd9f4ad5ac1ca",
+      "classId": "71c58063d36508da0f5a",
+      "label": "Alpaca",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\복사알파카_여.spr"
+    },
+    {
+      "id": "a5cef42ba641bc0df444",
+      "classId": "e4b85e09afc902c104f6",
+      "label": "Alpaca",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\복사알파카_남.spr"
+    },
+    {
+      "id": "b976a02a14a8687d6598",
+      "classId": "2ae86fab933dab7ef95b",
+      "label": "Boar",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\상인멧돼지_여.spr"
+    },
+    {
+      "id": "84b186b7bd67e85a5c29",
+      "classId": "8a2907b97edbe792d20d",
+      "label": "Boar",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\상인멧돼지_남.spr"
+    },
+    {
+      "id": "988645a09b7359006a45",
+      "classId": "c119a7299dbc938b8402",
+      "label": "Cerberus",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\켈베로스도둑_여.spr"
+    },
+    {
+      "id": "c680073ee6c496e041bf",
+      "classId": "d15466bc2cf449698b1b",
+      "label": "Cerberus",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\켈베로스도둑_남.spr"
+    },
+    {
+      "id": "9cba5f2622c20f8d79ab",
+      "classId": "c440845725b10ca83387",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\페코페코_기사_여.spr"
+    },
+    {
+      "id": "849f8d5e2aed8dfcb333",
+      "classId": "c440845725b10ca83387",
+      "label": "Lion",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\사자기사_여.spr"
+    },
+    {
+      "id": "bacfe8e48631fd29826a",
+      "classId": "4334f7934f177cee9836",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\페코페코_기사_남.spr"
+    },
+    {
+      "id": "3849f28091d6c21cee9b",
+      "classId": "4334f7934f177cee9836",
+      "label": "Lion",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\사자기사_남.spr"
+    },
+    {
+      "id": "d4269fe1bb0369cb515e",
+      "classId": "197e56bd69daa3c48761",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\신페코크루세이더_여.spr"
+    },
+    {
+      "id": "69d3ac3a4d9a45118f48",
+      "classId": "197e56bd69daa3c48761",
+      "label": "Lion",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\사자크루세이더_여.spr"
+    },
+    {
+      "id": "bd75c0a8b4db0f112efb",
+      "classId": "197e56bd69daa3c48761",
+      "label": "Peco Peco · classic",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\구페코크루세이더_여.spr"
+    },
+    {
+      "id": "ce0bfaa1406727a3584c",
+      "classId": "495b276baea2a5f71b7c",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\신페코크루세이더_남.spr"
+    },
+    {
+      "id": "3b9e9d2c768163880299",
+      "classId": "495b276baea2a5f71b7c",
+      "label": "Lion",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\사자크루세이더_남.spr"
+    },
+    {
+      "id": "c47f195dcb675482b95c",
+      "classId": "495b276baea2a5f71b7c",
+      "label": "Peco Peco · classic",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\구페코크루세이더_남.spr"
+    },
+    {
+      "id": "0a827d5c879283f9ab73",
+      "classId": "06b6ba50cd9bb8d98470",
+      "label": "Fox",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\여우위저드_여.spr"
+    },
+    {
+      "id": "372e9c2574a6944989ee",
+      "classId": "7f18bd17cce8099d6c94",
+      "label": "Fox",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\여우위저드_남.spr"
+    },
+    {
+      "id": "e1d034c101fc6a6b07ec",
+      "classId": "c3a3acca9405c434200d",
+      "label": "Fox",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\여우세이지_여.spr"
+    },
+    {
+      "id": "154b9386c8b843adbc00",
+      "classId": "06a342b5bd30e4030ecb",
+      "label": "Fox",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\여우세이지_남.spr"
+    },
+    {
+      "id": "e9d6055f6938bbb15986",
+      "classId": "cfb25fac04ebcbb3cdcb",
+      "label": "Ostrich",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\타조헌터_여.spr"
+    },
+    {
+      "id": "2309ed68ec96a71ff40c",
+      "classId": "b29cb5c5f118f370f6d3",
+      "label": "Ostrich",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\타조헌터_남.spr"
+    },
+    {
+      "id": "211132ea635744ce7940",
+      "classId": "973413ffa5fe506476e8",
+      "label": "Ostrich",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\타조바드_남.spr"
+    },
+    {
+      "id": "269d3cd882ef89d1cdf7",
+      "classId": "f7413ac3881af9e654fe",
+      "label": "Ostrich",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\타조무희_여.spr"
+    },
+    {
+      "id": "942753414605577832cf",
+      "classId": "011e9b38cbbb1ad74743",
+      "label": "Alpaca",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\프리스트알파카_여.spr"
+    },
+    {
+      "id": "d933f8077194186615c6",
+      "classId": "bd658e99a8f4b7b0a216",
+      "label": "Alpaca",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\프리스트알파카_남.spr"
+    },
+    {
+      "id": "9c8530e9ff694958bae6",
+      "classId": "e6746cb713a860d45ab2",
+      "label": "Alpaca",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\몽크알파카_여.spr"
+    },
+    {
+      "id": "03d7eb34d2bc02646aa3",
+      "classId": "10d43872b401b0573e9a",
+      "label": "Alpaca",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\몽크알파카_남.spr"
+    },
+    {
+      "id": "daea93657b538b7bf2fa",
+      "classId": "56c2d6bfcdf7f84f13f7",
+      "label": "Boar",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\제철공멧돼지_여.spr"
+    },
+    {
+      "id": "aa1d4dee46f279dd35fe",
+      "classId": "346bd2ea6c51142a4e66",
+      "label": "Boar",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\제철공멧돼지_남.spr"
+    },
+    {
+      "id": "1ebfecce001b4830d594",
+      "classId": "ee986f1dd8179f6b8528",
+      "label": "Boar",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\연금술사멧돼지_여.spr"
+    },
+    {
+      "id": "d430fe97131c1a1b6edb",
+      "classId": "fa7d4332357c93bc5d7f",
+      "label": "Boar",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\연금술사멧돼지_남.spr"
+    },
+    {
+      "id": "96c2b6200a3efb045c9d",
+      "classId": "643d38b6e44d4daea256",
+      "label": "Cerberus",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\켈베로스어쎄신_여.spr"
+    },
+    {
+      "id": "44b5d4c4b5a5419bcd95",
+      "classId": "a0aacddd5e2bdfc59c47",
+      "label": "Cerberus",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\켈베로스어쎄신_남.spr"
+    },
+    {
+      "id": "e049a1651cd5405c4759",
+      "classId": "c9cb5369f362d1b1131b",
+      "label": "Cerberus",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\켈베로스로그_여.spr"
+    },
+    {
+      "id": "2e64b27459bfc74bd3cd",
+      "classId": "0a2f129fa518e7634878",
+      "label": "Cerberus",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\켈베로스로그_남.spr"
+    },
+    {
+      "id": "bc82c54ddf6424048e05",
+      "classId": "fc4c9829a49e6af04ade",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\로드페코_여.spr"
+    },
+    {
+      "id": "335854c8a11396e42d86",
+      "classId": "fc4c9829a49e6af04ade",
+      "label": "Lion",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\사자로드나이트_여.spr"
+    },
+    {
+      "id": "b794b1acb4616ee1d98e",
+      "classId": "0ef012ef3c2681e2c3f1",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\로드페코_남.spr"
+    },
+    {
+      "id": "22c6a1ffbcd74a94ad52",
+      "classId": "0ef012ef3c2681e2c3f1",
+      "label": "Lion",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\사자로드나이트_남.spr"
+    },
+    {
+      "id": "c80fe1feac0657fa484e",
+      "classId": "6b45e31b1580bbd97f43",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\페코팔라딘_여.spr"
+    },
+    {
+      "id": "3901310838eeac653faa",
+      "classId": "6b45e31b1580bbd97f43",
+      "label": "Lion",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\사자팔라딘_여.spr"
+    },
+    {
+      "id": "5370d6eade24fb2499c1",
+      "classId": "b32ab8c593cc06b14cef",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\페코팔라딘_남.spr"
+    },
+    {
+      "id": "940bf36512b9b68c781b",
+      "classId": "b32ab8c593cc06b14cef",
+      "label": "Lion",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\사자팔라딘_남.spr"
+    },
+    {
+      "id": "bb59bbc6a8826fe9d297",
+      "classId": "56498ea1e9ec3ab7d141",
+      "label": "Fox",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\여우하이위저드_여.spr"
+    },
+    {
+      "id": "3cbcc2a6a35a1daf75ac",
+      "classId": "ba90027756ee2b5215a9",
+      "label": "Fox",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\여우하이위저드_남.spr"
+    },
+    {
+      "id": "3029adca3518eb651bb4",
+      "classId": "07940f38d6704cd138db",
+      "label": "Fox",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\여우프로페서_여.spr"
+    },
+    {
+      "id": "7bc1a99a24dfdcab46d5",
+      "classId": "529a31fbe77f37a8dd86",
+      "label": "Fox",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\여우프로페서_남.spr"
+    },
+    {
+      "id": "a294930294a786a94737",
+      "classId": "bf8947caaf36224592a8",
+      "label": "Ostrich",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\타조스나이퍼_여.spr"
+    },
+    {
+      "id": "efcf3a73d4eb56afacf4",
+      "classId": "4ca5343c557fa4772a2c",
+      "label": "Ostrich",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\타조스나이퍼_남.spr"
+    },
+    {
+      "id": "40f1f2eed400f44540cd",
+      "classId": "3aa7e8c4502554db30f8",
+      "label": "Ostrich",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\타조크라운_남.spr"
+    },
+    {
+      "id": "3d837d8b1f2c0aa61c08",
+      "classId": "eac95c296ce6ea77ea0d",
+      "label": "Ostrich",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\타조짚시_여.spr"
+    },
+    {
+      "id": "db8aa84417f8e6ddbd0b",
+      "classId": "fbdf9934885fa2b5305c",
+      "label": "Alpaca",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\하이프리스트알파카_여.spr"
+    },
+    {
+      "id": "9a2f20cd8ca83507c858",
+      "classId": "42b787ca1653ad760f98",
+      "label": "Alpaca",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\하이프리스트알파카_남.spr"
+    },
+    {
+      "id": "e6c6cb8b0551bce800f4",
+      "classId": "479566a11f1438c2632f",
+      "label": "Alpaca",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\챔피온알파카_여.spr"
+    },
+    {
+      "id": "6ef9456456bb917fa650",
+      "classId": "bc02cd1556f745158d82",
+      "label": "Alpaca",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\챔피온알파카_남.spr"
+    },
+    {
+      "id": "ce1d61455084269fc784",
+      "classId": "b5454a418359849f0e08",
+      "label": "Boar",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\화이트스미스멧돼지_여.spr"
+    },
+    {
+      "id": "226035b9f587042c3683",
+      "classId": "7f39de6f13e5a72b41e7",
+      "label": "Boar",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\화이트스미스멧돼지_남.spr"
+    },
+    {
+      "id": "4e3e45d81efd4da354e7",
+      "classId": "4450011608cbf0552188",
+      "label": "Boar",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\크리에이터멧돼지_여.spr"
+    },
+    {
+      "id": "51ccb1f9c44224981a61",
+      "classId": "781f2a71e7e4449d66a4",
+      "label": "Boar",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\크리에이터멧돼지_남.spr"
+    },
+    {
+      "id": "f70d2924ad49a8573ac0",
+      "classId": "14e87061500ef510a3c7",
+      "label": "Cerberus",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\켈베로스어쎄신크로스_여.spr"
+    },
+    {
+      "id": "c30abd621ad2f55959d1",
+      "classId": "77aa206c4f1a10502053",
+      "label": "Cerberus",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\켈베로스어쎄신크로스_남.spr"
+    },
+    {
+      "id": "0e3e800e6ad456db5e3c",
+      "classId": "4b04d3159c7fcf897f71",
+      "label": "Cerberus",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\켈베로스스토커_여.spr"
+    },
+    {
+      "id": "175e160d1dd73b3512e0",
+      "classId": "38ec98e5260e69d4b8fa",
+      "label": "Cerberus",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\켈베로스스토커_남.spr"
+    },
+    {
+      "id": "44b8f3b5604b283421a8",
+      "classId": "3778d4818a5441ba59b0",
+      "label": "Lion",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\사자룬나이트_여.spr"
+    },
+    {
+      "id": "47e11b3b2d28b885114c",
+      "classId": "3778d4818a5441ba59b0",
+      "label": "Dragon 1",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\룬나이트쁘띠_여.spr"
+    },
+    {
+      "id": "5b4145b11380e2f07321",
+      "classId": "3778d4818a5441ba59b0",
+      "label": "Dragon 2",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\룬나이트쁘띠2_여.spr"
+    },
+    {
+      "id": "096a6cf3acb7341ea828",
+      "classId": "3778d4818a5441ba59b0",
+      "label": "Dragon 3",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\룬나이트쁘띠3_여.spr"
+    },
+    {
+      "id": "5af30a609a476a75f80d",
+      "classId": "3778d4818a5441ba59b0",
+      "label": "Dragon 4",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\룬나이트쁘띠4_여.spr"
+    },
+    {
+      "id": "54fef9a3e81d808a4221",
+      "classId": "3778d4818a5441ba59b0",
+      "label": "Dragon 5",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\룬나이트쁘띠5_여.spr"
+    },
+    {
+      "id": "461c716dd60a0cec0799",
+      "classId": "0a7490685f0252b7566d",
+      "label": "Lion",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\사자룬나이트_남.spr"
+    },
+    {
+      "id": "43d29662944778c05b9d",
+      "classId": "0a7490685f0252b7566d",
+      "label": "Dragon 1",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\룬나이트쁘띠_남.spr"
+    },
+    {
+      "id": "8fc4b4e7495b8a8dc140",
+      "classId": "0a7490685f0252b7566d",
+      "label": "Dragon 2",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\룬나이트쁘띠2_남.spr"
+    },
+    {
+      "id": "008d8bdfdd0accc56649",
+      "classId": "0a7490685f0252b7566d",
+      "label": "Dragon 3",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\룬나이트쁘띠3_남.spr"
+    },
+    {
+      "id": "a9039e8a6b7c52cdfaee",
+      "classId": "0a7490685f0252b7566d",
+      "label": "Dragon 4",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\룬나이트쁘띠4_남.spr"
+    },
+    {
+      "id": "8d633350b48595f66262",
+      "classId": "0a7490685f0252b7566d",
+      "label": "Dragon 5",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\룬나이트쁘띠5_남.spr"
+    },
+    {
+      "id": "2fa0b3b6bd591bfabc44",
+      "classId": "fb5f8580fae6fe43f538",
+      "label": "Lion",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\사자로얄가드_여.spr"
+    },
+    {
+      "id": "fd2c0d9ec28140a7408e",
+      "classId": "fb5f8580fae6fe43f538",
+      "label": "Gryphon",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\그리폰가드_여.spr"
+    },
+    {
+      "id": "a088595bcc81e0cba3db",
+      "classId": "db352a49b40fac251efd",
+      "label": "Lion",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\사자로얄가드_남.spr"
+    },
+    {
+      "id": "4f55b5a59bacec3507ac",
+      "classId": "db352a49b40fac251efd",
+      "label": "Gryphon",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\그리폰가드_남.spr"
+    },
+    {
+      "id": "7908a9d249762d2ffa08",
+      "classId": "2d51173d782ef9dbb291",
+      "label": "Fox",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\여우워록_여.spr"
+    },
+    {
+      "id": "9d00742b3f6de8cdf2d4",
+      "classId": "296da3edc2ed38a187a7",
+      "label": "Fox",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\여우워록_남.spr"
+    },
+    {
+      "id": "1e73eebec4d3e628b28c",
+      "classId": "1c5398e66f9ee43c55b0",
+      "label": "Fox",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\여우소서러_여.spr"
+    },
+    {
+      "id": "d94f54a9166d0b2c6f0e",
+      "classId": "aa1c7e7e9ee1fb00d8fc",
+      "label": "Fox",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\여우소서러_남.spr"
+    },
+    {
+      "id": "7358a037d736cf9b8f2c",
+      "classId": "6173660b52aa06a33d26",
+      "label": "Ostrich",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\타조레인져_여.spr"
+    },
+    {
+      "id": "64c6bf5ab162215c27d4",
+      "classId": "6173660b52aa06a33d26",
+      "label": "Warg",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\레인져늑대_여.spr"
+    },
+    {
+      "id": "d3642799631f37c61d50",
+      "classId": "e0cd7fe2f316324e6144",
+      "label": "Ostrich",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\타조레인져_남.spr"
+    },
+    {
+      "id": "98ab413e3d2bde833a73",
+      "classId": "e0cd7fe2f316324e6144",
+      "label": "Warg",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\레인져늑대_남.spr"
+    },
+    {
+      "id": "9416e13fd09f2307ec47",
+      "classId": "60f6c8972ba47c85cb64",
+      "label": "Ostrich",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\타조민스트럴_남.spr"
+    },
+    {
+      "id": "02446ab06655c20e0618",
+      "classId": "e7253e79d350002376fd",
+      "label": "Ostrich",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\타조원더러_여.spr"
+    },
+    {
+      "id": "9fbba98eba5c9dc1bfb3",
+      "classId": "c34efa1bfecf69117f14",
+      "label": "Alpaca",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\아크비숍알파카_여.spr"
+    },
+    {
+      "id": "4badd896c3bf2cca3dc3",
+      "classId": "ea7019727ba8c9eba46a",
+      "label": "Alpaca",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\아크비숍알파카_남.spr"
+    },
+    {
+      "id": "00ff1708fb6d1a273235",
+      "classId": "eb2742a93a8f2768b0b9",
+      "label": "Alpaca",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\슈라알파카_여.spr"
+    },
+    {
+      "id": "b922ddbea505b5a9b4d4",
+      "classId": "ff42c606c85370f8b893",
+      "label": "Alpaca",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\슈라알파카_남.spr"
+    },
+    {
+      "id": "a232191ae037e55ec3b7",
+      "classId": "ee330bc68a8be2e5221e",
+      "label": "Boar",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\미케닉멧돼지_여.spr"
+    },
+    {
+      "id": "c2ada8ffd5dcbd3d3427",
+      "classId": "ee330bc68a8be2e5221e",
+      "label": "Mado Gear",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\마도기어_여.spr"
+    },
+    {
+      "id": "5577aac8a444c2b9ebaa",
+      "classId": "ee330bc68a8be2e5221e",
+      "label": "Mado Armor",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\마도아머_여.spr"
+    },
+    {
+      "id": "f0f52e2063b1177de5f6",
+      "classId": "aab3508ab6f7fe7ee8df",
+      "label": "Boar",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\미케닉멧돼지_남.spr"
+    },
+    {
+      "id": "1ebc51024e0dd20b11ba",
+      "classId": "aab3508ab6f7fe7ee8df",
+      "label": "Mado Gear",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\마도기어_남.spr"
+    },
+    {
+      "id": "c8b7ec1807f5f3ac188c",
+      "classId": "aab3508ab6f7fe7ee8df",
+      "label": "Mado Armor",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\마도아머_남.spr"
+    },
+    {
+      "id": "0c3f90f0831485f6f8cc",
+      "classId": "14953e3a92f874a4e3f0",
+      "label": "Boar",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\제네릭멧돼지_여.spr"
+    },
+    {
+      "id": "14295e007ef79d11b547",
+      "classId": "13be2730d801d8835931",
+      "label": "Boar",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\제네릭멧돼지_남.spr"
+    },
+    {
+      "id": "4651d66972f447c98f19",
+      "classId": "6d28e922b698d7c54057",
+      "label": "Cerberus",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\켈베로스길로틴크로스_여.spr"
+    },
+    {
+      "id": "2d65d77ead4b8bb59c1b",
+      "classId": "2814b1c8d78f19c8fb86",
+      "label": "Cerberus",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\켈베로스길로틴크로스_남.spr"
+    },
+    {
+      "id": "de64a57062a7c3c1c325",
+      "classId": "b0bcdfbe923e16522ede",
+      "label": "Cerberus",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\켈베로스쉐도우체이서_여.spr"
+    },
+    {
+      "id": "ba8efe168e8b646f2371",
+      "classId": "797599985bb176ac5ce5",
+      "label": "Cerberus",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\켈베로스쉐도우체이서_남.spr"
+    },
+    {
+      "id": "72583766197b5e803a51",
+      "classId": "1d99320d54dc17071ecc",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\dragon_knight_chicken_여.spr"
+    },
+    {
+      "id": "f9065d499c441ab541d3",
+      "classId": "1d99320d54dc17071ecc",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\dragon_knight_riding_여.spr"
+    },
+    {
+      "id": "b5a865fd886524aab1f2",
+      "classId": "0517fcd246df9767b46b",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\dragon_knight_chicken_남.spr"
+    },
+    {
+      "id": "30b58a66902fbafe32d0",
+      "classId": "0517fcd246df9767b46b",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\dragon_knight_riding_남.spr"
+    },
+    {
+      "id": "346f2e8fcef5f6177ef5",
+      "classId": "b6154b8aad75e6ed36ba",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\imperial_guard_chicken_여.spr"
+    },
+    {
+      "id": "cc40ce0f32e5e59fe5dc",
+      "classId": "b6154b8aad75e6ed36ba",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\imperial_guard_riding_여.spr"
+    },
+    {
+      "id": "91faea4cd313451ee46c",
+      "classId": "65c1fc4fb3de2d420de1",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\imperial_guard_chicken_남.spr"
+    },
+    {
+      "id": "746dbcf8f4e03be3be5a",
+      "classId": "65c1fc4fb3de2d420de1",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\imperial_guard_riding_남.spr"
+    },
+    {
+      "id": "3d576efdc256af01d5b8",
+      "classId": "53f4e4c248374bb4f5e9",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\arch_mage_riding_여.spr"
+    },
+    {
+      "id": "8bf4e4ac7eed6ed7ddfb",
+      "classId": "bd02c9c40318bd2de12e",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\arch_mage_riding_남.spr"
+    },
+    {
+      "id": "2463608fc6b591b12a48",
+      "classId": "dd4fda2a7076eda584e8",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\elemetal_master_riding_여.spr"
+    },
+    {
+      "id": "41409d675176250ba998",
+      "classId": "17c3b43e6940d30604b9",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\elemetal_master_riding_남.spr"
+    },
+    {
+      "id": "2b3fd36b4b6864d9be16",
+      "classId": "3ef27f2c0c9f0ecadba7",
+      "label": "Warg",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\wolf_windhawk_여.spr"
+    },
+    {
+      "id": "748f79d6dcd5048e3342",
+      "classId": "3ef27f2c0c9f0ecadba7",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\windhawk_riding_여.spr"
+    },
+    {
+      "id": "c80d8bf54b47496314bb",
+      "classId": "6d20144dc59686e63485",
+      "label": "Warg",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\wolf_windhawk_남.spr"
+    },
+    {
+      "id": "56ed167401e40829d293",
+      "classId": "6d20144dc59686e63485",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\windhawk_riding_남.spr"
+    },
+    {
+      "id": "6bd5fb645f667c854710",
+      "classId": "6b4712b78cd0781add3e",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\troubadour_riding_남.spr"
+    },
+    {
+      "id": "5aa11ae552993dddbda5",
+      "classId": "1d9f6adff2eda6e90295",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\trouvere_riding_여.spr"
+    },
+    {
+      "id": "10a014f4b9075f8916d0",
+      "classId": "879ac9e93031926b3cb7",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\cardinal_riding_여.spr"
+    },
+    {
+      "id": "26ee2b929565f1feed2e",
+      "classId": "e29e17b7d9b6001705f6",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\cardinal_riding_남.spr"
+    },
+    {
+      "id": "84cf5c017ecae53b7103",
+      "classId": "dc9bd6454f51af974186",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\inquisitor_riding_여.spr"
+    },
+    {
+      "id": "17ff8dfb7d0d3b5d5a8d",
+      "classId": "49420d47259ca74c841c",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\inquisitor_riding_남.spr"
+    },
+    {
+      "id": "b2942d1dbfafefea5e4b",
+      "classId": "e5b3cf4346435e70e7a0",
+      "label": "Mado Gear",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\meister_madogear1_여.spr"
+    },
+    {
+      "id": "4ca96b0c5c4b43994d08",
+      "classId": "e5b3cf4346435e70e7a0",
+      "label": "Mado Armor",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\meister_madogear2_여.spr"
+    },
+    {
+      "id": "dab7497888cc6566acda",
+      "classId": "e5b3cf4346435e70e7a0",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\meister_riding_여.spr"
+    },
+    {
+      "id": "7bb721cc33e46bcf7522",
+      "classId": "2252091d7e87f6d604dd",
+      "label": "Mado Gear",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\meister_madogear1_남.spr"
+    },
+    {
+      "id": "3baa3cc5c45fb80a1bcb",
+      "classId": "2252091d7e87f6d604dd",
+      "label": "Mado Armor",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\meister_madogear2_남.spr"
+    },
+    {
+      "id": "90b7de926932319ee28c",
+      "classId": "2252091d7e87f6d604dd",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\meister_riding_남.spr"
+    },
+    {
+      "id": "11eb8a97c54eb52628a5",
+      "classId": "5af7296810ede497f5d2",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\biolo_riding_여.spr"
+    },
+    {
+      "id": "6ae9c414c73b9854eb5e",
+      "classId": "9898ed343b7f7879e473",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\biolo_riding_남.spr"
+    },
+    {
+      "id": "1313a17db26cc675d18e",
+      "classId": "2d74bd00699a72d4e9ac",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\shadow_cross_riding_여.spr"
+    },
+    {
+      "id": "0b365f350a947f4b1882",
+      "classId": "7e5b78b4bf00c4f4e4a2",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\shadow_cross_riding_남.spr"
+    },
+    {
+      "id": "1e4b793b9d331cbfc0a4",
+      "classId": "c24133fe1dafe96a33d7",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\abyss_chaser_riding_여.spr"
+    },
+    {
+      "id": "2867fa77f511ca719c83",
+      "classId": "73d104bd7e69fba113d3",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\abyss_chaser_riding_남.spr"
+    },
+    {
+      "id": "fd0f0b52adb2f1b981a8",
+      "classId": "2e5c4e903ca862d65bd4",
+      "label": "Poring",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\슈퍼노비스포링_여.spr"
+    },
+    {
+      "id": "ab23f882d2945b91faba",
+      "classId": "4e985aefe238467bfe41",
+      "label": "Poring",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\슈퍼노비스포링_남.spr"
+    },
+    {
+      "id": "928dc006dba12fabd00d",
+      "classId": "316bde4f16a7563b4d18",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\hyper_novice_riding_여.spr"
+    },
+    {
+      "id": "6f6c7ccedb3774658900",
+      "classId": "e9306b43e6601e6f416e",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\hyper_novice_riding_남.spr"
+    },
+    {
+      "id": "4fd5676b954ebb9484ec",
+      "classId": "ef7828cf72530c1fd961",
+      "label": "Poring",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\태권소년포링_여.spr"
+    },
+    {
+      "id": "958372a9a66c9c07af69",
+      "classId": "8944f0f6a72f5766af28",
+      "label": "Poring",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\태권소년포링_남.spr"
+    },
+    {
+      "id": "6d0533d7f52ebde84dc5",
+      "classId": "e339cea65bd1bcdf2cd0",
+      "label": "Poring",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\권성포링_여.spr"
+    },
+    {
+      "id": "c2455aae5759cc15cd75",
+      "classId": "f6efacaf95438d85b3d4",
+      "label": "Poring",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\권성포링_남.spr"
+    },
+    {
+      "id": "1e39f438efe423836a3c",
+      "classId": "8d9e1c934bf8fb9f516c",
+      "label": "Haetae",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\해태성제_여.spr"
+    },
+    {
+      "id": "53ca5b84709332b0217e",
+      "classId": "7b787024a1b1b7f42551",
+      "label": "Haetae",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\해태성제_남.spr"
+    },
+    {
+      "id": "f97bcb56eed52ce4b9f1",
+      "classId": "274a742c52dbd517f563",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\sky_emperor_riding_여.spr"
+    },
+    {
+      "id": "b96621a000c6d07730d4",
+      "classId": "3455728089f4373d3dc5",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\sky_emperor_riding_남.spr"
+    },
+    {
+      "id": "ec08f58e8665c400fe9a",
+      "classId": "4914aa6be9635e7f25a4",
+      "label": "Frog",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\두꺼비소울링커_여.spr"
+    },
+    {
+      "id": "e413fc80ecb5b52c56eb",
+      "classId": "cc10bf9cb8692ab43a39",
+      "label": "Frog",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\두꺼비소울링커_남.spr"
+    },
+    {
+      "id": "b92faa9e07eeddae2d3b",
+      "classId": "c8c77321957fccef1fd2",
+      "label": "Haetae",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\해태소울리퍼_여.spr"
+    },
+    {
+      "id": "5d0c08791e45b9382580",
+      "classId": "44a421aaae0a295fa090",
+      "label": "Haetae",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\해태소울리퍼_남.spr"
+    },
+    {
+      "id": "15263396eabf7a814cb3",
+      "classId": "bd7060f2434497ededec",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\soul_ascetic_riding_여.spr"
+    },
+    {
+      "id": "b5c52c66b226b889b601",
+      "classId": "daec0a448a8c4b367591",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\soul_ascetic_riding_남.spr"
+    },
+    {
+      "id": "9e2f34a8129d755a0206",
+      "classId": "fbfbd25360e9a9ba337f",
+      "label": "Frog",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\두꺼비닌자_여.spr"
+    },
+    {
+      "id": "6d236fa83325a117dc13",
+      "classId": "7f3eccfcc7a95a65522f",
+      "label": "Frog",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\두꺼비닌자_남.spr"
+    },
+    {
+      "id": "8e9cd29e4ebe98bb1a7e",
+      "classId": "f516c1c12d1041fa1530",
+      "label": "Frog",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\frog_kagerou_여.spr"
+    },
+    {
+      "id": "b6435213d75889bc5860",
+      "classId": "cd3a1c27870232b4cbed",
+      "label": "Frog",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\frog_kagerou_남.spr"
+    },
+    {
+      "id": "c10830209be0701a22eb",
+      "classId": "8a5419d6acfcae878c9b",
+      "label": "Frog",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\frog_oboro_여.spr"
+    },
+    {
+      "id": "774a552068367b2371fb",
+      "classId": "56340dfa972352993403",
+      "label": "Frog",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\frog_oboro_남.spr"
+    },
+    {
+      "id": "1d88291aa4083e4a645b",
+      "classId": "0bf0c2664bf356ef8d33",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\shinkiro_riding_남.spr"
+    },
+    {
+      "id": "12b5da8955605d01d609",
+      "classId": "da230b614f6e9694b83e",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\shiranui_riding_여.spr"
+    },
+    {
+      "id": "2e4f7f28f47d0398cd81",
+      "classId": "7d1223f55796ecbecfc3",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\페코건너_여.spr"
+    },
+    {
+      "id": "39063931a0cd6581d01c",
+      "classId": "b0ae40dcddafcda447c2",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\페코건너_남.spr"
+    },
+    {
+      "id": "d85a88cd3e1ab22b370e",
+      "classId": "bb0bda3963daffea696b",
+      "label": "Peco Peco",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\peco_rebellion_여.spr"
+    },
+    {
+      "id": "0097b84d0b4211779516",
+      "classId": "bb0bda3963daffea696b",
+      "label": "Peco Peco · alternate",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\페코rebellion_여.spr"
+    },
+    {
+      "id": "0c610ebda33b14d2b2bf",
+      "classId": "a944c09ac2932fdb5d8f",
+      "label": "Peco Peco",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\peco_rebellion_남.spr"
+    },
+    {
+      "id": "35c4407d2acfe77c1bfc",
+      "classId": "a944c09ac2932fdb5d8f",
+      "label": "Peco Peco · alternate",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\페코rebellion_남.spr"
+    },
+    {
+      "id": "a19a0b967cf998d30ed1",
+      "classId": "0e612fc840321f087f12",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\인간족\\몸통\\여\\night_watch_riding_여.spr"
+    },
+    {
+      "id": "666f0e48a905dd53e87a",
+      "classId": "2e93a6f2f7cfe27b2fbd",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\인간족\\몸통\\남\\night_watch_riding_남.spr"
+    },
+    {
+      "id": "28d9bd69a4c3bd03daa7",
+      "classId": "3d1a1b3d2076e568af3d",
+      "label": "Cart",
+      "sex": "female",
+      "source": "data\\sprite\\도람족\\몸통\\여\\cart_summoner_여.spr"
+    },
+    {
+      "id": "1bed68bda529d3beaec6",
+      "classId": "653cc9cfe0618c465580",
+      "label": "Cart",
+      "sex": "male",
+      "source": "data\\sprite\\도람족\\몸통\\남\\cart_summoner_남.spr"
+    },
+    {
+      "id": "3df728776895f43e1917",
+      "classId": "519852d520757c3f0ed0",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "female",
+      "source": "data\\sprite\\도람족\\몸통\\여\\spirit_handler_riding_여.spr"
+    },
+    {
+      "id": "fd4ca796b7925c5c7262",
+      "classId": "9c7487300bef411bfb13",
+      "label": "สัตว์ขี่ประจำอาชีพ",
+      "sex": "male",
+      "source": "data\\sprite\\도람족\\몸통\\남\\spirit_handler_riding_남.spr"
+    }
+  ],
+  "unavailable": [],
+  "skipped": []
+}
