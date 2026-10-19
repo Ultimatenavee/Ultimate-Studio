@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 import {build} from 'esbuild';
 import fs from 'node:fs/promises';
 await import('./sync-datacenter-catalog.mjs');
@@ -6,3 +7,8 @@ await build({entryPoints:{'datacenter-entry':'src/datacenter/entry.js','device-v
 await build({entryPoints:['assets-source/ayothaya/light-catalog-ui.js'],outfile:'web/lantern-catalog.js',bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'eof'});
 await fs.copyFile('node_modules/three/LICENSE','web/THREE-LICENSE.txt');
 console.log('Bundled local Datacenter assets; Three.js is loaded on demand.');
+
+// HTML must select the matching entry after a deploy, even with an older cached entry.
+const entryVersion=createHash('sha256').update(await fs.readFile('web/datacenter-entry.js')).digest('hex').slice(0,12);
+const index=await fs.readFile('web/index.html','utf8');
+await fs.writeFile('web/index.html',index.replace(/src="datacenter-entry\.js(?:\?v=[a-f0-9]+)?"/,'src="datacenter-entry.js?v='+entryVersion+'"'));

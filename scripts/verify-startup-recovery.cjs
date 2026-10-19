@@ -1,0 +1,20 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});try{
+ const page=await browser.newPage({viewport:{width:1366,height:900}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(()=>{const timer=window.setTimeout;window.setTimeout=(fn,ms,...args)=>timer(fn,ms===60000?7000:ms,...args);});
+ let blocked=[];await page.route('**/avatar/novice.png',route=>{blocked.push(route);});
+ const base=process.env.UTS_TEST_URL||'http://127.0.0.1:8080/';
+ await page.goto(base+'?debug=ayothaya');
+ await page.waitForFunction(()=>document.querySelector('#loadStatus').textContent.includes('เกินเวลา'),null,{timeout:25000});
+ assert.equal(await page.locator('#viewport').getAttribute('aria-busy'),'false');assert.equal(await page.locator('#load3d').isEnabled(),true);
+ assert(await page.locator('#loadStatus').textContent().then(t=>t.includes('โหลดฉาก 3D')));
+ await page.unroute('**/avatar/novice.png');
+ await page.locator('#load3d').click();
+ await page.waitForFunction(()=>window.__UTS_WORLD__,null,{timeout:90000});
+ assert.equal(await page.locator('#fallback').isVisible(),false);
+ assert.equal(await page.locator('.ayothaya-surface').count(),2);
+ assert.equal(await page.evaluate(()=>window.__UTS_WORLD__.currentArea()),'capital');
+ await page.screenshot({path:'artifacts/ragnarok-life-qa/startup-recovered.png'});
+ assert.deepEqual(errors,[]);console.log('PASS stalled initial asset ends loading with a retry; retry reaches SIRIN drone, no duplicate surfaces or page errors.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

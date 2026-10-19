@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {powerReportData,appendPowerSlides} from '../src/datacenter/ppt-power-report.js';
-import {waitForStartup} from '../src/datacenter/startup-loading.js';
+import {waitForStartup,startupResource} from '../src/datacenter/startup-loading.js';
 import JSZip from 'jszip';
 const ctx={console,Blob,setTimeout,clearTimeout,Uint8Array,ArrayBuffer};ctx.window=ctx;ctx.self=ctx;vm.createContext(ctx);vm.runInContext(fs.readFileSync('web/vendor/pptxgen.bundle.js','utf8'),ctx);vm.runInContext(fs.readFileSync('web/ppt-template.js','utf8'),ctx);
 const models=[{id:'typical',name:'Router actual typical',power:{status:'verified',typicalW:325}},{id:'full',name:'Switch maximum',power:{status:'verified',maxW:190}},{id:'odf',power:{status:'passive'}}];
@@ -17,3 +17,8 @@ const rasterImage='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAA
 let download,downloadBlob;ctx.document={createElement:()=>({click(){download=this.download;}})};ctx.URL={createObjectURL:blob=>{downloadBlob=blob;return '';},revokeObjectURL(){}};ctx.FileReader=class{readAsDataURL(){this.result=rasterImage;this.onload();}};ctx.fetch=async()=>{throw Error('Export must not fetch company artwork')};ctx.NOAH_BAYFACE_REPORT={powerSlides:(p,b,o)=>appendPowerSlides(p,b,models,o)};vm.runInContext(fs.readFileSync('web/exports.js','utf8'),ctx);await ctx.NOAH_EXPORT.exportRasterDocument('pptx',new Blob([]),100,100,'Fixture','fixture',{bayface:project});assert.equal(download,'fixture.pptx');const rasterZip=await JSZip.loadAsync(await downloadBlob.arrayBuffer());for(const [name,file]of Object.entries(rasterZip.files))if(name.endsWith('.xml')||name.endsWith('.rels'))assert(!/symphony|customer-template|Orange footer/i.test(await file.async('string')),'raster Bayface slides and Power appendices stay neutral');
 assert.equal(await waitForStartup(Promise.resolve('ready'),50),'ready');await assert.rejects(waitForStartup(new Promise(()=>{}),5),/เกินเวลา/);await assert.rejects(waitForStartup(Promise.reject(Error('bad asset')),50),/bad asset/);
 console.log('PASS Actual PowerPoint ZIP: per-device U/serial/watts, typical/manual/passive, exact totals/headroom/overload, unknown coverage, 60-item pagination, sanitized branding and final rack budget summary; raster export and loading timeout/retry failure.');
+
+let finishLate,disposedLate=0;const late=new Promise(resolve=>{finishLate=resolve;});
+await assert.rejects(startupResource(late,5,'โหลดเมือง'),/โหลดเมืองเกินเวลา/);
+finishLate({dispose(){disposedLate++;}});await new Promise(resolve=>setTimeout(resolve,0));assert.equal(disposedLate,1);
+const resource={dispose(){throw Error('Successful resource must stay alive');}};assert.equal(await startupResource(Promise.resolve(resource),20),resource);

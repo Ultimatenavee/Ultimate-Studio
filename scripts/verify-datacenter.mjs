@@ -14,7 +14,7 @@ assert.equal(routeStatus(true).a,false);assert.equal(routeStatus(true).b,true);a
 // Each paired row must face its own cold aisle.
 for(const r of racks)assert(Math.cos(r.rotation)*(r.aisle-r.z)>0);
 const html=fs.readFileSync('web/index.html','utf8'),entry=fs.readFileSync('web/datacenter-entry.js','utf8'),scene=fs.readFileSync('src/datacenter/scene.js','utf8');assert(html.includes('href="studio.html"'));assert(!html.includes('location.replace'));assert(entry.includes('import('));assert(scene.includes('dispose()'));assert(scene.includes('document.hidden'));
-for(const m of html.matchAll(/(?:src|href)="([^"#]+)"/g)){if(!m[1].startsWith('http'))assert(fs.existsSync('web/'+m[1]),m[1])}
+for(const m of html.matchAll(/(?:src|href)="([^"#]+)"/g)){if(!m[1].startsWith('http'))assert(fs.existsSync('web/'+m[1].split('?')[0]),m[1])}
 console.log('Datacenter: 24 racks / four rows / 24 GPU nodes, no U collisions, catalog dimensions/assets, inward-facing aisles, demo A/B states, lazy local assets and Studio entry passed.');
 
 const nav=await import('../src/datacenter/navigation.js');

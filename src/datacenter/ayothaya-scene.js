@@ -1,3 +1,4 @@
+import {waitForStartup,startupResource} from './startup-loading.js';
 import {createWalkTools} from './walk-tools.js';
 import {EAST_RETURN} from './sirin-navigation.js';
 import {createWardrobe,savedAppearance} from './ayothaya-wardrobe.js';
@@ -88,12 +89,14 @@ export async function createScene(host,opts){
  const indoorWalk=interiorOpts.onWalk;interiorOpts.onWalk=value=>{if(isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;indoorWalk?.(value);walkTools?.refresh();}};
  interiorOpts.onPosition=(x,z,yaw)=>{if(!isIndoor())return;opts.onPosition?.(x,z,yaw);walkTools?.position(x,z,yaw);onStep(.12,area,x,z);};
  try{
-  world=await createAyothayaWorld(outdoorHost,{
+  opts.onStartup?.('กำลังโหลดแผนที่อโยธยาและตัวละคร…');
+  world=await startupResource(createAyothayaWorld(outdoorHost,{
    onDrone:state=>{if(!isIndoor())opts.onDrone?.(state);},motion:opts.motion,blocked:()=>gate.busy,onHint:opts.onHint,onEnterCity:id=>warp(id,true),onProgress:p=>opts.onHint?.(p===null?'กำลังโหลดเมืองอโยธยา…':`กำลังโหลดเมืองอโยธยา ${p}%`),onStep,
    onWalk:value=>{if(!isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;opts.onWalk?.(value);walkTools?.refresh();}},onArea:()=>{if(ready&&!isIndoor())announce();},
    onPosition:(x,z,yaw)=>{if(!isIndoor()){opts.onPosition?.(x,z,yaw);walkTools?.position(x,z,yaw);}},onPerformance:p=>{if(!isIndoor())opts.onPerformance?.(p);}
-  });
-  interior=await createInterior(indoorHost,interiorOpts);interior.setActive(false);await interior.ensureMuseum();interior.interiorRoom('datacenter');
+  }));
+  opts.onStartup?.('กำลังเตรียม Device Library และ Datacenter…');
+  interior=await startupResource(createInterior(indoorHost,interiorOpts),60000,'โหลดห้องแล็บ');interior.setActive(false);await waitForStartup(interior.ensureMuseum());interior.interiorRoom('datacenter');
  }catch(error){world?.dispose();interior?.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();throw error;}
  const current=()=>isIndoor()?interior:world;
  const api=new Proxy({
@@ -120,6 +123,7 @@ export async function createScene(host,opts){
  },{get(target,key){if(key in target)return target[key];const navigation=['zoom','touch','crouch','focusWalkInput'];const owner=navigation.includes(key)?current():interior;const value=owner[key];return typeof value==='function'?value.bind(owner):value;}});
  walkTools=createWalkTools({host,getScene:()=>api});
  wardrobe=createWardrobe(host,{apply:async base=>{await api.appearance(base);setPerspective('third',{start:true});},pause:()=>api.pauseWalkInput()});
- const saved=savedAppearance();if(saved?.base)try{if(saved.base.startsWith('ro-outfit:'))await api.appearance(saved.base);else{const metadata=await fetch(saved.base+'.json').then(r=>r.json());if(metadata.version!==4&&saved.appearance){const response=await fetch('/api/ayothaya/wardrobe/render',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(saved.appearance)});if(!response.ok)throw Error('Outfit migration failed');const updated=await response.json();await api.appearance(updated.base);try{localStorage.setItem('uts-ayothaya-appearance',JSON.stringify(updated));}catch{}}else await api.appearance(saved.base);}}catch{opts.onHint?.('โหลดชุดที่บันทึกไว้ไม่ได้ ใช้ Novice ชั่วคราว');}
+ opts.onStartup?.('กำลังเตรียมชุดตัวละครที่บันทึกไว้…');
+ const saved=savedAppearance();if(saved?.base)try{await waitForStartup((async()=>{if(saved.base.startsWith('ro-outfit:'))await api.appearance(saved.base);else{const metadata=await fetch(saved.base+'.json').then(r=>r.json());if(metadata.version!==4&&saved.appearance){const response=await fetch('/api/ayothaya/wardrobe/render',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(saved.appearance)});if(!response.ok)throw Error('Outfit migration failed');const updated=await response.json();await api.appearance(updated.base);try{localStorage.setItem('uts-ayothaya-appearance',JSON.stringify(updated));}catch{}}else await api.appearance(saved.base);}})(),12000,'โหลดชุดตัวละคร');}catch{opts.onHint?.('โหลดชุดที่บันทึกไว้ไม่ได้ ใช้ Novice ชั่วคราว');}
  ready=true;setTime(timeOfDay);setPerspective(perspective);visibility();announce();opts.onHint?.('เดินเข้าประตูวัดใหญ่เพื่อเข้าสู่ Device Library และ Datacenter');return api;
 }
