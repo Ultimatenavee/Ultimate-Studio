@@ -25,3 +25,6 @@ __pycache__/
 
 # Reproducible SIRIN Blender backup (editable main file is tracked).
 assets-source/sirin-labs/*.blend1
+
+# Separate royal-temple Blender authoring backups.
+assets-source/royal-temple/*.blend1

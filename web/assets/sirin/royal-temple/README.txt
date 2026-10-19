@@ -1,9 +1,13 @@
 SIRIN Royal Ubosot — 2026-10-19
 
-Exterior: original Ragnarok Online data/model/아요타야/던전입구.rsm (Ayothaya sanctuary entrance), exported from the local client with ragx. This is distinct from data/model/아요타야/사원.rsm used for the original Device Library temple. It replaces only the royal-axis INN placement A02_Inn_016 at world (0, -137). The original geometry is uniformly enlarged to 52 m depth (~40.9 m wide, ~32.5 m tall); the old INN was 37 m wide. This is an enlarged existing game asset, not a newly discovered larger native model. Door trim, signage and the interior arrangement are authored in code.
+Active exterior: royal-palace.glb, an original arrangement assembled in Blender from Ragnarok Online data/model/중국/중국-궁전.rsm (gilded palace) and cropped roof geometry from data/model/아요타야/여관.rsm (Ayothaya). New annex walls and trim reuse the original RO plaster/bronze/warm texture crops recorded in assets/sirin/labs/texture-provenance.json. It does not reuse the Hall's data/model/아요타야/사원.rsm. The royal-axis INN A02_Inn_016 at world (0, -137) is replaced only inside its parcel. Footprint is approximately 48 x 52 m, height 35 m. Original game surface artwork remains attributed to Ragnarok Online / Gravity.
+
+Editable authoring: assets-source/royal-temple/sirin-royal-palace.blend. Export is self-contained GLB, WebP textures, Meshopt geometry; about 271 KB. scripts/export-royal-palace-candidates.py extracts source models; scripts/build-royal-palace.py composes the building in a separate Blender background process. Optimize artifacts/royal-temple-candidates/royal-palace-raw.glb using @gltf-transform/cli@4.5.1 optimize with --compress meshopt --flatten false --join false --palette false --simplify false --texture-compress webp --texture-size 1024.
 
 altar.glb: data/model/아요타야/사원단상.rsm.
-buddha.glb: web-optimized copy of the user's supplied Buddha.glb. Original 78,127,092 bytes, 1,500,000 triangles; exported version 4,766,888 bytes, 90,000 triangles with embedded <=2048px textures. The original Desktop file is not modified. Original artwork ownership is not asserted by this project.
+kamakura-buddha.glb: web-optimized copy of the user's supplied Kamakura Buddha.glb. Original 89,782,832 bytes / 1,500,000 triangles; shipped 4,910,000 bytes / 89,999 triangles with embedded <=2048px textures. The original Desktop file is not modified. Original artwork ownership is not asserted by this project. Scripts/prepare-royal-buddha.py reproduces this export in Blender.
+
+Legacy exterior.glb and buddha.glb remain for previously cached clients, but are no longer loaded by the current scene. The stone sanctuary exterior was replaced because scale alone did not provide the requested ceremonial grandeur.
 
 Interior reuses bundled RO temple-wood, temple-mural and temple-carpet textures, Ayothaya urn/plant/brazier props, and L241 Ayothaya chandeliers. Six L047 stone lanterns supplement the exterior's fixed night illumination. These game assets retain their original provenance; no claim of original Ragnarok artwork ownership is made.
 

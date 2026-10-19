@@ -5,8 +5,9 @@ export const royalCanStand=(x,z,r=.18)=>Number.isFinite(x)&&Number.isFinite(z)&&
 export const nearRoyalPrayer=(x,z)=>Math.hypot(x-ROYAL_TEMPLE.prayer.x,z-ROYAL_TEMPLE.prayer.z)<=ROYAL_TEMPLE.prayer.radius;
 export function royalNavigation(nav){
  const next={...nav,colliders:[],footprints:[]};nav.colliders.forEach((b,i)=>{if(nav.footprints[i]?.object.startsWith('A02_Inn_016'))return;next.colliders.push(b);next.footprints.push(nav.footprints[i]);});
- // Main hall, then two porch cheeks; the front approach and doorway stay open.
- for(const b of [[-20.5,20.5,-162.7,-125],[-10,-3.4,-125,-111],[3.4,10,-125,-111]]){next.colliders.push(b);next.footprints.push({object:'RoyalUbosot',polygons:[[[b[0],b[2]],[b[1],b[2]],[b[1],b[3]],[b[0],b[3]]]]});}
+ // Main palace, rear crown and the two lower wing bodies. Roof overhangs do
+ // not close the surrounding walkways. The arrival doorway remains open.
+ for(const b of [[-15.4,15.4,-145,-114.5],[-13,13,-162,-135],[-23.7,-9.5,-139,-127],[9.5,23.7,-139,-127],[-15.4,-4.2,-114.5,-111.6],[4.2,15.4,-114.5,-111.6]]){next.colliders.push(b);next.footprints.push({object:'RoyalUbosot',polygons:[[[b[0],b[2]],[b[1],b[2]],[b[1],b[3]],[b[0],b[3]]]]});}
  return next;
 }
 export function sixDigitBlessing(randomWords=words=>globalThis.crypto.getRandomValues(words)){

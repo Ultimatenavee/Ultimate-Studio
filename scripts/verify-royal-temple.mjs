@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import * as T from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {ROYAL_TEMPLE,royalCanStand,nearRoyalPrayer,sixDigitBlessing,royalNavigation} from '../src/datacenter/royal-temple-layout.js';
 import {portalAt,worldStep} from '../src/datacenter/ayothaya-navigation.js';
 import {capitalCanStand,capitalStep} from '../src/datacenter/sirin-navigation.js';
@@ -14,5 +17,8 @@ const p=capitalStep(nav,{x:0,z:-105},0,-100,(x,z)=>portalAt('capital',x,z));asse
 const q=worldStep('royalTemple',null,{x:0,z:12},0,50,(x,z)=>portalAt('royalTemple',x,z));assert.equal(portalAt('royalTemple',q.x,q.z),'capital');
 assert(worldStep('royalTemple',null,{x:0,z:-3},0,-50).z>-6.3);
 const map=ayothayaMap('royalTemple'),point=map.point(3,-8);assert.deepEqual(map.unpoint(point.x,point.y),{x:3,z:-8});
-const asset=fs.readFileSync('web/assets/sirin/royal-temple/buddha.glb');assert(asset.length<6e6);const gltf=JSON.parse(asset.toString('utf8',20,20+asset.readUInt32LE(12)));assert(gltf.images.every(i=>!i.uri));assert(gltf.buffers.every(i=>!i.uri));assert.equal(gltf.meshes.reduce((n,m)=>n+m.primitives.reduce((v,p)=>v+gltf.accessors[p.indices].count/3,0),0),90000);
-console.log('PASS temple portal roundtrip/high speed, collision, prayer boundary, unbiased six digits, minimap and self-contained 90k Buddha.');
+const asset=fs.readFileSync('web/assets/sirin/royal-temple/kamakura-buddha.glb');assert(asset.length<6e6);const gltf=JSON.parse(asset.toString('utf8',20,20+asset.readUInt32LE(12)));assert(gltf.images.every(i=>!i.uri));assert(gltf.buffers.every(i=>!i.uri));assert.equal(gltf.meshes.reduce((n,m)=>n+m.primitives.reduce((v,p)=>v+gltf.accessors[p.indices].count/3,0),0),89999);
+globalThis.self=globalThis;globalThis.createImageBitmap=async()=>({width:256,height:256,close(){}});
+const palace=fs.readFileSync('web/assets/sirin/royal-temple/royal-palace.glb');assert(palace.length<500000);const scene=(await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(palace.buffer.slice(palace.byteOffset,palace.byteOffset+palace.byteLength),'')).scene;
+const size=new T.Box3().setFromObject(scene).getSize(new T.Vector3());assert(size.x>47&&size.x<52);assert(size.y>34&&size.y<37);assert(size.z>51&&size.z<53);let triangles=0,draws=0;scene.traverse(o=>{if(o.isMesh){draws++;triangles+=(o.geometry.index?.count||o.geometry.attributes.position.count)/3;assert([...o.geometry.attributes.position.array].every(Number.isFinite));}});assert(draws<40&&triangles<20000);
+console.log('PASS temple portal roundtrip/high speed, collision, prayer boundary, unbiased six digits, minimap, Kamakura Buddha and optimized royal palace.',{triangles,draws,bytes:palace.length});

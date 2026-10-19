@@ -1,1 +1,1 @@
-import{a}from"./chunk-EEXM43NF.js?v=a4a988be28a1";import"./chunk-LXTCPNKE.js?v=a4a988be28a1";export{a as createRagnarokAvatar};
+import{a}from"./chunk-EEXM43NF.js?v=22c49e4cae49";import"./chunk-LXTCPNKE.js?v=22c49e4cae49";export{a as createRagnarokAvatar};
