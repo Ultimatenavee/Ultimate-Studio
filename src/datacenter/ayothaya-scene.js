@@ -51,7 +51,7 @@ export async function createScene(host,opts){
   world?.setActive(!indoors&&!gate.busy);interior?.setActive(indoors&&!gate.busy);host.dataset.area=area;
  }
  function activateInterior(next){
-  if(!interior)return;if(!isIndoor())roomOrigin=area==='capital'?'capital':'lobby';world.pauseWalkInput();area=next;interior.interiorRoom(next);visibility();opts.onWalk?.(interior.isWalking());announce();
+  if(!interior)return;if(!isIndoor())roomOrigin=area==='capital'?'capital':'lobby';world.stopPresentation();world.pauseWalkInput();area=next;interior.interiorRoom(next);visibility();opts.onWalk?.(interior.isWalking());announce();
  }
  async function travel(next,walking=true,zone){
   const from=area;await world.prepare(next);setSit(false);if(!isIndoor()&&(next==='museum'||next==='datacenter'))roomOrigin=from==='capital'?'capital':'lobby';
@@ -89,7 +89,7 @@ export async function createScene(host,opts){
  interiorOpts.onPosition=(x,z,yaw)=>{if(!isIndoor())return;opts.onPosition?.(x,z,yaw);walkTools?.position(x,z,yaw);onStep(.12,area,x,z);};
  try{
   world=await createAyothayaWorld(outdoorHost,{
-   motion:opts.motion,blocked:()=>gate.busy,onHint:opts.onHint,onEnterCity:id=>warp(id,true),onProgress:p=>opts.onHint?.(p===null?'กำลังโหลดเมืองอโยธยา…':`กำลังโหลดเมืองอโยธยา ${p}%`),onStep,
+   onDrone:state=>{if(!isIndoor())opts.onDrone?.(state);},motion:opts.motion,blocked:()=>gate.busy,onHint:opts.onHint,onEnterCity:id=>warp(id,true),onProgress:p=>opts.onHint?.(p===null?'กำลังโหลดเมืองอโยธยา…':`กำลังโหลดเมืองอโยธยา ${p}%`),onStep,
    onWalk:value=>{if(!isIndoor()){if(!value)setSit(false);sitButton.hidden=!value;opts.onWalk?.(value);walkTools?.refresh();}},onArea:()=>{if(ready&&!isIndoor())announce();},
    onPosition:(x,z,yaw)=>{if(!isIndoor()){opts.onPosition?.(x,z,yaw);walkTools?.position(x,z,yaw);}},onPerformance:p=>{if(!isIndoor())opts.onPerformance?.(p);}
   });
@@ -103,7 +103,7 @@ export async function createScene(host,opts){
   visitTemple:()=>gate.busy?false:travel('lobby',true),visitZone:(id,walking=true)=>gate.busy?false:travel(id==='datacenter'?'datacenter':'museum',walking,id),
   async focusExhibit(id){if(area!=='museum')await travel('museum',true);return interior.focusExhibit(id);},
   async tour(){await travel('museum',true);return interior.tour();},
-  openingView(){setSit(false);if(area!=='city')return travel('city',false).then(()=>{world.openingView();announce();});world.openingView();announce();},overview(){setSit(false);current().overview();announce();},walk(v){if(!v)setSit(false);current().walk(v);announce();},isWalking:()=>current().isWalking(),
+  async openingView(){setSit(false);try{await travel('capital',false);world.startDrone();}catch(error){await travel('city',false);opts.onHint?.('โหลดมหานครศิรินไม่สำเร็จ · กด Drone เพื่อลองอีกครั้ง');console.warn('SIRIN opening:',error);}announce();},overview(){setSit(false);current().overview();announce();},walk(v){if(!v)setSit(false);current().walk(v);announce();},isWalking:()=>current().isWalking(),
   ensureMuseum:()=>interior.ensureMuseum(),assetsReady:()=>interior.assetsReady(),renderReady:()=>current().renderReady(),
   select(...args){if(area!=='datacenter')activateInterior('datacenter');return interior.select(...args);},
   view(...args){if(area!=='datacenter')activateInterior('datacenter');return interior.view(...args);},
@@ -111,7 +111,7 @@ export async function createScene(host,opts){
   placement(value){if(value&&area!=='datacenter')activateInterior('datacenter');return interior.placement(value);},
   speed(v){world.speed(v);interior.speed(v);},quality(v){world.quality(v);interior.quality(v);},motion(v){world.motion(v);interior.motion(v);},
   pauseWalkInput(){world.pauseWalkInput();interior.pauseWalkInput();},
-  startDrone:()=>travel('city',false).then(()=>world.rotateOverview()),stopDrone(){world.stopPresentation();interior.stopDrone();},
+  startDrone:()=>warp('capital',false).then(ok=>{if(ok)world.startDrone();return ok;}),stopDrone(){world.stopPresentation();interior.stopDrone();},dronePause:v=>current().dronePause(v),droneStep:v=>current().droneStep(v),droneShot:v=>current().droneShot(v),
   rotateOverview(){const result=current().rotateOverview();opts.onRotate?.(!!result);return result;},
   stopPresentation(){world.stopPresentation();interior.stopPresentation();opts.onRotate?.(false);},interruptPresentation(){world.interruptPresentation();interior.interruptPresentation();},
   snapshot:()=>({ayothaya:true,area,roomOrigin,timeOfDay,perspective,sitting,world:world.snapshot(),interior:interior.snapshot()}),

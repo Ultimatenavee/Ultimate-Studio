@@ -110,7 +110,7 @@ body.motion-paused .walk-pointing-hand{animation:none}
 .ayothaya-place b { font-size:14px; }
 .ayothaya-place span { font-size:12px; color:#d0dcd9; }
 .ayothaya-place button { pointer-events:auto; justify-self:center; padding:4px 12px; font-size:12px; }
-#viewport[data-area] ~ #templeAction, #droneStart { display:none; }
+#viewport[data-area] ~ #templeAction { display:none; }
 @media(max-width:700px) { .ayothaya-place { bottom:85px; max-width:80%; padding:6px 10px; } .ayothaya-place span { font-size:11px; } }
 @media(prefers-reduced-motion:reduce) { .ayothaya-fade { transition:none; } }
 .ayothaya-place { top:62px; bottom:auto; left:18px; transform:none; max-width:min(330px,62%); text-align:left; }
@@ -206,3 +206,9 @@ body.immersive-active{overflow:hidden;overscroll-behavior:none}
 
 .ayothaya-home-cities{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}.ayothaya-home-cities[hidden]{display:none}.ayothaya-home-cities button{min-height:44px;flex:1;white-space:nowrap}
 @media(max-width:600px){.ayothaya-home-cities{flex-direction:column}.ayothaya-home-cities button{width:100%;font-size:10px}}
+
+.drone-active .ayothaya-place,.drone-active #viewport .ayothaya-camera-modes,.drone-active #viewport .ayothaya-wardrobe-toggle{display:none}
+.drone-active[data-presentation="sirin"] .walk-suggestion strong,.drone-active[data-presentation="sirin"] .walk-description,.drone-active[data-presentation="sirin"] .walk-suggestion small{display:none}
+@media(max-width:600px){.drone-active #viewport .ayothaya-sky-toggle{top:auto;bottom:150px;right:10px}}
+
+.drone-panel button{min-height:40px}

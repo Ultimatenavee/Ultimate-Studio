@@ -38,7 +38,7 @@ assert(!html.includes('data-layer='));
 assert(!html.includes('id="failPower"'));
 assert(html.includes('id="rackPowerDetails"'),'rack power planning is retained');
 assert(boot.includes('await waitForStartup(scene.ensureMuseum());'), 'Museum is loaded before presentation');
-assert(boot.includes('scene.stopPresentation();scene.openingView();scene.renderReady();'), 'Default startup uses the stationary Ayothaya opening composition');
+assert(boot.includes('scene.stopPresentation();await waitForStartup(scene.openingView());scene.renderReady();'), 'Default startup awaits the SIRIN drone opening');
 assert(!boot.includes('await scene.startDrone();'),'Drone tour is opt-in');
 assert(html.includes('id="rotateOverview" aria-pressed="false"'));
 assert(html.includes('WASD / ลูกศร เลื่อนมุมมอง'));
