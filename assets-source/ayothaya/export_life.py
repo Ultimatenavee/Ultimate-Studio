@@ -6,6 +6,7 @@ Only identical composed frames are deduplicated; animation clips keep all timing
 import hashlib,json,math,sys
 from pathlib import Path
 from PIL import Image
+from city_life_plan import MONSTERS,plan
 ROOT=Path(__file__).resolve().parents[2]
 cfg=json.loads((ROOT/'scripts/ayothaya-local.json').read_text(encoding='utf8'))
 sys.path.insert(0,cfg['ragx'])
@@ -15,9 +16,10 @@ archive=open_stack(cfg['client']);names=set(archive.namelist())
 out=ROOT/'web/assets/ragnarok-life';out.mkdir(parents=True,exist_ok=True)
 sources={p['id']:p['source_spr'] for p in json.loads((ROOT/'web/assets/sirin/life-provenance.json').read_text(encoding='utf8'))['sprites']}
 sources['Researcher']=r'data\sprite\npc\4_f_science.spr'
-for key in ['Poring','Lunatic']:
-    source='data\\sprite\\몬스터\\'+key.lower()+'.spr'
-    if source in names:sources[key]=source
+for key,(stem,rank) in MONSTERS.items():
+    source='data\\sprite\\몬스터\\'+stem+'.spr'
+    if source not in names:raise ValueError('Missing selected monster '+source)
+    sources[key]=source
 assets={}
 for key,source in sources.items():
     raw=archive.read(source);action_raw=archive.read(source[:-4]+'.act')
@@ -28,7 +30,7 @@ for key,source in sources.items():
     for f in sprite.rgba_frames:images.append(Image.frombytes('RGBA',(f.width,f.height),f.pixels,'raw','ABGR').transpose(Image.Transpose.FLIP_TOP_BOTTOM))
     frames=[];clips={};boxes=[];idle_boxes=[]
     kinds={'idle':0}
-    if key in ['Poring','Lunatic'] and len(actions)>=16:kinds['walk']=8
+    if key in MONSTERS and MONSTERS[key][1]!='mvp' and len(actions)>=16:kinds['walk']=8
     for kind,start in kinds.items():
         clips[kind]=[]
         for direction in range(8):
@@ -69,16 +71,10 @@ for key,source in sources.items():
     sheet.save(out/(key+'.png'))
     for group in clips.values():
         for clip in group:clip['frames']=[remap[i] for i in clip['frames']]
-    assets[key]={'source':source,'sourceAct':source[:-4]+'.act','sourceSHA256':hashlib.sha256(raw).hexdigest(),'actSHA256':hashlib.sha256(action_raw).hexdigest(),'image':key+'.png','width':width,'height':height,'bodyHeight':foot-min(b[1] for b in idle_boxes),'columns':columns,'rows':rows,'frames':len(unique),'anchor':[-x0/width,(y1-foot)/height],'actions':clips,'kind':'monster' if key in ['Poring','Lunatic'] else 'npc'}
+    assets[key]={'source':source,'sourceAct':source[:-4]+'.act','sourceSHA256':hashlib.sha256(raw).hexdigest(),'actSHA256':hashlib.sha256(action_raw).hexdigest(),'image':key+'.png','width':width,'height':height,'bodyHeight':foot-min(b[1] for b in idle_boxes),'columns':columns,'rows':rows,'frames':len(unique),'anchor':[-x0/width,(y1-foot)/height],'actions':clips,'kind':'monster' if key in MONSTERS else 'npc','rank':MONSTERS[key][1] if key in MONSTERS else None}
     print(key,len(unique),'unique poses;',[(k,len(v[0]['frames'])) for k,v in clips.items()])
 capital=json.loads((ROOT/'web/assets/sirin/capital-manifest.json').read_text(encoding='utf8'))
 terrain=json.loads((ROOT/'web/assets/sirin/terrain-triangles.json').read_text(encoding='utf8'))
-placements=[]
-for i,p in enumerate(capital['characters']):
-    x,y,z=p['position'];entry={'name':p['object'],'id':p['sprite'],'x':x,'y':z,'z':-y,'height':p['height_m'],'role':p['role'],'surface':p['surface'],'heading':(i%8)*math.pi/4,'phase':i*.731}
-    if assets[p['sprite']]['kind']=='monster':
-        # Candidate habitat triangles are local and retain the source surface.
-        entry['habitat']=[[[a,-b] for a,b in t['xy']] for t in terrain if ('grass' if t['mat']=='RO_Grass_surface' else 'paved')==p['surface'] and min(v[0] for v in t['xy'])<x+3 and max(v[0] for v in t['xy'])>x-3 and min(v[1] for v in t['xy'])<y+3 and max(v[1] for v in t['xy'])>y-3]
-    placements.append(entry)
-(out/'manifest.json').write_text(json.dumps({'version':1,'assets':assets,'capital':placements,'aliases':{'scientist':'Scientist','researcher':'Researcher'},'artwork':'Ragnarok Online / Gravity; original SPR pixels and ACT transforms'},ensure_ascii=False,separators=(',',':')),encoding='utf8')
+placements=plan(ROOT,assets,capital,terrain)
+(out/'manifest.json').write_text(json.dumps({'version':2,'assets':assets,'capital':placements,'aliases':{'scientist':'Scientist','researcher':'Researcher'},'artwork':'Ragnarok Online / Gravity; original SPR pixels and ACT transforms'},ensure_ascii=False,separators=(',',':')),encoding='utf8')
 print('Exported',len(assets),'types and',len(placements),'city occupants; bytes',sum(p.stat().st_size for p in out.iterdir()))
