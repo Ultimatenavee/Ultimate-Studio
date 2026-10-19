@@ -1,6 +1,7 @@
+import {ROYAL_TEMPLE,royalCanStand} from './royal-temple-layout.js';
 import {EAST_GATE,insidePortal,capitalPortalAt} from './sirin-navigation.js';
 import {TEMPLE_DECOR,CITY_LANTERNS,decorFootprint} from './ayothaya-decor-layout.js';
-export const WALK_EYE={city:1.05,capital:1.5,lobby:1.5,interior:1.5};
+export const WALK_EYE={royalTemple:1.5,city:1.05,capital:1.5,lobby:1.5,interior:1.5};
 const lobbyDecorBoxes=TEMPLE_DECOR.map(decorFootprint);
 // Pure navigation rules. GAT coordinates and heights match the exported glTF.
 export const CITY_SCALE=.05;
@@ -9,8 +10,9 @@ export const TEMPLE_GATE={x:12,z:-29.45,width:2.2,depth:1.15};
 export const CITY_RETURN={x:12,z:-27.3,yaw:Math.PI};
 export const LOBBY_SPAWN={x:0,z:5.5,yaw:0};
 export const LOBBY_RETURNS={museum:{x:-5.6,z:0,yaw:-Math.PI/2},datacenter:{x:5.6,z:0,yaw:Math.PI/2}};
-export const AREA_NAMES={city:'เมืองอโยธยา',capital:'มหานครศิริน · SIRIN',lobby:'โถงกลางวัด',museum:'Device Library',datacenter:'Datacenter'};
+export const AREA_NAMES={royalTemple:'พระอุโบสถหลวงศิริน',city:'เมืองอโยธยา',capital:'มหานครศิริน · SIRIN',lobby:'โถงกลางวัด',museum:'Device Library',datacenter:'Datacenter'};
 export const AYOTHAYA_DESTINATIONS=[
+ {id:'royalTemple',number:'06',name:'พระอุโบสถหลวงศิริน',note:'พระประธาน · ไหว้พระและเลขสุ่ม 6 หลัก',color:'#dfc078'},
  {id:'capital',number:'05',name:'มหานครศิริน · SIRIN',note:'วาร์ปฝั่งขวาอโยธยา · เมืองใหม่และย่านเทคโนโลยี',color:'#81e6ed'},
  {id:'city',number:'01',name:'เมืองอโยธยา',note:'เดินสำรวจเมืองและท่าเรือ',color:'#82baac'},
  {id:'lobby',number:'02',name:'โถงกลางวัด',note:'ซ้าย Device Library · ขวา Datacenter',color:'#d6b570'},
@@ -19,6 +21,7 @@ export const AYOTHAYA_DESTINATIONS=[
 ];
 export function portalAt(area,x,z){
  if(area==='city'&&insidePortal(EAST_GATE,x,z))return 'capital';
+ if(area==='royalTemple'&&insidePortal(ROYAL_TEMPLE.exit,x,z))return 'capital';
  if(area==='capital')return capitalPortalAt(x,z);
  if(area==='city'&&Math.abs(x-TEMPLE_GATE.x)<TEMPLE_GATE.width/2&&Math.abs(z-TEMPLE_GATE.z)<TEMPLE_GATE.depth/2)return 'lobby';
  if(area==='lobby'){
@@ -61,7 +64,7 @@ export function cityCanStand(nav,x,z,radius=.1){
 }
 export function worldStep(area,nav,position,dx,dz,stopAt){
  let {x,z}=position;if(stopAt?.(x,z))return {x,z};const n=Math.max(1,Math.ceil(Math.hypot(dx,dz)/.06));
- const stand=(a,b)=>area==='city'?cityCanStand(nav,a,b):lobbyCanStand(a,b);
+ const stand=(a,b)=>area==='city'?cityCanStand(nav,a,b):area==='royalTemple'?royalCanStand(a,b):lobbyCanStand(a,b);
  for(let i=0;i<n;i++){if(stand(x+dx/n,z))x+=dx/n;if(stand(x,z+dz/n))z+=dz/n;if(stopAt?.(x,z))break;}
  return {x,z};
 }

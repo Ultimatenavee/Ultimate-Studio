@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {ROYAL_TEMPLE,royalCanStand,nearRoyalPrayer,sixDigitBlessing,royalNavigation} from '../src/datacenter/royal-temple-layout.js';
+import {portalAt,worldStep} from '../src/datacenter/ayothaya-navigation.js';
+import {capitalCanStand,capitalStep} from '../src/datacenter/sirin-navigation.js';
+import {ayothayaMap} from '../src/datacenter/ayothaya-map.js';
+assert.equal(portalAt('capital',0,-110.2),'royalTemple');assert.equal(portalAt('royalTemple',0,15.6),'capital');
+assert(!portalAt('capital',ROYAL_TEMPLE.return.x,ROYAL_TEMPLE.return.z));assert(!portalAt('royalTemple',0,12));
+assert(royalCanStand(0,12));assert(royalCanStand(0,-2.7));assert(!royalCanStand(0,-11));assert(!royalCanStand(12,0));assert(!royalCanStand(8.4,6));
+assert(nearRoyalPrayer(0,-3));assert(!nearRoyalPrayer(0,12));
+assert.equal(sixDigitBlessing(w=>w[0]=0),'000000');assert.equal(sixDigitBlessing(w=>w[0]=999999),'999999');let calls=0;assert.equal(sixDigitBlessing(w=>w[0]=++calls===1?4294967295:7),'000007');assert.equal(calls,2);
+const nav=royalNavigation(JSON.parse(fs.readFileSync('web/assets/sirin/ground-navigation.json')));assert(capitalCanStand(nav,0,-110.2));assert(!capitalCanStand(nav,15,-140));assert(capitalCanStand(nav,24,-137));
+const p=capitalStep(nav,{x:0,z:-105},0,-100,(x,z)=>portalAt('capital',x,z));assert.equal(portalAt('capital',p.x,p.z),'royalTemple');
+const q=worldStep('royalTemple',null,{x:0,z:12},0,50,(x,z)=>portalAt('royalTemple',x,z));assert.equal(portalAt('royalTemple',q.x,q.z),'capital');
+assert(worldStep('royalTemple',null,{x:0,z:-3},0,-50).z>-6.3);
+const map=ayothayaMap('royalTemple'),point=map.point(3,-8);assert.deepEqual(map.unpoint(point.x,point.y),{x:3,z:-8});
+const asset=fs.readFileSync('web/assets/sirin/royal-temple/buddha.glb');assert(asset.length<6e6);const gltf=JSON.parse(asset.toString('utf8',20,20+asset.readUInt32LE(12)));assert(gltf.images.every(i=>!i.uri));assert(gltf.buffers.every(i=>!i.uri));assert.equal(gltf.meshes.reduce((n,m)=>n+m.primitives.reduce((v,p)=>v+gltf.accessors[p.indices].count/3,0),0),90000);
+console.log('PASS temple portal roundtrip/high speed, collision, prayer boundary, unbiased six digits, minimap and self-contained 90k Buddha.');

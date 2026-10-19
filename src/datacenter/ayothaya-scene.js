@@ -1,3 +1,4 @@
+import {createRoyalPrayer} from './royal-prayer.js';
 import {waitForStartup,startupResource} from './startup-loading.js';
 import {createWalkTools} from './walk-tools.js';
 import {EAST_RETURN} from './sirin-navigation.js';
@@ -11,7 +12,7 @@ import {ayothayaMap} from './ayothaya-map.js';
 // Keeps the existing rack editor and device museum intact behind room portals.
 export async function createScene(host,opts){
  let roomOrigin='lobby';
- let area='city',world,interior,disposed=false,ready=false,timeOfDay='day',perspective='first',sitting=false,wardrobe,walkTools;
+ let area='city',world,interior,disposed=false,ready=false,timeOfDay='day',perspective='first',sitting=false,wardrobe,walkTools,royalPrayer;
  try{timeOfDay=localStorage.getItem('uts-ayothaya-sky')==='night'?'night':'day';}catch{}
 
  const gate=createPortalLatch(),isIndoor=()=>area==='museum'||area==='datacenter';
@@ -20,7 +21,7 @@ export async function createScene(host,opts){
  indoorHost.style.visibility='hidden';indoorHost.style.pointerEvents='none';
  const fade=document.createElement('div');fade.className='ayothaya-fade';fade.setAttribute('role','status');fade.setAttribute('aria-live','polite');fade.hidden=true;host.append(fade);
  const place=document.createElement('div');place.className='ayothaya-place';place.innerHTML='<b></b><span></span><button type="button">กลับโถงกลาง</button>';host.append(place);
- const back=place.querySelector('button');back.onclick=()=>warp(area==='lobby'||area==='capital'?'city':roomOrigin);
+ const back=place.querySelector('button');back.onclick=()=>warp(area==='royalTemple'?'capital':area==='lobby'||area==='capital'?'city':roomOrigin);
  const homeCities=document.createElement('div');homeCities.className='ayothaya-home-cities';homeCities.setAttribute('role','group');homeCities.setAttribute('aria-label','เลือกเมืองเพื่อเดินสำรวจ');homeCities.hidden=true;
  for(const [id,label]of [['city','เดินอโยธยา'],['capital','เดินมหานครศิริน']]){const button=document.createElement('button');button.type='button';button.textContent=label;button.dataset.enterCity=id;button.onclick=()=>warp(id,true);homeCities.append(button);}place.append(homeCities);
  const skyButton=document.createElement('button');skyButton.type='button';skyButton.className='ayothaya-sky-toggle';host.append(skyButton);
@@ -40,11 +41,12 @@ export async function createScene(host,opts){
  const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  function announce(){
   walkTools?.refresh();
+  const pose=world?.snapshot().position;royalPrayer?.update(area,world?.isWalking(),pose?.[0],pose?.[2]);
   opts.onMuseumZone?.(area==='museum'?'library':area==='datacenter'?'datacenter':'outdoor');
   const home=area==='city'&&world?.visualStats().homeOverview;homeCities.hidden=!home;
   sitButton.hidden=!(isIndoor()?interior:world)?.isWalking();opts.onArea?.(area,{homeOverview:home});place.querySelector('b').textContent=home?'อโยธยา · มหานครศิริน':AREA_NAMES[area];
-  place.querySelector('span').textContent=area==='city'?'วัดใหญ่ → โถงกลาง · ฝั่งขวา → มหานครศิริน':area==='capital'?'ประตูตะวันตก → อโยธยา · วาร์ปหน้าอาคาร → Library / Datacenter':area==='lobby'?'ซ้าย Device Library · ขวา Datacenter · ด้านหลังออกเมือง':(roomOrigin==='capital'?'เดินเข้าประตู EXIT เพื่อกลับมหานครศิริน':'เดินเข้าประตู EXIT เพื่อกลับโถงกลาง');
-  back.hidden=area==='city';back.textContent=area==='lobby'||area==='capital'?'กลับอโยธยา':roomOrigin==='capital'?'กลับมหานครศิริน':'กลับโถงกลาง';
+  place.querySelector('span').textContent=area==='royalTemple'?'เดินสู่หน้าแท่นพระประธานเพื่อไหว้พระ · ประตูด้านหลังกลับเมือง':area==='city'?'วัดใหญ่ → โถงกลาง · ฝั่งขวา → มหานครศิริน':area==='capital'?'ประตูตะวันตก → อโยธยา · วาร์ปหน้าอาคาร → Library / Datacenter':area==='lobby'?'ซ้าย Device Library · ขวา Datacenter · ด้านหลังออกเมือง':(roomOrigin==='capital'?'เดินเข้าประตู EXIT เพื่อกลับมหานครศิริน':'เดินเข้าประตู EXIT เพื่อกลับโถงกลาง');
+  back.hidden=area==='city';back.textContent=area==='royalTemple'?'กลับมหานครศิริน':area==='lobby'||area==='capital'?'กลับอโยธยา':roomOrigin==='capital'?'กลับมหานครศิริน':'กลับโถงกลาง';
   if(home)place.querySelector('span').textContent=world.visualStats().homeReady?'เลือกเมือง หรือดับเบิลคลิกแผนที่เพื่อเดินสำรวจ':'กำลังเพิ่มมหานครศิรินในภาพรวม…';
  }
  function visibility(){
@@ -55,7 +57,7 @@ export async function createScene(host,opts){
   if(!interior)return;if(!isIndoor())roomOrigin=area==='capital'?'capital':'lobby';world.stopPresentation();world.pauseWalkInput();area=next;interior.interiorRoom(next);visibility();opts.onWalk?.(interior.isWalking());announce();
  }
  async function travel(next,walking=true,zone){
-  const from=area;await world.prepare(next);setSit(false);if(!isIndoor()&&(next==='museum'||next==='datacenter'))roomOrigin=from==='capital'?'capital':'lobby';
+  const from=area;await waitForStartup(world.prepare(next),60000,'โหลด '+AREA_NAMES[next]);setSit(false);if(!isIndoor()&&(next==='museum'||next==='datacenter'))roomOrigin=from==='capital'?'capital':'lobby';
   if(next==='museum'||next==='datacenter'){
    activateInterior(next);await interior.visitZone(zone||(next==='museum'?'welcome':'datacenter'),walking);
   }else{
@@ -82,7 +84,7 @@ export async function createScene(host,opts){
    if(!disposed){visibility();(isIndoor()?interior:world).focusWalkInput();}
   }
  }
- const onStep=(dt,map,x,z)=>{const next=gate.tick(dt,map,x,z,true);if(next)void warp(isIndoor()&&next==='lobby'?roomOrigin:next);};
+ const onStep=(dt,map,x,z)=>{royalPrayer?.update(map,true,x,z);const next=gate.tick(dt,map,x,z,true);if(next)void warp(isIndoor()&&next==='lobby'?roomOrigin:next);};
  const interiorOpts={...opts,indoorOnly:true,eyeHeight:WALK_EYE.interior,stopAtPortal:(x,z)=>isIndoor()&&!!portalAt(area,x,z)};
  // Inactive renderers never update UI or consume input in the other map.
  for(const [key,value]of Object.entries(opts))if(key.startsWith('on')&&typeof value==='function'&&!['onAssets','onMuseumReady'].includes(key))interiorOpts[key]=(...args)=>{if(isIndoor())return value(...args);};
@@ -119,8 +121,9 @@ export async function createScene(host,opts){
   stopPresentation(){world.stopPresentation();interior.stopPresentation();opts.onRotate?.(false);},interruptPresentation(){world.interruptPresentation();interior.interruptPresentation();},
   snapshot:()=>({ayothaya:true,area,roomOrigin,timeOfDay,perspective,sitting,world:world.snapshot(),interior:interior.snapshot()}),
   async restore(v){if(!v)return;setSit(false);if(!v.ayothaya){activateInterior('datacenter');await interior.restore(v);return;}if(v.timeOfDay)setTime(v.timeOfDay);setPerspective(v.perspective||'first');roomOrigin=v.roomOrigin==='capital'?'capital':'lobby';area=v.area;interior.interiorRoom(area==='museum'?'museum':'datacenter');await interior.restore(v.interior);await world.restore(v.world);if(v.sitting&&current().isWalking())setSit(true);visibility();announce();opts.onWalk?.(current().isWalking());},
-  dispose(){if(disposed)return;disposed=true;walkTools?.dispose();wardrobe?.dispose();world.dispose();interior.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();},
+  dispose(){if(disposed)return;disposed=true;royalPrayer?.dispose();walkTools?.dispose();wardrobe?.dispose();world.dispose();interior.dispose();outdoorHost.remove();indoorHost.remove();fade.remove();place.remove();skyButton.remove();cameraModes.remove();sitButton.remove();postureInput.abort();},
  },{get(target,key){if(key in target)return target[key];const navigation=['zoom','touch','crouch','focusWalkInput'];const owner=navigation.includes(key)?current():interior;const value=owner[key];return typeof value==='function'?value.bind(owner):value;}});
+ royalPrayer=createRoyalPrayer(host,{pause:()=>world.pauseWalkInput(),sit:setSit,isSitting:()=>sitting,focus:()=>current().focusWalkInput()});
  walkTools=createWalkTools({host,getScene:()=>api});
  wardrobe=createWardrobe(host,{apply:async base=>{await api.appearance(base);setPerspective('third',{start:true});},pause:()=>api.pauseWalkInput()});
  opts.onStartup?.('กำลังเตรียมชุดตัวละครที่บันทึกไว้…');

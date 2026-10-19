@@ -1,4 +1,5 @@
 import {spawnSync} from 'node:child_process';
+const royal=spawnSync(process.execPath,['scripts/verify-royal-temple.mjs'],{stdio:'inherit'});if(royal.status!==0)process.exit(royal.status||1);
 const surfaces=spawnSync(process.execPath,['scripts/verify-sirin-surfaces.mjs'],{stdio:'inherit'});if(surfaces.status!==0)process.exit(surfaces.status||1);
 const sirin=spawnSync(process.execPath,['scripts/verify-sirin-portals.mjs'],{stdio:'inherit'});if(sirin.status!==0)process.exit(sirin.status||1);
 const ayothaya=spawnSync(process.execPath,['scripts/verify-ayothaya.mjs'],{stdio:'inherit'});if(ayothaya.status!==0)process.exit(ayothaya.status||1);
