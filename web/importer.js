@@ -54,6 +54,7 @@
   }
   function convert(data,catalog){
     if(data?.format==='noah-topology'){const warnings=[];return {project:upgrade(data,catalog,warnings),warnings,source:'NOAH Project'};}
+    if(data?.layout==='absolute'||data?.nodes!==undefined||data?.edges!==undefined)return absolute(data,catalog);
     if(!data||typeof data!=='object'||!data.hops||typeof data.hops!=='object'||Array.isArray(data.hops))throw new Error('รองรับ Ultimate Topology studio Project หรือ JSON ที่มี hops.HOP1.start / end ตามไฟล์ ACM');
     const timestamp=new Date().toISOString(),info=data.serviceInfo||{},warnings=[],seenWarnings=new Set(),nodes=new Map(),edgeKeys=new Set(),pendingRedundancy=[];
     const warn=t=>{if(!seenWarnings.has(t)){seenWarnings.add(t);warnings.push(t);}};
@@ -115,6 +116,40 @@
     }
     if(project.devices.length>200||project.links.length>400)throw new Error('Topology เกินขนาดที่รองรับ');
     return {project:upgrade(project,catalog,warnings),warnings:[...new Set(warnings)],source:'ACM HOP JSON'};
+  }
+  function absolute(data,catalog){
+    const fail=message=>{throw new Error(message);};
+    if(data.layout!=='absolute'||!Array.isArray(data.nodes)||!Array.isArray(data.edges))fail('Absolute JSON ต้องมี layout: absolute, nodes และ edges');
+    if(data.nodes.length>200||data.edges.length>400)fail('Topology รองรับไม่เกิน 200 nodes และ 400 edges');
+    const number=(v,min,max)=>typeof v==='number'&&Number.isFinite(v)&&v>=min&&v<=max;
+    const string=(v,max=1000)=>typeof v==='string'&&v.length<=max?v:fail('ข้อความใน Absolute JSON ไม่ถูกต้อง');
+    const idValue=v=>typeof v==='string'&&/^[\w-]{1,64}$/.test(v)?v:fail('ID ต้องเป็นตัวอักษร ตัวเลข _ หรือ - ไม่เกิน 64 ตัว');
+    if(!number(data.viewBox?.width,1,100000)||!number(data.viewBox?.height,1,100000))fail('viewBox ต้องมี width และ height เป็นจำนวนบวก');
+    const now=new Date().toISOString(),project={format:'noah-topology',version:3,id:id('project'),name:'Imported absolute topology',metadata:{createdAt:now,updatedAt:now},viewBox:{width:data.viewBox.width,height:data.viewBox.height},devices:[],links:[],labels:[],groups:[]},nodes=new Map(),edgeIds=new Set();
+    const types={internet:'internet',cloud:'internet',pe:'pe',sw:'switch',switch:'switch',cpe:'router',router:'router',ap:'ap',firewall:'firewall'};
+    for(const n of data.nodes){
+      if(!n||typeof n!=='object')fail('Node ไม่ถูกต้อง');
+      const nid=idValue(n.id);if(nodes.has(nid))fail('Node ID ซ้ำ: '+nid);
+      const type=types[n.type];if(!type)fail('ไม่รองรับ node type: '+String(n.type));
+      const model=catalog.find(m=>m.id==='external-'+type);if(!model)fail('ไม่พบไอคอนสำหรับ '+type);
+      if(!number(n.position?.x,-100000,100000)||!number(n.position?.y,-100000,100000)||!number(n.size?.width,32,10000)||!number(n.size?.height,32,10000))fail('ตำแหน่งหรือขนาดของ '+nid+' ไม่ถูกต้อง (ขนาด 32–10000)');
+      if(!Array.isArray(n.metadata)||n.metadata.length>100)fail('metadata ของ '+nid+' ต้องเป็น array ไม่เกิน 100 รายการ');
+      const header=string(n.header??''),badge=string(n.badge??''),metadata=n.metadata.map(m=>{if(!m||typeof m!=='object')fail('metadata ไม่ถูกต้อง');return {k:string(m.k,100),v:string(m.v,1000)};});
+      const details=[header,badge,...metadata.map(m=>m.k+': '+m.v)].filter(Boolean).join('\n');if(details.length>1000)fail('ข้อมูลของ '+nid+' ยาวเกิน 1000 ตัวอักษร');
+      const d={id:nid,modelId:model.id,hostname:string(n.title,80),role:string(n.type,80),x:n.position.x,y:n.position.y,width:n.size.width,height:n.size.height,managementIP:metadata.find(m=>m.k.toLowerCase()==='ip')?.v||'',notes:details,serial:'',asset:'',diagramOnly:true,powerOn:true,alarm:'normal',supplies:[],transceivers:{},importedPorts:[]};
+      if(d.managementIP.length>100)fail('IP ยาวเกิน 100 ตัวอักษร');
+      nodes.set(nid,d);project.devices.push(d);
+      if(details)project.labels.push({id:id('label'),kind:'text',text:details,x:d.x+d.width/2-140,y:d.y+d.height+32,width:280,fontSize:12,color:'#60738c',bold:false,align:'center',background:'transparent'});
+    }
+    for(const e of data.edges){
+      if(!e||typeof e!=='object')fail('Edge ไม่ถูกต้อง');const eid=idValue(e.id);if(edgeIds.has(eid)||nodes.has(eid))fail('Edge ID ซ้ำ: '+eid);edgeIds.add(eid);
+      const a=nodes.get(e.source),b=nodes.get(e.target);if(!a||!b||a===b)fail('Edge '+eid+' ต้องอ้างอิง source / target คนละ node ที่มีอยู่');
+      const sides=['left','right','top','bottom'];if(!sides.includes(e.sourceSide)||!sides.includes(e.targetSide))fail('ด้านของ Edge ไม่ถูกต้อง');
+      if(!['solid','dashed','dotted'].includes(e.lineStyle??'solid')||!['none','forward','backward','both'].includes(e.arrowStyle??'none')||!/^#[\da-f]{6}$/i.test(e.color??'#38bdf8'))fail('รูปแบบหรือสีของ Edge ไม่ถูกต้อง');
+      const pa='edge-'+project.links.length+'-a',pb='edge-'+project.links.length+'-b';a.importedPorts.push(pa);b.importedPorts.push(pb);
+      project.links.push({id:eid,a:{device:a.id,port:pa},b:{device:b.id,port:pb},sourceSide:e.sourceSide,targetSide:e.targetSide,lineStyle:e.lineStyle??'solid',arrowStyle:e.arrowStyle??'none',color:e.color??'#38bdf8',shape:'straight',designOnly:true,cable:'sm',speed:1000,cid:'',vlans:'',label:'',role:'standard',enabled:true,showLabel:false,vlanMode:'trunk',mtu:9216});
+    }
+    return {project,warnings:project.links.length?['เส้นจาก nodes/edges เป็นเส้นของแผนภาพ ไม่ได้ระบุพอร์ต ความเร็ว หรือชนิดสายจริง']:[],source:'Absolute nodes/edges JSON'};
   }
   window.NOAH_IMPORT={parse,convert,resolvePort,upgrade};
 })();

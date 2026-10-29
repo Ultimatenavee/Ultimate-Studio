@@ -1,3 +1,7 @@
+## Absolute JSON import
+
+รองรับ JSON แบบ `layout: "absolute"` พร้อม `viewBox`, `nodes` และ `edges` ผ่านหน้าต่างนำเข้าเดิม ดู [วิธีใช้และข้อกำหนด](docs/ABSOLUTE-JSON.md) และ [ตัวอย่าง](scripts/fixtures/absolute-topology.json) ทดสอบด้วย `npm run test:absolute`
+
 # Ultimate Topology Studio · Control Center v53
 
 ## Local Ayothaya campus

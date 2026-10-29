@@ -9,7 +9,8 @@
     "test": "node scripts/test.mjs",
     "local": "node scripts/local-server.mjs",
     "test:ayothaya:browser": "node scripts/verify-ayothaya-browser.cjs && node scripts/verify-ayothaya-rooms.cjs && node scripts/verify-ayothaya-visuals.cjs && node scripts/verify-ayothaya-avatar.cjs && node scripts/verify-ayothaya-wardrobe.cjs && node scripts/verify-ayothaya-live-preview.cjs && node scripts/verify-wardrobe-controls.cjs && node scripts/verify-hybrid-lab.cjs && node scripts/verify-mobile-movement.cjs && node scripts/verify-mobile-fullscreen.cjs && node scripts/verify-garment.cjs && node scripts/verify-wardrobe-scroll.cjs",
-    "build:pages": "node scripts/build-github-pages.mjs"
+    "build:pages": "node scripts/build-github-pages.mjs",
+    "test:absolute": "node scripts/verify-absolute-json.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
