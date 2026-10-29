@@ -1,3 +1,9 @@
+## Absolute nodes/edges JSON import
+
+- Import positioned and sized Internet, PE, Switch and CPE nodes through the existing JSON dialog.
+- Preserve headers, badges, metadata, endpoint sides, line styles, arrowheads and viewBox through project and template round-trips.
+- Add cloud icon support, export arrowheads and focused import regression checks.
+
 ## Selected Ragnarok town and interior lighting
 
 - Applied L047 ×32, L026 ×2, L027 ×2 and L013 ×2 outdoors, with supported bases, paired garland posts and clear walking routes.

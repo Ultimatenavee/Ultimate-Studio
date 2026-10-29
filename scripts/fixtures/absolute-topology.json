@@ -1,0 +1,14 @@
+{
+  "layout": "absolute",
+  "viewBox": {"width": 1280, "height": 760},
+  "nodes": [
+    {"id":"node_1","type":"internet","header":"Network - Service","title":"Symphony Network","badge":"SYMC","position":{"x":5,"y":205},"size":{"width":350,"height":350},"metadata":[]},
+    {"id":"node_2","type":"pe","header":"Main - PE","title":"SinghaComplex_01_F1A","badge":"PE","position":{"x":325,"y":350},"size":{"width":60,"height":60},"metadata":[]},
+    {"id":"node_3","type":"sw","header":"Access Point","title":"ITC_Bangkok","badge":"Access Switch","position":{"x":812,"y":352},"size":{"width":56,"height":56},"metadata":[{"k":"IP","v":"172.16.63.166"}]},
+    {"id":"node_4","type":"cpe","header":"Access Point","title":"DI50190","badge":"CPE","position":{"x":1142,"y":352},"size":{"width":56,"height":56},"metadata":[{"k":"IP","v":"87.124.33.15"}]}
+  ],
+  "edges": [
+    {"id":"e_node_2_node_3_main","source":"node_2","target":"node_3","sourceSide":"right","targetSide":"left","lineStyle":"solid","arrowStyle":"forward","color":"#ffffff"},
+    {"id":"e_node_3_node_4_main","source":"node_3","target":"node_4","sourceSide":"right","targetSide":"left","lineStyle":"solid","arrowStyle":"forward","color":"#ffffff"}
+  ]
+}

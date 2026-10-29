@@ -75,6 +75,11 @@
     const ends=l=>l.a.device===a.id?[l.a,l.b]:[l.b,l.a],first=peers[0]&&ends(peers[0]),second=peers[1]&&ends(peers[1]);
     const stack=stackPair&&portNumber(first[0])===portNumber(second[1])&&portNumber(first[1])===portNumber(second[0])&&portNumber(first[0])!==portNumber(first[1]);
     const position=route(link);
+    if(link.sourceSide||link.targetSide){
+      const anchor=(d,side)=>{const s=deviceSize(d,models);return side==='left'?[d.x,d.y+s.height/2]:side==='right'?[d.x+s.width,d.y+s.height/2]:side==='top'?[d.x+s.width/2,d.y]:[d.x+s.width/2,d.y+s.height];};
+      const start=anchor(a,link.sourceSide),end=anchor(b,link.targetSide),points=[start,...(link.waypoints||[]),end];
+      Object.assign(position,{polyline:points,path:points.map((p,i)=>(i?'L':'M')+p.join(',')).join(' '),x:(start[0]+end[0])/2,y:(start[1]+end[1])/2,horizontal:Math.abs(end[0]-start[0])>=Math.abs(end[1]-start[1])});
+    }
     if(stack&&!link.waypoints?.length&&!link.routeOffset){const as=deviceArtBounds(a,models,window.NOAH_AUDIENCE?.external(project)),bs=deviceArtBounds(b,models,window.NOAH_AUDIENCE?.external(project)),top=a.y<=b.y?a:b,bottom=top===a?b:a,ts=top===a?as:bs,ns=top===a?bs:as,two=peers.map(l=>l.a.device===top.id?l.a:l.b).map(portNumber).sort((x,y)=>x-y),te=link.a.device===top.id?link.a:link.b,be=link.a.device===bottom.id?link.a:link.b,sx=ts.x+ts.width*(portNumber(te)===two[0] ? .38 : .62),ex=ns.x+ns.width*(portNumber(be)===two[0] ? .38 : .62),sy=ts.y+ts.height-1,ey=ns.y+1,stub=Math.min(28,Math.max(8,(ey-sy)/4)),points=[[sx,sy],[sx,sy+stub],[ex,ey-stub],[ex,ey]];Object.assign(position,{polyline:points,path:points.map((p,i)=>(i?'L':'M')+p.join(',')).join(' '),x:(sx+ex)/2,y:(sy+ey)/2,horizontal:false,stack:true,endpointLabels:[{x:sx,y:sy-10,text:shortPort(port(models,top,te.port).name)},{x:ex,y:ey+22,text:shortPort(port(models,bottom,be.port).name)}]});if(link.displayText===undefined){lines.splice(0,lines.length,...(portNumber(te)===two[0]?['iStack']:[]));}}
 
 
@@ -113,10 +118,11 @@
     for(let i=0;i<6&&labels.some(l=>title.x<l.x+l.width&&title.x+title.width>l.x&&title.y<l.y+l.height&&title.y+title.height>l.y);i++)title.y-=30;
     return title;
   }
-  function linkStyle(link,project,models){const active=ep=>{const d=project.devices.find(d=>d.id===ep.device);return d?.powerOn&&(models.get(d.modelId).topologyOnly||d.supplies.some(s=>s.present&&s.connected));},up=active(link.a)&&active(link.b),backup=link.role==='backup';return {up,backup,color:link.enabled===false?'#718198':!up?'#ef4444':link.color||(backup?'#f59e0b':link.cable==='copper'?'#19b99a':'#38bdf8'),dash:link.enabled===false||!up?'6 6':backup?'10 7':''};}
+  function linkStyle(link,project,models){const active=ep=>{const d=project.devices.find(d=>d.id===ep.device);return d?.powerOn&&(models.get(d.modelId).topologyOnly||d.supplies.some(s=>s.present&&s.connected));},up=active(link.a)&&active(link.b),backup=link.role==='backup';return {up,backup,color:link.enabled===false?'#718198':!up?'#ef4444':link.color||(backup?'#f59e0b':link.cable==='copper'?'#19b99a':'#38bdf8'),dash:link.enabled===false||!up?'6 6':link.lineStyle==='dashed'?'10 7':link.lineStyle==='dotted'?'2 5':link.lineStyle==='solid'?'':backup?'10 7':''};}
   function bounds(project, models) {
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
     const add = (x,y,w,h) => { minX = Math.min(minX,x); minY = Math.min(minY,y); maxX = Math.max(maxX,x+w); maxY = Math.max(maxY,y+h); };
+    if(project.viewBox)add(0,0,project.viewBox.width,project.viewBox.height);
     for (const d of project.devices) {const s=deviceSize(d,models);add(d.x,d.y,s.width,s.height+28);}
     for (const l of project.links) { const g = linkLayout(l,project,models);for(const p of pathSamples(g))add(p[0],p[1],1,1);if(l.showLabel!==false)add(g.labelX-g.width/2,g.labelY,g.width,g.height); }
     for (const l of project.labels || []) { const b = labelSize(l); add(l.x,l.y,b.width,b.height); }
@@ -137,5 +143,12 @@
     }
     return result.map(({id,x,y})=>({id,x,y}));
   }
-  window.NOAH_GEOMETRY = { deviceArtBounds,smartAlign,W,H,shortPort,edge,linkLayout,labelSize,bounds,imageFrame,deviceSize,alignmentGuides,groupBounds,groupTitle,linkStyle,port,pathSamples };
+  function arrows(link,route,color){
+    const samples=pathSamples(route),paths=[];
+    const arrow=(tip,tail)=>{const angle=Math.atan2(tip[1]-tail[1],tip[0]-tail[0]),size=9;return `M${tip} L${[tip[0]-size*Math.cos(angle-.45),tip[1]-size*Math.sin(angle-.45)]} L${[tip[0]-size*Math.cos(angle+.45),tip[1]-size*Math.sin(angle+.45)]} Z`;};
+    if(['forward','both'].includes(link.arrowStyle)){const tip=samples.at(-1),tail=[...samples].reverse().find(p=>p[0]!==tip[0]||p[1]!==tip[1]);if(tail)paths.push(arrow(tip,tail));}
+    if(['backward','both'].includes(link.arrowStyle)){const tip=samples[0],tail=samples.find(p=>p[0]!==tip[0]||p[1]!==tip[1]);if(tail)paths.push(arrow(tip,tail));}
+    return paths.map(d=>`<path d="${d}" fill="${color}"/>`).join('');
+  }
+  window.NOAH_GEOMETRY = { arrows,deviceArtBounds,smartAlign,W,H,shortPort,edge,linkLayout,labelSize,bounds,imageFrame,deviceSize,alignmentGuides,groupBounds,groupTitle,linkStyle,port,pathSamples };
 })();
