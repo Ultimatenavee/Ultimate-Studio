@@ -200,5 +200,30 @@
     "imageNote": "ภาพตัวอย่างตระกูล NetSure 211; ขนาดในแบบอ้างอิง Configuration 19-inch"
   }
 ];
- (typeof window==='undefined'?globalThis:window).NOAH_BAYFACE_ACCESSORIES=profiles;
+ const optical=[];
+ for (const size of [12,24]) {
+  const small=size===12, model='OptiX OSN 9800 M'+size;
+  optical.push({
+   id:'huawei-osn9800-m'+size, kind:'dwdm', brand:'Huawei', model, name:'Huawei '+model,
+   units:small?8:17, role:'DWDM / OTN subrack', connector:'DWDM',
+   configuration:(small?'347.2':'747.2')+' × 442 × 295 mm (H × W × D)',
+   useCase:small?'12 service slots (master) / 13 (slave)':'12 ช่องใหญ่หรือ 24 ช่องย่อยในโหมด 1:1',
+   note:'ความสูงตาม Datasheet '+(small?'7.8':'16.5')+'U ปัดขึ้นเพื่อจัดวางบนกริด Rack',
+   sourceTitle:'Huawei OptiX OSN 9800 M Series Datasheet', section:'Product specifications, p. 3',
+   sourceUrl:'https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/optix-osn-9800-m-en.pdf',
+   slotSource:'https://messervices.cyber.gouv.fr/visas/ANSSI-CSPN-2025-07-cible.pdf#page='+(small?12:11),
+   imageNote:small?'ภาพอ้างอิง Huawei CSPN Security Target รูป 2-3':'ภาพอ้างอิง Huawei OptiX OSN 9800 M24 Brochure',
+   displayImage:'assets/bayface/huawei-osn9800-m'+size+'.webp',
+   displayDimensions:small?{width:917,height:651}:{width:277,height:387},
+   displayFrame:small?[0,0,917,651]:[0,0,277,387], imageKind:'manufacturer-reference',
+   slotLayout:small?'M12':'M24',
+   referenceCards:small?[
+    {name:'AUX · IU73',image:'assets/bayface/huawei-m12-aux.webp'},
+    {name:'PIU · IU100',image:'assets/bayface/huawei-m12-piu.webp'}
+   ]:[{name:'CXP · IU71 (ตระกูล CXP)',image:'assets/bayface/huawei-m24-cxp.webp'}]
+  });
+ }
+ const app=typeof window==='undefined'?globalThis:window;
+ app.NOAH_BAYFACE_ACCESSORIES=profiles;
+ app.NOAH_DWDM_CHASSIS=optical;
 })();

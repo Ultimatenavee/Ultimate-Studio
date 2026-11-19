@@ -1,4 +1,12 @@
 /* One Library viewport for accessories and equipment, with fixed controls. */
+#bayfaceDwdmList{display:grid;gap:9px;padding-top:10px}
+#bayfaceDwdmList .catalog-card{display:block;width:100%;text-align:left;margin:0;cursor:grab;color:var(--ink)}
+#bayfaceChassis fieldset{min-width:0;margin:12px 0;padding:10px;border:1px solid var(--line);border-radius:8px}
+#bayfaceChassis legend{font-weight:600}
+#bayfaceChassis [data-face]{margin:8px auto;max-width:340px}
+#bayfaceChassis [data-boards] input:not([type=checkbox]){min-width:0;width:100%}
+#bayfaceChassis [role=alert]{color:var(--danger,#bf3241)}
+#bayfaceChassis figure{display:inline-block;margin:8px}
 .catalog{overflow:hidden}
 .library-scroll{flex:1 1 0;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:0 2px 12px}
 .library-scroll #catalogList{flex:none;overflow:visible;min-height:0;padding:0;display:block}

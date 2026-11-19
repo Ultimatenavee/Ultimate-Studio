@@ -677,6 +677,20 @@ await checkAsync('Share Review creates a durable snapshot and Comments pin to se
 });
 dbStudio.close();
 vm.runInContext(fs.readFileSync(path.join(root,'web/bayface.js'),'utf8'),context);
+check('DWDM slot assignments round-trip and shared physical slots exclude overlapping cards',()=>{
+ const M=context.NOAH_BAYFACE_MODEL,[m12,m24]=context.NOAH_DWDM_CHASSIS;
+ const rack={id:'rack',units:42,name:'Lab'};
+ const verify=(p,mode,cards)=>M.validate({title:'Lab',racks:[rack],items:[{id:'chassis',rackId:rack.id,
+  kind:'dwdm',accessoryId:p.id,height:p.units,u:1,color:'#202831',label:'Test',slotMode:mode,subrackId:'0',cards}]},new Set()).items[0];
+ const half={slot:13,board:'Lab card'},full={slot:1,board:'S2N504'};
+ assert.equal(verify(m24,'service',[full]).cards[0].full,true);
+ assert.throws(()=>verify(m24,'service',[full,half]));
+ assert.throws(()=>verify(m24,'service',[{slot:6,board:'S2N504'}]));
+ assert.throws(()=>verify(m12,'control',[half]));
+ assert.throws(()=>verify(m12,'service',[{slot:71,board:'Control'}]));
+ assert.deepEqual(plain(verify(m12,'service',[half]).cards),[half]);
+ assert.equal(verify(m12,'control',[{slot:71,board:'Control'}]).subrackId,'0');
+});
 check('Bayface tab starts empty and preserves Topology while adding separate racks',()=>{
  const before=plain(app.getProject());get('bayfaceTab').onclick();assert(!get('bayfaceWorkspace').hidden);assert(get('canvas').hidden);assert(get('serviceToolbar').hidden);assert(get('bayfaceCanvas').innerHTML.includes('เริ่มออกแบบ'));get('addRackBtn').onclick();const p=plain(app.getProject());assert.equal(p.bayface.racks.length,1);assert.equal(p.bayface.racks[0].units,42);assert.deepEqual(p.devices,before.devices);assert.deepEqual(p.links,before.links);assert(get('bayfaceCanvas').innerHTML.includes('data-u="42"'));get('topologyTab').onclick();assert(!get('canvas').hidden);assert(get('bayfaceWorkspace').hidden);
 });
@@ -779,7 +793,7 @@ check('Long project names survive editing, JSON round-trip and duplication witho
 context.URLSearchParams=URLSearchParams;
 for(const f of ['spec-matrix-data.js','specs.js'])vm.runInContext(fs.readFileSync(path.join(root,'web',f),'utf8'),context);
 check('Device Specs integrates every Library and accessory model and preserves all uploaded Matrix fields',()=>{
- const S=context.NOAH_SPECS;assert.equal(S.devices.length,40);assert.equal(S.devices.filter(d=>d.matrix).length,18);
+ const S=context.NOAH_SPECS;assert.equal(S.devices.length,42);assert.equal(S.filterModels('',{type:'dwdm'}).length,2);assert.equal(S.devices.filter(d=>d.matrix).length,18);
  for(const raw of context.NOAH_SPEC_MATRIX){const m=S.devices.find(d=>d.id===raw.id);assert(m);for(const [key,value]of Object.entries(raw.fields).filter(([,v])=>!['','-','—','NaN'].includes(String(v))))assert(m.groups.some(g=>g.fields[key]===value),raw.name+' '+key);}
  assert.equal(S.filterModels('',{type:'pe'}).length,5);assert.equal(S.filterModels('',{type:'odf'}).length,2);assert.equal(S.filterModels('',{type:'power'}).length,4);
  assert.deepEqual(plain(S.filterModels('S5735 QA V2').map(m=>m.id)),['huawei-s5735-l8t4x-qa-v2']);assert.equal(S.filterModels('unmatched-model-0000').length,0);
