@@ -2,13 +2,24 @@
 (() => {
  const map=(profile,item)=>window.NOAH_BAYFACE_MODEL.slotMap(profile,item);
  const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- function plates(profile,item){
+ function face(profile,board){
+  if(!board)return;
+  const code=board.trim().toUpperCase().replace(/^TN/,'');
+  return profile?.referenceCards.find(ref=>ref.code===code);
+ }
+ async function images(profile,item,resolve){
+  const paths=new Set((item.cards||[]).map(c=>face(profile,c.board)?.image).filter(Boolean));
+  return new Map(await Promise.all([...paths].map(async path=>[path,await resolve(path)])));
+ }
+ function plates(profile,item,embedded){
   const compact=profile.slotLayout==='M24',cols=compact?14:13;
   const [x,y,width,height]=compact?[20,72,238,245]:[95,167,730,447];
   return map(profile,item).map(({slot,col,row,rows})=>{
    const board=item.cards?.find(c=>c.slot===slot)?.board;
    const w=width/cols,h=height*rows/2,cx=x+(col+.5)*w,cy=y+row*height/2;
    const font=w*.49;
+   const ref=face(profile,board);
+   if(ref)return `<g><title>IU${slot} · ${esc(ref.name)}</title><image href="${esc(embedded?.get(ref.image)||ref.image)}" x="${cx-w/2}" y="${cy}" width="${w}" height="${h}" preserveAspectRatio="none"/></g>`;
    return `<g><title>IU${slot} · ${esc(board||'ว่าง')}</title><rect x="${cx-w/2}" y="${cy}" width="${w}" height="${h}" stroke="#526476" stroke-width="${w*.045}" fill="${board?'#bee2eb':'#e5e9ed'}"/><text x="${cx}" y="${cy+font*1.5}" text-anchor="middle" fill="#21384a" font-family="Arial" font-size="${font}">${slot}</text>${board?`<text transform="translate(${cx} ${cy+h*.55}) rotate(-90)" text-anchor="middle" fill="#173947" font-family="Arial" font-size="${font*1.15}">${esc(board.length>15?board.slice(0,14)+'…':board)}</text>`:''}</g>`;
   }).join('');
  }
@@ -25,7 +36,8 @@
   const item={slotMode:initial.slotMode||'service',subrackId:initial.subrackId||'',cards:(initial.cards||[]).map(c=>({...c}))};
   host.innerHTML=`<fieldset><legend>การ์ดใน Chassis</legend><label class="field">Subrack ID<input data-subrack maxlength="32" value="${esc(item.subrackId)}"></label>${m12?`<label class="field">ช่องขวาสุด<select data-mode><option value="service">IU13 · Service</option><option value="control">IU72 + IU71 · Control</option></select></label>`:''}<div data-face></div><p class="small-note">กรอกรหัสบนหน้าการ์ดตามเครื่องจริง ล้างช่องเพื่อถอดการ์ด · <a target="_blank" rel="noopener" href="${esc(profile.slotSource)}">ผังช่อง Huawei</a></p><div data-boards class="form-grid"></div><p data-slot-error role="alert"></p></fieldset>`;
   const refs=document.createElement('details');
-  refs.innerHTML='<summary>ภาพการ์ดอ้างอิง Huawei</summary>'+profile.referenceCards.map(c=>`<figure><img loading="lazy" height="110" alt="${esc(c.name)}" src="${esc(c.image)}"><figcaption>${esc(c.name)}</figcaption></figure>`).join('');
+  refs.open=!m12;
+  refs.innerHTML='<summary>การ์ด DWDM และภาพอ้างอิง</summary>'+profile.referenceCards.map(c=>`<figure><img loading="lazy" height="110" alt="${esc(c.name)}" src="${esc(c.image)}"><figcaption>${esc(c.name)}</figcaption>${c.source?`<a href="${esc(c.source)}" target="_blank" rel="noopener">ที่มาภาพ</a> <button type="button" data-install="${c.code}">ใส่การ์ด</button>`:''}</figure>`).join('');
   host.append(refs);
   for(const [idx,figure] of [...refs.querySelectorAll('figure')].entries()){
    const button=document.createElement('button');
@@ -33,6 +45,14 @@
    figure.append(button);
   }
   host.onclick=async e=>{
+   const install=e.target.closest('[data-install]');
+   if(install){
+    const board=install.dataset.install,rule=window.NOAH_BAYFACE_MODEL.boardRule(board);
+    const slot=rule.slots.find(n=>!item.cards.some(c=>c.slot===n||(rule.full&&c.slot===n+12)));
+    if(slot===undefined){get('[data-slot-error]').textContent='ไม่มีช่องว่างที่รองรับ '+board;return;}
+    item.cards.push({slot,board,full:rule.full});get('[data-slot-error]').textContent='';fields();
+    get('[data-slot="'+slot+'"]').focus();return;
+   }
    const button=e.target.closest('[data-copy-reference],[data-copy-slot]');
    if(!button)return;
    try{
@@ -40,7 +60,9 @@
     else{
      const card=item.cards.find(c=>c.slot===Number(button.dataset.copySlot));
      if(!card)throw Error('กรอกรหัสการ์ดก่อนคัดลอก');
-     await window.NOAH_BAYFACE_EXCEL.copyLabel(card.board);
+     const ref=face(profile,card.board);
+     if(ref)await window.NOAH_BAYFACE_EXCEL.copyReference(ref.image);
+     else await window.NOAH_BAYFACE_EXCEL.copyLabel(card.board);
     }
     window.NOAH_APP.toast('คัดลอกแล้ว กด Ctrl+V ใน Excel');
    }catch(error){window.NOAH_APP.toast(error.message);}
@@ -57,7 +79,7 @@
    }).join('');
    for(const input of get('[data-boards]').querySelectorAll('[data-slot]')){
     const copy=document.createElement('button');
-    copy.type='button';copy.dataset.copySlot=input.dataset.slot;copy.textContent='คัดลอกป้าย';
+    copy.type='button';copy.dataset.copySlot=input.dataset.slot;copy.textContent='คัดลอกการ์ด';
     input.parentElement.after(copy);
    }
   }
@@ -98,5 +120,5 @@
   host.readChassis=()=>({slotMode:item.slotMode,subrackId:item.subrackId.trim(),cards:item.cards.map(c=>({...c}))});
   fields();
  }
- window.NOAH_CHASSIS={mount,plates};
+ window.NOAH_CHASSIS={mount,plates,images,face};
 })();

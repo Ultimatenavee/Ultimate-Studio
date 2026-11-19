@@ -220,7 +220,12 @@
    referenceCards:small?[
     {name:'AUX · IU73',image:'assets/bayface/huawei-m12-aux.webp'},
     {name:'PIU · IU100',image:'assets/bayface/huawei-m12-piu.webp'}
-   ]:[{name:'CXP · IU71 (ตระกูล CXP)',image:'assets/bayface/huawei-m24-cxp.webp'}]
+   ]:[
+    {name:'CXP · IU71 (ตระกูล CXP)',image:'assets/bayface/huawei-m24-cxp.webp'},
+    ...['S2N504','G3CXCS','G4CXP'].map(code=>({code,name:'TN'+code,
+     image:'assets/bayface/'+code.toLowerCase()+'.webp',
+     source:'https://www.telecomate.com/tn'+code.toLowerCase()+'/'}))
+   ]
   });
  }
  const app=typeof window==='undefined'?globalThis:window;

@@ -32,11 +32,16 @@
   const ctx=canvas.getContext('2d');
   ctx.drawImage(img,x*img.naturalWidth/f.width,y*img.naturalHeight/f.height,w*img.naturalWidth/f.width,h*img.naturalHeight/f.height,0,0,canvas.width,canvas.height);
   if(item?.kind==='dwdm'){
-   const svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'" viewBox="'+f.box.join(' ')+'">'+window.NOAH_CHASSIS.plates(model,item)+'</svg>';
+   const embedded=await window.NOAH_CHASSIS.images(model,item,async src=>(await reference(src)).toDataURL('image/png'));
+   const svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'" viewBox="'+f.box.join(' ')+'">'+window.NOAH_CHASSIS.plates(model,item,embedded)+'</svg>';
    const overlay=await loadImage('data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg));
    ctx.drawImage(overlay,0,0,canvas.width,canvas.height);
   }
   return canvas;
+ }
+ async function reference(src){
+  const image=await loadImage(src),canvas=surface(image.naturalWidth,image.naturalHeight);
+  canvas.getContext('2d').drawImage(image,0,0);return canvas;
  }
  function label(text){
   const canvas=surface(800,96),ctx=canvas.getContext('2d');
@@ -108,15 +113,12 @@
     }else rackSheet.getCell(row,4).value=item.label||item.kind;
     if(!optical)continue;
     for(const ref of model.referenceCards){
-     await addAsset('DWDM Assets',ref.image,ref.name,'ภาพหน้าการ์ดอ้างอิง',model.slotSource,async()=>{
-      const img=await loadImage(ref.image),canvas=surface(img.naturalWidth,img.naturalHeight);
-      canvas.getContext('2d').drawImage(img,0,0);return canvas;
-     });
+     await addAsset('DWDM Assets',ref.image,ref.name,'ภาพหน้าการ์ดอ้างอิง',ref.source||model.slotSource,()=>reference(ref.image));
     }
     for(const slot of window.NOAH_BAYFACE_MODEL.slotMap(model,item).sort((a,b)=>a.slot-b.slot)){
      const card=item.cards.find(c=>c.slot===slot.slot);
      slots.addRow([rack.name,item.label,item.subrackId||'',model.model,slot.slot,card?.board||'',card?'ติดตั้ง':'ว่าง',card?.full?'IU'+card.slot+' + IU'+(card.slot+12):'IU'+slot.slot]);
-     if(card)await addAsset('DWDM Assets','label/'+card.board,card.board,'ป้ายรหัสการ์ด',null,()=>label(card.board));
+     if(card&&!window.NOAH_CHASSIS.face(model,card.board))await addAsset('DWDM Assets','label/'+card.board,card.board,'ป้ายรหัสการ์ด',null,()=>label(card.board));
     }
    }
   }
@@ -129,8 +131,5 @@
   await navigator.clipboard.write([new ClipboardItem({'image/png':png})]);
  }
  window.NOAH_BAYFACE_EXCEL={export:write,copyEquipment:(m,i)=>copy(()=>artwork(m,i)),
-  copyLabel:name=>copy(()=>label(name)),copyReference:src=>copy(async()=>{
-   const image=await loadImage(src),canvas=surface(image.naturalWidth,image.naturalHeight);
-   canvas.getContext('2d').drawImage(image,0,0);return canvas;
-  })};
+  copyLabel:name=>copy(()=>label(name)),copyReference:src=>copy(()=>reference(src))};
 })();
