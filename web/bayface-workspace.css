@@ -1,4 +1,17 @@
 /* One Library viewport for accessories and equipment, with fixed controls. */
+.board-palette{display:grid;gap:6px}
+.board-asset-row{display:flex;align-items:center;gap:5px}
+.board-asset{display:flex;align-items:center;gap:8px;text-align:left;min-width:0;flex:1;cursor:grab}
+.board-asset img{width:22px;height:52px;object-fit:contain;pointer-events:none}
+.board-asset small{display:block;color:var(--muted)}
+.board-asset[aria-pressed=true]{outline:2px solid var(--accent)}
+.asset-copy{font-size:12px;white-space:nowrap}
+.installed-boards>div{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:3px 0}
+.accessory-tile>.asset-copy{margin-top:3px}
+.placing-board [data-card-iu]{pointer-events:all;cursor:no-drop}
+.placing-board [data-card-iu].board-available{fill:#19b979;fill-opacity:.45;stroke:#076343;stroke-width:1.4;cursor:copy}
+.placing-board [data-card-iu].board-hover,.placing-board [data-card-iu].board-available:hover,.placing-board [data-card-iu].board-available:focus{fill:#24eea4;fill-opacity:.8;stroke:#003f29}
+#bayfaceChassis [data-manual]>summary{cursor:pointer;padding:8px 0}
 #bayfaceDwdmList{display:grid;gap:9px;padding-top:10px}
 #bayfaceDwdmList .catalog-card{display:block;width:100%;text-align:left;margin:0;cursor:grab;color:var(--ink)}
 #bayfaceChassis fieldset{min-width:0;margin:12px 0;padding:10px;border:1px solid var(--line);border-radius:8px}

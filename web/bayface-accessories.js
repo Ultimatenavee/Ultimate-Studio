@@ -218,8 +218,8 @@
    displayFrame:small?[0,0,917,651]:[0,0,277,387], imageKind:'manufacturer-reference',
    slotLayout:small?'M12':'M24',
    referenceCards:small?[
-    {name:'AUX · IU73',image:'assets/bayface/huawei-m12-aux.webp'},
-    {name:'PIU · IU100',image:'assets/bayface/huawei-m12-piu.webp'}
+    {code:'AUX',name:'AUX',image:'assets/bayface/huawei-m12-aux.webp'},
+    {code:'PIU',name:'PIU',image:'assets/bayface/huawei-m12-piu.webp'}
    ]:[
     {name:'CXP · IU71 (ตระกูล CXP)',image:'assets/bayface/huawei-m24-cxp.webp'},
     ...['S2N504','G3CXCS','G4CXP'].map(code=>({code,name:'TN'+code,
@@ -227,6 +227,7 @@
      source:'https://www.telecomate.com/tn'+code.toLowerCase()+'/'}))
    ]
   });
+  optical.at(-1).referenceCards.push({code:'G2DAP',name:'TNG2DAP',image:'assets/bayface/g2dap.webp',source:'https://www.telecomate.com/tng2dap/'});
  }
  const app=typeof window==='undefined'?globalThis:window;
  app.NOAH_BAYFACE_ACCESSORIES=profiles;

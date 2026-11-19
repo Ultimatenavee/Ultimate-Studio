@@ -7,6 +7,45 @@
  const data=()=>A.getProject().bayface||{title:'Data Center Bayface',racks:[],items:[]};
  function commit(fn){const next=data();fn(next);const clean=M.validate(next,new Set(models.keys()));A.transaction(p=>{p.bayface=clean;});window.NOAH_EDITOR.saveLocal();}
  const defaultHeight=m=>m?.rackProfile?.occupiedU||1;
+ document.addEventListener('click',async e=>{
+  const button=e.target.closest?.('[data-copy-equipment],[data-copy-board]');
+  if(!button)return;
+  e.preventDefault();e.stopPropagation();
+  try{
+   if(button.dataset.copyBoard){
+    const ref=(window.NOAH_DWDM_CHASSIS||[]).flatMap(p=>p.referenceCards).find(r=>r.code===button.dataset.copyBoard);
+    await window.NOAH_BAYFACE_EXCEL.copyReference(ref.image);
+   }else{
+    const id=button.dataset.copyEquipment;
+    await window.NOAH_BAYFACE_EXCEL.copyEquipment(accessories.get(id)||models.get(id));
+   }
+   A.toast('คัดลอกรูปแล้ว กด Ctrl+V ใน Excel');
+  }catch(error){A.toast(error.message);}
+ },true);
+ document.addEventListener('keydown',e=>{
+  if((e.key==='Enter'||e.key===' ')&&e.target.closest?.('[data-copy-equipment],[data-copy-board]'))e.stopPropagation();
+ },true);
+ window.NOAH_CHASSIS?.bindLibrary($('bayfaceBoardAssets'),{
+  enabled:()=>active&&!presenting,
+  targetFor(owner){
+   if(owner?.matches('[data-face]')){
+    const host=$('bayfaceChassis'),item=host.readChassis?.(),profile=accessories.get($('bayfaceAccessory').value);
+    return item&&profile?{item,profile}:null;
+   }
+   const item=data().items.find(i=>i.id===owner?.dataset.bayfaceItem);
+   return item?{item,profile:accessories.get(item.accessoryId)}:null;
+  },
+  install(owner,card){
+   if(owner.matches('[data-face]')){$('bayfaceChassis').installBoard(card);return;}
+   const id=owner.dataset.bayfaceItem;
+   commit(d=>{
+    const item=d.items.find(i=>i.id===id);
+    const assignment=M.cardPlacement(accessories.get(item?.accessoryId),item,card.board,card.slot);
+    if(!assignment)throw Error('ช่องนี้ไม่ว่างหรือไม่รองรับการ์ด');
+    item.cards.push(assignment);
+   });
+  }
+ });
  function art(model,source,item){const f=G.imageFrame(model);return `<svg viewBox="${f.box.join(' ')}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><image href="${esc(source||model.displayImage||model.thumbnail)}" width="${f.width}" height="${f.height}"/>${item?.kind==='dwdm'?window.NOAH_CHASSIS.plates(model,item):''}</svg>`;}
  function accessoryReference(a,height){if(!a)return '<p class="small-note">เลือกรุ่น ODF / AC / DC เพื่อดูขนาดและการใช้งาน</p>';return `<p class="small-note"><strong>${esc(a.role)}</strong><br>${a.units}U · ${esc(a.configuration)}${a.fibers?'<br>'+esc(a.connector)+' · '+a.adapters+' adapters / '+a.fibers+' เส้นใย · '+esc(a.fiberMode):''}${a.input?'<br>Input: '+esc(a.input)+'<br>Output: '+esc(a.output):''}<br>${esc(a.useCase)}<br>${esc(a.note)}<br>${esc(a.imageNote||'')}${height&&height!==a.units?'<br>แบบนี้ใช้ '+height+'U ต่างจากขนาดอ้างอิง':''}<br><a href="${esc(a.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(a.sourceTitle)}</a></p>`;}
  function mountChassis(a,draft){
@@ -28,7 +67,7 @@
  }
  function accessoryFields(reset=false){const kind=$('bayfaceKind').value,hardware=['odf','power','dwdm'].includes(kind),list=[...accessories.values()].filter(a=>a.kind===kind),current=$('bayfaceAccessory').value||(!selectedItem?draftAccessory:''),chosen=list.find(a=>a.id===current)||((reset||!selectedItem)?list[0]:null);$('bayfaceDeviceField').hidden=kind!=='device';$('bayfaceAccessoryField').hidden=!hardware;$('bayfaceRackReference').hidden=kind!=='device';$('bayfaceAccessoryReference').hidden=!hardware;$('bayfaceAccessory').innerHTML='<option value="">เลือกอุปกรณ์</option>'+list.map(a=>`<option value="${a.id}" ${a.id===chosen?.id?'selected':''}>${esc(a.name)}</option>`).join('');if(chosen)$('bayfaceAccessory').value=chosen.id;else $('bayfaceAccessory').value='';if(reset&&kind==='device')$('bayfaceHeight').value=defaultHeight(models.get($('bayfaceModel').value));if(reset&&chosen){$('bayfaceHeight').value=chosen.units;if(!selectedItem)$('bayfaceLabel').value=chosen.model;}$('bayfaceAccessoryReference').innerHTML=accessoryReference(chosen,+$('bayfaceHeight').value);mountChassis(chosen);}
  function addAccessory(accessoryId,rackId,u=1,smart=true){const a=accessories.get(accessoryId);if(!a)throw new Error('ไม่พบ ODF / Power รุ่นนี้');const item={id:A.uid('rackitem'),rackId,u,height:a.units,kind:a.kind,modelId:'',accessoryId:a.id,label:a.model,notes:'',color:'#202831'};if(smart)item.u=M.findSlot(data(),rackId,item.height,u);if(item.u===null)throw new Error('ไม่มีช่วง U ว่างต่อเนื่องพอ');commit(d=>d.items.push(item));selectedRack=rackId;selectedItem=item.id;onRender();}
- for(const [listId,optical] of [['bayfaceAccessoryList',false],['bayfaceDwdmList',true]])$(listId).innerHTML=[...accessories.values()].filter(a=>(a.kind==='dwdm')===optical).map(a=>`<button type="button" class="catalog-card bayface-accessory-card" draggable="true" data-accessory="${a.id}" aria-label="เพิ่ม ${esc(a.name)}" title="${esc(a.name)} · ลากลง Rack"><span class="catalog-brand">${esc(a.brand)}</span><span class="catalog-image bayface-accessory-image" role="img" aria-label="${esc(a.name)}">${art(a)}</span><span class="catalog-model-row"><strong>${esc(a.model)}</strong><span class="catalog-add" aria-hidden="true">+</span></span><span class="catalog-meta">${a.kind==='dwdm'?'DWDM':a.kind==='odf'?'ODF':a.id.startsWith('dc-')?'DC Power':'AC Power'} · ${a.units}U · ${esc(a.connector)}</span></button>`).join('');
+ for(const [listId,optical] of [['bayfaceAccessoryList',false],['bayfaceDwdmList',true]])$(listId).innerHTML=[...accessories.values()].filter(a=>(a.kind==='dwdm')===optical).map(a=>`<div class="accessory-tile"><button type="button" class="catalog-card bayface-accessory-card" draggable="true" data-accessory="${a.id}" aria-label="เพิ่ม ${esc(a.name)}" title="${esc(a.name)} · ลากลง Rack"><span class="catalog-brand">${esc(a.brand)}</span><span class="catalog-image bayface-accessory-image" role="img" aria-label="${esc(a.name)}">${art(a)}</span><span class="catalog-model-row"><strong>${esc(a.model)}</strong><span class="catalog-add" aria-hidden="true">+</span></span><span class="catalog-meta">${a.kind==='dwdm'?'DWDM':a.kind==='odf'?'ODF':a.id.startsWith('dc-')?'DC Power':'AC Power'} · ${a.units}U · ${esc(a.connector)}</span></button><button type="button" class="asset-copy" data-copy-equipment="${a.id}" aria-label="คัดลอกรูป ${esc(a.model)}">คัดลอกรูป</button></div>`).join('');
  $('bayfaceAccessoryList').onclick=e=>{const b=e.target.closest('[data-accessory]');if(!b||presenting)return;const a=accessories.get(b.dataset.accessory);if(!selectedRack){A.toast('เพิ่ม Rack ก่อนเลือกอุปกรณ์');return;}selectedItem='';draftAccessory=a.id;sections.item=true;inspector();toggleInspector(true);$('bayfaceKind').value=a.kind;accessoryFields(true);$('bayfaceAccessory').value=a.id;$('bayfaceHeight').value=a.units;$('bayfaceLabel').value=a.model;$('bayfaceAccessoryReference').innerHTML=accessoryReference(a,a.units);mountChassis(a);};
  $('bayfaceDwdmMenu').onclick=()=>{$('libraryShow').click();$('bayfaceDwdmLibrary').open=true;$('bayfaceDwdmLibrary').scrollIntoView?.({block:'nearest'});};
  $('bayfaceAccessoriesMenu').onclick=()=>{$('libraryShow').click();$('bayfaceAccessoryLibrary').open=true;$('bayfaceAccessoryLibrary').scrollIntoView?.({block:'nearest'});};

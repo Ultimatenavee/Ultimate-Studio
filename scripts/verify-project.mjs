@@ -690,6 +690,13 @@ check('DWDM slot assignments round-trip and shared physical slots exclude overla
  assert.throws(()=>verify(m12,'service',[{slot:71,board:'Control'}]));
  assert.deepEqual(plain(verify(m12,'service',[half]).cards),[half]);
  assert.equal(verify(m12,'control',[{slot:71,board:'Control'}]).subrackId,'0');
+ assert.deepEqual(plain(M.cardPlacement(m24,{cards:[]},'S2N504',15)),{slot:3,board:'S2N504',full:true});
+ assert.equal(M.cardPlacement(m24,{cards:[{slot:15,board:'Existing'}]},'S2N504',3),null);
+ assert.equal(M.cardPlacement(m12,{cards:[]},'G3CXCS',6),null);
+ assert.equal(M.cardPlacement(m12,{slotMode:'control',cards:[]},'G2DAP',13),null);
+ assert.equal(M.cardPlacement(m12,{cards:[]},'PIU',73),null);
+ assert.equal(M.cardPlacement(m12,{cards:[]},'AUX',74).slot,74);
+ assert.equal(verify(m12,'service',[{slot:100,board:'PIU'}]).cards[0].slot,100);
 });
 check('Bayface tab starts empty and preserves Topology while adding separate racks',()=>{
  const before=plain(app.getProject());get('bayfaceTab').onclick();assert(!get('bayfaceWorkspace').hidden);assert(get('canvas').hidden);assert(get('serviceToolbar').hidden);assert(get('bayfaceCanvas').innerHTML.includes('เริ่มออกแบบ'));get('addRackBtn').onclick();const p=plain(app.getProject());assert.equal(p.bayface.racks.length,1);assert.equal(p.bayface.racks[0].units,42);assert.deepEqual(p.devices,before.devices);assert.deepEqual(p.links,before.links);assert(get('bayfaceCanvas').innerHTML.includes('data-u="42"'));get('topologyTab').onclick();assert(!get('canvas').hidden);assert(get('bayfaceWorkspace').hidden);

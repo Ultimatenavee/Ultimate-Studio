@@ -7,6 +7,9 @@
    for(let col=0;col<12;col++)result.push({slot:col+1,col,row:0,rows:2});
    if(item.slotMode==='control')result.push({slot:72,col:12,row:0,rows:1},{slot:71,col:12,row:1,rows:1});
    else result.push({slot:13,col:12,row:0,rows:2});
+   // AUX and power units flank the service slots on the M12 front panel.
+   result.push({slot:73,box:[48,169,48,326]},{slot:74,box:[826,169,47,326]},
+    {slot:100,box:[48,500,48,109]},{slot:101,box:[826,500,47,109]});
   }else{
    for(let n=1;n<=12;n++){
     const col=n<=6?n-1:n+1;
@@ -23,6 +26,25 @@
   if(code==='S2N504')return {full:true,slots:[1,2,3,4,5,8,9,10,11,12]};
   if(code==='G3CXCS')return {full:true,slots:[6,7]};
   if(code==='G4CXP')return {full:false,slots:[71,72]};
+ }
+ function cardPlacement(profile,item,board,target){
+  if(!profile?.referenceCards.some(ref=>ref.code===board))return null;
+  const m12=profile.slotLayout==='M12';
+  let slot=target,full=false;
+  if(board==='AUX'||board==='PIU'){
+   if(!m12||!(board==='AUX'?[73,74]:[100,101]).includes(slot))return null;
+  }else if(board==='G2DAP'){
+   if(slot<1||slot>(m12?13:24))return null;
+  }else{
+   const rule=boardRule(board);
+   if(!rule||m12)return null;
+   full=rule.full;
+   if(full&&slot>=13&&slot<=24)slot-=12;
+   if(!rule.slots.includes(slot))return null;
+  }
+  if(!slotMap(profile,item).some(s=>s.slot===target))return null;
+  if(item.cards?.some(c=>c.slot===slot||(full&&c.slot===slot+12)))return null;
+  return {slot,board,...(full?{full:true}:{})};
  }
  function chassisFields(item,profile) {
   if(item.kind!=='dwdm')return {};
@@ -60,5 +82,5 @@
   return slots.sort((a,b)=>Math.abs(a-preferred)-Math.abs(b-preferred)||a-b)[0]??null;
  }
  const fits=(data,item)=>{try{validate({...data,items:[...data.items.filter(x=>x.id!==item.id),item]},new Set([...data.items.map(x=>x.modelId),item.modelId]));return true;}catch{return false;}};
- (typeof window==='undefined'?globalThis:window).NOAH_BAYFACE_MODEL={validate,fits,findSlot,kinds,slotMap,boardRule};
+ (typeof window==='undefined'?globalThis:window).NOAH_BAYFACE_MODEL={validate,fits,findSlot,kinds,slotMap,boardRule,cardPlacement};
 })();
